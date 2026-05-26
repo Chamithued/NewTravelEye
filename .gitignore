@@ -1,0 +1,77 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+out/
+.vite/
+.cache/
+.next/
+.nuxt/
+.parcel-cache/
+public/build/
+
+# Environment
+.env
+.env.*
+.env.local
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+npm-debug.log*
+yarn-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs / editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+
+# Yarn 2/3 (if used)
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.tgz
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Mac files
+.AppleDouble
+.LSOverride
+
+# Windows image file cache
+ehthumbs.db
+
+# Parcel
+.cache/
+
+# Lockfiles (do not ignore by default; uncomment if you want to)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
