@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import { useState } from 'react'
 import logo from '../assets/client/Logo.png'
 
 const navItems = [
@@ -59,6 +60,16 @@ function ChevronDown() {
 }
 
 export default function Navbar() {
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const [expandedGroups, setExpandedGroups] = useState({})
+
+  const toggleGroup = (label) => {
+    setExpandedGroups((prev) => ({
+      ...prev,
+      [label]: !prev[label],
+    }))
+  }
+
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90">
       <div className="flex w-full items-center py-3 sm:py-3 lg:py-3">
@@ -71,6 +82,23 @@ export default function Navbar() {
         </NavLink>
 
         <div className="flex-1" />
+
+        <button
+          type="button"
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((s) => !s)}
+          className="mr-2 inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none xl:hidden"
+        >
+          {mobileOpen ? (
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
 
         <nav className="hidden items-center gap-1 xl:flex pr-4 sm:pr-6 lg:pr-8" aria-label="Primary">
           {navItems.map((item) => (
@@ -150,6 +178,63 @@ export default function Navbar() {
           </NavLink>
         </nav>
       </div>
+
+      {mobileOpen && (
+        <div className="xl:hidden absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5rem)]">
+          <div className="flex flex-col gap-1 px-4 pb-6 pt-4">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.top}
+                to={item.to}
+                onClick={() => setMobileOpen(false)}
+                className={({ isActive }) =>
+                  [
+                    'block rounded-md px-3 py-2 text-[1rem] font-semibold transition-colors',
+                    isActive ? 'text-[#0f3c68]' : 'text-slate-700 hover:text-[#0f3c68]'
+                  ].join(' ')
+                }
+              >
+                <span className="whitespace-nowrap">{item.top} {item.bottom}</span>
+              </NavLink>
+            ))}
+
+            {dropdownGroups.map((group) => (
+              <div key={group.label} className="mt-2">
+                <button
+                  type="button"
+                  onClick={() => toggleGroup(group.label)}
+                  className="w-full flex items-center justify-between px-2 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 rounded-md transition-colors"
+                >
+                  <span>{group.label}</span>
+                  <svg
+                    className={`h-4 w-4 transition-transform ${
+                      expandedGroups[group.label] ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </button>
+                {expandedGroups[group.label] && (
+                  <div className="flex flex-col">
+                    {group.items.map((it) => (
+                      <Link key={it.label} to={it.to} onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-slate-600 hover:text-[#0f3c68]">
+                        {it.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+
+            <NavLink to="/contact" onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2 text-[1rem] font-semibold text-slate-700 hover:text-[#0f3c68]">
+              Contact Us
+            </NavLink>
+          </div>
+        </div>
+      )}
     </header>
   )
 }
