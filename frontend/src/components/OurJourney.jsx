@@ -7,7 +7,7 @@ const journeyItems = [
     title: 'Humble Beginnings',
     icon: Hourglass,
     cardSide: 'right',
-    rowClass: 'lg:min-h-[315px]',
+    rowClass: 'lg:min-h-[285px]',
     body: [
       <>
         What began with a single individual and a deep respect for travel was shaped by a simple
@@ -27,7 +27,7 @@ const journeyItems = [
     title: 'The Birth of Experiential Ventures',
     icon: Clock3,
     cardSide: 'left',
-    rowClass: 'lg:min-h-[305px]',
+    rowClass: 'lg:min-h-[275px]',
     body: [
       <>
         In <strong>2012</strong>, we launched our first <strong>Experiential Tourism
@@ -46,7 +46,7 @@ const journeyItems = [
     title: 'A People-Powered Tourism Ecosystem',
     icon: CircleCheck,
     cardSide: 'right',
-    rowClass: 'lg:min-h-[405px]',
+    rowClass: 'lg:min-h-[360px]',
     body: [
       <>
         <strong>Traveleye Alliance</strong> operates as a people-powered tourism ecosystem for Sri
@@ -64,9 +64,9 @@ const journeyItems = [
 
 function TimelineMarker({ icon: Icon }) {
   return (
-    <div className="relative z-10 flex h-[62px] w-[62px] items-center justify-center rounded-full bg-[#d9dde2]">
-      <div className="flex h-[46px] w-[46px] items-center justify-center rounded-full bg-[#1f4f93] text-white shadow-[0_2px_8px_rgba(15,23,42,0.16)]">
-        <Icon className="h-7 w-7 stroke-[2.4]" />
+    <div className="relative z-10 flex h-[54px] w-[54px] items-center justify-center rounded-full bg-[#d9dde2]">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1f4f93] text-white shadow-[0_2px_8px_rgba(15,23,42,0.16)]">
+        <Icon className="h-6 w-6 stroke-[2.4]" />
       </div>
     </div>
   )
@@ -75,14 +75,16 @@ function TimelineMarker({ icon: Icon }) {
 function YearLabel({ item, align }) {
   return (
     <div
-      className={`mx-auto max-w-[620px] text-center ${
+      className={`mx-auto max-w-[500px] text-center ${
         align === 'right' ? 'lg:mx-0 lg:text-left' : 'lg:ml-auto lg:mr-0 lg:text-right'
       }`}
     >
-      <p className="text-[1.72rem] font-extrabold leading-none tracking-normal text-[#1f4f93]">
+      <p className="text-[1.5rem] font-extrabold leading-none tracking-normal text-[#1f4f93]">
         {item.year}
       </p>
-      <p className="mt-2 text-[1.08rem] font-medium leading-snug text-[#828282]">{item.eyebrow}</p>
+      <p className="mt-2 text-[0.98rem] font-medium leading-snug text-[#828282]">
+        {item.eyebrow}
+      </p>
     </div>
   )
 }
@@ -92,7 +94,7 @@ function JourneyCard({ item }) {
 
   return (
     <article
-      className={`relative mx-auto w-full max-w-[650px] rounded-md border border-[#ececec] bg-white px-7 py-[18px] text-[#777] shadow-[0_4px_14px_rgba(15,23,42,0.14)] ${
+      className={`relative mx-auto w-full max-w-[500px] rounded-md border border-[#ececec] bg-white px-6 py-4 text-[#777] shadow-[0_4px_14px_rgba(15,23,42,0.14)] ${
         isLeft ? 'lg:ml-auto lg:mr-0 lg:border-r-[3px] lg:border-r-[#1f4f93] lg:text-right' : 'lg:ml-0 lg:mr-auto lg:border-l-[3px] lg:border-l-[#1f4f93] lg:text-left'
       }`}
     >
@@ -105,8 +107,8 @@ function JourneyCard({ item }) {
         aria-hidden="true"
       />
 
-      <h3 className="text-[1.22rem] font-extrabold leading-tight text-[#1f4f93]">{item.title}</h3>
-      <div className="mt-3 space-y-4 text-[1.03rem] font-medium leading-[1.55]">
+      <h3 className="text-[1.08rem] font-extrabold leading-tight text-[#1f4f93]">{item.title}</h3>
+      <div className="mt-3 space-y-3 text-[0.94rem] font-medium leading-[1.5]">
         {item.body.map((paragraph, index) => (
           <p key={`${item.year}-${index}`} className="[&_strong]:font-extrabold">
             {paragraph}
@@ -123,9 +125,9 @@ function TimelineRow({ item }) {
 
   return (
     <div
-      className={`relative grid gap-5 lg:grid-cols-[minmax(0,1fr)_86px_minmax(0,1fr)] lg:items-start lg:gap-0 ${item.rowClass}`}
+      className={`relative grid gap-5 lg:grid-cols-[minmax(0,1fr)_66px_minmax(0,1fr)] lg:items-start lg:gap-0 ${item.rowClass}`}
     >
-      <div className="flex justify-center lg:justify-end lg:pr-10">
+      <div className="flex justify-center lg:justify-end lg:pr-6">
         {cardIsLeft ? <JourneyCard item={item} /> : <YearLabel item={item} align={labelAlign} />}
       </div>
 
@@ -133,7 +135,7 @@ function TimelineRow({ item }) {
         <TimelineMarker icon={item.icon} />
       </div>
 
-      <div className="flex justify-center lg:justify-start lg:pl-10">
+      <div className="flex justify-center lg:justify-start lg:pl-6">
         {cardIsLeft ? <YearLabel item={item} align={labelAlign} /> : <JourneyCard item={item} />}
       </div>
     </div>
@@ -174,7 +176,7 @@ export default function OurJourney() {
           </div>
         </div>
 
-        <div className="relative mx-auto max-w-[1320px] pt-0 lg:pt-[70px]">
+        <div className="relative mx-auto max-w-[1120px] pt-0 lg:pt-[70px]">
           <div className="absolute left-1/2 top-0 hidden h-full w-[4px] -translate-x-1/2 bg-[#d6d7d9] lg:block" />
           <div className="absolute left-1/2 top-0 hidden h-4 w-4 -translate-x-1/2 rounded-full bg-[#d6d7d9] lg:block" />
           <div className="absolute bottom-0 left-1/2 hidden h-4 w-4 -translate-x-1/2 translate-y-1/2 rounded-full bg-[#d6d7d9] lg:block" />
