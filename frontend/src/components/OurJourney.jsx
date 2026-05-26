@@ -122,20 +122,22 @@ function JourneyCard({ item }) {
 function TimelineRow({ item }) {
   const cardIsLeft = item.cardSide === 'left'
   const labelAlign = cardIsLeft ? 'right' : 'left'
+  const leftColumnOrder = cardIsLeft ? 'order-3 lg:order-none' : 'order-2 lg:order-none'
+  const rightColumnOrder = cardIsLeft ? 'order-2 lg:order-none' : 'order-3 lg:order-none'
 
   return (
     <div
       className={`relative grid gap-5 lg:grid-cols-[minmax(0,1fr)_66px_minmax(0,1fr)] lg:items-start lg:gap-0 ${item.rowClass}`}
     >
-      <div className="flex justify-center lg:justify-end lg:pr-6">
+      <div className={`flex justify-center lg:justify-end lg:pr-6 ${leftColumnOrder}`}>
         {cardIsLeft ? <JourneyCard item={item} /> : <YearLabel item={item} align={labelAlign} />}
       </div>
 
-      <div className="flex justify-center lg:pt-0">
+      <div className="order-1 flex justify-center lg:order-none lg:pt-0">
         <TimelineMarker icon={item.icon} />
       </div>
 
-      <div className="flex justify-center lg:justify-start lg:pl-6">
+      <div className={`flex justify-center lg:justify-start lg:pl-6 ${rightColumnOrder}`}>
         {cardIsLeft ? <YearLabel item={item} align={labelAlign} /> : <JourneyCard item={item} />}
       </div>
     </div>
