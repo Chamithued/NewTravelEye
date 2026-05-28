@@ -59,7 +59,7 @@ function InvolvedCard({ card }) {
     <article className="relative overflow-hidden rounded-2xl h-80 sm:h-96">
       <img src={card.image} alt={card.title} className="h-full w-full object-cover" />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-6 flex flex-col justify-between">
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a55]/24 via-[#0f2a55]/12 to-transparent p-6 flex flex-col justify-between">
           <div>
           <div className="inline-flex flex-col items-start gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg text-white" style={{ backgroundColor: card.accent }}>
@@ -70,7 +70,7 @@ function InvolvedCard({ card }) {
         </div>
 
         <div>
-          <p className="mb-4 max-w-xl text-sm text-white/85">{card.subtitle}</p>
+          <p className="mb-4 max-w-xl text-sm sm:text-base text-white/90">{card.subtitle}</p>
 
           <div>
             <button className="inline-flex items-center gap-3 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/5">

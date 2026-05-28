@@ -1,17 +1,18 @@
-import heroImg from "../assets/client/hero.png"
+import heroImg from "../assets/client/newhero.png"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center px-4 pt-0 pb-16 sm:pb-20">
+    <section className="relative min-h-[calc(100vh+8rem)] w-full overflow-hidden">
       <div id="hero-image" className="absolute inset-0 z-0">
           <img src={heroImg} alt="Hero background" className="absolute inset-x-0 top-0 w-full h-[calc(100%+8rem)] sm:h-[calc(100%+10rem)] lg:h-[calc(100%+12rem)] object-cover filter brightness-110 contrast-105" style={{ objectPosition: 'left top' }} />
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/23" />
       </div>
 
-      <div id="hero-content" className="relative z-10 text-center text-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-24 sm:pt-36 lg:pt-56 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-20">
-        <div className="mb-5 inline-flex rounded-full bg-[rgba(53,82,127,0.82)] px-4 py-2 shadow-lg">
+      <div className="relative z-10 flex min-h-screen w-full items-center justify-center px-4 pt-0 pb-16 sm:pb-20">
+      <div id="hero-content" className="text-center text-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-24 sm:pt-36 lg:pt-56 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-20">
+        {/* <div className="mb-5 inline-flex rounded-full bg-[rgba(53,82,127,0.82)] px-4 py-2 shadow-lg">
           <p className="text-sm font-semibold">Tourism for People, Planet, and Prosperity</p>
-        </div>
+        </div> */}
 
         <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-none mb-1">
           TRAVELEYE
@@ -21,15 +22,15 @@ export default function Hero() {
         </h2>
         <p className="text-sm sm:text-base font-medium mb-2">Since 2006</p>
 
-        <p className="text-base sm:text-xl font-semibold max-w-3xl mx-auto mb-3">
+        <p className="text-base sm:text-xl font-semibold max-w-3xl mx-auto mb-1">
           Building a People-Powered Tourism Ecosystem for Sri Lanka
         </p>
 
-        <p className="text-sm sm:text-base max-w-full mx-auto mb-4 leading-relaxed">
+        <p className="text-base sm:text-lg max-w-full mx-auto mb-1 leading-relaxed">
           Co-created with local people — strengthening tourism enterprises, destinations, and value chains nationwide.
         </p>
 
-        <p className="text-xs sm:text-sm text-white/90 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-sm sm:text-base font-semibold text-white/90 max-w-2xl mx-auto mb-4 leading-snug">
           Traveleye builds and stewards a people-powered tourism ecosystem that enables micro and small tourism enterprises across Sri Lanka to become capable, connected, and market-ready co-owners
         </p>
 
@@ -47,6 +48,7 @@ export default function Hero() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
+      </div>
       </div>
     </section>
   )

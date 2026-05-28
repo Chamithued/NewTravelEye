@@ -7,64 +7,63 @@ import supportImg from '../assets/client/Support Services.png'
 import facilitationImg from '../assets/client/At the Traveleye Facilitation Center.png'
 
 const pillars = [
-  {
-    code: 'PPS',
-    title: 'People-Powered Stays',
-    subtitle: 'Rooted in People, Place, and Lifestyle',
-    icon: Building2,
-    accent: 'bg-sky-500',
-    image: staysImg,
-    ctas: [
-      { label: 'Explore the PPS Model', variant: 'solid' },
-      { label: 'Co-Own a People-Powered Stay', variant: 'ghost' },
-    ],
-  },
-  {
-    code: 'PPET',
-    title: 'People-Powered Experiential Tourism',
-    subtitle: 'People-Powered, Immersive, and Regenerative',
-    icon: Leaf,
-    accent: 'bg-emerald-500',
-    image: experientialImg,
-    ctas: [
-      { label: 'Explore the PPET Model', variant: 'solid' },
-      { label: 'Co-Own an Experience', variant: 'ghost' },
-      { label: 'Learn About PPSS Model', variant: 'ghost' },
-    ],
-  },
-  {
-    code: 'PPTO',
-    title: 'People-Powered Tour Operations',
-    subtitle: 'Locally Led, Professionally Delivered',
+    {
+    code: 'PPTC',
+    title: 'People-Powered Travel Collective ',
+    subtitle: 'Thoughtfully Designed Journeys ',
     icon: Compass,
-    accent: 'bg-blue-800',
+    accent: 'bg-amber-500',
     image: tourOpsImg,
     ctas: [
-      { label: 'Explore the PPTO Model', variant: 'solid' },
+      { label: 'Discover the PPTC Model ', variant: 'solid' },
       { label: 'Co-Own a Travel Venture', variant: 'ghost' },
     ],
   },
   {
-    code: 'PPSS',
-    title: 'People-Powered Support Services',
-    subtitle: 'Enabling Local Enterprises to Thrive',
-    icon: BriefcaseBusiness,
-    accent: 'bg-amber-500',
-    image: supportImg,
+    code: 'PPHE',
+    title: 'People-Powered Host Experiences',
+    subtitle: 'People-Powered, Immersive, and Regenerative ',
+    icon: Building2,
+    accent: 'bg-sky-500',
+    image: staysImg,
     ctas: [
-      { label: 'Explore the PPSS Model', variant: 'solid' },
-      { label: 'Co-Own a Support Service', variant: 'ghost' },
+      { label: 'Explore the PPHE Model', variant: 'solid' },
+      { label: 'Co-Own an Experience', variant: 'ghost' },
     ],
   },
   {
-    code: 'PPFC',
-    title: 'People-Powered Facilitation Centers',
-    subtitle: 'Local Hubs for Collaboration and Growth',
+    code: 'PPES',
+    title: 'People-Powered Ecosystem Support',
+    subtitle: 'Enabling Quality and Sustainability',
+    icon: Leaf,
+    accent: 'bg-emerald-500',
+    image: experientialImg,
+    ctas: [
+      { label: 'Learn About PPES Model', variant: 'solid' },
+      { label: 'Co-Own a Support Service', variant: 'ghost' },
+    ],
+  },
+  // {
+  //   code: 'PPSS',
+  //   title: 'People-Powered Support Services',
+  //   subtitle: 'Enabling Local Enterprises to Thrive',
+  //   icon: BriefcaseBusiness,
+  //   accent: 'bg-amber-500',
+  //   image: supportImg,
+  //   ctas: [
+  //     { label: 'Explore the PPSS Model', variant: 'solid' },
+  //     { label: 'Co-Own a Support Service', variant: 'ghost' },
+  //   ],
+  // },
+  {
+    code: 'PPDF',
+    title: 'People-Powered Destination Facilitation',
+    subtitle: 'Destination Stewardship & Coordination ',
     icon: MapPinned,
     accent: 'bg-orange-500',
     image: facilitationImg,
     ctas: [
-      { label: 'Explore the PPFC Model', variant: 'solid' },
+      { label: 'Learn About PPDF Model ', variant: 'solid' },
       { label: 'Co-Own a Facilitation Center', variant: 'ghost' },
     ],
   },
@@ -72,26 +71,32 @@ const pillars = [
 
 function PillarCard({ pillar }) {
   const Icon = pillar.icon
+  const pillarDescriptions = {
+    PPTC: 'Responsible inbound, outbound, and domestic travel journeys connecting stays and experiences through people-powered operations focused on quality, safety, and local value.',
+    PPHE: 'Authentic Sri Lanka travel experiences co-created and shaped by local people, communities, experts, women and youth entrepreneurs at the heart of our People-Powered Tourism model.',
+    PPES: 'Integrated support services empowering people-powered experiences, and travel, through training, technology, advisory, and trusted systems which are needed to the tourism industry.',
+    PPDF: 'Place-based facilitation hubs co-owned by local people, enabling coordinated tourism activity, on-ground support, and balanced destination development rooted in lived realities.',
+  }
 
   return (
     <article className="relative h-[520px] overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)]">
       <img src={pillar.image} alt={pillar.title} className="absolute inset-0 h-full w-full object-cover" />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-6 md:p-8 flex flex-col justify-between">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/30 to-transparent p-6 md:p-8 flex flex-col justify-between">
         <div className="flex items-start justify-between">
-          <div className="inline-flex items-center gap-3">
-            <div className={`flex h-10 w-10 items-center justify-center rounded-lg text-white ${pillar.accent}`}>
-              <Icon className="h-5 w-5 text-white" />
+          <div className="inline-flex flex-col items-start gap-3">
+            <div className={`flex h-12 w-12 items-center justify-center rounded-lg text-white ${pillar.accent}`}>
+              <Icon className="h-6 w-6 text-white" />
             </div>
             <div>
               <p className="text-2xl font-bold text-white md:text-3xl">{pillar.title}</p>
-              <p className="mt-1 text-sm font-medium text-white/90">{pillar.subtitle}</p>
+              <p className="mt-1 text-sm font-bold text-white/90">{pillar.subtitle}</p>
             </div>
           </div>
         </div>
 
         <div className="mt-4">
-          <p className="mb-6 max-w-xl text-sm text-white/85">{'Authentic Sri Lanka ' + pillar.title.toLowerCase() + ' co-created with local people, communities, experts, and youth entrepreneurs.'}</p>
+          <p className="mb-6 max-w-xl text-sm sm:text-base text-white/90">{pillarDescriptions[pillar.code] ?? ''}</p>
 
               <div className="flex flex-col gap-3 items-start">
                 {pillar.code === 'PPET' ? (
@@ -166,14 +171,14 @@ export default function FivePillars() {
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-8 flex justify-center">
           <div className="inline-flex items-center gap-3 rounded-full bg-[#e9eef8] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm">
-            Our Five Pillars
+            Our Four Pillars
           </div>
         </div>
 
         <div className="mx-auto mb-6 max-w-6xl text-center px-4">
           <div className="flex items-center justify-center gap-4">
             <h2 className="text-3xl font-bold leading-tight text-[#172544] sm:text-4xl lg:text-5xl">
-             🌿 The Five Pillars That Power Our Ecosystem
+             🌿 The Four Pillars That Power Our Ecosystem
             </h2>
           </div>
 
@@ -183,8 +188,8 @@ export default function FivePillars() {
         </div>
 
         <div className="mx-auto max-w-5xl text-center text-[1.02rem] leading-7 text-[#6b7894] sm:text-[1.05rem] sm:leading-8 px-4">
-          <p className="mb-6">
-            Traveleye Alliance connects people, places, and purpose through five integrated pillars that power Sri Lanka’s first People-Powered Tourism Ecosystem.
+          <p className="mb-6 font-semibold text-[#626D84]">
+            Traveleye Alliance connects people, places, and purpose through four integrated pillars that power Sri Lanka’s first People-Powered Tourism Ecosystem.
           </p>
 
           <p className="mb-6">

@@ -3,12 +3,12 @@ import { Users, HeartHandshake, Leaf, MapPin, Sparkles, BriefcaseBusiness, Globe
 const items = [
   { icon: Users, value: '120+', label: "Youth Entrepreneurs Trained & Supported" },
   { icon: HeartHandshake, value: '300+', label: 'Women Empowered' },
-  { icon: Leaf, value: '500+', label: 'People-Powered Experiences Across Sri Lanka' },
-  { icon: MapPin, value: '20+', label: "Travelers' Support Centers Across Sri Lanka" },
+  { icon: BriefcaseBusiness, value: '500+', label: 'People-Powered Travel Experiences Across Sri Lanka ' },
+  { icon: MapPin, value: '20+', label: "Destination Facilitation Centers Across Sri Lanka " },
   { icon: Sparkles, value: '100+', label: 'Regenerative Tourism Activities' },
-  { icon: BriefcaseBusiness, value: '100+', label: 'People-Powered Experiences Sold' },
-  { icon: Globe2, value: '100+', label: 'Inbound Travelers Served' },
-  { icon: Building2, value: '100+', label: 'Outbound Travelers Served' },
+  { icon: Leaf, value: '100+', label: 'Developed Ecosystem Support Services Across Sri Lanka' },
+  { icon: Building2, value: '100+', label: 'Inbound Travelers Served' },
+  { icon: Globe2, value: '100+', label: 'Outbound Travelers Served' },
   { icon: Home, value: '100+', label: 'Domestic Travelers Served' },
 ]
 

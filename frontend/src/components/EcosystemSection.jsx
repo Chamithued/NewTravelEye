@@ -10,32 +10,33 @@ import ecosystemImg from '../assets/client/Discussing People-Powered Tourism fra
 
 const ecosystemPillars = [
 	{
-		code: 'PPS',
-		title: 'People-Powered Stays',
+		code: 'PPHE',
+		title: ' People-Powered Host Experiences',
 		icon: Building2,
 		accent: 'bg-sky-500',
 	},
 	{
-		code: 'PPET',
-		title: 'People-Powered Experiential Tourism',
+		code: 'PPES',
+		title: 'People-Powered Ecosystem Support',
 		icon: Leaf,
 		accent: 'bg-emerald-500',
 	},
 	{
-		code: 'PPTO',
-		title: 'People-Powered Tour Operations',
+		code: 'PPTC',
+		title: 'People-Powered Travel Collective',
 		icon: Compass,
-		accent: 'bg-blue-800',
-	},
-	{
-		code: 'PPSS',
-		title: 'People-Powered Support Services',
-		icon: BriefcaseBusiness,
 		accent: 'bg-amber-500',
+		//accent: 'bg-blue-800',
 	},
+	// {
+	// 	code: 'PPSS',
+	// 	title: 'People-Powered Support Services',
+	// 	icon: BriefcaseBusiness,
+	// 	accent: 'bg-amber-500',
+	// },
 	{
-		code: 'PPFC',
-		title: 'People-Powered Facilitation Centers',
+		code: 'PPDF',
+		title: 'People-Powered Destination Facilitation ',
 		icon: MapPinned,
 		accent: 'bg-orange-500',
 	},
@@ -62,14 +63,14 @@ export default function EcosystemSection() {
 								and co-manage micro and small scale tourism enterprises.
 							</p>
 							<p>
-								Guided by our People-Powered Tourism (PPT) Model and five integrated pillars,
+								Guided by our People-Powered Tourism (PPT) Model and four integrated pillars,
 								every journey is designed to strengthen people, culture, and destinations —
 								ensuring tourism gives back more than it takes.
 							</p>
 						</div>
 
 						<p className="mt-8 max-w-3xl text-[1.05rem] font-semibold leading-7 text-[#1c2840] sm:text-[1.1rem]">
-							More than a network, it is a shared-value system built on five integrated pillars:
+							More than a network, it is a shared-value system built on four integrated pillars:
 						</p>
 
 						<div className="mt-6 grid gap-6 sm:grid-cols-2">
