@@ -12,7 +12,7 @@ const journeyItems = [
       <>
         What began with a single individual and a deep respect for travel was shaped by a simple
         belief: <strong>tourism should connect visitors with Sri Lanka&apos;s culture, nature, and
-        people--while creating real opportunities for local communities to participate
+        people while creating real opportunities for local communities to participate
         meaningfully.</strong>
       </>,
       <>
@@ -34,8 +34,8 @@ const journeyItems = [
         Ventures</strong>, marking a transformative chapter in Sri Lanka&apos;s tourism journey.
       </>,
       <>
-        These people-powered ventures--<strong>co-owned and co-created</strong> with local people,
-        communities, experts, and youth entrepreneurs--enable authentic experiences that
+        These people-powered ventures <strong>co-owned and co-created</strong> with local people,
+        communities, experts, and youth entrepreneurs enable authentic experiences that
         <strong> enrich lives, protect cultural heritage, and strengthen local livelihoods.</strong>
       </>,
     ],
@@ -167,7 +167,7 @@ export default function OurJourney() {
             <p>
               What began in 2006 as a purpose-driven tour operation focused on meaningful travel
               and strengthening Sri Lanka&apos;s domestic tourism sector has evolved into Traveleye
-              Alliance--an ecosystem reimagining tourism as a platform for shared value, community
+              Alliance, an ecosystem reimagining tourism as a platform for shared value, community
               leadership, and regenerative impact.
             </p>
             <p>

@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import logo from '../assets/client/Logo.png'
+import logo from '../assets/client/Traveleyelogo.jpg'
 
 const navItems = [
   { top: 'Travel', bottom: 'Collective', to: '/' },
@@ -77,7 +77,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Traveleye Alliance Sri Lanka"
-            className="h-10 w-auto max-w-[180px] object-contain sm:h-12 sm:max-w-[220px]"
+            className="h-12 w-auto max-w-[220px] object-contain sm:h-16 sm:max-w-[260px] lg:h-20 lg:max-w-[300px]"
           />
         </NavLink>
 
@@ -107,7 +107,7 @@ export default function Navbar() {
               to={item.to}
               className={({ isActive }) =>
                 [
-                  'inline-flex flex-col items-center rounded-md px-2 py-2 text-center text-[0.9rem] font-semibold leading-none tracking-[0.01em] transition-colors',
+                  'inline-flex flex-col items-center rounded-md px-2 py-2 text-center text-[1rem] font-semibold leading-none tracking-[0.01em] transition-colors',
                   isActive ? 'text-[#0f3c68]' : 'text-[#174c84] hover:text-[#0f3c68]',
                 ].join(' ')
               }
@@ -122,7 +122,7 @@ export default function Navbar() {
               <button
                 type="button"
                 className={[
-                  'inline-flex items-center gap-1 rounded-md px-2 py-2 text-[0.9rem] font-semibold tracking-[0.01em] transition-colors',
+                  'inline-flex items-center gap-1 rounded-md px-2 py-2 text-[1rem] font-semibold tracking-[0.01em] transition-colors',
                   group.label === 'Our Framework'
                     ? 'text-[#1C4686] hover:text-[#1C4686]'
                     : 'text-[#174c84] hover:text-[#1C4686]',
@@ -139,7 +139,7 @@ export default function Navbar() {
                       <Link
                         key={item.label}
                         to={item.to}
-                        className="block rounded-xl px-4 py-3 text-[0.95rem] font-medium text-[#1C4686] transition-colors hover:bg-[#1C4686] hover:text-white"
+                        className="block rounded-xl px-4 py-3 text-[1rem] font-medium text-[#1C4686] transition-colors hover:bg-[#1C4686] hover:text-white"
                       >
                         {item.label}
                       </Link>
@@ -149,7 +149,7 @@ export default function Navbar() {
                         to={item.to}
                         className={({ isActive }) =>
                           [
-                            'block rounded-xl px-4 py-3 text-[0.95rem] font-medium transition-colors',
+                            'block rounded-xl px-4 py-3 text-[1rem] font-medium transition-colors',
                             isActive
                               ? 'bg-[#1C4686] text-white'
                               : 'text-slate-700 hover:bg-[#1C4686] hover:text-white',
@@ -169,7 +169,7 @@ export default function Navbar() {
             to="/contact"
             className={({ isActive }) =>
               [
-                'inline-flex items-center rounded-md px-2 py-2 text-[0.9rem] font-semibold tracking-[0.01em] transition-colors',
+                'inline-flex items-center rounded-md px-2 py-2 text-[1rem] font-semibold tracking-[0.01em] transition-colors',
                 isActive ? 'text-[#0f3c68]' : 'text-[#174c84] hover:text-[#0f3c68]',
               ].join(' ')
             }

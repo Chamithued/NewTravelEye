@@ -8,50 +8,50 @@ import domesticImg from '../assets/client/Discover Sri Lanka - Domestic.png'
 import outboundImg from '../assets/client/Discover the world.png'
 
 const quickLinksData = [
+  // {
+  //   id: 1,
+  //   title: 'Explore People-Powered Stays in Sri Lanka',
+  //   image: staysImg,
+  //   link: '/stays',
+  // },
   {
     id: 1,
-    title: 'Explore People-Powered Stays in Sri Lanka',
-    image: staysImg,
-    link: '/stays',
-  },
-  {
-    id: 2,
     title: 'Explore People-Powered Travel Experiences',
     image: experiencesImg,
     link: '/experiences',
   },
   {
-    id: 3,
+    id: 2,
     title: 'Plan Your Sri Lanka Journey (Inbound)',
     image: journeyImg,
     link: '/travel',
   },
   {
-    id: 4,
+    id: 3,
     title: 'Discover Sri Lanka in Ultimate Luxury (Inbound)',
     image: luxuryImg,
     link: '/stays',
   },
+  // {
+  //   id: 5,
+  //   title: 'Plan Your Corporate Event in Sri Lanka (MICE)',
+  //   image: supportImg,
+  //   link: '/support-services',
+  // },
   {
-    id: 5,
-    title: 'Plan Your Corporate Event in Sri Lanka (MICE)',
-    image: supportImg,
-    link: '/support-services',
-  },
-  {
-    id: 6,
-    title: 'Plan Your Wedding or Celebration in Sri Lanka',
+    id: 4,
+    title: 'Plan Your Event or Celebration in Sri Lanka',
     image: weddingImg,
     link: '/experiences',
   },
     {
-    id: 7,
+    id: 5,
       title: 'Discover Sri Lanka Your Way (Domestic - Sri Lankans)',
       image: domesticImg,
       link: '/travel',
   },
   {
-    id: 8,
+    id: 6,
       title: 'Explore the World with Traveleye (Outbound - Sri Lankans)',
       image: outboundImg,
       link: '/travel',
@@ -80,7 +80,7 @@ export default function QuickLinks() {
                 alt={link.title}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-[#0f2a55]/18 via-[#0f2a55]/10 to-[#0f2a55]/28"></div>
               <div className="absolute inset-0 flex items-end justify-center p-6 text-center">
                 <h3 className="text-white text-sm sm:text-base font-semibold leading-tight">
                   {link.title}
