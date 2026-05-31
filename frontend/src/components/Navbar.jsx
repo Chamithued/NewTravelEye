@@ -1,9 +1,9 @@
-import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/client/Traveleyelogo.jpg'
 
 const navItems = [
-  { top: 'Travel', bottom: 'Collective', to: '/' },
+  { top: 'Travel', bottom: 'Collective', to: '/travel-collective' },
   { top: 'Host', bottom: 'Experiences', to: '/experiences' },
   { top: 'Destination', bottom: 'Facilitation', to: '/travel' },
   { top: 'Ecosystem', bottom: 'Support', to: '/support-services' },
@@ -24,9 +24,9 @@ const dropdownGroups = [
   {
     label: 'Our Framework',
     items: [
-      { label: 'People-Powered Tourism Framework', to: '/' },
-      { label: 'Explore the Ecosystem', to: '/' },
-      { label: 'Participation & Shared Stewardship', to: '/' },
+      { label: 'People-Powered Tourism Framework', to: '/travel-collective' },
+      { label: 'Explore the Ecosystem', to: '/travel-collective' },
+      { label: 'Participation & Shared Stewardship', to: '/travel-collective' },
     ],
   },
   {

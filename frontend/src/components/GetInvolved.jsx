@@ -5,7 +5,7 @@ import inboundImg from '../assets/client/Partner with Us for Inbound.png'
 import collaborateImg from '../assets/client/Colleborate with Us.png'
 import purposeImg from '../assets/client/Travelwith Purpose.png'
 import supportLocalImg from '../assets/client/Support Local People & Communities.png'
-import movementImg from '../assets/client/Discover the world.png'
+import movementImg from '../assets/client/Join the movement2.png'
 
 const cards = [
   {

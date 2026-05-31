@@ -6,7 +6,7 @@ import {
 	BriefcaseBusiness,
 } from 'lucide-react'
 
-import ecosystemImg from '../assets/client/Discussing People-Powered Tourism framework.png'
+import ecosystemImg from '../assets/client/Traveleye_4pillars.png'
 
 const ecosystemPillars = [
 	{
@@ -73,34 +73,7 @@ export default function EcosystemSection() {
 							More than a network, it is a shared-value system built on four integrated pillars:
 						</p>
 
-						<div className="mt-6 grid gap-6 sm:grid-cols-2">
-							{ecosystemPillars.map((pillar) => {
-								const Icon = pillar.icon
-
-								return (
-									<article
-										key={pillar.code}
-										className="rounded-xl border border-[#cfe2fb] bg-white px-4 py-3 shadow-[0_1px_6px_rgba(15,23,42,0.08)]"
-									>
-										<div className="flex items-center gap-4">
-											<div
-												className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-lg text-white ${pillar.accent}`}
-											>
-												<Icon className="h-5 w-5" />
-											</div>
-											<div>
-												<p className="text-base font-semibold leading-none text-[#141414]">
-													{pillar.code}
-												</p>
-												<p className="mt-1 text-[0.8rem] font-medium leading-snug text-[#6f6f6f]">
-													{pillar.title}
-												</p>
-											</div>
-										</div>
-									</article>
-								)
-							})}
-						</div>
+						{/* pillar cards moved below to span full width */}
 					</div>
 
 					<div className="flex flex-col items-center lg:pt-10">
@@ -119,6 +92,39 @@ export default function EcosystemSection() {
 							Learn About the Ecosystem
 						</button>
 					</div>
+				</div>
+			</div>
+
+			{/* Pillar row — slightly reduced width */}
+			<div className="mt-6">
+				<div className="mx-auto max-w-7xl grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-4 sm:px-6 lg:px-8">
+					{ecosystemPillars.map((pillar) => {
+						const Icon = pillar.icon
+
+						return (
+							<article
+								key={pillar.code}
+								className="rounded-xl border border-[#cfe2fb] bg-white px-4 py-3 shadow-[0_1px_6px_rgba(15,23,42,0.08)]"
+							>
+								<div className="flex items-center gap-4">
+									<div
+										className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-lg text-white ${pillar.accent}`}
+									>
+										<Icon className="h-5 w-5" />
+									</div>
+
+									<div>
+										<p className="text-base font-semibold leading-none text-[#141414]">
+											{pillar.code}
+										</p>
+										<p className="mt-1 text-[0.8rem] font-medium leading-snug text-[#6f6f6f]">
+											{pillar.title}
+										</p>
+									</div>
+								</div>
+							</article>
+						)
+					})}
 				</div>
 			</div>
 		</section>

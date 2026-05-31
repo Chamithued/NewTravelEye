@@ -1,15 +1,11 @@
-export default function PageTemplate({ title, description }) {
+export default function PageTemplate() {
   return (
-    <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.08)] sm:p-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#1f5f8f]">
-          Travel Eye
-        </p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-          {title}
-        </h1>
-        <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
-          {description}
+    <main className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 lg:px-8">
+      <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-10">
+        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#1C4686]">Template</p>
+        <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Page Template</h1>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg">
+          Content for this template will be added later.
         </p>
       </section>
     </main>
