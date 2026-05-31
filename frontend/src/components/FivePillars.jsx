@@ -1,7 +1,7 @@
 import { Leaf, Building2, Compass, MapPinned, BriefcaseBusiness } from 'lucide-react'
 
 import staysImg from '../assets/client/Stays.png'
-import experientialImg from '../assets/client/Experiential Tourism 2.png'
+import experientialImg from '../assets/client/PPES.png'
 import tourOpsImg from '../assets/client/Coastal sunset road trip view.png'
 import supportImg from '../assets/client/Support Services.png'
 import facilitationImg from '../assets/client/At the Traveleye Facilitation Center.png'
@@ -197,7 +197,7 @@ export default function FivePillars() {
           </p>
 
           <p>
-            Guided by five interconnected pillars, our ecosystem brings together local wisdom, entrepreneurship, and innovation to develop inclusive, responsible, and regenerative tourism enterprises across Sri Lanka.
+            Guided by four interconnected pillars, our ecosystem brings together local wisdom, entrepreneurship, and innovation to develop inclusive, responsible, and regenerative tourism enterprises across Sri Lanka.
           </p>
         </div>
 

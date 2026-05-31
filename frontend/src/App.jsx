@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
+import TravelCollective from './pages/TravelCollective'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Experiences from './pages/Experiences'
@@ -13,6 +14,7 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="travel-collective" element={<TravelCollective />} />
         <Route path="stays" element={<Stays />} />
         <Route path="experiences" element={<Experiences />} />
         <Route path="travel" element={<Travel />} />
