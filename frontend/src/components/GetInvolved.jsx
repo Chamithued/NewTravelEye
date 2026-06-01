@@ -1,8 +1,8 @@
 import { Building2, Globe2, Leaf, Users, HeartHandshake } from 'lucide-react'
 
-import coOwnImg from '../assets/client/Join the movement2.png'
-import inboundImg from '../assets/client/Partner with Us for Inbound.png'
-import collaborateImg from '../assets/client/Colleborate with Us.png'
+import coOwnImg from '../assets/client/Be A Co-Owner2.png'
+import inboundImg from '../assets/client/Partner With Us - Inbound1.png'
+import collaborateImg from '../assets/client/Collaborate With Us1.png'
 import purposeImg from '../assets/client/Travelwith Purpose.png'
 import supportLocalImg from '../assets/client/Support Local People & Communities.png'
 import movementImg from '../assets/client/Join the movement2.png'
@@ -16,7 +16,7 @@ const cards = [
     image: coOwnImg,
   },
   {
-    title: 'Partner With Us (Inbound)',
+    title: 'Partner With Us',
     subtitle: 'Access tailor-made journeys, luxury travel programs, and MICE opportunities in Sri Lanka.',
     icon: Globe2,
     accent: '#0ea5a4',
@@ -103,7 +103,7 @@ export default function GetInvolved() {
 
           <h2 className="text-3xl font-semibold text-[#172544] sm:text-4xl lg:text-5xl">Every Journey Matters</h2>
           <p className="mt-4 mx-auto max-w-3xl text-center text-base font-medium text-[#40566a]">
-            Tourism is more than where you go — it's about the impact you create and the people you empower. Traveleye Alliance's People-Powered Tourism Ecosystem exists for People, Planet, and Prosperity.
+            Tourism is more than where you go, it's about the impact you create and the people you empower. Traveleye Alliance's People-Powered Tourism Ecosystem exists for People, Planet, and Prosperity.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function GetInvolved() {
         </div>
 
         <div className="mt-8 text-center">
-          <p className="italic font-bold text-lg sm:text-xl text-[#1f4a78]">“Join the People-Powered Tourism Movement — where every action creates impact.”</p>
+          <p className="italic font-bold text-lg sm:text-xl text-[#1f4a78]">“Join the People-Powered Tourism Movement - Where Every Action Creates Impact.”</p>
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import { Leaf, Building2, Compass, MapPinned, BriefcaseBusiness } from 'lucide-react'
 
-import staysImg from '../assets/client/Stays.png'
+import staysImg from '../assets/client/Stays_brightened.png'
 import experientialImg from '../assets/client/PPES.png'
-import tourOpsImg from '../assets/client/Coastal sunset road trip view.png'
+import tourOpsImg from '../assets/client/TC.png'
 import supportImg from '../assets/client/Support Services.png'
 import facilitationImg from '../assets/client/At the Traveleye Facilitation Center.png'
 
@@ -82,7 +82,7 @@ function PillarCard({ pillar }) {
     <article className="relative h-[520px] overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)]">
       <img src={pillar.image} alt={pillar.title} className="absolute inset-0 h-full w-full object-cover" />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/30 to-transparent p-6 md:p-8 flex flex-col justify-between">
+      <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between">
         <div className="flex items-start justify-between">
           <div className="inline-flex flex-col items-start gap-3">
             <div className={`flex h-12 w-12 items-center justify-center rounded-lg text-white ${pillar.accent}`}>
@@ -187,13 +187,13 @@ export default function FivePillars() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-5xl text-center text-[1.02rem] leading-7 text-[#6b7894] sm:text-[1.05rem] sm:leading-8 px-4">
+        <div className="mx-auto max-w-5xl text-center text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8 px-4">
           <p className="mb-6 font-semibold text-[#626D84]">
             Traveleye Alliance connects people, places, and purpose through four integrated pillars that power Sri Lanka’s first People-Powered Tourism Ecosystem.
           </p>
 
           <p className="mb-6">
-            Built on a people-powered philosophy, Traveleye Alliance enables tourism to be co-owned, co-created, and co-managed by local people, communities, experts, and youth entrepreneurs — creating lasting value for people, culture, and destinations.
+            Built on a people-powered philosophy, Traveleye Alliance enables tourism to be co-owned, co-created, and co-managed by local people, communities, experts, women and youth entrepreneurs, creating lasting value for people, culture, and destinations.
           </p>
 
           <p>

@@ -328,9 +328,9 @@ export default function TravelCollective() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 justify-items-center md:grid-cols-3 md:gap-6">
-              <Link to="/experiences" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore Destination Facilitation</Link>
+              <Link to="/destination-facilitation" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore Destination Facilitation</Link>
               <Link to="/" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Discover the People-Powered Tourism Framework</Link>
-              <Link to="/travel" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore the Traveleye Ecosystem</Link>
+              <Link to="/destination-facilitation" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore the Traveleye Ecosystem</Link>
             </div>
           </div>
         </div>

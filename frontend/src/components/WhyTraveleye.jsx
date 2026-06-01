@@ -12,7 +12,7 @@ const reasons = [
     icon: Leaf,
     title: 'People-Powered',
     description:
-      'Co-owned, co-created, and co-managed by local people, communities, youth entrepreneurs, and experts.',
+      'Co-owned, co-created, and co-managed by local people, communities, women, youth entrepreneurs, and experts.',
     iconBg: 'bg-emerald-500',
   },
   {

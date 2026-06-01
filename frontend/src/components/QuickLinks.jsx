@@ -1,5 +1,5 @@
 import staysImg from '../assets/client/Stays.png'
-import experiencesImg from '../assets/client/Explore People Pwered Travel Experiences.png'
+import experiencesImg from '../assets/client/Travelex.png'
 import journeyImg from '../assets/client/Plan Your Sri Lanka Journey.png'
 import luxuryImg from '../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg'
 import supportImg from '../assets/client/Support Services.png'
@@ -24,7 +24,7 @@ const quickLinksData = [
     id: 2,
     title: 'Plan Your Sri Lanka Journey (Inbound)',
     image: journeyImg,
-    link: '/travel',
+    link: '/destination-facilitation',
   },
   {
     id: 3,
@@ -40,21 +40,21 @@ const quickLinksData = [
   // },
   {
     id: 4,
-    title: 'Plan Your Event or Celebration in Sri Lanka',
+    title: 'Plan Your Celebration or Event in Sri Lanka',
     image: weddingImg,
     link: '/experiences',
   },
     {
     id: 5,
-      title: 'Discover Sri Lanka Your Way (Domestic - Sri Lankans)',
-      image: domesticImg,
-      link: '/travel',
+      title: 'Discover Sri Lanka Your Way\n(Domestic - Sri Lankans)',
+    image: domesticImg,
+    link: '/destination-facilitation',
   },
   {
     id: 6,
       title: 'Explore the World with Traveleye (Outbound - Sri Lankans)',
       image: outboundImg,
-      link: '/travel',
+      link: '/destination-facilitation',
   },
 ]
 
@@ -82,7 +82,7 @@ export default function QuickLinks() {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-[#0f2a55]/18 via-[#0f2a55]/10 to-[#0f2a55]/28"></div>
               <div className="absolute inset-0 flex items-end justify-center p-6 text-center">
-                <h3 className="text-white text-sm sm:text-base font-semibold leading-tight">
+                <h3 className="text-white text-sm sm:text-base font-semibold leading-tight whitespace-pre-line">
                   {link.title}
                 </h3>
               </div>

@@ -7,7 +7,7 @@ import Contact from './pages/Contact'
 import Experiences from './pages/Experiences'
 import SupportServices from './pages/SupportServices'
 import Stays from './pages/Stays'
-import Travel from './pages/Travel'
+import DestinationFacilitation from './pages/DestinationFacilitation'
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="travel-collective" element={<TravelCollective />} />
         <Route path="stays" element={<Stays />} />
         <Route path="experiences" element={<Experiences />} />
-        <Route path="travel" element={<Travel />} />
+        <Route path="destination-facilitation" element={<DestinationFacilitation />} />
         <Route path="support-services" element={<SupportServices />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
