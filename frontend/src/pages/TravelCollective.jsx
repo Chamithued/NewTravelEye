@@ -87,26 +87,47 @@ export default function TravelCollective() {
           <div className="absolute inset-0 bg-black/28" />
         </div>
 
-        <div className="relative z-10 flex w-full items-center justify-center px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-          <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-3xl text-center font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl">
-            TRAVEL COLLECTIVE
+        <div className="relative z-10 flex w-full items-center justify-center px-4 pt-16 pb-10 sm:px-6 sm:pt-20 sm:pb-12 lg:px-8 lg:pt-24">
+          <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl text-center font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
+            <span className="block">TRAVELEYE</span>
+            <span className="block">TRAVEL COLLECTIVE</span>
           </h1>
+        </div>
+      </section>
+
+      {/* Section 1: Our Travel Engagements */}
+      <section className="w-full bg-white px-4 pt-10 pb-6 sm:px-6 sm:pt-14 sm:pb-8 lg:px-8 lg:pt-16 lg:pb-10">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 mx-auto max-w-3xl text-center">
+            <h2 className="mt-0 flex items-center justify-center w-full gap-3 text-xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-3xl">
+              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#DFE7F3] text-lg">🌍</span>
+              <span>Our Travel Engagements</span>
+            </h2>
+            <div className="mt-3 h-0.5 w-24 bg-[#c28a5b] rounded mx-auto" />
+
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {engagementCards.map((card) => {
+              const isKey = /Inbound|Outbound|Local|Events/i.test(card.title)
+              return (
+                <article key={card.title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
+                  <h3 className={`mt-3 text-xl font-bold tracking-tight sm:text-2xl ${isKey ? 'text-black' : 'text-[#0f4d2f]'}`}>{card.title}</h3>
+                  <p className={`text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1F4F93] sm:text-xs sm:font-bold ${isKey ? 'mt-4' : ''}`}>{card.subtitle}</p>
+                  <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{card.text}</p>
+                </article>
+              )
+            })}
+          </div>
         </div>
       </section>
 
       <section className="relative overflow-hidden bg-white text-slate-900">
         <div className="absolute inset-0 bg-transparent" />
-        <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 pt-6 pb-16 sm:px-6 sm:pt-8 sm:pb-20 lg:px-8 lg:pt-10 lg:pb-24">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="mt-0 flex items-center justify-center w-full gap-3 text-xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-3xl">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#DFE7F3] text-lg">🌏</span>
-              <span>Traveleye Travel Collective</span>
-            </h2>
+            <h2 className="mt-0 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">Travel Within the Traveleye Ecosystem</h2>
             <div className="mt-3 h-0.5 w-24 bg-[#c28a5b] rounded mx-auto" />
-            <h2 className="mt-4 text-lg font-bold tracking-tight sm:text-xl">
-              Journeys Connected Through People
-            </h2>
-            <h2 className="mt-5 text-lg font-semibold text-slate-800 sm:text-xl">Travel Within the Traveleye Ecosystem</h2>
 
             <p className="mt-4 max-w-5xl mx-auto text-center text-sm leading-7 text-slate-700 sm:text-lg">
               At Traveleye, travel is approached as more than transportation, bookings, or movement
@@ -179,33 +200,6 @@ export default function TravelCollective() {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Our Travel Engagements */}
-      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-8 mx-auto max-w-3xl text-center">
-            <h2 className="mt-0 flex items-center justify-center w-full gap-3 text-xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-3xl">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#DFE7F3] text-lg">🌍</span>
-              <span>Our Travel Engagements</span>
-            </h2>
-            <div className="mt-3 h-0.5 w-24 bg-[#c28a5b] rounded mx-auto" />
-
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {engagementCards.map((card) => {
-              const isKey = /Inbound|Outbound|Local|Events/i.test(card.title)
-              return (
-                <article key={card.title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
-                  <h3 className={`mt-3 text-xl font-bold tracking-tight sm:text-2xl ${isKey ? 'text-black' : 'text-[#0f4d2f]'}`}>{card.title}</h3>
-                  <p className={`text-[11px] font-semibold uppercase tracking-[0.18em] text-[#1F4F93] sm:text-xs sm:font-bold ${isKey ? 'mt-4' : ''}`}>{card.subtitle}</p>
-                  <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{card.text}</p>
-                </article>
-              )
-            })}
           </div>
         </div>
       </section>
