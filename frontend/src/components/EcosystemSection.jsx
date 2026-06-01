@@ -10,6 +10,13 @@ import ecosystemImg from '../assets/client/Traveleye_4pillars.png'
 
 const ecosystemPillars = [
 	{
+		code: 'PPTC',
+		title: 'People-Powered Travel Collective',
+		icon: Compass,
+		accent: 'bg-amber-500',
+		//accent: 'bg-blue-800',
+	},
+	{
 		code: 'PPHE',
 		title: ' People-Powered Host Experiences',
 		icon: Building2,
@@ -20,13 +27,6 @@ const ecosystemPillars = [
 		title: 'People-Powered Ecosystem Support',
 		icon: Leaf,
 		accent: 'bg-emerald-500',
-	},
-	{
-		code: 'PPTC',
-		title: 'People-Powered Travel Collective',
-		icon: Compass,
-		accent: 'bg-amber-500',
-		//accent: 'bg-blue-800',
 	},
 	// {
 	// 	code: 'PPSS',
@@ -59,12 +59,12 @@ export default function EcosystemSection() {
 						<div className="mt-6 max-w-3xl space-y-5 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
 							<p>
 								At the heart of Traveleye Alliance is a people-powered tourism ecosystem where
-								local people, communities, youth entrepreneurs, and experts co-own, co-create,
+								local people, communities, women, youth entrepreneurs, and experts co-own, co-create,
 								and co-manage micro and small scale tourism enterprises.
 							</p>
 							<p>
 								Guided by our People-Powered Tourism (PPT) Model and four integrated pillars,
-								every journey is designed to strengthen people, culture, and destinations —
+								every journey is designed to strengthen people, culture, and destinations,
 								ensuring tourism gives back more than it takes.
 							</p>
 						</div>

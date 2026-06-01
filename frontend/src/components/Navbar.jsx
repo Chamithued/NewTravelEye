@@ -5,7 +5,7 @@ import logo from '../assets/client/Traveleyelogo.jpg'
 const navItems = [
   { top: 'Travel', bottom: 'Collective', to: '/travel-collective' },
   { top: 'Host', bottom: 'Experiences', to: '/experiences' },
-  { top: 'Destination', bottom: 'Facilitation', to: '/travel' },
+  { top: 'Destination', bottom: 'Facilitation', to: '/destination-facilitation' },
   { top: 'Ecosystem', bottom: 'Support', to: '/support-services' },
   { top: 'Privé', bottom: 'Collection', to: '/stays' },
 ]

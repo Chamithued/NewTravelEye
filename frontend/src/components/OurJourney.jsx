@@ -35,7 +35,7 @@ const journeyItems = [
       </>,
       <>
         These people-powered ventures <strong>co-owned and co-created</strong> with local people,
-        communities, experts, and youth entrepreneurs enable authentic experiences that
+        communities, experts, women and youth entrepreneurs enable authentic experiences that
         <strong> enrich lives, protect cultural heritage, and strengthen local livelihoods.</strong>
       </>,
     ],
@@ -171,7 +171,7 @@ export default function OurJourney() {
               leadership, and regenerative impact.
             </p>
             <p>
-              Today, we bring together communities, youth entrepreneurs, experience creators,
+              Today, we bring together communities, women, youth entrepreneurs, experience creators,
               partners, and travelers to co-create tourism that is authentic, inclusive, and
               people-powered.
             </p>

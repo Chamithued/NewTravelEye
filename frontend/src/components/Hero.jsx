@@ -1,4 +1,5 @@
-import heroImg from "../assets/client/newHomepage_banner.png"
+// import heroImg from "../assets/client/newHomepage_banner.png"
+import heroImg from "../assets/client/lasthero.png"
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex min-h-screen w-full items-center justify-center px-4 pt-0 pb-16 sm:pb-20">
-      <div id="hero-content" className="text-center text-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-24 sm:pt-36 lg:pt-56 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-20">
+      <div id="hero-content" className="text-center text-white max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 pt-24 sm:pt-36 lg:pt-56 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-20">
         {/* <div className="mb-5 inline-flex rounded-full bg-[rgba(53,82,127,0.82)] px-4 py-2 shadow-lg">
           <p className="text-sm font-semibold">Tourism for People, Planet, and Prosperity</p>
         </div> */}
@@ -26,11 +27,11 @@ export default function Hero() {
           Building a People-Powered Tourism Ecosystem for Sri Lanka
         </p>
 
-        <p className="text-base sm:text-lg max-w-full mx-auto mb-1 leading-relaxed">
-          Co-created with local people — strengthening tourism enterprises, destinations, and value chains nationwide.
+        <p className="text-base sm:text-lg max-w-5xl mx-auto mb-1 whitespace-nowrap leading-relaxed">
+          Co-created with local people, strengthening tourism enterprises, destinations, and value chains nationwide.
         </p>
 
-        <p className="text-sm sm:text-base font-semibold text-white/90 max-w-2xl mx-auto mb-4 leading-snug">
+        <p className="text-sm sm:text-base font-semibold text-white/90 max-w-5xl mx-auto mb-4 leading-snug" style={{ textWrap: 'balance' }}>
           Traveleye builds and stewards a people-powered tourism ecosystem that enables micro and small tourism enterprises across Sri Lanka to become capable, connected, and market-ready co-owners
         </p>
 
@@ -51,5 +52,6 @@ export default function Hero() {
       </div>
       </div>
     </section>
+    
   )
 }
