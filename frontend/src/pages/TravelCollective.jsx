@@ -88,10 +88,15 @@ export default function TravelCollective() {
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pt-16 pb-10 sm:px-6 sm:pt-20 sm:pb-12 lg:px-8 lg:pt-24">
-          <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl text-center font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
-            <span className="block">TRAVELEYE</span>
-            <span className="block">TRAVEL COLLECTIVE</span>
-          </h1>
+          <div className="text-center">
+            <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <span className="block">TRAVELEYE</span>
+              <span className="block">TRAVEL COLLECTIVE</span>
+            </h1>
+            <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
+              Journeys Connected Through People
+            </p>
+          </div>
         </div>
       </section>
 

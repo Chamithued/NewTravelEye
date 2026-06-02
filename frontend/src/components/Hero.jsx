@@ -1,5 +1,5 @@
 // import heroImg from "../assets/client/newHomepage_banner.png"
-import heroImg from "../assets/client/lasthero.png"
+import heroImg from "../assets/client/HeroBanner2_optimized.jpg"
 
 export default function Hero() {
   return (

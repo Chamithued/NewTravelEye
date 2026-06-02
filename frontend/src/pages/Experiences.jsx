@@ -61,7 +61,7 @@ export default function Experiences() {
       </section>
 
       <section className="relative bg-slate-50 py-12">
-        <div className="mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-6">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#214F95]">
               <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🧭</span>
@@ -71,13 +71,13 @@ export default function Experiences() {
           <div className="relative p-8 md:p-12">
             <div className="grid grid-cols-1 gap-8">
               <div>
-                <h4 className="text-lg font-semibold text-[#14334a]">Within the ecosystem:</h4>
-                <h5 className="mt-3 text-xl font-bold text-[#141414]">Traveleye Host Experiences</h5>
-                <p className="mt-3 text-sm text-[#475569]">develops and strengthens hosted experiences and people-connected hospitality ecosystems across Sri Lanka.</p>
-                <p className="mt-2 text-sm text-[#475569]">Its role extends beyond offering tourism experiences or accommodation.</p>
-                <p className="mt-4 text-sm text-[#475569]">Host Experiences works together with:</p>
+                <h4 className="text-lg font-semibold text-[#14334a] text-center">Within the ecosystem:</h4>
+                <h5 className="mt-3 text-xl font-bold text-[#141414] text-center">Traveleye Host Experiences</h5>
+                <p className="mt-3 mx-auto max-w-3xl text-sm text-[#475569] text-center">develops and strengthens hosted experiences and people-connected hospitality ecosystems across Sri Lanka.</p>
+                <p className="mt-2 mx-auto max-w-3xl text-sm text-[#475569] text-center">Its role extends beyond offering tourism experiences or accommodation.</p>
+                <p className="hidden">Host Experiences works together with:</p>
 
-                <ul className="mt-4 space-y-3 text-sm text-[#475569]">
+                <ul className="hidden">
                   {[
                     'local hosts and communities',
                     'hospitality ecosystems and providers',
@@ -95,9 +95,8 @@ export default function Experiences() {
 
                       {item === 'tourism stakeholders and ecosystem collaborators' && (
                         <li className="mt-4 list-none">
-                          <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                              <div>
+                          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                              <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
                                 <p className="text-sm text-[#475569]">to help support experiences that remain connected to:</p>
 
                                 <ul className="mt-4 space-y-3 text-sm text-[#475569]">
@@ -110,7 +109,7 @@ export default function Experiences() {
                                 </ul>
                               </div>
 
-                              <div>
+                              <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
                                 <p className="text-sm text-[#475569]">Experiences are thoughtfully integrated with:</p>
 
                                 <ul className="mt-4 space-y-3 text-sm text-[#475569]">
@@ -126,7 +125,6 @@ export default function Experiences() {
                                     </li>
                                   ))}
                                 </ul>
-                              </div>
                             </div>
                           </div>
                         </li>
@@ -134,6 +132,60 @@ export default function Experiences() {
                     </React.Fragment>
                   ))}
                 </ul>
+
+                <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
+                  <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
+                    <p className="text-base font-bold leading-7 text-[#14334a]">Host Experiences works together with:</p>
+
+                    <ul className="mt-4 space-y-3 text-sm text-[#475569]">
+                      {[
+                        'local hosts and communities',
+                        'hospitality ecosystems and providers',
+                        'women and youth entrepreneurs',
+                        'emerging Travelpreneurs',
+                        'cultural practitioners and creators',
+                        'wellness and lifestyle contributors',
+                        'tourism stakeholders and ecosystem collaborators',
+                      ].map((item) => (
+                        <li key={item} className="flex items-start gap-3">
+                          <span className="mt-1 text-green-700">✓</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
+                    <p className="text-base font-bold leading-7 text-[#14334a]">to help support experiences that remain connected to:</p>
+
+                    <ul className="mt-4 space-y-3 text-sm text-[#475569]">
+                      {['real people', 'destination identity', 'local participation', 'hospitality and care', 'everyday ways of life'].map((sub) => (
+                        <li key={sub} className="flex items-start gap-3">
+                          <span className="mt-1 text-green-700">✓</span>
+                          <span>{sub}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
+                    <p className="text-base font-bold leading-7 text-[#14334a]">Experiences are thoughtfully integrated with:</p>
+
+                    <ul className="mt-4 space-y-3 text-sm text-[#475569]">
+                      {[
+                        'journeys and travel coordination',
+                        'hosted stays and hospitality',
+                        'local participation and community engagement',
+                        'culture, nature, and everyday life',
+                      ].map((sub) => (
+                        <li key={sub} className="flex items-start gap-3">
+                          <span className="mt-1 text-green-700">✓</span>
+                          <span>{sub}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               {/* right column removed — content now rendered inline under the specific list item to avoid duplication */}
@@ -179,7 +231,7 @@ export default function Experiences() {
               </ul>
             </div>
 
-            <div className="rounded-lg border-t-4 border-[#4F7B68] bg-white p-8 shadow-sm md:p-10">
+            <div className="rounded-lg border-t-4 border-[#0B3D86] bg-white p-8 shadow-sm md:p-10">
               <h3 className="text-xl font-bold leading-9 text-[#0B3D86]">
                 Hosted stays and hospitality environments may include:
               </h3>
