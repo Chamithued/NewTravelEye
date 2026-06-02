@@ -1,6 +1,6 @@
 import { Leaf, Building2, Compass, MapPinned, BriefcaseBusiness } from 'lucide-react'
 
-import staysImg from '../assets/client/Stays_brightened.png'
+import staysImg from '../assets/client/stays_new.jpg'
 import experientialImg from '../assets/client/PPES.png'
 import tourOpsImg from '../assets/client/TC.png'
 import supportImg from '../assets/client/Support Services.png'
