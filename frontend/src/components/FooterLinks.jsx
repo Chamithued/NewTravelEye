@@ -15,10 +15,11 @@ const menuColumns = [
       {
         heading: 'Explore & Travel',
         items: [
-          'Plan Your Sri Lanka Journey (Inbound)',
-          'Discover Sri Lanka in Ultimate Luxury (Inbound)',
-          'Plan Your Celebration of Event in Sri Lanka',
           'Explore People-Powered Travel Experiences',
+          'Discover the People-Powered Host Stays',
+          'Plan Your Sri Lanka Journey',
+          'Discover Sri Lanka in Ultimate Luxury',
+          'Plan Your Celebration or Event in Sri Lanka',
           'Explore the World with Traveleye (Outbound For Sri Lankans)',
           'Discover Sri Lanka Your Way (Domestic For Sri Lankans)',
         ],
