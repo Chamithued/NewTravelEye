@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
 import { Check, CircleDot, Globe2, Handshake, Leaf, Sprout, UsersRound } from 'lucide-react'
+import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 import heroImg from '../assets/client/SupportServices.png'
 
@@ -73,14 +73,6 @@ const reflectionPillars = [
   'Long-term destination resilience',
 ]
 
-const ecosystemLinks = [
-  { label: 'Discover the People-Powered Tourism Framework', to: '/' },
-  { label: 'Explore Host Experiences', to: '/experiences' },
-  { label: 'Discover the Travel Ecosystem', to: '/travel-collective' },
-  { label: 'Explore Destination Facilitation', to: '/destination-facilitation' },
-  { label: 'Explore the Traveleye Ecosystem', to: '/' },
-]
-
 function SectionHeading({ icon: Icon, title, subtitle }) {
   return (
     <div className="mx-auto max-w-4xl text-center">
@@ -131,9 +123,12 @@ export default function SupportServices() {
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pt-16 pb-10 sm:px-6 sm:pt-20 sm:pb-12 lg:px-8 lg:pt-24">
-          <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-center text-3xl font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl">
-            TRAVELEYE ECOSYSTEM SUPPORT
-          </h1>
+          <div className="text-center">
+            <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <span className="block">TRAVELEYE</span>
+              <span className="block">ECOSYSTEM SUPPORT</span>
+            </h1>
+          </div>
         </div>
       </section>
 
@@ -332,26 +327,7 @@ export default function SupportServices() {
         </div>
       </section>
 
-      <section className="bg-[#1C4686] px-4 pb-16 pt-10 sm:px-6 lg:px-8 lg:pb-20">
-        <div className="mx-auto max-w-6xl rounded-3xl p-5 sm:p-10">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-[#e6f1e6] sm:text-4xl">Explore the Ecosystem</h2>
-          </div>
-
-          <div className="mt-8 grid grid-cols-1 gap-4 justify-items-center md:grid-cols-2 lg:grid-cols-5">
-            {ecosystemLinks.map((item) => (
-              <Link
-                key={item.label}
-                to={item.to}
-                className="inline-flex min-h-20 w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] focus:outline-none focus:ring-2 focus:ring-white/70"
-              >
-                <span>&rarr; {item.label}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <ExploreEcosystem />
       <FooterLinks />
     </main>
   )

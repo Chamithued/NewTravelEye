@@ -1,5 +1,6 @@
 import { Check, Globe2, Leaf, Link as LinkIcon, Sprout } from 'lucide-react'
 import heroImg from '../assets/client/Facilitation4.png'
+import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
 const destinationCharacteristics = [
@@ -96,21 +97,20 @@ const facilitationMatters = [
   },
 ]
 
-const exploreLinks = [
-  'Discover the People-Powered Tourism Framework',
-  'Explore Destination Facilitation',
-  'Discover the Host Ecosystem',
-  'Explore the Travel Ecosystem',
-]
-
 export default function DestinationFacilitation() {
   return (
     <main className="flex flex-col w-full bg-white text-slate-900">
       <section className="relative h-[48vh] w-full overflow-hidden">
         <img src={heroImg} alt="Destination hero" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 flex h-full items-center justify-center">
-          <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="translate-y-4 text-4xl text-center font-extrabold leading-none tracking-tight text-white sm:translate-y-6 sm:text-5xl lg:translate-y-8 lg:text-6xl">DESTINATION FACILITATION</h1>
+        <div className="relative z-10 flex h-full items-center justify-center px-4">
+          <h1
+            style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
+            className="translate-y-4 text-center text-2xl font-extrabold leading-none tracking-tight text-white sm:translate-y-6 sm:text-4xl lg:translate-y-8 lg:text-5xl"
+          >
+            <span className="block">TRAVELEYE</span>
+            <span className="block">DESTINATION FACILITATION</span>
+          </h1>
         </div>
       </section>
 
@@ -405,23 +405,8 @@ export default function DestinationFacilitation() {
         </div>
       </section>
 
-      <section className="w-full bg-[#084869] px-4 py-10 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {exploreLinks.map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="flex min-h-20 items-center justify-center rounded-md border border-white/20 bg-white/10 px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/70"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-        <FooterLinks />
+      <ExploreEcosystem />
+      <FooterLinks />
     </main>
   )
 }

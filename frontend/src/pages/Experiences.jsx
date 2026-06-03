@@ -1,5 +1,6 @@
 import React from 'react'
 import heroImg from '../assets/client/Experiences2.png'
+import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
 export default function Experiences() {
@@ -17,9 +18,12 @@ export default function Experiences() {
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
-          <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-4xl text-center font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl">
-            HOST EXPERIENCES
-          </h1>
+          <div className="text-center">
+            <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <span className="block">TRAVELEYE</span>
+              <span className="block">HOST EXPERIENCES</span>
+            </h1>
+          </div>
         </div>
       </section>
       <section className="relative overflow-hidden bg-white text-slate-900">
@@ -453,33 +457,7 @@ export default function Experiences() {
         </div>
       </section>
 
-      <section className="relative bg-[#123E7D] py-20 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold tracking-tight">
-            Explore Host Experiences
-          </h2>
-
-          <div className="mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              'Explore Hosted Experiences',
-              'Discover the Travel Ecosystem',
-              'Explore Wellness, Nature & Culture Experiences',
-              'Explore Destination Facilitation',
-              'Discover the People-Powered Tourism Framework',
-              'Discover the Traveleye Ecosystem',
-            ].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="flex min-h-24 items-center justify-center rounded-md border border-white/15 bg-white/10 px-6 py-6 text-center text-base font-medium leading-7 text-white transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/70"
-              >
-                <span>→ {item}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <ExploreEcosystem />
       <FooterLinks />
 
     </main>

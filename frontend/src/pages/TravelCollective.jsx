@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
 import heroImg from '../assets/client/Travel3.png'
+import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
 const connectionCards = [
@@ -311,30 +311,7 @@ export default function TravelCollective() {
         </div>
       </section>
 
-      {/* Section 8: Explore the Travel Ecosystem */}
-      <section className="bg-[#1C4686] px-4 pb-16 pt-6 sm:px-6 lg:px-8 lg:pb-20">
-        <div className="mx-auto max-w-6xl rounded-3xl p-5 sm:p-10">
-          <div className="max-w-3xl mx-auto text-center">
-            {/* <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#e6f1e6]">Explore the Travel Ecosystem</p> */}
-            <h2 className="mt-3 text-2xl font-bold tracking-tight text-[#e6f1e6] sm:text-4xl">Explore the Travel Ecosystem</h2>
-          </div>
-
-          <div className="mt-8 space-y-6">
-            <div className="grid grid-cols-1 gap-4 justify-items-center md:grid-cols-3 md:gap-6">
-              <Link to="/travel-collective" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore Traveleye Inbound Journeys</Link>
-              <Link to="/" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Discover Host Experiences</Link>
-              <Link to="/experiences" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore Events & Celebrations</Link>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 justify-items-center md:grid-cols-3 md:gap-6">
-              <Link to="/destination-facilitation" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore Destination Facilitation</Link>
-              <Link to="/" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Discover the People-Powered Tourism Framework</Link>
-              <Link to="/destination-facilitation" className="inline-flex w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10">→ Explore the Traveleye Ecosystem</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <ExploreEcosystem />
       <FooterLinks />
 
     </main>
