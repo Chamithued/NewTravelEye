@@ -130,7 +130,7 @@ export default function PriveCollection() {
             <SectionHeading icon={Handshake} title="An Initiative of Traveleye Alliance Sri Lanka" center={false} />
           </div>
 
-          <div className="rounded-2xl bg-white p-5 shadow-sm sm:p-6">
+          <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Privé Collection Sri Lanka is an initiative of Traveleye Alliance Sri Lanka, a tourism ecosystem developer specializing in People-Powered Tourism and tourism ecosystem development. The collection brings together carefully selected hospitality partners, experience providers, and destination specialists to create refined travel experiences rooted in authenticity, personalization, and meaningful connection.
             </p>

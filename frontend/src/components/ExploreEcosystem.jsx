@@ -32,9 +32,6 @@ export default function ExploreEcosystem({
               to={link.to}
               className="inline-flex min-h-14 w-full max-w-[420px] items-center justify-center rounded-md bg-[#395E96] px-5 py-4 text-center text-sm font-semibold leading-6 text-white transition hover:bg-[#2f4f78] sm:px-10"
             >
-              <span aria-hidden="true" className="mr-2 shrink-0">
-                -&gt;
-              </span>
               <span>{link.label}</span>
             </Link>
           ))}

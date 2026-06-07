@@ -218,7 +218,7 @@ export default function BharatLankaJourneys() {
             <SectionHeading icon={Handshake} title="An Initiative of Traveleye Alliance Sri Lanka" center={false} />
           </div>
 
-          <div className="rounded-2xl bg-white p-5 shadow-sm sm:p-6">
+          <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Bharat Lanka Journeys is an initiative of Traveleye Alliance Sri Lanka, a tourism ecosystem developer specializing in People-Powered Tourism and tourism ecosystem development. The platform is designed to facilitate travel, strengthen tourism connectivity, foster partnerships, and encourage deeper engagement between people, destinations, and tourism stakeholders across India and Sri Lanka.
             </p>

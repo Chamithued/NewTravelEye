@@ -101,7 +101,7 @@ export default function SriLankaJourneys() {
             <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b] lg:mx-0" />
           </div>
 
-          <div className="rounded-2xl bg-white p-5 shadow-sm sm:p-6">
+          <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Sri Lanka is more than a collection of destinations.
             </p>
