@@ -119,7 +119,7 @@ export default function GlobalJourneys() {
             <SectionHeading icon={Users} title="Connecting People Across Continents" center={false} />
           </div>
 
-          <div className="rounded-2xl bg-white p-5 shadow-sm sm:p-6">
+          <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Travel is more than visiting new places.
             </p>

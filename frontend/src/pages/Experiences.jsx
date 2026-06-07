@@ -70,14 +70,15 @@ export default function Experiences() {
               <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🧭</span>
               <span>The Role of Traveleye Host Experiences</span>
             </h2>
+            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
           </div>
           <div className="relative p-8 md:p-12">
             <div className="grid grid-cols-1 gap-8">
               <div>
                 <h4 className="text-lg font-semibold text-[#14334a] text-center">Within the ecosystem:</h4>
                 <h5 className="mt-3 text-xl font-bold text-[#141414] text-center">Traveleye Host Experiences</h5>
-                <p className="mt-3 mx-auto max-w-3xl text-sm text-[#475569] text-center">develops and strengthens hosted experiences and people-connected hospitality ecosystems across Sri Lanka.</p>
-                <p className="mt-2 mx-auto max-w-3xl text-sm text-[#475569] text-center">Its role extends beyond offering tourism experiences or accommodation.</p>
+                <p className="mt-3 mx-auto max-w-3xl text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8 text-center">develops and strengthens hosted experiences and people-connected hospitality ecosystems across Sri Lanka.</p>
+                <p className="mt-2 mx-auto max-w-3xl text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8 text-center">Its role extends beyond offering tourism experiences or accommodation.</p>
                 <p className="hidden">Host Experiences works together with:</p>
 
                 <ul className="hidden">
@@ -140,7 +141,7 @@ export default function Experiences() {
                   <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
                     <p className="text-base font-bold leading-7 text-[#14334a]">Host Experiences works together with:</p>
 
-                    <ul className="mt-4 space-y-3 text-sm text-[#475569]">
+                    <ul className="mt-4 space-y-3 text-base text-[#141414]">
                       {[
                         'local hosts and communities',
                         'hospitality ecosystems and providers',
@@ -150,8 +151,8 @@ export default function Experiences() {
                         'wellness and lifestyle contributors',
                         'tourism stakeholders and ecosystem collaborators',
                       ].map((item) => (
-                        <li key={item} className="flex items-start gap-3">
-                          <span className="mt-1 text-green-700">✓</span>
+                        <li key={item} className="flex items-start gap-4">
+                          <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -161,10 +162,10 @@ export default function Experiences() {
                   <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
                     <p className="text-base font-bold leading-7 text-[#14334a]">to help support experiences that remain connected to:</p>
 
-                    <ul className="mt-4 space-y-3 text-sm text-[#475569]">
+                    <ul className="mt-4 space-y-3 text-base text-[#141414]">
                       {['real people', 'destination identity', 'local participation', 'hospitality and care', 'everyday ways of life'].map((sub) => (
-                        <li key={sub} className="flex items-start gap-3">
-                          <span className="mt-1 text-green-700">✓</span>
+                        <li key={sub} className="flex items-start gap-4">
+                          <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
                           <span>{sub}</span>
                         </li>
                       ))}
@@ -174,15 +175,15 @@ export default function Experiences() {
                   <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
                     <p className="text-base font-bold leading-7 text-[#14334a]">Experiences are thoughtfully integrated with:</p>
 
-                    <ul className="mt-4 space-y-3 text-sm text-[#475569]">
+                    <ul className="mt-4 space-y-3 text-base text-[#141414]">
                       {[
                         'journeys and travel coordination',
                         'hosted stays and hospitality',
                         'local participation and community engagement',
                         'culture, nature, and everyday life',
                       ].map((sub) => (
-                        <li key={sub} className="flex items-start gap-3">
-                          <span className="mt-1 text-green-700">✓</span>
+                        <li key={sub} className="flex items-start gap-4">
+                          <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
                           <span>{sub}</span>
                         </li>
                       ))}
@@ -195,7 +196,7 @@ export default function Experiences() {
             </div>
           </div>
 
-          <p className="mt-6 text-center italic text-sm text-[#6b7280]">This allows tourism experiences to remain grounded in authenticity, stewardship, and meaningful human connection.</p>
+          <p className="mt-6 text-center italic text-base text-[#6b7280]">This allows tourism experiences to remain grounded in authenticity, stewardship, and meaningful human connection.</p>
         </div>
       </section>
 
@@ -208,7 +209,9 @@ export default function Experiences() {
               <span>Hosted Experiences Across Sri Lanka</span>
             </h2>
             <div className="hidden h-px flex-1 bg-slate-300 md:block" />
+            
           </div>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-lg border-t-4 border-[#0B3D86] bg-white p-8 shadow-sm md:p-10">
@@ -273,6 +276,7 @@ export default function Experiences() {
             </h2>
             <div className="hidden h-px flex-1 bg-slate-300 md:block" />
           </div>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
             <div className="rounded-lg border-t-4 border-[#0B3D86] bg-white p-8 shadow-sm md:p-10">
@@ -336,6 +340,7 @@ export default function Experiences() {
             </h2>
             <div className="hidden h-px flex-1 bg-slate-300 md:block" />
           </div>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
           <div className="mx-auto mt-16 max-w-5xl text-center">
             <p className="text-lg text-[#141414]">Host Experiences are shaped through:</p>
@@ -372,8 +377,9 @@ export default function Experiences() {
             </h2>
             <div className="hidden h-px flex-1 bg-slate-300 md:block" />
           </div>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
-          <div className="mt-16 p-8 md:p-12 lg:p-14">
+          <div className="mt-16 p-8 md:p-12 lg:p-14 text-center">
             <p className="text-lg leading-8 text-[#141414]">
               Meaningful experiences shape how destinations are understood and remembered.
             </p>
@@ -382,7 +388,7 @@ export default function Experiences() {
               Thoughtfully developed hosted experiences help encourage tourism systems where:
             </p>
 
-            <ul className="mt-6 space-y-5 text-base text-[#141414]">
+            <ul className="mt-6 space-y-5 text-base text-[#141414] inline-block text-left">
               {[
                 'people remain at the center of tourism',
                 'hospitality becomes more meaningful and human-centered',
@@ -416,6 +422,7 @@ export default function Experiences() {
             </h2>
             <div className="hidden h-px flex-1 bg-slate-300 md:block" />
           </div>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
           <div className="mx-auto mt-16 max-w-6xl text-center">
             <p className="text-lg leading-8 text-[#141414]">

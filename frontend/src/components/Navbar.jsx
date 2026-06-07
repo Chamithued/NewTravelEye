@@ -132,7 +132,7 @@ export default function Navbar() {
                   <ChevronDown />
                 </NavLink>
 
-                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                     {item.items.map((dropdownItem) => (
                       <NavLink
@@ -185,7 +185,7 @@ export default function Navbar() {
                 <ChevronDown />
               </button>
 
-              <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                   {group.items.map((item) => (
                     group.label === 'Our Framework' ? (
