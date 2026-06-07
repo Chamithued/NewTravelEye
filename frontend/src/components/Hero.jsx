@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[calc(100vh+8rem)] w-full overflow-hidden">
       <div id="hero-image" className="absolute inset-0 z-0">
-          <img src={heroImg} alt="Hero background" className="absolute inset-x-0 top-0 w-full h-[calc(100%+8rem)] sm:h-[calc(100%+10rem)] lg:h-[calc(100%+12rem)] object-cover filter brightness-110 contrast-105" style={{ objectPosition: 'left top' }} />
+          <img src={heroImg} alt="Hero background" className="absolute inset-0 h-full w-full object-cover object-top filter brightness-110 contrast-105" />
         <div className="absolute inset-0 bg-black/23" />
       </div>
 

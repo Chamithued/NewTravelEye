@@ -128,6 +128,9 @@ export default function SupportServices() {
               <span className="block">TRAVELEYE</span>
               <span className="block">ECOSYSTEM SUPPORT</span>
             </h1>
+            <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
+              Supporting Tourism Through People
+            </p>
           </div>
         </div>
       </section>
@@ -136,12 +139,9 @@ export default function SupportServices() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="mt-4 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Supporting Tourism Through People
+              Ecosystem Support Within the Traveleye Ecosystem
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-            <p className="mx-auto mt-6 max-w-4xl text-lg font-semibold leading-8 text-[#141414]">
-              Ecosystem Support Within the Traveleye Ecosystem
-            </p>
 
             <p className="mx-auto mt-5 max-w-5xl text-sm font-semibold leading-7 text-slate-700 sm:text-lg sm:leading-8">
               Tourism does not grow through ideas alone.
