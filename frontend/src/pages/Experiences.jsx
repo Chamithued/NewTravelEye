@@ -23,6 +23,7 @@ export default function Experiences() {
               <span className="block">TRAVELEYE</span>
               <span className="block">HOST EXPERIENCES</span>
             </h1>
+            <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">Crafted Through People &amp; Place</p>
           </div>
         </div>
       </section>
@@ -31,15 +32,13 @@ export default function Experiences() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#214F95]">
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent text-xl">🌿</span>
-              <span>Traveleye Host Experiences</span>
+              <span>Host Experiences Within the Traveleye Ecosystem</span>
             </h2>
-            <p className="mt-3 text-lg text-[#2f6b3f]">Crafted Through People &amp; Place</p>
+            <div className="mt-3 h-0.5 w-24 bg-[#c28a5b] rounded mx-auto" />
 
-            <h3 className="mt-6 text-center text-lg font-bold text-[#141414]">Host Experiences Within the Traveleye Ecosystem</h3>
+            <p className="mt-6 text-center max-w-3xl mx-auto text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8">At Traveleye, host experiences are not treated as isolated tourism activities or accommodation alone. They are part of a broader people-powered tourism ecosystem — connecting travelers with communities, culture, hospitality, nature, creativity, and everyday life across Sri Lanka.</p>
 
-            <p className="mt-6 text-center max-w-3xl mx-auto text-base leading-7 text-[#475569]">At Traveleye, host experiences are not treated as isolated tourism activities or accommodation alone. They are part of a broader people-powered tourism ecosystem — connecting travelers with communities, culture, hospitality, nature, creativity, and everyday life across Sri Lanka.</p>
-
-            <p className="mt-6 text-center max-w-3xl mx-auto text-base leading-7 text-[#475569]">Within the ecosystem, Host Experiences acts as the human connection layer between:</p>
+            <p className="mt-6 text-center max-w-3xl mx-auto text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8">Within the ecosystem, Host Experiences acts as the human connection layer between:</p>
           </div>
 
           <div className="mx-auto mt-6">

@@ -64,7 +64,7 @@ export default function QuickLinks() {
       <div className="mx-auto max-w-6xl">
         <div className="flex justify-center mb-12">
           <div className="inline-flex rounded-full bg-blue-100 px-5 py-3">
-            <p className="text-base font-bold text-[#1e40af]">Quick Links</p>
+            <p className="text-base font-bold text-[#1e40af]">Explore Our Platforms</p>
           </div>
         </div>
 

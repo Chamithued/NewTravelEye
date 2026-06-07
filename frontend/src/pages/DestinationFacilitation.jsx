@@ -103,7 +103,7 @@ export default function DestinationFacilitation() {
       <section className="relative h-[48vh] w-full overflow-hidden">
         <img src={heroImg} alt="Destination hero" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 flex h-full items-center justify-center px-4">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
           <h1
             style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
             className="translate-y-4 text-center text-2xl font-extrabold leading-none tracking-tight text-white sm:translate-y-6 sm:text-4xl lg:translate-y-8 lg:text-5xl"
@@ -111,19 +111,16 @@ export default function DestinationFacilitation() {
             <span className="block">TRAVELEYE</span>
             <span className="block">DESTINATION FACILITATION</span>
           </h1>
+          <p className="mt-5 translate-y-4 text-sm font-normal text-white/95 sm:translate-y-6 sm:text-base lg:translate-y-8 lg:text-lg">Destinations Through People &amp; Stewardship</p>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-14 text-slate-900 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl text-center">
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-[#00466f] sm:text-4xl">
-            Destinations Through People &amp; Stewardship
+            Destination Facilitation Within the Traveleye Ecosystem
           </h2>
           <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-
-          <p className="mx-auto mt-8 max-w-6xl text-lg font-semibold leading-8 text-[#141414] sm:text-xl">
-            Destination Facilitation Within the Traveleye Ecosystem
-          </p>
 
           <p className="mx-auto mt-6 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg">
             Tourism does not happen in isolation. It happens within real destinations where people live, work, create, host, and shape everyday life.
