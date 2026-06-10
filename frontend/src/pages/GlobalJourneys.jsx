@@ -69,7 +69,7 @@ export default function GlobalJourneys() {
               <span className="block">GLOBAL JOURNEYS</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Connecting People Across Continents
+              Connecting Sri Lankans Across Continents - ලොව වටා ලොව දකින්න
             </p>
           </div>
         </div>
