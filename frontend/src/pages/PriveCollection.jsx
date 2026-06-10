@@ -96,7 +96,8 @@ export default function PriveCollection() {
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
               className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              <span className="block">Traveleye Privé Collection Sri Lanka</span>
+              <span className="block">TRAVELEYE</span>
+              <span className="block">PRIVE COLLECTION SRI LANKA</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
               Refined Journeys. Meaningful Connections.

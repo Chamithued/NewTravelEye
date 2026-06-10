@@ -8,12 +8,13 @@ const navItems = [
     bottom: 'Collective',
     to: '/travel-collective',
     items: [
-      { label: 'Travel Collective', to: '/travel-collective' },
+      { label: 'About Travel Collective', to: '/travel-collective' },
       { label: 'Traveleye Sri Lanka Journeys', to: '/sri-lanka-journeys' },
       { label: 'Traveleye Privé Collection Sri Lanka', to: '/prive-collection' },
       { label: 'Traveleye Bharat Lanka Journeys', to: '/bharat-lanka-journeys' },
       { label: 'Traveleye Celebrations & Events', to: '/celebrations-events' },
       { label: 'Traveleye Global Journeys', to: '/global-journeys' },
+      { label: 'Traveleye Island Journeys', to: '/island-journeys' },
     ],
   },
   { top: 'Host', bottom: 'Experiences', to: '/experiences' },
@@ -27,17 +28,18 @@ const dropdownGroups = [
     label: 'About Us',
     items: [
       { label: 'About Traveleye Alliance', to: '/about' },
-      { label: 'Vision & Mission', to: '/about' },
-      { label: 'Why Traveleye', to: '/about' },
-      { label: 'Governance & Ethics', to: '/about' },
-      { label: 'Media & Press', to: '/about' },
+      { label: 'Traveleye Our Ecosystem Approach', to: '/our-ecosystem-approach' },
+      { label: 'Vision & Mission', to: '/vision-mission' },
+      { label: 'Why Traveleye', to: '/why-traveleye' },
+      { label: 'Governance & Ethics', to: '/governance-ethics' },
+      { label: 'Media & Press', to: '/media-press' },
     ],
   },
   {
     label: 'Our Framework',
     items: [
-      { label: 'People-Powered Tourism Framework', to: '/travel-collective' },
-      { label: 'Explore the Ecosystem', to: '/travel-collective' },
+      { label: 'People-Powered Tourism Framework', to: '/people-powered-tourism-framework' },
+      { label: 'Explore the Ecosystem', to: '/explore-ecosystem' },
       { label: 'Participation & Shared Stewardship', to: '/travel-collective' },
     ],
   },
@@ -116,21 +118,16 @@ export default function Navbar() {
           {navItems.map((item) => (
             item.items ? (
               <div key={item.top} className="group relative">
-                <NavLink
-                  to={item.to}
-                  className={({ isActive }) =>
-                    [
-                      'inline-flex items-center gap-1 rounded-md px-2 py-2 text-center text-[1rem] font-semibold leading-none tracking-[0.01em] transition-colors',
-                      isActive ? 'text-[#0f3c68]' : 'text-[#174c84] hover:text-[#0f3c68]',
-                    ].join(' ')
-                  }
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-1 rounded-md px-2 py-2 text-center text-[1rem] font-semibold leading-none tracking-[0.01em] text-[#174c84] transition-colors hover:text-[#0f3c68]"
                 >
                   <span className="inline-flex flex-col items-center">
                     <span className="whitespace-nowrap">{item.top}</span>
                     <span className="whitespace-nowrap">{item.bottom}</span>
                   </span>
                   <ChevronDown />
-                </NavLink>
+                </button>
 
                 <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
