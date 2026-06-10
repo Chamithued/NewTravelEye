@@ -185,7 +185,8 @@ export default function BharatLankaJourneys() {
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
               className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              <span className="block">Traveleye Bharat Lanka Journeys</span>
+              <span className="block">TRAVELEYE</span>
+              <span className="block">BHARAT LANKA JOURNEYS</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
               Shared Heritage, Lasting Connections
