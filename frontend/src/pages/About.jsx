@@ -40,6 +40,7 @@ const philosophyCards = [
 ]
 
 const rolePoints = [
+  'As a People-Powered Tourism Ecosystem Builder',
   'Tourism participation',
   'Ecosystem collaboration',
   'Destination engagement',
@@ -111,11 +112,11 @@ export default function About() {
 
       <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading
+          {/* <SectionHeading
             icon={Network}
             title="About Traveleye Alliance"
             subtitle="Tourism for People, Planet, and Prosperity"
-          />
+          /> */}
 
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
             <p>
@@ -199,33 +200,28 @@ export default function About() {
       </section>
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:items-start">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <SectionHeading icon={Handshake} title="Our Role" center={false} />
+        <div className="mx-auto max-w-6xl text-center">
+          <div className="mx-auto max-w-4xl">
+            <SectionHeading icon={Handshake} title="Our Role" />
             <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              As a People-Powered Tourism Ecosystem Builder, Traveleye Alliance works to encourage stronger connections across tourism ecosystems through:
-            </p>
-            <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Through the Traveleye People-Powered Tourism Framework and its interconnected pillars, the organization seeks to contribute to stronger tourism ecosystems that create meaningful opportunities for people while supporting long-term destination wellbeing.
+              <strong className="font-bold text-[#0f4d2f]">As a People-Powered Tourism Ecosystem Builder</strong>, Traveleye Alliance works to encourage stronger connections across tourism ecosystems through:
             </p>
           </div>
 
-          <div className="mx-auto w-full lg:mx-0 lg:flex lg:justify-end">
-            <div className="w-full max-w-md rounded-2xl bg-white p-5 shadow-sm ring-1 ring-[#eef4ef] sm:p-6">
-              <h3 className="text-base font-bold text-[#0f4d2f] sm:text-lg">As a People-Powered Tourism Ecosystem Builder</h3>
+          <ul className="mx-auto mt-8 grid max-w-5xl gap-3 text-center sm:grid-cols-2 lg:grid-cols-3">
+            {rolePoints.map((point) => (
+              <li key={point} className="flex min-h-16 items-center justify-center gap-3 rounded-2xl border border-[#eef4ef] bg-white p-4 text-center shadow-sm">
+                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#ecf8ef] text-[#14532d]">
+                  <Leaf className="h-4 w-4" aria-hidden="true" />
+                </span>
+                <span className="text-sm font-medium leading-6 text-[#234c3a]">{point}</span>
+              </li>
+            ))}
+          </ul>
 
-              <ul className="mt-5 space-y-2 sm:mt-6">
-                {rolePoints.map((point) => (
-                  <li key={point} className="flex items-start gap-3 border-t border-[#eef6f0] pt-4">
-                    <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded bg-[#ecf8ef] text-[#14532d]">
-                      <Leaf className="h-3.5 w-3.5" />
-                    </span>
-                    <span className="text-sm font-medium leading-6 text-[#234c3a]">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <p className="mx-auto mt-8 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Through the Traveleye People-Powered Tourism Framework and its interconnected pillars, the organization seeks to contribute to stronger tourism ecosystems that create meaningful opportunities for people while supporting long-term destination wellbeing.
+          </p>
         </div>
       </section>
 

@@ -30,9 +30,9 @@ const resourceItems = [
   'Approved images and visual resources',
 ]
 
-function SectionHeading({ icon: Icon, title, subtitle }) {
+function SectionHeading({ icon: Icon, title, subtitle, compact = false }) {
   return (
-    <div className="mx-auto mb-8 max-w-3xl text-center">
+    <div className={['mx-auto max-w-3xl text-center', compact ? 'mb-4' : 'mb-8'].join(' ')}>
       <h2 className="mt-0 flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
         <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1C4686]">
           <Icon className="h-5 w-5" />
@@ -105,11 +105,12 @@ export default function MediaPress() {
       </section>
 
       <section className="w-full bg-white px-4 pb-10 sm:px-6 sm:pb-14 lg:px-8 lg:pb-16">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
-          <article className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
+        <div className="mx-auto grid max-w-6xl items-start gap-6 md:grid-cols-2">
+          <article className="self-start rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-6">
             <SectionHeading
               icon={Newspaper}
               title="Press Coverage"
+              compact
               subtitle="Selected media features, interviews, articles, and editorial references related to Traveleye Alliance, its initiatives, partnerships, and ecosystem development activities will be featured here."
             />
             <p className="text-sm leading-7 text-[#55636a] sm:text-base">

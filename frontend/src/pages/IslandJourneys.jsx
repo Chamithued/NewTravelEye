@@ -1,19 +1,34 @@
-import { Compass, Globe2, HeartHandshake, Leaf, MapPinned } from 'lucide-react'
+import {
+  BookOpen,
+  Compass,
+  GraduationCap,
+  Globe2,
+  Heart,
+  HeartHandshake,
+  Landmark,
+  Leaf,
+  MapPinned,
+  Mountain,
+  Plane,
+  Sparkles,
+  TentTree,
+  Users,
+} from 'lucide-react'
 import heroImg from '../assets/client/Discover Sri Lanka - Domestic.png'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
 const experiences = [
-  'Leisure & Holiday Travel',
-  'Weekend Escapes & Getaways',
-  'Pilgrimage & Spiritual Travel',
-  'Nature & Wildlife Experiences',
-  'Cultural & Heritage Travel',
-  'Family & Group Travel',
-  'Educational & Learning Journeys',
-  'Wellness & Lifestyle Travel',
-  'Adventure & Outdoor Experiences',
-  'Special Interest Travel',
+  { label: 'Leisure & Holiday Travel', icon: Plane },
+  { label: 'Weekend Escapes & Getaways', icon: TentTree },
+  { label: 'Pilgrimage & Spiritual Travel', icon: Heart },
+  { label: 'Nature & Wildlife Experiences', icon: Leaf },
+  { label: 'Cultural & Heritage Travel', icon: Landmark },
+  { label: 'Family & Group Travel', icon: Users },
+  { label: 'Educational & Learning Journeys', icon: GraduationCap },
+  { label: 'Wellness & Lifestyle Travel', icon: Sparkles },
+  { label: 'Adventure & Outdoor Experiences', icon: Mountain },
+  { label: 'Special Interest Travel', icon: BookOpen },
 ]
 
 function SectionHeading({ icon: Icon, title, subtitle }) {
@@ -89,12 +104,15 @@ export default function IslandJourneys() {
           <p className="mt-6 text-center text-sm font-semibold text-[#475569] sm:text-base">Experiences may include:</p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {experiences.map((experience) => (
+            {experiences.map(({ label, icon: Icon }) => (
               <div
-                key={experience}
-                className="flex min-h-24 items-center justify-center rounded-2xl border border-[#eef4ef] bg-white p-4 text-center text-sm font-semibold leading-6 text-[#214F95] shadow-sm sm:text-base"
+                key={label}
+                className="flex min-h-28 flex-col items-center justify-center gap-3 rounded-2xl border border-[#eef4ef] bg-white p-4 text-center shadow-sm"
               >
-                {experience}
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
+                </span>
+                <span className="text-sm font-semibold leading-6 text-[#214F95] sm:text-base">{label}</span>
               </div>
             ))}
           </div>

@@ -81,7 +81,7 @@ export default function OurEcosystemApproach() {
         <div className="mx-auto max-w-5xl text-center">
           <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Tourism is more than journeys, accommodation, attractions, or services. It is a living ecosystem where people, destinations, enterprises, experiences, and support systems are interconnected and mutually dependent.</p>
-            <p>At Traveleye Alliance Sri Lanka, we believe tourism becomes stronger when these connections are nurtured through participation, collaboration, stewardship, and shared value creation.</p>
+            <p>At <strong className="font-bold text-[#0f4d2f]">Traveleye Alliance Sri Lanka</strong>, we believe tourism becomes stronger when these connections are nurtured through participation, collaboration, stewardship, and shared value creation.</p>
             <p>Our ecosystem approach recognises that meaningful tourism extends beyond individual businesses or destinations. It is about creating relationships that benefit travellers, local people, tourism enterprises, destinations, and future generations alike.</p>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function OurEcosystemApproach() {
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
             <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              <p>The Traveleye Ecosystem is guided by the Traveleye People-Powered Tourism (PPT) Framework, which promotes participation, stewardship, collaboration, innovation, and long-term value creation across tourism ecosystems.</p>
+              <p>The Traveleye Ecosystem is guided by the <strong className="font-bold text-[#0f4d2f]">Traveleye People-Powered Tourism (PPT) Framework</strong>, which promotes participation, stewardship, collaboration, innovation, and long-term value creation across tourism ecosystems.</p>
               <p>This framework encourages tourism development that is inclusive, destination-aware, and people-centred while remaining responsive to changing visitor expectations and emerging opportunities.</p>
               <p>Rather than viewing tourism as a series of transactions, the framework encourages tourism as a system of relationships that creates value for everyone involved.</p>
             </div>
