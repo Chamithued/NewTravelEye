@@ -1,3 +1,15 @@
+import {
+  Bed,
+  BriefcaseBusiness,
+  Building2,
+  Handshake,
+  Landmark,
+  Network,
+  Store,
+  Users,
+  UserRoundCheck,
+  Waypoints,
+} from 'lucide-react'
 import heroImg from '../assets/client/Travel3.png'
 import FooterLinks from '../components/FooterLinks'
 
@@ -33,16 +45,16 @@ const pillarCards = [
 ]
 
 const participantGroups = [
-  'Tourism enterprises',
-  'Community hosts',
-  'Experience providers',
-  'Accommodation providers',
-  'Women and youth entrepreneurs',
-  'Tourism professionals',
-  'Destination stakeholders',
-  'Institutions and associations',
-  'Support service providers',
-  'Ecosystem partners',
+  { label: 'Tourism enterprises', icon: Store },
+  { label: 'Community hosts', icon: Users },
+  { label: 'Experience providers', icon: Waypoints },
+  { label: 'Accommodation providers', icon: Bed },
+  { label: 'Women and youth entrepreneurs', icon: UserRoundCheck },
+  { label: 'Tourism professionals', icon: BriefcaseBusiness },
+  { label: 'Destination stakeholders', icon: Landmark },
+  { label: 'Institutions and associations', icon: Building2 },
+  { label: 'Support service providers', icon: Handshake },
+  { label: 'Ecosystem partners', icon: Network },
 ]
 
 const sharedValuePoints = [
@@ -69,12 +81,12 @@ export default function ExploreEcosystemPage() {
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
-          <div className="max-w-4xl text-center">
+          <div className="w-full max-w-[96rem] text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-3xl font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="whitespace-nowrap text-[1rem] font-extrabold leading-none tracking-tight text-white sm:text-4xl md:text-5xl xl:text-6xl"
             >
-              Explore the Traveleye Ecosystem
+              EXPLORE THE TRAVELEYE ECOSYSTEM  
             </h1>
             <p className="mt-4 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
               Building Stronger Tourism Through Connected Participation
@@ -156,9 +168,12 @@ export default function ExploreEcosystemPage() {
           </div>
 
           <div className="mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {participantGroups.map((item) => (
-              <div key={item} className="flex min-h-16 items-center justify-center rounded-2xl border border-[#eef4ef] bg-white p-4 text-center text-sm font-medium leading-6 text-[#234c3a] shadow-sm">
-                {item}
+            {participantGroups.map(({ label, icon: Icon }) => (
+              <div key={label} className="flex min-h-28 flex-col items-center justify-center gap-3 rounded-2xl border border-[#eef4ef] bg-white p-4 text-center shadow-sm">
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
+                </span>
+                <span className="text-sm font-medium leading-6 text-[#234c3a]">{label}</span>
               </div>
             ))}
           </div>

@@ -1,3 +1,20 @@
+import {
+  BriefcaseBusiness,
+  Compass,
+  Globe2,
+  Handshake,
+  HeartHandshake,
+  Landmark,
+  Leaf,
+  Lightbulb,
+  Recycle,
+  Scale,
+  ShieldCheck,
+  Sprout,
+  Users,
+  UserRoundCheck,
+  Waypoints,
+} from 'lucide-react'
 import heroImg from '../assets/client/PPT Framework.png'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
@@ -13,22 +30,22 @@ const approachPoints = [
 
 const pillars = [
   {
-    icon: '🌍',
+    icon: Globe2,
     title: 'People-Powered Travel Collective',
     text: 'Supporting meaningful journeys and travel experiences that strengthen connections between travellers, destinations, and tourism ecosystems.',
   },
   {
-    icon: '🌿',
+    icon: Leaf,
     title: 'People-Powered Host Experiences',
     text: 'Encouraging authentic experiences shaped through local people, culture, hospitality, creativity, nature, and place.',
   },
   {
-    icon: '💼',
+    icon: BriefcaseBusiness,
     title: 'People-Powered Ecosystem Support',
     text: 'Strengthening tourism participation, capability, readiness, collaboration, and long-term ecosystem resilience.',
   },
   {
-    icon: '🧭',
+    icon: Compass,
     title: 'People-Powered Destination Facilitation',
     text: 'Supporting destination participation, stewardship, local engagement, and tourism ecosystem development.',
   },
@@ -36,34 +53,42 @@ const pillars = [
 
 const principles = [
   {
+    icon: Landmark,
     title: 'Authenticity',
     text: 'Tourism should remain connected to people, culture, place, and local identity.',
   },
   {
+    icon: Handshake,
     title: 'Participation & Shared Stewardship',
     text: 'Tourism thrives when people participate meaningfully and contribute to long-term destination wellbeing.',
   },
   {
+    icon: UserRoundCheck,
     title: 'Women & Youth Entrepreneurship',
     text: 'Women and youth play an important role as creators, innovators, hosts, facilitators, and future tourism leaders.',
   },
   {
+    icon: Lightbulb,
     title: 'Human-Centred Innovation',
     text: 'Innovation should remain connected to people, destinations, and lived realities.',
   },
   {
+    icon: Scale,
     title: 'Transparency & Shared Value',
     text: 'Tourism should encourage ethical participation, trust, and responsible value creation.',
   },
   {
+    icon: Users,
     title: 'Inclusive Participation',
     text: 'Tourism becomes stronger when opportunities remain accessible and locally connected.',
   },
   {
+    icon: ShieldCheck,
     title: 'Sustainability & Stewardship',
     text: 'Natural, cultural, and social assets should be approached responsibly and thoughtfully.',
   },
   {
+    icon: Sprout,
     title: 'Regenerative Development',
     text: 'Tourism should contribute positively to destinations, communities, and future generations.',
   },
@@ -77,6 +102,17 @@ const developmentPoints = [
   'Environmental awareness and stewardship',
   'Destination resilience and long-term wellbeing',
 ]
+
+function IconBadge({ icon: Icon, size = 'sm', className = '' }) {
+  const dimensions = size === 'lg' ? 'h-11 w-11' : 'h-9 w-9'
+  const iconSize = size === 'lg' ? 'h-5 w-5' : 'h-4 w-4'
+
+  return (
+    <span className={`inline-flex ${dimensions} shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93] ${className}`}>
+      <Icon className={iconSize} aria-hidden="true" />
+    </span>
+  )
+}
 
 export default function PeoplePoweredTourismFramework() {
   return (
@@ -110,7 +146,7 @@ export default function PeoplePoweredTourismFramework() {
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#DFE7F3] text-lg">🌍</span>
+            <IconBadge icon={Recycle} />
             <span>Tourism That Gives Back More Than It Takes</span>
           </h2>
           <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -162,28 +198,23 @@ export default function PeoplePoweredTourismFramework() {
 
       <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
-            <div className="mx-auto max-w-2xl lg:mx-0">
-              <h2 className="mt-6 flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl lg:justify-start">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#DFE7F3] text-lg">🧭</span>
-                <span>Traveleye Alliance Sri Lanka</span>
-              </h2>
-              <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b] lg:mx-0" />
-              <p className="mt-5 text-lg font-bold text-[#0f4d2f]">A People-Powered Tourism Ecosystem Builder</p>
-              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="mt-6 flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+              <IconBadge icon={Compass} />
+              <span>Traveleye Alliance Sri Lanka</span>
+            </h2>
+            <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <p className="mt-5 text-lg font-bold text-[#0f4d2f]">A People-Powered Tourism Ecosystem Builder</p>
+            <div className="mx-auto mt-6 max-w-3xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              <p>
                 The PPT Framework serves as the strategic foundation of the Traveleye ecosystem.
               </p>
-              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              <p>
                 As a People-Powered Tourism Ecosystem Builder, Traveleye Alliance seeks to strengthen tourism through participation, collaboration, stewardship, and ecosystem development.
               </p>
-            </div>
-
-            <div className="mx-auto w-full lg:mx-0 lg:flex lg:justify-end">
-              <div className="w-full max-w-md rounded-2xl bg-white p-5 shadow-sm sm:p-6">
-                <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-                  By helping connect people, destinations, enterprises, experiences, and tourism support systems, Traveleye works to foster tourism ecosystems that are more inclusive, connected, and sustainable over the long term.
-                </p>
-              </div>
+              <p>
+                By helping connect people, destinations, enterprises, experiences, and tourism support systems, Traveleye works to foster tourism ecosystems that are more inclusive, connected, and sustainable over the long term.
+              </p>
             </div>
           </div>
         </div>
@@ -193,7 +224,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#DFE7F3] text-lg">🌿</span>
+              <IconBadge icon={Waypoints} />
               <span>The Four People-Powered Pillars</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -203,11 +234,11 @@ export default function PeoplePoweredTourismFramework() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            {pillars.map((pillar) => (
-              <article key={pillar.title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
-                <div className="text-3xl">{pillar.icon}</div>
-                <h3 className="mt-4 text-xl font-bold tracking-tight text-black sm:text-2xl">{pillar.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{pillar.text}</p>
+            {pillars.map(({ icon: Icon, title, text }) => (
+              <article key={title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
+                <IconBadge icon={Icon} size="lg" className="bg-[#F2F7EF] text-[#0f4d2f]" />
+                <h3 className="mt-4 text-xl font-bold tracking-tight text-black sm:text-2xl">{title}</h3>
+                <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{text}</p>
               </article>
             ))}
           </div>
@@ -218,7 +249,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#ecf8ef] text-3xl">🤝</span>
+              <IconBadge icon={HeartHandshake} size="lg" className="bg-[#ecf8ef] text-[#0f4d2f]" />
               <span>Participation and Shared Stewardship</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
@@ -243,7 +274,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="flex items-center justify-center gap-2 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-transparent text-4xl">🌿</span>
+              <IconBadge icon={Leaf} size="lg" className="bg-transparent" />
               <span>Guiding Principles</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
@@ -253,10 +284,11 @@ export default function PeoplePoweredTourismFramework() {
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {principles.map((principle) => (
-              <article key={principle.title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm">
-                <h3 className="text-base font-bold text-[#0f4d2f]">{principle.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-[#475569]">{principle.text}</p>
+            {principles.map(({ icon: Icon, title, text }) => (
+              <article key={title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm">
+                <IconBadge icon={Icon} size="lg" className="bg-[#F2F7EF] text-[#0f4d2f]" />
+                <h3 className="mt-4 text-base font-bold text-[#0f4d2f]">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#475569]">{text}</p>
               </article>
             ))}
           </div>
@@ -267,7 +299,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-6 max-w-3xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-transparent text-2xl">🌍</span>
+              <IconBadge icon={Globe2} className="bg-transparent" />
               <span>International Alignment & Global Compatibility</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -291,7 +323,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-6 max-w-3xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-transparent text-2xl">🌿</span>
+              <IconBadge icon={Sprout} className="bg-transparent" />
               <span>Contribution to Sustainable Development</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -303,7 +335,9 @@ export default function PeoplePoweredTourismFramework() {
           <ul className="mx-auto mt-6 max-w-3xl divide-y divide-[#eee]">
             {developmentPoints.map((point) => (
               <li key={point} className="flex items-start gap-4 py-4 text-[#234c3a]">
-                <span className="inline-flex h-6 w-6 items-center justify-center text-[#2f6b3f]">🌿</span>
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center text-[#2f6b3f]">
+                  <Leaf className="h-4 w-4" aria-hidden="true" />
+                </span>
                 <span className="text-sm leading-6 sm:text-base">{point}</span>
               </li>
             ))}
@@ -319,7 +353,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-transparent text-2xl">🌿</span>
+              <IconBadge icon={Waypoints} className="bg-transparent" />
               <span>Looking Ahead</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />

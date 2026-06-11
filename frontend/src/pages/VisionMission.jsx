@@ -139,7 +139,7 @@ export default function VisionMission() {
 
       <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Target} title="Our Mission" subtitle="Building Stronger Tourism Ecosystems" />
+          <SectionHeading icon={Target} title="Our Mission" subtitle={<strong className="font-bold text-[#0f4d2f]">Building Stronger Tourism Ecosystems</strong>} />
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             To strengthen tourism through the development of connected, inclusive, and people-powered tourism ecosystems that support meaningful travel experiences, broader participation, destination wellbeing, and long-term resilience.
           </p>

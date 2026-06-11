@@ -149,20 +149,18 @@ export default function GovernanceEthics() {
         </div>
       </section>
 
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-4xl">
-            <SectionHeading icon={Compass} title="Our Approach to Governance" center={false} />
-            <div className="mt-8">
-              <TextCard>
-                <p>Governance is not viewed solely as a matter of compliance or oversight.</p>
-                <p>
-                  It is also about creating environments where participation, trust, accountability, and responsible leadership can support long-term tourism wellbeing.
-                </p>
-                <p>
-                  Through the Traveleye People-Powered Tourism Framework, governance helps ensure that tourism remains connected to people, destinations, culture, stewardship, and shared responsibility.
-                </p>
-              </TextCard>
+          <div className="mx-auto max-w-4xl text-center">
+            <SectionHeading icon={Compass} title="Our Approach to Governance" />
+            <div className="mx-auto mt-8 max-w-3xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              <p>Governance is not viewed solely as a matter of compliance or oversight.</p>
+              <p>
+                It is also about creating environments where participation, trust, accountability, and responsible leadership can support long-term tourism wellbeing.
+              </p>
+              <p>
+                Through the Traveleye People-Powered Tourism Framework, governance helps ensure that tourism remains connected to people, destinations, culture, stewardship, and shared responsibility.
+              </p>
             </div>
           </div>
         </div>
