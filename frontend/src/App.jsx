@@ -3,6 +3,10 @@ import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import TravelCollective from './pages/TravelCollective'
+import PeoplePoweredTravelCollective from './pages/PeoplePoweredTravelCollective'
+import PeoplePoweredHostExperiences from './pages/PeoplePoweredHostExperiences'
+import PeoplePoweredEcosystemSupport from './pages/PeoplePoweredEcosystemSupport'
+import PeoplePoweredDestinationFacilitation from './pages/PeoplePoweredDestinationFacilitation'
 import PeoplePoweredTourismFramework from './pages/PeoplePoweredTourismFramework'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -13,7 +17,9 @@ import DestinationFacilitation from './pages/DestinationFacilitation'
 import SriLankaJourneys from './pages/SriLankaJourneys'
 import IslandJourneys from './pages/IslandJourneys'
 import PriveCollection from './pages/PriveCollection'
+import TravelCorridors from './pages/TravelCorridors'
 import BharatLankaJourneys from './pages/BharatLankaJourneys'
+import SiamLankaJourneys from './pages/SiamLankaJourneys'
 import CelebrationsEvents from './pages/CelebrationsEvents'
 import GlobalJourneys from './pages/GlobalJourneys'
 import ExploreEcosystemPage from './pages/ExploreEcosystemPage'
@@ -31,13 +37,19 @@ function App() {
         <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="travel-collective" element={<TravelCollective />} />
+          <Route path="people-powered-travel-collective" element={<PeoplePoweredTravelCollective />} />
+          <Route path="people-powered-host-experiences" element={<PeoplePoweredHostExperiences />} />
+          <Route path="people-powered-ecosystem-support" element={<PeoplePoweredEcosystemSupport />} />
+          <Route path="people-powered-destination-facilitation" element={<PeoplePoweredDestinationFacilitation />} />
           <Route path="people-powered-tourism-framework" element={<PeoplePoweredTourismFramework />} />
-          <Route path="sri-lanka-journeys" element={<SriLankaJourneys />} />
+          {/* <Route path="sri-lanka-journeys" element={<SriLankaJourneys />} /> */}
           <Route path="island-journeys" element={<IslandJourneys />} />
           <Route path="prive-collection" element={<PriveCollection />} />
+          <Route path="travel-corridors" element={<TravelCorridors />} />
           <Route path="bharat-lanka-journeys" element={<BharatLankaJourneys />} />
-          <Route path="celebrations-events" element={<CelebrationsEvents />} />
-          <Route path="global-journeys" element={<GlobalJourneys />} />
+          <Route path="siam-lanka-journeys" element={<SiamLankaJourneys />} />
+          {/* <Route path="celebrations-events" element={<CelebrationsEvents />} /> */}
+          {/* <Route path="global-journeys" element={<GlobalJourneys />} /> */}
           <Route path="explore-ecosystem" element={<ExploreEcosystemPage />} />
           <Route path="our-ecosystem-approach" element={<OurEcosystemApproach />} />
           <Route path="governance-ethics" element={<GovernanceEthics />} />

@@ -9,11 +9,13 @@ const navItems = [
     to: '/travel-collective',
     items: [
       { label: 'About Travel Collective', to: '/travel-collective' },
-      { label: 'Traveleye Sri Lanka Journeys', to: '/sri-lanka-journeys' },
+      // { label: 'Traveleye Sri Lanka Journeys', to: '/sri-lanka-journeys' },
+      { label: 'Traveleye Travel Corridors', to: '/travel-corridors' },
+      { label: 'Traveleye Bharat Lanka Journeys', to: '/bharat-lanka-journeys', indent: true },
+      { label: 'Traveleye Siam Lanka Journeys', to: '/siam-lanka-journeys', indent: true },
+      // { label: 'Traveleye Celebrations & Events', to: '/celebrations-events' },
+      // { label: 'Traveleye Global Journeys', to: '/global-journeys' },
       { label: 'Traveleye Privé Collection Sri Lanka', to: '/prive-collection' },
-      { label: 'Traveleye Bharat Lanka Journeys', to: '/bharat-lanka-journeys' },
-      { label: 'Traveleye Celebrations & Events', to: '/celebrations-events' },
-      { label: 'Traveleye Global Journeys', to: '/global-journeys' },
       { label: 'Traveleye Island Journeys', to: '/island-journeys' },
     ],
   },
@@ -36,10 +38,16 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Our Framework',
+    label: 'Our Framework & Pillars',
+    top: 'Our Framework',
+    bottom: '& Pillars',
     items: [
       { label: 'People-Powered Tourism Framework', to: '/people-powered-tourism-framework' },
       { label: 'Explore the Ecosystem', to: '/explore-ecosystem' },
+      { label: 'PPTC – People-Powered Travel Collective Pillar', to: '/people-powered-travel-collective' },
+      { label: 'PPHE – People-Powered Host Experiences Pillar', to: '/people-powered-host-experiences' },
+      { label: 'PPES – People-Powered Ecosystem Support Pillar', to: '/people-powered-ecosystem-support' },
+      { label: 'PPDF – People-Powered Destination Facilitation Pillar', to: '/people-powered-destination-facilitation' },
       { label: 'Participation & Shared Stewardship', to: '/travel-collective' },
     ],
   },
@@ -138,6 +146,7 @@ export default function Navbar() {
                         className={({ isActive }) =>
                           [
                             'block rounded-xl px-4 py-3 text-[1rem] font-medium transition-colors',
+                            dropdownItem.indent ? 'ml-4 border-l border-slate-200 pl-5 text-[0.95rem]' : '',
                             isActive
                               ? 'bg-[#1C4686] text-white'
                               : 'text-slate-700 hover:bg-[#1C4686] hover:text-white',
@@ -173,19 +182,26 @@ export default function Navbar() {
                 type="button"
                 className={[
                   'inline-flex items-center gap-1 rounded-md px-2 py-2 text-[1rem] font-semibold tracking-[0.01em] transition-colors',
-                  group.label === 'Our Framework'
+                  group.label === 'Our Framework & Pillars'
                     ? 'text-[#1C4686] hover:text-[#1C4686]'
                     : 'text-[#174c84] hover:text-[#1C4686]',
                 ].join(' ')}
               >
-                <span className="whitespace-nowrap">{group.label}</span>
+                {group.top && group.bottom ? (
+                  <span className="inline-flex flex-col items-center leading-none">
+                    <span className="whitespace-nowrap">{group.top}</span>
+                    <span className="whitespace-nowrap">{group.bottom}</span>
+                  </span>
+                ) : (
+                  <span className="whitespace-nowrap">{group.label}</span>
+                )}
                 <ChevronDown />
               </button>
 
               <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                   {group.items.map((item) => (
-                    group.label === 'Our Framework' ? (
+                    group.label === 'Our Framework & Pillars' ? (
                       <Link
                         key={item.label}
                         to={item.to}
@@ -262,6 +278,7 @@ export default function Navbar() {
                           className={({ isActive }) =>
                             [
                               'block px-3 py-2 text-slate-600 transition-colors hover:text-[#0f3c68]',
+                              dropdownItem.indent ? 'ml-4 border-l border-slate-200 pl-4 text-sm' : '',
                               isActive ? 'font-semibold text-[#0f3c68]' : '',
                             ].join(' ')
                           }
@@ -296,7 +313,14 @@ export default function Navbar() {
                   onClick={() => toggleGroup(group.label)}
                   className="w-full flex items-center justify-between px-2 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 rounded-md transition-colors"
                 >
-                  <span>{group.label}</span>
+                  {group.top && group.bottom ? (
+                    <span className="inline-flex flex-col items-start leading-tight">
+                      <span>{group.top}</span>
+                      <span>{group.bottom}</span>
+                    </span>
+                  ) : (
+                    <span>{group.label}</span>
+                  )}
                   <svg
                     className={`h-4 w-4 transition-transform ${
                       expandedGroups[group.label] ? 'rotate-180' : ''
