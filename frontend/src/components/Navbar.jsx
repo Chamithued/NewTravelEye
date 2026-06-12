@@ -11,8 +11,8 @@ const navItems = [
       { label: 'About Travel Collective', to: '/travel-collective' },
       // { label: 'Traveleye Sri Lanka Journeys', to: '/sri-lanka-journeys' },
       { label: 'Traveleye Travel Corridors', to: '/travel-corridors' },
-      { label: 'Traveleye Bharat Lanka Journeys', to: '/bharat-lanka-journeys', indent: true },
-      { label: 'Traveleye Siam Lanka Journeys', to: '/siam-lanka-journeys', indent: true },
+      { label: 'Traveleye Bharat Lanka Journeys', to: '/bharat-lanka-journeys', indent: true, child: 'first' },
+      { label: 'Traveleye Siam Lanka Journeys', to: '/siam-lanka-journeys', indent: true, child: 'last' },
       // { label: 'Traveleye Celebrations & Events', to: '/celebrations-events' },
       // { label: 'Traveleye Global Journeys', to: '/global-journeys' },
       { label: 'Traveleye Privé Collection Sri Lanka', to: '/prive-collection' },
@@ -146,14 +146,29 @@ export default function Navbar() {
                         className={({ isActive }) =>
                           [
                             'block rounded-xl px-4 py-3 text-[1rem] font-medium transition-colors',
-                            dropdownItem.indent ? 'ml-4 border-l border-slate-200 pl-5 text-[0.95rem]' : '',
+                            dropdownItem.indent ? 'relative ml-4 pl-10 text-[0.95rem]' : '',
                             isActive
                               ? 'bg-[#1C4686] text-white'
                               : 'text-slate-700 hover:bg-[#1C4686] hover:text-white',
                           ].join(' ')
                         }
                       >
-                        {dropdownItem.label}
+                        {dropdownItem.child ? (
+                          <span className="inline-flex items-center gap-2">
+                            <span
+                              aria-hidden="true"
+                              className={[
+                                'pointer-events-none absolute left-5 w-px bg-[#1C4686]',
+                                dropdownItem.child === 'first' ? '-top-3 bottom-0' : 'top-0 bottom-1/2',
+                              ].join(' ')}
+                            />
+                            <span aria-hidden="true" className="pointer-events-none absolute left-5 top-1/2 h-px w-4 -translate-y-1/2 bg-[#1C4686]" />
+                            {/* <span aria-hidden="true" className="relative text-current">↳</span> */}
+                            <span>{dropdownItem.label}</span>
+                          </span>
+                        ) : (
+                          dropdownItem.label
+                        )}
                       </NavLink>
                     ))}
                   </div>
@@ -278,12 +293,27 @@ export default function Navbar() {
                           className={({ isActive }) =>
                             [
                               'block px-3 py-2 text-slate-600 transition-colors hover:text-[#0f3c68]',
-                              dropdownItem.indent ? 'ml-4 border-l border-slate-200 pl-4 text-sm' : '',
+                              dropdownItem.indent ? 'relative ml-4 pl-9 text-sm' : '',
                               isActive ? 'font-semibold text-[#0f3c68]' : '',
                             ].join(' ')
                           }
                         >
-                          {dropdownItem.label}
+                          {dropdownItem.child ? (
+                            <span className="inline-flex items-center gap-2">
+                              <span
+                                aria-hidden="true"
+                                className={[
+                                  'pointer-events-none absolute left-4 w-px bg-[#1C4686]',
+                                  dropdownItem.child === 'first' ? '-top-2 bottom-0' : 'top-0 bottom-1/2',
+                                ].join(' ')}
+                              />
+                              <span aria-hidden="true" className="pointer-events-none absolute left-4 top-1/2 h-px w-4 -translate-y-1/2 bg-[#1C4686]" />
+                              <span aria-hidden="true" className="relative text-current">↳</span>
+                              <span>{dropdownItem.label}</span>
+                            </span>
+                          ) : (
+                            dropdownItem.label
+                          )}
                         </NavLink>
                       ))}
                     </div>
