@@ -1,471 +1,284 @@
-import React from 'react'
-import heroImg from '../assets/client/Experiences2.png'
+import {
+  CircleCheck,
+  Compass,
+  Handshake,
+  Leaf,
+  MapPinned,
+  MessageCircle,
+  Sparkles,
+  Sprout,
+  UsersRound,
+} from 'lucide-react'
+import heroImg from '../assets/client/Explore People Pwered Travel Experiences.png'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
+const collaborationPoints = [
+  'Authentic local participation',
+  'Tourism entrepreneurship',
+  'Cultural appreciation and exchange',
+  'Community engagement',
+  'Destination identity',
+  'Responsible tourism practices',
+  'Women and youth entrepreneurship',
+  'Meaningful visitor experiences',
+  'Long-term destination resilience',
+]
+
+const sharedValuePoints = [
+  'Greater local participation in tourism',
+  'Authentic visitor engagement',
+  'Cultural understanding and appreciation',
+  'Support for local entrepreneurship and creativity',
+  'Stronger destination identity',
+  'Responsible tourism practices',
+  'Shared stewardship',
+  'Long-term value creation for people and place',
+]
+
+const participantPoints = [
+  'local residents',
+  'entrepreneurs',
+  'artists',
+  'craftspeople',
+  'educators',
+  'guides',
+  'wellness practitioners',
+  'farmers',
+  'producers',
+  'community organisations',
+  'tourism enterprises',
+]
+
+function SectionHeading({ icon: Icon, title, center = true }) {
+  return (
+    <div className={center ? 'mx-auto max-w-4xl text-center' : 'max-w-3xl'}>
+      <h2
+        className={[
+          'mt-0 flex gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl',
+          center ? 'items-center justify-center' : 'items-start',
+        ].join(' ')}
+      >
+        {Icon ? (
+          <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+            <Icon className="h-5 w-5" aria-hidden="true" />
+          </span>
+        ) : null}
+        <span>{title}</span>
+      </h2>
+      <div className={['mt-3 h-0.5 w-24 rounded bg-[#c28a5b]', center ? 'mx-auto' : ''].join(' ')} />
+    </div>
+  )
+}
+
+function Pill({ children }) {
+  return (
+    <span className="inline-flex max-w-full items-center justify-center rounded-lg border border-[#D6E8FF] bg-white px-4 py-2 text-center text-xs font-semibold text-[#214F95] shadow-sm sm:px-5 sm:py-3 sm:text-sm">
+      {children}
+    </span>
+  )
+}
+
+function IconCard({ icon: Icon, children }) {
+  return (
+    <div className="flex min-h-24 items-center gap-4 rounded-lg border border-[#eef4ef] bg-white p-4 shadow-sm sm:gap-5 sm:p-5">
+      <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
+        <Icon className="h-5 w-5" aria-hidden="true" />
+      </span>
+      <span className="text-left text-sm font-medium leading-6 text-[#141414] sm:text-base">{children}</span>
+    </div>
+  )
+}
+
 export default function Experiences() {
+  const collaborationIcons = [
+    UsersRound,
+    Compass,
+    Sparkles,
+    Handshake,
+    MapPinned,
+    CircleCheck,
+    Sprout,
+    MessageCircle,
+    Leaf,
+  ]
+
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
-
-      <section className="relative flex items-center min-h-[48vh] w-full overflow-hidden bg-slate-100">
+      <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
-            alt="Host Experiences banner"
-            className="absolute inset-0 w-full h-full object-cover object-center filter brightness-95"
+            alt="Develop a People & Place-Inspired Experience banner"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-90"
           />
-          <div className="absolute inset-0 bg-black/28" />
+          <div className="absolute inset-0 bg-black/34" />
         </div>
 
-        <div className="relative z-10 flex w-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
-              <span className="block">TRAVELEYE</span>
-              <span className="block">HOST EXPERIENCES</span>
+        <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
+          <div className="max-w-5xl text-center">
+            <h1
+              style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
+              className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+              <span className="block">Develop a</span>
+              <span className="block">People &amp; Place-Inspired Experience</span>
             </h1>
-            <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">Crafted Through People &amp; Place</p>
+            <p className="mt-4 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
+              Creating Meaningful Experiences Through People and Place
+            </p>
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden bg-white text-slate-900">
-        <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#214F95]">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent text-xl">🌿</span>
-              <span>Host Experiences Within the Traveleye Ecosystem</span>
-            </h2>
-            <div className="mt-3 h-0.5 w-24 bg-[#c28a5b] rounded mx-auto" />
 
-            <p className="mt-6 text-center max-w-3xl mx-auto text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8">At Traveleye, host experiences are not treated as isolated tourism activities or accommodation alone. They are part of a broader people-powered tourism ecosystem — connecting travelers with communities, culture, hospitality, nature, creativity, and everyday life across Sri Lanka.</p>
-
-            <p className="mt-6 text-center max-w-3xl mx-auto text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8">Within the ecosystem, Host Experiences acts as the human connection layer between:</p>
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl text-center">
+          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+            <p>Every destination has stories waiting to be shared, traditions waiting to be experienced, and people whose knowledge, creativity, and way of life make each place unique.</p>
+            <p>The Traveleye People-Powered Tourism Framework encourages the development of People &amp; Place-Inspired Experiences that celebrate the identity of destinations through local culture, heritage, nature, creativity, hospitality, and meaningful human connection, creating authentic visitor experiences shaped by the people and places that make each destination unique.</p>
+            <p>Whether you are an individual, entrepreneur, artisan, community organisation, educator, guide, farmer, wellness practitioner, or simply someone with a passion for sharing your destination, developing a People &amp; Place-Inspired Experience offers an opportunity to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
           </div>
+        </div>
+      </section>
 
-          <div className="mx-auto mt-6">
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                'travelers and local life',
-                'hosted stays and meaningful experiences',
-                'destinations and lived culture',
-                'tourism and participation',
-                'hospitality and human connection',
-              ].map((chip) => (
-                <div key={chip} className="inline-flex items-center justify-center rounded-full bg-[#E8F1FF] border border-[#D6E8FF] px-6 py-3 text-sm font-semibold text-[#214F95] shadow-sm">
-                  {chip}
-                </div>
+      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={MapPinned} title="Experiences Within the Traveleye Ecosystem" />
+          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            <p>Within the Traveleye ecosystem, experiences are more than tourism activities. They are opportunities to connect travellers with the people, traditions, culture, landscapes, creativity, and everyday life that shape the identity of a destination.</p>
+            <p>Rather than offering standard activities, People &amp; Place-Inspired Experiences encourage authentic engagement that helps travellers discover destinations through meaningful participation, local connection, and shared experiences shaped by people and place.</p>
+            <p className="font-bold text-[#0f4d2f]">Every experience becomes an opportunity to understand a place through the people who live there.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <SectionHeading icon={Sprout} title="Why Develop a People & Place-Inspired Experience?" />
+          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            <p>Developing a People &amp; Place-Inspired Experience creates opportunities to share local knowledge, culture, creativity, traditions, skills, and ways of life while participating in a connected tourism ecosystem that celebrates authentic local identity.</p>
+            <p>The Traveleye approach encourages collaboration, innovation, responsible tourism, and long-term destination stewardship, helping participants create authentic experiences that celebrate the unique identity of their destinations.</p>
+            <p>Experiences become opportunities to inspire learning, cultural exchange, appreciation, and meaningful connection between travellers and local communities.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <SectionHeading icon={UsersRound} title="Who Can Participate?" />
+          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            <p>The Traveleye ecosystem welcomes individuals and organisations interested in developing authentic tourism experiences inspired by the places they represent.</p>
+            <p>Participation may include local residents, entrepreneurs, artists, craftspeople, educators, guides, wellness practitioners, farmers, producers, community organisations, tourism enterprises, and others who wish to share the uniqueness of their destinations through meaningful visitor engagement.</p>
+            <p>Working together through the People-Powered Tourism Framework, participants can explore opportunities to develop People &amp; Place-Inspired Experiences that reflect the people, culture, heritage, nature, creativity, traditions, and identity of their destinations.</p>
+            <p>Each opportunity is explored according to its local context, tourism potential, and the aspirations of participating individuals and communities.</p>
+          </div>
+          {/* <div className="mx-auto mt-8 max-w-3xl rounded-lg border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
+            <div className="flex flex-wrap justify-center gap-3">
+              {participantPoints.map((point) => (
+                <Pill key={point}>{point}</Pill>
               ))}
             </div>
-          </div>
-
-          <div className="mx-auto text-center">
-            <p className="mt-6 max-w-4xl mx-auto text-base leading-7 text-[#475569]">Through this approach, experiences become more than activities and stays become more than accommodation. Together, they create meaningful journeys shaped through people, place, culture, and shared experience.</p>
-          </div>
+          </div> */}
         </div>
       </section>
 
-      <section className="relative bg-slate-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-6">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#214F95]">
-              <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🧭</span>
-              <span>The Role of Traveleye Host Experiences</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Handshake} title="Growing Through Collaboration" />
+          <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Developing a People &amp; Place-Inspired Experience is more than creating a tourism activity. It is an opportunity to become part of a collaborative tourism ecosystem that values participation, stewardship, innovation, and shared growth.
+          </p>
+          <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            The ecosystem seeks to strengthen:
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {collaborationPoints.map((point, index) => {
+              const Icon = collaborationIcons[index]
+              return <IconCard key={point} icon={Icon}>{point}</IconCard>
+            })}
           </div>
-          <div className="relative p-8 md:p-12">
-            <div className="grid grid-cols-1 gap-8">
-              <div>
-                <h4 className="text-lg font-semibold text-[#14334a] text-center">Within the ecosystem:</h4>
-                <h5 className="mt-3 text-xl font-bold text-[#141414] text-center">Traveleye Host Experiences</h5>
-                <p className="mt-3 mx-auto max-w-3xl text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8 text-center">develops and strengthens hosted experiences and people-connected hospitality ecosystems across Sri Lanka.</p>
-                <p className="mt-2 mx-auto max-w-3xl text-[1.15rem] leading-7 text-[#475569] sm:text-[1.2rem] sm:leading-8 text-center">Its role extends beyond offering tourism experiences or accommodation.</p>
-                <p className="hidden">Host Experiences works together with:</p>
 
-                <ul className="hidden">
-                  {[
-                    'local hosts and communities',
-                    'hospitality ecosystems and providers',
-                    'women and youth entrepreneurs',
-                    'emerging Travelpreneurs',
-                    'cultural practitioners and creators',
-                    'wellness and lifestyle contributors',
-                    'tourism stakeholders and ecosystem collaborators',
-                  ].map((item) => (
-                    <React.Fragment key={item}>
-                      <li className="flex items-start gap-3">
-                        <span className="mt-1 text-green-700">✓</span>
-                        <span>{item}</span>
-                      </li>
+          <p className="mx-auto mt-10 max-w-3xl text-center text-lg font-bold text-[#0f4d2f]">
+            By working together, local knowledge and creativity can create greater value for travellers, destinations, and communities alike.
+          </p>
+        </div>
+      </section>
 
-                      {item === 'tourism stakeholders and ecosystem collaborators' && (
-                        <li className="mt-4 list-none">
-                          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                              <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
-                                <p className="text-sm text-[#475569]">to help support experiences that remain connected to:</p>
-
-                                <ul className="mt-4 space-y-3 text-sm text-[#475569]">
-                                  {['real people', 'destination identity', 'local participation', 'hospitality and care', 'everyday ways of life'].map((sub) => (
-                                    <li key={sub} className="flex items-start gap-3">
-                                      <span className="mt-1 text-green-700">✓</span>
-                                      <span>{sub}</span>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-
-                              <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
-                                <p className="text-sm text-[#475569]">Experiences are thoughtfully integrated with:</p>
-
-                                <ul className="mt-4 space-y-3 text-sm text-[#475569]">
-                                  {[
-                                    'journeys and travel coordination',
-                                    'hosted stays and hospitality',
-                                    'local participation and community engagement',
-                                    'culture, nature, and everyday life',
-                                  ].map((sub) => (
-                                    <li key={sub} className="flex items-start gap-3">
-                                      <span className="mt-1 text-green-700">✓</span>
-                                      <span>{sub}</span>
-                                    </li>
-                                  ))}
-                                </ul>
-                            </div>
-                          </div>
-                        </li>
-                      )}
-                    </React.Fragment>
-                  ))}
-                </ul>
-
-                <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
-                  <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
-                    <p className="text-base font-bold leading-7 text-[#14334a]">Host Experiences works together with:</p>
-
-                    <ul className="mt-4 space-y-3 text-base text-[#141414]">
-                      {[
-                        'local hosts and communities',
-                        'hospitality ecosystems and providers',
-                        'women and youth entrepreneurs',
-                        'emerging Travelpreneurs',
-                        'cultural practitioners and creators',
-                        'wellness and lifestyle contributors',
-                        'tourism stakeholders and ecosystem collaborators',
-                      ].map((item) => (
-                        <li key={item} className="flex items-start gap-4">
-                          <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
-                    <p className="text-base font-bold leading-7 text-[#14334a]">to help support experiences that remain connected to:</p>
-
-                    <ul className="mt-4 space-y-3 text-base text-[#141414]">
-                      {['real people', 'destination identity', 'local participation', 'hospitality and care', 'everyday ways of life'].map((sub) => (
-                        <li key={sub} className="flex items-start gap-4">
-                          <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                          <span>{sub}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="rounded-lg bg-[#f8fafb] border-l-4 border-green-700 p-6">
-                    <p className="text-base font-bold leading-7 text-[#14334a]">Experiences are thoughtfully integrated with:</p>
-
-                    <ul className="mt-4 space-y-3 text-base text-[#141414]">
-                      {[
-                        'journeys and travel coordination',
-                        'hosted stays and hospitality',
-                        'local participation and community engagement',
-                        'culture, nature, and everyday life',
-                      ].map((sub) => (
-                        <li key={sub} className="flex items-start gap-4">
-                          <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                          <span>{sub}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Sparkles} title="Creating Shared Value Through Experiences" />
+          <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            People &amp; Place-Inspired Experiences contribute to stronger tourism ecosystems by encouraging:
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {sharedValuePoints.map((point) => (
+              <div key={point} className="flex min-h-28 items-center gap-4 rounded-lg border border-[#eef4ef] bg-white p-4 shadow-sm">
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
+                  <Leaf className="h-5 w-5" aria-hidden="true" />
+                </span>
+                <p className="text-sm font-medium leading-6 text-[#141414]">{point}</p>
               </div>
-
-              {/* right column removed — content now rendered inline under the specific list item to avoid duplication */}
-            </div>
+            ))}
           </div>
-
-          <p className="mt-6 text-center italic text-base text-[#6b7280]">This allows tourism experiences to remain grounded in authenticity, stewardship, and meaningful human connection.</p>
-        </div>
-      </section>
-
-      <section className="relative bg-slate-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-8">
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-            <h2 className="flex shrink-0 items-center justify-center gap-3 text-center text-2xl font-bold leading-tight tracking-tight text-[#0B3D86]">
-              <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🌍</span>
-              <span>Hosted Experiences Across Sri Lanka</span>
-            </h2>
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-            
-          </div>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-
-          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <div className="rounded-lg border-t-4 border-[#0B3D86] bg-white p-8 shadow-sm md:p-10">
-              <h3 className="max-w-xl text-xl font-bold leading-9 text-[#0B3D86]">
-                Host Experiences within the Traveleye ecosystem emerge through:
-              </h3>
-
-              <ul className="mt-8 space-y-5 text-base text-[#141414]">
-                {[
-                  'culture and heritage',
-                  'hospitality and local living',
-                  'food, agriculture, and nature',
-                  'crafts, livelihoods, and local knowledge',
-                  'wellness and spiritual traditions',
-                  'community interaction and shared moments',
-                  'contemporary Sri Lankan lifestyles and evolving destinations',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-4">
-                    <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="rounded-lg border-t-4 border-[#0B3D86] bg-white p-8 shadow-sm md:p-10">
-              <h3 className="text-xl font-bold leading-9 text-[#0B3D86]">
-                Hosted stays and hospitality environments may include:
-              </h3>
-
-              <ul className="mt-8 space-y-5 text-base text-[#141414]">
-                {[
-                  'heritage and community stays',
-                  'nature-connected stays',
-                  'boutique host environments',
-                  'wellness and retreat spaces',
-                  'coastal and lifestyle stays',
-                  'contemporary hospitality experiences',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-4">
-                    <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <p className="mx-auto mt-10 max-w-4xl text-center text-lg leading-8 text-[#141414]">
-            Together, these experiences help travelers engage more deeply with the people, places, and everyday rhythms that shape Sri Lanka.
+          <p className="mx-auto mt-10 max-w-3xl text-center text-lg font-bold text-[#0f4d2f]">
+            When experiences reflect the character of a destination, tourism becomes more meaningful for everyone.
           </p>
         </div>
       </section>
 
-      <section className="relative bg-slate-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-8">
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-            <h2 className="flex shrink-0 items-center justify-center gap-3 text-center text-2xl font-bold leading-tight tracking-tight text-[#0B3D86]">
-              <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🌿</span>
-              <span>A Hospitality &amp; Experience Ecosystem Built Through Participation</span>
-            </h2>
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
+      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Leaf} title="Inspired by Place. Shared by People." />
+          <div className="mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            <p>The Traveleye approach recognises that the most memorable travel experiences often emerge through genuine human connection, local knowledge, creativity, traditions, and everyday life.</p>
+            <p>People &amp; Place-Inspired Experiences encourage local people to share the uniqueness of their destinations in ways that are authentic, engaging, and deeply connected to both people and place.</p>
+            <p className="font-bold text-[#0f4d2f]">Together, we can create experiences that celebrate the diversity, creativity, and living culture of Sri Lanka.</p>
           </div>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-
-          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
-            <div className="rounded-lg border-t-4 border-[#0B3D86] bg-white p-8 shadow-sm md:p-10">
-              <h3 className="text-xl font-bold leading-9 text-[#0B3D86]">
-                As part of its ecosystem-building approach, Traveleye Host Experiences also encourages opportunities for:
-              </h3>
-
-              <ul className="mt-8 space-y-5 text-base text-[#141414]">
-                {[
-                  'local hosts and hospitality providers',
-                  'communities and tourism collaborators',
-                  'women and youth entrepreneurs',
-                  'emerging Travelpreneurs',
-                  'creative and cultural tourism initiatives',
-                  'wellness and lifestyle experiences',
-                  'destination-based hospitality and experience ventures',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-4">
-                    <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="rounded-lg border-t-4 border-[#0B3D86] bg-white p-8 shadow-sm md:p-10">
-              <h3 className="text-xl font-bold leading-9 text-[#0B3D86]">
-                Through collaboration and participation, the ecosystem helps strengthen:
-              </h3>
-
-              <ul className="mt-8 space-y-5 text-base text-[#141414]">
-                {[
-                  'local tourism participation',
-                  'meaningful traveler-host relationships',
-                  'destination identity and continuity',
-                  'responsible tourism growth',
-                  'people-centered hospitality ecosystems',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-4">
-                    <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <p className="mx-auto mt-10 max-w-5xl text-center text-lg font-semibold leading-8 text-[#141414]">
-            Rather than operating through disconnected tourism structures, Host Experiences encourages tourism that remains locally rooted and connected to people and place.
-          </p>
         </div>
       </section>
 
-      <section className="relative bg-slate-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-8">
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-            <h2 className="flex shrink-0 items-center justify-center gap-3 text-center text-2xl font-bold leading-tight tracking-tight text-[#0B3D86]">
-              <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🤝</span>
-              <span>Hospitality Connected to Real Life</span>
-            </h2>
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={MapPinned} title="Looking Ahead" />
+          <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            <p>As the Traveleye ecosystem continues to grow, People &amp; Place-Inspired Experiences will create new opportunities for people and communities to participate in tourism while strengthening destinations and celebrating their unique identity.</p>
+            <p>By developing experiences through people and place, we believe tourism can create lasting value for travellers, communities, destinations, and future generations.</p>
           </div>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+        </div>
+      </section>
 
-          <div className="mx-auto mt-16 max-w-5xl text-center">
-            <p className="text-lg text-[#141414]">Host Experiences are shaped through:</p>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              {[
-                'culture and heritage',
-                'local communities and everyday life',
-                'nature and landscapes',
-                'hospitality and human interaction',
-                'creativity and contemporary lifestyles',
-                'local identity and destination character',
-              ].map((chip) => (
-                <div key={chip} className="inline-flex items-center justify-center rounded-full border border-[#CFE1D6] bg-[#EEF7F1] px-6 py-3 text-base font-semibold text-[#2F6B4B]">
-                  {chip}
-                </div>
-              ))}
-            </div>
-
-            <p className="mx-auto mt-10 max-w-5xl text-lg leading-8 text-[#141414]">
-              This allows travelers to experience destinations not only as visitors —but through genuine engagement with the people and places that shape everyday life across Sri Lanka.
+      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Handshake} title="Begin the Conversation" />
+          <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            <p>Whether you are an entrepreneur, guide, artisan, educator, community organisation, tourism enterprise, wellness practitioner, local resident, or destination stakeholder, we welcome opportunities to explore how you can develop a People &amp; Place-Inspired Experience within the Traveleye People-Powered Tourism Ecosystem.</p>
+            <p>Together, we can create authentic experiences that celebrate people, place, and meaningful connection.</p>
+          </div>
+          <div className="mx-auto mt-8 max-w-2xl rounded-lg border border-[#eef4ef] bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              <span>
+                Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to begin the conversation.
+              </span>
             </p>
           </div>
         </div>
       </section>
 
-      <section className="relative bg-slate-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-8">
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-            <h2 className="flex shrink-0 items-center justify-center gap-3 text-center text-2xl font-bold leading-tight tracking-tight text-[#0B3D86]">
-              <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🌍</span>
-              <span>Why Hosted Experiences Matter</span>
-            </h2>
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-          </div>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-
-          <div className="mt-16 p-8 md:p-12 lg:p-14 text-center">
-            <p className="text-lg leading-8 text-[#141414]">
-              Meaningful experiences shape how destinations are understood and remembered.
-            </p>
-
-            <p className="mt-6 text-lg leading-8 text-[#141414]">
-              Thoughtfully developed hosted experiences help encourage tourism systems where:
-            </p>
-
-            <ul className="mt-6 space-y-5 text-base text-[#141414] inline-block text-left">
-              {[
-                'people remain at the center of tourism',
-                'hospitality becomes more meaningful and human-centered',
-                'culture and knowledge are respected rather than performed',
-                'tourism value remains connected to destinations and communities',
-                'travelers experience deeper connection with place',
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-4">
-                  <span className="mt-0.5 text-lg font-semibold text-green-700">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <div className="mt-12 rounded-r-lg border-l-4 border-[#0B3D86] bg-[#EAF3FF] px-8 py-8">
-              <p className="text-base italic leading-8 text-[#0B3D86]">
-                Because the most meaningful journeys are often shaped not only by where people travel —but by the people who welcome them along the way.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative bg-slate-50 py-12">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-8">
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-            <h2 className="flex shrink-0 items-center justify-center gap-3 text-center text-2xl font-bold leading-tight tracking-tight text-[#0B3D86]">
-              <span className="inline-flex h-8 w-8 items-center justify-center text-xl">🌿</span>
-              <span>Closing Reflection</span>
-            </h2>
-            <div className="hidden h-px flex-1 bg-slate-300 md:block" />
-          </div>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-
-          <div className="mx-auto mt-16 max-w-6xl text-center">
-            <p className="text-lg leading-8 text-[#141414]">
-              Meaningful travel is not created only through sightseeing or accommodation.
-            </p>
-
-            <p className="mt-8 text-lg leading-8 text-[#141414]">
-              It is shaped through:
-            </p>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              {[
-                'hospitality',
-                'connection',
-                'participation',
-                'culture',
-                'shared human experience',
-              ].map((chip) => (
-                <div key={chip} className="inline-flex items-center justify-center rounded-full border border-[#CFE1D6] bg-[#EEF7F1] px-6 py-3 text-base font-semibold text-[#2F6B4B]">
-                  {chip}
-                </div>
-              ))}
-            </div>
-
-            <p className="mx-auto mt-10 max-w-5xl text-lg leading-8 text-[#141414]">
-              Through Traveleye Host Experiences, tourism is approached not simply as tourism consumption, but as a connected ecosystem of hosted experiences, hospitality, culture, and destination life.
-            </p>
-
-            <div className="mx-auto mt-12 max-w-5xl px-8 py-9">
-              <p className="text-base italic leading-8 text-[#0B3D86]">
-                Because the most meaningful experiences are not simply visited.
-              </p>
-              <p className="mt-8 text-base italic leading-8 text-[#0B3D86]">
-                They are shared, felt, and remembered through genuine human connection.
-              </p>
-            </div>
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Sprout} title="Closing Reflection" />
+          <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            <p>The most meaningful travel experiences are often created not by attractions alone, but by the people who share their knowledge, traditions, creativity, and way of life with others.</p>
+            <p>People &amp; Place-Inspired Experiences celebrate the unique identity of destinations through authentic human connection that brings people and place together in meaningful and memorable ways.</p>
+            <p>Because meaningful tourism is not simply about seeing a destination.</p>
+            <p>It is about experiencing the people, stories, traditions, and places that make it truly unforgettable.</p>
           </div>
         </div>
       </section>
 
       <ExploreEcosystem />
       <FooterLinks />
-
     </main>
   )
 }
