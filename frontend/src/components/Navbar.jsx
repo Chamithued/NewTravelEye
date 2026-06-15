@@ -52,12 +52,18 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Opportunities',
+    label: 'Get Involved',
     items: [
-      { label: 'Join the Ecosystem', to: '/contact' },
-      { label: 'Start a Tourism Venture', to: '/contact' },
-      { label: 'Partner With Us', to: '/contact' },
-      { label: 'Investments & Joint Ventures', to: '/contact' },
+      { label: 'How You Can Get Involved', to: '/how-you-can-get-involved' },
+      { label: 'Become a Travel Venture Partner', to: '/become-a-travel-venture-partner' },
+      { label: 'Develop an Ecosystem Support Venture', to: '/develop-an-ecosystem-support-venture' },
+      { label: 'Partner in Destination Development', to: '/partner-in-destination-development' },
+      { label: 'Joint Ventures & Strategic Investments', to: '/joint-ventures-strategic-investments' },
+      { label: 'Collaborate With Us', to: '/collaborate-with-us' },
+      { label: 'Travel With Purpose', to: '/travel-with-purpose' },
+      { label: 'Support People-Powered Tourism', to: '/support-people-powered-tourism' },
+      { label: 'Develop a Place-Inspired Stay', to: '/stays' },
+      { label: 'Develop a People & Place-Inspired Experience', to: '/experiences' },
     ],
   },
 ]

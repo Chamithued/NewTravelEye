@@ -1,7 +1,9 @@
 import {
-  Compass,
-  Crown,
-  HandHeart,
+  BriefcaseBusiness,
+  Globe2,
+  Handshake,
+  HeartHandshake,
+  Home,
   Leaf,
   MapPinned,
   ShieldCheck,
@@ -9,126 +11,68 @@ import {
   Sprout,
   UsersRound,
 } from 'lucide-react'
-import heroImg from '../assets/client/prive.jpg'
+import heroImg from '../assets/client/stays_new.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
-const valuedByTravelers = [
-  'Privacy',
-  'Depth',
-  'Authenticity',
-  'Comfort',
-  'Thoughtful attention to detail',
+const collaborationPoints = [
+  'Authentic local hospitality',
+  'Tourism entrepreneurship',
+  'Community participation',
+  'Destination identity',
+  'Responsible tourism practices',
+  'Women and youth entrepreneurship',
+  'Meaningful visitor experiences',
+  'Long-term destination resilience',
 ]
 
-const integrationPoints = [
-  'Refined travel design',
-  'Carefully selected host environments',
-  'Authentic people-powered experiences',
-  'Private coordination and personalized support',
-  'Seamless destination engagement across Sri Lanka',
+const sharedValuePoints = [
+  'Greater local participation in tourism',
+  'More authentic visitor experiences',
+  'Cultural understanding and exchange',
+  'Support for local entrepreneurship',
+  'Stronger destination identity',
+  'Responsible tourism practices',
+  'Shared stewardship',
+  'Long-term value creation for people and place',
 ]
 
-const approachCards = [
-  {
-    title: 'Personalized Journey Design',
-    subtitle: 'Refined Travel Design',
-    text:
-      'Every Prive journey is individually shaped around the traveler, allowing greater flexibility, privacy, experiential depth, and personal attention.',
-  },
-  {
-    title: 'Selected Host Environments',
-    subtitle: 'Boutique Stays & Heritage Settings',
-    text:
-      'Selected villas, boutique environments, heritage properties, and nature-connected stays are brought together with care and discretion.',
-  },
-  {
-    title: 'Meaningful Experiences',
-    subtitle: 'Rooted in People and Place',
-    text:
-      'Journeys are designed to feel elevated while remaining grounded in local culture, hospitality, destination authenticity, and human connection.',
-  },
-  {
-    title: 'Private Coordination',
-    subtitle: 'Seamless Destination Engagement',
-    text:
-      'Personalized support and trusted local relationships help every journey move with clarity, comfort, and thoughtful attention to detail.',
-  },
-]
-
-const experiencePoints = [
-  'Cultural and heritage immersion',
-  'Wellness and slow travel',
-  'Curated culinary experiences',
-  'Private nature and lifestyle journeys',
-  'Celebration and special-interest travel',
-  'Personalized access and destination engagement',
-]
-
-const connectionPoints = [
-  'Local culture',
-  'People and hospitality',
-  'Destination authenticity',
-  'Meaningful human connection',
-]
-
-const ecosystemPartners = [
-  'Hospitality partners',
-  'Experience specialists',
-  'Destination facilitators',
-  'Travel designers and coordinators',
-  'Local experts and cultural practitioners',
-]
-
-const ecosystemBenefits = [
-  'Deeper destination understanding',
-  'Trusted local relationships',
-  'Seamless coordination',
-  'Refined hospitality ecosystems',
-  'Thoughtful destination engagement',
-]
-
-const luxuryValues = [
-  'Care',
-  'Connection',
-  'Discretion',
-  'Personalization',
-  'Experiential depth',
-]
-
-const whyPoints = [
-  'Refined without becoming disconnected',
-  'Personalized without losing authenticity',
-  'Elevated while remaining grounded in people and place',
-]
-
-function SectionHeading({ icon: Icon, title, subtitle, center = true }) {
+function IconBadge({ icon: Icon }) {
   return (
-    <div className={center ? 'mx-auto max-w-4xl text-center' : 'max-w-2xl'}>
-      <h2
-        className={[
-          'mt-0 flex gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl',
-          center ? 'items-center justify-center' : 'items-start',
-        ].join(' ')}
-      >
-        {Icon ? (
-          <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
-            <Icon className="h-5 w-5" />
-          </span>
-        ) : null}
+    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+      <Icon className="h-5 w-5" aria-hidden="true" />
+    </span>
+  )
+}
+
+function SectionHeading({ icon: Icon, title }) {
+  return (
+    <div className="mx-auto max-w-4xl text-center">
+      <h2 className="mt-0 flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+        {Icon ? <IconBadge icon={Icon} /> : null}
         <span>{title}</span>
       </h2>
-      <div className={['mt-3 h-0.5 w-24 rounded bg-[#c28a5b]', center ? 'mx-auto' : ''].join(' ')} />
-      {subtitle ? <p className="mt-5 text-sm leading-7 text-[#475569] sm:text-base">{subtitle}</p> : null}
+      <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
     </div>
   )
 }
 
-function Pill({ children }) {
+function TextBlock({ children, tone = 'blue' }) {
+  const color = tone === 'green' ? 'text-[#234c3a]' : tone === 'slate' ? 'text-slate-700' : 'text-[#475569]'
+
   return (
-    <span className="inline-flex max-w-full items-center justify-center rounded-full border border-[#D6E8FF] bg-[#E8F1FF] px-4 py-2 text-center text-xs font-semibold text-[#214F95] shadow-sm sm:px-6 sm:py-3 sm:text-sm">
+    <div className={`mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 ${color} sm:text-base sm:leading-8`}>
       {children}
-    </span>
+    </div>
+  )
+}
+
+function ValueCard({ icon: Icon, children }) {
+  return (
+    <div className="flex min-h-24 items-center gap-4 rounded-lg border border-[#eef4ef] bg-white p-4 shadow-sm">
+      <IconBadge icon={Icon} />
+      <p className="text-sm font-medium leading-6 text-[#141414]">{children}</p>
+    </div>
   )
 }
 
@@ -139,226 +83,155 @@ export default function Stays() {
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
-            alt={`Traveleye Priv\u00e9 Collection banner`}
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-90"
+            alt="Develop a Place-Inspired Stay"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
           />
-          <div className="absolute inset-0 bg-black/32" />
+          <div className="absolute inset-0 bg-black/35" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
-          <div className="text-center">
+          <div className="max-w-4xl text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
+              className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
-              <span className="block">TRAVELEYE</span>
-              <span className="block">{'PRIV\u00c9 COLLECTION'}</span>
+              Develop a Place-Inspired Stay
             </h1>
-            <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              The Refined Expression of the Traveleye Ecosystem
+            <p className="mt-4 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
+              Creating Authentic Hospitality Through People and Place
             </p>
           </div>
         </div>
       </section>
 
-      <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
-        <div className="mx-auto max-w-6xl">
-          <SectionHeading
-            icon={Crown}
-            title={`Priv\u00e9 Collection Within the Traveleye Ecosystem`}
-            subtitle={`Traveleye Priv\u00e9 Collection represents the most refined expression of the Traveleye ecosystem, bringing together elevated journeys, carefully selected stays, meaningful experiences, and seamless destination coordination across Sri Lanka.`}
-          />
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {valuedByTravelers.map((item) => (
-              <Pill key={item}>{item}</Pill>
-            ))}
-          </div>
-
-          <div className="mx-auto mt-10 max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg">
-              {'Priv\u00e9 is shaped around personal connection rather than excess. It is not approached '}
-              simply as luxury travel, but as a more refined and deeply personalized way of
-              experiencing destinations, people, culture, and place.
-            </p>
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl text-center">
+          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+            <p>Every destination has its own character, stories, traditions, landscapes, and way of life. The places where travellers stay should reflect that uniqueness.</p>
+            <p>The Traveleye People-Powered Tourism Framework encourages the development of Place-Inspired Stays that celebrate the identity of destinations through local hospitality, culture, heritage, nature, creativity, and meaningful human connection.</p>
+            <p>Whether you are an individual, family, entrepreneur, property owner, or community organisation, developing a Place-Inspired Stay offers an opportunity to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
           </div>
         </div>
       </section>
 
-      <section className="w-full bg-white px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-6 md:grid-cols-2">
-            {approachCards.map((card) => (
-              <article key={card.title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
-                <h3 className="mt-3 text-xl font-bold tracking-tight text-black sm:text-2xl">{card.title}</h3>
-                <p className="mt-4 text-[11px] font-bold uppercase tracking-[0.18em] text-[#1F4F93] sm:text-xs">
-                  {card.subtitle}
-                </p>
-                <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{card.text}</p>
-              </article>
-            ))}
-          </div>
+          <SectionHeading icon={Globe2} title="Hospitality Within the Traveleye Ecosystem" />
+          <TextBlock>
+            <p>Within the Traveleye ecosystem, hospitality is more than providing accommodation. It is an opportunity to introduce travellers to the people, culture, traditions, landscapes, and everyday life that make each destination unique.</p>
+            <p>Rather than focusing only on where travellers sleep, Place-Inspired Stays encourage hospitality experiences that reflect the spirit of a destination while strengthening local participation and long-term destination wellbeing.</p>
+            <p>Every stay becomes an opportunity to experience a place through the people who know it best.</p>
+          </TextBlock>
         </div>
       </section>
 
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
-            <div className="mx-auto max-w-2xl lg:mx-0">
-              <SectionHeading
-                icon={Compass}
-                title={`The Role of Traveleye Priv\u00e9 Collection`}
-                center={false}
-              />
-              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-                {'Priv\u00e9 Collection curates and coordinates high-end journeys through thoughtful '}
-                integration across travel design, hospitality, people-powered experiences, private
-                support, and destination engagement.
-              </p>
-              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-                Rather than focusing only on luxury consumption, the approach emphasizes meaningful
-                destination connection, thoughtful hospitality, cultural sensitivity, discretion, and
-                care-driven personalization.
-              </p>
-            </div>
-
-            <div className="mx-auto w-full lg:mx-0 lg:flex lg:justify-end">
-              <div className="w-full max-w-md rounded-2xl bg-white p-5 shadow-sm sm:p-6">
-                <h3 className="text-base font-bold text-[#0f4d2f] sm:text-lg">
-                  Thoughtfully Integrating:
-                </h3>
-                <ul className="mt-5 space-y-2 sm:mt-6">
-                  {integrationPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-3 border-t border-[#eef6f0] pt-4">
-                      <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded bg-[#ecf8ef] text-[#14532d]">
-                        <Leaf className="h-3.5 w-3.5" />
-                      </span>
-                      <span className="text-sm font-medium leading-6 text-[#234c3a]">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <SectionHeading icon={Sprout} title="Why Develop a Place-Inspired Stay?" />
+          <TextBlock>
+            <p>Developing a Place-Inspired Stay creates opportunities to participate in tourism through authentic hospitality while becoming part of a connected tourism ecosystem.</p>
+            <p>The Traveleye approach encourages collaboration, innovation, responsible tourism, and long-term destination stewardship, helping participants create meaningful hospitality experiences that celebrate the unique identity of their destinations.</p>
+            <p>Hospitality becomes a way of sharing stories, culture, traditions, and local ways of life while creating value for both travellers and host communities.</p>
+          </TextBlock>
         </div>
       </section>
 
-      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-        <div className="mx-auto max-w-6xl">
-          <SectionHeading
-            icon={Sprout}
-            title="Refined Experiences Rooted in Place"
-            subtitle={`Priv\u00e9 Collection brings together selected stays and curated experiences that reflect the character and identity of Sri Lanka.`}
-          />
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <SectionHeading icon={Home} title="Who Can Participate?" />
+          <TextBlock tone="slate">
+            <p>The Traveleye ecosystem welcomes individuals and organisations interested in developing hospitality experiences inspired by the places they represent.</p>
+            <p>Participation may include families, entrepreneurs, property owners, estate owners, hospitality providers, community organisations, and others who share a passion for authentic hospitality and meaningful tourism.</p>
+            <p>Working together through the People-Powered Tourism Framework, participants can explore opportunities to develop Place-Inspired Stays that reflect the unique people, culture, heritage, nature, creativity, and identity of their destinations.</p>
+            <p>Each opportunity is explored according to its local context, tourism potential, and the aspirations of participating hosts and communities.</p>
+          </TextBlock>
+        </div>
+      </section>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 sm:gap-6">
-            {experiencePoints.map((point, index) => {
-              const icons = [MapPinned, Leaf, Sparkles, Compass, HandHeart, ShieldCheck]
+      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Handshake} title="Growing Through Collaboration" />
+          <TextBlock>
+            <p>Developing a Place-Inspired Stay is more than creating a tourism offering. It is an opportunity to become part of a collaborative tourism ecosystem that values participation, stewardship, innovation, and shared growth.</p>
+            <p>The ecosystem seeks to strengthen:</p>
+          </TextBlock>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {collaborationPoints.map((point, index) => {
+              const icons = [HeartHandshake, BriefcaseBusiness, UsersRound, MapPinned, ShieldCheck, Sprout, Sparkles, Leaf]
               const Icon = icons[index]
-              return (
-                <div key={point} className="flex items-center gap-4 rounded-2xl border border-[#eef4ef] bg-white p-4 shadow-sm sm:gap-6 sm:p-5">
-                  <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-[#1f4f93] sm:h-14 sm:w-14">
-                    <Icon className="h-6 w-6" />
-                  </span>
-                  <span className="text-left text-sm font-medium leading-6 text-[#141414] sm:text-base">{point}</span>
-                </div>
-              )
+              return <ValueCard key={point} icon={Icon}>{point}</ValueCard>
             })}
           </div>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {connectionPoints.map((point) => (
-              <Pill key={point}>{point}</Pill>
-            ))}
-          </div>
+          <p className="mx-auto mt-10 max-w-3xl text-center text-lg font-bold text-[#0f4d2f]">
+            By working together, local hospitality can create greater value for travellers, destinations, and communities alike.
+          </p>
         </div>
       </section>
 
-      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 lg:px-8">
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading
-            icon={UsersRound}
-            title="A Connected Luxury Ecosystem"
-            subtitle={`Within the broader Traveleye ecosystem, Priv\u00e9 Collection works with trusted partners and practitioners to keep journeys highly personalized and deeply connected.`}
-          />
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3 sm:gap-4">
-            {ecosystemPartners.map((point) => (
-              <Pill key={point}>{point}</Pill>
+          <SectionHeading icon={Globe2} title="Creating Shared Value Through Hospitality" />
+          <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Place-Inspired Stays contribute to stronger tourism ecosystems by encouraging:
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {sharedValuePoints.map((point) => (
+              <ValueCard key={point} icon={UsersRound}>{point}</ValueCard>
             ))}
           </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
-              <h3 className="text-xl font-bold tracking-tight text-[#1f4f93] sm:text-2xl">Ecosystem Benefits</h3>
-              <ul className="mt-5 divide-y divide-[#eee]">
-                {ecosystemBenefits.map((point) => (
-                  <li key={point} className="flex items-start gap-4 py-3 text-[#234c3a]">
-                    <Leaf className="mt-1 h-4 w-4 shrink-0 text-[#2f6b3f]" />
-                    <span className="text-sm leading-6 sm:text-base">{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
-              <h3 className="text-xl font-bold tracking-tight text-[#1f4f93] sm:text-2xl">Luxury Defined by</h3>
-              <div className="mt-6 flex flex-wrap gap-3">
-                {luxuryValues.map((point) => (
-                  <Pill key={point}>{point}</Pill>
-                ))}
-              </div>
-              <p className="mt-8 text-sm leading-7 text-[#475569] sm:text-base">
-                Luxury here is not defined only by comfort or exclusivity. It is defined by the
-                quality, care, and depth with which each destination is experienced.
-              </p>
-            </div>
-          </div>
+          <p className="mx-auto mt-10 max-w-3xl text-center text-lg font-bold text-[#0f4d2f]">
+            When hospitality reflects the character of a destination, tourism becomes more meaningful for everyone.
+          </p>
         </div>
       </section>
 
-      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-6 mx-auto max-w-3xl text-center">
-            <SectionHeading
-              icon={Sparkles}
-              title={`Why Priv\u00e9 Collection Matters`}
-              subtitle="Meaningful luxury travel is not simply about access. It is about care, connection, authenticity, personalization, and the quality of the experience itself."
-            />
-          </div>
-
-          <ul className="mx-auto mt-6 max-w-3xl divide-y divide-[#eee]">
-            {whyPoints.map((point) => (
-              <li key={point} className="flex items-start gap-4 py-4 text-[#234c3a]">
-                <Leaf className="mt-1 h-4 w-4 shrink-0 text-[#2f6b3f]" />
-                <span className="text-sm leading-6 sm:text-base">{point}</span>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mx-auto mt-8 max-w-3xl">
-            <blockquote className="border-l-4 border-[#234c3a] pl-6 text-base italic text-[#3a4b3b] sm:text-lg">
-              Because true luxury is not only about where you stay or what you see. It is about how
-              deeply a destination is experienced.
-            </blockquote>
-          </div>
+      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Leaf} title="Inspired by Place. Shaped by People." />
+          <TextBlock>
+            <p>The Traveleye approach recognises that the most memorable places to stay are often those that reflect the people, culture, landscapes, traditions, and everyday life of the communities that welcome travellers.</p>
+            <p>Place-Inspired Stays encourage local people to share the uniqueness of their destinations through hospitality that feels authentic, personal, and deeply connected to place.</p>
+            <p>Together, we can create hospitality experiences that celebrate the diversity and richness of Sri Lanka.</p>
+          </TextBlock>
         </div>
       </section>
 
-      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <SectionHeading icon={Leaf} title="Closing Reflection" />
-            <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base">
-              {'Priv\u00e9 Collection is the refined expression of the Traveleye ecosystem, where journeys, '}
-              hospitality, experiences, and destination relationships come together through thoughtful
-              coordination and meaningful human connection.
-            </p>
-            <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base">
-              The most memorable journeys are not defined only by luxury, but by the depth, care,
-              authenticity, and personal connection with which they are experienced.
+      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={MapPinned} title="Looking Ahead" />
+          <TextBlock>
+            <p>As the Traveleye ecosystem continues to grow, Place-Inspired Stays will create new opportunities for people and communities to participate in tourism while strengthening destinations and preserving their unique identity.</p>
+            <p>By developing hospitality through people and place, we believe tourism can create lasting value for travellers, communities, destinations, and future generations.</p>
+          </TextBlock>
+        </div>
+      </section>
+
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Handshake} title="Begin the Conversation" />
+          <TextBlock>
+            <p>Whether you are a family, property owner, entrepreneur, hospitality provider, community organisation, or tourism stakeholder, we welcome opportunities to explore how you can develop a Place-Inspired Stay within the Traveleye People-Powered Tourism Ecosystem.</p>
+            <p>Together, we can create authentic hospitality experiences that celebrate people, place, and meaningful connection.</p>
+          </TextBlock>
+          <div className="mx-auto mt-8 max-w-2xl rounded-lg border border-[#eef4ef] bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              Contact us at<a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a>to begin the conversation.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Sprout} title="Closing Reflection" />
+          <TextBlock>
+            <p>The most memorable places to stay are shaped not only by buildings or facilities, but by the people who welcome us, the stories they share, and the places they call home.</p>
+            <p>Place-Inspired Stays celebrate the unique identity of destinations through authentic hospitality that connects travellers with local people and place.</p>
+            <p>Because meaningful hospitality is not simply about providing a place to stay.</p>
+            <p>It is about creating experiences that reflect the heart, character, and spirit of the places we visit.</p>
+          </TextBlock>
         </div>
       </section>
 

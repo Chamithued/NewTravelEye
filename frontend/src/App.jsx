@@ -28,6 +28,14 @@ import MediaPress from './pages/MediaPress'
 import OurEcosystemApproach from './pages/OurEcosystemApproach'
 import VisionMission from './pages/VisionMission'
 import WhyTraveleyePage from './pages/WhyTraveleyePage'
+import BecomeATravelVenturePartner from './pages/BecomeATravelVenturePartner'
+import DevelopEcosystemSupportVenture from './pages/DevelopEcosystemSupportVenture'
+import PartnerInDestinationDevelopment from './pages/PartnerInDestinationDevelopment'
+import HowYouCanGetInvolved from './pages/HowYouCanGetInvolved'
+import JointVenturesStrategicInvestments from './pages/JointVenturesStrategicInvestments'
+import CollaborateWithUs from './pages/CollaborateWithUs'
+import TravelWithPurpose from './pages/TravelWithPurpose'
+import SupportPeoplePoweredTourism from './pages/SupportPeoplePoweredTourism'
 
 function App() {
   return (
@@ -56,6 +64,14 @@ function App() {
           <Route path="media-press" element={<MediaPress />} />
           <Route path="vision-mission" element={<VisionMission />} />
           <Route path="why-traveleye" element={<WhyTraveleyePage />} />
+          <Route path="how-you-can-get-involved" element={<HowYouCanGetInvolved />} />
+          <Route path="become-a-travel-venture-partner" element={<BecomeATravelVenturePartner />} />
+          <Route path="develop-an-ecosystem-support-venture" element={<DevelopEcosystemSupportVenture />} />
+          <Route path="partner-in-destination-development" element={<PartnerInDestinationDevelopment />} />
+          <Route path="joint-ventures-strategic-investments" element={<JointVenturesStrategicInvestments />} />
+          <Route path="collaborate-with-us" element={<CollaborateWithUs />} />
+          <Route path="travel-with-purpose" element={<TravelWithPurpose />} />
+          <Route path="support-people-powered-tourism" element={<SupportPeoplePoweredTourism />} />
           <Route path="stays" element={<Stays />} />
           <Route path="experiences" element={<Experiences />} />
           <Route path="destination-facilitation" element={<DestinationFacilitation />} />

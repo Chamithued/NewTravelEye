@@ -102,7 +102,7 @@ export default function PeoplePoweredTravelCollective() {
           <SectionHeading icon={Globe2} title="People-Powered Travel Collective (PPTC)" compact />
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Travel is more than movement between destinations. It is an opportunity to connect people, cultures, communities, and places through meaningful journeys that create lasting value for travellers and destinations alike.</p>
-            <p>The People-Powered Travel Collective (PPTC) approaches travel as a connected ecosystem where journeys contribute to stronger tourism experiences, richer cultural understanding, and more resilient destinations through participation, collaboration, stewardship, and shared value creation.</p>
+            <p>The People-Powered Travel Collective (PPTC) pillar approaches travel as a connected ecosystem where journeys contribute to stronger tourism experiences, richer cultural understanding, and more resilient destinations through participation, collaboration, stewardship, and shared value creation.</p>
           </div>
         </div>
       </section>
@@ -122,8 +122,8 @@ export default function PeoplePoweredTravelCollective() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Compass} title="The Role of the People-Powered Travel Collective" />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>The People-Powered Travel Collective strengthens tourism by encouraging journeys that remain connected to people, place, culture, participation, and destination wellbeing.</p>
-            <p>Rather than treating travel as isolated transactions, the Collective promotes a connected approach where journeys contribute to stronger tourism ecosystems and more meaningful relationships between travellers and destinations.</p>
+            <p>The People-Powered Travel Collective pillar strengthens tourism by encouraging journeys that remain connected to people, place, culture, participation, and destination wellbeing.</p>
+            <p>Rather than treating travel as isolated transactions, the pillar promotes a connected approach where journeys contribute to stronger tourism ecosystems and more meaningful relationships between travellers and destinations.</p>
           </div>
         </div>
       </section>
@@ -133,7 +133,7 @@ export default function PeoplePoweredTravelCollective() {
           <SectionHeading icon={UsersRound} title="What Makes Travel Coordination People-Powered?" compact />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Travel coordination becomes people-powered when it places people and destinations at the heart of every journey.</p>
-            <p>The People-Powered Travel Collective encourages travel that is:</p>
+            <p>The People-Powered Travel Collective pillar encourages travel that is:</p>
           </div>
 
           <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -157,7 +157,7 @@ export default function PeoplePoweredTravelCollective() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Our Travel Platforms" compact />
           <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base">
-            The Travel Collective brings together specialised travel platforms that serve different travel aspirations while contributing to a shared vision of People-Powered Tourism.
+            The Travel Collective pillar brings together specialised travel platforms that serve different travel aspirations while contributing to a shared vision of People-Powered Tourism.
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -178,7 +178,7 @@ export default function PeoplePoweredTravelCollective() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Handshake} title="Strengthening Travel Through Participation and Collaboration" />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>The People-Powered Travel Collective encourages collaboration between tourism enterprises, travel partners, entrepreneurs, institutions, destination stakeholders, communities, women, youth entrepreneurs, and ecosystem collaborators.</p>
+            <p>The People-Powered Travel Collective pillar encourages collaboration between tourism enterprises, travel partners, entrepreneurs, institutions, destination stakeholders, communities, women, youth entrepreneurs, and ecosystem collaborators.</p>
             <p>Through participation and collaboration, travel becomes more connected, inclusive, and capable of creating shared value for people, destinations, and tourism ecosystems.</p>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default function PeoplePoweredTravelCollective() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Sprout} title="Guided by Responsibility and Meaningful Connection" />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>The People-Powered Travel Collective recognises that how people travel matters just as much as where they travel.</p>
+            <p>The People-Powered Travel Collective pillar recognises that how people travel matters just as much as where they travel.</p>
             <p>The Collective therefore encourages travel that respects local culture, supports destination wellbeing, values meaningful participation, and contributes positively to people and place through responsible tourism practices and shared stewardship.</p>
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function PeoplePoweredTravelCollective() {
           <SectionHeading icon={Globe2} title="Why the People-Powered Travel Collective Matters" compact />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Tourism becomes stronger when journeys remain connected to destinations, culture, participation, and people.</p>
-            <p>The People-Powered Travel Collective seeks to create tourism that enriches traveller experiences while supporting stronger destinations, deeper cultural understanding, meaningful participation, and long-term tourism resilience.</p>
+            <p>The People-Powered Travel Collective pillar seeks to create tourism that enriches traveller experiences while supporting stronger destinations, deeper cultural understanding, meaningful participation, and long-term tourism resilience.</p>
             <p>The objective is not simply to move travellers between places.</p>
             <p>It is to create journeys that strengthen tourism ecosystems through meaningful connection.</p>
           </div>
@@ -210,7 +210,7 @@ export default function PeoplePoweredTravelCollective() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Building2} title="Looking Ahead" compact />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
-            <p>As tourism continues to evolve, the People-Powered Travel Collective will continue to encourage meaningful travel connections, responsible journey coordination, and collaborative tourism approaches that strengthen destinations and enrich traveller experiences.</p>
+            <p>As tourism continues to evolve, the People-Powered Travel Collective pillar will continue to encourage meaningful travel connections, responsible journey coordination, and collaborative tourism approaches that strengthen destinations and enrich traveller experiences.</p>
             <p>By connecting journeys through people and place, the Collective seeks to contribute to a more inclusive, resilient, and regenerative future for tourism.</p>
           </div>
         </div>
@@ -232,7 +232,7 @@ export default function PeoplePoweredTravelCollective() {
           <SectionHeading icon={Leaf} title="Closing Reflection" compact />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>Every journey begins with movement, but its true meaning is shaped by the connections it creates between people and place.</p>
-            <p>The People-Powered Travel Collective approaches travel not simply as tourism activity, but as a connected ecosystem of journeys, participation, stewardship, and shared value creation.</p>
+            <p>The People-Powered Travel Collective pillar approaches travel not simply as tourism activity, but as a connected ecosystem of journeys, participation, stewardship, and shared value creation.</p>
             <p>Because meaningful travel is not only about where we go.</p>
             <p>It is about how we connect, how we experience, and how we contribute along the way.</p>
           </div>
