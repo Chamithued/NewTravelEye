@@ -122,7 +122,7 @@ export default function GetInvolved() {
           </div>
 
           <h2 className="text-3xl font-semibold text-[#172544] sm:text-4xl lg:text-5xl">Every Contribution Matters</h2>
-          <div className="mt-4 mx-auto max-w-3xl space-y-4 text-center text-base font-medium text-[#40566a]">
+          <div className="mt-4 mx-auto max-w-5xl space-y-4 text-center text-base font-medium text-[#40566a]">
             <p>Tourism is more than where people travel.</p>
             <p>It is about the connections, participation, and positive impact created along the way.</p>
             <p>Whether you are a traveller, tourism enterprise, destination stakeholder, entrepreneur, institution, community organisation, or ecosystem partner, there are many ways to become part of the Traveleye People-Powered Tourism Ecosystem.</p>

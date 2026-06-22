@@ -1,15 +1,18 @@
-import { Users, HeartHandshake, Leaf, MapPin, Sparkles, BriefcaseBusiness, Globe2, Building2, Home } from 'lucide-react'
+import { Users, HeartHandshake, Leaf, MapPin, Sparkles, BriefcaseBusiness, Globe2, Building2, Home, Handshake, Target, Network, Plane, Compass } from 'lucide-react'
 
 const items = [
-  { icon: Users, value: '120+', label: "Youth Entrepreneurs Trained & Supported" },
-  { icon: HeartHandshake, value: '300+', label: 'Women Empowered' },
-  { icon: BriefcaseBusiness, value: '500+', label: 'People-Powered Travel Experiences Across Sri Lanka ' },
-  { icon: MapPin, value: '20+', label: "Destination Facilitation Centers Across Sri Lanka " },
-  { icon: Sparkles, value: '100+', label: 'Regenerative Tourism Activities' },
-  { icon: Leaf, value: '100+', label: 'Developed Ecosystem Support Services Across Sri Lanka' },
-  { icon: Building2, value: '100+', label: 'Inbound Travelers Served' },
-  { icon: Globe2, value: '100+', label: 'Outbound Travelers Served' },
-  { icon: Home, value: '100+', label: 'Domestic Travelers Served' },
+  { icon: HeartHandshake, value: '—', label: 'Women Entrepreneurs Supported' },
+  { icon: Users, value: '—', label: 'Youth Entrepreneurs Supported' },
+  { icon: Compass, value: '—', label: 'Travel Corridor Ventures Established' },
+  { icon: Home, value: '—', label: 'Place-Inspired Stays Developed' },
+  { icon: Sparkles, value: '—', label: 'People & Place-Inspired Experiences Developed' },
+  { icon: Target, value: '—', label: 'Destination Development Initiatives' },
+  { icon: Handshake, value: '—', label: 'Destination & Ecosystem Partnerships' },
+  { icon: Network, value: '—', label: 'Ecosystem Support Ventures Developed' },
+  { icon: BriefcaseBusiness, value: '—', label: 'Tourism Enterprises Supported' },
+  { icon: Plane, value: '—', label: 'Inbound Travellers Served' },
+  { icon: Building2, value: '—', label: 'Domestic Travellers Served' },
+  { icon: Globe2, value: '—', label: 'Outbound Travellers Served' },
 ]
 
 function ImpactCard({ item }) {
@@ -19,7 +22,7 @@ function ImpactCard({ item }) {
       <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#395E96] text-white">
           <Icon className="h-8 w-8" />
         </div>
-      <p className="text-2xl font-bold text-white">{item.value}</p>
+      {/* <p className="text-2xl font-bold text-white">{item.value}</p> */}
       <p className="mt-3 text-sm text-white/90">{item.label}</p>
     </div>
   )
@@ -31,13 +34,13 @@ export default function OurGrowingImpact() {
       <div className="mx-auto max-w-6xl text-center">
         <div className="inline-flex items-center gap-2 rounded-full bg-[#214f95]/30 px-4 py-2 text-sm font-semibold text-white shadow-sm mb-6">
           <span className="text-base">🌱</span>
-          Our Growing Impact
+          Key Indicators
         </div>
 
-        <h2 className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">Our Growing Impact</h2>
-        <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg font-semibold text-white/90">Real numbers that reflect our commitment to people, planet, and prosperity.</p>
+        <h2 className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">Strengthening Tourism Through People, Participation, and Partnership</h2>
+        <p className="mt-8 max-w-3xl mx-auto text-base sm:text-lg font-semibold text-white/90">Our journey continues through participation, stewardship, collaboration, innovation, and ecosystem development, creating meaningful opportunities that strengthen people, place, and tourism ecosystems across Sri Lanka.</p>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((it) => (
             <ImpactCard key={it.label} item={it} />
           ))}
