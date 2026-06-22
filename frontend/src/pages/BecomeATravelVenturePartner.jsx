@@ -231,8 +231,8 @@ export default function BecomeATravelVenturePartner() {
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>Every successful travel venture begins with a partnership.</p>
             <p>By working together through collaboration, innovation, and shared purpose, Travel Venture Partners become part of a connected tourism ecosystem that creates meaningful journeys while strengthening people, destinations, and tourism for the future.</p>
-            <p>Because stronger tourism is built not only through travel—</p>
-            <p>but through the partnerships that connect people and places across borders.</p>
+            <p><strong>Because stronger tourism is built not only through travel-</strong></p>
+            <p><strong>but through the partnerships that connect people and places across borders.</strong></p>
           </div>
         </div>
       </section>

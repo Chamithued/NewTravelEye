@@ -248,8 +248,8 @@ export default function CollaborateWithUs() {
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>Meaningful tourism is strengthened through the relationships we build, the knowledge we share, and the partnerships we create.</p>
             <p>Collaboration brings together people, organisations, ideas, and experience to create solutions that no single organisation can achieve alone.</p>
-            <p>Because stronger tourism is not built through individual effort alone.</p>
-            <p>It is built through collaboration that connects people, places, and purpose for the benefit of future generations.</p>
+            <p><strong>Because stronger tourism is not built through individual effort alone.</strong></p>
+            <p><strong>It is built through collaboration that connects people, places, and purpose for the benefit of future generations.</strong></p>
           </div>
         </div>
       </section>

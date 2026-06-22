@@ -213,8 +213,8 @@ export default function TravelWithPurpose() {
             <p>The most memorable journeys are rarely defined only by the places we visit.</p>
             <p>They are shaped by the people we meet, the stories we hear, the cultures we experience, and the connections we create along the way.</p>
             <p>By travelling with purpose, every journey becomes an opportunity to contribute to stronger destinations while creating memories that last a lifetime.</p>
-            <p >Because meaningful travel is not only about discovering new places.</p>
-            <p>It is about connecting with people and place in ways that create lasting value for everyone.</p>
+            <p><strong>Because meaningful travel is not only about discovering new places.</strong></p>
+            <p><strong>It is about connecting with people and place in ways that create lasting value for everyone.</strong></p>
           </TextBlock>
         </div>
       </section>

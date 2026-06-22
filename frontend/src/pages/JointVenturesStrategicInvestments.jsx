@@ -250,8 +250,8 @@ export default function JointVenturesStrategicInvestments() {
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>The future of tourism will be shaped by the partnerships we build today.</p>
             <p>Joint Ventures and Strategic Investments create opportunities to combine ideas, expertise, resources, community participation, and shared vision in ways that strengthen destinations, enterprises, communities, and tourism ecosystems.</p>
-            <p>Because meaningful tourism is not built through investment alone.</p>
-            <p>It is built through partnerships that create lasting value for people, places, and future generations.</p>
+            <p><strong>Because meaningful tourism is not built through investment alone.</strong></p>
+            <p><strong>It is built through partnerships that create lasting value for people, places, and future generations.</strong></p>
           </div>
         </div>
       </section>

@@ -271,8 +271,8 @@ export default function Experiences() {
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>The most meaningful travel experiences are often created not by attractions alone, but by the people who share their knowledge, traditions, creativity, and way of life with others.</p>
             <p>People &amp; Place-Inspired Experiences celebrate the unique identity of destinations through authentic human connection that brings people and place together in meaningful and memorable ways.</p>
-            <p>Because meaningful tourism is not simply about seeing a destination.</p>
-            <p>It is about experiencing the people, stories, traditions, and places that make it truly unforgettable.</p>
+            <p><strong>Because meaningful tourism is not simply about seeing a destination.</strong></p>
+            <p><strong>It is about experiencing the people, stories, traditions, and places that make it truly unforgettable.</strong></p>
           </div>
         </div>
       </section>
