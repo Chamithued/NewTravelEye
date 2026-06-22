@@ -10,31 +10,30 @@ import { FaFacebook, FaYoutube, FaTiktok, FaInstagram, FaLinkedin, FaPinterest, 
 
 const menuColumns = [
   {
-    title: 'Experience Sri Lanka & Beyond',
+    title: 'EXPERIENCE SRI LANKA & BEYOND',
     sections: [
       {
-        heading: 'Explore & Travel',
+        heading: 'Explore Our Platforms',
         items: [
-          'Explore People-Powered Travel Experiences',
-          'Discover the People-Powered Host Stays',
-          'Plan Your Sri Lanka Journey',
-          'Discover Sri Lanka in Ultimate Luxury',
-          'Plan Your Celebration or Event in Sri Lanka',
-          'Explore the World with Traveleye (Outbound For Sri Lankans)',
-          'Discover Sri Lanka Your Way (Domestic For Sri Lankans)',
+          'Explore Meaningful Journeys Across Sri Lanka Curated Through People and Place',
+          'Discover Authentic Stays in Sri Lanka Inspired by People and Place',
+          'Discover Authentic Experiences in Sri Lanka Shaped by People and Place',
+          'Discover Sri Lanka in Ultimate Luxury Inspired by People and Place',
+          "Celebrate Life's Special Moments in Sri Lanka Through People and Place",
+          'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
         ],
       },
     ],
   },
   {
-    title: 'Traveleye Movement',
+    title: 'TRAVELEYE MOVEMENT',
     sections: [
       {
         heading: 'About Traveleye',
         items: [
           'About Traveleye',
           'About Traveleye Alliance',
-          'Our Vision & Mission',
+          'Vision & Mission',
           'Our Ecosystem Approach',
           'Why Traveleye',
           'Governance & Ethics',
@@ -42,62 +41,51 @@ const menuColumns = [
         ],
       },
       {
-        heading: 'Work With Us',
+        heading: 'Get Involved',
         items: [
-          'Join Us as a Co-Owner',
-          'Become an Experience Creator',
-          'Partner With Us',
+          'How You Can Get Involved',
+          'Become a Travel Venture Partner',
+          'Develop a Place-Inspired Stay',
+          'Develop a People & Place-Inspired Experience',
+          'Develop an Ecosystem Support Venture',
+          'Partner in Destination Development',
+          'Joint Ventures & Strategic Investments',
           'Collaborate With Us',
-          'Join the Movement',
           'Travel With Purpose',
-          'Support Local People & Communities',
+          'Support People-Powered Tourism',
         ],
       },
     ],
   },
   {
-    title: 'Models, Contact & Trust',
+    title: 'MODELS & TRUST',
     sections: [
       {
-        heading: 'Our Framework',
+        heading: 'Our Framework & Pillars',
         items: [
-          'People-Powered Tourism (PPT) Framework',
-          'Explore the Ecosystem',
-          'Participation & Shared Stewardship',
-        ],
-      },
-      {
-        heading: 'Our Pillars',
-        items: [
-          'PPTC – People-Powered Travel Collective',
-          'PPHE – People-Powered Host Experiences',
-          'PPES – People-Powered Ecosystem Support',
-          'PPDF – People-Powered Destination Facilitation',
-        ],
-      },
-      {
-        heading: 'Opportunities',
-        items: [
-          'Join the Ecosystem',
-          'Start a Tourism Venture',
-          'Partner With Us',
-          'Investments & Joint Ventures',
+          'Traveleye People-Powered Tourism Framework',
+          'Explore the Traveleye Ecosystem',
+          'People-Powered Participation & Shared Stewardship',
+          'People-Powered Travel Collective (PPTC)',
+          'People-Powered Host Experiences (PPHE)',
+          'People-Powered Ecosystem Support (PPES)',
+          'People-Powered Destination Facilitation (PPDF)',
         ],
       },
       {
         heading: 'Legal',
-        items: ['Privacy Policy', 'Terms & Conditions'],
+        items: ['Privacy Policy', 'Terms & Conditions', 'Cookie Policy', 'Disclaimer'],
       },
     ],
   },
 ]
 
 const socialLinks = [
-  { label: 'Facebook For International Visitors', icon: FaFacebook },
-  { label: 'Facebook For Sri Lankans', icon: FaFacebook },
+  { label: 'Facebook (International)', icon: FaFacebook },
+  { label: 'Facebook (Sri Lanka)', icon: FaFacebook },
+  { label: 'Instagram', icon: FaInstagram },
   { label: 'YouTube', icon: FaYoutube },
   { label: 'TikTok', icon: FaTiktok },
-  { label: 'Instagram', icon: FaInstagram },
   { label: 'LinkedIn', icon: FaLinkedin },
   { label: 'Pinterest', icon: FaPinterest },
   { label: 'X', icon: FaX },
@@ -107,7 +95,7 @@ const contactItems = [
   { label: 'Colombo, Sri Lanka', icon: MapPin },
   { label: 'info@traveleye.lk', icon: Mail },
   { label: 'www.traveleye.lk', icon: Globe2 },
-  { label: 'WhatsApp: +94 0777 406887', icon: Phone },
+  { label: 'WhatsApp: +94 777 406 887', icon: Phone },
 ]
 
 function ChevronItem({ children, href = '#' }) {
@@ -142,38 +130,25 @@ export default function FooterLinks() {
             <div key={column.title}>
               <h4 className="mb-4 text-[1.05rem] font-semibold text-white">{column.title}</h4>
 
-              {'items' in column ? (
-                <ul className="space-y-2.5">
-                  {column.items.map((item) => (
-                    <ChevronItem key={item}>{item}</ChevronItem>
-                  ))}
-                </ul>
-              ) : null}
-
-              {'sections' in column ? (
-                <div className="space-y-5">
-                  {column.sections.map((section) => (
-                    <div key={section.heading}>
-                      <h5 className="mb-2 text-sm font-semibold text-white underline decoration-white/70 underline-offset-4">
-                        {section.heading}
-                      </h5>
-                      <ul className="space-y-2.5">
-                        {section.items.map((item) => (
-                          <ChevronItem key={item}>{item}</ChevronItem>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              ) : null}
+              <div className="space-y-5">
+                {column.sections.map((section) => (
+                  <div key={section.heading}>
+                    <h5 className="mb-2 text-sm font-semibold text-white underline decoration-white/70 underline-offset-4">
+                      {section.heading}
+                    </h5>
+                    <ul className="space-y-2.5">
+                      {section.items.map((item) => (
+                        <ChevronItem key={item}>{item}</ChevronItem>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
 
           <div>
-            <h4 className="mb-4 text-[1.05rem] font-semibold text-white">Connect With Us</h4>
-            <p className="mb-5 text-sm font-medium text-white/85 underline decoration-white/70 underline-offset-4">
-              Follow Us On Social Media
-            </p>
+            <h4 className="mb-4 text-[1.05rem] font-semibold text-white">FOLLOW US</h4>
 
             <div className="space-y-5">
               <ul className="space-y-3">
@@ -189,7 +164,7 @@ export default function FooterLinks() {
 
               <div>
                 <h5 className="mb-3 text-sm font-semibold text-white underline decoration-white/70 underline-offset-4">
-                  Stay Connected
+                  STAY CONNECTED
                 </h5>
                 <ul className="space-y-3">
                   {contactItems.map((item) => {
@@ -217,18 +192,22 @@ export default function FooterLinks() {
         </div>
 
         <div className="mt-14 border-t border-white/10 pt-6">
-          <div className="grid gap-6 lg:grid-cols-[1fr_auto_1fr] lg:items-end">
-            <div className="flex items-center gap-2 text-sm font-semibold text-[#ff3f49]">
-              <Sprout className="h-4 w-4 text-[#5cc65c]" />
-              <span>Tourism for People, Planet, and Prosperity</span>
+          <div className="mx-auto flex w-full flex-col items-center gap-6 text-center">
+            <div className="w-full space-y-2 text-sm leading-6 text-white/90">
+              <p className="font-semibold text-white">Traveleye Alliance Sri Lanka</p>
+              <p>A People-Powered Tourism Ecosystem Builder</p>
+              <p className="mx-auto max-w-5xl">
+                Guided by the Traveleye People-Powered Tourism (PPT) Framework, Traveleye Alliance strengthens tourism through participation, stewardship, collaboration, innovation, and shared value creation, helping build stronger tourism ecosystems for people, place, and future generations.
+              </p>
             </div>
 
             <div className="text-center text-sm leading-6 text-white/90">
-              <p>© 2025 Traveleye Alliance. All Rights Reserved.</p>
-              <p>Sri Lanka&apos;s First People-Powered Tourism Ecosystem.</p>
+              <p className="inline-flex items-center justify-center gap-2 font-semibold text-[#ff3f49]">
+                <Sprout className="h-4 w-4 text-[#5cc65c]" />
+                <span>Tourism for People, Planet, and Prosperity</span>
+              </p>
+              <p>&copy; 2006&ndash;Present Traveleye Alliance Sri Lanka. All Rights Reserved.</p>
             </div>
-
-            <div />
           </div>
         </div>
       </div>

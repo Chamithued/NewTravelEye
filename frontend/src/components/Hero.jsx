@@ -10,7 +10,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 flex min-h-screen w-full items-center justify-center px-4 pt-0 pb-16 sm:pb-20">
-      <div id="hero-content" className="text-center text-white max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 pt-24 sm:pt-36 lg:pt-56 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-20">
+      <div id="hero-content" className="text-center text-white max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-24 sm:pt-36 lg:pt-56 transform -translate-y-8 sm:-translate-y-12 lg:-translate-y-20">
         {/* <div className="mb-5 inline-flex rounded-full bg-[rgba(53,82,127,0.82)] px-4 py-2 shadow-lg">
           <p className="text-sm font-semibold">Tourism for People, Planet, and Prosperity</p>
         </div> */}
@@ -21,23 +21,23 @@ export default function Hero() {
         <h2 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-none mb-0">
           ALLIANCE SRI LANKA
         </h2>
-        <p className="text-sm sm:text-base font-medium mb-2">Since 2006</p>
+        {/* <p className="text-sm sm:text-base font-medium mb-2">Since 2006</p> */}
 
         <p className="text-base sm:text-xl font-semibold max-w-3xl mx-auto mb-1">
           Building a People-Powered Tourism Ecosystem for Sri Lanka
         </p>
 
-        <p className="text-base sm:text-lg max-w-5xl mx-auto mb-1 whitespace-nowrap leading-relaxed">
-          Co-created with local people, strengthening tourism enterprises, destinations, and value chains nationwide.
+        <p className="text-base sm:text-lg max-w-5xl mx-auto mb-1 text-center leading-relaxed" style={{ textWrap: 'balance' }}>
+          Guided by the Traveleye People-Powered Tourism (PPT) Framework, Traveleye Alliance strengthens tourism through participation, stewardship, collaboration, and innovation.
         </p>
 
-        <p className="text-sm sm:text-base font-semibold text-white/90 max-w-5xl mx-auto mb-4 leading-snug" style={{ textWrap: 'balance' }}>
-          Traveleye builds and stewards a people-powered tourism ecosystem that enables micro and small tourism enterprises across Sri Lanka to become capable, connected, and market-ready co-owners
+        <p className="text-sm sm:text-base font-semibold text-white/90 max-w-6xl mx-auto mb-4 leading-snug" style={{ textWrap: 'balance' }}>
+          As a People-Powered Tourism Ecosystem Builder, we connect people, places, and experiences to create meaningful travel and long-term value for communities, destinations, and future generations. 
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4 sm:mt-6 mb-8">
           <button className="bg-[#1C4686] hover:bg-[#173b70] px-6 sm:px-8 py-2 sm:py-3 rounded-md font-semibold text-white transition flex items-center justify-center gap-2">
-            Learn About Traveleye
+            Explore the Framework 
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>

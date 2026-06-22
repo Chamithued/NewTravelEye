@@ -1,4 +1,4 @@
-import { Building2, Globe2, Leaf, Users, HeartHandshake } from 'lucide-react'
+import { Building2, Globe2, Leaf, Users, HeartHandshake, Handshake, Plane, Sprout } from 'lucide-react'
 
 import coOwnImg from '../assets/client/Be A Co-Owner2.png'
 import inboundImg from '../assets/client/Partner With Us - Inbound1.png'
@@ -9,46 +9,67 @@ import movementImg from '../assets/client/Join the movement2.png'
 
 const cards = [
   {
-    title: 'Be a Co-Owner',
-    subtitle: 'Co-own a Traveleye venture and participate in building regenerative, people-centered tourism.',
+    title: 'Become a Travel Venture Partner',
+    subtitle: 'Develop inbound and outbound travel ventures and partnerships connecting Sri Lanka with the world.',
     icon: Building2,
     accent: '#275CAD',
     image: coOwnImg,
   },
   {
-    title: 'Partner With Us',
-    subtitle: 'Access tailor-made journeys, luxury travel programs, and MICE opportunities in Sri Lanka.',
+    title: 'Develop a Place-Inspired Stay',
+    subtitle: 'Create authentic hospitality that reflects Sri Lanka \'s culture, local character, and sense of place.',
     icon: Globe2,
     accent: '#0ea5a4',
     image: inboundImg,
   },
   {
-    title: 'Collaborate With Us',
-    subtitle: 'Collaboration with NGOs and development partners to support inclusive, community-led initiatives.',
+    title: 'Develop a People & Place-Inspired Experience',
+    subtitle: 'Create authentic experiences that connect travellers with Sri Lanka\'s people, culture, nature, heritage, creativity, and traditions.',
     icon: Leaf,
     accent: '#16a34a',
     image: collaborateImg,
   },
   {
-    title: 'Travel With Purpose',
-    subtitle: 'Experience authentic journeys that benefit local people, culture, and destinations.',
+    title: ' Develop an Ecosystem Support Venture',
+    subtitle: 'Strengthen tourism through technology, training, advisory services, innovation, capability development, and enterprise support.',
     icon: Globe2,
     accent: '#7c3aed',
     image: purposeImg,
   },
   {
-    title: 'Support Local People & Communities',
-    subtitle: 'Contribute to initiatives that empower women, youth, and local enterprises.',
+    title: 'Partner in Destination Development',
+    subtitle: 'Contribute to destination participation, stewardship, and tourism ecosystem development across Sri Lanka.',
     icon: Users,
     accent: '#f59e0b',
     image: supportLocalImg,
   },
   {
-    title: 'A Growing Movement',
-    subtitle: 'People-powered tourism shaping a more inclusive and regenerative future for Sri Lanka.',
+    title: 'Joint Ventures & Strategic Investments',
+    subtitle: 'Explore strategic partnerships and investment opportunities that strengthen tourism ecosystems.',
     icon: HeartHandshake,
     accent: '#ef4444',
     image: movementImg,
+  },
+  {
+    title: 'Collaborate With Us',
+    subtitle: 'Work with government agencies, tourism organisations, development partners, NGOs, institutions, academia, cooperative movements, and industry stakeholders.',
+    icon: Handshake,
+    accent: '#0f766e',
+    image: collaborateImg,
+  },
+  {
+    title: 'Travel With Purpose',
+    subtitle: 'Experience meaningful journeys that create positive connections with people and place.',
+    icon: Plane,
+    accent: '#2563eb',
+    image: purposeImg,
+  },
+  {
+    title: 'Support People-Powered Tourism',
+    subtitle: 'Support initiatives that strengthen participation, entrepreneurship, destination stewardship, and long-term tourism resilience.',
+    icon: Sprout,
+    accent: '#15803d',
+    image: supportLocalImg,
   },
 ]
 
@@ -97,14 +118,20 @@ export default function GetInvolved() {
 
         <div className="mx-auto max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm mb-6">
-            <span className="text-xl">☀️</span>
             Get Involved
           </div>
 
-          <h2 className="text-3xl font-semibold text-[#172544] sm:text-4xl lg:text-5xl">Every Journey Matters</h2>
-          <p className="mt-4 mx-auto max-w-3xl text-center text-base font-medium text-[#40566a]">
-            Tourism is more than where you go, it's about the impact you create and the people you empower. Traveleye Alliance's People-Powered Tourism Ecosystem exists for People, Planet, and Prosperity.
-          </p>
+          <h2 className="text-3xl font-semibold text-[#172544] sm:text-4xl lg:text-5xl">Every Contribution Matters</h2>
+          <div className="mt-4 mx-auto max-w-3xl space-y-4 text-center text-base font-medium text-[#40566a]">
+            <p>Tourism is more than where people travel.</p>
+            <p>It is about the connections, participation, and positive impact created along the way.</p>
+            <p>Whether you are a traveller, tourism enterprise, destination stakeholder, entrepreneur, institution, community organisation, or ecosystem partner, there are many ways to become part of the Traveleye People-Powered Tourism Ecosystem.</p>
+          </div>
+          <div className="mt-7">
+            <button className="inline-flex items-center justify-center rounded-full bg-[#214f95] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#183d76]">
+              Join the Traveleye Ecosystem
+            </button>
+          </div>
         </div>
 
         <div className="mt-10 mx-auto max-w-6xl">
@@ -115,9 +142,6 @@ export default function GetInvolved() {
           </div>
         </div>
 
-        <div className="mt-8 text-center">
-          <p className="italic font-bold text-lg sm:text-xl text-[#1f4a78]">“Join the People-Powered Tourism Movement - Where Every Action Creates Impact.”</p>
-        </div>
       </div>
     </section>
   )

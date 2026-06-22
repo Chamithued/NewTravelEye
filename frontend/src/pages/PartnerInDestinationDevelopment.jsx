@@ -217,8 +217,8 @@ export default function PartnerInDestinationDevelopment() {
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>Strong destinations are shaped by the people who care for them, the culture they preserve, the landscapes they protect, and the partnerships they build together.</p>
             <p>Partnering in destination development is an opportunity to contribute to tourism through shared stewardship, helping destinations remain authentic, resilient, and meaningful for future generations.</p>
-            <p>Because meaningful tourism is not only about bringing people to destinations.</p>
-            <p>It is about stewarding the people and places that make those destinations worth experiencing.</p>
+            <p><strong>Because meaningful tourism is not only about bringing people to destinations.</strong></p>
+            <p><strong>It is about stewarding the people and places that make those destinations worth experiencing.</strong></p>
           </div>
         </div>
       </section>

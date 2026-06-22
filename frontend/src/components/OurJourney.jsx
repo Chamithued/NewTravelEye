@@ -9,54 +9,70 @@ const journeyItems = [
     cardSide: 'right',
     rowClass: 'lg:min-h-[285px]',
     body: [
+      // <>
+      //   What began with a single individual and a deep respect for travel was shaped by a simple
+      //   belief: <strong>tourism should connect visitors with Sri Lanka&apos;s culture, nature, and
+      //   people while creating real opportunities for local communities to participate
+      //   meaningfully.</strong>
+      // </>,
+      // <>
+      //   This early conviction laid the foundation for a journey that would later evolve into a
+      //   people-powered tourism ecosystem.
+      // </>,
       <>
-        What began with a single individual and a deep respect for travel was shaped by a simple
-        belief: <strong>tourism should connect visitors with Sri Lanka&apos;s culture, nature, and
-        people while creating real opportunities for local communities to participate
-        meaningfully.</strong>
+        What began as a passion for meaningful travel was inspired by a desire to connect visitors 
+        with Sri Lanka&apos;s culture, heritage, nature, and people while encouraging broader local 
+        participation in tourism. 
       </>,
       <>
-        This early conviction laid the foundation for a journey that would later evolve into a
-        people-powered tourism ecosystem.
+        This founding vision continues to shape Traveleye today. 
       </>,
     ],
   },
   {
     year: '2012',
-    eyebrow: 'A People-Powered Experiential Tourism Platform',
+    eyebrow: 'Towards People-Powered Tourism',
     title: 'The Birth of Experiential Ventures',
     icon: Clock3,
     cardSide: 'left',
     rowClass: 'lg:min-h-[275px]',
     body: [
+      // <>
+      //   In <strong>2012</strong>, we launched our first <strong>Experiential Tourism
+      //   Ventures</strong>, marking a transformative chapter in Sri Lanka&apos;s tourism journey.
+      // </>,
+      // <>
+      //   These people-powered ventures <strong>co-owned and co-created</strong> with local people,
+      //   communities, experts, women and youth entrepreneurs enable authentic experiences that
+      //   <strong> enrich lives, protect cultural heritage, and strengthen local livelihoods.</strong>
+      // </>,
       <>
-        In <strong>2012</strong>, we launched our first <strong>Experiential Tourism
-        Ventures</strong>, marking a transformative chapter in Sri Lanka&apos;s tourism journey.
+        As tourism evolved, so did Traveleye. 
       </>,
       <>
-        These people-powered ventures <strong>co-owned and co-created</strong> with local people,
-        communities, experts, women and youth entrepreneurs enable authentic experiences that
-        <strong> enrich lives, protect cultural heritage, and strengthen local livelihoods.</strong>
+        Greater emphasis was placed on authentic experiences, local participation, destination stewardship, 
+        and creating tourism that contributes positively to people and place. 
       </>,
+      <>
+        These ideas later evolved into the <strong>Traveleye People-Powered Tourism Framework.</strong> 
+      </>
     ],
   },
   {
     year: 'Today',
-    eyebrow: 'Co-Owned by Youth. Led by Local People and Communities. Guided by Purpose.',
+    eyebrow: 'A People-Powered Tourism Ecosystem Builder ',
     title: 'A People-Powered Tourism Ecosystem',
     icon: CircleCheck,
     cardSide: 'right',
     rowClass: 'lg:min-h-[360px]',
     body: [
       <>
-        <strong>Traveleye Alliance</strong> operates as a people-powered tourism ecosystem for Sri
-        Lanka, built on shared value and co-created with youth entrepreneurs, local communities, and
-        industry experts.
+        Today, Traveleye Alliance strengthens tourism through participation, stewardship, collaboration, 
+        innovation, and ecosystem development. 
       </>,
       <>
-        Guided by our <strong>People-Powered Tourism (PPT) Framework</strong>, our ventures are
-        co-owned, co-created, and co-managed to empower people, strengthen culture, support nature,
-        and generate shared prosperity.
+        By connecting <strong>people, journeys, stays, experiences, enterprises, destinations, and tourism stakeholders,</strong> 
+         we seek to create meaningful travel while strengthening long-term destination wellbeing and tourism ecosystems
       </>,
     ],
   },
@@ -107,7 +123,7 @@ function JourneyCard({ item }) {
         aria-hidden="true"
       />
 
-      <h3 className="text-[1.08rem] font-extrabold leading-tight text-[#1f4f93]">{item.title}</h3>
+      {/* <h3 className="text-[1.08rem] font-extrabold leading-tight text-[#1f4f93]">{item.title}</h3> */}
       <div className="mt-3 space-y-3 text-[0.94rem] font-medium leading-[1.5]">
         {item.body.map((paragraph, index) => (
           <p key={`${item.year}-${index}`} className="[&_strong]:font-extrabold">
@@ -156,25 +172,33 @@ export default function OurJourney() {
           </div>
 
           <h2 className="text-[2.35rem] font-semibold leading-[1.18] tracking-normal text-[#121c35] sm:text-[2.85rem] lg:text-[3.15rem]">
-            From Purpose-Driven Tour Operator to Tourism Ecosystem Builder for Sri Lanka
+            From Purpose-Driven Travel to People-Powered Tourism Ecosystem Building
           </h2>
 
-          <p className="mt-5 text-[1.32rem] font-bold leading-tight text-[#121c35] sm:text-[1.48rem]">
+          {/* <p className="mt-5 text-[1.32rem] font-bold leading-tight text-[#121c35] sm:text-[1.48rem]">
             Building Sri Lanka&apos;s first People-Powered Tourism Ecosystem
-          </p>
+          </p> */}
 
           <div className="mt-7 space-y-6 text-[1.18rem] font-normal leading-[1.22] text-[#5f6c87] sm:text-[1.32rem]">
             <p>
-              What began in 2006 as a purpose-driven tour operation focused on meaningful travel
+              {/* What began in 2006 as a purpose-driven tour operation focused on meaningful travel
               and strengthening Sri Lanka&apos;s domestic tourism sector has evolved into Traveleye
               Alliance, an ecosystem reimagining tourism as a platform for shared value, community
-              leadership, and regenerative impact.
+              leadership, and regenerative impact. */}
+              Traveleye Alliance began in <strong>2006</strong> with a simple belief that tourism should create value 
+              not only for travellers, but also for the people and places that make travel meaningful. 
             </p>
             <p>
-              Today, we bring together communities, women, youth entrepreneurs, experience creators,
+              {/* Today, we bring together communities, women, youth entrepreneurs, experience creators,
               partners, and travelers to co-create tourism that is authentic, inclusive, and
-              people-powered.
+              people-powered. */}
+              Over the years, our journey evolved beyond traditional travel operations into a broader vision 
+              of strengthening tourism through participation, stewardship, collaboration, innovation, and long-term 
+              value creation. 
             </p>
+
+            <p>Today, guided by the <strong>Traveleye People-Powered Tourism (PPT) Framework</strong>, Traveleye Alliance continues 
+              to build more connected, inclusive, and resilient tourism ecosystems across Sri Lanka. </p>
           </div>
         </div>
 
@@ -190,7 +214,7 @@ export default function OurJourney() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center text-center lg:mt-8">
+        {/* <div className="mt-12 flex flex-col items-center text-center lg:mt-8">
           <p className="max-w-[1140px] text-[1.12rem] font-extrabold italic leading-relaxed text-[#1f4f93] sm:text-[1.28rem] lg:text-[1.45rem]">
             &ldquo;This is not tourism as usual. It is tourism reimagined &mdash; By the People. For
             the People. With the People.&rdquo;
@@ -201,7 +225,7 @@ export default function OurJourney() {
           >
             Learn More
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

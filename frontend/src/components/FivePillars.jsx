@@ -9,38 +9,38 @@ import facilitationImg from '../assets/client/At the Traveleye Facilitation Cent
 const pillars = [
     {
     code: 'PPTC',
-    title: 'People-Powered Travel Collective ',
-    subtitle: 'Thoughtfully Designed Journeys ',
+    title: 'Traveleye Travel Collective',
+    subtitle: 'Connecting Journeys Through People and Place ',
     icon: Compass,
     accent: 'bg-amber-500',
     image: tourOpsImg,
     ctas: [
-      { label: 'Discover the PPTC Model ', variant: 'solid' },
-      { label: 'Co-Own a Travel Venture', variant: 'ghost' },
+      { label: 'Explore the Travel Collective ', variant: 'solid' },
+      // { label: 'Co-Own a Travel Venture', variant: 'ghost' },
     ],
   },
   {
     code: 'PPHE',
     title: 'People-Powered Host Experiences',
-    subtitle: 'People-Powered, Immersive, and Regenerative ',
+    subtitle: 'Crafting Experiences Through People and Place',
     icon: Building2,
     accent: 'bg-sky-500',
     image: staysImg,
     ctas: [
-      { label: 'Explore the PPHE Model', variant: 'solid' },
-      { label: 'Co-Own an Experience', variant: 'ghost' },
+      { label: 'Explore Host Experiences', variant: 'solid' },
+      // { label: 'Co-Own an Experience', variant: 'ghost' },
     ],
   },
   {
     code: 'PPES',
     title: 'People-Powered Ecosystem Support',
-    subtitle: 'Enabling Quality and Sustainability',
+    subtitle: 'Strengthening Tourism Through People and Place',
     icon: Leaf,
     accent: 'bg-emerald-500',
     image: experientialImg,
     ctas: [
-      { label: 'Learn About PPES Model', variant: 'solid' },
-      { label: 'Co-Own a Support Service', variant: 'ghost' },
+      { label: 'Explore Ecosystem Support', variant: 'solid' },
+      // { label: 'Co-Own a Support Service', variant: 'ghost' },
     ],
   },
   // {
@@ -58,13 +58,13 @@ const pillars = [
   {
     code: 'PPDF',
     title: 'People-Powered Destination Facilitation',
-    subtitle: 'Destination Stewardship & Coordination ',
+    subtitle: 'Stewarding Destinations Through People and Place',
     icon: MapPinned,
     accent: 'bg-orange-500',
     image: facilitationImg,
     ctas: [
-      { label: 'Learn About PPDF Model ', variant: 'solid' },
-      { label: 'Co-Own a Facilitation Center', variant: 'ghost' },
+      { label: 'Explore Destination Facilitation', variant: 'solid' },
+      // { label: 'Co-Own a Facilitation Center', variant: 'ghost' },
     ],
   },
 ]
@@ -72,10 +72,10 @@ const pillars = [
 function PillarCard({ pillar }) {
   const Icon = pillar.icon
   const pillarDescriptions = {
-    PPTC: 'Responsible inbound, outbound, and domestic travel journeys connecting stays and experiences through people-powered operations focused on quality, safety, and local value.',
-    PPHE: 'Authentic Sri Lanka travel experiences co-created and shaped by local people, communities, experts, women and youth entrepreneurs at the heart of our People-Powered Tourism model.',
-    PPES: 'Integrated support services empowering people-powered experiences, and travel, through training, technology, advisory, and trusted systems which are needed to the tourism industry.',
-    PPDF: 'Place-based facilitation hubs co-owned by local people, enabling coordinated tourism activity, on-ground support, and balanced destination development rooted in lived realities.',
+    PPTC:(<> 'Meaningful <strong>inbound, domestic, outbound, premium, celebration, and travel corridor journeys</strong> that connect travellers with Sri Lanka through authentic people, places, and experiences.'</>),
+    PPHE:(<> Authentic <strong>host stays and people & place-inspired experiences</strong> shaped by local culture, hospitality, heritage, nature, creativity, and meaningful human connection.</>),
+    PPES:(<> Supporting tourism through <strong>knowledge, collaboration, innovation, technology, capability development, enterprise support, and ecosystem services.</strong> </>),
+    PPDF:( <>Encouraging <strong>local participation, destination stewardship, place-based collaboration, and ecosystem facilitation</strong> for stronger tourism ecosystems. </>),
   }
 
   return (
@@ -178,26 +178,26 @@ export default function FivePillars() {
         <div className="mx-auto mb-6 max-w-6xl text-center px-4">
           <div className="flex items-center justify-center gap-4">
             <h2 className="text-3xl font-bold leading-tight text-[#172544] sm:text-4xl lg:text-5xl">
-             🌿 The Four Pillars That Power Our Ecosystem
+             🌿 Four Connected Pillars Strengthening Tourism Ecosystems 
             </h2>
           </div>
 
-          <p className="mt-4 text-xl font-semibold text-slate-800 sm:text-2xl">
+          {/* <p className="mt-4 text-xl font-semibold text-slate-800 sm:text-2xl">
             The People–Powered Tourism in action
-          </p>
+          </p> */}
         </div>
 
         <div className="mx-auto max-w-5xl text-center text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8 px-4">
-          <p className="mb-6 font-semibold text-[#626D84]">
+          {/* <p className="mb-6 font-semibold text-[#626D84]">
             Traveleye Alliance connects people, places, and purpose through four integrated pillars that power Sri Lanka’s first People-Powered Tourism Ecosystem.
-          </p>
+          </p> */}
 
           <p className="mb-6">
-            Built on a people-powered philosophy, Traveleye Alliance enables tourism to be co-owned, co-created, and co-managed by local people, communities, experts, women and youth entrepreneurs, creating lasting value for people, culture, and destinations.
+            The <strong>Traveleye People-Powered Tourism (PPT) Framework</strong> is brought to life through four interconnected pillars that strengthen <strong>journeys, stays, experiences, destinations, participation, and tourism ecosystems</strong> across Sri Lanka
           </p>
 
           <p>
-            Guided by four interconnected pillars, our ecosystem brings together local wisdom, entrepreneurship, and innovation to develop inclusive, responsible, and regenerative tourism enterprises across Sri Lanka.
+            Together, these pillars create meaningful opportunities for <strong>travel, hosting, collaboration, destination stewardship, and ecosystem development</strong>, while creating long-term value for <strong>people, place, and tourism.</strong> 
           </p>
         </div>
 

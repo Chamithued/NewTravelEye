@@ -10,44 +10,44 @@ import {
 const reasons = [
   {
     icon: Leaf,
-    title: 'People-Powered',
+    title: 'People-Powered Tourism',
     description:
-      'Co-owned, co-created, and co-managed by local people, communities, women, youth entrepreneurs, and experts.',
+      <>Guided by a tourism framework centred on <strong>participation, stewardship, collaboration, innovation, and shared value creation.</strong></>,
     iconBg: 'bg-emerald-500',
   },
   {
     icon: Globe2,
-    title: 'Regenerative Impact',
+    title: 'Inclusive Participation',
     description:
-      'Experiences that restore ecosystems, preserve heritage, and uplift local livelihoods.',
+      <>Encouraging broader participation across tourism ecosystems while creating opportunities for <strong>communities, women, youth entrepreneurs, and local enterprises.</strong></>,
     iconBg: 'bg-blue-800',
   },
   {
     icon: House,
-    title: 'Authentic Experiences',
+    title: 'Destination Stewardship',
     description:
-      'Go beyond the guidebook into living villages, traditions, and real stories.',
+      <>Supporting tourism that remains connected to <strong>people, place, culture, heritage, and long-term destination wellbeing.</strong></>,
     iconBg: 'bg-amber-500',
   },
   {
     icon: Handshake,
-    title: 'Innovative Partnerships',
+    title: 'Human-Centred Innovation',
     description:
-      'Collaboration and shared ownership that replace traditional hierarchies.',
+      <>Encouraging innovation that strengthens tourism while remaining grounded in <strong>people, place, and meaningful human connection.</strong></>,
     iconBg: 'bg-sky-500',
   },
   {
     icon: Sprout,
-    title: 'Inclusive & Sustainable',
+    title: 'Connected Ecosystems',
     description:
-      'Empowering women, youth, and rural communities through equitable tourism ventures.',
+      <>Strengthening relationships between <strong>travellers, hosts, enterprises, destinations, communities, and tourism stakeholders.</strong></>,
     iconBg: 'bg-lime-500',
   },
   {
     icon: MapPinned,
-    title: 'Island-Wide Reach',
+    title: 'Long-Term Resilience',
     description:
-      'Our People-Powered Facilitation Centers connect travelers, operators, and local experiences seamlessly across Sri Lanka.',
+      <>Supporting tourism ecosystems that are <strong>inclusive, resilient, adaptable, and sustainable for future generations.</strong></>,
     iconBg: 'bg-red-600',
   },
 ]
@@ -90,13 +90,23 @@ export default function WhyTraveleye() {
           <div className="flex items-start justify-center gap-0">
             <span className="mr-0 text-5xl leading-none">🌿</span>
             <h2 className="max-w-5xl text-[1.85rem] font-semibold leading-tight text-[#172544] sm:text-[2.2rem] lg:text-[2.8rem]">
-              Because Sri Lanka needs a People-Powered Tourism Ecosystem – not another tour operator
+              {/* Because Sri Lanka needs a People-Powered Tourism Ecosystem – not another tour operator */}
+              A Different Approach to Tourism 
             </h2>
           </div>
 
-          <p className="mt-5 text-xl font-semibold leading-8 text-slate-600 sm:text-2xl">
+          {/* <p className="mt-5 text-xl font-semibold leading-8 text-slate-600 sm:text-2xl">
             Transforming travel into a shared journey that creates value for People, Planet, and Prosperity.
-          </p>
+          </p> */}
+          <div className="mx-auto mt-5 max-w-5xl space-y-6 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
+            <p>
+              Traveleye Alliance approaches tourism as a connected ecosystem where <strong>people, places, enterprises, experiences, and tourism stakeholders</strong> contribute to stronger tourism futures. 
+            </p>
+
+            <p>
+              Guided by the <strong>Traveleye People-Powered Tourism (PPT) Framework</strong>, we believe tourism creates greater value when it remains <strong>inclusive, participatory, destination-aware, and grounded in long-term stewardship.</strong>
+            </p>
+          </div>
         </div>
 
         <div className="mx-auto mt-10 grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -110,7 +120,7 @@ export default function WhyTraveleye() {
             type="button"
             className="rounded-xl bg-[#275CAD] px-8 py-4 text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96]"
           >
-            Discover More Why Traveleye?
+            Discover Why Traveleye?
           </button>
         </div>
       </div>

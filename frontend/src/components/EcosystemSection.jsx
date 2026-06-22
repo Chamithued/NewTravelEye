@@ -46,31 +46,41 @@ export default function EcosystemSection() {
 	return (
 		<section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
 			<div className="mx-auto max-w-6xl">
-				<div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(460px,0.88fr)] lg:gap-14">
+				<div className="text-center">
+					<div className="inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm sm:text-[1.05rem]">
+						THE TRAVELEYE ECOSYSTEM 
+					</div>
+
+					<h2 className="mx-auto mt-4 max-w-5xl text-3xl font-bold leading-tight tracking-tight text-[#172544] sm:text-4xl lg:text-5xl">
+						Building Stronger Tourism Through Connected Participation 
+					</h2>
+				</div>
+
+				<div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(460px,0.88fr)] lg:gap-14">
 					<div>
-						<div className="inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm sm:text-[1.05rem]">
-							Regenerative Tourism Ecosystem
-						</div>
-
-						<h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight tracking-tight text-[#172544] sm:text-4xl lg:text-5xl">
-							Where Regenerative Tourism Meets People-Powered Design
-						</h2>
-
 						<div className="mt-6 max-w-3xl space-y-5 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
 							<p>
-								At the heart of Traveleye Alliance is a people-powered tourism ecosystem where
-								local people, communities, women, youth entrepreneurs, and experts co-own, co-create,
-								and co-manage micro and small scale tourism enterprises.
+								The <strong>Traveleye Ecosystem</strong> is a connected tourism ecosystem guided 
+								by the <strong>Traveleye People-Powered Tourism (PPT) Framework.</strong>
 							</p>
 							<p>
-								Guided by our People-Powered Tourism (PPT) Model and four integrated pillars,
-								every journey is designed to strengthen people, culture, and destinations,
-								ensuring tourism gives back more than it takes.
+								It brings together <strong>journeys, stays, experiences, destinations, tourism enterprises, 
+								ecosystem support services, and diverse opportunities for participation</strong> within a people-powered
+								 approach to tourism. 
+							</p>
+							<p>
+								By strengthening connections between <strong>people, place, enterprises, and tourism stakeholders,</strong> the ecosystem
+								 seeks to create meaningful travel experiences while supporting destination wellbeing, inclusive participation,
+								  and long-term tourism resilience. 
+							</p>
+							<p>
+								More than a collection of tourism businesses, the <strong>Traveleye Ecosystem</strong> is a connected framework for strengthening 
+								tourism through <strong>participation, stewardship, collaboration, innovation, and shared value creation.</strong>
 							</p>
 						</div>
 
 						<p className="mt-8 max-w-3xl text-[1.05rem] font-semibold leading-7 text-[#1c2840] sm:text-[1.1rem]">
-							More than a network, it is a shared-value system built on four integrated pillars:
+							The ecosystem is guided by four interconnected pillars: 
 						</p>
 
 						{/* pillar cards moved below to span full width */}

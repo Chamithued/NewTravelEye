@@ -226,8 +226,8 @@ export default function SupportPeoplePoweredTourism() {
           <TextBlock tone="blue">
             <p>Tourism is strengthened not only by those who travel, but also by those who contribute their knowledge, leadership, resources, partnerships, creativity, and commitment to building stronger destinations and more resilient tourism ecosystems.</p>
             <p>Every contribution, however large or small, can help create opportunities that benefit people, places, and future generations.</p>
-            <p>Because People-Powered Tourism is built through collective participation and shared responsibility.</p>
-            <p>Together, we can help create a more connected, inclusive, and sustainable future for tourism through the power of people and place.</p>
+            <p><strong>Because People-Powered Tourism is built through collective participation and shared responsibility.</strong></p>
+            <p><strong>Together, we can help create a more connected, inclusive, and sustainable future for tourism through the power of people and place.</strong></p>
           </TextBlock>
         </div>
       </section>

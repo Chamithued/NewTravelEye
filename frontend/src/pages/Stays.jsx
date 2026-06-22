@@ -229,8 +229,8 @@ export default function Stays() {
           <TextBlock>
             <p>The most memorable places to stay are shaped not only by buildings or facilities, but by the people who welcome us, the stories they share, and the places they call home.</p>
             <p>Place-Inspired Stays celebrate the unique identity of destinations through authentic hospitality that connects travellers with local people and place.</p>
-            <p>Because meaningful hospitality is not simply about providing a place to stay.</p>
-            <p>It is about creating experiences that reflect the heart, character, and spirit of the places we visit.</p>
+            <p><strong>Because meaningful hospitality is not simply about providing a place to stay.</strong></p>
+            <p><strong>It is about creating experiences that reflect the heart, character, and spirit of the places we visit.</strong></p>
           </TextBlock>
         </div>
       </section>

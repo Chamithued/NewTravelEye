@@ -216,8 +216,8 @@ export default function DevelopEcosystemSupportVenture() {
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>Strong tourism ecosystems are built not only through journeys and experiences, but through the people, ideas, knowledge, innovation, and partnerships that support them.</p>
             <p>Ecosystem Support Ventures create opportunities to contribute to tourism in ways that strengthen destinations, enterprises, and communities through collaboration and shared value creation.</p>
-            <p>Because stronger tourism is not built by one sector alone.</p>
-            <p>It is built by people and organisations working together to strengthen the ecosystems that make meaningful tourism possible.</p>
+            <p><strong>Because stronger tourism is not built by one sector alone.</strong></p>
+            <p><strong>It is built by people and organisations working together to strengthen the ecosystems that make meaningful tourism possible.</strong></p>
           </div>
         </div>
       </section>
