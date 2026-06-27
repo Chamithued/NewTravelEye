@@ -12,11 +12,13 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     margin: 0;
     min-width: 320px;
+    overflow-x: hidden;
     background: #ffffff;
     color: #0f172a;
   }
@@ -34,6 +36,31 @@
   }
 
   #root {
+    width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  main,
+  section,
+  article,
+  div,
+  header,
+  footer,
+  nav {
+    min-width: 0;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
   }
 }

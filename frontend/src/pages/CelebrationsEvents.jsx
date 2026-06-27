@@ -95,7 +95,7 @@ export default function CelebrationsEvents() {
               <span className="block">CELEBRATIONS &amp; EVENTS</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Meaningful Moments. Lasting Memories.
+              Sri Lanka. Meaningful Moments. Lasting Memories.
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function CelebrationsEvents() {
               Whether intimate or grand, every celebration is shaped around the people, relationships, and experiences that make it unique.
             </p>
             <p>
-              As part of the Traveleye Travel Collective, Traveleye Celebrations & Events is guided by the belief that life's most meaningful occasions become even more memorable when they bring people together through shared experiences, genuine connections, and distinctive destinations.
+              As an initiation of the TraveleyeAlliance Sri Lanka, Traveleye Celebrations & Events is guided by the belief that life's most meaningful occasions become even more memorable when they bring people together through shared experiences, genuine connections, and distinctive destinations.
             </p>
           </div>
         </div>

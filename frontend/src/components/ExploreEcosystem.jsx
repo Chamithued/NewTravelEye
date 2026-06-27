@@ -6,7 +6,7 @@ const defaultLinks = [
   { label: 'Plan Your Sri Lanka Journey', to: '/travel-collective' },
   { label: 'Discover Sri Lanka in Ultimate Luxury', to: '/stays' },
   { label: 'Plan Your Celebration or Event in Sri Lanka', to: '/celebrations-events' },
-  { label: 'Explore the World with Traveleye (Outbound For Sri Lankans)', to: '/travel-collective' },
+  { label: 'Explore the World with Traveleye (Outbound For Sri Lankans)', to: '/global-journeys' },
   { label: 'Discover Sri Lanka Your Way (Domestic For Sri Lankans)', to: '/travel-collective' },
   { label: 'Discover the People-Powered Tourism Framework', to: '/travel-collective' },
   { label: 'Join the Traveleye Ecosystem', to: '/contact' },
