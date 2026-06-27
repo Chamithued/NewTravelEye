@@ -19,6 +19,7 @@ import IslandJourneys from './pages/IslandJourneys'
 import PriveCollection from './pages/PriveCollection'
 import TravelCorridors from './pages/TravelCorridors'
 import BharatLankaJourneys from './pages/BharatLankaJourneys'
+import VietLankaJourneys from './pages/VietLankaJourneys'
 import SiamLankaJourneys from './pages/SiamLankaJourneys'
 import CelebrationsEvents from './pages/CelebrationsEvents'
 import GlobalJourneys from './pages/GlobalJourneys'
@@ -28,6 +29,7 @@ import MediaPress from './pages/MediaPress'
 import OurEcosystemApproach from './pages/OurEcosystemApproach'
 import VisionMission from './pages/VisionMission'
 import WhyTraveleyePage from './pages/WhyTraveleyePage'
+import BecomeATravelCorridorPartner from './pages/BecomeATravelCorridorPartner'
 import BecomeATravelVenturePartner from './pages/BecomeATravelVenturePartner'
 import DevelopEcosystemSupportVenture from './pages/DevelopEcosystemSupportVenture'
 import PartnerInDestinationDevelopment from './pages/PartnerInDestinationDevelopment'
@@ -36,6 +38,9 @@ import JointVenturesStrategicInvestments from './pages/JointVenturesStrategicInv
 import CollaborateWithUs from './pages/CollaborateWithUs'
 import TravelWithPurpose from './pages/TravelWithPurpose'
 import SupportPeoplePoweredTourism from './pages/SupportPeoplePoweredTourism'
+import DestinationStewardshipModel from './pages/DestinationStewardshipModel'
+import TravelCorridorDevelopmentModel from './pages/TravelCorridorDevelopmentModel'
+import ParticipationSharedStewardship from './pages/ParticipationSharedStewardship'
 
 function App() {
   return (
@@ -50,14 +55,18 @@ function App() {
           <Route path="people-powered-ecosystem-support" element={<PeoplePoweredEcosystemSupport />} />
           <Route path="people-powered-destination-facilitation" element={<PeoplePoweredDestinationFacilitation />} />
           <Route path="people-powered-tourism-framework" element={<PeoplePoweredTourismFramework />} />
-          {/* <Route path="sri-lanka-journeys" element={<SriLankaJourneys />} /> */}
+          <Route path="destination-stewardship-model" element={<DestinationStewardshipModel />} />
+          <Route path="travel-corridor-development-model" element={<TravelCorridorDevelopmentModel />} />
+          <Route path="participation-shared-stewardship" element={<ParticipationSharedStewardship />} />
+          <Route path="sri-lanka-journeys" element={<SriLankaJourneys />} />
           <Route path="island-journeys" element={<IslandJourneys />} />
           <Route path="prive-collection" element={<PriveCollection />} />
           <Route path="travel-corridors" element={<TravelCorridors />} />
           <Route path="bharat-lanka-journeys" element={<BharatLankaJourneys />} />
+          <Route path="viet-lanka-journeys" element={<VietLankaJourneys />} />
           <Route path="siam-lanka-journeys" element={<SiamLankaJourneys />} />
-          {/* <Route path="celebrations-events" element={<CelebrationsEvents />} /> */}
-          {/* <Route path="global-journeys" element={<GlobalJourneys />} /> */}
+          <Route path="celebrations-events" element={<CelebrationsEvents />} />
+          <Route path="global-journeys" element={<GlobalJourneys />} />
           <Route path="explore-ecosystem" element={<ExploreEcosystemPage />} />
           <Route path="our-ecosystem-approach" element={<OurEcosystemApproach />} />
           <Route path="governance-ethics" element={<GovernanceEthics />} />
@@ -65,6 +74,7 @@ function App() {
           <Route path="vision-mission" element={<VisionMission />} />
           <Route path="why-traveleye" element={<WhyTraveleyePage />} />
           <Route path="how-you-can-get-involved" element={<HowYouCanGetInvolved />} />
+          <Route path="become-a-travel-corridor-partner" element={<BecomeATravelCorridorPartner />} />
           <Route path="become-a-travel-venture-partner" element={<BecomeATravelVenturePartner />} />
           <Route path="develop-an-ecosystem-support-venture" element={<DevelopEcosystemSupportVenture />} />
           <Route path="partner-in-destination-development" element={<PartnerInDestinationDevelopment />} />

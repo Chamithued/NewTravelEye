@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import logo from '../assets/client/Traveleyelogo.jpg'
 
 const navItems = [
@@ -9,13 +9,14 @@ const navItems = [
     to: '/travel-collective',
     items: [
       { label: 'About Travel Collective', to: '/travel-collective' },
-      // { label: 'Traveleye Sri Lanka Journeys', to: '/sri-lanka-journeys' },
+      { label: 'Traveleye Lanka Journeys', to: '/sri-lanka-journeys' },
       { label: 'Traveleye Travel Corridors', to: '/travel-corridors' },
       { label: 'Traveleye Bharat Lanka Journeys', to: '/bharat-lanka-journeys', indent: true, child: 'first' },
+      { label: 'Traveleye Viet Lanka Journeys', to: '/viet-lanka-journeys', indent: true, child: 'middle' },
       { label: 'Traveleye Siam Lanka Journeys', to: '/siam-lanka-journeys', indent: true, child: 'last' },
-      // { label: 'Traveleye Celebrations & Events', to: '/celebrations-events' },
-      // { label: 'Traveleye Global Journeys', to: '/global-journeys' },
-      { label: 'Traveleye Privé Collection Sri Lanka', to: '/prive-collection' },
+      { label: 'Traveleye Celebrations & Events', to: '/celebrations-events' },
+      { label: 'Traveleye Global Journeys', to: '/global-journeys' },
+      { label: 'Traveleye Privé Collection', to: '/prive-collection' },
       { label: 'Traveleye Island Journeys', to: '/island-journeys' },
     ],
   },
@@ -38,17 +39,19 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Our Framework & Pillars',
-    top: 'Our Framework',
-    bottom: '& Pillars',
+    label: 'Our Framework, Pillars & Models',
+    top: 'Our Framework,',
+    bottom: 'Pillars & Models',
     items: [
       { label: 'People-Powered Tourism Framework', to: '/people-powered-tourism-framework' },
       { label: 'Explore the Ecosystem', to: '/explore-ecosystem' },
+      { label: 'Participation & Shared Stewardship', to: '/participation-shared-stewardship' },
       { label: 'PPTC – People-Powered Travel Collective Pillar', to: '/people-powered-travel-collective' },
       { label: 'PPHE – People-Powered Host Experiences Pillar', to: '/people-powered-host-experiences' },
       { label: 'PPES – People-Powered Ecosystem Support Pillar', to: '/people-powered-ecosystem-support' },
       { label: 'PPDF – People-Powered Destination Facilitation Pillar', to: '/people-powered-destination-facilitation' },
-      { label: 'Participation & Shared Stewardship', to: '/travel-collective' },
+      { label: 'Travel Corridor Development Model', to: '/travel-corridor-development-model' },
+      { label: 'Destination Stewardship Model', to: '/destination-stewardship-model' },
     ],
   },
   {
@@ -56,6 +59,7 @@ const dropdownGroups = [
     items: [
       { label: 'How You Can Get Involved', to: '/how-you-can-get-involved' },
       { label: 'Become a Travel Venture Partner', to: '/become-a-travel-venture-partner' },
+      { label: 'Become a Travel Corridor Partner', to: '/become-a-travel-corridor-partner' },
       { label: 'Develop an Ecosystem Support Venture', to: '/develop-an-ecosystem-support-venture' },
       { label: 'Partner in Destination Development', to: '/partner-in-destination-development' },
       { label: 'Joint Ventures & Strategic Investments', to: '/joint-ventures-strategic-investments' },
@@ -90,6 +94,11 @@ function ChevronDown() {
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState({})
+  const location = useLocation()
+
+  const isCurrentPath = (to) => location.pathname === to
+  const isItemActive = (item) => isCurrentPath(item.to) || item.items?.some((child) => isCurrentPath(child.to))
+  const isGroupActive = (group) => group.items.some((item) => isCurrentPath(item.to))
 
   const toggleGroup = (label) => {
     setExpandedGroups((prev) => ({
@@ -115,7 +124,7 @@ export default function Navbar() {
           type="button"
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((s) => !s)}
-          className="mr-2 inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none xl:hidden"
+          className="mr-2 inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none 2xl:hidden"
         >
           {mobileOpen ? (
             <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -128,13 +137,18 @@ export default function Navbar() {
           )}
         </button>
 
-        <nav className="hidden items-center gap-1 xl:flex pr-4 sm:pr-6 lg:pr-8" aria-label="Primary">
+        <nav className="hidden items-center gap-1 pr-4 sm:pr-6 lg:pr-8 2xl:flex" aria-label="Primary">
           {navItems.map((item) => (
             item.items ? (
               <div key={item.top} className="group relative">
                 <button
                   type="button"
-                  className="inline-flex items-center gap-1 rounded-md px-2 py-2 text-center text-[1rem] font-semibold leading-none tracking-[0.01em] text-[#174c84] transition-colors hover:text-[#0f3c68]"
+                  className={[
+                    'inline-flex items-center gap-1 rounded-md px-2 py-2 text-center text-[1rem] font-semibold leading-none tracking-[0.01em] transition-colors',
+                    isItemActive(item)
+                      ? 'text-[#0f3c68]'
+                      : 'text-[#174c84] hover:text-[#0f3c68]',
+                  ].join(' ')}
                 >
                   <span className="inline-flex flex-col items-center">
                     <span className="whitespace-nowrap">{item.top}</span>
@@ -143,7 +157,7 @@ export default function Navbar() {
                   <ChevronDown />
                 </button>
 
-                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                     {item.items.map((dropdownItem) => (
                       <NavLink
@@ -151,7 +165,7 @@ export default function Navbar() {
                         to={dropdownItem.to}
                         className={({ isActive }) =>
                           [
-                            'block rounded-xl px-4 py-3 text-[1rem] font-medium transition-colors',
+                            'block rounded-xl px-4 py-3 text-[1rem] font-medium leading-snug transition-colors',
                             dropdownItem.indent ? 'relative ml-4 pl-10 text-[0.95rem]' : '',
                             isActive
                               ? 'bg-[#1C4686] text-white'
@@ -165,7 +179,11 @@ export default function Navbar() {
                               aria-hidden="true"
                               className={[
                                 'pointer-events-none absolute left-5 w-px bg-[#1C4686]',
-                                dropdownItem.child === 'first' ? '-top-3 bottom-0' : 'top-0 bottom-1/2',
+                                dropdownItem.child === 'first'
+                                  ? '-top-3 bottom-0'
+                                  : dropdownItem.child === 'middle'
+                                    ? 'top-0 bottom-0'
+                                    : 'top-0 bottom-1/2',
                               ].join(' ')}
                             />
                             <span aria-hidden="true" className="pointer-events-none absolute left-5 top-1/2 h-px w-4 -translate-y-1/2 bg-[#1C4686]" />
@@ -203,8 +221,8 @@ export default function Navbar() {
                 type="button"
                 className={[
                   'inline-flex items-center gap-1 rounded-md px-2 py-2 text-[1rem] font-semibold tracking-[0.01em] transition-colors',
-                  group.label === 'Our Framework & Pillars'
-                    ? 'text-[#1C4686] hover:text-[#1C4686]'
+                  isGroupActive(group)
+                    ? 'text-[#0f3c68]'
                     : 'text-[#174c84] hover:text-[#1C4686]',
                 ].join(' ')}
               >
@@ -219,33 +237,23 @@ export default function Navbar() {
                 <ChevronDown />
               </button>
 
-              <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                   {group.items.map((item) => (
-                    group.label === 'Our Framework & Pillars' ? (
-                      <Link
-                        key={item.label}
-                        to={item.to}
-                        className="block rounded-xl px-4 py-3 text-[1rem] font-medium text-[#1C4686] transition-colors hover:bg-[#1C4686] hover:text-white"
-                      >
-                        {item.label}
-                      </Link>
-                    ) : (
-                      <NavLink
-                        key={item.label}
-                        to={item.to}
-                        className={({ isActive }) =>
-                          [
-                            'block rounded-xl px-4 py-3 text-[1rem] font-medium transition-colors',
-                            isActive
-                              ? 'bg-[#1C4686] text-white'
-                              : 'text-slate-700 hover:bg-[#1C4686] hover:text-white',
-                          ].join(' ')
-                        }
-                      >
-                        {item.label}
-                      </NavLink>
-                    )
+                    <NavLink
+                      key={item.label}
+                      to={item.to}
+                      className={({ isActive }) =>
+                        [
+                          'block rounded-xl px-4 py-3 text-[1rem] font-medium leading-snug transition-colors',
+                          isActive
+                            ? 'bg-[#1C4686] text-white'
+                            : 'text-slate-700 hover:bg-[#1C4686] hover:text-white',
+                        ].join(' ')
+                      }
+                    >
+                      {item.label}
+                    </NavLink>
                   ))}
                 </div>
               </div>
@@ -267,7 +275,7 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="xl:hidden absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5rem)]">
+        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5rem)] 2xl:hidden">
           <div className="flex flex-col gap-1 px-4 pb-6 pt-4">
             {navItems.map((item) => (
               item.items ? (
@@ -275,7 +283,12 @@ export default function Navbar() {
                   <button
                     type="button"
                     onClick={() => toggleGroup(`${item.top} ${item.bottom}`)}
-                    className="w-full flex items-center justify-between rounded-md px-3 py-2 text-[1rem] font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0f3c68]"
+                    className={[
+                      'flex w-full items-center justify-between rounded-md px-3 py-2 text-[1rem] font-semibold transition-colors',
+                      isItemActive(item)
+                        ? 'text-[#0f3c68]'
+                        : 'text-slate-700 hover:bg-slate-100 hover:text-[#0f3c68]',
+                    ].join(' ')}
                   >
                     <span>{item.top} {item.bottom}</span>
                     <svg
@@ -298,9 +311,11 @@ export default function Navbar() {
                           onClick={() => setMobileOpen(false)}
                           className={({ isActive }) =>
                             [
-                              'block px-3 py-2 text-slate-600 transition-colors hover:text-[#0f3c68]',
+                              'block rounded-md px-3 py-2 transition-colors',
                               dropdownItem.indent ? 'relative ml-4 pl-9 text-sm' : '',
-                              isActive ? 'font-semibold text-[#0f3c68]' : '',
+                              isActive
+                                ? 'bg-[#1C4686] font-semibold text-white'
+                                : 'text-slate-600 hover:bg-[#1C4686] hover:text-white',
                             ].join(' ')
                           }
                         >
@@ -310,7 +325,11 @@ export default function Navbar() {
                                 aria-hidden="true"
                                 className={[
                                   'pointer-events-none absolute left-4 w-px bg-[#1C4686]',
-                                  dropdownItem.child === 'first' ? '-top-2 bottom-0' : 'top-0 bottom-1/2',
+                                  dropdownItem.child === 'first'
+                                    ? '-top-2 bottom-0'
+                                    : dropdownItem.child === 'middle'
+                                      ? 'top-0 bottom-0'
+                                      : 'top-0 bottom-1/2',
                                 ].join(' ')}
                               />
                               <span aria-hidden="true" className="pointer-events-none absolute left-4 top-1/2 h-px w-4 -translate-y-1/2 bg-[#1C4686]" />
@@ -337,7 +356,7 @@ export default function Navbar() {
                     ].join(' ')
                   }
                 >
-                  <span className="whitespace-nowrap">{item.top} {item.bottom}</span>
+                  <span>{item.top} {item.bottom}</span>
                 </NavLink>
               )
             ))}
@@ -347,7 +366,12 @@ export default function Navbar() {
                 <button
                   type="button"
                   onClick={() => toggleGroup(group.label)}
-                  className="w-full flex items-center justify-between px-2 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100 rounded-md transition-colors"
+                  className={[
+                    'flex w-full items-center justify-between rounded-md px-2 py-2 text-sm font-semibold transition-colors',
+                    isGroupActive(group)
+                      ? 'text-[#0f3c68]'
+                      : 'text-slate-700 hover:bg-slate-100 hover:text-[#0f3c68]',
+                  ].join(' ')}
                 >
                   {group.top && group.bottom ? (
                     <span className="inline-flex flex-col items-start leading-tight">
@@ -371,16 +395,37 @@ export default function Navbar() {
                 {expandedGroups[group.label] && (
                   <div className="flex flex-col">
                     {group.items.map((it) => (
-                      <Link key={it.label} to={it.to} onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-slate-600 hover:text-[#0f3c68]">
+                      <NavLink
+                        key={it.label}
+                        to={it.to}
+                        onClick={() => setMobileOpen(false)}
+                        className={({ isActive }) =>
+                          [
+                            'block rounded-md px-3 py-2 transition-colors',
+                            isActive
+                              ? 'bg-[#1C4686] font-semibold text-white'
+                              : 'text-slate-600 hover:bg-[#1C4686] hover:text-white',
+                          ].join(' ')
+                        }
+                      >
                         {it.label}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 )}
               </div>
             ))}
 
-            <NavLink to="/contact" onClick={() => setMobileOpen(false)} className="block rounded-md px-3 py-2 text-[1rem] font-semibold text-slate-700 hover:text-[#0f3c68]">
+            <NavLink
+              to="/contact"
+              onClick={() => setMobileOpen(false)}
+              className={({ isActive }) =>
+                [
+                  'block rounded-md px-3 py-2 text-[1rem] font-semibold transition-colors',
+                  isActive ? 'text-[#0f3c68]' : 'text-slate-700 hover:text-[#0f3c68]',
+                ].join(' ')
+              }
+            >
               Contact Us
             </NavLink>
           </div>

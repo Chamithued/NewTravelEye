@@ -51,7 +51,7 @@ const platforms = [
     icon: '🌍',
     title: 'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
     subtitle: 'රට වටා රට දකින්න – ලොව වටා ලොව දකින්න',
-    description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
+    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
     image: outboundImg,
     link: '/destination-facilitation',
   },

@@ -1,5 +1,8 @@
 import {
   BriefcaseBusiness,
+  CalendarHeart,
+  Crown,
+  Globe2,
   Handshake,
   Heart,
   Landmark,
@@ -16,26 +19,44 @@ import FooterLinks from '../components/FooterLinks'
 
 const engagementCards = [
   {
-    title: 'Traveleye Travel Corridors',
-    subtitle: 'Connecting Nations Through Meaningful Travel',
-    text: 'Strengthening tourism relationships between Sri Lanka and partner countries through meaningful travel, cultural exchange, education, business, wellness, celebrations, and long-term collaboration.',
-    icon: Plane,
-  },
-  {
-    title: 'Traveleye Island Journeys',
-    subtitle: 'Connecting Sri Lankans Across the Country',
-    line: 'රට වටා රට දකින්න',
-    text: 'Encouraging Sri Lankans to rediscover their own country through thoughtfully coordinated holidays, pilgrimages, wellness journeys, educational travel, and meaningful local experiences.',
+    title: 'Traveleye Lanka Journeys',
+    subtitle: 'Sri Lanka. Authentic Places. Meaningful Experiences.',
+    text: 'Thoughtfully curated travel experiences that showcase the culture, heritage, nature, wildlife, and diverse destinations of Sri Lanka through meaningful and authentic journeys.',
     icon: MapPinned,
   },
   {
-    title: 'Traveleye Privé Collection Sri Lanka',
-    subtitle: 'Refined Journeys. Meaningful Connections.',
-    text: 'A curated collection of luxury journeys, private experiences, and bespoke travel designed for travellers seeking authenticity, exclusivity, comfort, and personalised service.',
-    icon: Sparkles,
+    title: 'Traveleye Travel Corridors',
+    subtitle: 'Connecting Nations Through Meaningful Travel',
+    text: 'Strengthening tourism relationships between Sri Lanka and partner countries through travel, cultural exchange, education, business engagement, celebrations, and long-term collaboration.',
+    icon: Plane,
+  },
+  {
+    title: 'Traveleye Privé Collection',
+    subtitle: 'Sri Lanka. Refined Journeys. Bespoke Experiences.',
+    text: 'A collection of luxury and bespoke travel experiences designed for discerning travellers seeking exceptional hospitality, privacy, authenticity, and personalised service.',
+    icon: Crown,
+  },
+  {
+    title: 'Traveleye Celebrations & Events',
+    subtitle: 'Sri Lanka. Meaningful Moments. Lasting Memories.',
+    text: 'Creating memorable weddings, celebrations, retreats, incentive programmes, corporate gatherings, and special events through thoughtful planning and destination expertise.',
+    icon: CalendarHeart,
+  },
+  {
+    title: 'Traveleye Global Journeys',
+    subtitle: 'Sri Lankans. Connecting. The World.',
+    line: 'ලොව වටා ලොව දකින්න',
+    text: 'Helping Sri Lankan travellers discover new destinations, cultures, experiences, and opportunities through carefully planned outbound travel programmes.',
+    icon: Globe2,
+  },
+  {
+    title: 'Traveleye Island Journeys',
+    subtitle: 'Sri Lankans. Discovering. Sri Lanka.',
+    line: 'රට වටා රට දකින්න',
+    text: 'Encouraging Sri Lankans to explore, appreciate, and reconnect with the culture, heritage, nature, and diversity of their own country through meaningful domestic travel experiences.',
+    icon: Landmark,
   },
 ]
-
 const responsibilityPoints = [
   'Respect for people and destinations',
   'Cultural awareness and authenticity',
@@ -115,10 +136,10 @@ export default function TravelCollective() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Sprout} title="Travel Reimagined" />
           <div className="mx-auto mt-6 max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
               Travel is more than movement between destinations. It is an opportunity to connect people, cultures, and places through meaningful journeys that create lasting value for travellers and destinations alike.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
               The Traveleye Travel Collective brings together a portfolio of travel platforms that encourage meaningful journeys while strengthening tourism through collaboration, stewardship, and shared value creation. By connecting people and place, every journey contributes to richer travel experiences and stronger tourism ecosystems.
             </p>
           </div>
@@ -129,9 +150,12 @@ export default function TravelCollective() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Plane} title="Our Travel Engagements" />
           <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            The Travel Collective brings together specialised travel brands designed to serve different travel purposes while contributing to a shared vision of People-Powered Tourism.
+            The Traveleye Travel Collective brings together a portfolio of specialised travel brands and initiatives designed to create meaningful connections between travellers, destinations, experiences, and people.
           </p>
-          <div className="mt-8 grid gap-6 lg:grid-cols-3">
+          <p className="mx-auto mt-4 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Each engagement serves a distinct purpose while contributing to a shared vision of people-powered tourism and meaningful travel.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {engagementCards.map((item) => (
               <EngagementCard key={item.title} item={item} />
             ))}
@@ -224,7 +248,7 @@ export default function TravelCollective() {
             It encourages cultural understanding, supports stronger tourism relationships, and contributes to richer travel experiences while helping destinations remain vibrant, welcoming, and resilient for future generations.
           </p>
           <blockquote className="mx-auto mt-8 max-w-3xl border-l-4 border-[#234c3a] pl-6 text-left text-base italic leading-7 text-[#3a4b3b] sm:text-lg">
-            Meaningful travel is not simply about reaching a destination—it is about the connections created along the way and the positive value left behind.
+            Meaningful travel is not simply about reaching a destination-it is about the connections created along the way and the positive value left behind.
           </blockquote>
         </div>
       </section>
@@ -284,3 +308,4 @@ export default function TravelCollective() {
     </main>
   )
 }
+
