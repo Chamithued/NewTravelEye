@@ -124,7 +124,7 @@ export default function Navbar() {
           type="button"
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((s) => !s)}
-          className="mr-2 inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none 2xl:hidden"
+          className="mr-2 inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none xl:hidden"
         >
           {mobileOpen ? (
             <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -137,7 +137,7 @@ export default function Navbar() {
           )}
         </button>
 
-        <nav className="hidden items-center gap-1 pr-4 sm:pr-6 lg:pr-8 2xl:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-1 pr-4 sm:pr-6 lg:pr-8 xl:flex" aria-label="Primary">
           {navItems.map((item) => (
             item.items ? (
               <div key={item.top} className="group relative">
@@ -275,8 +275,8 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5rem)] 2xl:hidden">
-          <div className="flex flex-col gap-1 px-4 pb-6 pt-4">
+        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5rem)] xl:hidden">
+          <div className="flex flex-col gap-1 px-3 pb-6 pt-3">
             {navItems.map((item) => (
               item.items ? (
                 <div key={item.top} className="mt-2">
@@ -284,7 +284,7 @@ export default function Navbar() {
                     type="button"
                     onClick={() => toggleGroup(`${item.top} ${item.bottom}`)}
                     className={[
-                      'flex w-full items-center justify-between rounded-md px-3 py-2 text-[1rem] font-semibold transition-colors',
+                      'flex w-full items-center justify-between rounded-md px-2 py-2 text-[0.9rem] font-semibold transition-colors',
                       isItemActive(item)
                         ? 'text-[#0f3c68]'
                         : 'text-slate-700 hover:bg-slate-100 hover:text-[#0f3c68]',
@@ -351,7 +351,7 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className={({ isActive }) =>
                     [
-                      'block rounded-md px-3 py-2 text-[1rem] font-semibold transition-colors',
+                      'block rounded-md px-2 py-2 text-[0.9rem] font-semibold transition-colors',
                       isActive ? 'text-[#0f3c68]' : 'text-slate-700 hover:text-[#0f3c68]'
                     ].join(' ')
                   }
@@ -367,7 +367,7 @@ export default function Navbar() {
                   type="button"
                   onClick={() => toggleGroup(group.label)}
                   className={[
-                    'flex w-full items-center justify-between rounded-md px-2 py-2 text-sm font-semibold transition-colors',
+                    'flex w-full items-center justify-between rounded-md px-2 py-2 text-xs font-semibold transition-colors',
                     isGroupActive(group)
                       ? 'text-[#0f3c68]'
                       : 'text-slate-700 hover:bg-slate-100 hover:text-[#0f3c68]',
@@ -401,7 +401,7 @@ export default function Navbar() {
                         onClick={() => setMobileOpen(false)}
                         className={({ isActive }) =>
                           [
-                            'block rounded-md px-3 py-2 transition-colors',
+                            'block rounded-md px-2 py-2 text-xs transition-colors',
                             isActive
                               ? 'bg-[#1C4686] font-semibold text-white'
                               : 'text-slate-600 hover:bg-[#1C4686] hover:text-white',
@@ -421,7 +421,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className={({ isActive }) =>
                 [
-                  'block rounded-md px-3 py-2 text-[1rem] font-semibold transition-colors',
+                  'block rounded-md px-2 py-2 text-[0.9rem] font-semibold transition-colors',
                   isActive ? 'text-[#0f3c68]' : 'text-slate-700 hover:text-[#0f3c68]',
                 ].join(' ')
               }
