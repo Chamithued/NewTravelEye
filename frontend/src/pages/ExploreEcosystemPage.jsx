@@ -67,6 +67,20 @@ const sharedValuePoints = [
   'Long-term ecosystem resilience',
 ]
 
+function SectionHeading({ icon: Icon, title, ruleWidth = 'w-24' }) {
+  return (
+    <div className="mx-auto max-w-4xl text-center">
+      <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+        <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+          <Icon className="h-5 w-5" aria-hidden="true" />
+        </span>
+        <span>{title}</span>
+      </h2>
+      <div className={`mx-auto mt-3 h-0.5 ${ruleWidth} rounded bg-[#c28a5b]`} />
+    </div>
+  )
+}
+
 export default function ExploreEcosystemPage() {
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
@@ -75,9 +89,9 @@ export default function ExploreEcosystemPage() {
           <img
             src={heroImg}
             alt="Explore the Traveleye Ecosystem"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/32" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -97,10 +111,7 @@ export default function ExploreEcosystemPage() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Building Stronger Tourism Through Connected Participation
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Network} title="Building Stronger Tourism Through Connected Participation" />
           <div className="mx-auto mt-8 max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>The Traveleye Ecosystem is a connected tourism ecosystem guided by the Traveleye People-Powered Tourism (PPT) Framework.</p>
             <p>It brings together journeys, experiences, destinations, enterprises, support systems, and participation opportunities within a broader ecosystem designed to strengthen tourism through collaboration, stewardship, and shared value creation.</p>
@@ -113,10 +124,7 @@ export default function ExploreEcosystemPage() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              A Connected Ecosystem Approach
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Network} title="A Connected Ecosystem Approach" />
           </div>
 
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -131,10 +139,7 @@ export default function ExploreEcosystemPage() {
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-8 max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              The Four People-Powered Pillars
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Waypoints} title="The Four People-Powered Pillars" />
             <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">
               The ecosystem operates through four interconnected pillars that together contribute to stronger tourism participation, destination development, and ecosystem resilience.
             </p>
@@ -161,10 +166,7 @@ export default function ExploreEcosystemPage() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Participation Across the Ecosystem
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Users} title="Participation Across the Ecosystem" />
             <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">
               The Traveleye Ecosystem encourages participation from a wide range of tourism stakeholders.
             </p>
@@ -191,10 +193,7 @@ export default function ExploreEcosystemPage() {
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Creating Shared Value
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Handshake} title="Creating Shared Value" />
             <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">
               The ecosystem is guided by the belief that tourism creates stronger outcomes when value is shared more broadly across people, enterprises, destinations, and tourism stakeholders.
             </p>
@@ -218,10 +217,7 @@ export default function ExploreEcosystemPage() {
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Looking Ahead
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Waypoints} title="Looking Ahead" ruleWidth="w-20" />
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>The Traveleye Ecosystem continues to evolve through partnerships, participation, collaboration, and innovation.</p>
             <p>Guided by the People-Powered Tourism Framework, the ecosystem seeks to create an environment where travellers, hosts, enterprises, destinations, and tourism stakeholders can contribute to a stronger, more connected, and more sustainable tourism future.</p>
@@ -231,10 +227,7 @@ export default function ExploreEcosystemPage() {
 
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-4xl rounded-2xl bg-white p-6 text-center shadow-sm sm:p-10">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Begin the Conversation
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={BriefcaseBusiness} title="Begin the Conversation" ruleWidth="w-20" />
           <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-[#475569] sm:text-base">
             Interested in learning more about the Traveleye Ecosystem, ecosystem partnerships, destination collaboration, participation opportunities, or tourism initiatives?
           </p>

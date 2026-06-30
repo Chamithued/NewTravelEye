@@ -102,7 +102,7 @@ export default function DestinationFacilitation() {
     <main className="flex flex-col w-full bg-white text-slate-900">
       <section className="relative h-[48vh] w-full overflow-hidden">
         <img src={heroImg} alt="Destination hero" className="absolute inset-0 w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/14" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
           <h1
             style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
@@ -117,8 +117,9 @@ export default function DestinationFacilitation() {
 
       <section className="w-full bg-white px-4 py-14 text-slate-900 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl text-center">
-          <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-[#00466f] sm:text-4xl">
-            Destination Facilitation Within the Traveleye Ecosystem
+          <h2 className="flex items-center justify-center gap-3 text-3xl font-extrabold leading-tight tracking-tight text-[#00466f] sm:text-4xl">
+            <Globe2 className="h-10 w-10 rounded-full bg-[#DFE7F3] p-2 text-[#00466f]" />
+            <span>Destination Facilitation Within the Traveleye Ecosystem</span>
           </h2>
           <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
 

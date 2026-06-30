@@ -1,3 +1,11 @@
+import {
+  Compass,
+  Globe2,
+  Handshake,
+  Network,
+  Sprout,
+  Waypoints,
+} from 'lucide-react'
 import heroImg from '../assets/client/Travel3.png'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
@@ -49,6 +57,20 @@ const approachPoints = [
   'It creates stronger connections between tourism and the people and places that make travel meaningful.',
 ]
 
+function SectionHeading({ icon: Icon, title, ruleWidth = 'w-24' }) {
+  return (
+    <div className="mx-auto max-w-4xl text-center">
+      <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+        <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+          <Icon className="h-5 w-5" aria-hidden="true" />
+        </span>
+        <span>{title}</span>
+      </h2>
+      <div className={`mx-auto mt-3 h-0.5 ${ruleWidth} rounded bg-[#c28a5b]`} />
+    </div>
+  )
+}
+
 export default function OurEcosystemApproach() {
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
@@ -57,9 +79,9 @@ export default function OurEcosystemApproach() {
           <img
             src={heroImg}
             alt="Our Ecosystem Approach"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/32" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -79,10 +101,7 @@ export default function OurEcosystemApproach() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Strengthening Tourism Through People, Place, and Participation
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Network} title="Strengthening Tourism Through People, Place, and Participation" />
           <div className="mx-auto mt-8 max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Tourism is more than journeys, accommodation, attractions, or services. It is a living ecosystem where people, destinations, enterprises, experiences, and support systems are interconnected and mutually dependent.</p>
             <p>At <strong className="font-bold text-[#0f4d2f]">Traveleye Alliance Sri Lanka</strong>, we believe tourism becomes stronger when these connections are nurtured through participation, collaboration, stewardship, and shared value creation.</p>
@@ -94,10 +113,7 @@ export default function OurEcosystemApproach() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              A Connected Tourism Ecosystem
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Network} title="A Connected Tourism Ecosystem" />
           </div>
 
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -122,10 +138,7 @@ export default function OurEcosystemApproach() {
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Guided by the People-Powered Tourism Framework
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Compass} title="Guided by the People-Powered Tourism Framework" />
             <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               <p>The Traveleye Ecosystem is guided by the <strong className="font-bold text-[#0f4d2f]">Traveleye People-Powered Tourism (PPT) Framework</strong>, which promotes participation, stewardship, collaboration, innovation, and long-term value creation across tourism ecosystems.</p>
               <p>This framework encourages tourism development that is inclusive, destination-aware, and people-centred while remaining responsive to changing visitor expectations and emerging opportunities.</p>
@@ -138,10 +151,7 @@ export default function OurEcosystemApproach() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Tourism Through People and Place
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Globe2} title="Tourism Through People and Place" />
             <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               <p>At the heart of our ecosystem approach is a simple belief:</p>
               <p className="text-lg font-bold leading-8 text-[#0f4d2f]">Meaningful tourism is created through people and place.</p>
@@ -156,10 +166,7 @@ export default function OurEcosystemApproach() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-8 max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Four Connected Pillars
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Waypoints} title="Four Connected Pillars" />
             <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">
               The Traveleye Ecosystem is supported through four interconnected pillars that strengthen different dimensions of tourism while contributing to a shared vision of People-Powered Tourism.
             </p>
@@ -189,10 +196,7 @@ export default function OurEcosystemApproach() {
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Why an Ecosystem Approach?
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Handshake} title="Why an Ecosystem Approach?" />
           </div>
 
           <ul className="mx-auto mt-8 max-w-4xl divide-y divide-[#eee]">
@@ -208,10 +212,7 @@ export default function OurEcosystemApproach() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Looking Ahead
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Sprout} title="Looking Ahead" ruleWidth="w-20" />
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>As tourism continues to evolve, Traveleye Alliance remains committed to building a People-Powered Tourism Ecosystem that encourages participation, innovation, stewardship, and collaboration while creating long-term value for Sri Lanka's people, destinations, tourism enterprises, and visitors.</p>
             <p className="font-bold text-[#0f4d2f]">Because stronger tourism begins with stronger connections between people and place.</p>

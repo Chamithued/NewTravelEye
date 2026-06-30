@@ -117,9 +117,9 @@ export default function SupportServices() {
           <img
             src={heroImg}
             alt="Support services hero"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/14" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pt-16 pb-10 sm:px-6 sm:pt-20 sm:pb-12 lg:px-8 lg:pt-24">
@@ -138,10 +138,7 @@ export default function SupportServices() {
       <section className="w-full bg-white px-4 pt-10 pb-14 sm:px-6 sm:pt-14 sm:pb-16 lg:px-8 lg:pt-16 lg:pb-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-5xl text-center">
-            <h2 className="mt-4 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              Ecosystem Support Within the Traveleye Ecosystem
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <SectionHeading icon={Globe2} title="Ecosystem Support Within the Traveleye Ecosystem" />
 
             <p className="mx-auto mt-5 max-w-5xl text-sm font-semibold leading-7 text-slate-700 sm:text-lg sm:leading-8">
               Tourism does not grow through ideas alone.
