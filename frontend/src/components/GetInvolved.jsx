@@ -16,6 +16,13 @@ const cards = [
     image: coOwnImg,
   },
   {
+    title: 'Become a Travel Corridor Partner',
+    subtitle: 'Develop exclusive travel corridor partnerships connecting Sri Lanka with your country through meaningful two-way tourism.',
+    icon: Sprout,
+    accent: '#15803d',
+    image: supportLocalImg,
+  },
+  {
     title: 'Develop a Place-Inspired Stay',
     subtitle: 'Create authentic hospitality that reflects Sri Lanka \'s culture, local character, and sense of place.',
     icon: Globe2,
@@ -64,13 +71,6 @@ const cards = [
     accent: '#2563eb',
     image: purposeImg,
   },
-  {
-    title: 'Support People-Powered Tourism',
-    subtitle: 'Support initiatives that strengthen participation, entrepreneurship, destination stewardship, and long-term tourism resilience.',
-    icon: Sprout,
-    accent: '#15803d',
-    image: supportLocalImg,
-  },
 ]
 
 function InvolvedCard({ card }) {
@@ -117,7 +117,8 @@ export default function GetInvolved() {
         
 
         <div className="mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm mb-6">
+          {/* <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm mb-6"> */}
+          <div className="mb-5 inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
             Get Involved
           </div>
 

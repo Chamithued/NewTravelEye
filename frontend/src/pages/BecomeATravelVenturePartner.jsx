@@ -9,7 +9,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/Become a Travel Venture Partner.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -120,7 +120,11 @@ export default function BecomeATravelVenturePartner() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Building Meaningful Travel Connections Through People and Place
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Travel has the power to connect people, cultures, destinations, and opportunities in ways that create lasting value for travellers and the places they visit.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages travel entrepreneurship through meaningful partnerships that strengthen tourism participation, collaboration, innovation, and long-term ecosystem development.</p>
             <p>Whether you are an aspiring entrepreneur, an established travel professional, or an international tourism partner, Travel Venture Partnerships create opportunities to become part of a connected tourism ecosystem that links people and place through meaningful travel.</p>
@@ -131,7 +135,7 @@ export default function BecomeATravelVenturePartner() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Travel Entrepreneurship Within the Traveleye Ecosystem" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>The Traveleye ecosystem encourages collaborative travel entrepreneurship rather than isolated business development.</p>
             <p>By bringing together local entrepreneurs, international travel partners, destination stakeholders, and tourism professionals, the ecosystem seeks to strengthen tourism through shared knowledge, collaboration, innovation, and long-term partnerships.</p>
             <p>Travel Venture Partners become part of a growing network that values meaningful travel, responsible tourism, and shared success.</p>
@@ -190,12 +194,12 @@ export default function BecomeATravelVenturePartner() {
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Leaf} title="Growing Together Through Partnership" />
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>The Traveleye approach recognises that tourism grows stronger when entrepreneurs, destinations, communities, and international partners work together through trust, collaboration, and shared purpose.</p>
-            <p>Travel Venture Partnerships encourage long-term relationships that help strengthen tourism ecosystems while creating meaningful opportunities for business growth, cultural exchange, destination development, and responsible travel.</p>
-            <p>Together, we can create journeys that benefit travellers while contributing to stronger destinations and stronger tourism ecosystems.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The Traveleye approach recognises that tourism grows stronger when entrepreneurs, destinations, communities, and international partners work together through trust, collaboration, and shared purpose.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Travel Venture Partnerships encourage long-term relationships that help strengthen tourism ecosystems while creating meaningful opportunities for business growth, cultural exchange, destination development, and responsible travel.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Together, we can create journeys that benefit travellers while contributing to stronger destinations and stronger tourism ecosystems.</p>
           </div>
         </div>
       </section>

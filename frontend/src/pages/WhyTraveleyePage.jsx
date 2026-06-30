@@ -159,13 +159,13 @@ export default function WhyTraveleyePage() {
           <SectionHeading icon={Globe2} title="A Different Approach to Tourism" />
 
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            <p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Alliance Sri Lanka was established on the belief that tourism can create stronger and more lasting outcomes when it remains connected to people, destinations, participation, and stewardship.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               While many tourism businesses focus primarily on transactions, products, or visitor movement, Traveleye approaches tourism as a connected ecosystem where travellers, hosts, enterprises, communities, destinations, and tourism stakeholders all contribute to the visitor experience.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               This perspective guides everything we do and shapes our role as a People-Powered Tourism Ecosystem Builder.
             </p>
           </div>

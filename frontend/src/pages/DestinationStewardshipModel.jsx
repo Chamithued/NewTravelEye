@@ -179,13 +179,13 @@ export default function DestinationStewardshipModel() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Sprout} title="Destination Stewardship Model" />
           <div className="mx-auto mt-6 max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Tourism destinations thrive when the people, enterprises, institutions, and stakeholders connected to them work together with a shared commitment to their long-term wellbeing.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               The Destination Stewardship Model is a collaborative destination development approach within the Traveleye People-Powered Tourism Framework. The model encourages participation, stewardship, and shared responsibility among tourism stakeholders to help destinations remain vibrant, welcoming, resilient, and beneficial for both visitors and local communities.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Rather than viewing destinations solely as places to attract visitors, the model promotes a broader perspective that recognises destinations as living systems shaped by people, culture, heritage, nature, enterprises, and community participation.
             </p>
           </div>

@@ -47,8 +47,9 @@ export default function EcosystemSection() {
 		<section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
 			<div className="mx-auto max-w-6xl">
 				<div className="text-center">
-					<div className="inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm sm:text-[1.05rem]">
-						THE TRAVELEYE ECOSYSTEM 
+					{/* <div className="inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm sm:text-[1.05rem]"> */}
+					<div className="inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+						The Traveleye Ecosystem 
 					</div>
 
 					<h2 className="mx-auto mt-4 max-w-5xl text-3xl font-bold leading-tight tracking-tight text-[#172544] sm:text-4xl lg:text-5xl">

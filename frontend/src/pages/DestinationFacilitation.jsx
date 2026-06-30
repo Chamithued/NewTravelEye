@@ -122,15 +122,18 @@ export default function DestinationFacilitation() {
           </h2>
           <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
-          <p className="mx-auto mt-6 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg">
+          {/* <p className="mx-auto mt-6 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Tourism does not happen in isolation. It happens within real destinations where people live, work, create, host, and shape everyday life.
           </p>
 
-          <p className="mx-auto mt-6 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg">
+          {/* <p className="mx-auto mt-6 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Within the Traveleye ecosystem, Destination Facilitation helps strengthen place-based tourism coordination across Sri Lanka &mdash; supporting tourism ecosystems that remain connected, balanced, and grounded in local realities.
           </p>
 
-          <p className="mx-auto mt-10 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg">
+          {/* <p className="mx-auto mt-10 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Rather than functioning through centralized control structures, facilitation helps journeys, hosted experiences, hospitality ecosystems, and local participation work together in ways that respect these pillars.
           </p>
 
@@ -161,7 +164,8 @@ export default function DestinationFacilitation() {
               <span>A Place-Based Approach to Tourism</span>
             </h2>
 
-            <p className="mt-5 text-base leading-7 text-[#27333f] sm:text-lg">
+            {/* <p className="mt-5 text-base leading-7 text-[#27333f] sm:text-lg"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Destination Facilitation is rooted in destinations rather than imposed through centralized systems.
             </p>
 
@@ -176,7 +180,8 @@ export default function DestinationFacilitation() {
                 ))}
               </ul>
             </div>
-            <p className="mt-8 text-base leading-7 text-[#27333f] sm:text-lg">
+            {/* <p className="mt-8 text-base leading-7 text-[#27333f] sm:text-lg"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Facilitation helps tourism remain responsive to these realities while encouraging more connected, coordinated, and destination-sensitive tourism experiences.
             </p>
 
@@ -192,7 +197,8 @@ export default function DestinationFacilitation() {
               <span>Developing Experiences Through Local Participation</span>
             </h2>
 
-            <p className="mt-5 text-sm italic leading-7 text-[#5f6368] sm:text-base">
+            {/* <p className="mt-5 text-sm italic leading-7 text-[#5f6368] sm:text-base"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Destination Facilitation also helps support the emergence and strengthening of locally rooted hosted experiences across destinations.
             </p>
           </div>
@@ -246,7 +252,8 @@ export default function DestinationFacilitation() {
             Within the ecosystem:
           </p>
 
-          <p className="mx-auto mt-4 max-w-5xl text-base leading-7 text-[#1f2933] sm:text-lg">
+          {/* <p className="mx-auto mt-4 max-w-5xl text-base leading-7 text-[#1f2933] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Traveleye Destination Facilitation helps connect different parts of the tourism ecosystem into more coherent and locally grounded destination experiences.
           </p>
 
@@ -307,7 +314,8 @@ export default function DestinationFacilitation() {
             <span>Supporting More Connected Destination Ecosystems</span>
           </h2>
 
-          <p className="mx-auto mt-8 max-w-4xl text-base leading-7 text-[#27333f] sm:text-lg">
+          {/* <p className="mx-auto mt-8 max-w-4xl text-base leading-7 text-[#27333f] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Destination Facilitation helps tourism ecosystems remain:
           </p>
 
@@ -322,11 +330,13 @@ export default function DestinationFacilitation() {
             ))}
           </div>
 
-          <p className="mx-auto mt-10 max-w-4xl text-base font-semibold leading-7 text-[#27333f] sm:text-lg">
+          {/* <p className="mx-auto mt-10 max-w-4xl text-base font-semibold leading-7 text-[#27333f] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             The focus is not only on tourism growth.
           </p>
 
-          <p className="mx-auto mt-4 max-w-5xl text-base leading-7 text-[#27333f] sm:text-lg">
+          {/* <p className="mx-auto mt-4 max-w-5xl text-base leading-7 text-[#27333f] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             It is on helping destinations remain healthy, meaningful, resilient, and sustainable as tourism evolves over time.
           </p>
         </div>
@@ -340,12 +350,14 @@ export default function DestinationFacilitation() {
               <span>Why Destination Facilitation Matters</span>
             </h2>
 
-            <p className="mt-5 text-sm italic leading-7 text-[#5f6368] sm:text-base">
+            {/* <p className="mt-5 text-sm italic leading-7 text-[#5f6368] sm:text-base"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Without thoughtful coordination, tourism can become fragmented, uneven, and disconnected from local realities.
             </p>
           </div>
 
-          <p className="mx-auto mt-10 max-w-4xl text-left text-base leading-7 text-[#27333f] sm:text-lg">
+          {/* <p className="mx-auto mt-10 max-w-4xl text-left text-base leading-7 text-[#27333f] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Meaningful facilitation helps encourage tourism systems where:
           </p>
 
@@ -373,11 +385,13 @@ export default function DestinationFacilitation() {
             <span>Closing Reflection</span>
           </h2>
 
-          <p className="mx-auto mt-8 max-w-4xl text-base leading-8 text-[#27333f] sm:text-lg">
+          {/* <p className="mx-auto mt-8 max-w-4xl text-base leading-8 text-[#27333f] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Facilitation is not about controlling destinations.
           </p>
 
-          <p className="mx-auto mt-4 max-w-4xl text-base leading-8 text-[#27333f] sm:text-lg">
+          {/* <p className="mx-auto mt-4 max-w-4xl text-base leading-8 text-[#27333f] sm:text-lg"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             It is about helping tourism function more responsibly through:
           </p>
 

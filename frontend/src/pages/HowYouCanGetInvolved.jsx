@@ -11,7 +11,7 @@ import {
   Users,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import heroImg from '../assets/client/Join the movement2.png'
+import heroImg from '../assets/subhero/How to Get Involved.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -20,63 +20,63 @@ const opportunityCards = [
     icon: Plane,
     title: 'Become a Travel Venture Partner',
     text: 'Help create meaningful travel connections through Travel Corridors, Island Journeys, and other travel initiatives that connect people and places through responsible tourism.',
-    action: 'Explore Travel Venture Opportunities →',
+    action: 'Explore Travel Venture Opportunities',
     to: '/become-a-travel-venture-partner',
   },
   {
     icon: Home,
     title: 'Create a Host Stay',
     text: 'Open your doors to authentic hospitality by developing hosted accommodation inspired by local culture, nature, wellness, heritage, and community life.',
-    action: 'Explore Host Stay Opportunities →',
+    action: 'Explore Host Stay Opportunities',
     to: '/stays',
   },
   {
     icon: Leaf,
     title: 'Create a Travel Experience',
     text: 'Transform your knowledge, skills, traditions, creativity, or local way of life into authentic tourism experiences that connect travellers with people and place.',
-    action: 'Explore Travel Experience Opportunities →',
+    action: 'Explore Travel Experience Opportunities',
     to: '/experiences',
   },
   {
     icon: BriefcaseBusiness,
     title: 'Develop an Ecosystem Support Venture',
     text: 'Contribute to stronger tourism through education, technology, advisory services, innovation, marketing, research, capability development, and ecosystem support initiatives.',
-    action: 'Explore Ecosystem Support Opportunities →',
+    action: 'Explore Ecosystem Support Opportunities',
     to: '/develop-an-ecosystem-support-venture',
   },
   {
     icon: Compass,
     title: 'Partner in Destination Development',
     text: 'Work alongside communities and tourism stakeholders to strengthen destinations through participation, stewardship, collaboration, and place-based tourism development.',
-    action: 'Explore Destination Development Opportunities →',
+    action: 'Explore Destination Development Opportunities',
     to: '/destination-facilitation',
   },
   {
     icon: LineChart,
     title: 'Joint Ventures & Strategic Investments',
     text: 'Partner with Traveleye to explore collaborative tourism ventures, strategic investments, destination initiatives, and long-term ecosystem development opportunities.',
-    action: 'Explore Partnership Opportunities →',
+    action: 'Explore Partnership Opportunities',
     to: '/contact',
   },
   {
     icon: Handshake,
     title: 'Collaborate With Us',
     text: 'We welcome collaboration with government agencies, provincial tourism organisations, universities, NGOs, development partners, international organisations, chambers of commerce, and ecosystem collaborators who share our vision for stronger tourism.',
-    action: 'Explore Collaboration Opportunities →',
+    action: 'Explore Collaboration Opportunities',
     to: '/contact',
   },
   {
     icon: Users,
     title: 'Travel With Purpose',
     text: 'Choose journeys that create meaningful experiences while supporting local people, culture, destinations, and responsible tourism across Sri Lanka.',
-    action: 'Discover Purpose-Driven Travel →',
+    action: 'Discover Purpose-Driven Travel',
     to: '/travel-collective',
   },
   {
     icon: Sprout,
     title: 'Support People-Powered Tourism',
     text: 'Help strengthen tourism participation, destination stewardship, women and youth entrepreneurship, local enterprises, and ecosystem initiatives that contribute to a more inclusive and resilient tourism future.',
-    action: 'Explore Ways to Support Tourism Development →',
+    action: 'Explore Ways to Support Tourism Development',
     to: '/support-services',
   },
 ]
@@ -125,11 +125,15 @@ export default function HowYouCanGetInvolved() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
-            <p>Tourism becomes stronger when more people have meaningful opportunities to participate, collaborate, create, and contribute.</p>
-            <p>At Traveleye Alliance, we believe tourism should not only be experienced by travellers but also shaped by the people, communities, enterprises, institutions, and partners who make destinations meaningful.</p>
-            <p>Whether you are an entrepreneur, host, tourism professional, community organisation, investor, institution, development partner, or traveller, there are many ways to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
-            <p>Together, we can strengthen tourism through participation, stewardship, collaboration, innovation, and shared value creation.</p>
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Join the Traveleye People-Powered Tourism Ecosystem
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Tourism becomes stronger when more people have meaningful opportunities to participate, collaborate, create, and contribute.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">At Traveleye Alliance, we believe tourism should not only be experienced by travellers but also shaped by the people, communities, enterprises, institutions, and partners who make destinations meaningful.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Whether you are an entrepreneur, host, tourism professional, community organisation, investor, institution, development partner, or traveller, there are many ways to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Together, we can strengthen tourism through participation, stewardship, collaboration, innovation, and shared value creation.</p>
           </div>
         </div>
       </section>

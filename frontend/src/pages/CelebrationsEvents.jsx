@@ -109,7 +109,7 @@ export default function CelebrationsEvents() {
               <span>Celebrating Life's Special Moments</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg">
+            <p className="mx-auto mt-8 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Curated celebrations, events, and destination experiences designed to bring people together through meaningful moments and memorable experiences.
             </p>
           </div>

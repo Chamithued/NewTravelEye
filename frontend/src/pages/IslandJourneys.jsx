@@ -81,13 +81,16 @@ export default function IslandJourneys() {
         <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Globe2} title="Explore Sri Lanka, Closer to Home" />
 
-          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          {/* <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Traveleye Island Journeys encourages Sri Lankans to discover the diverse destinations, cultures, landscapes, traditions, and experiences that exist across their own country.
           </p>
-          <p className="mx-auto mt-4 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          {/* <p className="mx-auto mt-4 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             From weekend getaways and family holidays to pilgrimages, nature escapes, educational visits, wellness retreats, and special interest travel, the platform creates opportunities to explore Sri Lanka in meaningful and memorable ways.
           </p>
-          <p className="mx-auto mt-4 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          {/* <p className="mx-auto mt-4 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             As part of the Traveleye Travel Collective, Island Journeys is guided by the belief that domestic travel strengthens connections between people, communities, cultures, and destinations while encouraging a deeper appreciation of Sri Lanka.
           </p>
         </div>

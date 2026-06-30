@@ -11,7 +11,7 @@ import {
   Sprout,
   UsersRound,
 } from 'lucide-react'
-import heroImg from '../assets/client/stays_new.jpg'
+import heroImg from '../assets/subhero/Develop Place Inspired Stays.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -106,7 +106,11 @@ export default function Stays() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Creating Authentic Hospitality Through People and Place
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Every destination has its own character, stories, traditions, landscapes, and way of life. The places where travellers stay should reflect that uniqueness.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages the development of Place-Inspired Stays that celebrate the identity of destinations through local hospitality, culture, heritage, nature, creativity, and meaningful human connection.</p>
             <p>Whether you are an individual, family, entrepreneur, property owner, or community organisation, developing a Place-Inspired Stay offers an opportunity to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
@@ -140,10 +144,10 @@ export default function Stays() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Home} title="Who Can Participate?" />
           <TextBlock tone="slate">
-            <p>The Traveleye ecosystem welcomes individuals and organisations interested in developing hospitality experiences inspired by the places they represent.</p>
-            <p>Participation may include families, entrepreneurs, property owners, estate owners, hospitality providers, community organisations, and others who share a passion for authentic hospitality and meaningful tourism.</p>
-            <p>Working together through the People-Powered Tourism Framework, participants can explore opportunities to develop Place-Inspired Stays that reflect the unique people, culture, heritage, nature, creativity, and identity of their destinations.</p>
-            <p>Each opportunity is explored according to its local context, tourism potential, and the aspirations of participating hosts and communities.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The Traveleye ecosystem welcomes individuals and organisations interested in developing hospitality experiences inspired by the places they represent.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Participation may include families, entrepreneurs, property owners, estate owners, hospitality providers, community organisations, and others who share a passion for authentic hospitality and meaningful tourism.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Working together through the People-Powered Tourism Framework, participants can explore opportunities to develop Place-Inspired Stays that reflect the unique people, culture, heritage, nature, creativity, and identity of their destinations.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Each opportunity is explored according to its local context, tourism potential, and the aspirations of participating hosts and communities.</p>
           </TextBlock>
         </div>
       </section>

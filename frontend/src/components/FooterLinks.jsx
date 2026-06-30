@@ -20,7 +20,11 @@ const menuColumns = [
           'Discover Authentic Experiences in Sri Lanka Shaped by People and Place',
           'Discover Sri Lanka in Ultimate Luxury Inspired by People and Place',
           "Celebrate Life's Special Moments in Sri Lanka Through People and Place",
-          'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
+          // 'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
+          "Explore Sri Lanka, Closer to Home (Exclusively For Sri Lankans)",
+          "Explore the World, Beyond Borders (Exclusively For Sri Lankans)",
+          "Connecting Tourism Through Collaboration and Partnerships",
+          "Connecting Countries Through Meaningful Travel"
         ],
       },
     ],

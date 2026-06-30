@@ -29,11 +29,12 @@ export default function PeoplePoweredTourismIntro() {
     <section className="w-full bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-6xl text-center">
-          <div className="mb-4 inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-sm font-bold uppercase tracking-wide text-[#214f95] shadow-sm">
+          {/* <div className="mb-4 inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-sm font-bold uppercase tracking-wide text-[#214f95] shadow-sm"> */}
+            <div className="mb-5 inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
             What Is People-Powered Tourism?
           </div>
 
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight tracking-tight text-black sm:text-4xl lg:text-5xl">
             Tourism That Creates Value for People and Places
           </h2>
 

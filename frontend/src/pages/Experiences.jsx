@@ -9,7 +9,7 @@ import {
   Sprout,
   UsersRound,
 } from 'lucide-react'
-import heroImg from '../assets/client/Explore People Pwered Travel Experiences.png'
+import heroImg from '../assets/subhero/Develop People & place Inspired Experience.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -133,7 +133,8 @@ export default function Experiences() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <SectionHeading icon={Sprout} title="Creating Meaningful Experiences Through People and Place" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Every destination has stories waiting to be shared, traditions waiting to be experienced, and people whose knowledge, creativity, and way of life make each place unique.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages the development of People &amp; Place-Inspired Experiences that celebrate the identity of destinations through local culture, heritage, nature, creativity, hospitality, and meaningful human connection, creating authentic visitor experiences shaped by the people and places that make each destination unique.</p>
             <p>Whether you are an individual, entrepreneur, artisan, community organisation, educator, guide, farmer, wellness practitioner, or simply someone with a passion for sharing your destination, developing a People &amp; Place-Inspired Experience offers an opportunity to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
@@ -144,7 +145,7 @@ export default function Experiences() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={MapPinned} title="Experiences Within the Traveleye Ecosystem" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Within the Traveleye ecosystem, experiences are more than tourism activities. They are opportunities to connect travellers with the people, traditions, culture, landscapes, creativity, and everyday life that shape the identity of a destination.</p>
             <p>Rather than offering standard activities, People &amp; Place-Inspired Experiences encourage authentic engagement that helps travellers discover destinations through meaningful participation, local connection, and shared experiences shaped by people and place.</p>
             <p className="font-bold text-[#0f4d2f]">Every experience becomes an opportunity to understand a place through the people who live there.</p>
@@ -155,7 +156,7 @@ export default function Experiences() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Sprout} title="Why Develop a People & Place-Inspired Experience?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Developing a People &amp; Place-Inspired Experience creates opportunities to share local knowledge, culture, creativity, traditions, skills, and ways of life while participating in a connected tourism ecosystem that celebrates authentic local identity.</p>
             <p>The Traveleye approach encourages collaboration, innovation, responsible tourism, and long-term destination stewardship, helping participants create authentic experiences that celebrate the unique identity of their destinations.</p>
             <p>Experiences become opportunities to inspire learning, cultural exchange, appreciation, and meaningful connection between travellers and local communities.</p>
@@ -166,7 +167,7 @@ export default function Experiences() {
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={UsersRound} title="Who Can Participate?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>The Traveleye ecosystem welcomes individuals and organisations interested in developing authentic tourism experiences inspired by the places they represent.</p>
             <p>Participation may include local residents, entrepreneurs, artists, craftspeople, educators, guides, wellness practitioners, farmers, producers, community organisations, tourism enterprises, and others who wish to share the uniqueness of their destinations through meaningful visitor engagement.</p>
             <p>Working together through the People-Powered Tourism Framework, participants can explore opportunities to develop People &amp; Place-Inspired Experiences that reflect the people, culture, heritage, nature, creativity, traditions, and identity of their destinations.</p>

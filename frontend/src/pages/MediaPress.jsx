@@ -1,4 +1,4 @@
-import { Megaphone, Newspaper, Lightbulb, FolderOpen, Mail, CheckCircle2 } from 'lucide-react'
+import { Megaphone, Newspaper, Lightbulb, FolderOpen, Mail, CheckCircle2, Sprout } from 'lucide-react'
 import heroImg from '../assets/client/Travel3.png'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
@@ -95,6 +95,7 @@ export default function MediaPress() {
           {/* <div className="mx-auto mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1C4686]">
             <Newspaper className="h-5 w-5" />
           </div> */}
+          <SectionHeading icon={Sprout} title="Official Updates, Announcements & Media Information" />
           <p className="mx-auto max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             This page provides official announcements, media updates, public communications, and verified information related to Traveleye Alliance Sri Lanka and its People-Powered Tourism initiatives.
           </p>

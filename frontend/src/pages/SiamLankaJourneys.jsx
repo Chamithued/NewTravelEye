@@ -191,10 +191,10 @@ export default function SiamLankaJourneys() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading title="Connecting Thailand and Sri Lanka Through Meaningful Travel" />
           <div className="mx-auto max-w-5xl text-center">
-            <p className="mt-6 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-8 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Siam Lanka Journeys is a dedicated platform connecting Thailand and Sri Lanka through leisure, luxury, pilgrimage, wellness, cultural, educational, corporate, and celebration travel experiences.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Inspired by the longstanding Buddhist heritage, cultural exchange, maritime history, and people-to-people connections between the two nations, the platform seeks to create meaningful travel opportunities while strengthening tourism and long-term relationships between Thailand and Sri Lanka.
             </p>
           </div>

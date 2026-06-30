@@ -16,9 +16,9 @@ export default function Home() {
     <main className="flex flex-col">
       <Hero />
       {/* <QuickLinks /> */}
-      <PeoplePoweredTourismIntro />
       <ExplorePlatformsSection />
       <OurJourney />
+      <PeoplePoweredTourismIntro />
       <EcosystemSection />
       <FivePillars />
       <HomeFrameworkSections />
