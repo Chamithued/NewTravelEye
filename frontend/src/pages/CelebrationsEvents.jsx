@@ -80,9 +80,9 @@ export default function CelebrationsEvents() {
           <img
             src={heroImg}
             alt="Traveleye Celebrations & Events banner"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-90"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/34" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -192,8 +192,9 @@ export default function CelebrationsEvents() {
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              Meaningful Moments. Lasting Memories.
+            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
+              <CalendarHeart className="h-10 w-10 rounded-full bg-[#DFE7F3] p-2 text-[#1f4f93]" />
+              <span>Meaningful Moments. Lasting Memories.</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
             <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base">

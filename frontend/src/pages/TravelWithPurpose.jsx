@@ -72,9 +72,9 @@ export default function TravelWithPurpose() {
           <img
             src={heroImg}
             alt="Travel With Purpose"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -94,10 +94,7 @@ export default function TravelWithPurpose() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Creating Meaningful Journeys Through People and Place
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={MapPinned} title="Creating Meaningful Journeys Through People and Place" />
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Travel is more than visiting destinations. It is an opportunity to connect with people, cultures, heritage, nature, traditions, and ways of life that make every place unique.</p>
             <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The Traveleye People-Powered Tourism Framework encourages travel that creates meaningful experiences while contributing positively to destinations, local people, and tourism ecosystems through participation, stewardship, collaboration, and shared value creation.</p>

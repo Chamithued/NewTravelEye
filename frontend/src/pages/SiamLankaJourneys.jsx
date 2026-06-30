@@ -166,9 +166,9 @@ export default function SiamLankaJourneys() {
           <img
             src={heroImg}
             alt="Traveleye Siam Lanka Journeys banner"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/14" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -189,7 +189,7 @@ export default function SiamLankaJourneys() {
 
       <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading title="Connecting Thailand and Sri Lanka Through Meaningful Travel" />
+          <SectionHeading icon={Plane} title="Connecting Thailand and Sri Lanka Through Meaningful Travel" />
           <div className="mx-auto max-w-5xl text-center">
             <p className="mx-auto mt-8 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Siam Lanka Journeys is a dedicated platform connecting Thailand and Sri Lanka through leisure, luxury, pilgrimage, wellness, cultural, educational, corporate, and celebration travel experiences.
