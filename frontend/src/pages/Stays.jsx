@@ -84,9 +84,9 @@ export default function Stays() {
           <img
             src={heroImg}
             alt="Develop a Place-Inspired Stay"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -106,10 +106,7 @@ export default function Stays() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Creating Authentic Hospitality Through People and Place
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Home} title="Creating Authentic Hospitality Through People and Place" />
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Every destination has its own character, stories, traditions, landscapes, and way of life. The places where travellers stay should reflect that uniqueness.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages the development of Place-Inspired Stays that celebrate the identity of destinations through local hospitality, culture, heritage, nature, creativity, and meaningful human connection.</p>

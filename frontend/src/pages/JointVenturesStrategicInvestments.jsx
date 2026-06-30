@@ -112,9 +112,9 @@ export default function JointVenturesStrategicInvestments() {
           <img
             src={heroImg}
             alt="Joint Ventures & Strategic Investments"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/14" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -134,10 +134,7 @@ export default function JointVenturesStrategicInvestments() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Building Stronger Tourism Through Partnership and Shared Vision
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Handshake} title="Building Stronger Tourism Through Partnership and Shared Vision" />
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Meaningful tourism development is built through collaboration, shared purpose, responsible investment, and long-term commitment.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages Joint Ventures and Strategic Investments that strengthen tourism ecosystems through participation, stewardship, collaboration, innovation, and shared value creation.</p>

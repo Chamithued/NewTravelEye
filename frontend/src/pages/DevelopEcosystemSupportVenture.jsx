@@ -74,9 +74,9 @@ export default function DevelopEcosystemSupportVenture() {
           <img
             src={heroImg}
             alt="Develop an Ecosystem Support Venture"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/34" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -96,10 +96,7 @@ export default function DevelopEcosystemSupportVenture() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Strengthening Tourism Through People and Place
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={BriefcaseBusiness} title="Strengthening Tourism Through People and Place" />
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Meaningful tourism depends not only on journeys and experiences, but also on the people, knowledge, innovation, collaboration, and support systems that help tourism ecosystems grow and thrive.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages the development of Ecosystem Support Ventures that strengthen tourism by supporting people, enterprises, destinations, and tourism ecosystems through knowledge, capability, innovation, and collaboration.</p>

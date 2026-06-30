@@ -85,9 +85,9 @@ export default function PriveCollection() {
           <img
             src={heroImg}
             alt="Traveleye Privé Collection Sri Lanka banner"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-90"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/32" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -194,10 +194,7 @@ export default function PriveCollection() {
 
       <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="mt-0 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-            Refined Journeys. Meaningful Connections.
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Crown} title="Refined Journeys. Meaningful Connections." />
           <p className="mt-6 text-sm font-semibold text-[#6b7894] sm:text-base">
             Experience Sri Lanka through thoughtfully curated journeys, stays, and experiences designed around you.
           </p>

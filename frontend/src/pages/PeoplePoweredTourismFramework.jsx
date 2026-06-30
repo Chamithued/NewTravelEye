@@ -122,9 +122,9 @@ export default function PeoplePoweredTourismFramework() {
           <img
             src={heroImg}
             alt="Traveleye People-Powered Tourism Framework"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/32" />
+          <div className="absolute inset-0 bg-black/16" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -169,7 +169,10 @@ export default function PeoplePoweredTourismFramework() {
       <section className="relative overflow-hidden bg-white px-4 pb-14 sm:px-6 sm:pb-18 lg:px-8 lg:pb-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">A People-Powered Approach to Tourism</h2>
+            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+              <IconBadge icon={Users} />
+              <span>A People-Powered Approach to Tourism</span>
+            </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
             <p className="mt-6 text-sm leading-7 text-slate-700 sm:text-lg">The PPT Framework encourages tourism systems that are:</p>
           </div>
@@ -374,7 +377,10 @@ export default function PeoplePoweredTourismFramework() {
 
       <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">Begin the Conversation</h2>
+          <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
+            <IconBadge icon={BriefcaseBusiness} />
+            <span>Begin the Conversation</span>
+          </h2>
           <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Interested in learning more about the Traveleye People-Powered Tourism Framework, participation opportunities, ecosystem partnerships, or destination collaboration?

@@ -95,6 +95,18 @@ function IconBadge({ icon: Icon }) {
   )
 }
 
+function SectionHeading({ icon: Icon, title, ruleWidth = 'w-24' }) {
+  return (
+    <div className="mx-auto max-w-4xl text-center">
+      <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+        <IconBadge icon={Icon} />
+        <span>{title}</span>
+      </h2>
+      <div className={`mx-auto mt-3 h-0.5 ${ruleWidth} rounded bg-[#c28a5b]`} />
+    </div>
+  )
+}
+
 export default function HowYouCanGetInvolved() {
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
@@ -103,9 +115,9 @@ export default function HowYouCanGetInvolved() {
           <img
             src={heroImg}
             alt="How You Can Get Involved"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
           />
-          <div className="absolute inset-0 bg-black/38" />
+          <div className="absolute inset-0 bg-black/18" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -125,10 +137,7 @@ export default function HowYouCanGetInvolved() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            Join the Traveleye People-Powered Tourism Ecosystem
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Users} title="Join the Traveleye People-Powered Tourism Ecosystem" />
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Tourism becomes stronger when more people have meaningful opportunities to participate, collaborate, create, and contribute.</p>
             <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">At Traveleye Alliance, we believe tourism should not only be experienced by travellers but also shaped by the people, communities, enterprises, institutions, and partners who make destinations meaningful.</p>
@@ -198,10 +207,7 @@ export default function HowYouCanGetInvolved() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-             Looking Ahead
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Sprout} title="Looking Ahead" ruleWidth="w-20" />
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>The Traveleye People-Powered Tourism Ecosystem will continue to expand opportunities for individuals, communities, enterprises, institutions, and partners to participate in shaping the future of tourism across Sri Lanka.</p>
             <p>By encouraging collaboration, stewardship, innovation, and shared value creation, we believe tourism can become a powerful platform for strengthening people, destinations, and prosperity for generations to come.</p>
@@ -211,10 +217,7 @@ export default function HowYouCanGetInvolved() {
 
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-             Begin the Conversation
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Handshake} title="Begin the Conversation" ruleWidth="w-20" />
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>If you share our vision for a more connected, inclusive, and people-powered tourism future, we would be delighted to explore how we can work together.</p>
             <p>Whether you wish to create, collaborate, invest, partner, host, travel, or support tourism development, we welcome the opportunity to begin the conversation.</p>
@@ -225,10 +228,7 @@ export default function HowYouCanGetInvolved() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-             Closing Reflection
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Leaf} title="Closing Reflection" ruleWidth="w-20" />
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>Tourism is more than an industry.</p>
             <p>It is a shared opportunity to connect people, places, ideas, cultures, and communities in ways that create lasting value.</p>
