@@ -135,14 +135,15 @@ export default function GovernanceEthics() {
 
       <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            <p>
+          <SectionHeading icon={Sprout} title="Guided by Responsibility, Integrity, and Stewardship" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               At Traveleye Alliance Sri Lanka, governance and ethics play an important role in shaping how we approach tourism, partnerships, participation, and long-term ecosystem development.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               As a People-Powered Tourism Ecosystem Builder, we believe that stronger tourism outcomes are supported by transparency, accountability, ethical conduct, and responsible decision-making.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               These principles help guide our relationships, initiatives, partnerships, and contribution to tourism development.
             </p>
           </div>
@@ -153,7 +154,7 @@ export default function GovernanceEthics() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
             <SectionHeading icon={Compass} title="Our Approach to Governance" />
-            <div className="mx-auto mt-8 max-w-3xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            <div className="mx-auto mt-8 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               <p>Governance is not viewed solely as a matter of compliance or oversight.</p>
               <p>
                 It is also about creating environments where participation, trust, accountability, and responsible leadership can support long-term tourism wellbeing.
@@ -196,10 +197,10 @@ export default function GovernanceEthics() {
           />
 
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            <p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               The governance and ethical principles that guide Traveleye Alliance are intended to support tourism that creates value for travellers while contributing to broader social, cultural, environmental, and economic wellbeing.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               By encouraging transparency, accountability, participation, stewardship, and responsible collaboration, we seek to contribute to tourism ecosystems that are more inclusive, trusted, and resilient over time.
             </p>
           </div>

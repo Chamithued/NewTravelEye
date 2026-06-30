@@ -9,7 +9,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Support Local People & Communities.png'
+import heroImg from '../assets/subhero/Support People-powered tourism.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -90,7 +90,7 @@ export default function SupportPeoplePoweredTourism() {
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
               className="text-3xl font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
-              Support People-Powered Tourism
+              SUPPORT PEOPLE-POWERED TOURISM
             </h1>
             <p className="mt-4 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
               Strengthening Tourism Through People and Place
@@ -101,7 +101,11 @@ export default function SupportPeoplePoweredTourism() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Strengthening Tourism Through People and Place
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Tourism flourishes when people, communities, enterprises, institutions, and partners work together to create opportunities that benefit destinations and future generations.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages participation that strengthens tourism through collaboration, stewardship, innovation, knowledge sharing, entrepreneurship, and shared value creation.</p>
             <p>Whether you are an individual, organisation, cooperative movement, institution, corporate partner, development agency, foundation, or community group, there are many ways to support a more connected, inclusive, and people-powered future for tourism.</p>
@@ -155,7 +159,7 @@ export default function SupportPeoplePoweredTourism() {
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Leaf} title="Supporting Stronger Tourism Ecosystems" />
           <TextBlock tone="blue">
             <p>People-Powered Tourism can be strengthened in many different ways through participation, expertise, collaboration, innovation, mentorship, advocacy, education, research, enterprise development, destination stewardship, responsible investment, and community engagement.</p>

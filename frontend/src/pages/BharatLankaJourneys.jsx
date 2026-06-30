@@ -124,7 +124,7 @@ function SectionHeading({ icon: Icon, title, subtitle, center = true }) {
       <h2
         className={[
           'mt-0 flex gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl',
-          center ? 'items-center justify-center' : 'items-start',
+          center ? 'items-start justify-center' : 'items-start',
         ].join(' ')}
       >
         {Icon ? (
@@ -202,11 +202,13 @@ export default function BharatLankaJourneys() {
             title="Connecting India and Sri Lanka Through Meaningful Travel"
           />
 
-          <div className="mx-auto mt-8 max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          <div className="mx-auto mt-8 max-w-5xl text-center space-y-4">
+            {/* <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Bharat Lanka Journeys is a dedicated platform connecting India and Sri Lanka through leisure, luxury, pilgrimage, wellness, cultural, educational, corporate, and celebration travel experiences.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Built on centuries of shared heritage, cultural exchange, spiritual connections, and people-to-people relationships, the platform seeks to create meaningful travel opportunities while strengthening tourism and long-term connections between the two countries.
             </p>
           </div>
@@ -230,7 +232,8 @@ export default function BharatLankaJourneys() {
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={MapPinned} title="Travel Opportunities Between Two Nations" />
-          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          {/* <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+          <p className="mx-auto mt-8 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Whether travelling from India to Sri Lanka or from Sri Lanka to India, Bharat Lanka Journeys creates opportunities to discover diverse destinations, cultures, traditions, experiences, and connections that enrich both travellers and host communities.
           </p>
         </div>

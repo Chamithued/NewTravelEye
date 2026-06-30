@@ -79,7 +79,11 @@ export default function OurEcosystemApproach() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Strengthening Tourism Through People, Place, and Participation
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Tourism is more than journeys, accommodation, attractions, or services. It is a living ecosystem where people, destinations, enterprises, experiences, and support systems are interconnected and mutually dependent.</p>
             <p>At <strong className="font-bold text-[#0f4d2f]">Traveleye Alliance Sri Lanka</strong>, we believe tourism becomes stronger when these connections are nurtured through participation, collaboration, stewardship, and shared value creation.</p>
             <p>Our ecosystem approach recognises that meaningful tourism extends beyond individual businesses or destinations. It is about creating relationships that benefit travellers, local people, tourism enterprises, destinations, and future generations alike.</p>

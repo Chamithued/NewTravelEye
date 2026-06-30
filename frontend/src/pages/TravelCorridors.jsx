@@ -93,14 +93,18 @@ export default function TravelCorridors() {
 
       <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          <SectionHeading icon={Sprout} title="Connecting Nations Through Meaningful Travel" />
+          <div className="mx-auto mt-8 max-w-5xl text-center">
+            {/* <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Travel has the power to do more than connect destinations. It can strengthen relationships, encourage cultural understanding, inspire collaboration, and create lasting value for people and places.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Travel Corridors is a people-powered approach to international travel that connects Sri Lanka with partner countries through meaningful journeys, cultural exchange, business engagement, celebrations, and long-term tourism collaboration.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Rather than viewing travel as a one-way movement of visitors, the Travel Corridor approach encourages two-way connections that bring people, cultures, destinations, and tourism ecosystems closer together.
             </p>
           </div>

@@ -41,6 +41,8 @@ import SupportPeoplePoweredTourism from './pages/SupportPeoplePoweredTourism'
 import DestinationStewardshipModel from './pages/DestinationStewardshipModel'
 import TravelCorridorDevelopmentModel from './pages/TravelCorridorDevelopmentModel'
 import ParticipationSharedStewardship from './pages/ParticipationSharedStewardship'
+import GloballyAlignedLocallyGrounded from './pages/GloballyAlignedLocallyGrounded'
+import GuidingPrinciples from './pages/GuidingPrinciples'
 
 function App() {
   return (
@@ -58,6 +60,8 @@ function App() {
           <Route path="destination-stewardship-model" element={<DestinationStewardshipModel />} />
           <Route path="travel-corridor-development-model" element={<TravelCorridorDevelopmentModel />} />
           <Route path="participation-shared-stewardship" element={<ParticipationSharedStewardship />} />
+          <Route path="globally-aligned-locally-grounded" element={<GloballyAlignedLocallyGrounded />} />
+          <Route path="guiding-principles" element={<GuidingPrinciples />} />
           <Route path="sri-lanka-journeys" element={<SriLankaJourneys />} />
           <Route path="island-journeys" element={<IslandJourneys />} />
           <Route path="prive-collection" element={<PriveCollection />} />

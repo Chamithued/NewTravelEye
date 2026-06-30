@@ -28,6 +28,11 @@
     text-decoration: none;
   }
 
+  .content-page p {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 400;
+  }
+
   button,
   input,
   textarea,

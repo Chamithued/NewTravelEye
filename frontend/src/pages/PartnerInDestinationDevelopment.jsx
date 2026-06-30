@@ -7,7 +7,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Facilitation4.png'
+import heroImg from '../assets/subhero/Partner in Destination Development.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -96,7 +96,11 @@ export default function PartnerInDestinationDevelopment() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Stewarding Destinations Through People and Place
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Strong tourism begins with strong destinations.</p>
             <p>Destinations are more than places to visit. They are living environments shaped by people, culture, heritage, landscapes, nature, livelihoods, and community life.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages collaborative destination development through participation, stewardship, collaboration, and shared value creation, helping destinations remain authentic, resilient, and meaningful for generations to come.</p>
@@ -108,7 +112,7 @@ export default function PartnerInDestinationDevelopment() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Destination Stewardship Within the Traveleye Ecosystem" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Within the Traveleye ecosystem, destination development is more than infrastructure or visitor promotion. It is about nurturing places through collaboration, local participation, stewardship, and long-term thinking.</p>
             <p>The ecosystem encourages tourism that remains connected to the people, culture, identity, and natural character of destinations while creating meaningful opportunities for local communities and visitors alike.</p>
             <p>Every destination has the potential to become stronger when people work together with a shared vision for its future.</p>
@@ -119,7 +123,7 @@ export default function PartnerInDestinationDevelopment() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Sprout} title="Why Partner in Destination Development?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Partnering in destination development creates opportunities to steward destinations through collaboration, participation, innovation, and shared responsibility while strengthening their long-term identity and wellbeing.</p>
             <p>Rather than working independently, participants become part of a connected tourism ecosystem that values local engagement, destination stewardship, responsible tourism, and long-term resilience.</p>
             <p>By working together, destinations can create greater value for communities, visitors, and future generations.</p>
@@ -130,7 +134,7 @@ export default function PartnerInDestinationDevelopment() {
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Compass} title="Who Can Participate?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>The Traveleye ecosystem welcomes individuals and organisations who share a vision for strengthening destinations through people and place.</p>
             <p>Participation may include local communities, entrepreneurs, tourism enterprises, community organisations, educational institutions, local authorities, government agencies, development organisations, professional bodies, destination stakeholders, and ecosystem collaborators.</p>
             <p>Working together through the People-Powered Tourism Framework, participants can explore opportunities that strengthen destination identity, participation, collaboration, stewardship, and long-term tourism resilience.</p>
@@ -142,7 +146,7 @@ export default function PartnerInDestinationDevelopment() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Handshake} title="Growing Through Collaboration" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Partnering in destination development is more than supporting tourism initiatives. It is an opportunity to contribute to stronger tourism ecosystems through collective action and shared purpose.</p>
             <p>The ecosystem encourages:</p>
           </div>

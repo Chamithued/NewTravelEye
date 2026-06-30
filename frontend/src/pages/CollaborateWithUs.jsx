@@ -8,7 +8,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/Colleborate with Us.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -134,7 +134,11 @@ export default function CollaborateWithUs() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Strengthening Tourism Through Partnership and Shared Purpose
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Tourism becomes stronger when people and organisations work together with a shared vision for creating positive and lasting impact.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages collaboration that brings together knowledge, experience, innovation, partnerships, and shared stewardship to strengthen tourism ecosystems through people and place.</p>
             <p>Whether you represent a public institution, private organisation, cooperative movement, community group, educational institution, development agency, tourism enterprise, or international organisation, we welcome opportunities to collaborate for the benefit of tourism and destinations.</p>
@@ -145,7 +149,7 @@ export default function CollaborateWithUs() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Collaboration Within the Traveleye Ecosystem" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Collaboration within the Traveleye ecosystem is built on working together to develop ideas, initiatives, programmes, knowledge, innovation, and partnerships that strengthen tourism through shared expertise and collective action.</p>
             <p>By bringing together diverse expertise and perspectives, collaboration can help strengthen destinations, tourism enterprises, local participation, entrepreneurship, sustainability, and long-term tourism resilience.</p>
             <p>Together, we can create solutions that benefit both people and place.</p>
@@ -156,7 +160,7 @@ export default function CollaborateWithUs() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Sprout} title="Why Collaborate WithTraveleye?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Collaboration creates opportunities to share ideas, combine strengths, develop innovative initiatives, and contribute to the long-term development of tourism ecosystems.</p>
             <p>The Traveleye ecosystem encourages partnerships that create social, cultural, environmental, educational, and economic value while strengthening tourism through participation and shared responsibility.</p>
             <p>Working together enables greater impact than working alone.</p>
@@ -243,7 +247,7 @@ export default function CollaborateWithUs() {
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={BriefcaseBusiness} title="Closing Reflection" />
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             <p>Meaningful tourism is strengthened through the relationships we build, the knowledge we share, and the partnerships we create.</p>

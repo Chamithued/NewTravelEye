@@ -117,15 +117,15 @@ export default function About() {
             title="About Traveleye Alliance"
             subtitle="Tourism for People, Planet, and Prosperity"
           /> */}
-
+          <SectionHeading icon={Sprout} title="Tourism for People, Planet, and Prosperity" />
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            <p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Alliance Sri Lanka is a People-Powered Tourism Ecosystem Builder dedicated to strengthening tourism through participation, stewardship, collaboration, and long-term value creation.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Guided by the Traveleye People-Powered Tourism (PPT) Framework, Traveleye seeks to help create tourism ecosystems that are more inclusive, connected, destination-aware, and resilient over time.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               The organization works to strengthen the relationships between travellers, destinations, tourism enterprises, hosts, communities, support systems, and tourism stakeholders while encouraging tourism that benefits both visitors and the places they visit.
             </p>
           </div>

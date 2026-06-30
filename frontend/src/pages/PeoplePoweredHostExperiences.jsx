@@ -97,8 +97,8 @@ export default function PeoplePoweredHostExperiences() {
         <div className="mx-auto max-w-4xl text-center">
           <SectionHeading icon={Leaf} title="People-Powered Host Experiences (PPHE)" compact />
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
-            <p>Tourism is more than accommodation and activities. It is an opportunity to connect people, culture, nature, heritage, and hospitality through meaningful experiences that create lasting value for travellers and destinations alike.</p>
-            <p>The People-Powered Host Experiences (PPHE) pillar approaches hosted stays and travel experiences as a connected ecosystem where people and place shape authentic, immersive, and memorable tourism experiences while strengthening destinations through participation, stewardship, and shared value creation.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Tourism is more than accommodation and activities. It is an opportunity to connect people, culture, nature, heritage, and hospitality through meaningful experiences that create lasting value for travellers and destinations alike.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The People-Powered Host Experiences (PPHE) pillar approaches hosted stays and travel experiences as a connected ecosystem where people and place shape authentic, immersive, and memorable tourism experiences while strengthening destinations through participation, stewardship, and shared value creation.</p>
           </div>
         </div>
       </section>
@@ -107,9 +107,9 @@ export default function PeoplePoweredHostExperiences() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Globe2} title="Experiences Within the Traveleye Ecosystem" compact />
           <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg">
-            <p>Within the Traveleye ecosystem, hosted experiences are more than places to stay or activities to enjoy. They are opportunities to engage with local people, traditions, landscapes, creativity, food, wellness, and everyday life in meaningful ways.</p>
-            <p>Whether staying with local hosts, participating in cultural experiences, discovering nature, or exploring authentic ways of life, every experience contributes to a broader vision of tourism that values people, place, and connection.</p>
-            <p>Experiences become opportunities to enrich travellers while supporting destination wellbeing and long-term tourism resilience.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Within the Traveleye ecosystem, hosted experiences are more than places to stay or activities to enjoy. They are opportunities to engage with local people, traditions, landscapes, creativity, food, wellness, and everyday life in meaningful ways.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Whether staying with local hosts, participating in cultural experiences, discovering nature, or exploring authentic ways of life, every experience contributes to a broader vision of tourism that values people, place, and connection.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Experiences become opportunities to enrich travellers while supporting destination wellbeing and long-term tourism resilience.</p>
           </div>
         </div>
       </section>

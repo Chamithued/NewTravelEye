@@ -105,11 +105,12 @@ export default function VisionMission() {
 
       <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Sprout} title="Shaping the Future of Tourism Through People, Participation, and Stewardship" />
           <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            <p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               The vision and mission of Traveleye Alliance Sri Lanka are guided by the belief that tourism can create stronger outcomes when it remains connected to people, destinations, culture, participation, and long-term responsibility.
             </p>
-            <p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Through the Traveleye People-Powered Tourism Framework, the organization seeks to contribute to a tourism future that is more inclusive, connected, resilient, and sustainable.
             </p>
           </div>

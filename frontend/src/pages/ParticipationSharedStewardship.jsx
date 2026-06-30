@@ -131,16 +131,20 @@ export default function ParticipationSharedStewardship() {
             Tourism Shaped Through People, Participation, and Care
           </p>
           <div className="mx-auto mt-6 max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               The Traveleye People-Powered Tourism Framework is guided by the belief that tourism becomes stronger when people are able to participate meaningfully and destinations are approached with care, respect, and long-term responsibility.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Tourism is not shaped solely by travellers, businesses, or infrastructure.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               It is also shaped by hosts, communities, entrepreneurs, tourism enterprises, destinations, cultural traditions, natural environments, and the many people who contribute to the visitor experience.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               People-Powered Participation & Shared Stewardship reflects the belief that tourism creates stronger outcomes when these relationships remain connected and mutually beneficial.
             </p>
           </div>

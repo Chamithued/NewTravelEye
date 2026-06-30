@@ -114,11 +114,12 @@ export default function PriveCollection() {
             subtitle="Curated journeys, stays, and experiences across Sri Lanka for travellers who value privacy, authenticity, comfort, and thoughtful attention to detail."
           />
 
-          <div className="mx-auto mt-8 max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl text-center">
+            <p className="mx-auto mt-4 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Traveleye Privé Collection Sri Lanka represents the most refined expression of the Traveleye ecosystem, bringing together elevated journeys, carefully selected stays, curated experiences, and seamless destination coordination.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Designed for travellers who seek depth rather than excess, Privé Collection offers a more personal and thoughtful way to experience Sri Lanka, connecting people, places, culture, and experiences through journeys tailored to individual interests, preferences, and aspirations.
             </p>
           </div>

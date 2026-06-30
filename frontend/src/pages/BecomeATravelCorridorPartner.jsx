@@ -12,7 +12,7 @@ import {
   Target,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/Become a Travel Corridor Partner.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -127,10 +127,14 @@ export default function BecomeATravelCorridorPartner() {
 
       <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            <p>Tourism has the power to build lasting relationships between countries, strengthen cultural understanding, create economic opportunities, and connect people through shared experiences.</p>
-            <p>The Traveleye Travel Corridor Program is designed to foster long-term tourism relationships between Sri Lanka and selected international markets through strategic partnerships, market development, travel trade collaboration, and meaningful travel connections.</p>
-            <p>Travel Corridor Partners play a key role in representing, developing, and strengthening tourism connections between Sri Lanka and their respective countries while contributing to the growth of a people-powered tourism ecosystem.</p>
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Connecting Nations Through Meaningful Travel
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Tourism has the power to build lasting relationships between countries, strengthen cultural understanding, create economic opportunities, and connect people through shared experiences.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The Traveleye Travel Corridor Program is designed to foster long-term tourism relationships between Sri Lanka and selected international markets through strategic partnerships, market development, travel trade collaboration, and meaningful travel connections.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Travel Corridor Partners play a key role in representing, developing, and strengthening tourism connections between Sri Lanka and their respective countries while contributing to the growth of a people-powered tourism ecosystem.</p>
           </div>
         </div>
       </section>
@@ -138,7 +142,7 @@ export default function BecomeATravelCorridorPartner() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Handshake} title="What is a Travel Corridor Partner?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>A Travel Corridor Partner is a carefully selected tourism company or organisation that collaborates with Traveleye Travel Collective to develop and strengthen tourism relationships between Sri Lanka and a designated international market.</p>
             <p>The partnership extends beyond traditional travel sales and focuses on building long-term tourism connectivity through collaboration, trust, shared growth, and market development.</p>
           </div>

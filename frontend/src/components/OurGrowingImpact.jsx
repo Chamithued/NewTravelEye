@@ -32,8 +32,8 @@ export default function OurGrowingImpact() {
   return (
     <section className="w-full bg-[#1C4686] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-6xl text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-[#214f95]/30 px-4 py-2 text-sm font-semibold text-white shadow-sm mb-6">
-          <span className="text-base">🌱</span>
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#214f95]/30 px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-white shadow-sm">
+          <Leaf className="h-5 w-5" aria-hidden="true" />
           Key Indicators
         </div>
 

@@ -150,7 +150,8 @@ export default function GlobalJourneys() {
       <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Explore the World, Beyond Borders" />
-          <p className="mx-auto mt-6 max-w-5xl text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          {/* <p className="mx-auto mt-6 max-w-5xl text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+          <p className="mx-auto mt-8 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Thoughtfully planned international travel experiences designed to connect Sri Lankan travellers with destinations, cultures, and opportunities across the globe.
           </p>
         </div>

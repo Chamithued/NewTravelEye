@@ -116,9 +116,9 @@ export default function PeoplePoweredDestinationFacilitation() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Globe2} title="Destinations Within the Traveleye Ecosystem" compact />
           <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg">
-            <p>Within the Traveleye ecosystem, destinations are not viewed simply as tourism locations or commercial attractions. They are dynamic places where people, culture, nature, hospitality, and local identity come together to create unique tourism experiences.</p>
-            <p>By encouraging participation and stewardship, destination facilitation helps tourism remain connected to the people and places that make each destination meaningful.</p>
-            <p>Destinations become opportunities to enrich travellers while supporting community wellbeing and long-term tourism resilience.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Within the Traveleye ecosystem, destinations are not viewed simply as tourism locations or commercial attractions. They are dynamic places where people, culture, nature, hospitality, and local identity come together to create unique tourism experiences.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">By encouraging participation and stewardship, destination facilitation helps tourism remain connected to the people and places that make each destination meaningful.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Destinations become opportunities to enrich travellers while supporting community wellbeing and long-term tourism resilience.</p>
           </div>
         </div>
       </section>

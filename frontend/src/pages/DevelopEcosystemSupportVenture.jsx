@@ -8,7 +8,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/SupportServices.png'
+import heroImg from '../assets/subhero/Develop an Ecosystem Support Venture.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -96,7 +96,11 @@ export default function DevelopEcosystemSupportVenture() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Strengthening Tourism Through People and Place
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Meaningful tourism depends not only on journeys and experiences, but also on the people, knowledge, innovation, collaboration, and support systems that help tourism ecosystems grow and thrive.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages the development of Ecosystem Support Ventures that strengthen tourism by supporting people, enterprises, destinations, and tourism ecosystems through knowledge, capability, innovation, and collaboration.</p>
             <p>Whether you are an entrepreneur, professional, educator, technology provider, consultant, researcher, creative practitioner, institution, or organisation, developing an Ecosystem Support Venture offers an opportunity to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
@@ -107,7 +111,7 @@ export default function DevelopEcosystemSupportVenture() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Support Within the Traveleye Ecosystem" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Within the Traveleye ecosystem, support extends far beyond operational services. It includes the knowledge, capability, innovation, technology, communication, collaboration, and leadership that enable tourism ecosystems to grow sustainably.</p>
             <p>Ecosystem Support Ventures help strengthen tourism by creating solutions that improve capability, encourage participation, foster innovation, and build stronger connections across the tourism value chain.</p>
             <p>Every support initiative becomes an opportunity to strengthen people, places, and tourism ecosystems.</p>
@@ -118,7 +122,7 @@ export default function DevelopEcosystemSupportVenture() {
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Sprout} title="Why Develop an Ecosystem Support Venture?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Developing an Ecosystem Support Venture creates opportunities to contribute to tourism through knowledge, innovation, professional expertise, technology, education, collaboration, and enterprise development.</p>
             <p>Rather than working in isolation, participants become part of a connected ecosystem that encourages partnership, shared learning, responsible innovation, and long-term tourism resilience.</p>
             <p>Supporting tourism can be just as valuable as delivering tourism itself.</p>
@@ -129,7 +133,7 @@ export default function DevelopEcosystemSupportVenture() {
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Users} title="Who Can Participate?" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>The Traveleye ecosystem welcomes individuals and organisations interested in strengthening tourism through ideas, expertise, technology, services, innovation, education, research, communication, collaboration, and enterprise development.</p>
             <p>Participation may include entrepreneurs, consultants, educators, trainers, researchers, technology providers, media professionals, creative practitioners, financial service providers, sustainability specialists, institutions, and organisations that share a vision for stronger tourism ecosystems.</p>
             <p>Working together through the People-Powered Tourism Framework, participants can explore opportunities to develop Ecosystem Support Ventures that strengthen tourism through people, place, knowledge, collaboration, and innovation.</p>
@@ -175,7 +179,7 @@ export default function DevelopEcosystemSupportVenture() {
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Leaf} title="Inspired by Purpose. Strengthened Through Collaboration." />
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>The Traveleye approach recognises that successful tourism depends on many people working together behind the scenes.</p>

@@ -118,9 +118,9 @@ export default function PeoplePoweredEcosystemSupport() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Network} title="Support Within the Traveleye Ecosystem" compact />
           <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg">
-            <p>Within the Traveleye ecosystem, support is more than services or systems. It is the enabling layer that strengthens people, enterprises, destinations, and tourism ecosystems through knowledge, innovation, collaboration, and continuous learning.</p>
-            <p>Whether supporting tourism capability, encouraging entrepreneurship, strengthening partnerships, or enabling innovation, every initiative contributes to a broader vision of tourism that values people, place, participation, and shared growth.</p>
-            <p>Support becomes an investment in stronger tourism ecosystems and more resilient destinations.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Within the Traveleye ecosystem, support is more than services or systems. It is the enabling layer that strengthens people, enterprises, destinations, and tourism ecosystems through knowledge, innovation, collaboration, and continuous learning.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Whether supporting tourism capability, encouraging entrepreneurship, strengthening partnerships, or enabling innovation, every initiative contributes to a broader vision of tourism that values people, place, participation, and shared growth.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Support becomes an investment in stronger tourism ecosystems and more resilient destinations.</p>
           </div>
         </div>
       </section>

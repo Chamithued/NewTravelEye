@@ -119,13 +119,13 @@ export default function TravelCorridorDevelopmentModel() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Sprout} title="Travel Corridor Development Model" />
           <div className="mx-auto mt-6 max-w-5xl text-center">
-            <p className="text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Tourism has the power to do more than connect destinations. It can strengthen relationships between countries, encourage cultural understanding, create economic opportunities, and foster meaningful connections between people and places.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               The Travel Corridor Development Model is a strategic tourism connectivity and market development approach within the Traveleye People-Powered Tourism Framework. The model seeks to strengthen long-term tourism relationships between Sri Lanka and selected international markets through meaningful travel, cultural exchange, education, business engagement, celebrations, and collaborative tourism development.
             </p>
-            <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Rather than viewing tourism as a one-way movement of visitors, the model encourages two-way connections that bring people, cultures, destinations, enterprises, and tourism ecosystems closer together while creating shared value for all stakeholders.
             </p>
           </div>

@@ -9,7 +9,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/Joint Ventures & Strategic Investments.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -134,7 +134,11 @@ export default function JointVenturesStrategicInvestments() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Building Stronger Tourism Through Partnership and Shared Vision
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>Meaningful tourism development is built through collaboration, shared purpose, responsible investment, and long-term commitment.</p>
             <p>The Traveleye People-Powered Tourism Framework encourages Joint Ventures and Strategic Investments that strengthen tourism ecosystems through participation, stewardship, collaboration, innovation, and shared value creation.</p>
             <p>Whether you represent a tourism enterprise, cooperative movement, community organisation, institution, investor, entrepreneur, or development partner, there are opportunities to participate in shaping a stronger and more connected future for tourism.</p>
@@ -145,7 +149,7 @@ export default function JointVenturesStrategicInvestments() {
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Partnership Within the Traveleye Ecosystem" />
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+          <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>Within the Traveleye ecosystem, partnerships are viewed as long-term relationships built on trust, shared values, complementary strengths, and mutual benefit.</p>
             <p>Rather than focusing solely on commercial investment, the ecosystem encourages collaboration that strengthens destinations, tourism enterprises, communities, innovation, entrepreneurship, and long-term ecosystem resilience.</p>
             <p>Partnership becomes a platform for creating lasting value for people and place.</p>
@@ -209,7 +213,7 @@ export default function JointVenturesStrategicInvestments() {
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Leaf} title="Inspired by Shared Purpose. Strengthened Through Partnership." />
           <div className="mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>The Traveleye approach recognises that meaningful tourism development is achieved through collaboration rather than isolation.</p>

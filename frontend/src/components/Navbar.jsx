@@ -31,7 +31,7 @@ const dropdownGroups = [
     label: 'About Us',
     items: [
       { label: 'About Traveleye Alliance', to: '/about' },
-      { label: 'Traveleye Our Ecosystem Approach', to: '/our-ecosystem-approach' },
+      { label: 'Traveleye Ecosystem Approach', to: '/our-ecosystem-approach' },
       { label: 'Vision & Mission', to: '/vision-mission' },
       { label: 'Why Traveleye', to: '/why-traveleye' },
       { label: 'Governance & Ethics', to: '/governance-ethics' },
@@ -108,7 +108,7 @@ export default function Navbar() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90">
+    <header className="fixed top-0 left-0 right-0 z-[100] border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90">
       <div className="flex w-full items-center py-3 sm:py-3 lg:py-3">
         <NavLink to="/" className="flex-shrink-0 px-4 sm:px-6 lg:px-8">
           <img
@@ -275,7 +275,7 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5rem)] xl:hidden">
+        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5.5rem)] lg:max-h-[calc(100dvh-6.5rem)] xl:hidden">
           <div className="flex flex-col gap-1 px-3 pb-6 pt-3">
             {navItems.map((item) => (
               item.items ? (

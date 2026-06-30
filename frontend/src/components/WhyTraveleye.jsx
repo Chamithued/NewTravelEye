@@ -6,6 +6,7 @@ import {
   MapPinned,
   Sprout,
 } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const reasons = [
   {
@@ -80,8 +81,9 @@ export default function WhyTraveleye() {
     <section className="w-full bg-white px-4 pb-16 pt-8 sm:px-6 sm:pb-20 sm:pt-10 lg:px-8 lg:pb-24 lg:pt-12">
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-8 flex justify-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm">
-            <span className="text-xl leading-none">✦</span>
+          {/* <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm"> */}
+          <div className="inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+            <span className="text-xl leading-none">✦ </span>
             Why Traveleye
           </div>
         </div>
@@ -116,12 +118,12 @@ export default function WhyTraveleye() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <button
-            type="button"
+          <Link
+            to="/why-traveleye"
             className="rounded-xl bg-[#275CAD] px-8 py-4 text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96]"
           >
             Discover Why Traveleye?
-          </button>
+          </Link>
         </div>
       </div>
     </section>

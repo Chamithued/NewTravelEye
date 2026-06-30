@@ -8,7 +8,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travelwith Purpose.png'
+import heroImg from '../assets/subhero/Travel with Purpose.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -83,7 +83,7 @@ export default function TravelWithPurpose() {
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
               className="text-3xl font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
-              Travel With Purpose
+              TRAVEL WITH PURPOSE
             </h1>
             <p className="mt-4 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
               Creating Meaningful Journeys Through People and Place
@@ -94,10 +94,14 @@ export default function TravelWithPurpose() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="mx-auto max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
-            <p>Travel is more than visiting destinations. It is an opportunity to connect with people, cultures, heritage, nature, traditions, and ways of life that make every place unique.</p>
-            <p>The Traveleye People-Powered Tourism Framework encourages travel that creates meaningful experiences while contributing positively to destinations, local people, and tourism ecosystems through participation, stewardship, collaboration, and shared value creation.</p>
-            <p>Every journey has the potential to leave a positive impact, enriching both the traveller and the places they visit.</p>
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Creating Meaningful Journeys Through People and Place
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Travel is more than visiting destinations. It is an opportunity to connect with people, cultures, heritage, nature, traditions, and ways of life that make every place unique.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The Traveleye People-Powered Tourism Framework encourages travel that creates meaningful experiences while contributing positively to destinations, local people, and tourism ecosystems through participation, stewardship, collaboration, and shared value creation.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Every journey has the potential to leave a positive impact, enriching both the traveller and the places they visit.</p>
           </div>
         </div>
       </section>

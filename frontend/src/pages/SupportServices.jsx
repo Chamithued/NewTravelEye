@@ -146,10 +146,12 @@ export default function SupportServices() {
             <p className="mx-auto mt-5 max-w-5xl text-sm font-semibold leading-7 text-slate-700 sm:text-lg sm:leading-8">
               Tourism does not grow through ideas alone.
             </p>
-            <p className="mx-auto mt-4 max-w-5xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mx-auto mt-4 max-w-5xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               It grows when people, destinations, participation systems, and tourism ecosystems are prepared, connected, and able to evolve responsibly over time.
             </p>
-            <p className="mx-auto mt-5 max-w-5xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            {/* <p className="mx-auto mt-5 max-w-5xl text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               Within the Traveleye ecosystem, Ecosystem Support helps strengthen the human, ecosystem, and participation foundations that support more connected and resilient tourism development across Sri Lanka.
             </p>
           </div>

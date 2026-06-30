@@ -111,9 +111,9 @@ export default function PeoplePoweredTravelCollective() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Leaf} title="Travel Within the Traveleye Ecosystem" compact />
           <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-lg">
-            <p>Within the Traveleye ecosystem, travel is more than transportation or itinerary planning. It is the connecting layer that brings together people, destinations, cultures, tourism enterprises, and opportunities through thoughtfully coordinated journeys.</p>
-            <p>Whether connecting nations through international travel corridors, encouraging Sri Lankans to rediscover their own country, or curating exceptional luxury experiences, every journey contributes to a broader vision of meaningful and responsible tourism.</p>
-            <p>Travel becomes a bridge between people and place, creating experiences that enrich travellers while supporting destination wellbeing and long-term tourism resilience.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Within the Traveleye ecosystem, travel is more than transportation or itinerary planning. It is the connecting layer that brings together people, destinations, cultures, tourism enterprises, and opportunities through thoughtfully coordinated journeys.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Whether connecting nations through international travel corridors, encouraging Sri Lankans to rediscover their own country, or curating exceptional luxury experiences, every journey contributes to a broader vision of meaningful and responsible tourism.</p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Travel becomes a bridge between people and place, creating experiences that enrich travellers while supporting destination wellbeing and long-term tourism resilience.</p>
           </div>
         </div>
       </section>
@@ -122,8 +122,8 @@ export default function PeoplePoweredTravelCollective() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Compass} title="The Role of the People-Powered Travel Collective" />
           <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>The People-Powered Travel Collective pillar strengthens tourism by encouraging journeys that remain connected to people, place, culture, participation, and destination wellbeing.</p>
-            <p>Rather than treating travel as isolated transactions, the pillar promotes a connected approach where journeys contribute to stronger tourism ecosystems and more meaningful relationships between travellers and destinations.</p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The People-Powered Travel Collective pillar strengthens tourism by encouraging journeys that remain connected to people, place, culture, participation, and destination wellbeing.</p>
+            <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Rather than treating travel as isolated transactions, the pillar promotes a connected approach where journeys contribute to stronger tourism ecosystems and more meaningful relationships between travellers and destinations.</p>
           </div>
         </div>
       </section>

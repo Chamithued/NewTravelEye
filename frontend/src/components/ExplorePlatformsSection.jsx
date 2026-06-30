@@ -46,11 +46,49 @@ const platforms = [
     image: weddingImg,
     link: '/experiences',
   },
+  // {
+  //   id: 6,
+  //   icon: '🌍',
+  //   title: 'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
+  //   subtitle: 'රට වටා රට දකින්න – ලොව වටා ලොව දකින්න',
+  //   // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
+  //   image: outboundImg,
+  //   link: '/destination-facilitation',
+  // },
   {
     id: 6,
     icon: '🌍',
-    title: 'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
-    subtitle: 'රට වටා රට දකින්න – ලොව වටා ලොව දකින්න',
+    title: 'Explore Sri Lanka, Closer to Home (Exclusively For Sri Lankans)',
+    subtitle: 'රට වටා රට දකින්න',
+    description: 'Discover holidays, pilgrimages, weekend escapes, family adventures, and island-wide travel experiences designed especially for Sri Lankan residents.',
+    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
+    image: outboundImg,
+    link: '/destination-facilitation',
+  },
+  {
+    id: 7,
+    icon: '🌍',
+    title: 'Explore the World, Beyond Borders (Exclusively For Sri Lankans) ',
+    subtitle: 'ලොව වටා ලොව දකින්න',
+    description: 'Discover outbound holidays, pilgrimages, educational tours, group travel, family holidays, and international journeys designed for Sri Lankan travellers. ',
+    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
+    image: outboundImg,
+    link: '/destination-facilitation',
+  },
+  {
+    id: 8,
+    icon: '🌍',
+    title: 'Connecting Tourism Through Collaboration and Partnerships ',
+    description: "A collaborative platform connecting tourism enterprises, destination facilitators, travel partners, service providers, and local communities to strengthen partnerships, improve market access, facilitate destination development, and create shared value across Sri Lanka's tourism ecosystem.",
+    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
+    image: outboundImg,
+    link: '/destination-facilitation',
+  },
+  {
+    id: 9,
+    icon: '🌍',
+    title: 'Connecting Nations Through Meaningful Travel ',
+    description: "Discover country-focused travel platforms that strengthen tourism relationships between Sri Lanka and international markets through meaningful travel, cultural exchange, and long-term partnerships.",
     // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
     image: outboundImg,
     link: '/destination-facilitation',
@@ -62,10 +100,11 @@ export default function ExplorePlatformsSection() {
     <section className="w-full bg-[#eef4fa] px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto mb-10 max-w-4xl text-center">
-          <div className="mb-4 inline-flex rounded-full bg-[#DFE7F3] px-5 py-2 text-sm font-bold uppercase tracking-wide text-[#214f95] shadow-sm">
+          {/* <div className="mb-4 inline-flex rounded-full bg-[#DFE7F3] px-5 py-2 text-sm font-bold uppercase tracking-wide text-[#214f95] shadow-sm"> */}
+          <div className="mb-5 inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
             Explore Our Platforms
           </div>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight tracking-tight text-black sm:text-4xl lg:text-5xl">
             Discover Travel Experiences Across the Traveleye Ecosystem
           </h2>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
