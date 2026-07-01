@@ -5,6 +5,7 @@ import experientialImg from '../assets/client/PPES.png'
 import tourOpsImg from '../assets/client/TC.png'
 import supportImg from '../assets/client/Support Services.png'
 import facilitationImg from '../assets/client/At the Traveleye Facilitation Center.png'
+import { Link } from 'react-router-dom'
 
 const pillars = [
     {
@@ -15,7 +16,7 @@ const pillars = [
     accent: 'bg-amber-500',
     image: tourOpsImg,
     ctas: [
-      { label: 'Explore the Travel Collective ', variant: 'solid' },
+      { label: 'Explore the Travel Collective', variant: 'solid', to: '/people-powered-travel-collective' },
       // { label: 'Co-Own a Travel Venture', variant: 'ghost' },
     ],
   },
@@ -27,7 +28,7 @@ const pillars = [
     accent: 'bg-sky-500',
     image: staysImg,
     ctas: [
-      { label: 'Explore Host Experiences', variant: 'solid' },
+      { label: 'Explore Host Experiences', variant: 'solid', to: '/people-powered-host-experiences' },
       // { label: 'Co-Own an Experience', variant: 'ghost' },
     ],
   },
@@ -39,7 +40,7 @@ const pillars = [
     accent: 'bg-emerald-500',
     image: experientialImg,
     ctas: [
-      { label: 'Explore Ecosystem Support', variant: 'solid' },
+      { label: 'Explore Ecosystem Support', variant: 'solid', to: '/people-powered-ecosystem-support' },
       // { label: 'Co-Own a Support Service', variant: 'ghost' },
     ],
   },
@@ -63,7 +64,7 @@ const pillars = [
     accent: 'bg-orange-500',
     image: facilitationImg,
     ctas: [
-      { label: 'Explore Destination Facilitation', variant: 'solid' },
+      { label: 'Explore Destination Facilitation', variant: 'solid', to: '/people-powered-destination-facilitation' },
       // { label: 'Co-Own a Facilitation Center', variant: 'ghost' },
     ],
   },
@@ -103,9 +104,9 @@ function PillarCard({ pillar }) {
                   <>
                     <div className="flex gap-3">
                       {pillar.ctas.slice(0, 2).map((cta) => (
-                        <button
+                        <Link
                           key={cta.label}
-                          type="button"
+                          to={cta.to}
                           className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
                         >
                           {cta.label}
@@ -115,16 +116,16 @@ function PillarCard({ pillar }) {
                                  <path d="M5 12h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                  <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                </svg>
-                             </span>
                            </span>
-                        </button>
+                           </span>
+                        </Link>
                       ))}
                     </div>
 
                     {pillar.ctas.slice(2).map((cta) => (
-                      <button
+                      <Link
                         key={cta.label}
-                        type="button"
+                        to={cta.to}
                         className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
                       >
                         {cta.label}
@@ -134,16 +135,16 @@ function PillarCard({ pillar }) {
                                <path d="M5 12h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                              </svg>
-                           </span>
                          </span>
-                      </button>
+                         </span>
+                      </Link>
                     ))}
                   </>
                 ) : (
                   pillar.ctas.map((cta) => (
-                    <button
+                    <Link
                       key={cta.label}
-                      type="button"
+                      to={cta.to}
                       className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
                     >
                       {cta.label}
@@ -155,7 +156,7 @@ function PillarCard({ pillar }) {
                            </svg>
                           </span>
                         </span>
-                    </button>
+                    </Link>
                   ))
                 )}
               </div>

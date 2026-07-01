@@ -1,4 +1,5 @@
 import { Building2, Globe2, Leaf, Users, HeartHandshake, Handshake, Plane, Sprout } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import coOwnImg from '../assets/client/Be A Co-Owner2.png'
 import inboundImg from '../assets/client/Partner With Us - Inbound1.png'
@@ -123,15 +124,18 @@ export default function GetInvolved() {
           </div>
 
           <h2 className="home-section-title">Every Contribution Matters</h2>
-          <div className="mt-4 mx-auto max-w-5xl space-y-4 text-center text-base font-medium text-[#40566a]">
+          <div className="mx-auto mt-5 max-w-5xl space-y-6 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
             <p>Tourism is more than where people travel.</p>
             <p>It is about the connections, participation, and positive impact created along the way.</p>
             <p>Whether you are a traveller, tourism enterprise, destination stakeholder, entrepreneur, institution, community organisation, or ecosystem partner, there are many ways to become part of the Traveleye People-Powered Tourism Ecosystem.</p>
           </div>
           <div className="mt-7">
-            <button className="inline-flex w-full items-center justify-center rounded-full bg-[#214f95] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#183d76] sm:w-auto">
+            <Link
+              to="/how-you-can-get-involved"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
+            >
               Join the Traveleye Ecosystem
-            </button>
+            </Link>
           </div>
         </div>
 
