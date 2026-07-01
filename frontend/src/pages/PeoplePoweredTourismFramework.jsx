@@ -15,7 +15,7 @@ import {
   UserRoundCheck,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/client/PPT Framework.png'
+import heroImg from '../assets/subhero/pillars/People-Powered Tourism Framework.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -277,7 +277,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="flex items-center justify-center gap-2 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Leaf} size="lg" className="bg-transparent" />
+              <IconBadge icon={Leaf} size="lg" className="bg-[#ecf8ef] text-[#0f4d2f]" />
               <span>Guiding Principles</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
@@ -302,7 +302,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-6 max-w-3xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Globe2} className="bg-transparent" />
+              <IconBadge icon={Globe2} className="bg-[#ecf8ef] text-[#0f4d2f]" />
               <span>International Alignment & Global Compatibility</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -326,7 +326,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-6 max-w-3xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Sprout} className="bg-transparent" />
+              <IconBadge icon={Sprout} className="bg-[#ecf8ef] text-[#0f4d2f]" />
               <span>Contribution to Sustainable Development</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -356,7 +356,7 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="flex items-center justify-center gap-3 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Waypoints} className="bg-transparent" />
+              <IconBadge icon={Waypoints} className="bg-[#ecf8ef] text-[#0f4d2f]" />
               <span>Looking Ahead</span>
             </h2>
             <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />

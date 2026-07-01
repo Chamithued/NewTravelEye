@@ -82,7 +82,7 @@ export default function WhyTraveleye() {
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-8 flex justify-center">
           {/* <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm"> */}
-          <div className="inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+          <div className="home-section-eyebrow">
             <span className="text-xl leading-none">✦ </span>
             Why Traveleye
           </div>
@@ -90,8 +90,8 @@ export default function WhyTraveleye() {
 
         <div className="mx-auto max-w-6xl text-center">
           <div className="flex items-start justify-center gap-0">
-            <span className="mr-0 text-5xl leading-none">🌿</span>
-            <h2 className="max-w-5xl text-[1.85rem] font-semibold leading-tight text-[#172544] sm:text-[2.2rem] lg:text-[2.8rem]">
+            <span className="mr-0 text-4xl leading-none sm:text-5xl">🌿</span>
+            <h2 className="home-section-title max-w-5xl">
               {/* Because Sri Lanka needs a People-Powered Tourism Ecosystem – not another tour operator */}
               A Different Approach to Tourism 
             </h2>
@@ -120,7 +120,7 @@ export default function WhyTraveleye() {
         <div className="mt-10 flex justify-center">
           <Link
             to="/why-traveleye"
-            className="rounded-xl bg-[#275CAD] px-8 py-4 text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96]"
+            className="w-full rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
           >
             Discover Why Traveleye?
           </Link>

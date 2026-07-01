@@ -9,7 +9,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Discussing People-Powered Tourism framework.png'
+import heroImg from '../assets/subhero/pillars/Destination Steweredship Model.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

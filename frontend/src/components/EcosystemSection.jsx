@@ -48,16 +48,16 @@ export default function EcosystemSection() {
 			<div className="mx-auto max-w-6xl">
 				<div className="text-center">
 					{/* <div className="inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm sm:text-[1.05rem]"> */}
-					<div className="inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+					<div className="home-section-eyebrow">
 						The Traveleye Ecosystem 
 					</div>
 
-					<h2 className="mx-auto mt-4 max-w-5xl text-3xl font-bold leading-tight tracking-tight text-[#172544] sm:text-4xl lg:text-5xl">
+					<h2 className="home-section-title mt-4">
 						Building Stronger Tourism Through Connected Participation 
 					</h2>
 				</div>
 
-				<div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(460px,0.88fr)] lg:gap-14">
+				<div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(420px,0.88fr)] lg:gap-14">
 					<div>
 						<div className="mt-6 max-w-3xl space-y-5 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
 							<p>
@@ -88,17 +88,17 @@ export default function EcosystemSection() {
 					</div>
 
 					<div className="flex flex-col items-center lg:pt-10">
-						<div className="overflow-hidden rounded-[1.6rem] shadow-[0_16px_42px_rgba(15,23,42,0.12)]">
+						<div className="w-full overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] sm:rounded-[1.6rem]">
 							<img
 								src={ecosystemImg}
 								alt="People collaborating on a tourism ecosystem framework"
-								className="h-[500px] w-full object-cover object-center lg:h-[495px]"
+								className="h-[320px] w-full object-cover object-center sm:h-[420px] lg:h-[495px]"
 							/>
 						</div>
 
 						<button
 							type="button"
-							className="mt-8 rounded-xl bg-[#214f95] px-8 py-4 text-[1.05rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d]"
+							className="mt-8 w-full rounded-xl bg-[#214f95] px-6 py-4 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem]"
 						>
 							Learn About the Ecosystem
 						</button>
@@ -108,7 +108,7 @@ export default function EcosystemSection() {
 
 			{/* Pillar row — slightly reduced width */}
 			<div className="mt-6">
-				<div className="mx-auto max-w-7xl grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-4 sm:px-6 lg:px-8">
+				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 sm:grid-cols-2 sm:gap-6 sm:px-6 md:grid-cols-4 lg:px-8">
 					{ecosystemPillars.map((pillar) => {
 						const Icon = pillar.icon
 

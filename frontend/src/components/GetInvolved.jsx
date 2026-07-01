@@ -77,16 +77,16 @@ function InvolvedCard({ card }) {
   const Icon = card.icon
 
   return (
-    <article className="relative overflow-hidden rounded-2xl h-80 sm:h-96">
-      <img src={card.image} alt={card.title} className="h-full w-full object-cover" />
+    <article className="relative min-h-80 overflow-hidden rounded-2xl sm:min-h-96">
+      <img src={card.image} alt={card.title} className="absolute inset-0 h-full w-full object-cover" />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0f2a55]/24 via-[#0f2a55]/12 to-transparent p-6 flex flex-col justify-between">
+      <div className="absolute inset-0 flex flex-col justify-between bg-gradient-to-t from-[#0f2a55]/24 via-[#0f2a55]/12 to-transparent p-5 sm:p-6">
           <div>
           <div className="inline-flex flex-col items-start gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg text-white" style={{ backgroundColor: card.accent }}>
               <Icon className="h-5 w-5 text-white" />
             </div>
-            <h3 className="text-xl font-semibold text-white">{card.title}</h3>
+            <h3 className="text-lg font-semibold leading-tight text-white sm:text-xl">{card.title}</h3>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ function InvolvedCard({ card }) {
           <p className="mb-4 max-w-xl text-sm sm:text-base text-white/90">{card.subtitle}</p>
 
           <div>
-            <button className="inline-flex items-center gap-3 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/5">
+            <button className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/5 sm:w-auto">
               <span>Learn More</span>
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-transparent">
                 <svg className="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -118,18 +118,18 @@ export default function GetInvolved() {
 
         <div className="mx-auto max-w-4xl text-center">
           {/* <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm mb-6"> */}
-          <div className="mb-5 inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+          <div className="home-section-eyebrow mb-5">
             Get Involved
           </div>
 
-          <h2 className="text-3xl font-semibold text-[#172544] sm:text-4xl lg:text-5xl">Every Contribution Matters</h2>
+          <h2 className="home-section-title">Every Contribution Matters</h2>
           <div className="mt-4 mx-auto max-w-5xl space-y-4 text-center text-base font-medium text-[#40566a]">
             <p>Tourism is more than where people travel.</p>
             <p>It is about the connections, participation, and positive impact created along the way.</p>
             <p>Whether you are a traveller, tourism enterprise, destination stakeholder, entrepreneur, institution, community organisation, or ecosystem partner, there are many ways to become part of the Traveleye People-Powered Tourism Ecosystem.</p>
           </div>
           <div className="mt-7">
-            <button className="inline-flex items-center justify-center rounded-full bg-[#214f95] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#183d76]">
+            <button className="inline-flex w-full items-center justify-center rounded-full bg-[#214f95] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#183d76] sm:w-auto">
               Join the Traveleye Ecosystem
             </button>
           </div>

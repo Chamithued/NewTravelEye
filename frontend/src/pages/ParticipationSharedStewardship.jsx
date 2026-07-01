@@ -8,7 +8,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/PPT Framework.png'
+import heroImg from '../assets/subhero/pillars/Participation & Shared Stewerdship.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

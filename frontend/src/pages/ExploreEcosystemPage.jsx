@@ -10,7 +10,7 @@ import {
   UserRoundCheck,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/pillars/Explore the Ecosystem.jpg'
 import FooterLinks from '../components/FooterLinks'
 
 const pillarCards = [
@@ -98,7 +98,7 @@ export default function ExploreEcosystemPage() {
           <div className="w-full max-w-[96rem] text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="mx-auto max-w-5xl text-3xl font-extrabold leading-none tracking-tight text-white sm:text-4xl md:text-5xl xl:text-6xl"
+              className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
               EXPLORE THE TRAVELEYE ECOSYSTEM  
             </h1>

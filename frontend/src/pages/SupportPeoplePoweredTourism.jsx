@@ -88,9 +88,10 @@ export default function SupportPeoplePoweredTourism() {
           <div className="max-w-4xl text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-3xl font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              SUPPORT PEOPLE-POWERED TOURISM
+              <span className="block">SUPPORT PEOPLE-POWERED</span>
+              <span className="block">TOURISM</span>
             </h1>
             <p className="mt-4 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
               Strengthening Tourism Through People and Place

@@ -17,7 +17,7 @@ import {
   Sun,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/collectives/Traveleye Lanka Journeys.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

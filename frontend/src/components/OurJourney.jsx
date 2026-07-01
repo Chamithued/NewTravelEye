@@ -166,12 +166,12 @@ export default function OurJourney() {
       <div className="mx-auto max-w-[1470px]">
         <div className="mx-auto mb-14 max-w-[1110px] text-center lg:mb-16">
           <div className="mb-8 flex justify-center">
-            <div className="inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+            <div className="home-section-eyebrow">
               Our Journey
             </div>
           </div>
 
-          <h2 className="text-[2.35rem] font-semibold leading-[1.18] tracking-normal text-[#121c35] sm:text-[2.85rem] lg:text-[3.15rem]">
+          <h2 className="home-section-title">
             From Purpose-Driven Travel to People-Powered Tourism Ecosystem Building
           </h2>
 
@@ -179,7 +179,7 @@ export default function OurJourney() {
             Building Sri Lanka&apos;s first People-Powered Tourism Ecosystem
           </p> */}
 
-          <div className="mt-7 space-y-6 text-[1.18rem] font-normal leading-[1.22] text-[#5f6c87] sm:text-[1.32rem]">
+          <div className="mt-7 space-y-6 text-[1.05rem] font-normal leading-7 text-[#5f6c87] sm:text-[1.2rem] sm:leading-8">
             <p>
               {/* What began in 2006 as a purpose-driven tour operation focused on meaningful travel
               and strengthening Sri Lanka&apos;s domestic tourism sector has evolved into Traveleye

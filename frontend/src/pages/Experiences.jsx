@@ -119,7 +119,7 @@ export default function Experiences() {
           <div className="max-w-5xl text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
               <span className="block">Develop a</span>
               <span className="block">People &amp; Place-Inspired Experience</span>

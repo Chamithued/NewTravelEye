@@ -7,7 +7,7 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/about/Why Traveleye.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

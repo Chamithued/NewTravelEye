@@ -12,7 +12,7 @@ import {
   Sprout,
   UsersRound,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/pillars/PPTC Pillar.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

@@ -76,3 +76,52 @@
     }
   }
 }
+
+@layer components {
+  .home-section-eyebrow {
+    display: inline-flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    background: #dfe6ef;
+    padding: 0.45rem 1.25rem;
+    text-align: center;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #1f4f93;
+    box-shadow: 0 1px 2px rgb(15 23 42 / 0.05);
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .home-section-title {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 64rem;
+    color: #172544;
+    font-size: 1.85rem;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: 0;
+    text-wrap: balance;
+  }
+
+  .home-section-title-on-dark {
+    color: #ffffff;
+  }
+
+  @media (min-width: 640px) {
+    .home-section-title {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .home-section-title {
+      font-size: 2.8rem;
+    }
+  }
+}
