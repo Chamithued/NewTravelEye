@@ -38,11 +38,11 @@ export default function HomeFrameworkSections() {
               className="relative border-b border-[#d8e2ef] py-8 last:border-b-0 sm:py-10"
             >
               <div className="mx-auto max-w-5xl text-center">
-                <div className="inline-flex max-w-full items-center justify-center gap-2 rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1rem] font-extrabold leading-none text-[#1f4f93] shadow-sm sm:text-[1.2rem]">
+                <div className="home-section-eyebrow">
                   <Icon className="h-5 w-5 shrink-0" aria-hidden="true" />
                   <span className="leading-tight">{section.label}</span>
                 </div>
-                <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-bold leading-tight text-[#172544] sm:text-4xl">
+                <h2 className="home-section-title mt-5 max-w-3xl">
                   {section.title}
                 </h2>
 
@@ -55,7 +55,7 @@ export default function HomeFrameworkSections() {
                 <div className="mt-8 flex justify-center">
                   <a
                     href={section.to}
-                    className="inline-flex rounded-lg bg-[#275CAD] px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96]"
+                    className="inline-flex w-full justify-center rounded-lg bg-[#275CAD] px-6 py-3 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
                   >
                     {section.cta}
                   </a>

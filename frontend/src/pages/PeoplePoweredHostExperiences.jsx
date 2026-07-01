@@ -12,7 +12,7 @@ import {
   UsersRound,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/client/Explore People Pwered Travel Experiences.png'
+import heroImg from '../assets/subhero/pillars/PPHE Pillar.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

@@ -14,7 +14,7 @@ import {
   TentTree,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Discover Sri Lanka - Domestic.png'
+import heroImg from '../assets/subhero/collectives/Traveleye Island Journeys.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

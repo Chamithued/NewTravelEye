@@ -121,7 +121,7 @@ export default function CollaborateWithUs() {
           <div className="max-w-4xl text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
               Collaborate With Us
             </h1>

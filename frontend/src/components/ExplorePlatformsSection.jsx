@@ -101,10 +101,10 @@ export default function ExplorePlatformsSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto mb-10 max-w-4xl text-center">
           {/* <div className="mb-4 inline-flex rounded-full bg-[#DFE7F3] px-5 py-2 text-sm font-bold uppercase tracking-wide text-[#214f95] shadow-sm"> */}
-          <div className="mb-5 inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+          <div className="home-section-eyebrow mb-5">
             Explore Our Platforms
           </div>
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-black sm:text-4xl lg:text-5xl">
+          <h2 className="home-section-title">
             Discover Travel Experiences Across the Traveleye Ecosystem
           </h2>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -128,7 +128,7 @@ export default function ExplorePlatformsSection() {
                   {platform.icon}
                 </div> */}
               </div>
-              <div className="flex flex-1 flex-col p-5 text-left">
+              <div className="flex flex-1 flex-col p-4 text-left sm:p-5">
                 <h3 className="text-base font-bold leading-snug text-[#1f4f93]">
                   {platform.title}
                 </h3>

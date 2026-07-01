@@ -10,7 +10,7 @@ import {
   Sparkles,
   Trees,
 } from 'lucide-react'
-import heroImg from '../assets/client/prive.jpg'
+import heroImg from '../assets/subhero/collectives/Traveleye Prive Collection.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

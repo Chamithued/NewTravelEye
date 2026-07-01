@@ -1,5 +1,5 @@
 import { Megaphone, Newspaper, Lightbulb, FolderOpen, Mail, CheckCircle2, Sprout } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/about/Media & Press.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -79,7 +79,7 @@ export default function MediaPress() {
           <div className="text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-3xl font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
+              className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
               MEDIA &amp; PRESS
             </h1>

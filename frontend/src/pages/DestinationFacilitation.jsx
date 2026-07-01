@@ -97,6 +97,7 @@ const facilitationMatters = [
   },
 ]
 
+
 export default function DestinationFacilitation() {
   return (
     <main className="flex flex-col w-full bg-white text-slate-900">

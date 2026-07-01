@@ -11,7 +11,7 @@ import {
   Sparkles,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Travel3.png'
+import heroImg from '../assets/subhero/collectives/Traveleye Global Journeys.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -186,7 +186,31 @@ export default function GlobalJourneys() {
         </div>
       </section>
 
-      <section className="w-full bg-[#EEF4FA] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+<section className="w-full bg-[#EEF4FA]">
+  <section className="px-4 pt-10 pb-4 sm:px-6 sm:pt-14 sm:pb-4 lg:px-8 lg:pt-16 lg:pb-4">
+    <div className="mx-auto max-w-4xl text-center">
+      <SectionHeading icon={Globe2} title="Explore the World Your Way" />
+      <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+        Every traveller seeks something different from their journey.
+      </p>
+      <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+        Global Journeys offers opportunities to explore the world through a variety of travel experiences.
+      </p>
+    </div>
+  </section>
+
+  <section className="px-4 pt-2 pb-12 sm:px-6 sm:pt-2 sm:pb-16 lg:px-8">
+    <div className="mx-auto max-w-6xl">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {travelTypes.map((item) => (
+          <FeatureCard key={item.title} item={item} />
+        ))}
+      </div>
+    </div>
+  </section>
+</section>
+
+      {/* <section className="w-full bg-[#EEF4FA] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
           <SectionHeading icon={Globe2} title="Explore the World Your Way" />
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -206,7 +230,7 @@ export default function GlobalJourneys() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">

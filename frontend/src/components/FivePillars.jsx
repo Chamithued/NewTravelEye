@@ -79,17 +79,17 @@ function PillarCard({ pillar }) {
   }
 
   return (
-    <article className="relative h-[520px] overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)]">
+    <article className="relative min-h-[520px] overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)]">
       <img src={pillar.image} alt={pillar.title} className="absolute inset-0 h-full w-full object-cover" />
 
-      <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between">
+      <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-6 md:p-8">
         <div className="flex items-start justify-between">
           <div className="inline-flex flex-col items-start gap-3">
             <div className={`flex h-12 w-12 items-center justify-center rounded-lg text-white ${pillar.accent}`}>
               <Icon className="h-6 w-6 text-white" />
             </div>
             <div>
-              <p className="text-2xl font-bold text-white md:text-3xl">{pillar.title}</p>
+              <p className="text-[1.35rem] font-bold leading-tight text-white sm:text-2xl md:text-3xl">{pillar.title}</p>
               <p className="mt-1 text-sm font-bold text-white/90">{pillar.subtitle}</p>
             </div>
           </div>
@@ -106,7 +106,7 @@ function PillarCard({ pillar }) {
                         <button
                           key={cta.label}
                           type="button"
-                          className={`inline-flex group items-center justify-start gap-2 rounded-md px-4 py-2 text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78]`}
+                          className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
                         >
                           {cta.label}
                            <span className="ml-2 inline-flex items-center">
@@ -125,7 +125,7 @@ function PillarCard({ pillar }) {
                       <button
                         key={cta.label}
                         type="button"
-                        className={`inline-flex group items-center justify-start gap-2 rounded-md px-4 py-2 text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78]`}
+                        className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
                       >
                         {cta.label}
                           <span className="ml-2 inline-flex items-center">
@@ -144,7 +144,7 @@ function PillarCard({ pillar }) {
                     <button
                       key={cta.label}
                       type="button"
-                      className={`inline-flex group items-center justify-start gap-2 rounded-md px-4 py-2 text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78]`}
+                      className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
                     >
                       {cta.label}
                          <span className="ml-2 inline-flex items-center">
@@ -171,14 +171,14 @@ export default function FivePillars() {
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-8 flex justify-center">
           {/* <div className="inline-flex items-center gap-3 rounded-full bg-[#e9eef8] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm"> */}
-          <div className="inline-flex rounded-full bg-[#dfe6ef] px-5 py-1.5 text-[1.2rem] font-extrabold leading-none text-[#1f4f93] shadow-sm">
+          <div className="home-section-eyebrow">
             Our Four Pillars
           </div>
         </div>
 
         <div className="mx-auto mb-6 max-w-6xl text-center px-4">
           <div className="flex items-center justify-center gap-4">
-            <h2 className="text-3xl font-bold leading-tight text-[#172544] sm:text-4xl lg:text-5xl">
+            <h2 className="home-section-title">
              🌿 Four Connected Pillars Strengthening Tourism Ecosystems 
             </h2>
           </div>
