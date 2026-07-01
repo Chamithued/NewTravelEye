@@ -89,9 +89,9 @@ export default function WhyTraveleye() {
         </div>
 
         <div className="mx-auto max-w-6xl text-center">
-          <div className="flex items-start justify-center gap-0">
+          <div className="flex items-center justify-center gap-2">
             <span className="mr-0 text-4xl leading-none sm:text-5xl">🌿</span>
-            <h2 className="home-section-title max-w-5xl">
+            <h2 className="home-section-title mx-0 max-w-5xl">
               {/* Because Sri Lanka needs a People-Powered Tourism Ecosystem – not another tour operator */}
               A Different Approach to Tourism 
             </h2>
