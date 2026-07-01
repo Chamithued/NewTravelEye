@@ -55,6 +55,7 @@ export default function EcosystemSection() {
 					<h2 className="home-section-title mt-4">
 						Building Stronger Tourism Through Connected Participation 
 					</h2>
+					<div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
 				</div>
 
 				<div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(420px,0.88fr)] lg:gap-14">

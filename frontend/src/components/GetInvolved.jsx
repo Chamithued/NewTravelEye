@@ -124,6 +124,7 @@ export default function GetInvolved() {
           </div>
 
           <h2 className="home-section-title">Every Contribution Matters</h2>
+          <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
           <div className="mx-auto mt-5 max-w-5xl space-y-6 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
             <p>Tourism is more than where people travel.</p>
             <p>It is about the connections, participation, and positive impact created along the way.</p>

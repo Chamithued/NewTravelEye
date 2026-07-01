@@ -174,6 +174,7 @@ export default function OurJourney() {
           <h2 className="home-section-title">
             From Purpose-Driven Travel to People-Powered Tourism Ecosystem Building
           </h2>
+          <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
           {/* <p className="mt-5 text-[1.32rem] font-bold leading-tight text-[#121c35] sm:text-[1.48rem]">
             Building Sri Lanka&apos;s first People-Powered Tourism Ecosystem

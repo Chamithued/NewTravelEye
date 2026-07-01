@@ -96,6 +96,7 @@ export default function WhyTraveleye() {
               A Different Approach to Tourism 
             </h2>
           </div>
+          <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
           {/* <p className="mt-5 text-xl font-semibold leading-8 text-slate-600 sm:text-2xl">
             Transforming travel into a shared journey that creates value for People, Planet, and Prosperity.

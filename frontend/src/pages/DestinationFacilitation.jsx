@@ -97,6 +97,27 @@ const facilitationMatters = [
   },
 ]
 
+function SectionHeading({ icon: Icon, title, center = true }) {
+  return (
+    <div className={center ? 'mx-auto max-w-4xl text-center' : 'max-w-3xl'}>
+      <h2
+        className={[
+          'mt-0 flex gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl',
+          center ? 'items-center justify-center' : 'items-start',
+        ].join(' ')}
+      >
+        {Icon ? (
+          <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+            <Icon className="h-5 w-5" aria-hidden="true" />
+          </span>
+        ) : null}
+        <span>{title}</span>
+      </h2>
+      <div className={['mt-3 h-0.5 w-24 rounded bg-[#c28a5b]', center ? 'mx-auto' : ''].join(' ')} />
+    </div>
+  )
+}
+
 
 export default function DestinationFacilitation() {
   return (
@@ -118,11 +139,7 @@ export default function DestinationFacilitation() {
 
       <section className="w-full bg-white px-4 py-14 text-slate-900 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl text-center">
-          <h2 className="flex items-center justify-center gap-3 text-3xl font-extrabold leading-tight tracking-tight text-[#00466f] sm:text-4xl">
-            <Globe2 className="h-10 w-10 rounded-full bg-[#DFE7F3] p-2 text-[#00466f]" />
-            <span>Destination Facilitation Within the Traveleye Ecosystem</span>
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <SectionHeading icon={Globe2} title="Destination Facilitation Within the Traveleye Ecosystem" />
 
           {/* <p className="mx-auto mt-6 max-w-6xl text-base leading-7 text-[#1f2933] sm:text-lg"> */}
           <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -161,10 +178,7 @@ export default function DestinationFacilitation() {
       <section className="w-full border-y border-slate-200 bg-[#fcfbf8] px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl flex justify-center">
           <div className="w-full max-w-5xl border-l-4 border-[#e0aa18] pl-6 sm:pl-8">
-            <h2 className="flex items-center gap-3 text-xl font-extrabold leading-tight text-[#00466f] sm:text-2xl">
-              <Globe2 className="h-5 w-5 text-[#12b5cb]" aria-hidden="true" />
-              <span>A Place-Based Approach to Tourism</span>
-            </h2>
+            <SectionHeading icon={Globe2} title="A Place-Based Approach to Tourism" center={false} />
 
             {/* <p className="mt-5 text-base leading-7 text-[#27333f] sm:text-lg"> */}
             <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -194,10 +208,7 @@ export default function DestinationFacilitation() {
       <section className="w-full bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-5xl text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-extrabold leading-tight text-[#00466f] sm:text-3xl">
-              <Leaf className="h-6 w-6 text-[#7dbb2f]" aria-hidden="true" />
-              <span>Developing Experiences Through Local Participation</span>
-            </h2>
+            <SectionHeading icon={Leaf} title="Developing Experiences Through Local Participation" />
 
             {/* <p className="mt-5 text-sm italic leading-7 text-[#5f6368] sm:text-base"> */}
             <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -245,10 +256,7 @@ export default function DestinationFacilitation() {
 
       <section className="w-full bg-[#fcfbf8] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 className="flex items-center justify-center gap-3 text-2xl font-extrabold leading-tight text-[#00466f] sm:text-3xl">
-            <LinkIcon className="h-6 w-6 text-[#b399d4]" aria-hidden="true" />
-            <span>Connecting People, Places, and Journeys</span>
-          </h2>
+          <SectionHeading icon={LinkIcon} title="Connecting People, Places, and Journeys" />
 
           <p className="mx-auto mt-8 max-w-5xl text-base leading-7 text-[#1f2933] sm:text-lg">
             Within the ecosystem:
@@ -281,10 +289,7 @@ export default function DestinationFacilitation() {
       <section className="w-full border-y border-slate-200 bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-extrabold leading-tight text-[#00466f] sm:text-3xl">
-              <Sprout className="h-6 w-6 text-[#79b83a]" aria-hidden="true" />
-              <span>Strengthening Destinations Through Participation</span>
-            </h2>
+            <SectionHeading icon={Sprout} title="Strengthening Destinations Through Participation" />
 
             {/* <p className="mt-5 text-sm italic leading-7 text-[#5f6368] sm:text-base">
               As part of its ecosystem building approach, Traveleye Destination Facilitation strengthens tourism from within destinations themselves.
@@ -311,10 +316,7 @@ export default function DestinationFacilitation() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 className="flex items-center justify-center gap-3 text-2xl font-extrabold leading-tight text-[#00466f] sm:text-3xl">
-            <Leaf className="h-6 w-6 text-[#7dbb2f]" aria-hidden="true" />
-            <span>Supporting More Connected Destination Ecosystems</span>
-          </h2>
+          <SectionHeading icon={Leaf} title="Supporting More Connected Destination Ecosystems" />
 
           {/* <p className="mx-auto mt-8 max-w-4xl text-base leading-7 text-[#27333f] sm:text-lg"> */}
           <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -347,10 +349,7 @@ export default function DestinationFacilitation() {
       <section className="w-full bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl border-t border-slate-300 pt-14">
           <div className="text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-extrabold leading-tight text-[#00466f] sm:text-3xl">
-              <Globe2 className="h-6 w-6 text-[#12b5cb]" aria-hidden="true" />
-              <span>Why Destination Facilitation Matters</span>
-            </h2>
+            <SectionHeading icon={Globe2} title="Why Destination Facilitation Matters" />
 
             {/* <p className="mt-5 text-sm italic leading-7 text-[#5f6368] sm:text-base"> */}
             <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
@@ -382,10 +381,7 @@ export default function DestinationFacilitation() {
 
       <section className="w-full bg-[#fcfbf8] px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="flex items-center justify-center gap-3 text-xl font-extrabold leading-tight text-[#00466f] sm:text-2xl">
-            <Leaf className="h-5 w-5 text-[#7dbb2f]" aria-hidden="true" />
-            <span>Closing Reflection</span>
-          </h2>
+          <SectionHeading icon={Leaf} title="Closing Reflection" />
 
           {/* <p className="mx-auto mt-8 max-w-4xl text-base leading-8 text-[#27333f] sm:text-lg"> */}
           <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
