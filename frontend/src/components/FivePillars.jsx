@@ -183,6 +183,7 @@ export default function FivePillars() {
              🌿 Four Connected Pillars Strengthening Tourism Ecosystems 
             </h2>
           </div>
+          <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
           {/* <p className="mt-4 text-xl font-semibold text-slate-800 sm:text-2xl">
             The People–Powered Tourism in action

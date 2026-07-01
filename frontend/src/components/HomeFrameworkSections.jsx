@@ -3,7 +3,7 @@ import { Globe2, Sprout } from 'lucide-react'
 const featureSections = [
   {
     icon: Sprout,
-    label: 'GUIDING PRINCIPLES',
+    label: 'Guiding Principles',
     title: 'The Values That Shape the Traveleye Ecosystem',
     paragraphs: [
       'The Traveleye People-Powered Tourism Framework is guided by principles that encourage tourism to remain authentic, inclusive, participatory, responsible, innovative, and grounded in long-term stewardship.',
@@ -14,7 +14,7 @@ const featureSections = [
   },
   {
     icon: Globe2,
-    label: 'GLOBALLY ALIGNED. LOCALLY GROUNDED.',
+    label: 'Globally Aligned. Locally Grounded.',
     title: 'Inspired by Global Thinking. Rooted in Sri Lankan Realities.',
     paragraphs: [
       "The Traveleye People-Powered Tourism Framework draws inspiration from internationally recognised principles of sustainable tourism, regenerative tourism, destination stewardship, community participation, and responsible tourism development, while remaining deeply connected to Sri Lanka's people, place, and local identity.",
@@ -35,7 +35,7 @@ export default function HomeFrameworkSections() {
           return (
             <article
               key={section.label}
-              className="relative border-b border-[#d8e2ef] py-8 last:border-b-0 sm:py-10"
+              className="relative border-b border-[#d8e2ef] py-8 first:pb-14 last:border-b-0 last:pt-14 sm:py-10 sm:first:pb-16 sm:last:pt-16 lg:first:pb-20 lg:last:pt-20"
             >
               <div className="mx-auto max-w-5xl text-center">
                 <div className="home-section-eyebrow">
@@ -45,6 +45,7 @@ export default function HomeFrameworkSections() {
                 <h2 className="home-section-title mt-5 max-w-3xl">
                   {section.title}
                 </h2>
+                <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
                 <div className="mx-auto mt-6 max-w-5xl space-y-7 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
                   {section.paragraphs.map((paragraph) => (
