@@ -20,7 +20,7 @@ const navItems = [
       { label: 'Traveleye Island Journeys', to: '/island-journeys' },
     ],
   },
-  { top: 'Host', bottom: 'Experiences', to: '/experiences' },
+  { top: 'Host', bottom: 'Experiences', to: '/host-experiences' },
   { top: 'Destination', bottom: 'Facilitation', to: '/destination-facilitation' },
   { top: 'Ecosystem', bottom: 'Support', to: '/support-services' },
   // { top: 'Privé', bottom: 'Collection', to: '/stays' },
@@ -31,8 +31,8 @@ const dropdownGroups = [
     label: 'About Us',
     items: [
       { label: 'About Traveleye Alliance', to: '/about' },
-      { label: 'Traveleye Ecosystem Approach', to: '/our-ecosystem-approach' },
-      { label: 'Vision & Mission', to: '/vision-mission' },
+      { label: 'Our Ecosystem Approach', to: '/our-ecosystem-approach' },
+      { label: 'Our Vision, Mission & Values', to: '/vision-mission' },
       { label: 'Why Traveleye', to: '/why-traveleye' },
       { label: 'Governance & Ethics', to: '/governance-ethics' },
       { label: 'Media & Press', to: '/media-press' },
@@ -60,14 +60,14 @@ const dropdownGroups = [
       { label: 'How You Can Get Involved', to: '/how-you-can-get-involved' },
       { label: 'Become a Travel Venture Partner', to: '/become-a-travel-venture-partner' },
       { label: 'Become a Travel Corridor Partner', to: '/become-a-travel-corridor-partner' },
+      { label: 'Develop a Place-Inspired Stay', to: '/stays' },
+      { label: 'Develop a People & Place-Inspired Experience', to: '/experiences' },
       { label: 'Develop an Ecosystem Support Venture', to: '/develop-an-ecosystem-support-venture' },
       { label: 'Partner in Destination Development', to: '/partner-in-destination-development' },
       { label: 'Joint Ventures & Strategic Investments', to: '/joint-ventures-strategic-investments' },
       { label: 'Collaborate With Us', to: '/collaborate-with-us' },
       { label: 'Travel With Purpose', to: '/travel-with-purpose' },
       { label: 'Support People-Powered Tourism', to: '/support-people-powered-tourism' },
-      { label: 'Develop a Place-Inspired Stay', to: '/stays' },
-      { label: 'Develop a People & Place-Inspired Experience', to: '/experiences' },
     ],
   },
 ]
@@ -157,7 +157,7 @@ export default function Navbar() {
                   <ChevronDown />
                 </button>
 
-                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-max min-w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                     {item.items.map((dropdownItem) => (
                       <NavLink
@@ -165,7 +165,7 @@ export default function Navbar() {
                         to={dropdownItem.to}
                         className={({ isActive }) =>
                           [
-                            'block rounded-xl px-4 py-3 text-[1rem] font-medium leading-snug transition-colors',
+                            'block whitespace-nowrap rounded-xl px-4 py-3 text-[1rem] font-medium leading-snug transition-colors',
                             dropdownItem.indent ? 'relative ml-4 pl-10 text-[0.95rem]' : '',
                             isActive
                               ? 'bg-[#1C4686] text-white'
@@ -174,7 +174,7 @@ export default function Navbar() {
                         }
                       >
                         {dropdownItem.child ? (
-                          <span className="inline-flex items-center gap-2">
+                          <span className="inline-flex items-center gap-2 whitespace-nowrap">
                             <span
                               aria-hidden="true"
                               className={[
@@ -237,7 +237,7 @@ export default function Navbar() {
                 <ChevronDown />
               </button>
 
-              <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-max min-w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                   {group.items.map((item) => (
                     <NavLink
@@ -245,7 +245,7 @@ export default function Navbar() {
                       to={item.to}
                       className={({ isActive }) =>
                         [
-                          'block rounded-xl px-4 py-3 text-[1rem] font-medium leading-snug transition-colors',
+                          'block whitespace-nowrap rounded-xl px-4 py-3 text-[1rem] font-medium leading-snug transition-colors',
                           isActive
                             ? 'bg-[#1C4686] text-white'
                             : 'text-slate-700 hover:bg-[#1C4686] hover:text-white',

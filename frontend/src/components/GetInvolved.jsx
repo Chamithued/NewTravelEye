@@ -7,6 +7,13 @@ import collaborateImg from '../assets/client/Collaborate With Us1.png'
 import purposeImg from '../assets/client/Travelwith Purpose.png'
 import supportLocalImg from '../assets/client/Support Local People & Communities.png'
 import movementImg from '../assets/client/Join the movement2.png'
+import BTCP from '../assets/involved/Become a Travel Corridor Partner.jpg'
+import BTVP from '../assets/involved/Become a Travel Venture Partner.jpg'
+import DPAPIE from '../assets/involved/Develop a People & Place-Inspired Experience.jpg'
+import DESV from '../assets/involved/Develop an Ecosystem Support Venture.jpg'
+import DPIS from '../assets/involved/Develop Place Inspired Stay.jpg'
+import JVASI from '../assets/involved/Joint Ventures & Strategic Investments.jpg'
+
 
 const cards = [
   {
@@ -14,49 +21,49 @@ const cards = [
     subtitle: 'Develop inbound and outbound travel ventures and partnerships connecting Sri Lanka with the world.',
     icon: Building2,
     accent: '#275CAD',
-    image: coOwnImg,
+    image: BTVP,
   },
   {
     title: 'Become a Travel Corridor Partner',
     subtitle: 'Develop exclusive travel corridor partnerships connecting Sri Lanka with your country through meaningful two-way tourism.',
     icon: Sprout,
     accent: '#15803d',
-    image: supportLocalImg,
+    image: BTCP,
   },
   {
     title: 'Develop a Place-Inspired Stay',
     subtitle: 'Create authentic hospitality that reflects Sri Lanka \'s culture, local character, and sense of place.',
     icon: Globe2,
     accent: '#0ea5a4',
-    image: inboundImg,
+    image: DPIS,
   },
   {
     title: 'Develop a People & Place-Inspired Experience',
     subtitle: 'Create authentic experiences that connect travellers with Sri Lanka\'s people, culture, nature, heritage, creativity, and traditions.',
     icon: Leaf,
     accent: '#16a34a',
-    image: collaborateImg,
+    image: DPAPIE,
   },
   {
     title: ' Develop an Ecosystem Support Venture',
     subtitle: 'Strengthen tourism through technology, training, advisory services, innovation, capability development, and enterprise support.',
     icon: Globe2,
     accent: '#7c3aed',
-    image: purposeImg,
+    image: DESV,
   },
   {
     title: 'Partner in Destination Development',
     subtitle: 'Contribute to destination participation, stewardship, and tourism ecosystem development across Sri Lanka.',
     icon: Users,
     accent: '#f59e0b',
-    image: supportLocalImg,
+    image: movementImg,
   },
   {
     title: 'Joint Ventures & Strategic Investments',
     subtitle: 'Explore strategic partnerships and investment opportunities that strengthen tourism ecosystems.',
     icon: HeartHandshake,
     accent: '#ef4444',
-    image: movementImg,
+    image: JVASI,
   },
   {
     title: 'Collaborate With Us',

@@ -92,6 +92,7 @@ function App() {
           <Route path="support-services" element={<SupportServices />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="host-experiences" element={<PeoplePoweredHostExperiences />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
