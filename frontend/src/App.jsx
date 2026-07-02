@@ -43,6 +43,7 @@ import TravelCorridorDevelopmentModel from './pages/TravelCorridorDevelopmentMod
 import ParticipationSharedStewardship from './pages/ParticipationSharedStewardship'
 import GloballyAlignedLocallyGrounded from './pages/GloballyAlignedLocallyGrounded'
 import GuidingPrinciples from './pages/GuidingPrinciples'
+import HostExperiences from './pages/HostExperience'
 
 function App() {
   return (
@@ -92,7 +93,7 @@ function App() {
           <Route path="support-services" element={<SupportServices />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="host-experiences" element={<PeoplePoweredHostExperiences />} />
+          <Route path="host-experiences" element={<HostExperiences />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
