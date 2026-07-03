@@ -3,6 +3,7 @@ import QuickLinks from '../components/QuickLinks'
 import PeoplePoweredTourismIntro from '../components/PeoplePoweredTourismIntro'
 import ExplorePlatformsSection from '../components/ExplorePlatformsSection'
 import OurJourney from '../components/OurJourney'
+import CatalogueLibrarySection from '../components/CatalogueLibrarySection'
 import FivePillars from '../components/FivePillars'
 import HomeFrameworkSections from '../components/HomeFrameworkSections'
 import WhyTraveleye from '../components/WhyTraveleye'
@@ -18,6 +19,7 @@ export default function Home() {
       {/* <QuickLinks /> */}
       <ExplorePlatformsSection />
       <OurJourney />
+      <CatalogueLibrarySection />
       <PeoplePoweredTourismIntro />
       <EcosystemSection />
       <FivePillars />

@@ -44,6 +44,7 @@ import ParticipationSharedStewardship from './pages/ParticipationSharedStewardsh
 import GloballyAlignedLocallyGrounded from './pages/GloballyAlignedLocallyGrounded'
 import GuidingPrinciples from './pages/GuidingPrinciples'
 import HostExperiences from './pages/HostExperience'
+import TraveleyeCatalogueLibrary from './pages/TraveleyeCatalogueLibrary'
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
           <Route path="our-ecosystem-approach" element={<OurEcosystemApproach />} />
           <Route path="governance-ethics" element={<GovernanceEthics />} />
           <Route path="media-press" element={<MediaPress />} />
+          <Route path="traveleye-catalogue-library" element={<TraveleyeCatalogueLibrary />} />
           <Route path="vision-mission" element={<VisionMission />} />
           <Route path="why-traveleye" element={<WhyTraveleyePage />} />
           <Route path="how-you-can-get-involved" element={<HowYouCanGetInvolved />} />
