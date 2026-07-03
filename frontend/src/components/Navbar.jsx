@@ -36,6 +36,7 @@ const dropdownGroups = [
       { label: 'Why Traveleye', to: '/why-traveleye' },
       { label: 'Governance & Ethics', to: '/governance-ethics' },
       { label: 'Media & Press', to: '/media-press' },
+      { label: 'Traveleye Catalogue Library', to: '/traveleye-catalogue-library' },
     ],
   },
   {

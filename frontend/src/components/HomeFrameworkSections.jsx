@@ -52,12 +52,12 @@ function ImagePanel({ section }) {
   )
 }
 
-function TextPanel({ section }) {
+function SectionHeader({ section }) {
   const Icon = section.icon
 
   return (
-    <div className="mx-auto w-full max-w-[560px] text-center lg:mx-0 lg:text-left">
-      <div className="home-section-eyebrow lg:justify-start">
+    <div className="mx-auto w-full max-w-3xl text-center">
+      <div className="home-section-eyebrow justify-center">
         <Icon className="h-5 w-5 shrink-0" aria-hidden="true" />
         <span className="leading-tight">{section.label}</span>
       </div>
@@ -66,7 +66,14 @@ function TextPanel({ section }) {
         {section.title}
       </h2>
 
-      <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#275CAD] lg:mx-0" />
+      <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#275CAD]" />
+    </div>
+  )
+}
+
+function TextPanel({ section }) {
+  return (
+    <div className="mx-auto w-full max-w-[560px] text-center lg:mx-0 lg:text-left">
 
       <div className="mt-6 space-y-5 text-[1.02rem] leading-7 text-[#6b7894] sm:text-[1.08rem] sm:leading-8">
         {section.paragraphs.map((paragraph) => (
@@ -98,6 +105,10 @@ export default function HomeFrameworkSections() {
               key={section.label}
               className="grid items-center gap-10 border-b border-[#d8e2ef] pb-16 last:border-b-0 last:pb-0 lg:grid-cols-2 lg:gap-16"
             >
+              <div className="lg:col-span-2">
+                <SectionHeader section={section} />
+              </div>
+
               {imageFirst ? (
                 <>
                   <ImagePanel section={section} />
