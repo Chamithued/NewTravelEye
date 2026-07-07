@@ -105,9 +105,16 @@ export default function ExplorePlatformsSection() {
             Explore Our Platforms
           </div>
           <h2 className="home-section-title">
-            Discover Travel Experiences Across the Traveleye Ecosystem
+            Discover Our Specialised Platforms Across the Traveleye Ecosystem
           </h2>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mt-7 space-y-6 text-[1.05rem] font-normal leading-7 text-[#5f6c87] sm:text-[1.2rem] sm:leading-8">
+            <p>
+          {/* <p className="mx-auto mt-7 max-w-3xl text-sm font-normal leading-7 text-[#5f6c87] sm:text-base sm:leading-8"> */}
+            Explore a portfolio of specialised platforms designed to connect travellers, destinations, tourism enterprises, and meaningful opportunities through people, place, and purpose
+          </p>
+          </div>
+          
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
