@@ -1,14 +1,6 @@
-import {
-  ArrowDownToLine,
-  BookOpen,
-  Compass,
-  Eye,
-  FileText,
-  Handshake,
-  Network,
-  Sparkles,
-} from 'lucide-react'
+import { BookOpen, Compass, FileText, Handshake, Network, Sparkles } from 'lucide-react'
 import heroImg from '../assets/subhero/about/Traveleye Catalogue Library.jpg'
+import { CatalogueCard, catalogues } from '../components/CatalogueLibrarySection'
 import FooterLinks from '../components/FooterLinks'
 
 const catalogueGroups = [
@@ -32,35 +24,6 @@ const catalogueGroups = [
   },
 ]
 
-const dummyCatalogues = [
-  {
-    title: 'Traveleye Alliance Sri Lanka',
-    category: 'About Traveleye',
-    description: 'Short Description',
-    edition: '2026 Edition',
-    pages: '24 Pages',
-  },
-  {
-    title: 'Traveleye Travel Collective',
-    category: 'Travel Collections',
-    description: 'Short Description',
-    edition: '2026 Edition',
-    pages: '32 Pages',
-  },
-  {
-    title: 'Bharat Lanka Journeys',
-    category: 'Travel Collections',
-    description: 'Short Description',
-    edition: '2026 Edition',
-    pages: '28 Pages',
-  },
-]
-
-const catalogueMeta = [
-  { label: 'Edition', key: 'edition' },
-  { label: 'Number of Pages', key: 'pages' },
-]
-
 function SectionHeading({ icon: Icon, title, subtitle }) {
   return (
     <div className="mx-auto max-w-4xl text-center">
@@ -77,61 +40,6 @@ function SectionHeading({ icon: Icon, title, subtitle }) {
         </p>
       ) : null}
     </div>
-  )
-}
-
-function CatalogueCard({ catalogue }) {
-  return (
-    <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-[#d8e2ef] bg-white shadow-sm">
-      <div className="flex min-h-[180px] items-center justify-center bg-[#eef4fa] px-6 py-8 text-center">
-        <div>
-          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white text-[#1f4f93] shadow-sm">
-            <FileText className="h-7 w-7" aria-hidden="true" />
-          </span>
-          <p className="mt-5 text-xs font-bold uppercase tracking-[0.16em] text-[#c28a5b]">
-            Cover Image
-          </p>
-          <h3 className="mt-2 text-xl font-bold leading-tight text-[#172544]">
-            {catalogue.title}
-          </h3>
-        </div>
-      </div>
-
-      <div className="flex flex-1 flex-col p-5 sm:p-6">
-        <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#1f4f93]">
-          {catalogue.category}
-        </p>
-        <p className="mt-4 flex-1 text-sm leading-7 text-[#55636a] sm:text-base">
-          {catalogue.description}
-        </p>
-
-        <dl className="mt-5 grid gap-3 sm:grid-cols-2">
-          {catalogueMeta.map((item) => (
-            <div key={item.label} className="rounded-xl bg-[#FCFBF8] p-3">
-              <dt className="text-xs font-semibold text-[#64748b]">{item.label}</dt>
-              <dd className="mt-1 text-sm font-bold text-[#1f4f93]">{catalogue[item.key]}</dd>
-            </div>
-          ))}
-        </dl>
-
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#275CAD] px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#224a96]"
-          >
-            <Eye className="h-4 w-4" aria-hidden="true" />
-            View Online
-          </a>
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#275CAD] px-4 py-3 text-sm font-semibold text-[#275CAD] transition-colors hover:bg-[#E8F1FF]"
-          >
-            <ArrowDownToLine className="h-4 w-4" aria-hidden="true" />
-            Download PDF
-          </a>
-        </div>
-      </div>
-    </article>
   )
 }
 
@@ -251,7 +159,7 @@ export default function TraveleyeCatalogueLibrary() {
           <SectionHeading icon={FileText} title="Catalogue Publications" />
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {dummyCatalogues.map((catalogue) => (
+            {catalogues.map((catalogue) => (
               <CatalogueCard key={catalogue.title} catalogue={catalogue} />
             ))}
           </div>
