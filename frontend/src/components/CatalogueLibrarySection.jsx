@@ -1,5 +1,5 @@
 import { ArrowDownToLine, ArrowRight, BookOpen, Eye } from 'lucide-react'
-import employmentLetterPdf from '../assets/employment_letter.pdf'
+import employmentLetterPdf from '../assets/Dummy_Formal_Funny_Document.pdf'
 import aboutTraveleyeImg from '../assets/involved/Develop Place Inspired Stay.jpg'
 import bharatLankaImg from '../assets/involved/Develop Place Inspired Stay.jpg'
 import travelCollectiveImg from '../assets/involved/Develop Place Inspired Stay.jpg'
