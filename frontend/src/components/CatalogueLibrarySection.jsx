@@ -1,5 +1,5 @@
 import { ArrowDownToLine, ArrowRight, BookOpen, Eye } from 'lucide-react'
-import aboutTraveleyeImg from '../assets/catalogues/Traveleye Alliance Catalogue.jpg'
+import aboutTraveleyeImg from '../assets/catalogues/Traveleye Alliance Catalogue new.jpg'
 import bharatLankaImg from '../assets/catalogues/Traveleye Bharat Lanka Journeys Catalogue.jpg'
 import travelCollectiveImg from '../assets/catalogues/Traveleye Travel Collective Catalogue.jpg'
 
