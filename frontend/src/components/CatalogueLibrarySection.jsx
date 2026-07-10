@@ -47,7 +47,7 @@ export function CatalogueCard({ catalogue }) {
         <img
           src={catalogue.image}
           alt={`${catalogue.title} catalogue cover`}
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#172544]/25 via-transparent to-white/10" />
         {/* <div className="absolute inset-x-5 bottom-5 rounded-sm bg-white/90 p-4 shadow-sm backdrop-blur">
