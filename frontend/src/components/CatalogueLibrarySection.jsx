@@ -1,8 +1,9 @@
 import { ArrowDownToLine, ArrowRight, BookOpen, Eye } from 'lucide-react'
-import employmentLetterPdf from '../assets/Dummy_Formal_Funny_Document.pdf'
 import aboutTraveleyeImg from '../assets/involved/Develop Place Inspired Stay.jpg'
 import bharatLankaImg from '../assets/involved/Develop Place Inspired Stay.jpg'
 import travelCollectiveImg from '../assets/involved/Develop Place Inspired Stay.jpg'
+
+const cataloguePdf = '/catalogues/traveleye-pdf.pdf'
 
 export const catalogues = [
   {
@@ -84,7 +85,7 @@ export function CatalogueCard({ catalogue }) {
 
         <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2">
           <a
-            href={employmentLetterPdf}
+            href={cataloguePdf}
             target="_blank"
             rel="noreferrer"
             aria-label={`View ${catalogue.title}`}
@@ -93,8 +94,8 @@ export function CatalogueCard({ catalogue }) {
             <Eye className="h-4 w-4" aria-hidden="true" />
           </a>
           <a
-            href={employmentLetterPdf}
-            download
+            href={cataloguePdf}
+            download="traveleye-pdf.pdf"
             aria-label={`Download ${catalogue.title}`}
             className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[#275CAD] text-[#275CAD] transition-colors hover:bg-[#E8F1FF] hover:text-[#172544]"
           >
