@@ -1,7 +1,7 @@
 import { ArrowDownToLine, ArrowRight, BookOpen, Eye } from 'lucide-react'
-import aboutTraveleyeImg from '../assets/involved/Develop Place Inspired Stay.jpg'
-import bharatLankaImg from '../assets/involved/Develop Place Inspired Stay.jpg'
-import travelCollectiveImg from '../assets/involved/Develop Place Inspired Stay.jpg'
+import aboutTraveleyeImg from '../assets/catalogues/Traveleye Alliance Catalogue.jpg'
+import bharatLankaImg from '../assets/catalogues/Traveleye Bharat Lanka Journeys Catalogue.jpg'
+import travelCollectiveImg from '../assets/catalogues/Traveleye Travel Collective Catalogue.jpg'
 
 const cataloguePdf = '/catalogues/traveleye-pdf.pdf'
 
