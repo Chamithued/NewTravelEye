@@ -4,6 +4,9 @@ import journeyImg from '../assets/client/Plan Your Sri Lanka Journey.png'
 import luxuryImg from '../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg'
 import weddingImg from '../assets/client/Sri Lankan wedding reception at golden hour.png'
 import outboundImg from '../assets/client/Discover the world.png'
+import conNation from '../assets/explore/Connecting Nations Through Meaningful Travel.jpg'
+import conTourism from '../assets/explore/Connecting Tourism Through Collaboration and Partnerships.jpg'
+import discSriLanka from '../assets/explore/Discover Sri Lanka - Domestic1.jpg'
 
 const platforms = [
   {
@@ -72,7 +75,7 @@ const platforms = [
     subtitle: 'ලොව වටා ලොව දකින්න',
     description: 'Discover outbound holidays, pilgrimages, educational tours, group travel, family holidays, and international journeys designed for Sri Lankan travellers. ',
     // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-    image: outboundImg,
+    image: conNation,
     link: '/destination-facilitation',
   },
   {
@@ -81,7 +84,7 @@ const platforms = [
     title: 'Connecting Tourism Through Collaboration and Partnerships ',
     description: "A collaborative platform connecting tourism enterprises, destination facilitators, travel partners, service providers, and local communities to strengthen partnerships, improve market access, facilitate destination development, and create shared value across Sri Lanka's tourism ecosystem.",
     // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-    image: outboundImg,
+    image: conTourism,
     link: '/destination-facilitation',
   },
   {
@@ -90,7 +93,7 @@ const platforms = [
     title: 'Connecting Nations Through Meaningful Travel ',
     description: "Discover country-focused travel platforms that strengthen tourism relationships between Sri Lanka and international markets through meaningful travel, cultural exchange, and long-term partnerships.",
     // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-    image: outboundImg,
+    image: discSriLanka,
     link: '/destination-facilitation',
   },
 ]
