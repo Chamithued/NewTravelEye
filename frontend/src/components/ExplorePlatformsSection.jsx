@@ -4,8 +4,8 @@ import journeyImg from '../assets/client/Plan Your Sri Lanka Journey.png'
 import luxuryImg from '../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg'
 import weddingImg from '../assets/client/Sri Lankan wedding reception at golden hour.png'
 import outboundImg from '../assets/client/Discover the world.png'
-import conNation from '../assets/explore/Connecting Nations Through Meaningful Travel.jpg'
-import conTourism from '../assets/explore/Connecting Tourism Through Collaboration and Partnerships.jpg'
+import conNation from '../assets/explore/Connecting Nations Through Meaningful Travel new.jpg'
+import conTourism from '../assets/explore/Connecting Tourism Through Collaboration and Partnerships new.jpg'
 import discSriLanka from '../assets/explore/Discover Sri Lanka - Domestic1.jpg'
 
 const platforms = [
