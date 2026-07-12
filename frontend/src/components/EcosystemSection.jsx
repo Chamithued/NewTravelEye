@@ -49,7 +49,7 @@ export default function EcosystemSection() {
 				<div className="text-center">
 					{/* <div className="inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm sm:text-[1.05rem]"> */}
 					<div className="home-section-eyebrow">
-						The Traveleye Ecosystem 
+						The Traveleye People-Powered Tourism Ecosystem  
 					</div>
 
 					<h2 className="home-section-title mt-4">
@@ -62,28 +62,21 @@ export default function EcosystemSection() {
 					<div>
 						<div className="mt-6 max-w-3xl space-y-5 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
 							<p>
-								The <strong>Traveleye Ecosystem</strong> is a connected tourism ecosystem guided 
-								by the <strong>Traveleye People-Powered Tourism (PPT) Framework.</strong>
+								The <strong>Traveleye People-Powered Tourism Ecosystem</strong> is a connected tourism ecosystem designed to develop and strengthen 
+								micro and small tourism enterprises across Sri Lanka's tourism ecosystem. Guided by the <strong>People-Powered Tourism Framework</strong>, 
+								it brings together people, journeys, host stays, experiences, tourism enterprises, destinations, ecosystem support services, 
+								and collaborative opportunities within a shared vision for tourism development. 
 							</p>
 							<p>
-								It brings together <strong>journeys, stays, experiences, destinations, tourism enterprises, 
-								ecosystem support services, and diverse opportunities for participation</strong> within a people-powered
-								 approach to tourism. 
-							</p>
-							<p>
-								By strengthening connections between <strong>people, place, enterprises, and tourism stakeholders,</strong> the ecosystem
-								 seeks to create meaningful travel experiences while supporting destination wellbeing, inclusive participation,
-								  and long-term tourism resilience. 
-							</p>
-							<p>
-								More than a collection of tourism businesses, the <strong>Traveleye Ecosystem</strong> is a connected framework for strengthening 
-								tourism through <strong>participation, stewardship, collaboration, innovation, and shared value creation.</strong>
+								By strengthening connections between people, places, enterprises, institutions, and tourism stakeholders, the ecosystem encourages meaningful 
+								participation, shared stewardship, collaboration, innovation, and shared value creation. Together, these connections contribute to more authentic 
+								travel experiences, resilient destinations, thriving tourism enterprises, and lasting value for people, places, partnerships, and future generations. 
 							</p>
 						</div>
 
-						<p className="mt-8 max-w-3xl text-[1.05rem] font-semibold leading-7 text-[#1c2840] sm:text-[1.1rem]">
+						{/* <p className="mt-8 max-w-3xl text-[1.05rem] font-semibold leading-7 text-[#1c2840] sm:text-[1.1rem]">
 							The ecosystem is guided by four interconnected pillars: 
-						</p>
+						</p> */}
 
 						{/* pillar cards moved below to span full width */}
 					</div>
@@ -99,9 +92,9 @@ export default function EcosystemSection() {
 
 						<button
 							type="button"
-							className="mt-8 w-full rounded-xl bg-[#214f95] px-6 py-4 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem]"
+							className="mt-8 w-full whitespace-nowrap rounded-xl bg-[#214f95] px-6 py-4 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem]"
 						>
-							Learn About the Ecosystem
+							Explore the Traveleye People-Powered Tourism Ecosystem
 						</button>
 					</div>
 				</div>

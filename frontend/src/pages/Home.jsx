@@ -8,6 +8,7 @@ import FivePillars from '../components/FivePillars'
 import HomeFrameworkSections from '../components/HomeFrameworkSections'
 import WhyTraveleye from '../components/WhyTraveleye'
 import EcosystemSection from '../components/EcosystemSection'
+import PeoplePoweredTourismFrameworkSection from '../components/PeoplePoweredTourismFrameworkSection'
 import GetInvolved from '../components/GetInvolved'
 import OurGrowingImpact from '../components/OurGrowingImpact'
 import FooterLinks from '../components/FooterLinks'
@@ -19,9 +20,10 @@ export default function Home() {
       {/* <QuickLinks /> */}
       <ExplorePlatformsSection />
       <OurJourney />
-      <CatalogueLibrarySection />
       <PeoplePoweredTourismIntro />
       <EcosystemSection />
+      <PeoplePoweredTourismFrameworkSection />
+      <CatalogueLibrarySection />
       <FivePillars />
       <HomeFrameworkSections />
       <WhyTraveleye />

@@ -1,27 +1,27 @@
-import { MapPinned, TrendingUp, UsersRound } from 'lucide-react'
+import { Globe2, Handshake, Leaf } from 'lucide-react'
 import peoplePoweredTourismImg from '../assets/What Is People-Powered Tourism.jpg'
 
 const principles = [
   {
-    icon: UsersRound,
+    icon: Handshake,
     title: 'People',
-    body: 'Encouraging broader participation and meaningful opportunities across tourism ecosystems.',
-    iconBg: 'bg-[#EEF4FF]',
-    iconColor: 'text-[#1F4F93]',
+    body: 'Placing people at the heart of tourism by encouraging meaningful participation, entrepreneurship, collaboration, and shared opportunities that strengthen tourism enterprises, communities, and livelihoods.',
+    iconBg: 'bg-[#fff4e8]',
+    iconColor: 'text-[#b66a2c]',
   },
   {
-    icon: MapPinned,
+    icon: Leaf,
     title: 'Place',
-    body: 'Supporting destinations through stewardship, culture, heritage, environmental awareness, and local identity.',
-    iconBg: 'bg-[#F2F7EF]',
-    iconColor: 'text-[#2F6B3F]',
+    body: 'Celebrating the unique identity of places by supporting destination stewardship, cultural heritage, local identity, environmental responsibility, and place-inspired tourism development.',
+    iconBg: 'bg-[#eef4ff]',
+    iconColor: 'text-[#1f4f93]',
   },
   {
-    icon: TrendingUp,
+    icon: Globe2,
     title: 'Prosperity',
-    body: 'Creating long-term social, cultural, environmental, and economic value through tourism.',
-    iconBg: 'bg-[#FFF4E8]',
-    iconColor: 'text-[#B66A2C]',
+    body: 'Creating lasting economic, social, cultural, and environmental value by developing and strengthening micro and small tourism enterprises while supporting resilient destinations and thriving tourism ecosystems for present and future generations.',
+    iconBg: 'bg-[#f2f7ef]',
+    iconColor: 'text-[#2f6b3f]',
   },
 ]
 
@@ -44,7 +44,7 @@ export default function PeoplePoweredTourismIntro() {
         <div className="mt-10 grid items-center gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-8">
           <div className="space-y-5 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
             <blockquote className="mx-auto max-w-[560px] border-l-4 border-[#1F4F93] bg-[#DFE7F3] px-4 py-5 text-left text-base font-semibold italic leading-7 text-[#1f4f93] shadow-sm sm:px-5 sm:text-lg sm:leading-8 lg:mx-0 lg:ml-auto">
-              &ldquo;People-Powered Tourism is an approach to tourism that places people at the heart of tourism development through participation, stewardship, collaboration, and shared value creation&mdash;creating richer traveller experiences while strengthening destinations and tourism ecosystems for the long term.&rdquo;
+              &ldquo;At Traveleye Alliance Sri Lanka, we define People-Powered Tourism as an approach to tourism that places people at the heart of tourism development through participation, stewardship, collaboration, innovation, and shared value creation. It develops and strengthens micro and small tourism enterprises while creating meaningful journeys, authentic host stays, people and place-inspired experiences, and collaborative destination development that contribute to thriving tourism ecosystems and lasting value for people, places, partnerships, and future generations.&rdquo;
             </blockquote>
           </div>
 
@@ -58,29 +58,29 @@ export default function PeoplePoweredTourismIntro() {
           </div>
         </div>
 
-        <div className="mx-auto mt-8 max-w-4xl space-y-5 text-center text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
+        <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
           <p>
-            It recognises that tourism becomes stronger when travellers, hosts, enterprises, communities, women and youth entrepreneurs, institutions, and tourism stakeholders all have opportunities to contribute meaningfully to the visitor experience and the long-term wellbeing of destinations.
+            Traveleye's People-Powered Tourism recognises that tourism is strongest when travellers, hosts, tourism enterprises, communities, women and youth entrepreneurs, institutions, development partners, and tourism stakeholders all have meaningful opportunities to participate, collaborate, and contribute to tourism development.
           </p>
           <p>
-            By fostering stronger connections between people and place, People-Powered Tourism seeks to create more authentic, inclusive, and memorable travel experiences while generating lasting social, cultural, environmental, and economic value for destinations and future generations.
+            By strengthening the connections between people, places, enterprises, destinations, and tourism stakeholders, our approach encourages tourism that is more authentic, inclusive, resilient, and sustainable. It seeks to create shared value that benefits travellers, empowers local enterprises, strengthens destinations, and contributes to the long-term wellbeing of Sri Lanka's tourism ecosystem. 
           </p>
         </div>
 
-        {/* <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
           {principles.map(({ icon: Icon, title, body, iconBg, iconColor }) => (
             <article
               key={title}
-              className="rounded-lg border border-[#e8eef2] bg-white p-6 text-center shadow-[0_4px_18px_rgba(15,23,42,0.06)]"
+              className="rounded-2xl border border-[#cfe0f6] bg-white p-5 text-center shadow-[0_4px_14px_rgba(15,23,42,0.08)] sm:p-6"
             >
-              <div className={`mx-auto flex h-12 w-12 items-center justify-center rounded-full ${iconBg} ${iconColor}`}>
-                <Icon className="h-6 w-6" strokeWidth={2.3} aria-hidden="true" />
+              <h3 className="text-xl font-bold text-[#1f4f93]">{title}</h3>
+              <div className={`mx-auto mt-3 flex h-14 w-14 items-center justify-center rounded-xl ${iconBg}`}>
+                <Icon className={`h-7 w-7 ${iconColor}`} strokeWidth={2.2} aria-hidden="true" />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-[#1f4f93]">{title}</h3>
-              <p className="mt-3 text-sm leading-6 text-[#5f6c87]">{body}</p>
+              <p className="mt-4 text-sm leading-6 text-[#5f6c87]">{body}</p>
             </article>
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   )

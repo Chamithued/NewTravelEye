@@ -20,12 +20,10 @@ const journeyItems = [
       //   people-powered tourism ecosystem.
       // </>,
       <>
-        What began as a passion for meaningful travel was inspired by a desire to connect visitors 
-        with Sri Lanka&apos;s culture, heritage, nature, and people while encouraging broader local 
-        participation in tourism. 
-      </>,
-      <>
-        This founding vision continues to shape Traveleye today. 
+        Traveleye Alliance was founded on a passion for meaningful travel and a belief that tourism should 
+        connect visitors with Sri Lanka's people, culture, heritage, nature, and local way of life. From the 
+        beginning, our vision extended beyond travel to creating opportunities that encourage broader participation 
+        and shared value across the tourism sector. 
       </>,
     ],
   },
@@ -47,32 +45,31 @@ const journeyItems = [
       //   <strong> enrich lives, protect cultural heritage, and strengthen local livelihoods.</strong>
       // </>,
       <>
-        As tourism evolved, so did Traveleye. 
+        As tourism continued to evolve, so did Traveleye. Greater emphasis was placed on authentic experiences,
+         local participation, destination stewardship, enterprise development, and collaborative tourism approaches 
+         that strengthen both people and places.  
       </>,
       <>
-        Greater emphasis was placed on authentic experiences, local participation, destination stewardship, 
-        and creating tourism that contributes positively to people and place. 
-      </>,
-      <>
-        These ideas later evolved into the <strong>Traveleye People-Powered Tourism Framework.</strong> 
+        These ideas gradually evolved into the People-Powered Tourism Framework-the strategic blueprint that guides Traveleye's vision of building a People-Powered Tourism Ecosystem. 
       </>
     ],
   },
   {
     year: 'Today',
-    eyebrow: 'A People-Powered Tourism Ecosystem Builder ',
+    eyebrow: 'Building a People-Powered Tourism Ecosystem',
     title: 'A People-Powered Tourism Ecosystem',
     icon: CircleCheck,
     cardSide: 'right',
     rowClass: 'lg:min-h-[360px]',
     body: [
       <>
-        Today, Traveleye Alliance strengthens tourism through participation, stewardship, collaboration, 
-        innovation, and ecosystem development. 
+        Today, Traveleye Alliance serves as a <strong>People-Powered Tourism Ecosystem Builder</strong>, bringing together journeys,
+         host stays, experiences, tourism enterprises, destinations, travel partnerships, and supporting organisations through a connected 
+         and collaborative approach to tourism development.  
       </>,
       <>
-        By connecting <strong>people, journeys, stays, experiences, enterprises, destinations, and tourism stakeholders,</strong> 
-         we seek to create meaningful travel while strengthening long-term destination wellbeing and tourism ecosystems
+        By developing and strengthening micro and small tourism enterprises across Sri Lanka's tourism ecosystem, we seek to create meaningful 
+        travel, resilient destinations, thriving local enterprises, and lasting value for people, places, partnerships, and future generations. 
       </>,
     ],
   },
@@ -186,20 +183,18 @@ export default function OurJourney() {
               and strengthening Sri Lanka&apos;s domestic tourism sector has evolved into Traveleye
               Alliance, an ecosystem reimagining tourism as a platform for shared value, community
               leadership, and regenerative impact. */}
-              Traveleye Alliance began in <strong>2006</strong> with a simple belief that tourism should create value 
-              not only for travellers, but also for the people and places that make travel meaningful. 
+              Traveleye Alliance began in 2006 with a simple belief that tourism should create meaningful value not only for travellers, but also for the people, places, and enterprises that make travel possible.  
             </p>
             <p>
               {/* Today, we bring together communities, women, youth entrepreneurs, experience creators,
               partners, and travelers to co-create tourism that is authentic, inclusive, and
               people-powered. */}
-              Over the years, our journey evolved beyond traditional travel operations into a broader vision 
-              of strengthening tourism through participation, stewardship, collaboration, innovation, and long-term 
-              value creation. 
+              As our journey evolved, so did our vision. What began with meaningful travel expanded into a long-term commitment to developing and strengthening micro and small tourism enterprises across Sri Lanka's tourism ecosystem through participation, stewardship, collaboration, innovation, and meaningful partnerships.  
             </p>
 
-            <p>Today, guided by the <strong>Traveleye People-Powered Tourism (PPT) Framework</strong>, Traveleye Alliance continues 
-              to build more connected, inclusive, and resilient tourism ecosystems across Sri Lanka. </p>
+            <p>
+              Today, guided by the <strong>People-Powered Tourism Framework</strong>, Traveleye Alliance is building a more connected, inclusive, and resilient <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for people, places, partnerships, and future generations. 
+               </p>
           </div>
         </div>
 

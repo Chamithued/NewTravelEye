@@ -29,6 +29,12 @@ export default function Hero() {
         <p className="mx-auto mb-1 max-w-3xl text-base font-semibold sm:text-xl">
           Building a People-Powered Tourism Ecosystem for Sri Lanka
         </p>
+        <p className="mx-auto mt-28 inline-flex rounded-full bg-[#0F3C68]/55 px-3 py-1 text-xs font-semibold tracking-wide text-white shadow-sm backdrop-blur-sm sm:mt-36 sm:px-4 sm:py-1.5 sm:text-sm lg:mt-40">
+          Tourism for People, Planet, and Prosperity
+        </p>
+        <p className="mx-auto mt-2 max-w-4xl text-sm leading-relaxed sm:text-base" style={{ textWrap: 'balance' }}>
+          Developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem through collaboration, stewardship, innovation, and meaningful partnerships.
+        </p>
 {/* 
         <p className="mx-auto mb-1 max-w-6xl text-center text-sm leading-relaxed sm:text-lg" style={{ textWrap: 'balance' }}>
           Guided by the Traveleye People-Powered Tourism (PPT) Framework, Traveleye Alliance strengthens tourism through participation, stewardship, collaboration, and innovation.
@@ -39,16 +45,16 @@ export default function Hero() {
         </p> */}
 
         {/* <div className="mb-6 mt-10 flex flex-col justify-center gap-4 sm:mb-8 sm:mt-14 sm:flex-row lg:mt-16"> */}
-        <div className="mb-6 mt-14 sm:mt-20 lg:mt-24 flex flex-col justify-center gap-4 sm:flex-row">
-          <button className="flex items-center justify-center gap-2 rounded-md bg-[#1C4686] px-6 py-2 font-semibold text-white transition hover:bg-[#173b70] sm:px-8 sm:py-3">
+        <div className="mb-2 mt-2 flex flex-col justify-center gap-4 sm:flex-row">
+          {/* <button className="flex items-center justify-center gap-2 rounded-md bg-[#1C4686] px-6 py-2 font-semibold text-white transition hover:bg-[#173b70] sm:px-8 sm:py-3">
             Explore the Framework 
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </button>
+          </button> */}
         </div>
         {/* <div className="mt-0 flex animate-bounce flex-col items-center gap-2 sm:mt-1"> */}
-        <div className="mt-0 flex animate-bounce flex-col items-center gap-2 sm:mt-1">
+        <div className="mt-2 flex animate-bounce flex-col items-center gap-2 sm:mt-3">
           <p className="text-sm font-semibold">Scroll to Explore</p>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
