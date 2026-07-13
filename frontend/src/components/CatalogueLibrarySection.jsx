@@ -1,4 +1,5 @@
-import { ArrowDownToLine, ArrowRight, BookOpen, Eye } from 'lucide-react'
+import { ArrowDownToLine, BookOpen, Eye } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import aboutTraveleyeImg from '../assets/catalogues/Traveleye Alliance Catalogue new.jpg'
 import bharatLankaImg from '../assets/catalogues/Traveleye Bharat Lanka Journeys Catalogue.jpg'
 import travelCollectiveImg from '../assets/catalogues/Traveleye Travel Collective Catalogue.jpg'
@@ -147,13 +148,12 @@ export default function CatalogueLibrarySection() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <a
-            href="/traveleye-catalogue-library"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#275CAD] px-6 py-3 text-center text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
+          <Link
+            to="/traveleye-catalogue-library"
+            className="w-full rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
           >
             Explore the Complete Catalogue Library
-            <ArrowRight className="h-5 w-5 shrink-0" aria-hidden="true" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
