@@ -91,7 +91,12 @@ function PillarCard({ pillar }) {
               <Icon className="h-6 w-6 text-white" />
             </div>
             <div>
-              <p className="text-[1.35rem] font-bold leading-tight text-white sm:text-2xl md:text-3xl">{pillar.title}</p>
+              <p
+                className="text-[1.35rem] font-bold leading-tight text-white sm:text-2xl md:text-3xl"
+                style={{ textShadow: readableTextShadow }}
+              >
+                {pillar.title}
+              </p>
               {/* <p className="mt-1 text-sm font-bold text-white/90">{pillar.subtitle}</p> */}
             </div>
           </div>
@@ -99,7 +104,7 @@ function PillarCard({ pillar }) {
 
         <div className="mt-4">
           <p
-            className="mb-6 max-w-xl text-sm sm:text-base text-white/90"
+            className="mb-6 max-w-xl text-sm font-bold text-white/90 sm:text-base"
             style={{ textShadow: readableTextShadow }}
           >
             {pillarDescriptions[pillar.code] ?? ''}
