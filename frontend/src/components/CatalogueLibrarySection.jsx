@@ -114,26 +114,33 @@ export default function CatalogueLibrarySection() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="home-section-eyebrow justify-center">
             <BookOpen className="h-5 w-5 shrink-0" aria-hidden="true" />
-            <span>Catalogue Library</span>
+            <span>Explore Our Catalogue Library</span>
           </div>
 
           <h2 className="mt-5 text-[1.85rem] font-semibold leading-tight tracking-normal text-[#172544] sm:text-[2.1rem] lg:text-[2.45rem]">
-            Explore Our Catalogue Library
+            Discover Publications, Travel Collections, and Tourism Opportunities Across the Traveleye Ecosystem 
           </h2>
-
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
 
         </div>
 
-        <p className="mx-auto mt-8 max-w-4xl text-center text-[1.02rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
-          Discover our collection of brand profiles, destination guides, travel collections,
-          product catalogues, partnership guides, and business opportunity publications.
-          Explore the diverse experiences, services, and opportunities available across the
-          Traveleye ecosystem, and gain deeper insights into our brands, destinations,
-          partnerships, and tourism initiatives.
+        <p className="mx-auto mt-8 max-w-6xl text-center text-[1.02rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
+          Explore a growing collection of publications, travel collections, destination guides,
+          partnership programmes, tourism development resources, and business opportunity
+          catalogues that provide deeper insights into the <strong>Traveleye</strong>{' '}
+          <strong>People-Powered Tourism Ecosystem</strong>. Whether you are a traveller,
+          tourism professional, entrepreneur, investor, educator, development partner, or
+          institution, our Catalogue Library offers valuable resources to help you explore,
+          collaborate, and grow with Traveleye.
         </p>
 
-        <div className="mt-10 grid gap-7 md:grid-cols-3">
+        <div className="mt-10 text-center">
+          <h3 className="text-[1.45rem] font-semibold leading-tight text-[#172544] sm:text-[1.75rem]">
+            Featured Publications
+          </h3>
+        </div>
+
+        <div className="mt-7 grid gap-7 md:grid-cols-3">
           {catalogues.map((catalogue) => (
             <CatalogueCard key={catalogue.title} catalogue={catalogue} />
           ))}

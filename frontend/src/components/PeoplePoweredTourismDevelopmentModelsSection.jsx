@@ -16,48 +16,48 @@ const developmentModels = [
     description:
       'Encouraging meaningful participation through collaboration, inclusion, shared ownership, and collective action.',
     icon: Handshake,
-    color: '#112E81',
-    darkColor: '#112E81',
+    color: '#1F5A35',
+    darkColor: '#123B24',
   },
   {
     title: 'Shared Stewardship Model',
     description:
       'Promoting shared responsibility for destinations, communities, culture, heritage, and nature.',
     icon: Leaf,
-    color: '#112E81',
-    darkColor: '#112E81',
+    color: '#8B1E1E',
+    darkColor: '#5F1414',
   },
   {
     title: 'People-Powered Tourism Enterprise Development Model',
     description:
       'Supporting the development and strengthening of resilient micro and small tourism enterprises.',
     icon: BriefcaseBusiness,
-    color: '#112E81',
-    darkColor: '#112E81',
+    color: '#0F6B63',
+    darkColor: '#084842',
   },
   {
     title: 'Destination Stewardship Model',
     description:
       'Strengthening destinations through collaborative planning, coordination, and long-term stewardship.',
     icon: Compass,
-    color: '#112E81',
-    darkColor: '#112E81',
+    color: '#60241E',
+    darkColor: '#3D1713',
   },
   {
     title: 'Travel Corridor Development Model',
     description:
       'Building connected tourism corridors through strategic partnerships, cultural exchange, and long-term international collaboration.',
     icon: Route,
-    color: '#112E81',
-    darkColor: '#112E81',
+    color: '#7A4A12',
+    darkColor: '#4E2F0B',
   },
   {
     title: 'Tourism Ecosystem Connectivity Model',
     description:
       'Connecting people, enterprises, destinations, institutions, and support systems to strengthen tourism ecosystem collaboration and resilience.',
     icon: Network,
-    color: '#112E81',
-    darkColor: '#112E81',
+    color: '#8A5A00',
+    darkColor: '#5E3D00',
   },
   {
     title: 'Shared Value Creation Model',
@@ -65,15 +65,15 @@ const developmentModels = [
       'Creating balanced economic, social, cultural, and environmental value for people, places, partnerships, and future generations.',
     icon: Globe2,
     color: '#112E81',
-    darkColor: '#112E81',
+    darkColor: '#0A1D52',
   },
   {
     title: 'Living Framework Evolution Model',
     description:
       'Supporting continuous learning, innovation, adaptation, and the ongoing evolution of tourism development.',
     icon: Sprout,
-    color: '#112E81',
-    darkColor: '#112E81',
+    color: '#934761',
+    darkColor: '#5F2B3D',
   },
 ]
 

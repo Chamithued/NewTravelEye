@@ -14,9 +14,9 @@ export default function Hero() {
       <div className="relative z-10 flex min-h-svh w-full items-center justify-center px-4 pb-14 pt-20 sm:pb-20 sm:pt-28 lg:pt-36">
       {/* <div id="hero-content" className="mx-auto w-full max-w-[88rem] -translate-y-3 transform px-2 text-center text-white sm:-translate-y-8 sm:px-6 lg:-translate-y-12 lg:px-8"> */}
       <div id="hero-content" className="mx-auto w-full max-w-[88rem] -translate-y-10 transform px-2 text-center text-white sm:-translate-y-14 sm:px-6 lg:-translate-y-20 lg:px-8">
-        {/* <div className="mb-5 inline-flex rounded-full bg-[rgba(53,82,127,0.82)] px-4 py-2 shadow-lg">
-          <p className="text-sm font-semibold">Tourism for People, Planet, and Prosperity</p>
-        </div> */}
+        <p className="mx-auto mb-4 inline-flex rounded-full bg-[#0F3C68]/55 px-3 py-1 text-xs font-semibold tracking-wide text-white shadow-sm backdrop-blur-sm sm:px-4 sm:py-1.5 sm:text-sm">
+          Tourism for People, Planet, and Prosperity
+        </p>
 
         <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="mb-1 text-3xl font-semibold leading-none tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           TRAVELEYE
@@ -29,10 +29,7 @@ export default function Hero() {
         <p className="mx-auto mb-1 max-w-3xl text-base font-semibold sm:text-xl">
           Building a People-Powered Tourism Ecosystem for Sri Lanka
         </p>
-        <p className="mx-auto mt-28 inline-flex rounded-full bg-[#0F3C68]/55 px-3 py-1 text-xs font-semibold tracking-wide text-white shadow-sm backdrop-blur-sm sm:mt-36 sm:px-4 sm:py-1.5 sm:text-sm lg:mt-40">
-          Tourism for People, Planet, and Prosperity
-        </p>
-        <p className="mx-auto mt-2 max-w-4xl text-sm leading-relaxed sm:text-base" style={{ textWrap: 'balance' }}>
+        <p className="mx-auto mt-24 max-w-4xl text-sm leading-relaxed sm:mt-32 sm:text-base lg:mt-36" style={{ textWrap: 'balance' }}>
           Developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem through collaboration, stewardship, innovation, and meaningful partnerships.
         </p>
 {/* 

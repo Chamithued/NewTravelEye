@@ -13,18 +13,17 @@ const menuColumns = [
     title: 'EXPERIENCE SRI LANKA & BEYOND',
     sections: [
       {
-        heading: 'Explore Our Platforms',
+        heading: 'Explore Our Tourism Collection',
         items: [
-          'Explore Meaningful Journeys Across Sri Lanka Curated Through People and Place',
-          'Discover Authentic Stays in Sri Lanka Inspired by People and Place',
-          'Discover Authentic Experiences in Sri Lanka Shaped by People and Place',
-          'Discover Sri Lanka in Ultimate Luxury Inspired by People and Place',
-          "Celebrate Life's Special Moments in Sri Lanka Through People and Place",
-          // 'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
-          "Explore Sri Lanka, Closer to Home (Exclusively For Sri Lankans)",
-          "Explore the World, Beyond Borders (Exclusively For Sri Lankans)",
-          "Connecting Tourism Through Collaboration and Partnerships",
-          "Connecting Countries Through Meaningful Travel"
+          'Explore Meaningful Journeys Across Sri Lanka',
+          'Discover Authentic Host Stays in Sri Lanka',
+          'Discover Authentic Experiences in Sri Lanka',
+          'Discover Sri Lanka in Ultimate Luxury',
+          "Celebrate Life's Special Moments in Sri Lanka",
+          'Explore Sri Lanka, Closer to Home (Exclusively for Sri Lankans)',
+          'Explore the World, Beyond Borders (Exclusively for Sri Lankans)',
+          'Access Tourism Enterprise Growth Services',
+          'Support Destination Development & Facilitation',
         ],
       },
     ],
@@ -37,17 +36,17 @@ const menuColumns = [
         items: [
           'About Traveleye',
           'About Traveleye Alliance',
-          'Vision & Mission',
-          'Our Ecosystem Approach',
+          'Vision, Mission & Values',
           'Why Traveleye',
           'Governance & Ethics',
           'Media & Press',
+          'Traveleye Catalogue Library',
         ],
       },
       {
-        heading: 'Get Involved',
+        heading: 'Grow Together with Traveleye',
         items: [
-          'How You Can Get Involved',
+          'How You Can Grow Together with Traveleye',
           'Become a Travel Venture Partner',
           'Develop a Place-Inspired Stay',
           'Develop a People & Place-Inspired Experience',
@@ -56,7 +55,6 @@ const menuColumns = [
           'Joint Ventures & Strategic Investments',
           'Collaborate With Us',
           'Travel With Purpose',
-          'Support People-Powered Tourism',
         ],
       },
     ],
@@ -65,15 +63,17 @@ const menuColumns = [
     title: 'MODELS & TRUST',
     sections: [
       {
-        heading: 'Our Framework & Pillars',
+        heading: 'Our Ecosystem & Framework',
         items: [
-          'Traveleye People-Powered Tourism Framework',
-          'Explore the Traveleye Ecosystem',
-          'People-Powered Participation & Shared Stewardship',
-          'People-Powered Travel Collective (PPTC)',
-          'People-Powered Host Experiences (PPHE)',
-          'People-Powered Ecosystem Support (PPES)',
-          'People-Powered Destination Facilitation (PPDF)',
+          'Traveleye People-Powered Tourism Ecosystem',
+          'People-Powered Tourism Framework',
+          'People-Powered Tourism Strategic Pillars',
+          'People-Powered Tourism Development Models',
+          'People-Powered Tourism Operational Platforms',
+          'People-Powered Tourism Outcomes',
+          'People-Powered Tourism Guiding Principles',
+          'People-Powered Tourism Global Alignment',
+          'People-Powered Tourism Ecosystem Indicators',
         ],
       },
       {
@@ -201,7 +201,7 @@ export default function FooterLinks() {
               <p className="font-semibold text-white">Traveleye Alliance Sri Lanka</p>
               <p>A People-Powered Tourism Ecosystem Builder</p>
               <p className="mx-auto max-w-5xl">
-                Guided by the Traveleye People-Powered Tourism (PPT) Framework, Traveleye Alliance strengthens tourism through participation, stewardship, collaboration, innovation, and shared value creation, helping build stronger tourism ecosystems for people, place, and future generations.
+                Guided by the People-Powered Tourism Framework, Traveleye Alliance develops and strengthens micro and small tourism enterprises across Sri Lanka's tourism ecosystem, creating meaningful opportunities and lasting value for people, places, partnerships, and future generations.
               </p>
             </div>
 

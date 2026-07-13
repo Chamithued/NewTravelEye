@@ -6,7 +6,7 @@ import {
 	BriefcaseBusiness,
 } from 'lucide-react'
 
-import ecosystemImg from '../assets/client/Traveleye_4pillars.png'
+import ecosystemImg from '../assets/Traveleye People-Powered Tourism Ecosystem.jpg'
 
 const ecosystemPillars = [
 	{
@@ -101,7 +101,7 @@ export default function EcosystemSection() {
 			</div>
 
 			{/* Pillar row — slightly reduced width */}
-			<div className="mt-6">
+			{/* <div className="mt-6">
 				<div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 sm:grid-cols-2 sm:gap-6 sm:px-6 md:grid-cols-4 lg:px-8">
 					{ecosystemPillars.map((pillar) => {
 						const Icon = pillar.icon
@@ -131,7 +131,7 @@ export default function EcosystemSection() {
 						)
 					})}
 				</div>
-			</div>
+			</div> */}
 		</section>
 	)
 }

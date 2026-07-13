@@ -1,17 +1,17 @@
 import { Globe2, Sprout } from 'lucide-react'
-import guidingPrinciplesImg from '../assets/8 Guiding Principles.jpg'
-import globallyAlignedImg from '../assets/Globally Alligned.jpg'
+import guidingPrinciplesImg from '../assets/People-Powered Tourism Guiding Principles.jpg'
+import globallyAlignedImg from '../assets/People-Powered Tourism Global Alignment.jpg'
 
 const featureSections = [
   {
     icon: Sprout,
-    label: 'Guiding Principles',
-    title: 'The Values That Shape the Traveleye Ecosystem',
+    label: 'People-Powered Tourism Guiding Principles',
+    title: 'The Values That Guide the Traveleye People-Powered Tourism Ecosystem',
     paragraphs: [
-      'The Traveleye People-Powered Tourism Framework is guided by principles that encourage tourism to remain authentic, inclusive, participatory, responsible, innovative, and grounded in long-term stewardship.',
-      'Together, these principles strengthen tourism by encouraging meaningful participation, shared responsibility, local identity, human-centred innovation, and lasting value for people, place, and future generations.',
+      <>The <strong>People-Powered Tourism Framework</strong> is guided by a shared set of principles that shape how tourism is developed and strengthened across Sri Lanka&apos;s tourism ecosystem. These principles encourage tourism that is authentic, inclusive, participatory, collaborative, innovative, responsible, and grounded in long-term stewardship.</>,
+      'Together, they guide decision-making, strengthen partnerships, inspire meaningful participation, and promote shared responsibility, helping create lasting economic, social, cultural, and environmental value for people, places, partnerships, and future generations. ',
     ],
-    cta: 'Explore the Guiding Principles',
+    cta: 'Explore the People-Powered Tourism Guiding Principles',
     to: '/guiding-principles',
     image: guidingPrinciplesImg,
     imageAlt: 'People discussing the People-Powered Tourism framework',
@@ -19,13 +19,14 @@ const featureSections = [
   },
   {
     icon: Globe2,
-    label: 'Globally Aligned. Locally Grounded.',
-    title: 'Inspired by Global Thinking. Rooted in Sri Lankan Realities.',
+    label: 'People-Powered Tourism Global Alignment',
+    title: 'Globally Aligned. Locally Grounded.',
+    subtitle: 'Inspired by Global Thinking. Rooted in Sri Lankan Realities.',
     paragraphs: [
-      "The Traveleye People-Powered Tourism Framework draws inspiration from internationally recognised principles of sustainable tourism, regenerative tourism, destination stewardship, community participation, and responsible tourism development, while remaining deeply connected to Sri Lanka's people, place, and local identity.",
-      'Designed to be adaptable across different destinations and tourism environments, the framework encourages participation, stewardship, collaboration, innovation, and shared value creation that strengthen tourism ecosystems for the long term and contribute to broader sustainable development aspirations.',
+      "The People-Powered Tourism Framework is informed by globally recognised thinking on sustainable tourism, regenerative tourism, destination stewardship, community participation, and responsible tourism development while remaining firmly rooted in Sri Lanka's people, places, culture, and local realities.",
+      'Designed to respond to the unique opportunities and challenges of different destinations, the framework provides a flexible and connected approach to developing and strengthening micro and small tourism enterprises across Sri Lanka\'s tourism ecosystem. By encouraging participation, stewardship, collaboration, innovation, and shared value creation, it contributes to resilient tourism ecosystems and broader sustainable development.',
     ],
-    cta: 'Explore the Framework',
+    cta: 'Explore the People-Powered Tourism Global Alignment',
     to: '/globally-aligned-locally-grounded',
     image: globallyAlignedImg,
     imageAlt: 'Traveleye People-Powered Tourism framework overview',
@@ -65,8 +66,14 @@ function SectionHeader({ section }) {
       <h2 className="mt-5 text-[1.85rem] font-semibold leading-tight tracking-normal text-[#172544] sm:text-[2.1rem] lg:text-[2.45rem]">
         {section.title}
       </h2>
-
       <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#275CAD]" />
+      {section.subtitle && (
+        <p className="mx-auto mt-3 max-w-2xl text-[1.08rem] font-semibold leading-7 text-[#214f95] sm:text-[1.18rem]">
+          {section.subtitle}
+        </p>
+      )}
+
+      
     </div>
   )
 }
@@ -76,8 +83,8 @@ function TextPanel({ section }) {
     <div className="mx-auto w-full max-w-[560px] text-center lg:mx-0 lg:text-left">
 
       <div className="mt-6 space-y-5 text-[1.02rem] leading-7 text-[#6b7894] sm:text-[1.08rem] sm:leading-8">
-        {section.paragraphs.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
+        {section.paragraphs.map((paragraph, index) => (
+          <p key={`${section.label}-${index}`}>{paragraph}</p>
         ))}
       </div>
 

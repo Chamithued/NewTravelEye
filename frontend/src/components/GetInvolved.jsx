@@ -18,63 +18,63 @@ import JVASI from '../assets/involved/Joint Ventures & Strategic Investments.jpg
 const cards = [
   {
     title: 'Become a Travel Venture Partner',
-    subtitle: 'Develop inbound and outbound travel ventures and partnerships connecting Sri Lanka with the world.',
+    subtitle: 'Develop inbound and outbound travel ventures and collaborative partnerships that connect Sri Lanka with international travel markets through meaningful journeys.',
     icon: Building2,
     accent: '#275CAD',
     image: BTVP,
   },
   {
     title: 'Become a Travel Corridor Partner',
-    subtitle: 'Develop exclusive travel corridor partnerships connecting Sri Lanka with your country through meaningful two-way tourism.',
+    subtitle: 'Develop exclusive travel corridor partnerships that strengthen tourism relationships between Sri Lanka and international destinations through meaningful two-way travel.',
     icon: Sprout,
     accent: '#15803d',
     image: BTCP,
   },
   {
-    title: 'Develop a Place-Inspired Stay',
-    subtitle: 'Create authentic hospitality that reflects Sri Lanka \'s culture, local character, and sense of place.',
+    title: 'Develop a Place-Inspired Host Stay',
+    subtitle: 'Create authentic host stays that reflect Sri Lanka\'s culture, hospitality, landscapes, and the unique identity of each destination.',
     icon: Globe2,
     accent: '#0ea5a4',
     image: DPIS,
   },
   {
     title: 'Develop a People & Place-Inspired Experience',
-    subtitle: 'Create authentic experiences that connect travellers with Sri Lanka\'s people, culture, nature, heritage, creativity, and traditions.',
+    subtitle: 'Create meaningful tourism experiences inspired by Sri Lanka\'s people, culture, heritage, nature, creativity, traditions, and everyday life.',
     icon: Leaf,
     accent: '#16a34a',
     image: DPAPIE,
   },
   {
-    title: ' Develop an Ecosystem Support Venture',
-    subtitle: 'Strengthen tourism through technology, training, advisory services, innovation, capability development, and enterprise support.',
+    title: 'Develop a Tourism Enterprise Support Venture',
+    subtitle: 'Support the growth of tourism enterprises through technology, training, consultancy, innovation, capability development, digital solutions, and ecosystem support services.',
     icon: Globe2,
     accent: '#7c3aed',
     image: DESV,
   },
   {
     title: 'Partner in Destination Development',
-    subtitle: 'Contribute to destination participation, stewardship, and tourism ecosystem development across Sri Lanka.',
+    subtitle: 'Collaborate with destinations, communities, tourism enterprises, and institutions to strengthen participation, stewardship, and place-based tourism development.',
     icon: Users,
     accent: '#f59e0b',
     image: movementImg,
   },
   {
     title: 'Joint Ventures & Strategic Investments',
-    subtitle: 'Explore strategic partnerships and investment opportunities that strengthen tourism ecosystems.',
+    subtitle: 'Explore collaborative investment and joint venture opportunities that strengthen tourism enterprises, destinations, travel initiatives, and the wider tourism ecosystem.',
     icon: HeartHandshake,
     accent: '#ef4444',
     image: JVASI,
   },
   {
-    title: 'Collaborate With Us',
-    subtitle: 'Work with government agencies, tourism organisations, development partners, NGOs, institutions, academia, cooperative movements, and industry stakeholders.',
+    title: 'Collaborate with Traveleye Alliance',
+    subtitle: 'Work alongside government agencies, tourism authorities, development organisations, educational institutions, cooperative movements, NGOs, investors, and industry partners to advance people-powered tourism initiatives.',
     icon: Handshake,
     accent: '#0f766e',
     image: collaborateImg,
   },
   {
-    title: 'Travel With Purpose',
-    subtitle: 'Experience meaningful journeys that create positive connections with people and place.',
+    title: 'Travel with Purpose',
+    subtitle: 'Experience meaningful journeys that celebrate Sri Lanka\'s people, places, and culture while contributing to stronger destinations and a thriving People-Powered Tourism Ecosystem.',
     icon: Plane,
     accent: '#2563eb',
     image: purposeImg,
@@ -102,7 +102,7 @@ function InvolvedCard({ card }) {
           <p className="mb-4 max-w-xl text-sm sm:text-base text-white/90">{card.subtitle}</p>
 
           <div>
-            <button className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/5 sm:w-auto">
+            {/* <button className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/5 sm:w-auto">
               <span>Learn More</span>
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-transparent">
                 <svg className="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -110,7 +110,7 @@ function InvolvedCard({ card }) {
                   <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -127,27 +127,36 @@ export default function GetInvolved() {
         <div className="mx-auto max-w-4xl text-center">
           {/* <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm mb-6"> */}
           <div className="home-section-eyebrow mb-5">
-            Get Involved
+            Grow Together with Traveleye Alliance
           </div>
 
-          <h2 className="home-section-title">Every Contribution Matters</h2>
+          <h2 className="home-section-title">Every Contribution Strengthens the Ecosystem</h2>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
-          <div className="mx-auto mt-5 max-w-5xl space-y-6 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
-            <p>Tourism is more than where people travel.</p>
-            <p>It is about the connections, participation, and positive impact created along the way.</p>
-            <p>Whether you are a traveller, tourism enterprise, destination stakeholder, entrepreneur, institution, community organisation, or ecosystem partner, there are many ways to become part of the Traveleye People-Powered Tourism Ecosystem.</p>
+          <div className="mx-auto mt-5 max-w-6xl space-y-6 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
+            <p>
+              The <strong>Traveleye People-Powered Tourism Ecosystem</strong> is built through the collective contributions of travellers, tourism enterprises, entrepreneurs, destinations, communities, institutions, development partners, and industry stakeholders.
+            </p>
+            <p>
+              Whether you are looking to develop a tourism enterprise, create authentic tourism experiences, strengthen destinations, build strategic partnerships, or contribute your expertise, there are many ways to participate in building a stronger, more connected, and more resilient tourism ecosystem across Sri Lanka.
+            </p>
           </div>
-          <div className="mt-7">
+          {/* <div className="mt-7">
             <Link
               to="/how-you-can-get-involved"
               className="inline-flex w-full items-center justify-center rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
             >
               Join the Traveleye Ecosystem
             </Link>
-          </div>
+          </div> */}
         </div>
 
-        <div className="mt-10 mx-auto max-w-6xl">
+        <div className="mt-10 text-center">
+          <h3 className="text-[1.45rem] font-semibold leading-tight text-[#172544] sm:text-[1.75rem]">
+            Become Part of the Traveleye People-Powered Tourism Ecosystem
+          </h3>
+        </div>
+
+        <div className="mt-8 mx-auto max-w-6xl">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cards.map((c) => (
               <InvolvedCard key={c.title} card={c} />

@@ -12,7 +12,7 @@ import {
   Theater,
 } from 'lucide-react'
 
-import outcomesImg from '../assets/client/Discussing People-Powered Tourism framework.png'
+import outcomesImg from '../assets/People-Powered Tourism Outcomes.jpg'
 
 const outcomes = [
   {
@@ -102,11 +102,10 @@ export default function PeoplePoweredTourismOutcomesSection() {
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
 
-        <div className="mt-10 grid items-center gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
-          <div className="relative">
-            <div className="absolute -inset-3 rounded-[1.35rem] border border-[#d7c3a8] bg-[#f7efe2]" />
+        <div className="mt-10 grid items-center gap-8 lg:-ml-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <div className="relative mx-auto w-full max-w-[460px] lg:mr-0 lg:max-w-[420px]">
             <div className="absolute -bottom-5 left-8 right-8 h-12 rounded-full bg-[#214f95]/12 blur-xl" />
-            <div className="relative overflow-hidden rounded-2xl border-[10px] border-white bg-[#eef4ee] shadow-[0_22px_44px_rgba(15,23,42,0.16)]">
+            <div className="relative overflow-hidden rounded-2xl bg-[#eef4ee] shadow-[0_22px_44px_rgba(15,23,42,0.16)]">
               <img
                 src={outcomesImg}
                 alt="People discussing the People-Powered Tourism outcomes"
@@ -115,7 +114,7 @@ export default function PeoplePoweredTourismOutcomesSection() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center lg:items-start">
             <div className="mx-auto max-w-[560px] space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
               <p>
                 The <strong>People-Powered Tourism Outcomes</strong> represent the long-term results of implementing the <strong>People-Powered Tourism Framework</strong>.
