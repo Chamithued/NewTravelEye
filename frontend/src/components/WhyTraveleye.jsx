@@ -13,42 +13,42 @@ const reasons = [
     icon: Leaf,
     title: 'People-Powered Tourism',
     description:
-      <>Guided by a tourism framework centred on <strong>participation, stewardship, collaboration, innovation, and shared value creation.</strong></>,
+      'Building tourism around people by placing participation, stewardship, collaboration, innovation, and shared value creation at the heart of tourism development.',
     iconBg: 'bg-emerald-500',
   },
   {
     icon: Globe2,
     title: 'Inclusive Participation',
     description:
-      <>Encouraging broader participation across tourism ecosystems while creating opportunities for <strong>communities, women, youth entrepreneurs, and local enterprises.</strong></>,
+      'Creating meaningful opportunities for communities, women, youth entrepreneurs, tourism enterprises, institutions, and development partners to participate and grow together.',
     iconBg: 'bg-blue-800',
   },
   {
     icon: House,
     title: 'Destination Stewardship',
     description:
-      <>Supporting tourism that remains connected to <strong>people, place, culture, heritage, and long-term destination wellbeing.</strong></>,
+      'Supporting tourism that respects local identity, culture, heritage, nature, and the long-term wellbeing of destinations.',
     iconBg: 'bg-amber-500',
   },
   {
     icon: Handshake,
-    title: 'Human-Centred Innovation',
+    title: 'Innovation with Purpose',
     description:
-      <>Encouraging innovation that strengthens tourism while remaining grounded in <strong>people, place, and meaningful human connection.</strong></>,
+      'Encouraging practical, people-centred innovation that strengthens tourism while remaining grounded in local realities and meaningful human connections.',
     iconBg: 'bg-sky-500',
   },
   {
     icon: Sprout,
-    title: 'Connected Ecosystems',
+    title: 'Connected Tourism Ecosystems',
     description:
-      <>Strengthening relationships between <strong>travellers, hosts, enterprises, destinations, communities, and tourism stakeholders.</strong></>,
+      'Bringing together travellers, hosts, tourism enterprises, destinations, institutions, and partners to create stronger tourism ecosystems through collaboration.',
     iconBg: 'bg-lime-500',
   },
   {
     icon: MapPinned,
     title: 'Long-Term Resilience',
     description:
-      <>Supporting tourism ecosystems that are <strong>inclusive, resilient, adaptable, and sustainable for future generations.</strong></>,
+      'Supporting resilient tourism enterprises, destinations, and ecosystems that create lasting economic, social, cultural, and environmental value for future generations.',
     iconBg: 'bg-red-600',
   },
 ]
@@ -103,16 +103,18 @@ export default function WhyTraveleye() {
           </p> */}
           <div className="mx-auto mt-5 max-w-5xl space-y-6 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
             <p>
-              Traveleye Alliance approaches tourism as a connected ecosystem where <strong>people, places, enterprises, experiences, and tourism stakeholders</strong> contribute to stronger tourism futures. 
-            </p>
-
-            <p>
-              Guided by the <strong>Traveleye People-Powered Tourism (PPT) Framework</strong>, we believe tourism creates greater value when it remains <strong>inclusive, participatory, destination-aware, and grounded in long-term stewardship.</strong>
+              Traveleye Alliance approaches tourism as a connected ecosystem where people, places, enterprises, destinations, and tourism stakeholders work together to create meaningful travel and lasting value. Guided by the <strong>People-Powered Tourism Framework</strong>, we believe tourism is strongest when it encourages participation, stewardship, collaboration, innovation, and shared value creation while developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
             </p>
           </div>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 text-center">
+          <h3 className="text-[1.45rem] font-semibold leading-tight text-[#172544] sm:text-[1.75rem]">
+            Why Choose Traveleye?
+          </h3>
+        </div>
+
+        <div className="mx-auto mt-7 grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason) => (
             <ReasonCard key={reason.title} reason={reason} />
           ))}
@@ -123,7 +125,7 @@ export default function WhyTraveleye() {
             to="/why-traveleye"
             className="w-full rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
           >
-            Discover Why Traveleye?
+            Explore Why Traveleye
           </Link>
         </div>
       </div>

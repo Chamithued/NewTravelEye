@@ -3,8 +3,8 @@ import experiencesImg from '../assets/client/Travelex.png'
 import journeyImg from '../assets/client/Plan Your Sri Lanka Journey.png'
 import luxuryImg from '../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg'
 import weddingImg from '../assets/client/Sri Lankan wedding reception at golden hour.png'
-import outboundImg from '../assets/client/Discover the world.png'
-import conNation from '../assets/explore/Connecting Nations Through Meaningful Travel new.jpg'
+import outboundImg from '../assets/explore/Discover Sri Lanka - Domestic1.jpg'
+import conNation from '../assets/client/Discover the world.png'
 import conTourism from '../assets/explore/Connecting Tourism Through Collaboration and Partnerships new.jpg'
 import discSriLanka from '../assets/explore/Discover Sri Lanka - Domestic1.jpg'
 
@@ -122,25 +122,30 @@ export default function ExplorePlatformsSection() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {platforms.map((platform) => (
-            <a
+            <article
               key={platform.id}
-              href={platform.link}
-              className="group mx-auto flex min-h-[360px] w-full max-w-[380px] flex-col overflow-hidden rounded-lg border border-[#dfe7f3] bg-white shadow-[0_4px_18px_rgba(15,23,42,0.08)] transition-shadow duration-300 hover:shadow-xl"
+              className="mx-auto flex min-h-[360px] w-full max-w-[380px] flex-col overflow-hidden rounded-lg border border-[#dfe7f3] bg-white shadow-[0_4px_18px_rgba(15,23,42,0.08)] transition-shadow duration-300 hover:shadow-xl"
             >
-              <div className="relative h-44 overflow-hidden">
+              <a
+                href={platform.link}
+                aria-label={platform.title}
+                className="group/image relative block h-44 overflow-hidden"
+              >
                 <img
                   src={platform.image}
                   alt={platform.title}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover/image:scale-105"
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0f2a55]/15 via-transparent to-[#0f2a55]/35" />
                 <div className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white text-2xl shadow-sm">
                   {platform.icon}
                 </div> */}
-              </div>
+              </a>
               <div className="flex flex-1 flex-col p-4 text-left sm:p-5">
                 <h3 className="text-base font-bold leading-snug text-[#1f4f93]">
-                  {platform.title}
+                  <a href={platform.link} className="transition-colors hover:text-[#172544]">
+                    {platform.title}
+                  </a>
                 </h3>
                 {platform.subtitle ? (
                   <p className="mt-3 text-sm font-semibold leading-6 text-[#234c3a]">
@@ -149,7 +154,7 @@ export default function ExplorePlatformsSection() {
                 ) : null}
                 <p className="mt-3 text-sm leading-6 text-[#5f6c87]">{platform.description}</p>
               </div>
-            </a>
+            </article>
           ))}
         </div>
       </div>

@@ -1,19 +1,29 @@
+import { ArrowRight } from 'lucide-react'
+import bagIcon from '../assets/pillarIcon/bag_icon.png'
+import compassIcon from '../assets/pillarIcon/compass_icon.png'
+import globeIcon from '../assets/pillarIcon/globe_icon.png'
+import houseIcon from '../assets/pillarIcon/house_icon.png'
+
 const strategicPillars = [
   {
-    icon: '\uD83C\uDF0D',
+    icon: globeIcon,
     title: 'People-Powered Travel Collective',
+    color: '#f5b21b',
   },
   {
-    icon: '\uD83C\uDF3F',
+    icon: houseIcon,
     title: 'People-Powered Host Experiences',
+    color: '#1f75d6',
   },
   {
-    icon: '\uD83D\uDCBC',
+    icon: bagIcon,
     title: 'People-Powered Ecosystem Support',
+    color: '#28a745',
   },
   {
-    icon: '\uD83E\uDDED',
+    icon: compassIcon,
     title: 'People-Powered Destination Facilitation',
+    color: '#ff7a1a',
   },
 ]
 
@@ -47,20 +57,33 @@ export default function PeoplePoweredTourismStrategicPillarsSection() {
           </h3>
         </div>
 
-        <div className="mx-auto mt-7 grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-9 grid max-w-6xl grid-cols-1 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
           {strategicPillars.map((pillar) => (
             <article
               key={pillar.title}
-              className="flex min-h-[150px] flex-col items-center justify-center rounded-xl border border-[#d8e2ef] bg-white px-5 py-6 text-center shadow-[0_12px_30px_rgba(15,23,42,0.08)] transition-transform duration-200 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(15,23,42,0.12)]"
+              className="strategic-pillar-card"
+              style={{ '--pillar-accent': pillar.color }}
             >
-              <span className="text-4xl leading-none" aria-hidden="true">
-                {pillar.icon}
+              <span className="strategic-pillar-card__dot" aria-hidden="true" />
+              <span className="strategic-pillar-card__arrow" aria-hidden="true" />
+              <span className="strategic-pillar-card__icon" aria-hidden="true">
+                <img src={pillar.icon} alt="" />
               </span>
-              <h4 className="mt-4 text-[1.02rem] font-bold leading-snug text-[#172544]">
-                {pillar.title}
-              </h4>
+              <div className="strategic-pillar-card__body">
+                <h4>{pillar.title}</h4>
+              </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <a
+            href="/people-powered-tourism-strategic-pillars"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#214f95] px-6 py-3.5 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:px-8 sm:text-[1.05rem]"
+          >
+            Explore the People-Powered Tourism Strategic Pillars
+            <ArrowRight className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
+          </a>
         </div>
       </div>
     </section>

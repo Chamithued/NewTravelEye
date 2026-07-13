@@ -29,8 +29,8 @@ export default function Home() {
       <PeoplePoweredTourismStrategicPillarsSection />
       <PeoplePoweredTourismDevelopmentModelsSection />
       <FivePillars />
-      <PeoplePoweredTourismOutcomesSection />
       <HomeFrameworkSections />
+      <PeoplePoweredTourismOutcomesSection />
       <WhyTraveleye />
       <GetInvolved />
       <OurGrowingImpact />
