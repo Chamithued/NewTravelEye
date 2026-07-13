@@ -16,48 +16,48 @@ const developmentModels = [
     description:
       'Encouraging meaningful participation through collaboration, inclusion, shared ownership, and collective action.',
     icon: Handshake,
-    color: '#9be447',
-    darkColor: '#65bd22',
+    color: '#112E81',
+    darkColor: '#112E81',
   },
   {
     title: 'Shared Stewardship Model',
     description:
       'Promoting shared responsibility for destinations, communities, culture, heritage, and nature.',
     icon: Leaf,
-    color: '#20c8bb',
-    darkColor: '#0a9a92',
+    color: '#112E81',
+    darkColor: '#112E81',
   },
   {
     title: 'People-Powered Tourism Enterprise Development Model',
     description:
       'Supporting the development and strengthening of resilient micro and small tourism enterprises.',
     icon: BriefcaseBusiness,
-    color: '#35c9f4',
-    darkColor: '#168fe8',
+    color: '#112E81',
+    darkColor: '#112E81',
   },
   {
     title: 'Destination Stewardship Model',
     description:
       'Strengthening destinations through collaborative planning, coordination, and long-term stewardship.',
     icon: Compass,
-    color: '#60241E',
-    darkColor: '#60241E',
+    color: '#112E81',
+    darkColor: '#112E81',
   },
   {
     title: 'Travel Corridor Development Model',
     description:
       'Building connected tourism corridors through strategic partnerships, cultural exchange, and long-term international collaboration.',
     icon: Route,
-    color: '#f2b24a',
-    darkColor: '#d88921',
+    color: '#112E81',
+    darkColor: '#112E81',
   },
   {
     title: 'Tourism Ecosystem Connectivity Model',
     description:
       'Connecting people, enterprises, destinations, institutions, and support systems to strengthen tourism ecosystem collaboration and resilience.',
     icon: Network,
-    color: '#ff9b7a',
-    darkColor: '#df6247',
+    color: '#112E81',
+    darkColor: '#112E81',
   },
   {
     title: 'Shared Value Creation Model',
@@ -72,8 +72,8 @@ const developmentModels = [
     description:
       'Supporting continuous learning, innovation, adaptation, and the ongoing evolution of tourism development.',
     icon: Sprout,
-    color: '#f08ac6',
-    darkColor: '#c95a9b',
+    color: '#112E81',
+    darkColor: '#112E81',
   },
 ]
 
@@ -114,7 +114,7 @@ export default function PeoplePoweredTourismDevelopmentModelsSection() {
             return (
               <article
                 key={model.title}
-                className="relative mx-auto flex h-[268px] w-full max-w-[240px] flex-col rounded-[0.8rem] px-[12px] pb-[17px] pt-[60px] text-center text-white shadow-[0_5px_0_rgba(15,23,42,0.1),0_14px_18px_rgba(15,23,42,0.12)] transition-transform duration-200 hover:-translate-y-1"
+                className="relative mx-auto flex h-[212px] w-full max-w-[240px] flex-col rounded-[0.8rem] px-[4px] pb-[4px] pt-[60px] text-center text-white shadow-[0_1px_0_rgba(15,23,42,0.07),0_14px_18px_rgba(15,23,42,0.12)] transition-transform duration-200 hover:-translate-y-1"
                 style={{
                   background: `linear-gradient(135deg, ${model.color} 0%, ${model.darkColor} 100%)`,
                 }}
@@ -130,7 +130,7 @@ export default function PeoplePoweredTourismDevelopmentModelsSection() {
                   />
                 </div>
 
-                <div className="relative z-10 flex h-[148px] flex-col bg-white px-5 pb-4 pt-[21px] shadow-[0_4px_7px_rgba(15,23,42,0.16)]">
+                <div className="relative z-10 flex h-[148px] flex-col rounded-b-[0.6rem] bg-white px-5 pb-4 pt-[21px] shadow-[0_4px_7px_rgba(15,23,42,0.16)]">
                   <h4
                     className="min-h-[38px] text-[0.76rem] font-extrabold uppercase leading-[1.15]"
                     style={{ color: model.darkColor }}
