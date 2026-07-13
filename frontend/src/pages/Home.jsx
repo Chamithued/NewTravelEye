@@ -9,6 +9,9 @@ import HomeFrameworkSections from '../components/HomeFrameworkSections'
 import WhyTraveleye from '../components/WhyTraveleye'
 import EcosystemSection from '../components/EcosystemSection'
 import PeoplePoweredTourismFrameworkSection from '../components/PeoplePoweredTourismFrameworkSection'
+import PeoplePoweredTourismDevelopmentModelsSection from '../components/PeoplePoweredTourismDevelopmentModelsSection'
+import PeoplePoweredTourismStrategicPillarsSection from '../components/PeoplePoweredTourismStrategicPillarsSection'
+import PeoplePoweredTourismOutcomesSection from '../components/PeoplePoweredTourismOutcomesSection'
 import GetInvolved from '../components/GetInvolved'
 import OurGrowingImpact from '../components/OurGrowingImpact'
 import FooterLinks from '../components/FooterLinks'
@@ -23,12 +26,15 @@ export default function Home() {
       <PeoplePoweredTourismIntro />
       <EcosystemSection />
       <PeoplePoweredTourismFrameworkSection />
-      <CatalogueLibrarySection />
+      <PeoplePoweredTourismStrategicPillarsSection />
+      <PeoplePoweredTourismDevelopmentModelsSection />
       <FivePillars />
+      <PeoplePoweredTourismOutcomesSection />
       <HomeFrameworkSections />
       <WhyTraveleye />
       <GetInvolved />
       <OurGrowingImpact />
+      <CatalogueLibrarySection />
       <FooterLinks />
     </main>
   )
