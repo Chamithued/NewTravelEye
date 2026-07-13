@@ -1,11 +1,10 @@
-import { Leaf, Building2, Compass, MapPinned, BriefcaseBusiness } from 'lucide-react'
+import { ArrowRight, Leaf, Building2, Compass, MapPinned, BriefcaseBusiness } from 'lucide-react'
 
 import staysImg from '../assets/client/stays_new.jpg'
 import experientialImg from '../assets/client/PPES.png'
 import tourOpsImg from '../assets/client/TC.png'
 import supportImg from '../assets/client/Support Services.png'
 import facilitationImg from '../assets/client/At the Traveleye Facilitation Center.png'
-import { Link } from 'react-router-dom'
 
 const pillars = [
     {
@@ -22,7 +21,7 @@ const pillars = [
   },
   {
     code: 'PPHE',
-    title: 'People-Powered Host Experiences',
+    title: 'Traveleye Host Experiences',
     subtitle: 'Crafting Experiences Through People and Place',
     icon: Building2,
     accent: 'bg-sky-500',
@@ -34,7 +33,7 @@ const pillars = [
   },
   {
     code: 'PPES',
-    title: 'People-Powered Ecosystem Support',
+    title: 'Traveleye Ecosystem Support',
     subtitle: 'Strengthening Tourism Through People and Place',
     icon: Leaf,
     accent: 'bg-emerald-500',
@@ -58,7 +57,7 @@ const pillars = [
   // },
   {
     code: 'PPDF',
-    title: 'People-Powered Destination Facilitation',
+    title: 'Traveleye Destination Facilitation',
     subtitle: 'Stewarding Destinations Through People and Place',
     icon: MapPinned,
     accent: 'bg-orange-500',
@@ -72,11 +71,13 @@ const pillars = [
 
 function PillarCard({ pillar }) {
   const Icon = pillar.icon
+  const readableTextShadow =
+    '0 1px 2px rgba(0,0,0,0.65), 0 0 1px rgba(0,0,0,0.85)'
   const pillarDescriptions = {
-    PPTC:(<> 'Meaningful <strong>inbound, domestic, outbound, premium, celebration, and travel corridor journeys</strong> that connect travellers with Sri Lanka through authentic people, places, and experiences.'</>),
-    PPHE:(<> Authentic <strong>host stays and people & place-inspired experiences</strong> shaped by local culture, hospitality, heritage, nature, creativity, and meaningful human connection.</>),
-    PPES:(<> Supporting tourism through <strong>knowledge, collaboration, innovation, technology, capability development, enterprise support, and ecosystem services.</strong> </>),
-    PPDF:( <>Encouraging <strong>local participation, destination stewardship, place-based collaboration, and ecosystem facilitation</strong> for stronger tourism ecosystems. </>),
+    PPTC:(<> Connecting meaningful journeys, destinations, travellers, and travel partnerships through people and place.</>),
+    PPHE:(<> Developing authentic place-inspired host stays and people and place-inspired experiences that celebrate local identity and hospitality.</>),
+    PPES:(<> Strengthening tourism enterprises through knowledge, capability development, innovation, digital solutions, and ecosystem support services. </>),
+    PPDF:( <>Facilitating collaborative destination development through participation, stewardship, ecosystem coordination, and local engagement. </>),
   }
 
   return (
@@ -91,75 +92,20 @@ function PillarCard({ pillar }) {
             </div>
             <div>
               <p className="text-[1.35rem] font-bold leading-tight text-white sm:text-2xl md:text-3xl">{pillar.title}</p>
-              <p className="mt-1 text-sm font-bold text-white/90">{pillar.subtitle}</p>
+              {/* <p className="mt-1 text-sm font-bold text-white/90">{pillar.subtitle}</p> */}
             </div>
           </div>
         </div>
 
         <div className="mt-4">
-          <p className="mb-6 max-w-xl text-sm sm:text-base text-white/90">{pillarDescriptions[pillar.code] ?? ''}</p>
+          <p
+            className="mb-6 max-w-xl text-sm sm:text-base text-white/90"
+            style={{ textShadow: readableTextShadow }}
+          >
+            {pillarDescriptions[pillar.code] ?? ''}
+          </p>
 
-              <div className="flex flex-col gap-3 items-start">
-                {pillar.code === 'PPET' ? (
-                  <>
-                    <div className="flex gap-3">
-                      {pillar.ctas.slice(0, 2).map((cta) => (
-                        <Link
-                          key={cta.label}
-                          to={cta.to}
-                          className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
-                        >
-                          {cta.label}
-                           <span className="ml-2 inline-flex items-center">
-                            <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-[#1C4686] group-hover:bg-[#193F78] transition-colors">
-                               <svg className="h-3 w-3 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                 <path d="M5 12h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                 <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                               </svg>
-                           </span>
-                           </span>
-                        </Link>
-                      ))}
-                    </div>
-
-                    {pillar.ctas.slice(2).map((cta) => (
-                      <Link
-                        key={cta.label}
-                        to={cta.to}
-                        className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
-                      >
-                        {cta.label}
-                          <span className="ml-2 inline-flex items-center">
-                          <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-[#1C4686] group-hover:bg-[#193F78] transition-colors">
-                             <svg className="h-3 w-3 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                               <path d="M5 12h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                               <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                             </svg>
-                         </span>
-                         </span>
-                      </Link>
-                    ))}
-                  </>
-                ) : (
-                  pillar.ctas.map((cta) => (
-                    <Link
-                      key={cta.label}
-                      to={cta.to}
-                      className={`inline-flex group w-full items-center justify-center gap-2 rounded-md px-4 py-2 text-center text-sm font-semibold transition bg-[#1C4686] text-white hover:bg-[#193F78] sm:w-auto sm:justify-start`}
-                    >
-                      {cta.label}
-                         <span className="ml-2 inline-flex items-center">
-                           <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-[#1C4686] group-hover:bg-[#193F78] transition-colors">
-                           <svg className="h-3 w-3 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                             <path d="M5 12h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                             <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                           </svg>
-                          </span>
-                        </span>
-                    </Link>
-                  ))
-                )}
-              </div>
+              {/* Pillar card buttons hidden by request. */}
         </div>
       </div>
     </article>
@@ -173,14 +119,14 @@ export default function FivePillars() {
         <div className="mb-8 flex justify-center">
           {/* <div className="inline-flex items-center gap-3 rounded-full bg-[#e9eef8] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm"> */}
           <div className="home-section-eyebrow">
-            Our Four Pillars
+            People-Powered Tourism Operational Platforms
           </div>
         </div>
 
         <div className="mx-auto mb-6 max-w-6xl text-center px-4">
           <div className="flex items-center justify-center gap-4">
             <h2 className="home-section-title">
-             🌿 Four Connected Pillars Strengthening Tourism Ecosystems 
+             🌿 Implementing the People-Powered Tourism Framework Through Connected Platforms 
             </h2>
           </div>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -196,12 +142,12 @@ export default function FivePillars() {
           </p> */}
 
           <p className="mb-6">
-            The <strong>Traveleye People-Powered Tourism (PPT) Framework</strong> is brought to life through four interconnected pillars that strengthen <strong>journeys, stays, experiences, destinations, participation, and tourism ecosystems</strong> across Sri Lanka
+            The <strong>People-Powered Tourism Operational Platforms</strong> are the implementation mechanisms of the People-Powered Tourism Framework, translating strategic direction into practical action. Working together, they implement people-powered tourism by connecting people, places, enterprises, destinations, partnerships, and opportunities while supporting the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem. 
           </p>
 
-          <p>
+          {/* <p>
             Together, these pillars create meaningful opportunities for <strong>travel, hosting, collaboration, destination stewardship, and ecosystem development</strong>, while creating long-term value for <strong>people, place, and tourism.</strong> 
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-10 mx-auto max-w-[1200px] px-2">
@@ -210,6 +156,16 @@ export default function FivePillars() {
               <PillarCard key={p.code} pillar={p} />
             ))}
           </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <a
+            href="/people-powered-tourism-operational-platforms"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#214f95] px-6 py-3.5 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:px-8 sm:text-[1.05rem]"
+          >
+            Explore the People-Powered Tourism Operational Platforms
+            <ArrowRight className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
+          </a>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ export default function PeoplePoweredTourismFrameworkSection() {
       <div className="w-full">
         <div className="px-4 text-center sm:px-6 lg:px-8">
           <div className="home-section-eyebrow mb-5 justify-center">
-              People-Powered Tourism Framework
+            People-Powered Tourism Framework
           </div>
 
           <h2 className="home-section-title">
@@ -15,7 +15,7 @@ export default function PeoplePoweredTourismFrameworkSection() {
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
 
-        <div className="mt-10 overflow-hidden shadow-[0_14px_18px_-14px_rgba(15,23,42,0.20)] lg:grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+        <div className="relative z-10 mt-10 overflow-hidden shadow-[0_18px_30px_-18px_rgba(15,23,42,0.35)] lg:grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
           <div className="min-h-[320px] bg-[#fffdf1]">
             <img
               src={frameworkImg}
