@@ -3,6 +3,7 @@ import bagIcon from '../assets/pillarIcon/bag_icon.png'
 import compassIcon from '../assets/pillarIcon/compass_icon.png'
 import globeIcon from '../assets/pillarIcon/globe_icon.png'
 import houseIcon from '../assets/pillarIcon/house_icon.png'
+import strategicPillarsImg from '../assets/People-Powered Tourism Strategic Pillars.jpg'
 
 const strategicPillars = [
   {
@@ -42,13 +43,23 @@ export default function PeoplePoweredTourismStrategicPillarsSection() {
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
 
-        <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
-          <p>
-            The <strong>People-Powered Tourism Strategic Pillars</strong> define the four primary focus areas of the <strong>People-Powered Tourism Framework</strong>, identifying where tourism is strengthened through the development and strengthening of micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
-          </p>
-          <p>
-            Working together, these four interconnected strategic pillars create opportunities for meaningful journeys, authentic host experiences, enterprise development, ecosystem support, and destination facilitation. By encouraging participation, stewardship, collaboration, innovation, and shared value creation, they contribute to stronger tourism enterprises, resilient destinations, thriving tourism ecosystems, and lasting value for people, places, partnerships, and future generations.
-          </p>
+        <div className="mx-auto mt-10 grid max-w-6xl items-center gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-12">
+          <div className="space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8 lg:text-left">
+            <p>
+              The <strong>People-Powered Tourism Strategic Pillars</strong> define the four primary focus areas of the <strong>People-Powered Tourism Framework</strong>, identifying where tourism is strengthened through the development and strengthening of micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+            </p>
+            <p>
+              Working together, these four interconnected strategic pillars create opportunities for meaningful journeys, authentic host experiences, enterprise development, ecosystem support, and destination facilitation. By encouraging participation, stewardship, collaboration, innovation, and shared value creation, they contribute to stronger tourism enterprises, resilient destinations, thriving tourism ecosystems, and lasting value for people, places, partnerships, and future generations.
+            </p>
+          </div>
+
+          <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl lg:max-w-none">
+            <img
+              src={strategicPillarsImg}
+              alt="People-Powered Tourism four strategic pillars model"
+              className="aspect-[1.2/1] w-full rounded-2xl object-cover object-center"
+            />
+          </div>
         </div>
 
         <div className="mt-10 text-center">

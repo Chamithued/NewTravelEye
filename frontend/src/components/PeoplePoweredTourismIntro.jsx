@@ -1,5 +1,6 @@
 import { Globe2, Handshake, Leaf } from 'lucide-react'
-import peoplePoweredTourismImg from '../assets/What Is People-Powered Tourism.jpg'
+// import peoplePoweredTourismImg from '../assets/What Is People-Powered Tourism.jpg'
+import peoplePoweredTourismImg from "../assets/What is Traveleye's People-Powered Tourism.jpg"
 
 const principles = [
   {
