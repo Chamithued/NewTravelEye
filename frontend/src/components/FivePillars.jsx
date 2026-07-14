@@ -77,7 +77,7 @@ function PillarCard({ pillar }) {
     PPTC:(<> Connecting meaningful journeys, destinations, travellers, and travel partnerships through people and place.</>),
     PPHE:(<> Developing authentic place-inspired host stays and people and place-inspired experiences that celebrate local identity and hospitality.</>),
     PPES:(<> Strengthening tourism enterprises through knowledge, capability development, innovation, digital solutions, and ecosystem support services. </>),
-    PPDF:( <>Facilitating collaborative destination development through participation, stewardship, ecosystem coordination, and local engagement. </>),
+    PPDF:( <>Developing connected destination ecosystems through collaboration, coordination, participation, stewardship, and enterprise development.</>),
   }
 
   return (
@@ -131,7 +131,7 @@ export default function FivePillars() {
         <div className="mx-auto mb-6 max-w-6xl text-center px-4">
           <div className="flex items-center justify-center gap-4">
             <h2 className="home-section-title">
-             🌿 Implementing the People-Powered Tourism Framework Through Connected Platforms 
+             Implementing the People-Powered Tourism Framework Through Connected Platforms 
             </h2>
           </div>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -147,7 +147,7 @@ export default function FivePillars() {
           </p> */}
 
           <p className="mb-6">
-            The <strong>People-Powered Tourism Operational Platforms</strong> are the implementation mechanisms of the People-Powered Tourism Framework, translating strategic direction into practical action. Working together, they implement people-powered tourism by connecting people, places, enterprises, destinations, partnerships, and opportunities while supporting the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem. 
+            The <strong>People-Powered Tourism Operational Platforms</strong> are the implementation mechanisms of the People-Powered Tourism Framework, translating strategic direction and practical methodologies into coordinated action. Working together, these four interconnected platforms support the development and strengthening of micro and small tourism enterprises while creating meaningful journeys, authentic place-inspired host stays, people and place-inspired travel experiences, connected destination ecosystems, collaborative partnerships, and ecosystem initiatives across Sri Lanka&apos;s tourism ecosystem.
           </p>
 
           {/* <p>

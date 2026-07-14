@@ -104,10 +104,10 @@ export default function PeoplePoweredTourismDevelopmentModelsSection() {
 
           <div className="space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8 lg:text-left">
             <p>
-              The <strong>People-Powered Tourism Development Models</strong> provide the practical methodologies that transform the <strong>People-Powered Tourism Framework</strong> into meaningful action. While the Framework provides the strategic blueprint and the Strategic Pillars identify where tourism is strengthened, the Development Models demonstrate how tourism can be developed through structured, collaborative, and people-powered approaches.
+              The <strong>People-Powered Tourism Development Models</strong> provide the practical methodologies that translate the <strong>People-Powered Tourism Framework</strong> into action. While the Framework provides the strategic blueprint and the Strategic Pillars define where tourism is strengthened, the Development Models guide how tourism is planned, developed, implemented, and continuously strengthened through structured, collaborative, and <strong>People-Powered</strong> approaches.
             </p>
             <p>
-              Together, these eight interconnected models guide the planning, development, implementation, and continuous strengthening of micro and small tourism enterprises, place-inspired host stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives across Sri Lanka&apos;s tourism ecosystem.
+              Together, these eight interconnected models support the development and strengthening of micro and small tourism enterprises, place-inspired host stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives, contributing to stronger tourism enterprises, resilient destinations, and thriving tourism ecosystems across Sri Lanka.
             </p>
           </div>
         </div>

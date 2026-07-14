@@ -6,10 +6,10 @@ const featureSections = [
   {
     icon: Sprout,
     label: 'People-Powered Tourism Guiding Principles',
-    title: 'The Values That Guide the Traveleye People-Powered Tourism Ecosystem',
+    title: 'The Values That Guide the Traveleye People-Powered Tourism Framework',
     paragraphs: [
-      <>The <strong>People-Powered Tourism Framework</strong> is guided by a shared set of principles that shape how tourism is developed and strengthened across Sri Lanka&apos;s tourism ecosystem. These principles encourage tourism that is authentic, inclusive, participatory, collaborative, innovative, responsible, and grounded in long-term stewardship.</>,
-      'Together, they guide decision-making, strengthen partnerships, inspire meaningful participation, and promote shared responsibility, helping create lasting economic, social, cultural, and environmental value for people, places, partnerships, and future generations. ',
+      <>The <strong>People-Powered Tourism Framework</strong> is built upon a shared set of <strong>Guiding Principles</strong> that shape how tourism is planned, developed, implemented, and strengthened across Sri Lanka&apos;s tourism ecosystem. These principles encourage tourism that is authentic, inclusive, participatory, collaborative, innovative, responsible, and grounded in long-term stewardship.</>,
+      <>Together, they guide decision-making, strengthen partnerships, inspire meaningful participation, and promote shared responsibility, helping create lasting economic, social, cultural, and environmental value for <strong>People</strong>, <strong>Places</strong>, <strong>Partnerships</strong>, and <strong>Prosperity</strong>.</>,
     ],
     cta: 'Explore the People-Powered Tourism Guiding Principles',
     to: '/guiding-principles',
@@ -21,10 +21,9 @@ const featureSections = [
     icon: Globe2,
     label: 'People-Powered Tourism Global Alignment',
     title: 'Globally Aligned. Locally Grounded.',
-    subtitle: 'Inspired by Global Thinking. Rooted in Sri Lankan Realities.',
     paragraphs: [
-      "The People-Powered Tourism Framework is informed by globally recognised thinking on sustainable tourism, regenerative tourism, destination stewardship, community participation, and responsible tourism development while remaining firmly rooted in Sri Lanka's people, places, culture, and local realities.",
-      'Designed to respond to the unique opportunities and challenges of different destinations, the framework provides a flexible and connected approach to developing and strengthening micro and small tourism enterprises across Sri Lanka\'s tourism ecosystem. By encouraging participation, stewardship, collaboration, innovation, and shared value creation, it contributes to resilient tourism ecosystems and broader sustainable development.',
+      "The People-Powered Tourism Framework is informed by internationally recognised tourism concepts, including sustainable tourism, regenerative tourism, responsible tourism, destination stewardship, and community-centred development, while remaining firmly grounded in Sri Lanka's people, places, culture, and local realities.",
+      <>Aligned with the <strong>United Nations Sustainable Development Goals (SDGs)</strong>, the Framework provides a connected and adaptable approach to developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem. By encouraging participation, stewardship, collaboration, innovation, and shared value creation, it contributes to stronger tourism enterprises, resilient destinations, and lasting value for <strong>People</strong>, <strong>Places</strong>, <strong>Partnerships</strong>, and <strong>Prosperity</strong>.</>,
     ],
     cta: 'Explore the People-Powered Tourism Global Alignment',
     to: '/globally-aligned-locally-grounded',

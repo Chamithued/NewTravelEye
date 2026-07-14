@@ -61,16 +61,22 @@ export default function EcosystemSection() {
 				<div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(420px,0.88fr)] lg:gap-14">
 					<div>
 						<div className="mt-6 max-w-3xl space-y-5 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
+							<div>
+								<p className="text-center text-[1.2rem] font-extrabold text-[#172544]">
+									Purpose
+								</p>
+								<p className="mt-2">
+									To develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+								</p>
+							</div>
 							<p>
-								The <strong>Traveleye People-Powered Tourism Ecosystem</strong> is a connected tourism ecosystem designed to develop and strengthen 
-								micro and small tourism enterprises across Sri Lanka's tourism ecosystem. Guided by the <strong>People-Powered Tourism Framework</strong>, 
-								it brings together people, journeys, host stays, experiences, tourism enterprises, destinations, ecosystem support services, 
-								and collaborative opportunities within a shared vision for tourism development. 
+								The <strong>Traveleye People-Powered Tourism Ecosystem</strong> is a connected tourism ecosystem developed by Traveleye Alliance Sri Lanka to strengthen tourism through people, participation, collaboration, stewardship, innovation, and shared value creation.
 							</p>
 							<p>
-								By strengthening connections between people, places, enterprises, institutions, and tourism stakeholders, the ecosystem encourages meaningful 
-								participation, shared stewardship, collaboration, innovation, and shared value creation. Together, these connections contribute to more authentic 
-								travel experiences, resilient destinations, thriving tourism enterprises, and lasting value for people, places, partnerships, and future generations. 
+								Guided by the <strong>People-Powered Tourism Framework</strong>, the ecosystem creates opportunities for entrepreneurs, hosts, experience creators, tourism enterprises, destinations, institutions, communities, and strategic partners to participate in building stronger tourism together. Through a connected and collaborative approach, it transforms strategic vision into practical action, strengthening tourism enterprises, destinations, local economies, and the broader tourism ecosystem.
+							</p>
+							<p>
+								More than a collection of tourism businesses or initiatives, the <strong>Traveleye People-Powered Tourism Ecosystem</strong> is built upon the interconnected foundations of <strong>People</strong>, <strong>Places</strong>, <strong>Partnerships</strong>, and <strong>Prosperity</strong>. It connects people, places, enterprises, partnerships, and opportunities to create lasting value for Sri Lanka&apos;s tourism industry and future generations.
 							</p>
 						</div>
 

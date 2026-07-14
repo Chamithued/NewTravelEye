@@ -28,11 +28,19 @@ export default function PeoplePoweredTourismFrameworkSection() {
 
           <div className="bg-[#eef4fa] p-6 sm:p-10 lg:p-12">
             <div className="mx-auto max-w-xl space-y-5 text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
+              <div>
+                <p className="text-center text-[1.12rem] font-extrabold text-[#172544]">
+                  Purpose
+                </p>
+                <p className="mt-2">
+                  To provide the strategic blueprint for developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+                </p>
+              </div>
               <p>
-                The <strong>People-Powered Tourism Framework</strong> provides the strategic blueprint for developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem. As the guiding framework of the <strong>Traveleye People-Powered Tourism Ecosystem</strong>, it establishes a structured and connected approach to tourism development through the <strong>People-Powered Tourism Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Operational Platforms</strong>, and <strong>Tourism Outcomes</strong>.
+                The <strong>People-Powered Tourism Framework</strong> is the strategic blueprint that guides the <strong>Traveleye People-Powered Tourism Ecosystem</strong>. Built upon its <strong>Guiding Principles</strong> and <strong>Global Alignment</strong>, it provides a structured and connected approach to tourism development that translates vision into practical action.
               </p>
               <p>
-                Together, these interconnected components transform strategic direction into practical action, creating stronger tourism enterprises, meaningful travel experiences, resilient destinations, collaborative partnerships, and thriving tourism ecosystems that generate lasting value for people, places, partnerships, and future generations.
+                Through its interconnected <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Operational Platforms</strong>, <strong>Tourism Outcomes</strong>, and <strong>Ecosystem Indicators</strong>, the Framework supports the development of stronger tourism enterprises, resilient destinations, meaningful partnerships, and a thriving tourism ecosystem that creates lasting value for <strong>People</strong>, <strong>Places</strong>, <strong>Partnerships</strong>, and <strong>Prosperity</strong>.
               </p>
 
               <a
