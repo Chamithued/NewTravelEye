@@ -9,6 +9,7 @@ import {
   Route,
   Sprout,
 } from 'lucide-react'
+import developmentModelsImg from '../assets/People-Powered Tourism Development Models.jpg'
 
 const developmentModels = [
   {
@@ -92,13 +93,23 @@ export default function PeoplePoweredTourismDevelopmentModelsSection() {
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
 
-        <div className="mx-auto mt-8 max-w-5xl space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
-          <p>
-            The <strong>People-Powered Tourism Development Models</strong> provide the practical methodologies that transform the <strong>People-Powered Tourism Framework</strong> into meaningful action. While the Framework provides the strategic blueprint and the Strategic Pillars identify where tourism is strengthened, the Development Models demonstrate how tourism can be developed through structured, collaborative, and people-powered approaches.
-          </p>
-          <p>
-            Together, these eight interconnected models guide the planning, development, implementation, and continuous strengthening of micro and small tourism enterprises, place-inspired host stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives across Sri Lanka&apos;s tourism ecosystem.
-          </p>
+        <div className="mx-auto mt-10 grid max-w-6xl items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12">
+          <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl lg:max-w-none">
+            <img
+              src={developmentModelsImg}
+              alt="People-Powered Tourism Development Models overview"
+              className="aspect-square w-full rounded-2xl object-cover object-center"
+            />
+          </div>
+
+          <div className="space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8 lg:text-left">
+            <p>
+              The <strong>People-Powered Tourism Development Models</strong> provide the practical methodologies that transform the <strong>People-Powered Tourism Framework</strong> into meaningful action. While the Framework provides the strategic blueprint and the Strategic Pillars identify where tourism is strengthened, the Development Models demonstrate how tourism can be developed through structured, collaborative, and people-powered approaches.
+            </p>
+            <p>
+              Together, these eight interconnected models guide the planning, development, implementation, and continuous strengthening of micro and small tourism enterprises, place-inspired host stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives across Sri Lanka&apos;s tourism ecosystem.
+            </p>
+          </div>
         </div>
 
         <div className="mt-10 text-center">
