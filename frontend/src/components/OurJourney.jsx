@@ -193,7 +193,7 @@ export default function OurJourney() {
             </p>
 
             <p>
-              Today, guided by the <strong>People-Powered Tourism Framework</strong>, Traveleye Alliance is building a more connected, inclusive, and resilient <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for people, places, partnerships, and future generations. 
+              Today, guided by the <strong>People-Powered Tourism Framework</strong>, Traveleye Alliance is building a more connected, inclusive, and resilient <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for people, places, partnerships and prosperity future generations. 
                </p>
           </div>
         </div>

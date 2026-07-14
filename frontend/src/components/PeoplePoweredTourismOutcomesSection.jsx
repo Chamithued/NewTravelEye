@@ -97,7 +97,7 @@ export default function PeoplePoweredTourismOutcomesSection() {
           </div>
 
           <h2 className="home-section-title">
-            Creating Lasting Value Through People, Places, and Partnerships
+            Creating Lasting Value Through People, Places, Partnerships, and Prosperity
           </h2>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
@@ -117,10 +117,10 @@ export default function PeoplePoweredTourismOutcomesSection() {
           <div className="flex flex-col items-center justify-center lg:items-start">
             <div className="mx-auto max-w-[560px] space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
               <p>
-                The <strong>People-Powered Tourism Outcomes</strong> represent the long-term results of implementing the <strong>People-Powered Tourism Framework</strong>.
+                The <strong>People-Powered Tourism Outcomes</strong> represent the results created through the implementation of the <strong>People-Powered Tourism Framework</strong>. Built upon its <strong>Guiding Principles</strong> and <strong>Global Alignment</strong>, and achieved through its <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, and <strong>Operational Platforms</strong>, these interconnected outcomes contribute to developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
               </p>
               <p>
-                Guided by the <strong>Strategic Pillars</strong>, enabled through the <strong>Development Models</strong>, and implemented through the <strong>Operational Platforms</strong>, these interconnected outcomes contribute to developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem while creating lasting economic, social, cultural, and environmental value for people, places, partnerships, and future generations.
+                Together, they create stronger tourism enterprises, authentic host stays, people and place-inspired experiences, resilient destinations, collaborative partnerships, travel corridors, and thriving tourism ecosystems that generate lasting economic, social, cultural, and environmental value for <strong>People</strong>, <strong>Places</strong>, <strong>Partnerships</strong>, and <strong>Prosperity</strong>.
               </p>
             </div>
           </div>

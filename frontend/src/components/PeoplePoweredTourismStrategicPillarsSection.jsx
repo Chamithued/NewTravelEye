@@ -46,10 +46,10 @@ export default function PeoplePoweredTourismStrategicPillarsSection() {
         <div className="mx-auto mt-10 grid max-w-6xl items-center gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-12">
           <div className="space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8 lg:text-left">
             <p>
-              The <strong>People-Powered Tourism Strategic Pillars</strong> define the four primary focus areas of the <strong>People-Powered Tourism Framework</strong>, identifying where tourism is strengthened through the development and strengthening of micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+              The <strong>People-Powered Tourism Strategic Pillars</strong> define the four strategic focus areas of the <strong>People-Powered Tourism Framework</strong>, identifying where the Framework directs its efforts to develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
             </p>
             <p>
-              Working together, these four interconnected strategic pillars create opportunities for meaningful journeys, authentic host experiences, enterprise development, ecosystem support, and destination facilitation. By encouraging participation, stewardship, collaboration, innovation, and shared value creation, they contribute to stronger tourism enterprises, resilient destinations, thriving tourism ecosystems, and lasting value for people, places, partnerships, and future generations.
+              Working together, these four interconnected pillars create opportunities for meaningful journeys, authentic host experiences, enterprise development, ecosystem support, and destination facilitation. By encouraging participation, stewardship, collaboration, innovation, and shared value creation, they contribute to stronger tourism enterprises, resilient destinations, thriving tourism ecosystems, and lasting value for <strong>People</strong>, <strong>Places</strong>, <strong>Partnerships</strong>, and <strong>Prosperity</strong>.
             </p>
           </div>
 
