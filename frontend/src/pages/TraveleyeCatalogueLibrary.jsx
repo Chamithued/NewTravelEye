@@ -1,4 +1,4 @@
-import { BookOpen, Compass, FileText, Handshake, Network, Sparkles } from 'lucide-react'
+import { BookOpen, Compass, Handshake, Network, Sparkles } from 'lucide-react'
 import heroImg from '../assets/subhero/about/Traveleye Catalogue Library.jpg'
 import { CatalogueCard, catalogues } from '../components/CatalogueLibrarySection'
 import FooterLinks from '../components/FooterLinks'
@@ -89,44 +89,38 @@ export default function TraveleyeCatalogueLibrary() {
       </section>
 
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-6xl text-center">
           <SectionHeading
             icon={Network}
             title="About Traveleye"
             subtitle="Learn about our organisation, vision, People-Powered Tourism Framework, and the interconnected ecosystem that drives our mission to create meaningful tourism experiences and sustainable opportunities."
           />
 
-          <ul className="mt-8 flex flex-wrap justify-center gap-3">
-            {catalogueGroups[0].items.map((item) => (
-              <li
-                key={item}
-                className="inline-flex rounded-full border border-[#D6E8FF] bg-white px-4 py-2 text-sm font-semibold text-[#214F95] shadow-sm sm:px-6 sm:py-3"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
+          <div className="mt-8 grid gap-6 text-left md:grid-cols-2 lg:grid-cols-3">
+            {catalogues
+              .filter((catalogue) => catalogueGroups[0].items.includes(catalogue.title))
+              .map((catalogue) => (
+                <CatalogueCard key={catalogue.title} catalogue={catalogue} />
+              ))}
+          </div>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-6xl text-center">
           <SectionHeading
             icon={Compass}
             title="Travel Collections"
             subtitle="Explore our specialised travel brands, destination guides, curated journeys, and travel experiences designed to connect people and place across Sri Lanka and beyond. Traveleye"
           />
 
-          <ul className="mt-8 flex flex-wrap justify-center gap-3">
-            {catalogueGroups[1].items.map((item) => (
-              <li
-                key={item}
-                className="inline-flex rounded-full border border-[#D6E8FF] bg-[#E8F1FF] px-4 py-2 text-sm font-semibold text-[#214F95] shadow-sm sm:px-6 sm:py-3"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
+          <div className="mt-8 grid gap-6 text-left md:grid-cols-2 lg:grid-cols-3">
+            {catalogues
+              .filter((catalogue) => catalogueGroups[1].items.includes(catalogue.title))
+              .map((catalogue) => (
+                <CatalogueCard key={catalogue.title} catalogue={catalogue} />
+              ))}
+          </div>
         </div>
       </section>
 
@@ -150,18 +144,6 @@ export default function TraveleyeCatalogueLibrary() {
             <p>
               We invite you to explore our latest publications and discover new ways to travel, collaborate, invest, and grow with Traveleye.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={FileText} title="Catalogue Publications" />
-
-          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {catalogues.map((catalogue) => (
-              <CatalogueCard key={catalogue.title} catalogue={catalogue} />
-            ))}
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ export const catalogues = [
   },
   {
     title: 'Traveleye Travel Collective',
-    category: 'Travel Collections',
+    category: 'About Traveleye',
     description:
       'A curated overview of specialist travel experiences, destination expertise, and collective tourism services.',
     edition: '2026 Edition',
