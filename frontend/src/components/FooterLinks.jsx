@@ -34,7 +34,6 @@ const menuColumns = [
       {
         heading: 'About Traveleye',
         items: [
-          'About Traveleye',
           'About Traveleye Alliance',
           'Vision, Mission & Values',
           'Why Traveleye',
@@ -65,14 +64,15 @@ const menuColumns = [
       {
         heading: 'Our Ecosystem & Framework',
         items: [
+          'What is Traveleye’s People Powered Tourism?',
           'Traveleye People-Powered Tourism Ecosystem',
           'People-Powered Tourism Framework',
+          'People-Powered Tourism Guiding Principles',
+          'People-Powered Tourism Global Alignment',
           'People-Powered Tourism Strategic Pillars',
           'People-Powered Tourism Development Models',
           'People-Powered Tourism Operational Platforms',
           'People-Powered Tourism Outcomes',
-          'People-Powered Tourism Guiding Principles',
-          'People-Powered Tourism Global Alignment',
           'People-Powered Tourism Ecosystem Indicators',
         ],
       },

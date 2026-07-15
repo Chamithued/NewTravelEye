@@ -96,11 +96,16 @@ export default function TraveleyeCatalogueLibrary() {
             subtitle="Learn about our organisation, vision, People-Powered Tourism Framework, and the interconnected ecosystem that drives our mission to create meaningful tourism experiences and sustainable opportunities."
           />
 
-          <div className="mt-8 grid gap-6 text-left md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-x-12 gap-y-6 text-left">
             {catalogues
               .filter((catalogue) => catalogueGroups[0].items.includes(catalogue.title))
               .map((catalogue) => (
-                <CatalogueCard key={catalogue.title} catalogue={catalogue} />
+                <div
+                  key={catalogue.title}
+                  className="w-full md:w-[calc((100%_-_1.5rem)/2)] lg:w-[calc((100%_-_3rem)/3)]"
+                >
+                  <CatalogueCard catalogue={catalogue} />
+                </div>
               ))}
           </div>
         </div>
@@ -114,11 +119,16 @@ export default function TraveleyeCatalogueLibrary() {
             subtitle="Explore our specialised travel brands, destination guides, curated journeys, and travel experiences designed to connect people and place across Sri Lanka and beyond. Traveleye"
           />
 
-          <div className="mt-8 grid gap-6 text-left md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-6 text-left">
             {catalogues
               .filter((catalogue) => catalogueGroups[1].items.includes(catalogue.title))
               .map((catalogue) => (
-                <CatalogueCard key={catalogue.title} catalogue={catalogue} />
+                <div
+                  key={catalogue.title}
+                  className="w-full md:w-[calc((100%_-_1.5rem)/2)] lg:w-[calc((100%_-_3rem)/3)]"
+                >
+                  <CatalogueCard catalogue={catalogue} />
+                </div>
               ))}
           </div>
         </div>
