@@ -49,7 +49,7 @@ export default function EcosystemSection() {
 				<div className="text-center">
 					{/* <div className="inline-flex rounded-full bg-[#dfe7f3] px-5 py-2 text-[1rem] font-bold text-[#214f95] shadow-sm sm:text-[1.05rem]"> */}
 					<div className="home-section-eyebrow">
-						The Traveleye People-Powered Tourism Ecosystem  
+						Traveleye People-Powered Tourism Ecosystem  
 					</div>
 
 					<h2 className="home-section-title mt-4">
