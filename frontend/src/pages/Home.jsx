@@ -26,15 +26,15 @@ export default function Home() {
       <PeoplePoweredTourismIntro />
       <EcosystemSection />
       <PeoplePoweredTourismFrameworkSection />
+      <HomeFrameworkSections />
       <PeoplePoweredTourismStrategicPillarsSection />
       <PeoplePoweredTourismDevelopmentModelsSection />
       <FivePillars />
-      <HomeFrameworkSections />
       <PeoplePoweredTourismOutcomesSection />
       <WhyTraveleye />
       <GetInvolved />
-      <OurGrowingImpact />
       <CatalogueLibrarySection />
+      <OurGrowingImpact />
       <FooterLinks />
     </main>
   )
