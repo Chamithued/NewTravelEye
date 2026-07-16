@@ -39,14 +39,12 @@ function ImagePanel({ section }) {
       <div className="absolute -bottom-6 -left-5 h-32 w-32 rounded-full bg-[#dfe7f3] opacity-75 blur-sm" aria-hidden="true" />
       <div className="absolute -right-4 -top-4 h-20 w-20 rounded-full bg-[#eef4ff]" aria-hidden="true" />
 
-      <div className="relative overflow-hidden rounded-sm border border-white bg-[#eef4ff] p-3 shadow-[0_20px_42px_rgba(31,79,147,0.16)]">
-        <div className="aspect-[1.1/1] overflow-hidden bg-[#dfe7f3]">
-          <img
-            src={section.image}
-            alt={section.imageAlt}
-            className="h-full w-full object-cover object-center"
-          />
-        </div>
+      <div className="relative aspect-[1.1/1] overflow-hidden rounded-sm">
+        <img
+          src={section.image}
+          alt={section.imageAlt}
+          className="h-full w-full object-cover object-center"
+        />
       </div>
     </div>
   )

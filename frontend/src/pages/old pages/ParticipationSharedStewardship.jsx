@@ -8,9 +8,9 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Participation & Shared Stewerdship.jpg'
-import ExploreEcosystem from '../components/ExploreEcosystem'
-import FooterLinks from '../components/FooterLinks'
+import heroImg from '../../assets/subhero/pillars/Participation & Shared Stewerdship.jpg'
+import ExploreEcosystem from '../../components/ExploreEcosystem'
+import FooterLinks from '../../components/FooterLinks'
 
 const connectedPoints = [
   'More inclusive',
@@ -320,3 +320,4 @@ export default function ParticipationSharedStewardship() {
     </main>
   )
 }
+

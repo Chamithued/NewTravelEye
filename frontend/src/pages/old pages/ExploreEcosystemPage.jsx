@@ -10,8 +10,8 @@ import {
   UserRoundCheck,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Explore the Ecosystem.jpg'
-import FooterLinks from '../components/FooterLinks'
+import heroImg from '../../assets/subhero/pillars/Explore the Ecosystem.jpg'
+import FooterLinks from '../../components/FooterLinks'
 
 const pillarCards = [
   {
@@ -241,3 +241,4 @@ export default function ExploreEcosystemPage() {
     </main>
   )
 }
+

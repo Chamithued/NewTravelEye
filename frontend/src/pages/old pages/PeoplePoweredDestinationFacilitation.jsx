@@ -10,9 +10,9 @@ import {
   Sprout,
   UsersRound,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/PPDF Pillar.jpg'
-import ExploreEcosystem from '../components/ExploreEcosystem'
-import FooterLinks from '../components/FooterLinks'
+import heroImg from '../../assets/subhero/pillars/PPDF Pillar.jpg'
+import ExploreEcosystem from '../../components/ExploreEcosystem'
+import FooterLinks from '../../components/FooterLinks'
 
 const peoplePoweredQualities = [
   'People-centred',
@@ -249,3 +249,4 @@ export default function PeoplePoweredDestinationFacilitation() {
     </main>
   )
 }
+

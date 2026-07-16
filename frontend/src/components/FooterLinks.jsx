@@ -102,11 +102,23 @@ const contactItems = [
   { label: 'WhatsApp: +94 777 406 887', icon: Phone },
 ]
 
-function ChevronItem({ children, href = '#' }) {
+const footerLinks = {
+  'Traveleye People-Powered Tourism Ecosystem': '/traveleye-people-powered-tourism-ecosystem',
+  'People-Powered Tourism Framework': '/people-powered-tourism-framework',
+  'People-Powered Tourism Guiding Principles': '/guiding-principles',
+  'People-Powered Tourism Global Alignment': '/globally-aligned-locally-grounded',
+  'People-Powered Tourism Strategic Pillars': '/people-powered-tourism-strategic-pillars',
+  'People-Powered Tourism Development Models': '/people-powered-tourism-development-models',
+  'People-Powered Tourism Operational Platforms': '/people-powered-tourism-operational-platforms',
+  'People-Powered Tourism Outcomes': '/people-powered-tourism-outcomes',
+  'People-Powered Tourism Ecosystem Indicators': '/people-powered-tourism-ecosystem-indicators',
+}
+
+function ChevronItem({ children, href }) {
   return (
     <li className="flex items-start gap-2 text-sm leading-6 text-white/85">
       <ChevronRight className="mt-1 h-3.5 w-3.5 shrink-0 text-white/45" />
-      <a href={href} className="hover:text-[#C4761A] transition-colors">
+      <a href={href || footerLinks[children] || '#'} className="hover:text-[#C4761A] transition-colors">
         {children}
       </a>
     </li>

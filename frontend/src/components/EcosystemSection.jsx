@@ -65,7 +65,7 @@ export default function EcosystemSection() {
 								<p className="text-center text-[1.2rem] font-extrabold text-[#172544]">
 									Purpose
 								</p>
-								<p className="mt-2">
+								<p className="mt-2 font-bold text-[#172544]">
 									To develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
 								</p>
 							</div>

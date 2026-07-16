@@ -9,9 +9,9 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Destination Steweredship Model.jpg'
-import ExploreEcosystem from '../components/ExploreEcosystem'
-import FooterLinks from '../components/FooterLinks'
+import heroImg from '../../assets/subhero/pillars/Destination Steweredship Model.jpg'
+import ExploreEcosystem from '../../components/ExploreEcosystem'
+import FooterLinks from '../../components/FooterLinks'
 
 const supportPoints = [
   'Destination wellbeing',
@@ -299,3 +299,4 @@ export default function DestinationStewardshipModel() {
     </main>
   )
 }
+

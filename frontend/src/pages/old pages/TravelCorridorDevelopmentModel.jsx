@@ -14,9 +14,9 @@ import {
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Travel Corridor Development Model.jpg'
-import ExploreEcosystem from '../components/ExploreEcosystem'
-import FooterLinks from '../components/FooterLinks'
+import heroImg from '../../assets/subhero/pillars/Travel Corridor Development Model.jpg'
+import ExploreEcosystem from '../../components/ExploreEcosystem'
+import FooterLinks from '../../components/FooterLinks'
 
 const engagementOpportunities = [
   { label: 'Leisure and holiday travel', icon: Plane },
@@ -277,3 +277,4 @@ export default function TravelCorridorDevelopmentModel() {
     </main>
   )
 }
+
