@@ -13,7 +13,7 @@ import {
   Sprout,
   Theater,
 } from 'lucide-react'
-import heroImg from '../assets/People-Powered Tourism Outcomes.jpg'
+import heroImg from '../assets/subhero/pillars/Explore the Ecosystem.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
