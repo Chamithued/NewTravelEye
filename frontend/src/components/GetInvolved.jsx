@@ -83,6 +83,8 @@ const cards = [
 
 function InvolvedCard({ card }) {
   const Icon = card.icon
+  const readableTextShadow =
+    '0 1px 2px rgba(0,0,0,0.65), 0 0 1px rgba(0,0,0,0.85)'
 
   return (
     <article className="relative min-h-80 overflow-hidden rounded-2xl sm:min-h-96">
@@ -94,12 +96,22 @@ function InvolvedCard({ card }) {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg text-white" style={{ backgroundColor: card.accent }}>
               <Icon className="h-5 w-5 text-white" />
             </div>
-            <h3 className="text-lg font-semibold leading-tight text-white sm:text-xl">{card.title}</h3>
+            <h3
+              className="text-lg font-semibold leading-tight text-white sm:text-xl"
+              style={{ textShadow: readableTextShadow }}
+            >
+              {card.title}
+            </h3>
           </div>
         </div>
 
         <div>
-          <p className="mb-4 max-w-xl text-sm sm:text-base text-white/90">{card.subtitle}</p>
+          <p
+            className="mb-4 max-w-xl text-sm text-white/90 sm:text-base"
+            style={{ textShadow: readableTextShadow }}
+          >
+            {card.subtitle}
+          </p>
 
           <div>
             {/* <button className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/5 sm:w-auto">

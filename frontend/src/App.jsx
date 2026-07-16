@@ -3,11 +3,18 @@ import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import TravelCollective from './pages/TravelCollective'
-import PeoplePoweredTravelCollective from './pages/PeoplePoweredTravelCollective'
-import PeoplePoweredHostExperiences from './pages/PeoplePoweredHostExperiences'
-import PeoplePoweredEcosystemSupport from './pages/PeoplePoweredEcosystemSupport'
-import PeoplePoweredDestinationFacilitation from './pages/PeoplePoweredDestinationFacilitation'
+import PeoplePoweredTravelCollective from './pages/old pages/PeoplePoweredTravelCollective'
+import PeoplePoweredHostExperiences from './pages/old pages/PeoplePoweredHostExperiences'
+import PeoplePoweredEcosystemSupport from './pages/old pages/PeoplePoweredEcosystemSupport'
+import PeoplePoweredDestinationFacilitation from './pages/old pages/PeoplePoweredDestinationFacilitation'
 import PeoplePoweredTourismFramework from './pages/PeoplePoweredTourismFramework'
+import WhatIsTraveleyesPeoplePoweredTourism from './pages/WhatIsTraveleyesPeoplePoweredTourism'
+import PeoplePoweredTourismEcosystem from './pages/PeoplePoweredTourismEcosystem'
+import PeoplePoweredTourismStrategicPillars from './pages/PeoplePoweredTourismStrategicPillars'
+import PeoplePoweredTourismDevelopmentModels from './pages/PeoplePoweredTourismDevelopmentModels'
+import PeoplePoweredTourismOperationalPlatforms from './pages/PeoplePoweredTourismOperationalPlatforms'
+import PeoplePoweredTourismOutcomes from './pages/PeoplePoweredTourismOutcomes'
+import PeoplePoweredTourismEcosystemIndicators from './pages/PeoplePoweredTourismEcosystemIndicators'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Experiences from './pages/Experiences'
@@ -23,7 +30,7 @@ import VietLankaJourneys from './pages/VietLankaJourneys'
 import SiamLankaJourneys from './pages/SiamLankaJourneys'
 import CelebrationsEvents from './pages/CelebrationsEvents'
 import GlobalJourneys from './pages/GlobalJourneys'
-import ExploreEcosystemPage from './pages/ExploreEcosystemPage'
+import ExploreEcosystemPage from './pages/old pages/ExploreEcosystemPage'
 import GovernanceEthics from './pages/GovernanceEthics'
 import MediaPress from './pages/MediaPress'
 import OurEcosystemApproach from './pages/OurEcosystemApproach'
@@ -38,9 +45,9 @@ import JointVenturesStrategicInvestments from './pages/JointVenturesStrategicInv
 import CollaborateWithUs from './pages/CollaborateWithUs'
 import TravelWithPurpose from './pages/TravelWithPurpose'
 import SupportPeoplePoweredTourism from './pages/SupportPeoplePoweredTourism'
-import DestinationStewardshipModel from './pages/DestinationStewardshipModel'
-import TravelCorridorDevelopmentModel from './pages/TravelCorridorDevelopmentModel'
-import ParticipationSharedStewardship from './pages/ParticipationSharedStewardship'
+import DestinationStewardshipModel from './pages/old pages/DestinationStewardshipModel'
+import TravelCorridorDevelopmentModel from './pages/old pages/TravelCorridorDevelopmentModel'
+import ParticipationSharedStewardship from './pages/old pages/ParticipationSharedStewardship'
 import GloballyAlignedLocallyGrounded from './pages/GloballyAlignedLocallyGrounded'
 import GuidingPrinciples from './pages/GuidingPrinciples'
 import HostExperiences from './pages/HostExperience'
@@ -54,14 +61,21 @@ function App() {
         <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="travel-collective" element={<TravelCollective />} />
-          <Route path="people-powered-travel-collective" element={<PeoplePoweredTravelCollective />} />
-          <Route path="people-powered-host-experiences" element={<PeoplePoweredHostExperiences />} />
-          <Route path="people-powered-ecosystem-support" element={<PeoplePoweredEcosystemSupport />} />
-          <Route path="people-powered-destination-facilitation" element={<PeoplePoweredDestinationFacilitation />} />
+          {/* <Route path="people-powered-travel-collective" element={<PeoplePoweredTravelCollective />} /> */}
+          {/* <Route path="people-powered-host-experiences" element={<PeoplePoweredHostExperiences />} /> */}
+          {/* <Route path="people-powered-ecosystem-support" element={<PeoplePoweredEcosystemSupport />} /> */}
+          {/* <Route path="people-powered-destination-facilitation" element={<PeoplePoweredDestinationFacilitation />} /> */}
+          <Route path="what-is-traveleyes-people-powered-tourism" element={<WhatIsTraveleyesPeoplePoweredTourism />} />
           <Route path="people-powered-tourism-framework" element={<PeoplePoweredTourismFramework />} />
-          <Route path="destination-stewardship-model" element={<DestinationStewardshipModel />} />
-          <Route path="travel-corridor-development-model" element={<TravelCorridorDevelopmentModel />} />
-          <Route path="participation-shared-stewardship" element={<ParticipationSharedStewardship />} />
+          <Route path="people-powered-tourism-strategic-pillars" element={<PeoplePoweredTourismStrategicPillars />} />
+          <Route path="people-powered-tourism-development-models" element={<PeoplePoweredTourismDevelopmentModels />} />
+          <Route path="people-powered-tourism-operational-platforms" element={<PeoplePoweredTourismOperationalPlatforms />} />
+          <Route path="people-powered-tourism-outcomes" element={<PeoplePoweredTourismOutcomes />} />
+          <Route path="people-powered-tourism-ecosystem-indicators" element={<PeoplePoweredTourismEcosystemIndicators />} />
+          <Route path="traveleye-people-powered-tourism-ecosystem" element={<PeoplePoweredTourismEcosystem />} />
+          {/* <Route path="destination-stewardship-model" element={<DestinationStewardshipModel />} /> */}
+          {/* <Route path="travel-corridor-development-model" element={<TravelCorridorDevelopmentModel />} /> */}
+          {/* <Route path="participation-shared-stewardship" element={<ParticipationSharedStewardship />} /> */}
           <Route path="globally-aligned-locally-grounded" element={<GloballyAlignedLocallyGrounded />} />
           <Route path="guiding-principles" element={<GuidingPrinciples />} />
           <Route path="sri-lanka-journeys" element={<SriLankaJourneys />} />
@@ -73,7 +87,7 @@ function App() {
           <Route path="siam-lanka-journeys" element={<SiamLankaJourneys />} />
           <Route path="celebrations-events" element={<CelebrationsEvents />} />
           <Route path="global-journeys" element={<GlobalJourneys />} />
-          <Route path="explore-ecosystem" element={<ExploreEcosystemPage />} />
+          {/* <Route path="explore-ecosystem" element={<ExploreEcosystemPage />} /> */}
           <Route path="our-ecosystem-approach" element={<OurEcosystemApproach />} />
           <Route path="governance-ethics" element={<GovernanceEthics />} />
           <Route path="media-press" element={<MediaPress />} />

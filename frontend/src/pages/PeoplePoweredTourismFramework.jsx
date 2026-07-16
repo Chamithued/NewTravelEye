@@ -1,116 +1,217 @@
 import {
+  ArrowRight,
+  BarChart3,
   BriefcaseBusiness,
   Compass,
   Globe2,
   Handshake,
-  HeartHandshake,
-  Landmark,
+  Home,
   Leaf,
-  Lightbulb,
+  Network,
   Recycle,
-  Scale,
-  ShieldCheck,
   Sprout,
   Users,
-  UserRoundCheck,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/People-Powered Tourism Framework.jpg'
+import heroImg from '../assets/People-Powered Tourism Framework.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
-const approachPoints = [
+const characteristics = [
   'People-centred',
   'Destination-aware',
-  'Locally connected',
   'Inclusive and participatory',
-  'Environmentally conscious',
+  'Locally connected',
+  'Collaborative and innovative',
+  'Environmentally responsible',
   'Resilient and future-focused',
+]
+
+const principles = [
+  'Authenticity',
+  'Participation & Shared Stewardship',
+  'Women & Youth Entrepreneurship',
+  'Human-Centred Innovation',
+  'Transparency & Shared Value',
+  'Inclusive Participation',
+  'Sustainability & Stewardship',
+  'Regenerative Development',
+]
+
+const internationalAlignment = [
+  'Sustainable Tourism',
+  'Regenerative Tourism',
+  'Responsible Tourism',
+  'Destination Stewardship',
+  'Community-Centred Development',
+]
+
+const localAlignment = [
+  'People-Centred Tourism',
+  'Meaningful Participation',
+  'Innovation for Impact',
+  'Long-Term Stewardship',
+  'Sri Lankan Realities',
 ]
 
 const pillars = [
   {
     icon: Globe2,
     title: 'People-Powered Travel Collective',
-    text: 'Supporting meaningful journeys and travel experiences that strengthen connections between travellers, destinations, and tourism ecosystems.',
   },
   {
     icon: Leaf,
     title: 'People-Powered Host Experiences',
-    text: 'Encouraging authentic experiences shaped through local people, culture, hospitality, creativity, nature, and place.',
   },
   {
     icon: BriefcaseBusiness,
     title: 'People-Powered Ecosystem Support',
-    text: 'Strengthening tourism participation, capability, readiness, collaboration, and long-term ecosystem resilience.',
   },
   {
     icon: Compass,
     title: 'People-Powered Destination Facilitation',
-    text: 'Supporting destination participation, stewardship, local engagement, and tourism ecosystem development.',
   },
 ]
 
-const principles = [
-  {
-    icon: Landmark,
-    title: 'Authenticity',
-    text: 'Tourism should remain connected to people, culture, place, and local identity.',
-  },
+const developmentModels = [
   {
     icon: Handshake,
-    title: 'Participation & Shared Stewardship',
-    text: 'Tourism thrives when people participate meaningfully and contribute to long-term destination wellbeing.',
+    title: 'People-Powered Participation Model',
   },
   {
-    icon: UserRoundCheck,
-    title: 'Women & Youth Entrepreneurship',
-    text: 'Women and youth play an important role as creators, innovators, hosts, facilitators, and future tourism leaders.',
+    icon: Leaf,
+    title: 'Shared Stewardship Model',
   },
   {
-    icon: Lightbulb,
-    title: 'Human-Centred Innovation',
-    text: 'Innovation should remain connected to people, destinations, and lived realities.',
+    icon: BriefcaseBusiness,
+    title: 'Tourism Enterprise Development Model',
   },
   {
-    icon: Scale,
-    title: 'Transparency & Shared Value',
-    text: 'Tourism should encourage ethical participation, trust, and responsible value creation.',
+    icon: Compass,
+    title: 'Destination Stewardship Model',
   },
   {
-    icon: Users,
-    title: 'Inclusive Participation',
-    text: 'Tourism becomes stronger when opportunities remain accessible and locally connected.',
+    icon: Globe2,
+    title: 'Travel Corridor Development Model',
   },
   {
-    icon: ShieldCheck,
-    title: 'Sustainability & Stewardship',
-    text: 'Natural, cultural, and social assets should be approached responsibly and thoughtfully.',
+    icon: Network,
+    title: 'Tourism Ecosystem Connectivity Model',
+  },
+  {
+    icon: Globe2,
+    title: 'Shared Value Creation Model',
   },
   {
     icon: Sprout,
-    title: 'Regenerative Development',
-    text: 'Tourism should contribute positively to destinations, communities, and future generations.',
+    title: 'Living Framework Evolution Model',
   },
 ]
 
-const developmentPoints = [
-  'Local participation and entrepreneurship',
-  'Women and youth involvement',
-  'Inclusive economic opportunity',
-  'Cultural continuity and heritage appreciation',
-  'Environmental awareness and stewardship',
-  'Destination resilience and long-term wellbeing',
+const platforms = [
+  {
+    icon: Globe2,
+    title: 'Traveleye Travel Collective',
+  },
+  {
+    icon: Leaf,
+    title: 'Traveleye Host Experiences',
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: 'Traveleye Ecosystem Support',
+  },
+  {
+    icon: Compass,
+    title: 'Traveleye Destination Facilitation',
+  },
 ]
 
-function IconBadge({ icon: Icon, size = 'sm', className = '' }) {
-  const dimensions = size === 'lg' ? 'h-11 w-11' : 'h-9 w-9'
-  const iconSize = size === 'lg' ? 'h-5 w-5' : 'h-4 w-4'
+const outcomes = [
+  'Tourism Enterprises',
+  'Place-Inspired Host Stays',
+  'People & Place-Inspired Experiences',
+  'Tourism Destinations',
+  'Travel Corridors',
+  'Tourism Partnerships',
+  'Joint Ventures',
+  'Tourism Programmes',
+  'Tourism Projects',
+  'Ecosystem Initiatives',
+]
 
+const indicators = [
+  'Women Entrepreneurs Supported',
+  'Youth Entrepreneurs Supported',
+  'Micro and Small Tourism Enterprises Developed',
+  'Place-Inspired Host Stays Developed',
+  'People & Place-Inspired Experiences Developed',
+  'Destination Development Initiatives Facilitated',
+  'Travel Corridor Partnerships Established',
+  'Strategic Partnerships Established',
+  'Tourism Programmes Delivered',
+  'Tourism Projects Implemented',
+  'Inbound Travellers Served',
+  'Domestic Travellers Served',
+  'Outbound Travellers Served',
+]
+
+function SectionHeading({ icon: Icon, title, subtitle }) {
   return (
-    <span className={`inline-flex ${dimensions} shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93] ${className}`}>
-      <Icon className={iconSize} aria-hidden="true" />
-    </span>
+    <div className="mx-auto max-w-4xl text-center">
+      <h2 className="mt-0 flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+        {Icon ? (
+          <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+            <Icon className="h-5 w-5" aria-hidden="true" />
+          </span>
+        ) : null}
+        <span>{title}</span>
+      </h2>
+      <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+      {subtitle ? (
+        <p className="mx-auto mt-4 max-w-3xl text-base font-semibold leading-7 text-[#1f4f93] sm:text-lg">
+          {subtitle}
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
+function TextPanel({ children, className = '' }) {
+  return (
+    <div className={`mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-base sm:leading-8 ${className}`}>
+      {children}
+    </div>
+  )
+}
+
+function SimpleList({ items, columns = 'sm:grid-cols-2 lg:grid-cols-4' }) {
+  return (
+    <ul className={`mx-auto mt-7 grid max-w-5xl gap-3 ${columns}`}>
+      {items.map((item) => (
+        <li
+          key={item}
+          className="rounded-xl border border-[#dfe7f3] bg-white px-4 py-3 text-center text-sm font-semibold leading-6 text-[#172544] shadow-sm sm:text-base"
+        >
+          {item}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function IconCardGrid({ items }) {
+  return (
+    <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      {items.map(({ icon: Icon, title }) => (
+        <article key={title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 text-center shadow-sm">
+          <span className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
+            <Icon className="h-6 w-6" aria-hidden="true" />
+          </span>
+          <h3 className="mt-4 text-lg font-bold leading-tight tracking-tight text-black">{title}</h3>
+        </article>
+      ))}
+    </div>
   )
 }
 
@@ -121,273 +222,209 @@ export default function PeoplePoweredTourismFramework() {
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
-            alt="Traveleye People-Powered Tourism Framework"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
+            alt="People-Powered Tourism Framework banner"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
           />
-          <div className="absolute inset-0 bg-black/16" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
-          <div className="max-w-4xl text-center">
+          <div className="max-w-5xl text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
+              className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              <span className="block">TRAVELEYE PEOPLE-POWERED</span>
-              <span className="block">TOURISM FRAMEWORK</span>
+              <span className="block">PEOPLE-POWERED TOURISM</span>
+              <span className="block">FRAMEWORK</span>
             </h1>
-            <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Tourism That Gives Back More Than It Takes
+            <p className="mt-3 text-sm font-semibold text-white/95 sm:text-base lg:text-lg">
+              The Strategic Blueprint of the <strong>Traveleye</strong> People-Powered Tourism Ecosystem
             </p>
           </div>
         </div>
       </section>
 
-      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+      <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-            <IconBadge icon={Recycle} />
-            <span>Tourism That Gives Back More Than It Takes</span>
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-
-          <div className="mx-auto mt-6 max-w-4xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>
-              The Traveleye People-Powered Tourism (PPT) Framework is a tourism innovation framework developed by Traveleye Alliance Sri Lanka to help create more connected, inclusive, and resilient tourism ecosystems.
-            </p>
-            <p>
-              The framework reimagines tourism as more than travel, hospitality, or individual tourism businesses. Instead, it approaches tourism as a living ecosystem shaped by people, destinations, experiences, participation, stewardship, and long-term value creation.
-            </p>
-            <p>At its core, the framework is guided by a simple belief:</p>
+          <p className="mx-auto w-fit rounded-full bg-[#dfe6ef] px-5 py-2 text-[1.05rem] font-extrabold text-[#1f4f93] shadow-sm">Purpose</p>
+          <p className="mt-2 text-lg font-bold leading-8 text-[#172544]">
+            To provide the strategic blueprint for developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+          </p>
+          <div className="mt-12">
+            <SectionHeading icon={Network} title="Building Tourism Through a Connected Framework" />
+          </div>
+          <TextPanel>
+            <p>The <strong>People-Powered Tourism Framework</strong> is the strategic blueprint of the Traveleye People-Powered Tourism Ecosystem. Developed by Traveleye Alliance Sri Lanka, it provides a structured and connected approach to planning, developing, implementing, and continuously strengthening tourism across Sri Lanka.</p>
+            <p>While the <strong>Traveleye People-Powered Tourism Ecosystem</strong> provides the connected environment where tourism grows through participation, collaboration, and shared value creation, the <strong>People-Powered Tourism Framework</strong> provides the strategic direction that guides how the ecosystem is developed, implemented, and measured.</p>
+            <p>Developed in Sri Lanka, the Framework reimagines tourism as more than journeys, hospitality, or individual tourism businesses. It approaches tourism as a connected ecosystem where people, enterprises, destinations, experiences, institutions, partnerships, and communities work together to create shared value, strengthen local economies, and contribute to long-term prosperity.</p>
+            <p>At its core is a simple belief:</p>
             <p className="mx-auto max-w-3xl text-lg font-bold italic text-[#0f4d2f]">
-              Tourism should create value not only for travellers, but also for the people, places, and destinations that make travel meaningful.
+              Tourism should create value not only for <strong>travellers</strong>, but also for the people, places, and destinations that make travel meaningful.
             </p>
-          </div>
+          </TextPanel>
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-white px-4 pb-14 sm:px-6 sm:pb-18 lg:px-8 lg:pb-20">
+      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Users} />
-              <span>A People-Powered Approach to Tourism</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-            <p className="mt-6 text-sm leading-7 text-slate-700 sm:text-lg">The PPT Framework encourages tourism systems that are:</p>
-          </div>
-
-          <div className="mx-auto mt-7 flex max-w-5xl flex-wrap justify-center gap-3">
-            {approachPoints.map((point) => (
-              <div
-                key={point}
-                className="inline-flex max-w-full items-center justify-center rounded-full border border-[#D6E8FF] bg-[#E8F1FF] px-4 py-2 text-xs font-semibold text-[#214F95] shadow-sm sm:px-6 sm:py-3 sm:text-sm"
-              >
-                {point}
-              </div>
-            ))}
-          </div>
-
-          <div className="mx-auto mt-8 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>
-              Rather than viewing tourism through isolated sectors, the framework encourages stronger connections between travellers, hosts, enterprises, destinations, communities, and tourism support systems.
-            </p>
-            <p>
-              Through this approach, tourism becomes an opportunity to create meaningful experiences while contributing to broader social, cultural, environmental, and economic wellbeing.
-            </p>
-          </div>
+          <SectionHeading icon={Recycle} title="What Is the People-Powered Tourism Framework?" />
+          <TextPanel>
+            <p>The People-Powered Tourism Framework provides a practical and strategic approach to developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.</p>
+            <p>Rather than viewing tourism through isolated sectors or individual businesses, the Framework strengthens the relationships between people, enterprises, destinations, institutions, communities, and tourism support systems. Through this connected approach, tourism becomes more inclusive, resilient, collaborative, and sustainable.</p>
+            <p>The Framework encourages tourism that is:</p>
+          </TextPanel>
+          <SimpleList items={characteristics} columns="sm:grid-cols-2 lg:grid-cols-3" />
+          <TextPanel>
+            <p>Together, these characteristics provide a foundation for strengthening tourism enterprises, supporting destination development, encouraging meaningful participation, and creating lasting value across Sri Lanka&apos;s tourism ecosystem.</p>
+          </TextPanel>
         </div>
       </section>
 
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mt-6 flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Compass} />
-              <span>Traveleye Alliance Sri Lanka</span>
-            </h2>
-            <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
-            <p className="mt-5 text-lg font-bold text-[#0f4d2f]">A People-Powered Tourism Ecosystem Builder</p>
-            <div className="mx-auto mt-6 max-w-3xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              <p>
-                The PPT Framework serves as the strategic foundation of the Traveleye ecosystem.
-              </p>
-              <p>
-                As a People-Powered Tourism Ecosystem Builder, Traveleye Alliance seeks to strengthen tourism through participation, collaboration, stewardship, and ecosystem development.
-              </p>
-              <p>
-                By helping connect people, destinations, enterprises, experiences, and tourism support systems, Traveleye works to foster tourism ecosystems that are more inclusive, connected, and sustainable over the long term.
-              </p>
-            </div>
-          </div>
+          <SectionHeading icon={Waypoints} title="Framework Architecture" />
+          <TextPanel>
+            <p>The People-Powered Tourism Framework consists of seven interconnected components that together transform strategic vision into practical action.</p>
+            <p>Built upon its <strong>Guiding Principles</strong> and <strong>Global Alignment</strong>, and implemented through its <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Operational Platforms</strong>, <strong>Tourism Outcomes</strong>, and <strong>Ecosystem Indicators</strong>, the Framework provides a structured pathway for developing and strengthening micro and small tourism enterprises while creating stronger destinations, partnerships, and tourism ecosystems.</p>
+          </TextPanel>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto mb-8 max-w-3xl text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Waypoints} />
-              <span>The Four People-Powered Pillars</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-            <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">
-              The PPT Framework operates through four interconnected pillars that together contribute to stronger tourism ecosystems.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {pillars.map(({ icon: Icon, title, text }) => (
-              <article key={title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
-                <IconBadge icon={Icon} size="lg" className="bg-[#F2F7EF] text-[#0f4d2f]" />
-                <h3 className="mt-4 text-xl font-bold tracking-tight text-black sm:text-2xl">{title}</h3>
-                <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{text}</p>
-              </article>
-            ))}
-          </div>
+          <SectionHeading icon={Leaf} title="People-Powered Tourism Guiding Principles" subtitle="The Internal Foundation of the Framework" />
+          <TextPanel>
+            <p>The Guiding Principles establish the values and philosophy that influence every decision, initiative, and action within the Framework. They ensure that tourism development remains authentic, inclusive, collaborative, responsible, and people-centred.</p>
+            <p>The Framework is guided by eight interconnected principles:</p>
+          </TextPanel>
+          <SimpleList items={principles} />
+          <TextPanel>
+            <p>Together, these principles create the internal foundation upon which the Framework is built.</p>
+          </TextPanel>
         </div>
       </section>
 
-      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={HeartHandshake} size="lg" className="bg-[#ecf8ef] text-[#0f4d2f]" />
-              <span>Participation and Shared Stewardship</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
-          </div>
-
-          <div className="mx-auto mt-8 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>A defining characteristic of the PPT Framework is its emphasis on participation.</p>
-            <p>
-              The framework recognises that tourism becomes stronger when people, enterprises, communities, and stakeholders are able to contribute meaningfully to its development.
-            </p>
-            <p>
-              Participation is encouraged not only through tourism services and entrepreneurship, but also through collaboration, innovation, hosting, stewardship, and destination engagement.
-            </p>
-            <p>
-              The framework promotes a culture of shared stewardship, where tourism stakeholders collectively contribute to the wellbeing, sustainability, and future of the destinations they help shape.
-            </p>
-          </div>
+          <SectionHeading icon={Globe2} title="People-Powered Tourism Global Alignment" subtitle="Aligning Global Perspectives with Sri Lankan Realities" />
+          <TextPanel>
+            <p>While developed in Sri Lanka, the Framework is informed by internationally recognised tourism concepts and development approaches while remaining grounded in the realities, opportunities, and aspirations of Sri Lanka.</p>
+            <p><strong>International Tourism Alignment</strong></p>
+            <p>The Framework aligns with globally recognised approaches including:</p>
+          </TextPanel>
+          <SimpleList items={internationalAlignment} columns="sm:grid-cols-2 lg:grid-cols-5" />
+          <TextPanel>
+            <p><strong>Local People-Powered Alignment</strong></p>
+            <p>Traveleye&apos;s interpretation of People-Powered Tourism is shaped by:</p>
+          </TextPanel>
+          <SimpleList items={localAlignment} columns="sm:grid-cols-2 lg:grid-cols-5" />
+          <TextPanel>
+            <p>Together, these global and local perspectives ensure that the Framework remains internationally relevant while responding to the unique needs of Sri Lanka&apos;s tourism ecosystem.</p>
+          </TextPanel>
         </div>
       </section>
 
-      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 lg:px-8">
+      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="flex items-center justify-center gap-2 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Leaf} size="lg" className="bg-[#ecf8ef] text-[#0f4d2f]" />
-              <span>Guiding Principles</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
-            <p className="mt-6 text-sm text-[#475569] sm:text-base">
-              The PPT Framework is guided by a set of interconnected principles that shape how tourism ecosystems are approached and strengthened.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {principles.map(({ icon: Icon, title, text }) => (
-              <article key={title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm">
-                <IconBadge icon={Icon} size="lg" className="bg-[#F2F7EF] text-[#0f4d2f]" />
-                <h3 className="mt-4 text-base font-bold text-[#0f4d2f]">{title}</h3>
-                <p className="mt-3 text-sm leading-6 text-[#475569]">{text}</p>
-              </article>
-            ))}
-          </div>
+          <SectionHeading icon={Compass} title="People-Powered Tourism Strategic Pillars" subtitle="Where We Build Tourism" />
+          <TextPanel>
+            <p>The Strategic Pillars define the primary areas where the Framework focuses its efforts to develop and strengthen tourism.</p>
+            <p>The Framework is built around four interconnected Strategic Pillars:</p>
+          </TextPanel>
+          <IconCardGrid items={pillars} />
+          <TextPanel>
+            <p>Together, these pillars provide the strategic direction for developing tourism enterprises, supporting destinations, strengthening tourism ecosystems, and creating opportunities for meaningful participation.</p>
+          </TextPanel>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto mb-6 max-w-3xl text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Globe2} className="bg-[#ecf8ef] text-[#0f4d2f]" />
-              <span>International Alignment & Global Compatibility</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-          </div>
-
-          <div className="mx-auto max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>
-              The Traveleye People-Powered Tourism Framework is informed by internationally recognised principles associated with regenerative tourism, sustainable tourism, destination stewardship, community-centred development, and responsible tourism participation.
-            </p>
-            <p>
-              While developed in Sri Lanka, the framework is designed to remain adaptable across different destinations, cultures, and tourism environments.
-            </p>
-            <p>
-              Its people-powered approach supports collaboration among tourism enterprises, destinations, communities, institutions, development partners, and ecosystem stakeholders while remaining grounded in local identity, participation, and stewardship.
-            </p>
-          </div>
+          <SectionHeading icon={Sprout} title="People-Powered Tourism Development Models" subtitle="How We Develop Tourism" />
+          <TextPanel>
+            <p>The Development Models provide practical methodologies for translating strategy into action.</p>
+            <p>The Framework currently includes eight interconnected Development Models:</p>
+          </TextPanel>
+          <IconCardGrid items={developmentModels} />
+          <TextPanel>
+            <p>Together, these models provide adaptable methodologies for developing tourism enterprises, destinations, partnerships, travel corridors, programmes, projects, and ecosystem initiatives.</p>
+          </TextPanel>
         </div>
       </section>
 
-      <section className="w-full bg-white px-4 pb-10 sm:px-6 sm:pb-14 lg:px-8 lg:pb-16">
+      <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto mb-6 max-w-3xl text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Sprout} className="bg-[#ecf8ef] text-[#0f4d2f]" />
-              <span>Contribution to Sustainable Development</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-            <p className="mt-4 text-center italic text-base text-[#6b7b6a] sm:text-lg">
-              Through its people-powered ecosystem approach, the framework seeks to contribute to broader sustainable development outcomes by encouraging:
-            </p>
-          </div>
+          <SectionHeading icon={BriefcaseBusiness} title="People-Powered Tourism Operational Platforms" subtitle="How We Implement Tourism" />
+          <TextPanel>
+            <p>The Operational Platforms transform the Framework into practical action by supporting implementation across the tourism ecosystem.</p>
+            <p>The Framework is implemented through four interconnected Operational Platforms:</p>
+          </TextPanel>
+          <IconCardGrid items={platforms} />
+          <TextPanel>
+            <p>Together, these platforms operationalise the Framework while supporting the development and strengthening of micro and small tourism enterprises.</p>
+          </TextPanel>
+        </div>
+      </section>
 
-          <ul className="mx-auto mt-6 max-w-3xl divide-y divide-[#eee]">
-            {developmentPoints.map((point) => (
-              <li key={point} className="flex items-start gap-4 py-4 text-[#234c3a]">
-                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center text-[#2f6b3f]">
-                  <Leaf className="h-4 w-4" aria-hidden="true" />
-                </span>
-                <span className="text-sm leading-6 sm:text-base">{point}</span>
-              </li>
-            ))}
-          </ul>
-
-          <p className="mx-auto mt-8 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            The framework aligns with the broader aspirations of the United Nations Sustainable Development Goals (SDGs), particularly those related to poverty reduction, gender equality, decent work, sustainable communities, responsible consumption, climate action, and ecosystem stewardship.
-          </p>
+      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={ArrowRight} title="People-Powered Tourism Outcomes" subtitle="What We Create" />
+          <TextPanel>
+            <p>The Tourism Outcomes represent the long-term value created through implementation of the Framework.</p>
+            <p>Key outcomes include:</p>
+          </TextPanel>
+          <SimpleList items={outcomes} columns="sm:grid-cols-2 lg:grid-cols-5" />
+          <TextPanel>
+            <p>Together, these outcomes demonstrate how the Framework contributes to stronger tourism enterprises, resilient destinations, collaborative partnerships, and thriving tourism ecosystems.</p>
+          </TextPanel>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold text-[#1f4f93] sm:text-4xl">
-              <IconBadge icon={Waypoints} className="bg-[#ecf8ef] text-[#0f4d2f]" />
-              <span>Looking Ahead</span>
-            </h2>
-            <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
-
-            <div className="mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base">
-              <p>
-                The Traveleye People-Powered Tourism Framework was first developed in Sri Lanka but is designed to remain adaptable across destinations, cultures, and tourism ecosystems.
-              </p>
-              <p>
-                By strengthening the connections between people, places, experiences, enterprises, and destinations, the framework seeks to support a future where tourism creates meaningful experiences, strengthens local participation, and contributes to long-term destination wellbeing.
-              </p>
-              <p className="font-bold text-[#0f4d2f]">Tourism That Gives Back More Than It Takes.</p>
-              <p className="font-bold text-[#0f4d2f]">Tourism Shaped by the People Who Make It Possible.</p>
-            </div>
-          </div>
+          <SectionHeading icon={BarChart3} title="People-Powered Tourism Ecosystem Indicators" subtitle="Measuring Progress and Impact" />
+          <TextPanel>
+            <p>The Ecosystem Indicators measure the long-term progress and impact of the People-Powered Tourism Framework.</p>
+            <p>Key indicators include:</p>
+          </TextPanel>
+          <SimpleList items={indicators} columns="sm:grid-cols-2 lg:grid-cols-3" />
+          <TextPanel>
+            <p>Together, these indicators provide meaningful measures of how the Framework contributes to stronger tourism enterprises, destinations, partnerships, and the wider tourism ecosystem.</p>
+          </TextPanel>
         </div>
       </section>
 
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight text-[#1f4f93] sm:text-4xl">
-            <IconBadge icon={BriefcaseBusiness} />
-            <span>Begin the Conversation</span>
-          </h2>
-          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
-          <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Interested in learning more about the Traveleye People-Powered Tourism Framework, participation opportunities, ecosystem partnerships, or destination collaboration?
-          </p>
-          <p className="mt-4 text-sm font-bold leading-7 text-[#0f4d2f] sm:text-base">
-            Contact us at info@traveleye.lk to begin the conversation.
-          </p>
+      <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Users} title="Participation and Shared Stewardship" />
+          <TextPanel>
+            <p>Participation is the foundation of the People-Powered Tourism Framework.</p>
+            <p>The Framework encourages entrepreneurs, communities, tourism enterprises, governments, educational institutions, development organisations, investors, and strategic partners to actively contribute to tourism development through entrepreneurship, collaboration, innovation, hosting, and shared stewardship.</p>
+            <p>By encouraging meaningful participation across the tourism ecosystem, the Framework supports tourism that creates lasting value for people, places, partnerships, and prosperity.</p>
+          </TextPanel>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Sprout} title="Looking Ahead" />
+          <TextPanel>
+            <p>The People-Powered Tourism Framework is designed as a living framework that continues to evolve through research, innovation, collaboration, implementation, and shared learning.</p>
+            <p>As the strategic blueprint of the Traveleye People-Powered Tourism Ecosystem, it will continue guiding the development and strengthening of micro and small tourism enterprises while creating stronger connections between people, places, partnerships, destinations, and opportunities.</p>
+            <p>Through this connected approach, the Framework seeks to build tourism ecosystems that are inclusive, resilient, collaborative, and capable of creating lasting economic, social, cultural, and environmental value for Sri Lanka and future generations.</p>
+            <p className="font-bold text-[#0f4d2f]">Tourism That Gives Back More Than It Takes.</p>
+            <p className="font-bold text-[#0f4d2f]">Tourism Shaped by the People Who Make It Possible.</p>
+          </TextPanel>
+        </div>
+      </section>
+
+      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <SectionHeading icon={Home} title="Grow with Traveleye Alliance" />
+          <TextPanel>
+            <p>Whether you are a government agency, tourism authority, development organisation, educational institution, investor, entrepreneur, tourism enterprise, community organisation, or strategic partner, Traveleye Alliance Sri Lanka invites you to become part of the People-Powered Tourism Framework.</p>
+            <p>Together, we can transform strategic vision into practical action by developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem, creating stronger destinations, meaningful partnerships, resilient local economies, and lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+          </TextPanel>
         </div>
       </section>
 

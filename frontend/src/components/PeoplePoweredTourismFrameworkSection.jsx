@@ -21,7 +21,7 @@ export default function PeoplePoweredTourismFrameworkSection() {
             <img
               src={frameworkImg}
               alt="People collaborating around the People-Powered Tourism Framework"
-              className="h-[320px] w-full object-cover object-[58%_center] sm:h-[420px] lg:h-[495px]"
+              className="h-auto w-full object-contain object-center"
             />
             </div>
           </div>
@@ -32,7 +32,7 @@ export default function PeoplePoweredTourismFrameworkSection() {
                 <p className="text-center text-[1.12rem] font-extrabold text-[#172544]">
                   Purpose
                 </p>
-                <p className="mt-2">
+                <p className="mt-2 font-bold text-[#172544]">
                   To provide the strategic blueprint for developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
                 </p>
               </div>
