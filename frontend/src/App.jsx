@@ -52,6 +52,7 @@ import GloballyAlignedLocallyGrounded from './pages/GloballyAlignedLocallyGround
 import GuidingPrinciples from './pages/GuidingPrinciples'
 import HostExperiences from './pages/HostExperience'
 import TraveleyeCatalogueLibrary from './pages/TraveleyeCatalogueLibrary'
+import FounderCEO from './pages/FounderCEO'
 
 function App() {
   return (
@@ -110,6 +111,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="host-experiences" element={<HostExperiences />} />
+          <Route path="founder-ceo" element={<FounderCEO />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
