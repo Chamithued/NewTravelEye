@@ -1,9 +1,11 @@
 import {
-  Globe2,
+  Building2,
   Handshake,
+  Landmark,
   Leaf,
   Lightbulb,
   Network,
+  Rocket,
   Sprout,
   Users,
 } from 'lucide-react'
@@ -11,118 +13,87 @@ import heroImg from '../assets/subhero/about/Why Traveleye.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
-const frameworkPoints = [
-  'People-centred',
-  'Inclusive and participatory',
-  'Destination-aware',
-  'Culturally respectful',
-  'Environmentally conscious',
-  'Resilient over time',
-]
-
-const glanceCards = [
+const reasons = [
   {
-    icon: '🌍',
-    title: 'People-Powered Tourism',
-    text: 'Guided by a tourism framework centred on participation, stewardship, and long-term value creation.',
-  },
-  {
-    icon: '🤝',
-    title: 'Inclusive Participation',
-    text: 'Encouraging broader participation across tourism ecosystems, including opportunities for women and youth entrepreneurs.',
-  },
-  {
-    icon: '🌿',
-    title: 'Destination Stewardship',
-    text: 'Supporting tourism that remains connected to people, place, culture, and long-term destination wellbeing.',
-  },
-  {
-    icon: '💡',
-    title: 'Human-Centred Innovation',
-    text: 'Encouraging innovation that strengthens tourism while remaining grounded in people and destinations.',
-  },
-  {
-    icon: '🌏',
-    title: 'Connected Ecosystems',
-    text: 'Strengthening relationships between travellers, hosts, enterprises, destinations, and tourism stakeholders.',
-  },
-  {
-    icon: '📈',
-    title: 'Long-Term Resilience',
-    text: 'Supporting tourism ecosystems that are more inclusive, adaptable, and sustainable over time.',
-  },
-]
-
-const approachSections = [
-  {
-    icon: Users,
-    title: 'People-Powered Participation',
+    icon: Network,
+    title: 'Tourism Ecosystem Building',
     paragraphs: [
-      'We believe tourism becomes stronger when opportunities for participation are more accessible and inclusive.',
-      'The Traveleye ecosystem encourages participation from tourism enterprises, hosts, entrepreneurs, tourism professionals, community members, institutions, and ecosystem partners who contribute to strengthening tourism in different ways.',
-      'Particular importance is placed on encouraging opportunities for women and youth participation, helping create tourism ecosystems that are more diverse, resilient, and locally connected.',
+      <>We take a whole-of-ecosystem approach to tourism development. By connecting people, tourism enterprises, destinations, institutions, and strategic partners, we create stronger networks that encourage collaboration, shared value, and long-term resilience across Sri Lanka&apos;s tourism sector.</>,
     ],
   },
   {
-    icon: Leaf,
-    title: 'Meaningful Travel Experiences',
+    icon: Rocket,
+    title: 'Enterprise Development',
     paragraphs: [
-      'Travel is about more than visiting destinations.',
-      'It is about connecting with people, culture, nature, heritage, hospitality, and place.',
-      'Through our ecosystem approach, we seek to encourage travel experiences that help travellers engage more meaningfully with destinations while supporting broader participation and destination wellbeing.',
+      <>Micro and small tourism enterprises are the foundation of a vibrant tourism economy.</>,
+      <>We support entrepreneurs, tourism enterprises, hosts, and experience creators by providing opportunities for development, collaboration, market access, capacity building, and sustainable business growth.</>,
     ],
   },
   {
-    icon: Sprout,
-    title: 'Destination Stewardship and Long-Term Thinking',
+    icon: Landmark,
+    title: 'Destination Development',
     paragraphs: [
-      'Destinations are more than places to visit.',
-      'They are living environments shaped by people, culture, heritage, nature, and community life.',
-      'The Traveleye approach encourages tourism that respects these connections and recognises the importance of long-term destination wellbeing.',
-      'By promoting participation, stewardship, collaboration, and responsible tourism practices, we seek to contribute to stronger and more resilient destinations over time.',
+      <>Strong tourism begins with strong destinations.</>,
+      <>We work alongside destinations to encourage stewardship, strengthen local tourism enterprises, support authentic visitor experiences, and foster collaboration among local stakeholders to create resilient and competitive destinations.</>,
     ],
   },
   {
     icon: Handshake,
-    title: 'Collaboration Creates Stronger Tourism',
+    title: 'Strategic Partnerships',
     paragraphs: [
-      'We believe tourism is strengthened through collaboration.',
-      'Meaningful tourism outcomes are rarely created by a single organization alone.',
-      'They emerge through the collective efforts of travellers, hosts, enterprises, communities, institutions, tourism professionals, and ecosystem partners working together.',
-      'The Traveleye ecosystem seeks to create environments where these connections can grow and where tourism stakeholders can contribute to shared long-term success.',
+      <>Tourism succeeds through collaboration.</>,
+      <>We bring together tourism enterprises, communities, government agencies, investors, development organisations, educational institutions, and strategic partners to create meaningful partnerships that strengthen the tourism ecosystem.</>,
+    ],
+  },
+  {
+    icon: Lightbulb,
+    title: 'Practical Innovation',
+    paragraphs: [
+      <>Innovation creates value when it addresses real-world opportunities.</>,
+      <>Through the <strong>People-Powered Tourism Framework</strong>, Development Models, and Operational Platforms, we transform strategic thinking into practical solutions that support tourism enterprises, destinations, and collaborative initiatives.</>,
+    ],
+  },
+  {
+    icon: Leaf,
+    title: 'Sustainable Tourism Development',
+    paragraphs: [
+      <>We believe tourism should create lasting benefits that extend beyond individual journeys.</>,
+      <>Our work supports tourism that contributes to stronger enterprises, thriving destinations, empowered communities, environmental stewardship, and shared prosperity while creating long-term economic, social, cultural, and environmental value.</>,
     ],
   },
 ]
 
-function SectionHeading({ icon: Icon, title, subtitle }) {
+const partnerTypes = [
+  'A tourism entrepreneur',
+  'A tourism enterprise',
+  'A destination or destination organisation',
+  'A community group',
+  'A government institution',
+  'A university or training institution',
+  'A development agency',
+  'An investor',
+  'A strategic partner',
+]
+
+function SectionHeading({ icon: Icon, title }) {
   return (
     <div className="mx-auto max-w-4xl text-center">
       <h2 className="mt-0 flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-        {Icon ? (
-          <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
-            <Icon className="h-5 w-5" aria-hidden="true" />
-          </span>
-        ) : null}
+        <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+          <Icon className="h-5 w-5" aria-hidden="true" />
+        </span>
         <span>{title}</span>
       </h2>
       <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-      {subtitle ? <p className="mt-5 text-sm leading-7 text-[#475569] sm:text-base">{subtitle}</p> : null}
     </div>
   )
 }
 
-function CheckList({ items }) {
+function TextPanel({ children, className = '' }) {
   return (
-    <ul className="mx-auto mt-6 max-w-2xl divide-y divide-[#eef6f0] text-left">
-      {items.map((item) => (
-        <li key={item} className="flex items-start gap-3 py-3">
-          <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded bg-[#ecf8ef] text-[#14532d]">
-            <Leaf className="h-3.5 w-3.5" aria-hidden="true" />
-          </span>
-          <span className="text-sm font-medium leading-6 text-[#234c3a] sm:text-base">{item}</span>
-        </li>
-      ))}
-    </ul>
+    <div className={`mx-auto mt-8 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8 ${className}`}>
+      {children}
+    </div>
   )
 }
 
@@ -133,85 +104,52 @@ export default function WhyTraveleyePage() {
         <div className="absolute inset-0 z-0">
           <img
             src={heroImg}
-            alt="Why Traveleye banner"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
+            alt="Why Choose Traveleye banner"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
           />
-          <div className="absolute inset-0 bg-black/14" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
 
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
-          <div className="text-center">
+          <div className="max-w-5xl text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
               className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              <span className="block">WHY TRAVELEYE</span>
+              Why Choose Traveleye
             </h1>
-            <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              A Different Approach to Tourism
+            <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">
+              Building Stronger Tourism Through People, Partnerships, and Purpose
             </p>
           </div>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-6xl text-center">
-          <SectionHeading icon={Globe2} title="A Different Approach to Tourism" />
-
-          <div className="mx-auto mt-8 max-w-5xl space-y-5 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8">
-            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Traveleye Alliance Sri Lanka was established on the belief that tourism can create stronger and more lasting outcomes when it remains connected to people, destinations, participation, and stewardship.
-            </p>
-            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              While many tourism businesses focus primarily on transactions, products, or visitor movement, Traveleye approaches tourism as a connected ecosystem where travellers, hosts, enterprises, communities, destinations, and tourism stakeholders all contribute to the visitor experience.
-            </p>
-            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              This perspective guides everything we do and shapes our role as a People-Powered Tourism Ecosystem Builder.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto max-w-5xl text-center">
-          <SectionHeading icon={Network} title="Guided by the People-Powered Tourism Framework" />
-
-          <div className="mx-auto mt-7 max-w-4xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>
-              The Traveleye People-Powered Tourism Framework provides the strategic foundation for our approach to tourism.
-            </p>
-          </div>
-
-          <div className="mx-auto mt-8 w-full max-w-2xl rounded-2xl bg-white p-5 shadow-sm ring-1 ring-[#eef4ef] sm:p-6">
-            <h3 className="text-center text-base font-bold text-[#0f4d2f] sm:text-lg">
-              The framework encourages tourism that is:
-            </h3>
-            <CheckList items={frameworkPoints} />
-          </div>
-
-          <div className="mx-auto mt-8 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>
-              By strengthening the connections between people, places, experiences, enterprises, and destinations, we seek to contribute to tourism that creates lasting value beyond individual journeys.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-6 md:grid-cols-2">
-            {approachSections.map(({ icon: Icon, title, paragraphs }) => (
-              <article key={title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-8">
-                <h2 className="flex items-start gap-3 text-xl font-bold leading-tight text-[#1f4f93] sm:text-2xl">
-                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+          <SectionHeading icon={Building2} title="Why Choose Traveleye" />
+          <TextPanel>
+            <p>Tourism creates its greatest impact when people, enterprises, destinations, and partnerships work together toward a shared purpose.</p>
+            <p>At Traveleye Alliance Sri Lanka, we take a connected approach to tourism development by building <strong>Sri Lanka&apos;s First People-Powered Tourism Ecosystem</strong>. Rather than focusing on individual tourism services alone, we strengthen the relationships that enable tourism enterprises, destinations, and communities to grow together.</p>
+            <p>Guided by the <strong>People-Powered Tourism Framework</strong>, we develop and strengthen micro and small tourism enterprises while fostering collaboration, encouraging innovation, and creating lasting value for <strong>People, Planet, and Prosperity</strong>.</p>
+          </TextPanel>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Users} title="Why Organisations Choose Traveleye" />
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {reasons.map(({ icon: Icon, title, paragraphs }) => (
+              <article key={title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#dfe7f3] text-[#1f4f93]">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
-                  <span>{title}</span>
-                </h2>
-                <div className="mt-5 space-y-4 text-sm leading-7 text-[#55636a] sm:text-base">
-                  {paragraphs.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
+                  <h3 className="text-xl font-bold tracking-tight text-[#172544]">{title}</h3>
+                </div>
+                <div className="mt-4 space-y-4 text-sm leading-7 text-[#475569] sm:text-base">
+                  {paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
                 </div>
               </article>
             ))}
@@ -220,61 +158,46 @@ export default function WhyTraveleyePage() {
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-5xl text-center">
-          <SectionHeading icon={Sprout} title="Looking Ahead" />
-
-          <div className="mt-8 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
-            <p>
-              As tourism continues to evolve, Traveleye Alliance remains committed to strengthening tourism through participation, stewardship, innovation, collaboration, and long-term value creation.
-            </p>
-            <p>
-              Guided by the People-Powered Tourism Framework, we seek to help create tourism ecosystems that benefit travellers while supporting destinations, communities, enterprises, and future generations.
-            </p>
-          </div>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <span className="inline-flex rounded-full border border-[#D6E8FF] bg-[#E8F1FF] px-4 py-2 text-xs font-semibold text-[#214F95] shadow-sm sm:px-6 sm:py-3 sm:text-sm">
-              Tourism for People, Planet, and Prosperity.
-            </span>
-            <span className="inline-flex rounded-full border border-[#D6E8FF] bg-[#E8F1FF] px-4 py-2 text-xs font-semibold text-[#214F95] shadow-sm sm:px-6 sm:py-3 sm:text-sm">
-              Tourism Shaped by the People Who Make It Possible.
-            </span>
-          </div>
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Sprout} title="Our Difference" />
+          <TextPanel>
+            <p>What makes Traveleye different is not simply what we do, but how we do it.</p>
+            <p>We build connections between people, enterprises, destinations, partnerships, and opportunities, creating an integrated ecosystem where tourism participants can grow together rather than in isolation.</p>
+            <p>This connected approach enables stronger collaboration, practical innovation, and sustainable development while creating opportunities that benefit the entire tourism ecosystem.</p>
+          </TextPanel>
         </div>
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Lightbulb} title="Why Traveleye at a Glance" />
-
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 sm:gap-6">
-            {glanceCards.map((card) => (
-              <article key={card.title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm">
-                <div className="flex h-full items-start gap-4">
-                  <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#E8F1FF] text-2xl">
-                    {card.icon}
-                  </span>
-                  <div>
-                    <h3 className="text-base font-bold leading-tight text-[#1f4f93]">{card.title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-[#475569]">{card.text}</p>
-                  </div>
-                </div>
-              </article>
+          <SectionHeading icon={Handshake} title="Why Partner With Traveleye?" />
+          <TextPanel>
+            <p>Whether you are:</p>
+          </TextPanel>
+          <ul className="mx-auto mt-6 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {partnerTypes.map((type) => (
+              <li key={type} className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-[#234c3a] shadow-sm sm:text-base">
+                <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#ecf8ef] text-[#14532d]">
+                  <Leaf className="h-3.5 w-3.5" aria-hidden="true" />
+                </span>
+                {type}
+              </li>
             ))}
-          </div>
+          </ul>
+          <TextPanel>
+            <p>Traveleye Alliance provides opportunities to collaborate, innovate, develop tourism enterprises, strengthen destinations, and contribute to a more inclusive and resilient tourism ecosystem.</p>
+          </TextPanel>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Handshake} title="Begin the Conversation" />
-
-          <p className="mt-8 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Interested in learning more about Traveleye Alliance, the People-Powered Tourism Framework, ecosystem collaboration, partnerships, or participation opportunities?
-          </p>
-          <p className="mt-5 text-base font-bold leading-7 text-[#00466f] sm:text-lg">
-            Contact us at info@traveleye.lk to begin the conversation.
-          </p>
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Network} title="Let's Build Stronger Tourism Together" />
+          <TextPanel>
+            <p>Tourism achieves its greatest potential when people, enterprises, destinations, and partnerships are connected through a shared vision for sustainable growth.</p>
+            <p>Whether you are looking to develop tourism enterprises, strengthen destinations, build strategic partnerships, or create new opportunities, we invite you to join us in building <strong>Sri Lanka&apos;s First People-Powered Tourism Ecosystem</strong>.</p>
+            <p className="text-lg font-bold text-[#0f4d2f]">Tourism for People, Planet, and Prosperity.</p>
+          </TextPanel>
         </div>
       </section>
 

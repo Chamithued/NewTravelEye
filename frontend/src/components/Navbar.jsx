@@ -37,6 +37,7 @@ const dropdownGroups = [
       { label: 'Governance & Ethics', to: '/governance-ethics' },
       { label: 'Media & Press', to: '/media-press' },
       { label: 'Traveleye Catalogue Library', to: '/traveleye-catalogue-library' },
+      { label: 'Founder & CEO', to: '/founder-ceo' },
     ],
   },
   {
