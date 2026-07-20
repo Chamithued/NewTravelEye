@@ -16,7 +16,7 @@ export default function PeoplePoweredTourismFrameworkSection() {
         </div>
 
         <div className="relative z-10 mx-auto mt-10 max-w-6xl overflow-hidden lg:grid lg:grid-cols-[minmax(420px,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
-          <div className="flex items-center bg-[#eef4fa] p-4 sm:p-6 lg:p-0 lg:pt-10">
+          <div className="flex flex-col items-center bg-[#eef4fa] p-4 sm:p-6 lg:p-0 lg:pt-10">
             <div className="w-full overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] sm:rounded-[1.6rem]">
             <img
               src={frameworkImg}
@@ -24,6 +24,13 @@ export default function PeoplePoweredTourismFrameworkSection() {
               className="h-[320px] w-full object-cover object-center sm:h-[420px] lg:h-[495px]"
             />
             </div>
+
+            <a
+              href="/people-powered-tourism-framework"
+              className="mt-8 w-full rounded-xl bg-[#214f95] px-6 py-4 text-center text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem]"
+            >
+              Explore the People-Powered Tourism Framework
+            </a>
           </div>
 
           <div className="bg-[#eef4fa] p-6 sm:p-10 lg:p-12">
@@ -42,13 +49,6 @@ export default function PeoplePoweredTourismFrameworkSection() {
               <p>
                 Through its interconnected <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Operational Platforms</strong>, <strong>Tourism Outcomes</strong>, and <strong>Ecosystem Indicators</strong>, the Framework supports the development of stronger tourism enterprises, resilient destinations, meaningful partnerships, and a thriving tourism ecosystem that creates lasting value for <strong>People</strong>, <strong>Places</strong>, <strong>Partnerships</strong>, and <strong>Prosperity</strong>.
               </p>
-
-              <a
-                href="/people-powered-tourism-framework"
-                className="mx-auto mt-8 flex w-fit items-center rounded-xl bg-[#214f95] px-6 py-3.5 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:px-8 sm:text-[1.05rem]"
-              >
-                Explore the People-Powered Tourism Framework
-              </a>
             </div>
           </div>
         </div>
