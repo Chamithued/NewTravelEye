@@ -1,54 +1,54 @@
 import {
   Handshake,
   Globe2,
-  House,
-  Leaf,
+  Lightbulb,
   MapPinned,
+  Rocket,
   Sprout,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const reasons = [
   {
-    icon: Leaf,
-    title: 'People-Powered Tourism',
+    icon: Globe2,
+    title: 'Tourism Ecosystem Builder',
     description:
-      'Building tourism around people by placing participation, stewardship, collaboration, innovation, and shared value creation at the heart of tourism development.',
+      'We build and steward a connected tourism ecosystem that brings together people, enterprises, destinations, and partners to create lasting value.',
     iconBg: 'bg-emerald-500',
   },
   {
-    icon: Globe2,
-    title: 'Inclusive Participation',
+    icon: Rocket,
+    title: 'Enterprise Development',
     description:
-      'Creating meaningful opportunities for communities, women, youth entrepreneurs, tourism enterprises, institutions, and development partners to participate and grow together.',
+      'We develop and strengthen micro and small tourism enterprises, empowering entrepreneurs to grow sustainable and resilient businesses.',
     iconBg: 'bg-blue-800',
   },
   {
-    icon: House,
-    title: 'Destination Stewardship',
+    icon: MapPinned,
+    title: 'Destination Development',
     description:
-      'Supporting tourism that respects local identity, culture, heritage, nature, and the long-term wellbeing of destinations.',
+      'We support destination development through stewardship, collaboration, enterprise growth, and community participation.',
     iconBg: 'bg-amber-500',
   },
   {
     icon: Handshake,
-    title: 'Innovation with Purpose',
+    title: 'Strategic Partnerships',
     description:
-      'Encouraging practical, people-centred innovation that strengthens tourism while remaining grounded in local realities and meaningful human connections.',
+      'We create meaningful partnerships that connect tourism enterprises, institutions, communities, governments, investors, and strategic partners.',
     iconBg: 'bg-sky-500',
   },
   {
-    icon: Sprout,
-    title: 'Connected Tourism Ecosystems',
+    icon: Lightbulb,
+    title: 'Practical Innovation',
     description:
-      'Bringing together travellers, hosts, tourism enterprises, destinations, institutions, and partners to create stronger tourism ecosystems through collaboration.',
+      'We transform ideas into practical tourism solutions through connected development models, operational platforms, and ecosystem initiatives.',
     iconBg: 'bg-lime-500',
   },
   {
-    icon: MapPinned,
-    title: 'Long-Term Resilience',
+    icon: Sprout,
+    title: 'Sustainable Prosperity',
     description:
-      'Supporting resilient tourism enterprises, destinations, and ecosystems that create lasting economic, social, cultural, and environmental value for future generations.',
+      'We strengthen tourism for the long term by creating economic, social, cultural, and environmental value for people, destinations, and local communities.',
     iconBg: 'bg-red-600',
   },
 ]
@@ -84,16 +84,16 @@ export default function WhyTraveleye() {
           {/* <div className="inline-flex items-center gap-2 rounded-full bg-[#dfe7f3] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm"> */}
           <div className="home-section-eyebrow">
             <span className="text-xl leading-none">✦ </span>
-            Why Traveleye
+            Why Choose Traveleye
           </div>
         </div>
 
         <div className="mx-auto max-w-6xl text-center">
           <div className="flex items-center justify-center gap-2">
-            <span className="mr-0 text-4xl leading-none sm:text-5xl">🌿</span>
+            {/* <span className="mr-0 text-4xl leading-none sm:text-5xl">🌿</span> */}
             <h2 className="home-section-title mx-0 max-w-5xl">
               {/* Because Sri Lanka needs a People-Powered Tourism Ecosystem – not another tour operator */}
-              A Different Approach to Tourism 
+              Building Stronger Tourism Through People, Partnerships, and Purpose
             </h2>
           </div>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
@@ -103,7 +103,10 @@ export default function WhyTraveleye() {
           </p> */}
           <div className="mx-auto mt-5 max-w-5xl space-y-6 text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8">
             <p>
-              Traveleye Alliance approaches tourism as a connected ecosystem where people, places, enterprises, destinations, and tourism stakeholders work together to create meaningful travel and lasting value. Guided by the <strong>People-Powered Tourism Framework</strong>, we believe tourism is strongest when it encourages participation, stewardship, collaboration, innovation, and shared value creation while developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+              Traveleye Alliance Sri Lanka is building <strong>Sri Lanka&apos;s First People-Powered Tourism Ecosystem</strong> bringing together people, tourism enterprises, destinations, institutions, and strategic partners to create stronger, more connected tourism.
+            </p>
+            <p>
+              Guided by the <strong>People-Powered Tourism Framework</strong>, we develop and strengthen micro and small tourism enterprises while supporting destination development, meaningful partnerships, innovation, and long-term prosperity across Sri Lanka&apos;s tourism ecosystem.
             </p>
           </div>
         </div>
@@ -125,7 +128,7 @@ export default function WhyTraveleye() {
             to="/why-traveleye"
             className="w-full rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
           >
-            Explore Why Traveleye
+            Discover Why Traveleye
           </Link>
         </div>
       </div>

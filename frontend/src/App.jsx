@@ -89,7 +89,7 @@ function App() {
           <Route path="celebrations-events" element={<CelebrationsEvents />} />
           <Route path="global-journeys" element={<GlobalJourneys />} />
           {/* <Route path="explore-ecosystem" element={<ExploreEcosystemPage />} /> */}
-          <Route path="our-ecosystem-approach" element={<OurEcosystemApproach />} />
+          {/* <Route path="our-ecosystem-approach" element={<OurEcosystemApproach />} /> */}
           <Route path="governance-ethics" element={<GovernanceEthics />} />
           <Route path="media-press" element={<MediaPress />} />
           <Route path="traveleye-catalogue-library" element={<TraveleyeCatalogueLibrary />} />

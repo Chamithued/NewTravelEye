@@ -4,11 +4,11 @@ import logo from '../assets/client/Traveleyelogo.jpg'
 
 const navItems = [
   {
-    top: 'Travel',
+    top: 'Traveleye Travel',
     bottom: 'Collective',
     to: '/travel-collective',
     items: [
-      { label: 'About Travel Collective', to: '/travel-collective' },
+      { label: 'About Traveleye Travel Collective', to: '/travel-collective' },
       { label: 'Traveleye Lanka Journeys', to: '/sri-lanka-journeys' },
       { label: 'Traveleye Travel Corridors', to: '/travel-corridors' },
       { label: 'Traveleye Bharat Lanka Journeys', to: '/bharat-lanka-journeys', indent: true, child: 'first' },
@@ -20,9 +20,9 @@ const navItems = [
       { label: 'Traveleye Island Journeys', to: '/island-journeys' },
     ],
   },
-  { top: 'Host', bottom: 'Experiences', to: '/host-experiences' },
-  { top: 'Destination', bottom: 'Facilitation', to: '/destination-facilitation' },
-  { top: 'Ecosystem', bottom: 'Support', to: '/support-services' },
+  { top: 'Traveleye Host', bottom: 'Experiences', to: '/host-experiences' },
+  { top: 'Traveleye Destination', bottom: 'Facilitation', to: '/destination-facilitation' },
+  { top: 'Traveleye Ecosystem', bottom: 'Support', to: '/support-services' },
   // { top: 'Privé', bottom: 'Collection', to: '/stays' },
 ]
 
@@ -31,9 +31,9 @@ const dropdownGroups = [
     label: 'About Us',
     items: [
       { label: 'About Traveleye Alliance', to: '/about' },
-      { label: 'Our Ecosystem Approach', to: '/our-ecosystem-approach' },
+      // { label: 'Our Ecosystem Approach', to: '/our-ecosystem-approach' },
       { label: 'Our Vision, Mission & Values', to: '/vision-mission' },
-      { label: 'Why Traveleye', to: '/why-traveleye' },
+      { label: 'Why Choose Traveleye', to: '/why-traveleye' },
       { label: 'Governance & Ethics', to: '/governance-ethics' },
       { label: 'Media & Press', to: '/media-press' },
       { label: 'Traveleye Catalogue Library', to: '/traveleye-catalogue-library' },
@@ -151,7 +151,7 @@ export default function Navbar() {
         <nav className="hidden items-center gap-1 pr-4 sm:pr-6 lg:pr-8 xl:flex" aria-label="Primary">
           {navItems.map((item) => (
             item.items ? (
-              <div key={item.top} className="group relative">
+              <div key={item.to} className="group relative">
                 <button
                   type="button"
                   className={[
@@ -211,7 +211,7 @@ export default function Navbar() {
               </div>
             ) : (
               <NavLink
-                key={item.top}
+                key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
                   [
@@ -290,7 +290,7 @@ export default function Navbar() {
           <div className="flex flex-col gap-1 px-3 pb-6 pt-3">
             {navItems.map((item) => (
               item.items ? (
-                <div key={item.top} className="mt-2">
+                <div key={item.to} className="mt-2">
                   <button
                     type="button"
                     onClick={() => toggleGroup(`${item.top} ${item.bottom}`)}
@@ -357,7 +357,7 @@ export default function Navbar() {
                 </div>
               ) : (
                 <NavLink
-                  key={item.top}
+                  key={item.to}
                   to={item.to}
                   onClick={() => setMobileOpen(false)}
                   className={({ isActive }) =>

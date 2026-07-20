@@ -26,10 +26,20 @@ export default function Hero() {
         </h2>
         {/* <p className="text-sm sm:text-base font-medium mb-2">Since 2006</p> */}
 
-        <p className="mx-auto mb-1 max-w-3xl text-base font-semibold sm:text-xl">
+        <p
+          className="mx-auto mb-1 max-w-3xl text-base font-semibold sm:text-xl"
+          style={{ WebkitTextStroke: '0.35px #000', paintOrder: 'stroke fill' }}
+        >
           Building a People-Powered Tourism Ecosystem for Sri Lanka
         </p>
-        <p className="mx-auto mt-24 max-w-4xl text-sm leading-relaxed sm:mt-32 sm:text-base lg:mt-36" style={{ textWrap: 'balance' }}>
+        <p
+          className="mx-auto mt-12 max-w-4xl text-sm font-bold leading-relaxed sm:mt-20 sm:text-base lg:mt-24"
+          style={{
+            textWrap: 'balance',
+            WebkitTextStroke: '0.35px #000',
+            paintOrder: 'stroke fill',
+          }}
+        >
           Developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem through collaboration, stewardship, innovation, and meaningful partnerships.
         </p>
 {/* 
