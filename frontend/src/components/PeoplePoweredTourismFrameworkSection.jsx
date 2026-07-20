@@ -15,13 +15,13 @@ export default function PeoplePoweredTourismFrameworkSection() {
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
 
-        <div className="relative z-10 mt-10 overflow-hidden lg:grid lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
-          <div className="flex items-center bg-[#eef4fa] p-4 sm:p-6 lg:py-8 lg:pl-48 lg:pr-0">
+        <div className="relative z-10 mx-auto mt-10 max-w-6xl overflow-hidden lg:grid lg:grid-cols-[minmax(420px,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
+          <div className="flex items-center bg-[#eef4fa] p-4 sm:p-6 lg:p-0 lg:pt-10">
             <div className="w-full overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] sm:rounded-[1.6rem]">
             <img
               src={frameworkImg}
               alt="People collaborating around the People-Powered Tourism Framework"
-              className="h-auto w-full object-contain object-center"
+              className="h-[320px] w-full object-cover object-center sm:h-[420px] lg:h-[495px]"
             />
             </div>
           </div>

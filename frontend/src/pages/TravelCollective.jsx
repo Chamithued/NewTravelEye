@@ -70,6 +70,15 @@ const stakeholders = [
   'Strategic partners',
 ]
 
+const connectedTravelPoints = [
+  'Inbound travel creates opportunities for local tourism enterprises and destinations.',
+  'Domestic travel encourages Sri Lankans to explore and support their own country.',
+  'Outbound travel strengthens international connections and broadens global perspectives.',
+  'Travel Corridors build long-term partnerships between destinations and countries.',
+  'Premium travel showcases exceptional hospitality and personalised experiences.',
+  'Celebrations and Events create memorable occasions while generating new opportunities for destinations and tourism enterprises.',
+]
+
 function MapPinIcon({ className }) {
   return <Landmark className={className} />
 }
@@ -175,12 +184,17 @@ export default function TravelCollective() {
         <SectionHeading icon={Handshake} title="A Connected Approach to Travel Development" />
         <Copy>
           <p>The <strong>Traveleye Travel Collective</strong> operates as an integrated travel platform where each area of operation complements and strengthens the others.</p>
-          <p>Inbound travel creates opportunities for local tourism enterprises and destinations.</p>
-          <p>Domestic travel encourages Sri Lankans to explore and support their own country.</p>
-          <p>Outbound travel strengthens international connections and broadens global perspectives.</p>
-          <p>Travel Corridors build long-term partnerships between destinations and countries.</p>
-          <p>Premium travel showcases exceptional hospitality and personalised experiences.</p>
-          <p>Celebrations and Events create memorable occasions while generating new opportunities for destinations and tourism enterprises.</p>
+          <ul className="mx-auto grid max-w-4xl gap-4 text-left">
+            {connectedTravelPoints.map((point) => (
+              <li
+                key={point}
+                className="flex items-start gap-3 rounded-xl border border-[#cfe0f6] bg-white px-5 py-4 shadow-[0_4px_14px_rgba(15,23,42,0.08)]"
+              >
+                <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[#1f4f93]" aria-hidden="true" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
           <p>Together, these interconnected travel segments strengthen the tourism ecosystem through participation, collaboration, innovation, and shared value creation.</p>
         </Copy>
       </section>
