@@ -11,7 +11,7 @@ import {
   Users,
   Workflow,
 } from 'lucide-react'
-import heroImg from '../assets/client/Facilitation4.png'
+import heroImg from '../assets/client/Facilitation4.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

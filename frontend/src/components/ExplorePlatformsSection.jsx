@@ -1,12 +1,12 @@
 import staysImg from '../assets/client/Stays.png'
-import experiencesImg from '../assets/client/Travelex.png'
+import experiencesImg from '../assets/client/Travelex.jpg'
 import journeyImg from '../assets/client/Plan Your Sri Lanka Journey.png'
 import luxuryImg from '../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg'
 import weddingImg from '../assets/client/Sri Lankan wedding reception at golden hour.png'
 import outboundImg from '../assets/explore/Discover Sri Lanka - Domestic1.jpg'
 import conNation from '../assets/client/Discover the world.png'
-import conTourism from '../assets/explore/Connecting Tourism Through Collaboration and Partnerships new.jpg'
-import discSriLanka from '../assets/explore/Discover Sri Lanka - Domestic1.jpg'
+import conTourism from '../assets/explore/Access Tourism Enterprise Growth Services.jpg'
+import discSriLanka from '../assets/explore/Support Destination Development & Facilitation.jpg'
 
 const platforms = [
   {

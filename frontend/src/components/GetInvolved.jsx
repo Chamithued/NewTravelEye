@@ -1,9 +1,9 @@
 import { Building2, Globe2, Leaf, Users, HeartHandshake, Handshake, Plane, Sprout } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-import coOwnImg from '../assets/client/Be A Co-Owner2.png'
-import inboundImg from '../assets/client/Partner With Us - Inbound1.png'
-import collaborateImg from '../assets/client/Collaborate With Us1.png'
+import coOwnImg from '../assets/client/Be A Co-Owner2.jpg'
+import inboundImg from '../assets/client/Partner With Us - Inbound1.jpg'
+import collaborateImg from '../assets/client/Collaborate With Us1.jpg'
 import purposeImg from '../assets/client/Travelwith Purpose.png'
 import supportLocalImg from '../assets/client/Support Local People & Communities.png'
 import movementImg from '../assets/client/Join the movement2.png'
@@ -11,7 +11,7 @@ import BTCP from '../assets/involved/Become a Travel Corridor Partner.jpg'
 import BTVP from '../assets/involved/Become a Travel Venture Partner.jpg'
 import DPAPIE from '../assets/involved/Develop a People & Place-Inspired Experience.jpg'
 import DESV from '../assets/involved/Develop an Ecosystem Support Venture.jpg'
-import DPIS from '../assets/involved/Develop Place Inspired Stay.jpg'
+import DPIS from '../assets/involved/Develop a Place-Inspired Host Stay.jpg'
 import JVASI from '../assets/involved/Joint Ventures & Strategic Investments.jpg'
 
 

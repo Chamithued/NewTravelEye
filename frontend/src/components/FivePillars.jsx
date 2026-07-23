@@ -1,8 +1,8 @@
 import { ArrowRight, Leaf, Building2, Compass, MapPinned, BriefcaseBusiness } from 'lucide-react'
 
 import staysImg from '../assets/client/stays_new.jpg'
-import experientialImg from '../assets/client/PPES.png'
-import tourOpsImg from '../assets/client/TC.png'
+import experientialImg from '../assets/client/PPES.jpg'
+import tourOpsImg from '../assets/client/TC.jpg'
 import supportImg from '../assets/client/Support Services.png'
 import facilitationImg from '../assets/client/At the Traveleye Facilitation Center.png'
 
