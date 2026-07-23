@@ -1,5 +1,5 @@
 import staysImg from '../assets/client/Stays.png'
-import experiencesImg from '../assets/client/Travelex.png'
+import experiencesImg from '../assets/client/Travelex.jpg'
 import journeyImg from '../assets/client/Plan Your Sri Lanka Journey.png'
 import luxuryImg from '../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg'
 import supportImg from '../assets/client/Support Services.png'

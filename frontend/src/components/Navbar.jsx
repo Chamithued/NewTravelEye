@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import logo from '../assets/client/Traveleyelogo.jpg'
+import logo from '../assets/client/Traveleyelogo.png'
 
 const navItems = [
   {
-    top: 'Traveleye Travel',
-    bottom: 'Collective',
+    top: 'Traveleye',
+    bottom: 'Travel Collective',
     to: '/travel-collective',
     items: [
       { label: 'About Traveleye Travel Collective', to: '/travel-collective' },
@@ -20,15 +20,17 @@ const navItems = [
       { label: 'Traveleye Island Journeys', to: '/island-journeys' },
     ],
   },
-  { top: 'Traveleye Host', bottom: 'Experiences', to: '/host-experiences' },
-  { top: 'Traveleye Destination', bottom: 'Facilitation', to: '/destination-facilitation' },
-  { top: 'Traveleye Ecosystem', bottom: 'Support', to: '/support-services' },
+  { top: 'Traveleye', bottom: 'Host Experiences', to: '/host-experiences' },
+  { top: 'Traveleye', bottom: 'Destination Facilitation', to: '/destination-facilitation' },
+  { top: 'Traveleye', bottom: 'Ecosystem Support', to: '/support-services' },
   // { top: 'Privé', bottom: 'Collection', to: '/stays' },
 ]
 
 const dropdownGroups = [
   {
-    label: 'About Us',
+    label: 'About Us - About Traveleye',
+    top: 'About Us -',
+    bottom: 'About Traveleye',
     items: [
       { label: 'About Traveleye Alliance', to: '/about' },
       // { label: 'Our Ecosystem Approach', to: '/our-ecosystem-approach' },
@@ -41,9 +43,10 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Our Framework, Pillars & Modules',
+    label: 'Our Framework, Pillars & Modules - Traveleye Ecosystem',
     top: 'Our Framework,',
-    bottom: 'Pillars & Modules',
+    middle: 'Pillars & Modules -',
+    bottom: 'Traveleye Ecosystem',
     items: [
       { label: "What Is Traveleye's People-Powered Tourism", to: '/what-is-traveleyes-people-powered-tourism' },
       { label: 'Traveleye People-Powered Tourism Ecosystem', to: '/traveleye-people-powered-tourism-ecosystem' },
@@ -66,7 +69,10 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Get Involved',
+    label: 'Get Involved - Grow Together With Traveleye',
+    top: 'Get Involved -',
+    middle: 'Grow Together With',
+    bottom: 'Traveleye',
     items: [
       { label: 'How You Can Get Involved', to: '/how-you-can-get-involved' },
       { label: 'Become a Travel Venture Partner', to: '/become-a-travel-venture-partner' },
@@ -240,6 +246,7 @@ export default function Navbar() {
                 {group.top && group.bottom ? (
                   <span className="inline-flex flex-col items-center leading-none">
                     <span className="whitespace-nowrap">{group.top}</span>
+                    {group.middle && <span className="whitespace-nowrap">{group.middle}</span>}
                     <span className="whitespace-nowrap">{group.bottom}</span>
                   </span>
                 ) : (

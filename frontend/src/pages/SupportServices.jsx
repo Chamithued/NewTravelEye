@@ -14,7 +14,7 @@ import {
 } from 'lucide-react'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
-import heroImg from '../assets/client/SupportServices.png'
+import heroImg from '../assets/client/SupportServices.jpg'
 
 const operationAreas = [
   {
