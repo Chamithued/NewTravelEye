@@ -10,7 +10,7 @@ import {
   Sprout,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Explore the Ecosystem.jpg'
+import heroImg from '../assets/ecosystem/8. People-Powered Tourism Operational Platforms.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

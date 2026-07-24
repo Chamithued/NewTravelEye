@@ -13,7 +13,7 @@ import {
   Users,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/People-Powered Tourism Framework.jpg'
+import heroImg from '../assets/ecosystem/3. People-Powered Tourism Framework.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

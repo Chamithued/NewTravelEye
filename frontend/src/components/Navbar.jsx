@@ -28,9 +28,9 @@ const navItems = [
 
 const dropdownGroups = [
   {
-    label: 'About Us - About Traveleye',
-    top: 'About Us -',
-    bottom: 'About Traveleye',
+    label: 'About Traveleye',
+    top: 'About',
+    bottom: 'Traveleye',
     items: [
       { label: 'About Traveleye Alliance', to: '/about' },
       // { label: 'Our Ecosystem Approach', to: '/our-ecosystem-approach' },
@@ -43,10 +43,9 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Our Framework, Pillars & Modules - Traveleye Ecosystem',
-    top: 'Our Framework,',
-    middle: 'Pillars & Modules -',
-    bottom: 'Traveleye Ecosystem',
+    label: 'Traveleye Ecosystem',
+    top: 'Traveleye',
+    bottom: 'Ecosystem',
     items: [
       { label: "What Is Traveleye's People-Powered Tourism", to: '/what-is-traveleyes-people-powered-tourism' },
       { label: 'Traveleye People-Powered Tourism Ecosystem', to: '/traveleye-people-powered-tourism-ecosystem' },
@@ -69,9 +68,8 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Get Involved - Grow Together With Traveleye',
-    top: 'Get Involved -',
-    middle: 'Grow Together With',
+    label: 'Grow Together With Traveleye',
+    top: 'Grow Together With',
     bottom: 'Traveleye',
     items: [
       { label: 'How You Can Get Involved', to: '/how-you-can-get-involved' },
