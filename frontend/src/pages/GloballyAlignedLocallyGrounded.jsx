@@ -16,7 +16,7 @@ import {
   Users,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Explore the Ecosystem.jpg'
+import heroImg from '../assets/ecosystem/5. People-Powered Tourism Global Alignment.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

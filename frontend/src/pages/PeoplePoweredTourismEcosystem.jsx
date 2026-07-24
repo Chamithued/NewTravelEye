@@ -14,7 +14,7 @@ import {
   Sprout,
   UsersRound,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Explore the Ecosystem.jpg'
+import heroImg from '../assets/ecosystem/1.Traveleye People-Powered Tourism Ecosystem.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

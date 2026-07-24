@@ -10,7 +10,7 @@ import {
   Route,
   Sprout,
 } from 'lucide-react'
-import heroImg from '../assets/subhero/pillars/Explore the Ecosystem.jpg'
+import heroImg from '../assets/ecosystem/7. People-Powered Tourism Development Models.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

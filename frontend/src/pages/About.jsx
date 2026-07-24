@@ -54,11 +54,39 @@ const journeyMilestones = [
 
 const rolePoints = [
   'Develop and strengthen micro and small tourism enterprises.',
-  'Support authentic host stays and people-inspired travel experiences.',
+  'Support the development of place-inspired host stays and people & place-inspired travel experiences.',
   'Strengthen destination ecosystems through collaboration and stewardship.',
   'Build meaningful tourism partnerships and travel corridors.',
   'Enhance tourism capability through education, advisory services, technology, and innovation.',
-  'Connect tourism stakeholders through an integrated ecosystem that creates long-term value for people, places, partnerships, and prosperity.',
+  'Connect people, enterprises, destinations, institutions, travel markets, and strategic partners through an integrated ecosystem that creates long-term value for people, places, partnerships, and prosperity.',
+]
+
+const focusAreas = [
+  'Tourism enterprise development.',
+  'Place-inspired host stay development.',
+  'People & place-inspired travel experience development.',
+  'Destination development and facilitation.',
+  'Tourism partnership development.',
+  'Travel corridor development.',
+  'Tourism advisory and professional services.',
+  'Tourism capability development through education and training.',
+  'Tourism technology and digital innovation.',
+  'Tourism programmes, projects, and ecosystem initiatives.',
+]
+
+const ecosystemPartners = [
+  'Tourism entrepreneurs.',
+  'Micro and small tourism enterprises.',
+  'Host stay operators.',
+  'Experience creators.',
+  'Tour operators and travel businesses.',
+  'Destination organisations and local communities.',
+  'Tourism professionals and industry associations.',
+  'Government institutions and tourism authorities.',
+  'Educational and research institutions.',
+  'Investors and development organisations.',
+  'Strategic partners and travel market partners.',
+  'Domestic and international travellers.',
 ]
 
 function SectionHeading({ icon: Icon, title, subtitle, center = true }) {
@@ -157,11 +185,43 @@ export default function About() {
         <div className="mx-auto max-w-6xl text-center">
           <SectionHeading icon={Handshake} title="Our Role" />
           <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">As the Builder and Steward of Sri Lanka's First People-Powered Tourism Ecosystem, Traveleye Alliance works to:</p>
-          <ul className="mx-auto mt-8 grid max-w-5xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mx-auto mt-8 w-full max-w-4xl space-y-4 pl-12 text-left sm:pl-24">
             {rolePoints.map((point) => (
-              <li key={point} className="flex min-h-20 items-center gap-3 rounded-2xl border border-[#eef4ef] bg-white p-4 text-left shadow-sm">
-                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#ecf8ef] text-[#14532d]"><Leaf className="h-4 w-4" /></span>
-                <span className="text-sm font-medium leading-6 text-[#234c3a]">{point}</span>
+              <li key={point} className="flex items-start gap-3">
+                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#1f4f93]" aria-hidden="true" />
+                <span className="text-sm font-bold leading-7 text-[#234c3a] sm:text-base sm:leading-8">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl text-center">
+          <SectionHeading icon={Compass} title="What We Do" />
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Through the Traveleye People-Powered Tourism Ecosystem, we translate strategy into practical action by designing, facilitating, and supporting initiatives that strengthen tourism enterprises, destinations, partnerships, and travel opportunities across Sri Lanka. Our work spans the full tourism ecosystem, enabling people, organisations, and destinations to participate, collaborate, and grow together.</p>
+          <p className="mx-auto mt-5 max-w-4xl text-sm font-semibold leading-7 text-[#234c3a] sm:text-base">Our areas of focus include:</p>
+          <ul className="mx-auto mt-8 grid max-w-5xl gap-3 sm:grid-cols-2">
+            {focusAreas.map((area) => (
+              <li key={area} className="flex min-h-16 items-center gap-3 rounded-2xl border border-[#eef4ef] bg-[#FCFBF8] p-4 text-left shadow-sm">
+                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#E8F1FF] text-[#214F95]"><Leaf className="h-4 w-4" /></span>
+                <span className="text-sm font-medium leading-6 text-[#234c3a]">{area}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl text-center">
+          <SectionHeading icon={Users} title="Who We Work With" />
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">The Traveleye People-Powered Tourism Ecosystem is built on collaboration. We work with individuals, enterprises, institutions, and strategic partners who share a commitment to developing stronger tourism and creating lasting value for people, places, partnerships, and prosperity.</p>
+          <p className="mx-auto mt-5 max-w-4xl text-sm font-semibold leading-7 text-[#234c3a] sm:text-base">Our ecosystem brings together:</p>
+          <ul className="mx-auto mt-8 grid max-w-5xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {ecosystemPartners.map((partner) => (
+              <li key={partner} className="flex min-h-16 items-center gap-3 rounded-2xl border border-[#eef4ef] bg-white p-4 text-left shadow-sm">
+                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#ecf8ef] text-[#14532d]"><Handshake className="h-4 w-4" /></span>
+                <span className="text-sm font-medium leading-6 text-[#234c3a]">{partner}</span>
               </li>
             ))}
           </ul>
