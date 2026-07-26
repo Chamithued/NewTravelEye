@@ -1,4 +1,5 @@
-import { Handshake, Leaf, MapPin, Users } from 'lucide-react'
+import { ArrowRight, Handshake, Leaf, MapPin, Users } from 'lucide-react'
+import { Link } from 'react-router-dom'
 // import peoplePoweredTourismImg from '../assets/What Is People-Powered Tourism.jpg'
 import peoplePoweredTourismImg from "../assets/What is Traveleye's People-Powered Tourism.jpg"
 
@@ -88,6 +89,16 @@ export default function PeoplePoweredTourismIntro() {
               <p className="mt-4 text-sm leading-6 text-[#5f6c87]">{body}</p>
             </article>
           ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <Link
+            to="/what-is-traveleyes-people-powered-tourism"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#214f95] px-6 py-3.5 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:px-8 sm:text-[1.05rem]"
+          >
+            Explore What Is People-Powered Tourism
+            <ArrowRight className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </section>

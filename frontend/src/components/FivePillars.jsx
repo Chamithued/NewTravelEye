@@ -15,7 +15,7 @@ const pillars = [
     accent: 'bg-amber-500',
     image: tourOpsImg,
     ctas: [
-      { label: 'Explore the Travel Collective', variant: 'solid', to: '/people-powered-travel-collective' },
+      { label: 'Explore Traveleye Travel Collective', variant: 'solid', to: '/travel-collective' },
       // { label: 'Co-Own a Travel Venture', variant: 'ghost' },
     ],
   },
@@ -27,7 +27,7 @@ const pillars = [
     accent: 'bg-sky-500',
     image: staysImg,
     ctas: [
-      { label: 'Explore Host Experiences', variant: 'solid', to: '/people-powered-host-experiences' },
+      { label: 'Explore Traveleye Host Experiences', variant: 'solid', to: '/host-experiences' },
       // { label: 'Co-Own an Experience', variant: 'ghost' },
     ],
   },
@@ -39,7 +39,7 @@ const pillars = [
     accent: 'bg-emerald-500',
     image: experientialImg,
     ctas: [
-      { label: 'Explore Ecosystem Support', variant: 'solid', to: '/people-powered-ecosystem-support' },
+      { label: 'Explore Traveleye Ecosystem Support', variant: 'solid', to: '/support-services' },
       // { label: 'Co-Own a Support Service', variant: 'ghost' },
     ],
   },
@@ -63,7 +63,7 @@ const pillars = [
     accent: 'bg-orange-500',
     image: facilitationImg,
     ctas: [
-      { label: 'Explore Destination Facilitation', variant: 'solid', to: '/people-powered-destination-facilitation' },
+      { label: 'Explore Traveleye Destination Facilitation', variant: 'solid', to: '/destination-facilitation' },
       // { label: 'Co-Own a Facilitation Center', variant: 'ghost' },
     ],
   },
@@ -110,7 +110,18 @@ function PillarCard({ pillar }) {
             {pillarDescriptions[pillar.code] ?? ''}
           </p>
 
-              {/* Pillar card buttons hidden by request. */}
+          <div className="flex flex-wrap gap-3">
+            {pillar.ctas.map((cta) => (
+              <a
+                key={cta.label}
+                href={cta.to}
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200/50 bg-[#214f95]/40 px-5 py-3 text-sm font-semibold text-white shadow-lg backdrop-blur-md transition-colors hover:bg-[#214f95]/55 sm:text-base"
+              >
+                {cta.label}
+                <ArrowRight className="h-4 w-4" strokeWidth={2.2} aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </article>
@@ -119,7 +130,7 @@ function PillarCard({ pillar }) {
 
 export default function FivePillars() {
   return (
-    <section className="w-full bg-[#fcfbf7] px-4 pb-8 pt-16 sm:px-6 sm:pb-10 sm:pt-20 lg:px-8 lg:pb-12 lg:pt-24">
+    <section className="w-full bg-[#fcfbf7] px-4 pb-8 pt-18 sm:px-6 sm:pb-10 sm:pt-24 lg:px-8 lg:pb-12 lg:pt-28">
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-8 flex justify-center">
           {/* <div className="inline-flex items-center gap-3 rounded-full bg-[#e9eef8] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm"> */}

@@ -128,7 +128,7 @@ export default function WhyTraveleye() {
             to="/why-traveleye"
             className="w-full rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
           >
-            Discover Why Traveleye
+            Explore Why Choose Traveleye Alliance
           </Link>
         </div>
       </div>

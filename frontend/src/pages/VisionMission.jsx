@@ -94,13 +94,16 @@ export default function VisionMission() {
       </section>
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-          <p>
-            At Traveleye Alliance Sri Lanka, our Vision, Mission, and Values define who we are, inspire what we aspire to achieve, and guide how we work together to build <strong className="font-bold text-[#234c3a]">Sri Lanka&apos;s First People-Powered Tourism Ecosystem</strong>.
-          </p>
-          <p>
-            Together, they reflect our commitment to developing and strengthening micro and small tourism enterprises while creating lasting value for <strong className="font-bold text-[#234c3a]">People, Planet, and Prosperity</strong>.
-          </p>
+        <div className="mx-auto max-w-5xl text-center">
+          <SectionHeading icon={Target} title="Inspired by Our Vision. Guided by Our Mission. Defined by Our Values." />
+          <div className="mx-auto mt-8 max-w-4xl space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            <p>
+              At Traveleye Alliance Sri Lanka, our Vision, Mission, and Values define who we are, inspire what we aspire to achieve, and guide how we work together to build <strong className="font-bold text-[#234c3a]">Sri Lanka&apos;s First People-Powered Tourism Ecosystem</strong>.
+            </p>
+            <p>
+              Together, they reflect our commitment to developing and strengthening micro and small tourism enterprises while creating lasting value for <strong className="font-bold text-[#234c3a]">People, Planet, and Prosperity</strong>.
+            </p>
+          </div>
         </div>
       </section>
 

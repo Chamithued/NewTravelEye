@@ -68,8 +68,8 @@ const dropdownGroups = [
     ],
   },
   {
-    label: 'Grow Together With Traveleye',
-    top: 'Grow Together With',
+    label: 'Grow With Traveleye',
+    top: 'Grow With',
     bottom: 'Traveleye',
     items: [
       { label: 'How You Can Get Involved', to: '/how-you-can-get-involved' },
@@ -153,9 +153,9 @@ export default function Navbar() {
         </button>
 
         <nav className="hidden items-center gap-1 pr-4 sm:pr-6 lg:pr-8 xl:flex" aria-label="Primary">
-          {navItems.map((item) => (
+          {navItems.map((item, index) => (
             item.items ? (
-              <div key={item.to} className="group relative">
+              <div key={item.to} className={`group relative ${index === 0 ? 'mr-2' : ''}`}>
                 <button
                   type="button"
                   className={[
