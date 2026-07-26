@@ -9,9 +9,9 @@ import {
   MessageCircle,
   Network,
   Quote,
-  UserRound,
 } from 'lucide-react'
 import heroImg from '../assets/subhero/about/About Traveleye Alliance.jpg'
+import founderPortrait from '../assets/Pradeepthi Hemachandra.png'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -106,8 +106,12 @@ export default function FounderCEO() {
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-[0.8fr_1.2fr]">
-          <div className="mx-auto flex aspect-[4/5] w-full max-w-sm items-center justify-center rounded-3xl bg-gradient-to-br from-[#e8eff8] to-[#dbe6f3] shadow-lg">
-            <div className="text-center text-[#1f4f93]"><UserRound className="mx-auto h-24 w-24" /><p className="mt-4 font-semibold">Professional Portrait</p></div>
+          <div className="mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl bg-[#f4f4f4] shadow-lg">
+            <img
+              src={founderPortrait}
+              alt="Pradeepthi Hemachandra, Founder and Chief Executive Officer of Traveleye Alliance Sri Lanka"
+              className="h-full w-full object-cover object-center"
+            />
           </div>
           <div className="text-center md:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-[#1f4f93] sm:text-4xl">Pradeepthi Hemachandra</h2>

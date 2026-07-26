@@ -1,4 +1,5 @@
 import { CircleCheck, Clock3, Hourglass } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const journeyItems = [
   {
@@ -208,6 +209,15 @@ export default function OurJourney() {
               <TimelineRow key={item.year} item={item} />
             ))}
           </div>
+        </div>
+
+        <div className="mt-14 flex justify-center lg:mt-16">
+          <Link
+            to="/about"
+            className="inline-flex items-center justify-center rounded-lg bg-[#1f4f93] px-7 py-3 text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#173f78] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1f4f93] focus-visible:ring-offset-2 sm:text-base"
+          >
+            Explore About Traveleye Alliance Sri Lanka
+          </Link>
         </div>
 
         {/* <div className="mt-12 flex flex-col items-center text-center lg:mt-8">

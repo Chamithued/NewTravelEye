@@ -185,14 +185,16 @@ export default function About() {
         <div className="mx-auto max-w-6xl text-center">
           <SectionHeading icon={Handshake} title="Our Role" />
           <p className="mx-auto mt-6 max-w-4xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">As the Builder and Steward of Sri Lanka's First People-Powered Tourism Ecosystem, Traveleye Alliance works to:</p>
-          <ul className="mx-auto mt-8 w-full max-w-4xl space-y-4 pl-12 text-left sm:pl-24">
+          <div className="mx-auto mt-8 grid w-full max-w-5xl gap-5 text-left md:grid-cols-2">
             {rolePoints.map((point) => (
-              <li key={point} className="flex items-start gap-3">
-                <span className="mt-3 h-2 w-2 shrink-0 rounded-full bg-[#1f4f93]" aria-hidden="true" />
-                <span className="text-sm font-bold leading-7 text-[#234c3a] sm:text-base sm:leading-8">{point}</span>
-              </li>
+              <article key={point} className="flex h-full items-start gap-4 rounded-2xl border border-[#dfe9f2] bg-white p-5 shadow-sm sm:gap-5 sm:p-6">
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#E8F1FF] text-[#214F95]">
+                  <Compass className="h-5 w-5" aria-hidden="true" />
+                </span>
+                <p className="pt-1 text-sm font-bold leading-7 text-[#234c3a] sm:text-base sm:leading-8">{point}</p>
+              </article>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 

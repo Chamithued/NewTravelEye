@@ -5,6 +5,7 @@ import {
 	MapPinned,
 	BriefcaseBusiness,
 } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import ecosystemImg from '../assets/Traveleye People-Powered Tourism Ecosystem.jpg'
 
@@ -96,12 +97,12 @@ export default function EcosystemSection() {
 							/>
 						</div>
 
-						<button
-							type="button"
+						<Link
+							to="/traveleye-people-powered-tourism-ecosystem"
 							className="mt-8 w-full whitespace-nowrap rounded-xl bg-[#214f95] px-6 py-4 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem]"
 						>
 							Explore the Traveleye People-Powered Tourism Ecosystem
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

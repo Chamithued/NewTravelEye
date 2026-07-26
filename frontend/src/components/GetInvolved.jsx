@@ -1,4 +1,4 @@
-import { Building2, Globe2, Leaf, Users, HeartHandshake, Handshake, Plane, Sprout } from 'lucide-react'
+import { ArrowRight, Building2, Globe2, Leaf, Users, HeartHandshake, Handshake, Plane, Sprout } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import coOwnImg from '../assets/client/Be A Co-Owner2.jpg'
@@ -22,6 +22,7 @@ const cards = [
     icon: Building2,
     accent: '#275CAD',
     image: BTVP,
+    to: '/become-a-travel-venture-partner',
   },
   {
     title: 'Become a Travel Corridor Partner',
@@ -29,6 +30,7 @@ const cards = [
     icon: Sprout,
     accent: '#15803d',
     image: BTCP,
+    to: '/become-a-travel-corridor-partner',
   },
   {
     title: 'Develop a Place-Inspired Host Stay',
@@ -36,6 +38,7 @@ const cards = [
     icon: Globe2,
     accent: '#0ea5a4',
     image: DPIS,
+    to: '/stays',
   },
   {
     title: 'Develop a People & Place-Inspired Experience',
@@ -43,6 +46,7 @@ const cards = [
     icon: Leaf,
     accent: '#16a34a',
     image: DPAPIE,
+    to: '/experiences',
   },
   {
     title: 'Develop a Tourism Enterprise Support Venture',
@@ -50,6 +54,7 @@ const cards = [
     icon: Globe2,
     accent: '#7c3aed',
     image: DESV,
+    to: '/develop-an-ecosystem-support-venture',
   },
   {
     title: 'Partner in Destination Development',
@@ -57,6 +62,7 @@ const cards = [
     icon: Users,
     accent: '#f59e0b',
     image: movementImg,
+    to: '/partner-in-destination-development',
   },
   {
     title: 'Joint Ventures & Strategic Investments',
@@ -64,6 +70,7 @@ const cards = [
     icon: HeartHandshake,
     accent: '#ef4444',
     image: JVASI,
+    to: '/joint-ventures-strategic-investments',
   },
   {
     title: 'Collaborate with Traveleye Alliance',
@@ -71,6 +78,7 @@ const cards = [
     icon: Handshake,
     accent: '#0f766e',
     image: collaborateImg,
+    to: '/collaborate-with-us',
   },
   {
     title: 'Travel with Purpose',
@@ -78,6 +86,7 @@ const cards = [
     icon: Plane,
     accent: '#2563eb',
     image: purposeImg,
+    to: '/travel-with-purpose',
   },
 ]
 
@@ -114,15 +123,19 @@ function InvolvedCard({ card }) {
           </p>
 
           <div>
-            {/* <button className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/30 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/5 sm:w-auto">
+            <Link
+              to={card.to}
+              aria-label={`Learn more about ${card.title}`}
+              className="inline-flex w-full items-center justify-center gap-2.5 rounded-full border border-white/40 bg-[#0f2a55]/25 px-3.5 py-1.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/15 sm:w-auto"
+            >
               <span>Learn More</span>
-              <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-transparent">
-                <svg className="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+              <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-transparent">
+                <svg className="h-3.5 w-3.5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M5 12h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </span>
-            </button> */}
+            </Link>
           </div>
         </div>
       </div>
@@ -174,6 +187,16 @@ export default function GetInvolved() {
               <InvolvedCard key={c.title} card={c} />
             ))}
           </div>
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <Link
+            to="/how-you-can-get-involved"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#275CAD] px-6 py-4 text-center text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto sm:px-8 sm:text-[1.05rem]"
+          >
+            Explore How You Can Grow Together With Traveleye Alliance
+            <ArrowRight className="h-5 w-5 shrink-0" strokeWidth={2.2} aria-hidden="true" />
+          </Link>
         </div>
 
       </div>

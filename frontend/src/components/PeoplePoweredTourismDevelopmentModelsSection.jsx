@@ -80,7 +80,7 @@ const developmentModels = [
 
 export default function PeoplePoweredTourismDevelopmentModelsSection() {
   return (
-    <section className="w-full bg-[#f4f6f8] px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+    <section className="w-full bg-[#f4f6f8] px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-5xl text-center">
           <div className="home-section-eyebrow mb-5 justify-center">
