@@ -19,6 +19,9 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Experiences from './pages/Experiences'
 import SupportServices from './pages/SupportServices'
+import TraveleyeGuidant from './pages/TraveleyeGuidant'
+import TraveleyeUpSkills from './pages/TraveleyeUpSkills'
+import TraveleyeConnect from './pages/TraveleyeConnect'
 import Stays from './pages/Stays'
 import DestinationFacilitation from './pages/DestinationFacilitation'
 import SriLankaJourneys from './pages/SriLankaJourneys'
@@ -53,6 +56,8 @@ import GuidingPrinciples from './pages/GuidingPrinciples'
 import HostExperiences from './pages/HostExperience'
 import TraveleyeCatalogueLibrary from './pages/TraveleyeCatalogueLibrary'
 import FounderCEO from './pages/FounderCEO'
+import HostStays from './pages/HostStays'
+import TraveleyeTravelExperiences from './pages/TraveleyeTravelExperiences'
 
 function App() {
   return (
@@ -108,9 +113,14 @@ function App() {
           <Route path="experiences" element={<Experiences />} />
           <Route path="destination-facilitation" element={<DestinationFacilitation />} />
           <Route path="support-services" element={<SupportServices />} />
+          <Route path="traveleye-guidant" element={<TraveleyeGuidant />} />
+          <Route path="traveleye-upskills" element={<TraveleyeUpSkills />} />
+          <Route path="traveleye-connect" element={<TraveleyeConnect />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="host-experiences" element={<HostExperiences />} />
+          <Route path="traveleye-host-stays" element={<HostStays />} />
+          <Route path="traveleye-travel-experiences" element={<TraveleyeTravelExperiences />} />
           <Route path="founder-ceo" element={<FounderCEO />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
