@@ -125,7 +125,7 @@ export default function TraveleyeGuidant() {
 
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Target} title="Our Purpose" />
-        <Copy><p className="text-lg font-bold leading-8 text-[#172544]">To develop and strengthen micro and small tourism enterprises through enterprise development, professional advisory, business capability enhancement, and strategic support, creating stronger tourism enterprises, resilient destinations, and inclusive economic growth.</p></Copy>
+        <Copy><p>To develop and strengthen micro and small tourism enterprises through enterprise development, professional advisory, business capability enhancement, and strategic support, creating stronger tourism enterprises, resilient destinations, and inclusive economic growth.</p></Copy>
       </section>
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
@@ -137,32 +137,34 @@ export default function TraveleyeGuidant() {
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={BriefcaseBusiness} title="How We Support Tourism Enterprises" />
-        <Copy><p>Rather than offering isolated consulting services, Traveleye Guidant provides integrated enterprise development and advisory support across every stage of the tourism business lifecycle.</p></Copy>
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={BriefcaseBusiness} title="How We Support Tourism Enterprises" />
+          <Copy><p>Rather than offering isolated consulting services, Traveleye Guidant provides integrated enterprise development and advisory support across every stage of the tourism business lifecycle.</p></Copy>
+          <div className="mt-10 space-y-6 sm:mt-12">
+            {serviceAreas.map(({ title, intro, groups }, index) => (
+              <article key={title} className="py-6 sm:py-8">
+                <div className="mx-auto max-w-4xl text-center">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1f4f93] text-sm font-bold text-white" aria-hidden="true">{index + 1}</span>
+                  <h3 className="mt-4 text-xl font-bold text-[#1f4f93] sm:text-2xl">{title}</h3>
+                  <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">{intro}</p>
+                </div>
+                <div className={`mt-8 grid gap-6 ${groups.length > 1 ? 'lg:grid-cols-3' : 'mx-auto max-w-2xl'}`}>
+                  {groups.map((group) => (
+                    <div key={group.title} className="rounded-2xl border-t-4 border-[#1f4f93] bg-white p-6 shadow-sm sm:p-8">
+                      <h4 className="text-xl font-bold text-[#1f4f93]">{group.title}</h4>
+                      <ul className="mt-5 space-y-3">
+                        {group.items.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-[#475569] sm:text-base"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#1f4f93]" aria-hidden="true" /><span>{item}</span></li>)}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {serviceAreas.map(({ icon: Icon, title, intro, groups }, index) => (
-        <section key={title} className={`${index % 2 === 0 ? 'bg-[#FCFBF8]' : 'bg-[#eef4fa]'} px-4 py-12 sm:px-6 sm:py-16 lg:px-8`}>
-          <div className="mx-auto max-w-6xl">
-            <div className="mx-auto max-w-4xl text-center">
-              <h2 className="flex items-center justify-center gap-3 text-2xl font-bold text-[#1f4f93] sm:text-4xl"><Icon className="h-7 w-7" aria-hidden="true" />{title}</h2>
-              <p className="mt-5 text-sm leading-7 text-[#475569] sm:text-base">{intro}</p>
-            </div>
-            <div className={`mt-10 grid gap-6 ${groups.length > 1 ? 'lg:grid-cols-3' : 'mx-auto max-w-2xl'}`}>
-              {groups.map((group) => (
-                <article key={group.title} className="rounded-2xl border-t-4 border-[#1f4f93] bg-white p-6 shadow-sm sm:p-8">
-                  <h3 className="text-xl font-bold text-[#1f4f93]">{group.title}</h3>
-                  <ul className="mt-5 space-y-3">
-                    {group.items.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-[#475569] sm:text-base"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#1f4f93]" aria-hidden="true" /><span>{item}</span></li>)}
-                  </ul>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
-
-      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Handshake} title="Our Enterprise Development Approach" />
         <Copy>
           <p>Every successful tourism enterprise follows a journey of continuous development.</p>

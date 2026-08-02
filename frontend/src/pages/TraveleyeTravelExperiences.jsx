@@ -7,6 +7,7 @@ import {
   Network,
   Sparkles,
   Sprout,
+  Target,
   Users,
 } from 'lucide-react'
 import heroImg from '../assets/subhero/Develop People & place Inspired Experience.jpg'
@@ -87,10 +88,8 @@ export default function TraveleyeTravelExperiences() {
       </section>
 
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="mx-auto w-fit rounded-full bg-[#dfe6ef] px-5 py-2 text-[1.05rem] font-extrabold text-[#1f4f93] shadow-sm">Our Purpose</p>
-          <p className="mt-4 text-lg font-medium leading-8 text-[#172544]">To develop and strengthen micro and small travel experience enterprises by creating meaningful people and place-inspired visitor experiences that celebrate local identity, strengthen tourism enterprises, enrich visitor journeys, and contribute to sustainable destination development.</p>
-        </div>
+        <SectionHeading icon={Target} title="Our Purpose" />
+        <Copy><p>To develop and strengthen micro and small travel experience enterprises by creating meaningful people and place-inspired visitor experiences that celebrate local identity, strengthen tourism enterprises, enrich visitor journeys, and contribute to sustainable destination development.</p></Copy>
       </section>
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
