@@ -152,37 +152,41 @@ export default function TraveleyeUpSkills() {
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Compass}><strong>Our Learning &amp; Capability Development Framework</strong></SectionHeading>
-        <Copy>
-          <p>At TraveleyeUpSkills, we believe developing capable people requires more than classroom learning.</p>
-          <p>Our integrated learning framework combines structured learning, practical skills development, mentoring, coaching, and continuous professional support to help individuals build successful careers, strengthen tourism enterprises, and contribute to the long-term growth of Sri Lanka&apos;s tourism industry.</p>
-        </Copy>
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Compass}><strong>Our Learning &amp; Capability Development Framework</strong></SectionHeading>
+          <Copy>
+            <p>At TraveleyeUpSkills, we believe developing capable people requires more than classroom learning.</p>
+            <p>Our integrated learning framework combines structured learning, practical skills development, mentoring, coaching, and continuous professional support to help individuals build successful careers, strengthen tourism enterprises, and contribute to the long-term growth of Sri Lanka&apos;s tourism industry.</p>
+          </Copy>
+          <div className="mt-10 space-y-6 sm:mt-12">
+            {developmentAreas.map(({ title, description, extra, prefix, groups }, index) => (
+              <article key={index} className="py-6 sm:py-8">
+                <div className="mx-auto max-w-4xl text-center">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1f4f93] text-sm font-bold text-white" aria-hidden="true">{index + 1}</span>
+                  <h3 className="mt-4 text-xl font-bold text-[#1f4f93] sm:text-2xl">{title}</h3>
+                  <div className="mt-4 space-y-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+                    <p>{description}</p>
+                    {extra ? <p>{extra}</p> : null}
+                    {prefix ? <p>{prefix}</p> : null}
+                  </div>
+                </div>
+                <div className={`mt-8 grid gap-6 ${groups.length > 1 ? 'md:grid-cols-2' : 'mx-auto max-w-3xl'}`}>
+                  {groups.map((group, groupIndex) => (
+                    <div key={groupIndex} className="rounded-2xl border-t-4 border-[#1f4f93] bg-white p-6 shadow-sm sm:p-8">
+                      {group.title ? <h4 className="text-xl font-bold text-[#1f4f93]">{group.title}</h4> : null}
+                      <ul className={`${group.title ? 'mt-5' : ''} grid gap-3 ${groups.length === 1 ? 'sm:grid-cols-2' : ''}`}>
+                        {group.items.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-[#475569] sm:text-base"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#1f4f93]" aria-hidden="true" /><span>{item}</span></li>)}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
-      {developmentAreas.map(({ icon: Icon, title, description, extra, prefix, groups }, index) => (
-        <section key={index} className={`${index % 2 === 0 ? 'bg-[#FCFBF8]' : 'bg-[#eef4fa]'} px-4 py-12 sm:px-6 sm:py-16 lg:px-8`}>
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading icon={Icon}>{title}</SectionHeading>
-            <Copy>
-              <p>{description}</p>
-              {extra ? <p>{extra}</p> : null}
-              {prefix ? <p>{prefix}</p> : null}
-            </Copy>
-            <div className={`mt-10 grid gap-6 ${groups.length > 1 ? 'md:grid-cols-2' : 'mx-auto max-w-3xl'}`}>
-              {groups.map((group, groupIndex) => (
-                <article key={groupIndex} className="rounded-2xl border-t-4 border-[#1f4f93] bg-white p-6 shadow-sm sm:p-8">
-                  {group.title ? <h3 className="text-xl font-bold text-[#1f4f93]">{group.title}</h3> : null}
-                  <ul className={`${group.title ? 'mt-5' : ''} grid gap-3 ${groups.length === 1 ? 'sm:grid-cols-2' : ''}`}>
-                    {group.items.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-[#475569] sm:text-base"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#1f4f93]" aria-hidden="true" /><span>{item}</span></li>)}
-                  </ul>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
-
-      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Lightbulb}><strong>Our Learning Philosophy</strong></SectionHeading>
         <Copy>
           <p>At TraveleyeUpSkills, we believe stronger tourism begins with stronger people.</p>
