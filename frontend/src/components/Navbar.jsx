@@ -20,9 +20,28 @@ const navItems = [
       { label: 'Traveleye Island Journeys', to: '/island-journeys' },
     ],
   },
-  { top: 'Traveleye', bottom: 'Host Experiences', to: '/host-experiences' },
+  {
+    top: 'Traveleye',
+    bottom: 'Host Experiences',
+    to: '/host-experiences',
+    items: [
+      { label: 'About Traveleye Host Experiences', to: '/host-experiences' },
+      { label: 'Traveleye Host Stays', to: '/traveleye-host-stays' },
+      { label: 'Traveleye Travel Experiences', to: '/traveleye-travel-experiences' },
+    ],
+  },
   { top: 'Traveleye', bottom: 'Destination Facilitation', to: '/destination-facilitation' },
-  { top: 'Traveleye', bottom: 'Ecosystem Support', to: '/support-services' },
+  {
+    top: 'Traveleye',
+    bottom: 'Ecosystem Support',
+    to: '/support-services',
+    items: [
+      { label: 'About Traveleye Ecosystem Support', to: '/support-services' },
+      { label: 'Traveleye Guidant', to: '/traveleye-guidant' },
+      { label: 'Traveleye UpSkills', to: '/traveleye-upskills' },
+      { label: 'Traveleye Connect', to: '/traveleye-connect' },
+    ],
+  },
   // { top: 'Privé', bottom: 'Collection', to: '/stays' },
 ]
 
@@ -40,6 +59,7 @@ const dropdownGroups = [
       { label: 'Media & Press', to: '/media-press' },
       { label: 'Traveleye Catalogue Library', to: '/traveleye-catalogue-library' },
       { label: 'Founder & CEO', to: '/founder-ceo' },
+      { label: 'Contact Us', to: '/contact' },
     ],
   },
   {
@@ -72,7 +92,7 @@ const dropdownGroups = [
     top: 'Grow With',
     bottom: 'Traveleye',
     items: [
-      { label: 'How You Can Get Involved', to: '/how-you-can-get-involved' },
+      { label: 'How You Can Grow With Traveleye', to: '/how-you-can-get-involved' },
       { label: 'Become a Travel Venture Partner', to: '/become-a-travel-venture-partner' },
       { label: 'Become a Travel Corridor Partner', to: '/become-a-travel-corridor-partner' },
       { label: 'Develop a Place-Inspired Stay', to: '/stays' },
@@ -172,7 +192,14 @@ export default function Navbar() {
                   <ChevronDown />
                 </button>
 
-                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-max min-w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                <div
+                  className={[
+                    'invisible absolute top-full z-50 mt-2 w-max min-w-80 max-w-[calc(100vw-2rem)] opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100',
+                    index === navItems.length - 1
+                      ? 'right-0'
+                      : 'left-1/2 -translate-x-1/2',
+                  ].join(' ')}
+                >
                   <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                     {item.items.map((dropdownItem) => (
                       <NavLink
@@ -230,7 +257,7 @@ export default function Navbar() {
             )
           ))}
 
-          {dropdownGroups.map((group) => (
+          {dropdownGroups.map((group, groupIndex) => (
             <div key={group.label} className="group relative">
               <button
                 type="button"
@@ -253,7 +280,14 @@ export default function Navbar() {
                 <ChevronDown />
               </button>
 
-              <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-max min-w-80 max-w-[calc(100vw-2rem)] -translate-x-1/2 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100">
+              <div
+                className={[
+                  'invisible absolute top-full z-50 mt-2 w-max min-w-80 max-w-[calc(100vw-2rem)] opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100',
+                  groupIndex === dropdownGroups.length - 1
+                    ? 'right-0 left-auto translate-x-0'
+                    : 'left-1/2 -translate-x-1/2',
+                ].join(' ')}
+              >
                 <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-lg shadow-slate-200/60">
                   {group.items.map((item) => (
                     <NavLink
@@ -287,6 +321,7 @@ export default function Navbar() {
           >
             <span className="whitespace-nowrap">Contact Us</span>
           </NavLink>
+
         </nav>
       </div>
 
@@ -383,20 +418,13 @@ export default function Navbar() {
                   type="button"
                   onClick={() => toggleGroup(group.label)}
                   className={[
-                    'flex w-full items-center justify-between rounded-md px-2 py-2 text-xs font-semibold transition-colors',
+                    'flex w-full items-center justify-between rounded-md px-2 py-2 text-[0.9rem] font-semibold transition-colors',
                     isGroupActive(group)
                       ? 'text-[#0f3c68]'
                       : 'text-slate-700 hover:bg-slate-100 hover:text-[#0f3c68]',
                   ].join(' ')}
                 >
-                  {group.top && group.bottom ? (
-                    <span className="inline-flex flex-col items-start leading-tight">
-                      <span>{group.top}</span>
-                      <span>{group.bottom}</span>
-                    </span>
-                  ) : (
-                    <span>{group.label}</span>
-                  )}
+                  <span>{group.label}</span>
                   <svg
                     className={`h-4 w-4 transition-transform ${
                       expandedGroups[group.label] ? 'rotate-180' : ''
@@ -417,7 +445,7 @@ export default function Navbar() {
                         onClick={() => setMobileOpen(false)}
                         className={({ isActive }) =>
                           [
-                            'block rounded-md px-2 py-2 text-xs transition-colors',
+                            'block rounded-md px-2 py-2 text-[0.9rem] transition-colors',
                             isActive
                               ? 'bg-[#1C4686] font-semibold text-white'
                               : 'text-slate-600 hover:bg-[#1C4686] hover:text-white',
@@ -444,6 +472,7 @@ export default function Navbar() {
             >
               Contact Us
             </NavLink>
+
           </div>
         </div>
       )}

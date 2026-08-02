@@ -67,13 +67,14 @@ const deliveryMechanisms = [
   },
   {
     icon: GraduationCap,
-    title: 'TraveleyeUpSkills',
+    title: 'Traveleye Up Skills',
     copy: 'Building tourism capability through education, entrepreneurship programmes, mentoring, professional development, leadership training, and practical learning.',
   },
   {
     icon: Network,
     title: 'Traveleye Connect',
-    copy: 'Strengthening tourism through digital solutions, technology platforms, innovation, information systems, ecosystem connectivity, and knowledge sharing.',
+    tagline: 'Connecting People. Coordinating Tourism.',
+    copy: 'Connecting tourism enterprises, travellers, destinations, partners, and support services through collaboration, communication, coordination, visitor support, and integrated digital solutions.',
   },
 ]
 
@@ -198,10 +199,11 @@ export default function SupportServices() {
           <SectionHeading icon={Target} title="Delivering Ecosystem Support" />
           <Copy><p>The <strong>Traveleye Ecosystem Support</strong> platform delivers these areas of operation through three complementary implementation mechanisms:</p></Copy>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
-            {deliveryMechanisms.map(({ icon: Icon, title, copy }) => (
+            {deliveryMechanisms.map(({ icon: Icon, title, tagline, copy }) => (
               <article key={title} className="rounded-2xl border border-[#e5eee8] bg-[#FCFBF8] p-6 text-center shadow-sm sm:p-8">
                 <span className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]"><Icon className="h-6 w-6" /></span>
                 <h3 className="mt-4 text-xl font-bold text-[#1f4f93]">{title}</h3>
+                {tagline ? <p className="mt-2 font-bold text-[#172544]">{tagline}</p> : null}
                 <p className="mt-3 text-sm leading-7 text-[#475569] sm:text-base">{copy}</p>
               </article>
             ))}

@@ -46,6 +46,21 @@ const tourismAlignment = [
     title: 'Community-Centred Development',
     body: 'Supporting meaningful participation, local entrepreneurship, capability development, and collaborative decision-making that enables communities to actively contribute to and benefit from tourism development.',
   },
+  {
+    icon: BriefcaseBusiness,
+    title: 'Inclusive Tourism Entrepreneurship',
+    body: 'Recognising entrepreneurship as a catalyst for inclusive economic development by supporting the creation, growth, and sustainability of micro and small tourism enterprises that generate employment, strengthen local economies, and expand opportunities for women and youth.',
+  },
+  {
+    icon: Lightbulb,
+    title: 'Tourism Innovation and Digital Transformation',
+    body: 'Encouraging innovation, technology adoption, digital readiness, and collaborative solutions that strengthen tourism enterprises, enhance visitor experiences, improve destination competitiveness, and support the future development of tourism.',
+  },
+  {
+    icon: Globe2,
+    title: 'Resilient Tourism Development',
+    body: 'Supporting tourism systems that can adapt to changing economic conditions, environmental challenges, traveller expectations, technological advancements, and global disruptions while ensuring long-term resilience and sustainability.',
+  },
 ]
 
 const sdgs = [
@@ -115,7 +130,7 @@ const localAlignment = [
   {
     icon: Globe2,
     title: 'Sri Lankan Realities',
-    body: "The Framework reflects Sri Lanka's distinctive tourism landscape, recognising its diverse cultures, heritage, communities, destinations, natural environments, and entrepreneurial potential. Rather than applying global concepts uniformly, it adapts them to support the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.",
+    body: "The Framework reflects Sri Lanka's distinctive tourism landscape, recognising its diverse cultures, heritage, communities, destinations, natural environments, entrepreneurial potential, and evolving tourism opportunities. Rather than applying global concepts uniformly, it adapts them to support the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.",
   },
 ]
 
@@ -218,15 +233,16 @@ export default function GloballyAlignedLocallyGrounded() {
         <div className="mx-auto max-w-5xl text-center">
           <p className="mx-auto w-fit rounded-full bg-[#dfe6ef] px-5 py-2 text-[1.05rem] font-extrabold text-[#1f4f93] shadow-sm">Purpose</p>
           <p className="mt-2 text-lg font-bold leading-8 text-[#172544]">
-            To demonstrate how the People-Powered Tourism Framework aligns with internationally recognised tourism concepts and global development priorities while remaining grounded in the unique realities, opportunities, and aspirations of Sri Lanka.
+            To demonstrate how the <strong>People-Powered Tourism Framework</strong> aligns with internationally recognised tourism principles, global development priorities, and emerging best practices while remaining grounded in the unique realities, opportunities, and aspirations of Sri Lanka.
           </p>
           <div className="mt-12">
             <SectionHeading icon={Globe2} title="A Framework Informed by Global Thinking" />
           </div>
           <TextPanel>
-            <p>The <strong>People-Powered Tourism Global Alignment</strong> forms the external foundation of the <strong>People-Powered Tourism Framework</strong>. It demonstrates how the Framework is informed by internationally recognised tourism concepts and global development priorities while remaining responsive to the unique characteristics of Sri Lanka&apos;s tourism ecosystem.</p>
+            <p>The <strong>People-Powered Tourism Global Alignment</strong> forms the external foundation of the <strong>People-Powered Tourism Framework</strong>. It demonstrates how the Framework is informed by internationally recognised tourism principles, global development priorities, and evolving tourism thinking while remaining responsive to the unique characteristics of Sri Lanka&apos;s tourism ecosystem.</p>
             <p>While the <strong>People-Powered Tourism Guiding Principles</strong> establish the internal values that guide every decision within the Framework, <strong>Global Alignment</strong> provides the broader international context that informs its development.</p>
-            <p>Rather than replicating existing tourism models, the Framework draws upon recognised tourism thinking and adapts it through a People-Powered approach that reflects Sri Lanka&apos;s people, places, tourism enterprises, destinations, culture, and development priorities.</p>
+            <p>Rather than replicating existing tourism models, the Framework draws upon recognised tourism knowledge and adapts it through a <strong>People-Powered</strong> approach that reflects Sri Lanka&apos;s people, places, tourism enterprises, destinations, culture, entrepreneurial potential, and national development priorities.</p>
+            <p>As tourism continues to evolve, the Framework also evolves by learning from emerging global trends, innovation, research, and international best practices while remaining firmly grounded in Sri Lanka&apos;s local realities.</p>
             <p>Together, these global and local perspectives ensure that the Framework remains internationally relevant while delivering practical and meaningful solutions for Sri Lanka&apos;s tourism ecosystem.</p>
           </TextPanel>
         </div>
@@ -236,9 +252,9 @@ export default function GloballyAlignedLocallyGrounded() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Waypoints} title="Why Global Alignment Matters" />
           <TextPanel>
-            <p>Tourism operates within an increasingly connected world where destinations, travellers, tourism enterprises, governments, investors, development organisations, and educational institutions share common aspirations for sustainable, inclusive, and resilient tourism development.</p>
-            <p>By aligning with internationally recognised tourism concepts and global development priorities, the People-Powered Tourism Framework builds upon established knowledge while recognising that every destination must respond to its own social, cultural, environmental, and economic context.</p>
-            <p>Rather than applying international models unchanged, the Framework interprets global perspectives through the realities of Sri Lanka, creating an approach that is both internationally informed and locally relevant.</p>
+            <p>Tourism operates within an increasingly connected world where destinations, travellers, tourism enterprises, governments, investors, development organisations, educational institutions, and technology providers share common aspirations for sustainable, inclusive, resilient, and innovative tourism development.</p>
+            <p>By aligning with internationally recognised tourism principles and global development priorities, the People-Powered Tourism Framework builds upon established knowledge while recognising that every destination must respond to its own social, cultural, environmental, economic, and technological context.</p>
+            <p>Rather than applying international approaches unchanged, the Framework interprets global perspectives through the realities of Sri Lanka, creating an approach that is both internationally informed and locally relevant.</p>
           </TextPanel>
         </div>
       </section>
@@ -247,7 +263,7 @@ export default function GloballyAlignedLocallyGrounded() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Network} title="International Tourism Alignment" />
           <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            The People-Powered Tourism Framework aligns with internationally recognised tourism concepts that encourage responsible, inclusive, resilient, and sustainable tourism development.
+            The <strong>People-Powered Tourism Framework</strong> aligns with internationally recognised tourism principles that encourage responsible, inclusive, resilient, innovative, and sustainable tourism development.
           </p>
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             {tourismAlignment.map((item) => (
@@ -259,9 +275,9 @@ export default function GloballyAlignedLocallyGrounded() {
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Target} title="Supporting the United Nations Sustainable Development Goals" />
+          <SectionHeading icon={Target} title="Contributing to Global Development Priorities" />
           <TextPanel>
-            <p>The People-Powered Tourism Framework also contributes to the broader aspirations of the <strong>United Nations Sustainable Development Goals (SDGs)</strong> by encouraging tourism that creates inclusive economic opportunities, strengthens communities, supports environmental stewardship, and promotes long-term prosperity.</p>
+            <p>The <strong>People-Powered Tourism Framework</strong> contributes to internationally recognised global development priorities, including the <strong>United Nations Sustainable Development Goals (SDGs)</strong>, by encouraging tourism that creates inclusive economic opportunities, strengthens communities, supports environmental stewardship, and promotes long-term prosperity.</p>
             <p>Rather than treating the SDGs as isolated objectives, the Framework integrates their underlying principles throughout its interconnected components, encouraging tourism that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
             <p>The Framework particularly contributes to:</p>
           </TextPanel>
@@ -271,7 +287,7 @@ export default function GloballyAlignedLocallyGrounded() {
             ))}
           </div>
           <p className="mx-auto mt-8 max-w-5xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            By contributing to these global priorities, the Framework demonstrates how tourism can support not only stronger tourism enterprises and destinations but also broader economic, social, cultural, and environmental wellbeing.
+            By contributing to these global priorities, the Framework demonstrates how tourism can support stronger tourism enterprises, resilient destinations, inclusive economic development, environmental stewardship, and broader social wellbeing.
           </p>
         </div>
       </section>
@@ -280,7 +296,7 @@ export default function GloballyAlignedLocallyGrounded() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Users} title="Local People-Powered Alignment" />
           <TextPanel>
-            <p>While informed by global tourism thinking, the Framework is distinguished by its <strong>People-Powered interpretation</strong> of tourism development, shaped by Sri Lanka&apos;s unique context, opportunities, and aspirations.</p>
+            <p>While informed by global tourism thinking, the Framework is distinguished by its <strong>People-Powered interpretation of tourism development</strong>, shaped by Sri Lanka&apos;s unique context, opportunities, culture, entrepreneurial potential, and aspirations.</p>
           </TextPanel>
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             {localAlignment.map((item) => (
@@ -294,8 +310,8 @@ export default function GloballyAlignedLocallyGrounded() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Globe2} title="Globally Aligned, Locally Grounded" />
           <TextPanel>
-            <p>The strength of the People-Powered Tourism Framework lies in its ability to connect internationally recognised tourism thinking with practical action that responds to Sri Lanka&apos;s unique context.</p>
-            <p>Rather than viewing global and local perspectives as competing approaches, the Framework integrates them into a connected model that is internationally credible, locally relevant, and practically applicable.</p>
+            <p>The strength of the <strong>People-Powered Tourism Framework</strong> lies in its ability to connect internationally recognised tourism thinking with practical action that responds to Sri Lanka&apos;s unique context.</p>
+            <p>Rather than viewing global and local perspectives as competing approaches, the Framework integrates them into a connected model that is internationally credible, locally relevant, adaptable, and practically applicable.</p>
             <p>This balanced approach enables the Framework to contribute to stronger tourism enterprises, resilient destinations, collaborative partnerships, thriving local economies, and more connected tourism ecosystems.</p>
           </TextPanel>
         </div>
@@ -305,7 +321,7 @@ export default function GloballyAlignedLocallyGrounded() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={ArrowRight} title="Supporting the People-Powered Tourism Framework" />
           <TextPanel>
-            <p>Together with the <strong>People-Powered Tourism Guiding Principles</strong>, <strong>Global Alignment</strong> provides the foundation upon which the Framework&apos;s:</p>
+            <p>Together with the <strong>People-Powered Tourism Guiding Principles</strong>, <strong>Global Alignment</strong> provides the strategic foundation upon which the Framework&apos;s:</p>
           </TextPanel>
           <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {frameworkComponents.map((item) => (
@@ -315,8 +331,8 @@ export default function GloballyAlignedLocallyGrounded() {
             ))}
           </div>
           <TextPanel>
-            <p>are developed and continuously strengthened.</p>
-            <p>By combining international perspectives with local relevance, the Framework transforms recognised tourism thinking into practical strategies that develop and strengthen micro and small tourism enterprises while creating lasting value across Sri Lanka&apos;s tourism ecosystem.</p>
+            <p>are developed, implemented, evaluated, and continuously strengthened.</p>
+            <p>By combining international perspectives with local relevance, the Framework transforms globally recognised tourism thinking into practical strategies that develop and strengthen micro and small tourism enterprises while creating lasting value across Sri Lanka&apos;s tourism ecosystem.</p>
           </TextPanel>
         </div>
       </section>
@@ -326,8 +342,8 @@ export default function GloballyAlignedLocallyGrounded() {
           <SectionHeading icon={Sprout} title="Looking Ahead" />
           <TextPanel>
             <p>Tourism continues to evolve in response to changing economies, technologies, traveller expectations, environmental priorities, and global development agendas.</p>
-            <p>The People-Powered Tourism Framework is designed as a living framework that continues to evolve alongside these changes while remaining grounded in its commitment to People-Powered Tourism.</p>
-            <p>By learning from international perspectives while responding to Sri Lanka&apos;s changing needs and opportunities, the Framework will remain relevant, adaptable, and capable of supporting stronger tourism enterprises, resilient destinations, collaborative partnerships, and lasting prosperity for future generations.</p>
+            <p>The <strong>People-Powered Tourism Framework</strong> is designed as a living framework that evolves alongside these changes while remaining grounded in its commitment to <strong>People-Powered Tourism</strong>.</p>
+            <p>By learning from international perspectives, embracing innovation, and responding to Sri Lanka&apos;s changing needs and opportunities, the Framework will remain relevant, adaptable, and capable of supporting stronger tourism enterprises, resilient destinations, collaborative partnerships, and lasting prosperity for future generations.</p>
           </TextPanel>
         </div>
       </section>
@@ -336,8 +352,8 @@ export default function GloballyAlignedLocallyGrounded() {
         <div className="mx-auto max-w-4xl text-center">
           <SectionHeading icon={Handshake} title="Grow with Traveleye Alliance" />
           <TextPanel>
-            <p>Whether you are a government agency, tourism authority, development organisation, educational institution, investor, entrepreneur, tourism enterprise, community organisation, or strategic partner, Traveleye Alliance Sri Lanka invites you to contribute to a tourism future that is <strong>globally aligned and locally grounded</strong>.</p>
-            <p>Together, we can develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem by combining international perspectives with local knowledge, meaningful participation, collaborative partnerships, responsible stewardship, and a shared commitment to creating lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+            <p>Whether you are a government agency, tourism authority, development organisation, educational institution, investor, entrepreneur, tourism enterprise, community organisation, or strategic partner, <strong>Traveleye Alliance Sri Lanka</strong> invites you to contribute to a tourism future that is <strong>globally aligned and locally grounded</strong>.</p>
+            <p>Together, we can develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem by combining international perspectives with local knowledge, meaningful participation, innovation, collaborative partnerships, responsible stewardship, and a shared commitment to creating lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
           </TextPanel>
         </div>
       </section>
