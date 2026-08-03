@@ -52,10 +52,10 @@ jobs:
             set ftp:ssl-force true;
             set ftp:ssl-protect-data true;
             set ssl:verify-certificate true;
+            set cmd:fail-exit true;
 
-            open -p 21 \
-              -u \"$FTP_USERNAME\",\"$FTP_PASSWORD\" \
-              \"$FTP_SERVER\";
+            open -p 21 \"$FTP_SERVER\";
+            user \"$FTP_USERNAME\" \"$FTP_PASSWORD\";
 
             mirror --reverse \
               --delete \
