@@ -1,0 +1,68 @@
+name: Deploy React website to Namecheap
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Download the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # Install Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      # Install packages
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      # Generate the dist folder
+      - name: Build React website
+        working-directory: frontend
+        run: npm run build
+
+      # Install the secure FTP deployment utility
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+
+      # Upload dist contents to public_html
+      - name: Deploy to Namecheap
+        env:
+          FTP_SERVER: ${{ secrets.NAMECHEAP_FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.NAMECHEAP_FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.NAMECHEAP_FTP_PASSWORD }}
+        run: |
+          lftp -c "
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            set ssl:verify-certificate true;
+
+            open -p 21 \
+              -u \"$FTP_USERNAME\",\"$FTP_PASSWORD\" \
+              \"$FTP_SERVER\";
+
+            mirror --reverse \
+              --delete \
+              --verbose \
+              --exclude-glob '.well-known*' \
+              --exclude-glob 'cgi-bin*' \
+              frontend/dist/ /;
+
+            bye
+          "
