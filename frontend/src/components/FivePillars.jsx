@@ -27,7 +27,7 @@ const pillars = [
     accent: 'bg-sky-500',
     image: staysImg,
     ctas: [
-      { label: 'Explore Traveleye Host Experiences', variant: 'solid', to: '/host-experiences' },
+      { label: 'Explore Traveleye Host Experiences', variant: 'solid', to: '/about-traveleye-host-experiences' },
       // { label: 'Co-Own an Experience', variant: 'ghost' },
     ],
   },

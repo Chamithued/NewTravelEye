@@ -118,7 +118,8 @@ function App() {
           <Route path="traveleye-connect" element={<TraveleyeConnect />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="host-experiences" element={<HostExperiences />} />
+          <Route path="about-traveleye-host-experiences" element={<HostExperiences />} />
+          <Route path="host-experiences" element={<Navigate to="/about-traveleye-host-experiences" replace />} />
           <Route path="traveleye-host-stays" element={<HostStays />} />
           <Route path="traveleye-travel-experiences" element={<TraveleyeTravelExperiences />} />
           <Route path="founder-ceo" element={<FounderCEO />} />
