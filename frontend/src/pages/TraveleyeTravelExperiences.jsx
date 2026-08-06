@@ -63,14 +63,14 @@ export default function TraveleyeTravelExperiences() {
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[48vh] w-full items-center overflow-hidden bg-slate-100">
-        <img src={heroImg} alt="Traveleye Travel Experiences" className="absolute inset-0 h-full w-full object-cover object-center brightness-95" />
+        <img src={heroImg} alt="Traveleye StoryTrail" className="absolute inset-0 h-full w-full object-cover object-center brightness-95" />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 flex w-full justify-center px-4 py-12 text-center sm:px-6 lg:px-8">
           <div>
             <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
-              TRAVELEYE TRAVEL EXPERIENCES
+              TRAVELEYE STORYTRAIL
             </h1>
-            <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Creating Meaningful Experiences Through People and Place</p>
+            <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Creating Meaningful Experiences Through People</p>
             <p className="mt-2 text-sm font-bold text-white/95 sm:text-base">People &amp; Place-Inspired Experience Development</p>
           </div>
         </div>
@@ -81,9 +81,9 @@ export default function TraveleyeTravelExperiences() {
         <Copy>
           <p>The most memorable journeys are not defined simply by the places people visit.</p>
           <p>They are shaped by the people they meet, the stories they hear, the traditions they experience, the flavours they taste, the landscapes they explore, and the genuine connections they create along the way.</p>
-          <p><strong>Traveleye Travel Experiences</strong> is the people and place-inspired experience development initiative of <strong>Traveleye Host Experiences</strong>, established to develop authentic travel experiences that celebrate Sri Lanka&apos;s people, culture, heritage, nature, traditions, creativity, and local way of life while supporting the development and strengthening of micro and small experience enterprises.</p>
-          <p>As part of the <strong>People-Powered Tourism Ecosystem</strong>, Traveleye Travel Experiences encourages tourism experiences that are locally inspired, community connected, and authentically delivered, creating meaningful opportunities for experience creators, entrepreneurs, local communities, and travellers.</p>
-          <p>Whether developing a cultural encounter, culinary journey, wellness retreat, village experience, nature adventure, or specialised interest experience, every Travel Experience is designed to create lasting memories while strengthening destination identity and local tourism enterprises.</p>
+          <p><strong>TraveleyeStoryTrail</strong> is the people and place-inspired experience development brand of <strong>Traveleye Host Experiences</strong>, established to develop authentic travel experiences that celebrate Sri Lanka&apos;s people, culture, heritage, nature, traditions, creativity, and local way of life while supporting the development and strengthening of micro and small experience enterprises.</p>
+          <p>As part of the <strong>People-Powered Tourism Ecosystem</strong>, TraveleyeStoryTrail encourages tourism experiences that are locally inspired, community connected, and authentically delivered, creating meaningful opportunities for experience creators, entrepreneurs, local communities, and travellers.</p>
+          <p>Whether developing a cultural encounter, culinary journey, wellness retreat, village experience, nature adventure, or specialised interest experience, every TraveleyeStoryTrail experience is designed to create lasting memories while strengthening destination identity and local tourism enterprises.</p>
         </Copy>
       </section>
 
@@ -99,10 +99,10 @@ export default function TraveleyeTravelExperiences() {
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Compass} title="Our Experience Development Categories" />
+        <SectionHeading icon={Compass} title="Our StoryTrail Development Categories" />
         <Copy>
           <p>Every destination has unique stories, traditions, landscapes, skills, and communities waiting to be experienced.</p>
-          <p>Traveleye Travel Experiences supports the development of a diverse range of people and place-inspired experiences, including:</p>
+          <p>TraveleyeStoryTrail supports the development of a diverse range of people and place-inspired experiences, including:</p>
         </Copy>
         <CheckList items={experienceCategories} />
       </section>
@@ -110,7 +110,7 @@ export default function TraveleyeTravelExperiences() {
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Lightbulb} title="Our Experience Development Approach" />
         <Copy>
-          <p>Every meaningful experience begins with understanding what makes a destination unique.</p>
+          <p>Every meaningful TraveleyeStoryTrail experience begins with understanding what makes a destination unique.</p>
           <p>Rather than creating generic tourism activities, we encourage experience creators to design experiences inspired by local people, culture, heritage, traditions, landscapes, creativity, and everyday life.</p>
           <p>By transforming local knowledge and authentic traditions into engaging visitor experiences, experience creators contribute to stronger tourism enterprises, more memorable journeys, and vibrant destinations.</p>
           <p><strong>Discover Local Stories → Celebrate People &amp; Place → Design Authentic Experiences → Create Meaningful Visitor Connections → Strengthen Local Tourism</strong></p>
@@ -120,9 +120,9 @@ export default function TraveleyeTravelExperiences() {
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={HeartHandshake} title="Meaningful Visitor Experiences" />
         <Copy>
-          <p>Meaningful travel experiences create genuine connections between visitors and destinations.</p>
-          <p>Every experience should inspire curiosity, encourage participation, celebrate local identity, and leave travellers with lasting memories that extend beyond sightseeing.</p>
-          <p>By encouraging interaction, storytelling, creativity, learning, and shared experiences, Travel Experiences transform visitors from observers into active participants in the destination.</p>
+          <p>At TraveleyeStoryTrail, meaningful experiences create genuine connections between visitors and destinations.</p>
+          <p>Every StoryTrail experience should inspire curiosity, encourage participation, celebrate local identity, and leave travellers with lasting memories that extend beyond sightseeing.</p>
+          <p>By encouraging interaction, storytelling, creativity, learning, and shared experiences, TraveleyeStoryTrail transforms visitors from observers into active participants in the destination.</p>
         </Copy>
       </section>
 
@@ -130,20 +130,35 @@ export default function TraveleyeTravelExperiences() {
         <SectionHeading icon={Leaf} title="Sustainability & Shared Stewardship" />
         <Copy>
           <p>Authentic experiences should also contribute to protecting the places and communities that make them possible.</p>
-          <p>Traveleye Travel Experiences encourages responsible tourism practices that respect local culture, preserve heritage, protect natural environments, strengthen community participation, and create shared economic value.</p>
+          <p>TraveleyeStoryTrail encourages responsible tourism practices that respect local culture, preserve heritage, protect natural environments, strengthen community participation, and create shared economic value.</p>
           <p>Through shared stewardship, experience creators help ensure tourism continues to benefit both present and future generations.</p>
         </Copy>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Network} title="Supporting Experience Creators Through the Ecosystem" />
+        <SectionHeading icon={Network} title="Choose Your StoryTrail Pathway" />
         <Copy>
-          <p>Developing successful travel experiences requires creativity, knowledge, business capability, and market access.</p>
-          <p>Through <strong>Traveleye Guidant</strong>, experience creators can access enterprise development and professional advisory services to establish, strengthen, and grow their tourism enterprises.</p>
-          <p>Through <strong>Traveleye UpSkills</strong>, experience creators can develop practical skills, visitor engagement techniques, storytelling capabilities, hospitality standards, and operational knowledge needed to deliver memorable visitor experiences.</p>
-          <p>Through <strong>Traveleye Travel Collective</strong>, completed travel experiences can connect with tourism markets, travel partners, and visitors both locally and internationally.</p>
-          <p>Together, these platforms help transform creative ideas into sustainable tourism enterprises.</p>
+          <p>Every experience creator has a unique vision.</p>
+          <p>Some wish to develop and operate their own independent experience brand, while others may prefer to become part of a recognised network that reflects authentic experiences, shared standards, and the People-Powered Tourism philosophy.</p>
+          <p>TraveleyeStoryTrail offers two pathways to support your journey.</p>
         </Copy>
+        <div className="mx-auto mt-8 grid max-w-6xl gap-6 lg:grid-cols-2">
+          <article className="rounded-2xl border border-[#dfe8f1] bg-[#eef4fa] p-6 shadow-sm sm:p-8">
+            <h3 className="text-xl font-bold text-[#1f4f93] sm:text-2xl">Operate Under Your Own Brand</h3>
+            <div className="mt-4 space-y-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              <p>Receive comprehensive support through <strong>Traveleye Host Experiences</strong> to develop, establish, strengthen, and grow your own travel experience enterprise under your own brand and business identity.</p>
+              <p>Whether you are creating your first visitor experience or expanding an existing tourism product, Traveleye Host Experiences provides the professional guidance, knowledge, and development support needed to transform your ideas into authentic and memorable visitor experiences.</p>
+            </div>
+          </article>
+          <article className="rounded-2xl border border-[#dfe8f1] bg-[#eef4fa] p-6 shadow-sm sm:p-8">
+            <h3 className="text-xl font-bold text-[#1f4f93] sm:text-2xl">Powered by TraveleyeStoryTrail</h3>
+            <div className="mt-4 space-y-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              <p>Experience creators seeking a deeper partnership may choose to develop and deliver their visitor experiences as <strong>Powered by TraveleyeStoryTrail</strong> experiences.</p>
+              <p>This pathway is designed for experience creators who wish to align with the TraveleyeStoryTrail philosophy, people and place-inspired experience approach, quality standards, and future collaborative marketing opportunities while continuing to own and operate their businesses independently.</p>
+              <p>As the TraveleyeStoryTrail Network evolves, participating experience creators will have opportunities to benefit from shared branding, professional support, market visibility, knowledge sharing, and collaborative growth while remaining independently owned and managed.</p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
@@ -155,9 +170,10 @@ export default function TraveleyeTravelExperiences() {
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Handshake} title="Join the Travel Experience Network" />
+        <SectionHeading icon={Handshake} title="Grow with TraveleyeStoryTrail" />
         <Copy>
-          <p>Whether you are developing your first visitor experience, expanding an existing tourism product, sharing your local knowledge, or creating innovative ways for travellers to experience Sri Lanka, Traveleye Travel Experiences invites you to become part of a growing network of authentic experience creators across the island.</p>
+          <p>Whether you are developing your first visitor experience, expanding an existing tourism product, sharing your local knowledge, or creating innovative ways for travellers to experience Sri Lanka, TraveleyeStoryTrail invites you to begin your journey with us.</p>
+          <p>Whether you choose to operate under your own brand or become a <strong>Powered by TraveleyeStoryTrail™</strong> experience creator, we are committed to helping you create authentic experiences that celebrate people and place, strengthen your enterprise, and deliver meaningful visitor experiences.</p>
           <p>Together, we can develop stronger travel experience enterprises, create richer visitor experiences, strengthen destination identity, and build a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
         </Copy>
       </section>

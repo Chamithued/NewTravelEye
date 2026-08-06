@@ -85,8 +85,7 @@ const menuColumns = [
 ]
 
 const socialLinks = [
-  { label: 'Facebook (International)', icon: FaFacebook },
-  { label: 'Facebook (Sri Lanka)', icon: FaFacebook },
+  { label: 'Facebook', icon: FaFacebook },
   { label: 'Instagram', icon: FaInstagram },
   { label: 'YouTube', icon: FaYoutube },
   { label: 'TikTok', icon: FaTiktok },

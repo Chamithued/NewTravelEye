@@ -4,7 +4,6 @@ import {
   HeartHandshake,
   House,
   Leaf,
-  Lightbulb,
   Network,
   Sparkles,
   Sprout,
@@ -115,25 +114,28 @@ export default function HostExperiences() {
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Network} title="How We Develop Host Experiences" />
-          <Copy><p><strong>Traveleye Host Experiences</strong> brings together two specialised product development areas—Host Stays and Travel Experiences. Together, they create authentic visitor experiences while supporting the development and strengthening of micro and small host stay and travel experience enterprises.</p></Copy>
+          <Copy>
+            <p><strong>Traveleye Host Experiences</strong> brings together two specialised product development brands-<strong>TraveleyeHostNest</strong> and <strong>TraveleyeStoryTrail</strong>.</p>
+            <p>Together, they develop authentic place-inspired host stays and meaningful people and place-inspired travel experiences while supporting the development and strengthening of micro and small host stay and travel experience enterprises across Sri Lanka.</p>
+          </Copy>
           <div className="mt-10 grid gap-7 lg:grid-cols-2">
             <article className="rounded-2xl border-t-4 border-[#1f4f93] bg-[#FCFBF8] p-6 shadow-sm sm:p-8">
               <House className="h-9 w-9 text-[#1f4f93]" />
-              <h3 className="mt-4 text-2xl font-bold text-[#1f4f93]">Host Stays</h3>
+              <h3 className="mt-4 text-2xl font-bold text-[#1f4f93]">TraveleyeHostNest</h3>
               <p className="mt-2 font-bold text-[#14334a]">Creating Authentic Stays Through Place</p>
-              <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Host Stays focus on developing place-inspired accommodation that reflects the unique identity, culture, hospitality, traditions, architecture, landscapes, and character of each destination while creating sustainable opportunities for local hosts and tourism entrepreneurs.</p>
+              <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base"><strong>TraveleyeHostNest</strong> focuses on developing place-inspired accommodation that reflects the unique identity, culture, hospitality, traditions, architecture, landscapes, and character of each destination while creating sustainable opportunities for local hosts and tourism entrepreneurs.</p>
               <p className="mt-5 font-bold text-[#14334a]">Development Categories</p>
               <CheckList items={hostStayAreas} />
-              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">Every Host Stay celebrates authentic hospitality, strengthens local tourism enterprises, and creates meaningful connections between travellers and the places they visit.</p>
+              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">Every <strong>TraveleyeHostNest</strong> stay celebrates authentic hospitality, strengthens local tourism enterprises, and creates meaningful connections between travellers and the places they visit.</p>
             </article>
             <article className="rounded-2xl border-t-4 border-[#1f4f93] bg-[#FCFBF8] p-6 shadow-sm sm:p-8">
               <Leaf className="h-9 w-9 text-[#1f4f93]" />
-              <h3 className="mt-4 text-2xl font-bold text-[#1f4f93]">Travel Experiences</h3>
+              <h3 className="mt-4 text-2xl font-bold text-[#1f4f93]">TraveleyeStoryTrail</h3>
               <p className="mt-2 font-bold text-[#14334a]">Creating Meaningful Experiences Through People and Place</p>
-              <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Travel Experiences focus on developing people and place-inspired visitor experiences that celebrate Sri Lanka's culture, heritage, landscapes, traditions, creativity, and everyday life while creating sustainable opportunities for local experience creators and tourism enterprises.</p>
+              <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base"><strong>TraveleyeStoryTrail</strong> focuses on developing people and place-inspired visitor experiences that celebrate Sri Lanka's culture, heritage, landscapes, traditions, creativity, and everyday life while creating sustainable opportunities for local experience creators and tourism enterprises.</p>
               <p className="mt-5 font-bold text-[#14334a]">Development Categories</p>
               <CheckList items={travelExperienceAreas} />
-              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">Every Travel Experience is designed to celebrate local identity while encouraging participation, entrepreneurship, collaboration, and shared value creation.</p>
+              <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base">Every <strong>TraveleyeStoryTrail</strong> experience is designed to celebrate local identity while encouraging participation, entrepreneurship, collaboration, and shared value creation.</p>
             </article>
           </div>
         </div>
@@ -152,20 +154,8 @@ export default function HostExperiences() {
         <SectionHeading icon={Handshake} title="A Connected Approach to Hospitality and Experiences" />
         <Copy>
           <p><strong>Traveleye Host Experiences</strong> is built upon the belief that meaningful tourism is created through genuine relationships between people and place.</p>
-          <p>Host Stays provide authentic hospitality rooted in the unique identity of each destination.</p>
-          <p>Travel Experiences bring destinations to life through culture, heritage, nature, creativity, local knowledge, and community participation.</p>
-          <p>Together, these two interconnected product development areas create richer visitor experiences while supporting local entrepreneurship, strengthening tourism enterprises, celebrating destination identity, and encouraging shared stewardship.</p>
-          <p>Working together, they contribute to resilient destinations, collaborative partnerships, and thriving tourism ecosystems that create lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
-        </Copy>
-      </section>
-
-      <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Lightbulb} title="Supporting Hosts and Experience Creators" />
-        <Copy>
-          <p>Creating successful host stays and travel experiences requires more than great ideas.</p>
-          <p>Through <strong>Traveleye Guidant</strong>, entrepreneurs can access enterprise development and professional advisory services to establish, strengthen, and grow their tourism enterprises.</p>
-          <p>Through <strong>TraveleyeUpSkills</strong>, hosts, experience creators, and tourism professionals can develop the practical knowledge, skills, and capabilities needed to deliver authentic hospitality and memorable visitor experiences.</p>
-          <p>Together, these platforms transform ideas into sustainable tourism enterprises that strengthen destinations and create lasting value for people and places.</p>
+          <p><strong>TraveleyeHostNest</strong> develops authentic place-inspired accommodation that reflects the unique identity, hospitality, culture, and character of each destination. <strong>TraveleyeStoryTrail</strong> develops meaningful people and place-inspired experiences that celebrate local culture, heritage, nature, creativity, traditions, and everyday life.</p>
+          <p>Together, these two complementary product development brands create authentic hospitality, meaningful visitor experiences, stronger tourism enterprises, and more vibrant destinations while generating lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
         </Copy>
       </section>
 
@@ -174,7 +164,7 @@ export default function HostExperiences() {
         <Copy>
           <p><strong>Traveleye Host Experiences</strong> is one of the four <strong>Operational Platforms</strong> of the <strong>People-Powered Tourism Framework</strong>.</p>
           <p>Built upon the Framework's <strong>Guiding Principles</strong>, <strong>Global Alignment</strong>, <strong>Strategic Pillars</strong>, and <strong>Development Models</strong>, it provides one of the practical mechanisms through which the Framework is implemented.</p>
-          <p>By developing authentic place-inspired host stays, meaningful people and place-inspired travel experiences, local entrepreneurship, and authentic hospitality, Host Experiences contributes directly to the Framework's <strong>Tourism Outcomes</strong> while supporting measurable progress through the <strong>People-Powered Tourism Ecosystem Indicators</strong>.</p>
+          <p>By developing authentic place-inspired <strong>TraveleyeHostNest</strong> stays, meaningful people and place-inspired <strong>TraveleyeStoryTrail</strong> experiences, local entrepreneurship, and authentic hospitality, Host Experiences contributes directly to the Framework's <strong>Tourism Outcomes</strong> while supporting measurable progress through the <strong>People-Powered Tourism Ecosystem Indicators</strong>.</p>
           <p>Together with <strong>Traveleye Travel Collective</strong>, <strong>Traveleye Destination Facilitation</strong>, and <strong>Traveleye Ecosystem Support</strong>, it transforms the <strong>People-Powered Tourism Framework</strong> into practical action across Sri Lanka's tourism ecosystem.</p>
         </Copy>
       </section>
@@ -183,7 +173,7 @@ export default function HostExperiences() {
         <SectionHeading icon={Sparkles} title="Looking Ahead" />
         <Copy>
           <p>As tourism continues to evolve, <strong>Traveleye Host Experiences</strong> will continue expanding opportunities for authentic hospitality, experience creation, and local entrepreneurship.</p>
-          <p>By encouraging innovation, participation, collaboration, and shared stewardship, the platform will continue supporting the development and strengthening of micro and small host stay and travel experience enterprises while creating richer visitor experiences, stronger destinations, and a more connected <strong>People-Powered Tourism Ecosystem</strong>.</p>
+          <p>By encouraging innovation, participation, collaboration, and shared stewardship, the platform will continue supporting the development and strengthening of micro and small <strong>TraveleyeHostNest</strong> and <strong>TraveleyeStoryTrail</strong> enterprises while creating richer visitor experiences, stronger destinations, and a more connected <strong>People-Powered Tourism Ecosystem</strong>.</p>
           <p>Because the most meaningful journeys are not defined simply by where people travel.</p>
           <p>They are shaped by the people who welcome them, the places they experience, and the stories they share along the way.</p>
         </Copy>
@@ -193,7 +183,7 @@ export default function HostExperiences() {
         <SectionHeading icon={BriefcaseBusiness} title="Grow with Traveleye Alliance" />
         <Copy>
           <p>Whether you are a host, experience creator, tourism entrepreneur, tourism enterprise, community organisation, government agency, tourism authority, educational institution, development organisation, investor, strategic partner, or traveller, <strong>Traveleye Alliance Sri Lanka</strong> invites you to become part of <strong>Traveleye Host Experiences</strong>.</p>
-          <p>Together, we can develop and strengthen micro and small host stay and travel experience enterprises while creating authentic hospitality, meaningful visitor experiences, stronger destinations, and a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+          <p>Together, we can develop and strengthen micro and small <strong>TraveleyeHostNest</strong> and <strong>TraveleyeStoryTrail</strong> enterprises while creating authentic hospitality, meaningful visitor experiences, stronger destinations, and a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
         </Copy>
       </section>
 
