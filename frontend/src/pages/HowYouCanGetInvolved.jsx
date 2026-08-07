@@ -221,7 +221,7 @@ export default function HowYouCanGetInvolved() {
           <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             <p>If you share our vision for a more connected, inclusive, and people-powered tourism future, we would be delighted to explore how we can work together.</p>
             <p>Whether you wish to create, collaborate, invest, partner, host, travel, or support tourism development, we welcome the opportunity to begin the conversation.</p>
-            <p className="font-bold text-[#0f4d2f]">Contact us at info@traveleye.lk to explore how you can get involved.</p>
+            <p className="font-bold text-[#0f4d2f]">Contact us at <a href="mailto:info@traveleye.lk">info@traveleye.lk</a> to explore how you can get involved.</p>
           </div>
         </div>
       </section>

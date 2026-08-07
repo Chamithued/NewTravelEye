@@ -26,8 +26,8 @@ const navItems = [
     to: '/about-traveleye-host-experiences',
     items: [
       { label: 'About Traveleye Host Experiences', to: '/about-traveleye-host-experiences' },
-      { label: 'Traveleye HostNest', to: '/traveleye-host-stays' },
-      { label: 'Traveleye StoryTrail', to: '/traveleye-travel-experiences' },
+      { label: 'Traveleye HostNest', to: '/traveleye-hostnest' },
+      { label: 'Traveleye StoryTrail', to: '/traveleye-storytrail' },
     ],
   },
   { top: 'Traveleye', bottom: 'Destination Facilitation', to: '/destination-facilitation' },

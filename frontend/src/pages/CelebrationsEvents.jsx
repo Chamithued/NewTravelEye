@@ -207,7 +207,7 @@ export default function CelebrationsEvents() {
                 Whether you are planning a journey, experience, celebration, or special occasion, we would be delighted to help you explore the possibilities.
               </p>
               <p className="mt-5 text-sm leading-7 text-[#475569] sm:text-base">
-                Contact us at info@traveleye.lk to discuss your requirements and begin planning your experience.
+                Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to discuss your requirements and begin planning your experience.
               </p>
             </div>
           </div>

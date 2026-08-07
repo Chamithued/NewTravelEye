@@ -183,7 +183,15 @@ export default function HostExperiences() {
         <SectionHeading icon={BriefcaseBusiness} title="Grow with Traveleye Alliance" />
         <Copy>
           <p>Whether you are a host, experience creator, tourism entrepreneur, tourism enterprise, community organisation, government agency, tourism authority, educational institution, development organisation, investor, strategic partner, or traveller, <strong>Traveleye Alliance Sri Lanka</strong> invites you to become part of <strong>Traveleye Host Experiences</strong>.</p>
-          <p>Together, we can develop and strengthen micro and small <strong>TraveleyeHostNest</strong> and <strong>TraveleyeStoryTrail</strong> enterprises while creating authentic hospitality, meaningful visitor experiences, stronger destinations, and a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+          <p>Together, we can develop and strengthen micro and small <strong>TraveleyeHostNest</strong> and <strong>TraveleyeStoryTrail</strong> enterprises while creating authentic host stays, meaningful travel experiences, stronger destinations, and a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+        </Copy>
+      </section>
+
+      <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <SectionHeading icon={Handshake} title="Create Authentic Host Stays and Travel Experiences" />
+        <Copy>
+          <p>Whether you are planning a host stay, creating a travel experience, strengthening an existing tourism enterprise, or exploring new opportunities within Sri Lanka&apos;s tourism ecosystem, <strong>Traveleye Host Experiences</strong> is ready to support your journey through collaboration, guidance, and practical development.</p>
+          <p>Contact us at <a href="mailto:hostexperiences@traveleye.lk" className="font-semibold text-[#1f4f93]">hostexperiences@traveleye.lk</a> to explore host stay development, travel experience development, and collaboration opportunities.</p>
         </Copy>
       </section>
 

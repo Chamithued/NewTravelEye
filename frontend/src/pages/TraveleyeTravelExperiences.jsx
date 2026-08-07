@@ -4,6 +4,7 @@ import {
   HeartHandshake,
   Leaf,
   Lightbulb,
+  Mail,
   Network,
   Sparkles,
   Sprout,
@@ -175,6 +176,20 @@ export default function TraveleyeTravelExperiences() {
           <p>Whether you are developing your first visitor experience, expanding an existing tourism product, sharing your local knowledge, or creating innovative ways for travellers to experience Sri Lanka, TraveleyeStoryTrail invites you to begin your journey with us.</p>
           <p>Whether you choose to operate under your own brand or become a <strong>Powered by TraveleyeStoryTrail™</strong> experience creator, we are committed to helping you create authentic experiences that celebrate people and place, strengthen your enterprise, and deliver meaningful visitor experiences.</p>
           <p>Together, we can develop stronger travel experience enterprises, create richer visitor experiences, strengthen destination identity, and build a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+        </Copy>
+      </section>
+
+      <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <SectionHeading icon={Mail} title="Create Your StoryTrail Experience" />
+        <Copy>
+          <p>Whether you are planning your first travel experience, expanding an existing experience, or interested in becoming a <strong>Powered by Traveleye StoryTrail</strong> experience creator, we are ready to help you transform your knowledge, skills, and local stories into authentic travel experiences inspired by people and place.</p>
+          <p>
+            Contact us at{' '}
+            <a className="font-semibold text-[#1f4f93]" href="mailto:storytrail@traveleye.lk">
+              storytrail@traveleye.lk
+            </a>{' '}
+            to explore travel experience development and collaboration opportunities.
+          </p>
         </Copy>
       </section>
 
