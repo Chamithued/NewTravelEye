@@ -386,7 +386,7 @@ export default function PeoplePoweredTourismFramework() {
             Interested in learning more about the Traveleye People-Powered Tourism Framework, participation opportunities, ecosystem partnerships, or destination collaboration?
           </p>
           <p className="mt-4 text-sm font-bold leading-7 text-[#0f4d2f] sm:text-base">
-            Contact us at info@traveleye.lk to begin the conversation.
+            Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to begin the conversation.
           </p>
         </div>
       </section>

@@ -65,8 +65,8 @@ function SectionHeading({ icon: Icon, title }) {
   )
 }
 
-function Copy({ children }) {
-  return <div className="mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">{children}</div>
+function Copy({ children, className = '' }) {
+  return <div className={`mx-auto mt-6 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8 ${className}`}>{children}</div>
 }
 
 function ItemGrid({ items }) {
@@ -96,7 +96,7 @@ export default function HostStays() {
     <main className="flex flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
         <div className="absolute inset-0 z-0">
-          <img src={heroImg} alt="TraveleyeHostNest" className="absolute inset-0 h-full w-full object-cover object-center brightness-105" />
+          <img src={heroImg} alt="Traveleye HostNest" className="absolute inset-0 h-full w-full object-cover object-center brightness-105" />
           <div className="absolute inset-0 bg-black/25" />
         </div>
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
@@ -112,12 +112,12 @@ export default function HostStays() {
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Home} title="Creating Authentic Places Where Every Stay Reflects Its Destination" />
-        <Copy>
+        <Copy className="max-w-5xl">
           <p>A memorable stay is more than comfortable accommodation.</p>
           <p>It reflects the character of a place, the warmth of its people, the richness of its culture, and the stories that make every destination unique.</p>
-          <p><strong>TraveleyeHostNest</strong> is the place-inspired accommodation development brand of <strong>Traveleye Host Experiences</strong>, established to develop authentic place-inspired host stays that celebrate Sri Lanka&apos;s landscapes, heritage, architecture, traditions, communities, and hospitality while supporting the development and strengthening of micro and small accommodation enterprises.</p>
-          <p>As part of the <strong>People-Powered Tourism Ecosystem</strong>, TraveleyeHostNest encourages accommodation that is rooted in local identity rather than standardisation, creating meaningful experiences for travellers while generating sustainable opportunities for hosts, entrepreneurs, families, and communities.</p>
-          <p>Whether developing a boutique villa, eco lodge, heritage house, farm stay, retreat, or another themed accommodation, every <strong>TraveleyeHostNest</strong> is designed to create genuine connections between people and place.</p>
+          <p><strong>Traveleye HostNest</strong> is the place-inspired accommodation development brand of <strong>Traveleye Host Experiences</strong>, established to develop authentic place-inspired host stays that celebrate Sri Lanka&apos;s landscapes, heritage, architecture, traditions, communities, and hospitality while supporting the development and strengthening of micro and small accommodation enterprises.</p>
+          <p>As part of the <strong>People-Powered Tourism Ecosystem</strong>, Traveleye HostNest encourages accommodation that is rooted in local identity rather than standardisation, creating meaningful experiences for travellers while generating sustainable opportunities for hosts, entrepreneurs, families, and communities.</p>
+          <p>Whether developing a boutique villa, eco lodge, heritage house, farm stay, retreat, or another themed accommodation, every <strong>Traveleye HostNest</strong> is designed to create genuine connections between people and place.</p>
         </Copy>
       </section>
 
@@ -136,7 +136,7 @@ export default function HostStays() {
         <SectionHeading icon={BriefcaseBusiness} title="Our HostNest Development Categories" />
         <Copy>
           <p>Every destination offers unique opportunities to create accommodation inspired by its landscape, heritage, culture, and community.</p>
-          <p>TraveleyeHostNest supports the development of a diverse range of place-inspired accommodation, including:</p>
+          <p>Traveleye HostNest supports the development of a diverse range of place-inspired accommodation, including:</p>
         </Copy>
         <ItemGrid items={accommodationCategories} />
       </section>
@@ -144,7 +144,7 @@ export default function HostStays() {
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={MapPinned} title="Our Place-Inspired Development Approach" />
         <Copy>
-          <p>Every successful TraveleyeHostNest begins by understanding the unique identity of its location.</p>
+          <p>Every successful Traveleye HostNest begins by understanding the unique identity of its location.</p>
           <p>Rather than replicating accommodation concepts from elsewhere, we encourage hosts to develop stays that celebrate local architecture, culture, traditions, craftsmanship, cuisine, nature, history, and community life.</p>
           <p>This creates accommodation that is authentic, distinctive, and memorable while strengthening destination identity and supporting local economies.</p>
           <p><strong>Discover the Place → Celebrate Local Identity → Design Authentic Hospitality → Create Meaningful Guest Experiences → Strengthen Local Tourism</strong></p>
@@ -154,7 +154,7 @@ export default function HostStays() {
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Sparkles} title="Authentic Hospitality" />
         <Copy>
-          <p>At TraveleyeHostNest, hospitality is about creating genuine human connections.</p>
+          <p>At Traveleye HostNest, hospitality is about creating genuine human connections.</p>
           <p>Guests are welcomed not simply as visitors but as participants in the destination&apos;s story.</p>
           <p>Authentic hospitality reflects local traditions, personalised service, cultural pride, and sincere care, creating memorable stays that leave lasting impressions.</p>
         </Copy>
@@ -164,7 +164,7 @@ export default function HostStays() {
         <SectionHeading icon={Leaf} title="Sustainability & Stewardship" />
         <Copy>
           <p>Place-inspired accommodation should also protect the places that make it special.</p>
-          <p>TraveleyeHostNest encourages responsible resource management, environmental stewardship, community participation, cultural preservation, and sustainable business practices that benefit both present and future generations.</p>
+          <p>Traveleye HostNest encourages responsible resource management, environmental stewardship, community participation, cultural preservation, and sustainable business practices that benefit both present and future generations.</p>
         </Copy>
       </section>
 
@@ -173,17 +173,17 @@ export default function HostStays() {
         <Copy>
           <p>Every tourism entrepreneur has different aspirations.</p>
           <p>Some wish to develop and operate their own independent accommodation brand, while others may prefer to become part of a recognised network that reflects shared standards, authentic hospitality, and the People-Powered Tourism philosophy.</p>
-          <p>TraveleyeHostNest offers two pathways to support your journey.</p>
+          <p>Traveleye HostNest offers two pathways to support your journey.</p>
         </Copy>
         <div className="mx-auto mt-8 grid max-w-6xl gap-6 lg:grid-cols-2">
           <PathwayCard title="Operate Under Your Own Brand">
             <p>Receive comprehensive support through <strong>Traveleye Host Experiences</strong> to develop, establish, strengthen, and grow your own host stay under your own brand and business identity.</p>
             <p>Whether you are starting a new accommodation enterprise or enhancing an existing property, Traveleye Host Experiences provides the professional guidance, knowledge, and development support needed to transform your vision into a successful and sustainable host stay.</p>
           </PathwayCard>
-          <PathwayCard title="Powered by TraveleyeHostNest™">
-            <p>Entrepreneurs seeking a deeper partnership may choose to develop and operate their accommodation as a <strong>Powered by TraveleyeHostNest™</strong> property.</p>
-            <p>This pathway is designed for entrepreneurs who wish to align with the TraveleyeHostNest philosophy, place-inspired hospitality approach, quality standards, and future collaborative marketing opportunities while continuing to own and operate their businesses independently.</p>
-            <p>As the TraveleyeHostNest Network evolves, participating properties will have opportunities to benefit from shared branding, professional support, market visibility, knowledge sharing, and collaborative growth while remaining independently owned and managed.</p>
+          <PathwayCard title="Powered by Traveleye HostNest">
+            <p>Entrepreneurs seeking a deeper partnership may choose to develop and operate their accommodation as a <strong>Powered by Traveleye HostNest™</strong> property.</p>
+            <p>This pathway is designed for entrepreneurs who wish to align with the Traveleye HostNest philosophy, place-inspired hospitality approach, quality standards, and future collaborative marketing opportunities while continuing to own and operate their businesses independently.</p>
+            <p>As the Traveleye HostNest Network evolves, participating properties will have opportunities to benefit from shared branding, professional support, market visibility, knowledge sharing, and collaborative growth while remaining independently owned and managed.</p>
           </PathwayCard>
         </div>
       </section>
@@ -191,17 +191,25 @@ export default function HostStays() {
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Home} title="Our Philosophy" />
         <Copy>
-          <p>We believe every destination has its own story, and every TraveleyeHostNest should help tell it.</p>
+          <p>We believe every destination has its own story, and every Traveleye HostNest should help tell it.</p>
           <p>By creating accommodation inspired by place rather than imitation, we strengthen local identity, celebrate authentic hospitality, support tourism entrepreneurs, and create memorable experiences that connect travellers with the true spirit of Sri Lanka.</p>
         </Copy>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={UsersRound} title="Grow with TraveleyeHostNest" />
+        <SectionHeading icon={UsersRound} title="Grow with Traveleye HostNest" />
         <Copy>
-          <p>Whether you are planning your first accommodation business, upgrading an existing property, developing a themed stay, or seeking to create more authentic guest experiences, TraveleyeHostNest invites you to begin your journey with us.</p>
-          <p>Whether you choose to develop your own independent host stay or become a <strong>Powered by TraveleyeHostNest™</strong> property, we are committed to helping you create authentic accommodation that celebrates place, strengthens your enterprise, and delivers meaningful guest experiences.</p>
+          <p>Whether you are planning your first accommodation business, upgrading an existing property, developing a themed stay, or seeking to create more authentic guest experiences, Traveleye HostNest invites you to begin your journey with us.</p>
+          <p>Whether you choose to develop your own independent host stay or become a <strong>Powered by Traveleye HostNest™</strong> property, we are committed to helping you create authentic accommodation that celebrates place, strengthens your enterprise, and delivers meaningful guest experiences.</p>
           <p>Together, we can develop stronger host stay enterprises, richer visitor experiences, and more vibrant destinations while creating lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+        </Copy>
+      </section>
+
+      <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <SectionHeading icon={Home} title="Start Your HostNest Journey" />
+        <Copy>
+          <p>Whether you are exploring a new host stay concept, transforming an existing property, or interested in becoming a <strong>Powered by Traveleye HostNest</strong> property, we are ready to help you create authentic host stays inspired by people and place.</p>
+          <p>Contact us at <a href="mailto:hostnest@traveleye.lk" className="font-semibold text-[#1f4f93]">hostnest@traveleye.lk</a> to explore HostNest development and partnership opportunities.</p>
         </Copy>
       </section>
 

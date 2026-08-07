@@ -120,8 +120,10 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="about-traveleye-host-experiences" element={<HostExperiences />} />
           <Route path="host-experiences" element={<Navigate to="/about-traveleye-host-experiences" replace />} />
-          <Route path="traveleye-host-stays" element={<HostStays />} />
-          <Route path="traveleye-travel-experiences" element={<TraveleyeTravelExperiences />} />
+          <Route path="traveleye-hostnest" element={<HostStays />} />
+          <Route path="traveleye-storytrail" element={<TraveleyeTravelExperiences />} />
+          <Route path="traveleye-host-stays" element={<Navigate to="/traveleye-hostnest" replace />} />
+          <Route path="traveleye-travel-experiences" element={<Navigate to="/traveleye-storytrail" replace />} />
           <Route path="founder-ceo" element={<FounderCEO />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
