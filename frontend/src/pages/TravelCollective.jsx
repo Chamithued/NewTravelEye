@@ -30,7 +30,7 @@ const travelSegments = [
   },
   {
     title: 'Outbound Travel',
-    subtitle: 'Connecting Sri Lankans with the World',
+    subtitle: 'Connecting Sri Lankans with the World Through Meaningful Travel',
     text: 'Creating thoughtfully designed outbound travel opportunities that connect Sri Lankan travellers with international destinations for leisure, education, business, cultural exchange, and special-interest travel while building global connections and experiences.',
     icon: Plane,
   },
@@ -56,10 +56,10 @@ const travelSegments = [
 
 const stakeholders = [
   'Travellers',
-  'Tour operators and destination management companies',
   'Tourism entrepreneurs',
   'Micro and small tourism enterprises',
   'Hosts and experience creators',
+  'Tour operators and destination management companies',
   'Transport providers',
   'Local communities',
   'Tourism authorities',
@@ -132,7 +132,7 @@ export default function TravelCollective() {
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mx-auto w-fit rounded-full bg-[#dfe6ef] px-5 py-2 text-[1.05rem] font-extrabold text-[#1f4f93] shadow-sm">Purpose</p>
-          <p className="mt-2 text-lg font-bold leading-8 text-[#172544]">To develop and strengthen micro and small travel and tourism enterprises by creating meaningful journeys that connect people, places, enterprises, destinations, and opportunities across Sri Lanka's tourism ecosystem.</p>
+          <p className="mt-2 text-lg font-bold leading-8 text-[#172544]">To develop and strengthen micro and small travel enterprises by creating meaningful journeys that connect people, places, destinations, opportunities, and tourism partners across Sri Lanka's tourism ecosystem.</p>
         </div>
       </section>
 
@@ -150,13 +150,13 @@ export default function TravelCollective() {
         <Copy>
           <p>Meaningful travel creates value far beyond the journey itself.</p>
           <p>Every thoughtfully designed journey supports local entrepreneurs, strengthens destinations, encourages cultural understanding, expands market opportunities, and creates lasting connections between travellers and the places they visit.</p>
-          <p>The <strong>Traveleye Travel Collective</strong> promotes travel that is authentic, collaborative, responsible, and People-Powered. By connecting travellers with local tourism enterprises, destinations, and communities, it creates opportunities that benefit both visitors and the people who make travel possible.</p>
+          <p>The <strong>Traveleye Travel Collective</strong> promotes travel that is authentic, collaborative, responsible, and people-powered. By connecting travellers with local tourism enterprises, destinations, and communities, it creates opportunities that benefit both visitors and the people who make travel possible.</p>
         </Copy>
       </section>
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Network} title="Our Areas of Operation" />
+          <SectionHeading icon={Network} title="Our Connected Travel Segments" />
           <Copy><p>The <strong>Traveleye Travel Collective</strong> operates across six interconnected travel segments that serve different traveller needs while contributing to one shared purpose—developing and strengthening micro and small tourism enterprises through meaningful journeys and connected travel opportunities.</p></Copy>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {travelSegments.map(({ title, subtitle, text, icon: Icon }) => (
@@ -214,15 +214,15 @@ export default function TravelCollective() {
         <Copy>
           <p>As tourism continues to evolve, the <strong>Traveleye Travel Collective</strong> will continue expanding meaningful travel opportunities, strengthening destination connectivity, encouraging domestic discovery, building international relationships, and supporting innovative travel initiatives.</p>
           <p>By connecting travellers with people, places, enterprises, and destinations, the platform will continue supporting the development and strengthening of micro and small tourism enterprises while creating richer visitor experiences, stronger tourism partnerships, resilient destinations, and a thriving <strong>People-Powered Tourism Ecosystem</strong>.</p>
-          <p>Because meaningful travel is not simply about reaching a destination.</p>
-          <p>It is about the people we meet, the places we experience, the connections we build, and the lasting value we create together.</p>
+          <p>Meaningful travel is more than reaching a destination - it is about the people we meet, the places we experience, the connections we build, and the lasting value we create together.</p>
         </Copy>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={BriefcaseBusiness} title="Grow with Traveleye Alliance" />
         <Copy>
-          <p>Whether you are a traveller, tourism entrepreneur, tourism enterprise, destination partner, government agency, tourism authority, educational institution, investor, development organisation, or strategic partner, <strong>Traveleye Alliance Sri Lanka</strong> invites you to become part of the <strong>Traveleye Travel Collective</strong>.</p>
+          <p>Whether you are a traveller, tourism entrepreneur, tourism enterprise, destination partner, government agency, tourism authority, educational institution, investor, development organisation, or strategic partner, we invite you to become part of the <strong>Traveleye Travel Collective</strong>.</p>
+          <p>Contact us at <a href="mailto:travel@traveleye.lk" className="font-semibold text-[#1f4f93] transition-colors hover:text-[#163b70]">travel@traveleye.lk</a> to explore travel opportunities, partnerships, and collaboration.</p>
           <p>Together, we can create meaningful journeys, strengthen tourism enterprises, connect destinations, expand travel opportunities, and contribute to a stronger <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
         </Copy>
       </section>

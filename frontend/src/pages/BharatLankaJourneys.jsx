@@ -1,6 +1,5 @@
 import {
   BookOpen,
-  BriefcaseBusiness,
   Building2,
   GraduationCap,
   Handshake,
@@ -189,7 +188,7 @@ export default function BharatLankaJourneys() {
               <span className="block">BHARAT LANKA JOURNEYS</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Shared Heritage, Lasting Connections
+              Connecting Nations, People and Places.
             </p>
           </div>
         </div>
@@ -218,12 +217,12 @@ export default function BharatLankaJourneys() {
       <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <SectionHeading icon={Handshake} title="An Initiative of Traveleye Alliance Sri Lanka" center={false} />
+            <SectionHeading icon={Handshake} title="Part of the Traveleye Travel Corridors" center={false} />
           </div>
 
           <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Traveleye Bharat Lanka Journeys is an initiative of Traveleye Alliance Sri Lanka, a tourism ecosystem developer specializing in People-Powered Tourism and tourism ecosystem development. The platform is designed to facilitate travel, strengthen tourism connectivity, foster partnerships, and encourage deeper engagement between people, destinations, and tourism stakeholders across India and Sri Lanka.
+              Traveleye Bharat Lanka Journeys is part of Traveleye Travel Corridors, a signature travel corridor brand within the Traveleye Travel Collective of Traveleye Alliance Sri Lanka. Guided by the Traveleye People-Powered Tourism Framework, it facilitates meaningful travel, strengthens tourism connectivity, fosters partnerships, and encourages deeper engagement between people, destinations, and tourism stakeholders across India and Sri Lanka.
             </p>
           </div>
         </div>
@@ -295,25 +294,22 @@ export default function BharatLankaJourneys() {
           <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             As Bharat Lanka Journeys grows, it seeks to develop strategic partnerships and market-focused collaborations across India and Sri Lanka that support sustainable tourism growth and stronger connections between the two nations.
           </p>
+          <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            More than a travel platform, Traveleye Bharat Lanka Journeys serves as a bridge between India and Sri Lanka, connecting people, cultures, destinations, and opportunities through meaningful travel and enduring relationships.
+          </p>
+
         </div>
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={BriefcaseBusiness} title="Shared Heritage. Lasting Connections." />
-          <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
-            More than a travel platform, Traveleye Bharat Lanka Journeys serves as a bridge between India and Sri Lanka, connecting people, cultures, destinations, and opportunities through meaningful travel and enduring relationships.
+          <SectionHeading title="Begin Your Bharat Lanka Journey" />
+          <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Whether you are planning a journey, seeking a trusted travel partner, or exploring tourism collaboration between India and Sri Lanka, we would be delighted to help you explore the possibilities.
           </p>
-
-          <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#eef4ef] bg-white p-6 shadow-sm sm:p-8">
-            <h3 className="text-xl font-bold text-[#1f4f93] sm:text-2xl">Begin the Conversation</h3>
-            <p className="mt-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Whether you are planning a journey, experience, celebration, or special occasion, we would be delighted to help you explore the possibilities.
-            </p>
-            <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to discuss your requirements and begin planning your experience.
-            </p>
-          </div>
+          <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Contact us at <a href="mailto:bharatlanka@traveleye.lk" className="font-semibold text-[#1f4f93] no-underline">bharatlanka@traveleye.lk</a> to begin your Bharat Lanka journey.
+          </p>
         </div>
       </section>
 

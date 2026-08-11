@@ -214,6 +214,16 @@ export default function TraveleyeUpSkills() {
         </div>
       </section>
 
+      <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl text-center">
+          <SectionHeading icon={Sparkles}><strong>Continue Your Learning Journey</strong></SectionHeading>
+          <Copy>
+            <p>Whether you are a tourism entrepreneur, tourism professional, student, tourism enterprise, educational institution, government agency, development organisation, or strategic partner, TraveleyeUpSkills is ready to support your learning, professional development, and capacity-building journey through practical, industry-focused education and training.</p>
+            <p>Contact us at <a href="mailto:upskills@traveleye.lk" className="font-semibold text-[#1f4f93] no-underline hover:text-[#173b70]">upskills@traveleye.lk</a> to learn more about our programmes, workshops, and professional development opportunities.</p>
+          </Copy>
+        </div>
+      </section>
+
       <ExploreEcosystem />
       <FooterLinks />
     </main>

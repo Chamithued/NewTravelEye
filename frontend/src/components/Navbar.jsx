@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import { Mail, MessageCircle } from 'lucide-react'
 import logo from '../assets/client/Traveleyelogo.png'
 
 const navItems = [
@@ -53,13 +54,15 @@ const dropdownGroups = [
     items: [
       { label: 'About Traveleye Alliance', to: '/about' },
       // { label: 'Our Ecosystem Approach', to: '/our-ecosystem-approach' },
-      { label: 'Our Vision, Mission & Values', to: '/vision-mission' },
+      { label: 'Our Vision, Mission and Values', to: '/vision-mission' },
+      { label: 'Our Journey', to: '/our-journey' },
+      { label: 'Building Something Bigger', to: '/how-you-can-get-involved' },
+      { label: 'Beautiful Sri Lanka', to: '/beautiful-sri-lanka' },
       { label: 'Why Choose Traveleye', to: '/why-traveleye' },
-      { label: 'Governance & Ethics', to: '/governance-ethics' },
-      { label: 'Media & Press', to: '/media-press' },
+      { label: 'Governance and Ethics', to: '/governance-ethics' },
+      { label: 'Media and Press', to: '/media-press' },
       { label: 'Traveleye Catalogue Library', to: '/traveleye-catalogue-library' },
-      { label: 'Founder & CEO', to: '/founder-ceo' },
-      { label: 'Contact Us', to: '/contact' },
+      { label: 'Founder and CEO', to: '/founder-ceo' },
     ],
   },
   {
@@ -129,7 +132,17 @@ function ChevronDown() {
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState({})
+  const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
+
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 10)
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const isCurrentPath = (to) => location.pathname === to
   const isItemActive = (item) => isCurrentPath(item.to) || item.items?.some((child) => isCurrentPath(child.to))
@@ -144,6 +157,21 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90">
+      <div
+        className={`flex items-center justify-end gap-4 overflow-hidden bg-[#1F4F93] px-4 text-[0.7rem] font-medium text-white transition-all duration-300 sm:gap-6 sm:px-6 sm:text-xs lg:px-8 ${
+          isScrolled ? 'h-0 opacity-0' : 'h-8 opacity-100'
+        }`}
+        aria-hidden={isScrolled}
+      >
+        <span className="inline-flex items-center gap-1.5">
+          <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+          <span><span className="hidden sm:inline">WhatsApp: </span>+94*********</span>
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <Mail aria-hidden="true" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+          <span>info@traveleye.lk</span>
+        </span>
+      </div>
       <div className="flex w-full items-center py-3 sm:py-3 lg:py-3">
         <NavLink to="/" className="flex-shrink-0 px-4 sm:px-6 lg:px-8">
           <img
@@ -326,7 +354,7 @@ export default function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5.5rem)] lg:max-h-[calc(100dvh-6.5rem)] xl:hidden">
+        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-6.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-7.5rem)] lg:max-h-[calc(100dvh-8.5rem)] xl:hidden">
           <div className="flex flex-col gap-1 px-3 pb-6 pt-3">
             {navItems.map((item) => (
               item.items ? (

@@ -85,7 +85,7 @@ export default function TravelCorridors() {
               <span className="block">TRAVEL CORRIDORS</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Connecting Nations Through Meaningful Travel
+              One Country. One Partner. One Shared Vision.
             </p>
           </div>
         </div>
@@ -101,11 +101,14 @@ export default function TravelCorridors() {
             </p>
             {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
             <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Traveleye Travel Corridors is a people-powered approach to international travel that connects Sri Lanka with partner countries through meaningful journeys, cultural exchange, business engagement, celebrations, and long-term tourism collaboration.
+              Traveleye Travel Corridors is a People-Powered international tourism development framework that connects Sri Lanka with partner countries through meaningful journeys, cultural exchange, business engagement, celebrations, and long-term tourism collaboration.
             </p>
             {/* <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
             <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Rather than viewing travel as a one-way movement of visitors, the Travel Corridor approach encourages two-way connections that bring people, cultures, destinations, and tourism ecosystems closer together.
+              Rather than viewing travel as a one-way movement of visitors, the Travel Corridor approach fosters long-term tourism relationships that encourage collaboration, cultural exchange, and shared opportunities between Sri Lanka and partner countries.
+            </p>
+            <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              Through Travel Corridors, we strengthen connections between nations through tourism partnerships, between people through meaningful travel experiences, and between places through shared discovery and collaboration.
             </p>
           </div>
         </div>
@@ -132,7 +135,7 @@ export default function TravelCorridors() {
           </div>
 
           <p className="mx-auto mt-8 max-w-4xl text-center text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
-            By encouraging travel in both directions, the corridors help create stronger connections between people, destinations, enterprises, and tourism ecosystems while fostering long-term relationships between nations.
+            By strengthening tourism connections between Sri Lanka and partner countries, the corridors help create stronger relationships between people, destinations, enterprises, and tourism ecosystems while fostering long-term collaboration between nations.
           </p>
         </div>
       </section>
@@ -145,7 +148,7 @@ export default function TravelCorridors() {
 
           <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Guided by the Traveleye People-Powered Tourism (PPT) Framework, Travel Corridors encourage collaboration between tourism enterprises, entrepreneurs, communities, institutions, destination stakeholders, and travel partners across borders.
+              Guided by the Traveleye People-Powered Tourism Framework, Travel Corridors encourage collaboration between tourism enterprises, entrepreneurs, communities, institutions, destination stakeholders, and travel partners across borders.
             </p>
             <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               By connecting people and place through meaningful travel, the corridor approach seeks to create richer traveller experiences while strengthening tourism ecosystems through participation, stewardship, collaboration, innovation, and shared value creation.
@@ -188,6 +191,9 @@ export default function TravelCorridors() {
             As tourism continues to evolve, Traveleye Travel Corridors seeks to strengthen meaningful connections between Sri Lanka and the world through people-powered partnerships, shared experiences, and long-term collaboration.
           </p>
           <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            Travel Corridors may begin as strategic market development initiatives within the Traveleye Travel Collective. As markets mature and long-term partnerships are established, they may evolve into dedicated Traveleye Travel Corridor Companies, strengthening tourism relationships and developing country-specific travel opportunities between Sri Lanka and partner countries.
+          </p>
+          <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             By encouraging responsible travel, cultural understanding, innovation, and stronger tourism relationships between nations, the Travel Corridor approach aims to contribute to more resilient destinations, richer traveller experiences, and greater shared value for people and places.
           </p>
           <p className="mt-6 text-sm font-semibold leading-7 text-[#2f6b4f] sm:text-base sm:leading-8">
@@ -198,22 +204,17 @@ export default function TravelCorridors() {
 
       <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={BriefcaseBusiness} title="Begin the Conversation" />
+          <SectionHeading icon={BriefcaseBusiness} title="Build a Travel Corridor with Us" />
           <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
-            Whether you are a travel partner, tourism enterprise, entrepreneur, destination organisation, institution, investor, or ecosystem collaborator, we welcome opportunities to explore meaningful travel connections between Sri Lanka and the world.
-          </p>
-          <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
-            Together, we can strengthen tourism through collaboration, cultural exchange, and people-powered partnerships that create lasting value for people and places.
+            Whether you are a travel partner, tourism enterprise, entrepreneur, destination organisation, institution, investor, government agency, or ecosystem collaborator, we welcome opportunities to develop meaningful travel connections between Sri Lanka and partner countries.
           </p>
 
-          <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#eef4ef] bg-white p-6 shadow-sm sm:p-8">
-            <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to begin the conversation.
-            </p>
-            <p className="mt-5 text-lg font-bold text-[#1f4f93] sm:text-2xl">
-              Connecting Nations. Enriching People. Strengthening Tourism.
-            </p>
-          </div>
+          <p className="mx-auto mt-8 max-w-2xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Contact us at <a href="mailto:corridors@traveleye.lk" className="font-semibold text-[#1f4f93]">corridors@traveleye.lk</a> to explore partnership and Travel Corridor development opportunities.
+          </p>
+          <p className="mt-5 text-lg font-bold text-[#1f4f93] sm:text-2xl">
+            Connecting Nations Through Meaningful Travel.
+          </p>
         </div>
       </section>
 

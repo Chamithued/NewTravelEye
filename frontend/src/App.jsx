@@ -58,6 +58,8 @@ import TraveleyeCatalogueLibrary from './pages/TraveleyeCatalogueLibrary'
 import FounderCEO from './pages/FounderCEO'
 import HostStays from './pages/HostStays'
 import TraveleyeTravelExperiences from './pages/TraveleyeTravelExperiences'
+import BeautifulSriLankaBrand from './pages/BeautifulSriLankaBrand'
+import OurJourneyPage from './pages/OurJourneyPage'
 
 function App() {
   return (
@@ -85,6 +87,7 @@ function App() {
           <Route path="globally-aligned-locally-grounded" element={<GloballyAlignedLocallyGrounded />} />
           <Route path="guiding-principles" element={<GuidingPrinciples />} />
           <Route path="sri-lanka-journeys" element={<SriLankaJourneys />} />
+          <Route path="beautiful-sri-lanka" element={<BeautifulSriLankaBrand />} />
           <Route path="island-journeys" element={<IslandJourneys />} />
           <Route path="prive-collection" element={<PriveCollection />} />
           <Route path="travel-corridors" element={<TravelCorridors />} />
@@ -99,6 +102,7 @@ function App() {
           <Route path="media-press" element={<MediaPress />} />
           <Route path="traveleye-catalogue-library" element={<TraveleyeCatalogueLibrary />} />
           <Route path="vision-mission" element={<VisionMission />} />
+          <Route path="our-journey" element={<OurJourneyPage />} />
           <Route path="why-traveleye" element={<WhyTraveleyePage />} />
           <Route path="how-you-can-get-involved" element={<HowYouCanGetInvolved />} />
           <Route path="become-a-travel-corridor-partner" element={<BecomeATravelCorridorPartner />} />

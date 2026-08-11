@@ -1,8 +1,10 @@
 import Hero from '../components/Hero'
+import BeautifulSriLankaSection from '../components/BeautifulSriLankaSection'
 import QuickLinks from '../components/QuickLinks'
 import PeoplePoweredTourismIntro from '../components/PeoplePoweredTourismIntro'
 import ExplorePlatformsSection from '../components/ExplorePlatformsSection'
 import OurJourney from '../components/OurJourney'
+import BuildingSomethingBigger from '../components/BuildingSomethingBigger'
 import CatalogueLibrarySection from '../components/CatalogueLibrarySection'
 import FivePillars from '../components/FivePillars'
 import HomeFrameworkSections from '../components/HomeFrameworkSections'
@@ -20,9 +22,11 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
+      <BeautifulSriLankaSection />
       {/* <QuickLinks /> */}
       <ExplorePlatformsSection />
       <OurJourney />
+      <BuildingSomethingBigger />
       <PeoplePoweredTourismIntro />
       <EcosystemSection />
       <PeoplePoweredTourismFrameworkSection />

@@ -2,7 +2,6 @@ import {
   CheckCircle2,
   Compass,
   Handshake,
-  Laptop,
   Network,
   Route,
   Sparkles,
@@ -50,13 +49,6 @@ const connectionAreas = [
     description: 'Connecting tourism enterprises and partners to create stronger collaboration and shared opportunities.',
     subtitle: 'Connectivity Areas',
     items: ['Enterprise Networking', 'Partnership Development', 'Referral Networks', 'Business Connections', 'Knowledge Sharing', 'Industry Collaboration', 'Stakeholder Engagement'],
-  },
-  {
-    icon: Laptop,
-    title: 'Digital Enablement',
-    description: 'Using technology to improve communication, coordination, information management, and service delivery across the tourism ecosystem.',
-    subtitle: 'Digital Solutions',
-    items: ['Customer Relationship Management (CRM)', 'Booking Coordination Systems', 'Communication Platforms', 'Information Management Systems', 'Digital Knowledge Resources', 'Online Collaboration Tools', 'Data & Reporting Support'],
   },
 ]
 
@@ -109,15 +101,15 @@ export default function TraveleyeConnect() {
         <Copy>
           <p>Tourism succeeds when people, enterprises, destinations, and services work together.</p>
           <p>Every traveller&apos;s journey depends on seamless communication, reliable coordination, trusted partnerships, timely information, and strong connections between everyone involved in delivering the visitor experience.</p>
-          <p><strong>Traveleye Connect</strong> is the <strong>Tourism Connection & Coordination Division</strong> of <strong>Traveleye Alliance Sri Lanka</strong>, established to strengthen collaboration, improve coordination, facilitate communication, and connect tourism stakeholders across Sri Lanka&apos;s tourism ecosystem.</p>
-          <p>As an integral part of the <strong>People-Powered Tourism Ecosystem</strong>, Traveleye Connect brings together tourism enterprises, host stays, experience creators, tour operators, transport providers, destinations, strategic partners, and travellers through integrated coordination, information sharing, visitor support, and digital connectivity.</p>
+          <p><strong>Traveleye Connect</strong> is the <strong>Tourism Connection & Coordination Platform</strong> of <strong>Traveleye Alliance Sri Lanka</strong>, established to strengthen collaboration, improve coordination, facilitate communication, and connect tourism stakeholders across Sri Lanka&apos;s tourism ecosystem.</p>
+          <p>As an integral part of the <strong>People-Powered Tourism Ecosystem</strong>, Traveleye Connect brings together tourism enterprises, host stays, experience creators, tour operators, transport providers, destinations, strategic partners, and travellers through integrated coordination, information sharing, visitor support, and connected tourism services.</p>
           <p>Whether supporting tourism enterprises, facilitating partnerships, coordinating visitor services, or connecting opportunities across the ecosystem, Traveleye Connect helps tourism work together more effectively.</p>
         </Copy>
       </section>
 
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Target}>Our Purpose</SectionHeading>
-        <Copy><p>To strengthen Sri Lanka&apos;s tourism ecosystem by connecting people, enterprises, destinations, services, and opportunities through collaboration, coordination, communication, information sharing, and integrated digital connectivity.</p></Copy>
+        <Copy><p>To strengthen Sri Lanka&apos;s tourism ecosystem by connecting people, enterprises, destinations, services, and opportunities through collaboration, coordination, communication, information sharing, and seamless tourism connectivity.</p></Copy>
       </section>
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
@@ -167,15 +159,23 @@ export default function TraveleyeConnect() {
         <Copy>
           <p>At Traveleye Connect, we believe tourism achieves its greatest potential when people work together.</p>
           <p>By strengthening communication, building trusted relationships, encouraging collaboration, and connecting tourism stakeholders through practical coordination and digital enablement, we help create an ecosystem where opportunities are shared, services are better connected, and visitor experiences are strengthened.</p>
-          <p>Technology is not our destination—it is the tool that helps people connect, collaborate, and succeed together.</p>
+          <p>Strong tourism is built through connected people, coordinated services, trusted partnerships, and meaningful collaboration. Traveleye Connect exists to bring these elements together across Sri Lanka&apos;s tourism ecosystem.</p>
         </Copy>
       </section>
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Sparkles}>Looking Ahead</SectionHeading>
         <Copy>
-          <p>As the People-Powered Tourism Ecosystem continues to grow, Traveleye Connect will evolve into a central tourism connection and coordination hub supporting tourism enterprises, destinations, partners, and travellers through integrated communication, visitor support, collaboration, knowledge sharing, and smart digital solutions.</p>
+          <p>As the People-Powered Tourism Ecosystem continues to grow, Traveleye Connect will evolve into a central tourism connection and coordination hub supporting tourism enterprises, destinations, partners, tourism suppliers, and travellers through integrated communication, visitor support, collaboration, service coordination, and stronger tourism connectivity.</p>
           <p>Together, we are building a more connected, collaborative, and people-powered tourism industry for Sri Lanka.</p>
+        </Copy>
+      </section>
+
+      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <SectionHeading icon={Handshake}>Connect with Traveleye Connect</SectionHeading>
+        <Copy>
+          <p>Whether you are a tourism enterprise, destination, tourism authority, government agency, development organisation, strategic partner, or traveller, we invite you to explore how Traveleye Connect strengthens communication, coordination, collaboration, visitor support, and knowledge sharing across Sri Lanka&apos;s tourism ecosystem.</p>
+          <p>Contact us at <a href="mailto:connect@traveleye.lk" className="font-bold text-[#1f4f93] transition-colors hover:text-[#163b70]">connect@traveleye.lk</a> to explore collaboration and connection opportunities.</p>
         </Copy>
       </section>
 

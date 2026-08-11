@@ -181,6 +181,20 @@ export default function TraveleyeGuidant() {
         </Copy>
       </section>
 
+      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <SectionHeading icon={Handshake} title="Let's Build Better Tourism Together" />
+        <Copy>
+          <p>Whether you are developing a tourism enterprise, strengthening a destination, designing a tourism programme, planning a tourism project, or seeking strategic tourism guidance, Traveleye Guidant is ready to work with you through practical advice, collaboration, and people-powered solutions.</p>
+          <p>
+            Contact us at{' '}
+            <a className="font-bold text-[#1f4f93] transition hover:text-[#173d72]" href="mailto:guidant@traveleye.lk">
+              guidant@traveleye.lk
+            </a>{' '}
+            to discuss your tourism development and advisory requirements.
+          </p>
+        </Copy>
+      </section>
+
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-5xl rounded-3xl border border-[#d4e0ed] bg-white px-6 py-10 text-center shadow-sm sm:px-10 sm:py-14">
           <SectionHeading icon={MessageCircle} title="Complimentary Tourism Business Discovery Session" />
