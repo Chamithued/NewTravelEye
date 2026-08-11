@@ -196,7 +196,7 @@ export default function VietLankaJourneys() {
               <span className="block">Viet Lanka Journeys</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Shared Experiences. Lasting Connections.
+              Connecting Nations, People and Places.
             </p>
           </div>
         </div>
@@ -222,15 +222,12 @@ export default function VietLankaJourneys() {
       <section className="w-full bg-[#EEF4FA] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <SectionHeading icon={Handshake} title="An Initiative of Traveleye Alliance Sri Lanka" center={false} />
+            <SectionHeading icon={Handshake} title="Part of Traveleye Travel Corridors" center={false} />
           </div>
 
           <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Traveleye Viet Lanka Journeys is an initiative of Traveleye Alliance Sri Lanka, a tourism ecosystem developer specialising in People-Powered Tourism and tourism ecosystem development.
-            </p>
-            <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              The platform is designed to facilitate travel, strengthen tourism connectivity, foster partnerships, and encourage deeper engagement between people, destinations, and tourism stakeholders across Vietnam and Sri Lanka.
+              Traveleye Viet Lanka Journeys is part of Traveleye Travel Corridors, a signature travel corridor brand within the Traveleye Travel Collective of Traveleye Alliance Sri Lanka. Guided by the Traveleye People-Powered Tourism Framework, it facilitates meaningful travel, strengthens tourism connectivity, fosters partnerships, and encourages deeper engagement between people, destinations, and tourism stakeholders across Vietnam and Sri Lanka.
             </p>
           </div>
         </div>
@@ -290,7 +287,7 @@ export default function VietLankaJourneys() {
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           <SectionHeading icon={Handshake} title="Building Viet–Lanka Connections" />
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Beyond facilitating travel, Traveleye Viet Lanka Journeys seeks to strengthen tourism connectivity, partnerships, and collaboration between Vietnam and Sri Lanka.
@@ -301,17 +298,11 @@ export default function VietLankaJourneys() {
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             As Viet Lanka Journeys grows, it seeks to develop strategic partnerships and market-focused collaborations across Vietnam and Sri Lanka that support sustainable tourism growth and stronger connections between the two nations.
           </p>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#EEF4FA] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Sparkles} title="Meaningful Experiences. Lasting Connections." />
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            More than a travel platform, Traveleye Viet Lanka Journeys serves as a bridge between Vietnam and Sri Lanka, connecting people, cultures, destinations, and opportunities through meaningful travel and enduring relationships.
+            More than a travel platform, Traveleye Viet Lanka Journeys serves as a bridge between Vietnam and Sri Lanka, connecting nations, people, and places through meaningful travel and enduring relationships.
           </p>
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            By encouraging exploration, cultural exchange, and tourism collaboration, the platform seeks to create lasting value for travellers, destinations, and tourism stakeholders in both countries.
+            By encouraging exploration, cultural exchange, tourism collaboration, and people-to-people connections, the platform seeks to create lasting value for travellers, destinations, tourism enterprises, and communities in both countries.
           </p>
         </div>
       </section>
@@ -320,18 +311,12 @@ export default function VietLankaJourneys() {
         <div className="mx-auto max-w-4xl text-center">
           <SectionHeading icon={BriefcaseBusiness} title="Begin Your Viet Lanka Journey" />
           <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
-            Whether you are planning a holiday, cultural experience, educational visit, wellness escape, celebration, or special interest journey, we invite you to discover the possibilities that Vietnam and Sri Lanka have to offer.
+            Whether you are planning a holiday, cultural experience, educational visit, wellness escape, celebration, or exploring travel opportunities between Vietnam and Sri Lanka, we invite you to discover the possibilities that both countries have to offer.
           </p>
 
-          <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#eef4ef] bg-[#FCFBF8] p-6 shadow-sm sm:p-8">
-            <h3 className="text-xl font-bold text-[#1f4f93] sm:text-2xl">Traveleye Viet Lanka Journeys</h3>
-            <p className="mt-5 text-sm font-semibold leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Connecting Vietnam and Sri Lanka Through Meaningful Travel
-            </p>
-            <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to begin planning your experience.
-            </p>
-          </div>
+          <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Contact us at <a href="mailto:vietlanka@traveleye.lk" className="font-semibold text-[#1f4f93]">vietlanka@traveleye.lk</a> to begin your Viet Lanka journey.
+          </p>
         </div>
       </section>
 

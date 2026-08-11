@@ -122,7 +122,7 @@ export default function CelebrationsEvents() {
               Whether intimate or grand, every celebration is shaped around the people, relationships, and experiences that make it unique.
             </p>
             <p>
-              As an initiation of the TraveleyeAlliance Sri Lanka, Traveleye Celebrations & Events is guided by the belief that life's most meaningful occasions become even more memorable when they bring people together through shared experiences, genuine connections, and distinctive destinations.
+              Traveleye Celebrations & Events is part of the Traveleye Travel Collective, the travel platform of Traveleye Alliance Sri Lanka. Guided by the People-Powered Tourism Framework, it creates thoughtfully curated celebrations, destination events, and memorable experiences that bring people together through meaningful moments and distinctive places.
             </p>
           </div>
         </div>
@@ -204,10 +204,10 @@ export default function CelebrationsEvents() {
             <div className="mt-10 rounded-2xl border border-[#eef4ef] bg-[#FCFBF8] p-6 shadow-sm sm:p-8">
               <h3 className="text-xl font-bold text-[#0f4d2f] sm:text-2xl">Begin the Conversation</h3>
               <p className="mt-5 text-sm leading-7 text-[#475569] sm:text-base">
-                Whether you are planning a journey, experience, celebration, or special occasion, we would be delighted to help you explore the possibilities.
+                Whether you are planning a destination wedding, celebration, corporate event, incentive programme, or another special occasion, we would be delighted to help you explore the possibilities.
               </p>
               <p className="mt-5 text-sm leading-7 text-[#475569] sm:text-base">
-                Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to discuss your requirements and begin planning your experience.
+                Contact us at <a href="mailto:events@traveleye.lk" className="font-semibold text-[#1f4f93]">events@traveleye.lk</a> to discuss your requirements and begin planning your experience.
               </p>
             </div>
           </div>

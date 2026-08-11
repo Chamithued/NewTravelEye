@@ -42,7 +42,7 @@ const interestExperiences = [
   { label: 'Wellness & Slow Travel', icon: Leaf },
   { label: 'Culinary Journeys', icon: ChefHat },
   { label: 'Nature & Wildlife Experiences', icon: Trees },
-  { label: 'Celebration Travel', icon: CalendarHeart },
+  { label: 'Celebrations & Special Occasions', icon: CalendarHeart },
   { label: 'Special Interest Journeys', icon: Sparkles },
   { label: 'Lifestyle & Leisure Experiences', icon: Heart },
 ]
@@ -97,10 +97,10 @@ export default function PriveCollection() {
               className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
               <span className="block">TRAVELEYE</span>
-              <span className="block">PRIVE COLLECTION SRI LANKA</span>
+              <span className="block">PRIVE COLLECTION</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Refined Journeys. Meaningful Connections.
+              Sri Lanka. Refined Journeys. Bespoke Experiences.
             </p>
           </div>
         </div>
@@ -129,12 +129,12 @@ export default function PriveCollection() {
       <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <SectionHeading icon={Handshake} title="An Initiative of Traveleye Alliance Sri Lanka" center={false} />
+            <SectionHeading icon={Handshake} title="A Premium Travel Brand of Traveleye Travel Collective" center={false} />
           </div>
 
           <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Traveleye Privé Collection Sri Lanka is an initiative of Traveleye Alliance Sri Lanka, a tourism ecosystem developer specializing in People-Powered Tourism and tourism ecosystem development. The collection brings together carefully selected hospitality partners, experience providers, and destination specialists to create refined travel experiences rooted in authenticity, personalization, and meaningful connection.
+              Traveleye Privé Collection is part of the Traveleye Travel Collective, the travel platform of Traveleye Alliance Sri Lanka. Guided by the People-Powered Tourism Framework, it brings together carefully selected hospitality partners, experience providers, and destination specialists to create refined journeys rooted in authenticity, personalisation, and meaningful connection.
             </p>
           </div>
         </div>
@@ -205,7 +205,7 @@ export default function PriveCollection() {
               Whether you are planning a journey, experience, celebration, or special occasion, we would be delighted to help you explore the possibilities.
             </p>
             <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to discuss your requirements and begin planning your experience.
+              Contact us at <a href="mailto:prive@traveleye.lk" className="font-semibold text-[#1f4f93]">prive@traveleye.lk</a> to discuss your requirements and begin planning your experience.
             </p>
           </div>
         </div>

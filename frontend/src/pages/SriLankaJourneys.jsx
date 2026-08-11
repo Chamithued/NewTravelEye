@@ -34,11 +34,11 @@ const reasons = [
   },
   {
     title: 'Meaningful Travel Experiences',
-    text: 'We believe that the most memorable journeys are often shaped by the people you meet, the stories you discover, and the experiences you share along the way.',
+    text: 'We believe that the most memorable journeys are often shaped by the people you meet, the stories you discover, and the experiences you share along the way. Whenever possible, our journeys create opportunities to engage with local people, support tourism enterprises, and experience Sri Lanka in authentic and meaningful ways.',
     icon: Users,
   },
   {
-    title: 'Carefully Selected Travel Services',
+    title: 'Carefully Selected Trusted Travel Partners & Services',
     text: 'From accommodation and transportation to guiding and destination experiences, we work with trusted partners who share our commitment to quality, hospitality, and service.',
     icon: Handshake,
   },
@@ -190,10 +190,9 @@ export default function SriLankaJourneys() {
 
       <section className="w-full bg-white px-4 pb-10 pt-10 sm:px-6 sm:pb-14 sm:pt-14 lg:px-8 lg:pt-16">
         <div className="mx-auto max-w-6xl text-center">
-          <SectionHeading icon={MapPinned} title="Discover Sri Lanka Through People and Place" />
-          {/* <p className="mx-auto mt-6 max-w-5xl text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
+          <SectionHeading icon={MapPinned} title="Discover Sri Lanka Through People and Places" />
           <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Thoughtfully designed travel experiences that connect travellers with the culture, heritage, nature, wildlife, and authentic destinations that make Sri Lanka truly unique.
+            Meaningful inbound travel experiences inspired by people and places, connecting travellers with Sri Lanka's culture, heritage, nature, wildlife, and authentic destinations.
           </p>
           <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Sri Lanka is a destination where ancient heritage, vibrant cultures, breathtaking landscapes, abundant wildlife, and warm hospitality come together to create extraordinary travel experiences.
@@ -202,7 +201,7 @@ export default function SriLankaJourneys() {
             At Traveleye Lanka Journeys, we believe that travel is about more than moving between destinations. It is about discovering the stories, traditions, people, and places that bring a destination to life and create lasting memories.
           </p>
           <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            As the flagship inbound travel brand of Traveleye Alliance Sri Lanka, Traveleye Lanka Journeys creates thoughtfully designed travel experiences that connect travellers with the culture, heritage, nature, and people of Sri Lanka through authentic encounters, meaningful experiences, and trusted local expertise.
+            As the flagship inbound travel brand of the Traveleye Travel Collective, Traveleye Lanka Journeys creates authentic travel experiences inspired by people and places, connecting travellers with the culture, heritage, nature, and communities of Sri Lanka. While welcoming travellers from international markets, it also supports the long-term development of Traveleye Travel Corridor Companies through strategic market development and partnership opportunities.
           </p>
           <p className="mx-auto mt-6 max-w-5xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Whether you are visiting Sri Lanka for leisure, culture, nature, pilgrimage, education, wellness, family travel, or group travel, our team is committed to helping you experience the island through journeys that are enriching, enjoyable, and seamlessly coordinated from arrival to departure.
@@ -242,7 +241,7 @@ export default function SriLankaJourneys() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={BriefcaseBusiness} title="Our Travel Services" />
           <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Traveleye Lanka Journeys offers a comprehensive range of travel services for individual travellers, families, groups, organisations, and international travel partners.
+            Our travel services are designed to meet the needs of individual travellers, families, groups, organisations, and international travel partners.
           </p>
           <p className="mx-auto mt-4 max-w-4xl text-center text-sm font-semibold leading-7 text-[#475569] sm:text-base sm:leading-8">
             Our services include:
@@ -268,7 +267,7 @@ export default function SriLankaJourneys() {
       <section className="w-full bg-[#EEF4FA] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <SectionHeading icon={Users} title="Travel Through People and Place" center={false} />
+            <SectionHeading icon={Users} title="Travel Through People and Places" center={false} />
           </div>
 
           <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
@@ -276,20 +275,21 @@ export default function SriLankaJourneys() {
               At the heart of every memorable travel experience are the people, places, and stories that bring a destination to life.
             </p>
             <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Guided by the principles of the Traveleye People-Powered Tourism Framework, Traveleye Lanka Journeys seeks to create meaningful connections between travellers, destinations, local communities, and tourism enterprises.
+              Guided by the Traveleye People-Powered Tourism Framework, Traveleye Lanka Journeys creates meaningful connections between travellers, destinations, local communities, and tourism enterprises.
             </p>
             <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               By encouraging authentic engagement, responsible travel practices, and greater participation across the tourism value chain, we strive to create travel experiences that generate lasting value for travellers while contributing positively to destinations and local livelihoods.
             </p>
-            <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">Because meaningful travel is not only about where you go.</p>
-            <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">It is also about the people you meet, the experiences you share, and the connections you create along the way.</p>
+            <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              Meaningful travel is more than the places you visit; it is about the people you meet, the experiences you share, and the connections you create along the way.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Plane} title="Begin Your Sri Lanka Experience" />
+          <SectionHeading icon={Plane} title="Plan Your Journey" />
           <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             Whether you are visiting Sri Lanka for the first time or returning to discover more of the island, Traveleye Lanka Journeys offers thoughtfully designed travel experiences that help you explore the destination with confidence, comfort, and authenticity.
           </p>
@@ -297,10 +297,10 @@ export default function SriLankaJourneys() {
             Through local expertise, trusted partnerships, and meaningful destination experiences, we invite you to discover the people, places, and stories that make Sri Lanka truly unique.
           </p>
           <p className="mt-8 text-lg font-bold text-[#1f4f93] sm:text-2xl">
-            Discover Sri Lanka Through People and Place.
+            Discover Sri Lanka Through People and Places.
           </p>
-          <p className="mt-4 text-base font-semibold text-[#0f4d2f] sm:text-lg">
-            Plan Your Journey | Contact Our Travel Team
+          <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Contact us at <a href="mailto:journeys@traveleye.lk" className="font-semibold text-[#1f4f93]">journeys@traveleye.lk</a> to start planning your Sri Lanka journey.
           </p>
         </div>
       </section>

@@ -220,6 +220,12 @@ export default function OurJourney() {
           </Link>
         </div>
 
+        <p className="mx-auto mt-10 max-w-5xl text-center text-[1.05rem] leading-7 text-[#5f6c87] sm:text-[1.15rem] sm:leading-8">
+          After building our tourism experience and capabilities since 2006, Traveleye Alliance Sri
+          Lanka is now entering a new phase — building a <strong>People-Powered Tourism Ecosystem</strong> to
+          develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+        </p>
+
         {/* <div className="mt-12 flex flex-col items-center text-center lg:mt-8">
           <p className="max-w-[1140px] text-[1.12rem] font-extrabold italic leading-relaxed text-[#1f4f93] sm:text-[1.28rem] lg:text-[1.45rem]">
             &ldquo;This is not tourism as usual. It is tourism reimagined &mdash; By the People. For

@@ -25,7 +25,7 @@ const operationAreas = [
   {
     icon: Network,
     title: 'Technology & Digital Solutions',
-    copy: 'Supporting tourism enterprises through digital transformation, technology adoption, digital platforms, business systems, artificial intelligence, online connectivity, and digital innovation.',
+    copy: 'Supporting tourism enterprises through digital transformation, technology adoption, business systems, artificial intelligence, online connectivity, and practical digital enablement.',
   },
   {
     icon: Hotel,
@@ -67,14 +67,13 @@ const deliveryMechanisms = [
   },
   {
     icon: GraduationCap,
-    title: 'Traveleye Up Skills',
+    title: 'Traveleye UpSkills',
     copy: 'Building tourism capability through education, entrepreneurship programmes, mentoring, professional development, leadership training, and practical learning.',
   },
   {
     icon: Network,
     title: 'Traveleye Connect',
-    tagline: 'Connecting People. Coordinating Tourism.',
-    copy: 'Connecting tourism enterprises, travellers, destinations, partners, and support services through collaboration, communication, coordination, visitor support, and integrated digital solutions.',
+    copy: 'Connecting tourism enterprises, travellers, destinations, tourism suppliers, partners, and support services through collaboration, communication, coordination, visitor support, and seamless tourism connectivity.',
   },
 ]
 
@@ -97,7 +96,7 @@ const participants = [
 
 const connectedAreas = [
   'Education develops knowledge and professional capability.',
-  'Technology improves connectivity and innovation.',
+  'Technology enables stronger connectivity, coordination, innovation, and service delivery.',
   'Hospitality operations strengthen service quality and visitor satisfaction.',
   'Business advisory supports enterprise growth.',
   'Marketing expands market opportunities.',
@@ -255,6 +254,14 @@ export default function SupportServices() {
         <Copy>
           <p>Whether you are a tourism entrepreneur, tourism enterprise, educational institution, community organisation, government agency, tourism authority, development organisation, investor, technology partner, or strategic collaborator, <strong>Traveleye Alliance Sri Lanka</strong> invites you to become part of <strong>Traveleye Ecosystem Support</strong>.</p>
           <p>Together, we can strengthen tourism enterprises through knowledge, innovation, technology, professional development, operational excellence, and business support while building a stronger <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+        </Copy>
+      </section>
+
+      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <SectionHeading icon={Handshake} title="Strengthen Tourism Together" />
+        <Copy>
+          <p>Whether you are seeking tourism advisory, professional development, tourism connectivity, enterprise support, or collaborative opportunities, <strong>Traveleye Ecosystem Support</strong> is ready to help strengthen tourism enterprises, destinations, and partnerships across Sri Lanka.</p>
+          <p>Contact us at <a className="font-semibold text-[#1f4f93] hover:text-[#173b70]" href="mailto:ecosystemsupport@traveleye.lk">ecosystemsupport@traveleye.lk</a> to explore collaboration and support opportunities.</p>
         </Copy>
       </section>
 

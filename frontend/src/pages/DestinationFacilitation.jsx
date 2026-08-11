@@ -25,7 +25,7 @@ const operationAreas = [
     <>By improving destination coordination, tourism becomes more connected, efficient, and capable of delivering better visitor experiences.</>,
   ] },
   { icon: House, title: 'Host Stay & Travel Experience Facilitation', subtitle: 'Strengthening Local Tourism Experiences', paragraphs: [
-    <>Supporting the identification, development, coordination, and continuous improvement of authentic place-inspired host stays and people and place-inspired travel experiences within destinations.</>,
+    <>Supporting the identification, development, coordination, and strengthening of authentic place-inspired host stays and people and place-inspired travel experiences within destinations.</>,
     <>Working closely with <strong>Traveleye Host Experiences</strong>, this area strengthens local hosts and experience creators while expanding tourism opportunities across the destination.</>,
   ] },
   { icon: BriefcaseBusiness, title: 'Tourism Enterprise Facilitation', subtitle: 'Supporting Local Tourism Enterprises', paragraphs: [
@@ -49,7 +49,7 @@ const ecosystemRoles = [
   'Hosts create authentic places to stay.',
   'Experience creators bring destinations to life.',
   'Communities contribute local identity, culture, and hospitality.',
-  'Travellers enrich destinations through meaningful engagement and responsible participation.',
+  'Travellers contribute to destination vitality through meaningful engagement and responsible participation.',
   'Public institutions provide leadership and destination support.',
   'Strategic partners expand opportunities for investment, innovation, and collaboration.',
 ]
@@ -83,7 +83,7 @@ export default function DestinationFacilitation() {
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 flex w-full justify-center px-4 py-12 text-center sm:px-6 lg:px-8">
         <div><h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"><span className="block">Traveleye</span><span className="block">Destination Facilitation</span></h1>
-          <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Destinations Through People &amp; Stewardship</p></div>
+          <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Strengthening Destinations Through People and Stewardship</p></div>
       </div>
     </section>
 
@@ -92,10 +92,10 @@ export default function DestinationFacilitation() {
       <p className="mt-2 text-lg font-bold leading-8 text-[#172544]">To develop and strengthen destination ecosystems by coordinating tourism enterprises, host stays, travel experiences, visitor services, local participation, and destination partnerships while supporting the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.</p>
     </div></section>
 
-    <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><SectionHeading icon={Sparkles} title="Strengthening Destinations Through Collaboration and Coordination" /><Copy wide>
+    <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><SectionHeading icon={Sparkles} title="Strengthening Destinations Through Collaboration and Coordination" /><Copy>
       <p>Strong destinations are built when people, enterprises, communities, institutions, and partnerships work together with a shared purpose.</p>
-      <p><strong>Traveleye Destination Facilitation</strong> is one of the four <strong>People-Powered Tourism Operational Platforms</strong> of the <strong>People-Powered Tourism Framework</strong>. It transforms the Framework into practical action by developing and coordinating destination ecosystems that connect tourism enterprises, host stays, travel experiences, visitor services, destination stakeholders, and local opportunities while supporting the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.</p>
-      <p>Rather than viewing destinations as collections of individual businesses, Destination Facilitation creates connected destination ecosystems where tourism enterprises, communities, visitors, and supporting organisations work together to deliver authentic, coordinated, and meaningful visitor experiences.</p>
+      <p><strong>Traveleye Destination Facilitation</strong> is one of the four <strong>People-Powered Tourism Operational Platforms</strong> of the <strong>People-Powered Tourism Framework</strong>. It transforms the Framework into practical action by developing and coordinating destination ecosystems that strengthen collaboration, improve visitor readiness, connect tourism stakeholders, and support the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.</p>
+      <p>Rather than viewing destinations as collections of independent tourism enterprises, Destination Facilitation brings together tourism enterprises, host stays, experience creators, visitor services, communities, and supporting organisations to deliver authentic, coordinated, and meaningful visitor experiences while creating stronger, more connected destinations.</p>
       <p>Through collaboration, coordination, participation, enterprise development, and destination stewardship, the platform helps destinations become more connected, visitor-ready, resilient, and sustainable.</p>
     </Copy></section>
 
@@ -129,12 +129,18 @@ export default function DestinationFacilitation() {
     <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><SectionHeading icon={Sparkles} title="Looking Ahead" /><Copy>
       <p>As Sri Lanka's tourism destinations continue to evolve, <strong>Traveleye Destination Facilitation</strong> will continue strengthening destination ecosystems through collaboration, coordination, enterprise participation, visitor support, and shared stewardship.</p>
       <p>By helping destinations become more connected, better organised, and visitor-ready, the platform will continue supporting the development and strengthening of micro and small tourism enterprises while creating richer visitor experiences, stronger local economies, and more resilient destinations.</p>
-      <p>Because great destinations are not created by individual businesses alone.</p><p>They are built by connected people, coordinated enterprises, authentic experiences, collaborative partnerships, and a shared commitment to creating places where tourism benefits everyone.</p>
+      <p>As destination ecosystems mature, <strong>Traveleye Destination Facilitation</strong> will support the progressive establishment of <strong>Traveleye Destination Facilitation Centres</strong> in strategic destinations. Working in partnership with local entrepreneurs, community organisations, capable destination leaders, and young tourism entrepreneurs. These centres will strengthen destination coordination, visitor support, enterprise collaboration, and destination stewardship while creating new opportunities for local tourism development.</p>
+      <p>Because great destinations are not created by individual businesses alone. They are built by connected people, coordinated enterprises, authentic experiences, collaborative partnerships, and a shared commitment to creating places where tourism benefits everyone.</p>
     </Copy></section>
 
     <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><SectionHeading icon={BriefcaseBusiness} title="Grow with Traveleye Alliance" /><Copy>
       <p>Whether you are a traveller, tourism entrepreneur, tourism enterprise, host, experience creator, local tour operator, community organisation, government agency, tourism authority, educational institution, development organisation, investor, or strategic partner, <strong>Traveleye Alliance Sri Lanka</strong> invites you to become part of <strong>Traveleye Destination Facilitation</strong>.</p>
-      <p>Together, we can develop stronger destination ecosystems, support micro and small tourism enterprises, coordinate authentic tourism experiences, strengthen visitor services, expand destination opportunities, and build a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+      <p>Together, we can develop stronger destination ecosystems, support micro and small tourism enterprises, strengthen destination coordination, enhance visitor services, expand destination opportunities, and build a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+    </Copy></section>
+
+    <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8"><SectionHeading icon={Handshake} title="Strengthen Destinations Together" /><Copy>
+      <p>Whether you are planning a destination development initiative, coordinating tourism stakeholders, strengthening visitor experiences, or exploring destination partnership opportunities, <strong>Traveleye Destination Facilitation</strong> is ready to work with you.</p>
+      <p>Contact us at <a href="mailto:destinations@traveleye.lk" className="font-semibold text-[#1f4f93] hover:text-[#173b70]">destinations@traveleye.lk</a> to explore destination development and collaboration opportunities.</p>
     </Copy></section>
 
     <ExploreEcosystem /><FooterLinks />

@@ -181,7 +181,7 @@ export default function SiamLankaJourneys() {
               <span className="block">SIAM LANKA JOURNEYS</span>
             </h1>
             <p className="mt-3 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
-              Shared Traditions. Lasting Connections.
+              Connecting Nations, People and Places.
             </p>
           </div>
         </div>
@@ -204,12 +204,12 @@ export default function SiamLankaJourneys() {
       <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2 lg:items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <SectionHeading icon={Handshake} title="An Initiative of Traveleye Alliance Sri Lanka" center={false} />
+            <SectionHeading icon={Handshake} title="Part of Traveleye Travel Corridors" center={false} />
           </div>
 
           <div className="rounded-2xl border-l-[6px] border-l-[#1F4F93] bg-white p-5 shadow-sm sm:p-6">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Traveleye Siam Lanka Journeys is an initiative of Traveleye Alliance Sri Lanka, a tourism ecosystem developer specialising in People-Powered Tourism and tourism ecosystem development.
+              Traveleye Siam Lanka Journeys is part of Traveleye Travel Corridors, a signature travel corridor brand within the Traveleye Travel Collective of Traveleye Alliance Sri Lanka. Guided by the Traveleye People-Powered Tourism Framework, it facilitates meaningful travel, strengthens tourism connectivity, fosters partnerships, and encourages deeper engagement between people, destinations, and tourism stakeholders across Thailand and Sri Lanka.
             </p>
             <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
               The platform is designed to facilitate travel, strengthen tourism connectivity, foster partnerships, and encourage deeper engagement between people, destinations, and tourism stakeholders across Thailand and Sri Lanka.
@@ -268,7 +268,7 @@ export default function SiamLankaJourneys() {
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Handshake} title="Building Siam–Lanka Connections" />
+          <SectionHeading icon={Handshake} title="Building Siam - Lanka Connections" />
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Beyond facilitating travel, Traveleye Siam Lanka Journeys seeks to strengthen tourism connectivity, partnerships, and collaboration between Thailand and Sri Lanka.
           </p>
@@ -278,28 +278,22 @@ export default function SiamLankaJourneys() {
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             As Siam Lanka Journeys grows, it seeks to develop strategic partnerships and market-focused collaborations across Thailand and Sri Lanka that support sustainable tourism growth and stronger connections between the two nations.
           </p>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Sparkles} title="Shared Traditions. Lasting Connections." />
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            More than a travel platform, Traveleye Siam Lanka Journeys serves as a bridge between Thailand and Sri Lanka, connecting people, cultures, destinations, and opportunities through meaningful travel and enduring relationships.
+            More than a travel platform, Traveleye Siam Lanka Journeys serves as a bridge between Thailand and Sri Lanka, connecting nations, people, and places through meaningful travel and enduring relationships.
           </p>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={BriefcaseBusiness} title="Begin the Conversation" />
+          <SectionHeading icon={BriefcaseBusiness} title="Begin Your Siam Lanka Journey" />
           <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
-            Whether you are planning a journey, pilgrimage, celebration, business visit, or special occasion, we would be delighted to help you explore the possibilities.
+            Whether you are planning a holiday, pilgrimage, cultural experience, business visit, celebration, or exploring travel opportunities between Thailand and Sri Lanka, we invite you to discover the possibilities that both countries have to offer.
           </p>
 
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#eef4ef] bg-[#FCFBF8] p-6 shadow-sm sm:p-8">
             <p className="text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              Contact us at <a href="mailto:info@traveleye.lk" className="font-semibold text-[#1f4f93]">info@traveleye.lk</a> to discuss your requirements and begin planning your experience.
+              Contact us at <a href="mailto:siamlanka@traveleye.lk" className="font-semibold text-[#1f4f93]">siamlanka@traveleye.lk</a> to begin your Siam Lanka journey.
             </p>
           </div>
         </div>

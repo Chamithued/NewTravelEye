@@ -152,7 +152,7 @@ export default function GlobalJourneys() {
           <SectionHeading icon={Globe2} title="Explore the World, Beyond Borders" />
           {/* <p className="mx-auto mt-6 max-w-5xl text-center text-sm leading-7 text-slate-700 sm:text-lg sm:leading-8"> */}
           <p className="mx-auto mt-8 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Thoughtfully planned international travel experiences designed to connect Sri Lankan travellers with destinations, cultures, and opportunities across the globe.
+            Meaningful international travel experiences that connect Sri Lankan travellers with destinations, cultures, and opportunities across the globe.
           </p>
         </div>
       </section>
@@ -164,10 +164,7 @@ export default function GlobalJourneys() {
             Travel has the power to broaden perspectives, inspire new ideas, create lasting memories, and deepen our understanding of the world around us.
           </p>
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            At Traveleye Global Journeys, we believe that international travel is about more than visiting new destinations. It is about experiencing different cultures, discovering new ways of life, building meaningful connections, and creating journeys that enrich both the traveller and the experiences they encounter.
-          </p>
-          <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            As the outbound travel platform of Traveleye Alliance Sri Lanka, Global Journeys helps Sri Lankan travellers explore the world through thoughtfully planned travel experiences designed around discovery, learning, leisure, faith, culture, and personal enrichment.
+            As the flagship outbound travel brand of the Traveleye Travel Collective, Traveleye Global Journeys connects Sri Lankan travellers with destinations, cultures, and opportunities across the world through meaningful travel experiences inspired by discovery, learning, leisure, faith, culture, and personal enrichment. Guided by the Traveleye People-Powered Tourism Framework, it promotes responsible travel, strengthens international partnerships, and encourages greater cultural understanding.
           </p>
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Whether travelling independently, with family and friends, as part of a group, or through a specialised travel programme, Global Journeys seeks to create memorable experiences that connect Sri Lankans with the world beyond our shores.
@@ -239,14 +236,10 @@ export default function GlobalJourneys() {
             Every international journey creates opportunities for discovery, understanding, and connection.
           </p>
           <p className="mt-6 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Through Global Journeys, we seek to help Sri Lankan travellers experience the diversity of our world while creating meaningful connections between people, cultures, and destinations.
+            Through Traveleye Global Journeys, we seek to help Sri Lankan travellers experience the diversity of our world while creating meaningful connections between people, cultures, and destinations.
           </p>
           <p className="mt-8 text-base font-semibold leading-7 text-[#1f4f93] sm:text-lg">
-            Because travel is not simply about reaching a destination.
-          </p>
-          {/* <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8"> */}
-          <p className="mt-8 text-base font-semibold leading-7 text-[#1f4f93] sm:text-lg">
-            It is about the experiences, perspectives, and memories gained along the way.
+            Because travel is not simply about reaching a destination. It is about the experiences, perspectives, friendships, and memories gained along the way.
           </p>
         </div>
       </section>
@@ -260,11 +253,12 @@ export default function GlobalJourneys() {
           <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
             Whether you are planning a holiday, pilgrimage, educational visit, cultural journey, family getaway, or group travel experience, Global Journeys is ready to help you explore the world with confidence and purpose.
           </p>
-          <p className="mt-8 text-lg font-bold text-[#1f4f93] sm:text-2xl">
-            Sri Lankans. Connecting. The World.
-          </p>
-          <p className="mt-3 text-base font-semibold text-[#0f4d2f] sm:text-lg">
-            ලොව වටා ලොව දකින්න
+          <p className="mt-6 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            Contact us at{' '}
+            <a className="font-semibold text-[#1f4f93] no-underline" href="mailto:global@traveleye.lk">
+              global@traveleye.lk
+            </a>{' '}
+            to begin planning your global journey.
           </p>
         </div>
       </section>
