@@ -4,7 +4,7 @@ import buildingSomethingBiggerImg from '../assets/client/Join the movement2.png'
 
 export default function BuildingSomethingBigger() {
   return (
-    <section className="w-full bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <section className="w-full bg-[#fcfbf7] px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-6xl text-center">
           <div className="mb-5 flex justify-center">
@@ -43,7 +43,7 @@ export default function BuildingSomethingBigger() {
 
             <div className="mt-8 text-center">
               <Link
-                to="/how-you-can-get-involved"
+                to="/building-something-bigger"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#1f4f93] px-7 py-3.5 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#173f78] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1f4f93] focus-visible:ring-offset-2"
               >
                 Be Part of It

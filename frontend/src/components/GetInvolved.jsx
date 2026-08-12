@@ -167,7 +167,7 @@ export default function GetInvolved() {
           </div>
           {/* <div className="mt-7">
             <Link
-              to="/how-you-can-get-involved"
+              to="/how-you-can-grow-with-traveleye"
               className="inline-flex w-full items-center justify-center rounded-xl bg-[#275CAD] px-8 py-4 text-center text-lg font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto"
             >
               Join the Traveleye Ecosystem
@@ -191,7 +191,7 @@ export default function GetInvolved() {
 
         <div className="mt-10 flex justify-center">
           <Link
-            to="/how-you-can-get-involved"
+            to="/how-you-can-grow-with-traveleye"
             className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#275CAD] px-6 py-4 text-center text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#224a96] sm:w-auto sm:px-8 sm:text-[1.05rem]"
           >
             Explore How You Can Grow Together With Traveleye Alliance

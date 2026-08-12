@@ -152,12 +152,12 @@ export default function OurJourneyPage() {
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Network}>Our Evolution</SectionHeading>
-        <div className="mx-auto mt-9 flex max-w-4xl flex-col items-center text-center text-base font-bold text-[#1f4f93] sm:text-lg">
-          <p>2006 - A Journey Rooted in Purpose</p>
-          <ArrowDown className="my-3 h-6 w-6" />
-          <p>2012 - From Travel to Experiences</p>
-          <ArrowDown className="my-3 h-6 w-6" />
-          <p>Today - Building a People-Powered Tourism Ecosystem</p>
+        <div className="mx-auto mt-9 flex max-w-2xl flex-col items-center text-center font-bold text-[#172544]">
+          <div className="w-full rounded-2xl border-2 border-[#1f4f93] bg-white px-5 py-6 text-base shadow-sm sm:px-8 sm:text-xl">2006 - A Journey Rooted in Purpose</div>
+          <div className="flex h-16 items-center justify-center" aria-hidden="true"><span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#305897] bg-white text-[#305897] shadow-sm"><ArrowDown className="h-6 w-6" strokeWidth={2.5} /></span></div>
+          <div className="w-full rounded-2xl border-2 border-[#1f4f93] bg-white px-5 py-6 text-base shadow-sm sm:px-8 sm:text-xl">2012 - From Travel to Experiences</div>
+          <div className="flex h-16 items-center justify-center" aria-hidden="true"><span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#305897] bg-white text-[#305897] shadow-sm"><ArrowDown className="h-6 w-6" strokeWidth={2.5} /></span></div>
+          <div className="w-full rounded-2xl border-2 border-[#1f4f93] bg-white px-5 py-6 text-base shadow-sm sm:px-8 sm:text-xl">Today - Building a People-Powered Tourism Ecosystem</div>
         </div>
         <p className="mx-auto mt-10 max-w-4xl text-center text-lg font-bold text-[#0f4d2f] sm:text-xl">Tourism for People, Planet, and Prosperity</p>
       </section>

@@ -2,7 +2,7 @@ import frameworkImg from '../assets/People-Powered Tourism Framework.jpg'
 
 export default function PeoplePoweredTourismFrameworkSection() {
   return (
-    <section className="w-full bg-[#eef4fa] pb-14 pt-14 sm:pb-16 sm:pt-16">
+    <section className="w-full bg-[#fcfbf7] pb-14 pt-14 sm:pb-16 sm:pt-16">
       <div className="w-full">
         <div className="px-4 text-center sm:px-6 lg:px-8">
           <div className="home-section-eyebrow mb-5 justify-center">
@@ -16,7 +16,7 @@ export default function PeoplePoweredTourismFrameworkSection() {
         </div>
 
         <div className="relative z-10 mx-auto mt-10 max-w-6xl overflow-hidden lg:grid lg:grid-cols-[minmax(420px,0.88fr)_minmax(0,1.12fr)] lg:gap-14">
-          <div className="flex flex-col items-center bg-[#eef4fa] p-4 sm:p-6 lg:p-0 lg:pt-10">
+          <div className="flex flex-col items-center bg-[#fcfbf7] p-4 sm:p-6 lg:p-0 lg:pt-10">
             <div className="w-full overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] sm:rounded-[1.6rem]">
             <img
               src={frameworkImg}
@@ -33,7 +33,7 @@ export default function PeoplePoweredTourismFrameworkSection() {
             </a>
           </div>
 
-          <div className="bg-[#eef4fa] p-6 sm:p-10 lg:p-12">
+          <div className="bg-[#fcfbf7] p-6 sm:p-10 lg:p-12">
             <div className="mx-auto max-w-xl space-y-5 text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8">
               <div>
                 <p className="text-center text-[1.12rem] font-extrabold text-[#172544]">

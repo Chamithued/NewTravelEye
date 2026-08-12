@@ -1,66 +1,97 @@
 import {
   ArrowRight,
-  Building2,
-  Globe2,
+  BriefcaseBusiness,
+  Compass,
   Handshake,
-  HeartHandshake,
-  Network,
+  Home,
+  Leaf,
+  LineChart,
+  Plane,
   Sprout,
   Users,
 } from 'lucide-react'
-import heroImg from '../assets/client/Join the movement2.png'
+import { Link } from 'react-router-dom'
+import heroImg from '../assets/subhero/How to Get Involved.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
-const ambitionPoints = [
-  <><strong>develop and strengthen micro and small tourism enterprises</strong> across Sri Lanka;</>,
-  <>create opportunities for youth and tourism entrepreneurs;</>,
-  <>strengthen destinations and local tourism ecosystems;</>,
-  <>connect tourism enterprises with tourism markets and strategic partnerships;</>,
-  <>create memorable stays and meaningful experiences;</>,
-  <>develop stronger travel corridors and international tourism relationships; and</>,
-  <>create greater value for <strong>People, Places, Partnerships, and Prosperity</strong>.</>,
-]
-
-const relationshipPoints = [
-  'Every traveller who chooses us helps us build greater capacity.',
-  'Every tourism enterprise that works with us strengthens our network.',
-  'Every destination partner expands our ability to create opportunities.',
-  'Every strategic partnership helps us connect Sri Lanka with new markets, knowledge, resources, and possibilities.',
+const opportunityCards = [
+  {
+    icon: Plane,
+    title: 'Become a Travel Venture Partner',
+    text: 'Help create meaningful travel connections through Travel Corridors, Island Journeys, and other travel initiatives that connect people and places through responsible tourism.',
+    action: 'Explore Travel Venture Opportunities →',
+    to: '/become-a-travel-venture-partner',
+  },
+  {
+    icon: Home,
+    title: 'Create a Host Stay',
+    text: 'Open your doors to authentic hospitality by developing hosted accommodation inspired by local culture, nature, wellness, heritage, and community life.',
+    action: 'Explore Host Stay Opportunities →',
+    to: '/stays',
+  },
+  {
+    icon: Leaf,
+    title: 'Create a Travel Experience',
+    text: 'Transform your knowledge, skills, traditions, creativity, or local way of life into authentic tourism experiences that connect travellers with people and place.',
+    action: 'Explore Travel Experience Opportunities →',
+    to: '/experiences',
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: 'Develop an Ecosystem Support Venture',
+    text: 'Contribute to stronger tourism through education, technology, advisory services, innovation, marketing, research, capability development, and ecosystem support initiatives.',
+    action: 'Explore Ecosystem Support Opportunities →',
+    to: '/develop-an-ecosystem-support-venture',
+  },
+  {
+    icon: Compass,
+    title: 'Partner in Destination Development',
+    text: 'Work alongside communities and tourism stakeholders to strengthen destinations through participation, stewardship, collaboration, and place-based tourism development.',
+    action: 'Explore Destination Development Opportunities →',
+    to: '/destination-facilitation',
+  },
+  {
+    icon: LineChart,
+    title: 'Joint Ventures & Strategic Investments',
+    text: 'Partner with Traveleye to explore collaborative tourism ventures, strategic investments, destination initiatives, and long-term ecosystem development opportunities.',
+    action: 'Explore Partnership Opportunities →',
+    to: '/contact',
+  },
+  {
+    icon: Handshake,
+    title: 'Collaborate With Us',
+    text: 'We welcome collaboration with government agencies, provincial tourism organisations, universities, NGOs, development partners, international organisations, chambers of commerce, and ecosystem collaborators who share our vision for stronger tourism.',
+    action: 'Explore Collaboration Opportunities →',
+    to: '/contact',
+  },
+  {
+    icon: Users,
+    title: 'Travel With Purpose',
+    text: 'Choose journeys that create meaningful experiences while supporting local people, culture, destinations, and responsible tourism across Sri Lanka.',
+    action: 'Discover Purpose-Driven Travel →',
+    to: '/travel-collective',
+  },
+  {
+    icon: Sprout,
+    title: 'Support People-Powered Tourism',
+    text: 'Help strengthen tourism participation, destination stewardship, women and youth entrepreneurship, local enterprises, and ecosystem initiatives that contribute to a more inclusive and resilient tourism future.',
+    action: 'Explore Ways to Support Tourism Development →',
+    to: '/support-services',
+  },
 ]
 
 const participationPoints = [
-  'Every relationship helps us learn.',
-  'Every partnership helps us connect.',
-  'Every journey helps us grow.',
-  'Every enterprise we help strengthen expands the ecosystem.',
+  'Tourism becomes stronger when people have opportunities to contribute their ideas, knowledge, creativity, hospitality, leadership, investment, collaboration, and stewardship.',
+  'Meaningful participation helps create tourism that is more connected, inclusive, resilient, and beneficial for destinations and future generations.',
+  'Every partnership, every experience, every venture, and every journey has the potential to strengthen tourism through people and place.',
 ]
 
 function IconBadge({ icon: Icon }) {
   return (
-    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e8f1ff] text-[#1f4f93]">
+    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#E8F1FF] text-[#1f4f93]">
       <Icon className="h-5 w-5" aria-hidden="true" />
     </span>
-  )
-}
-
-function SectionHeading({ icon, children }) {
-  return (
-    <div className="mx-auto max-w-4xl text-center">
-      <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
-        <IconBadge icon={icon} />
-        <span>{children}</span>
-      </h2>
-      <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
-    </div>
-  )
-}
-
-function TextBlock({ children }) {
-  return (
-    <div className="mx-auto mt-7 max-w-5xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-      {children}
-    </div>
   )
 }
 
@@ -68,81 +99,97 @@ export default function HowYouCanGetInvolved() {
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
-        <img
-          src={heroImg}
-          alt="Building Something Bigger"
-          className="absolute inset-0 h-full w-full object-cover object-center brightness-105"
-        />
-        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 z-0">
+          <img
+            src={heroImg}
+            alt="How You Can Get Involved"
+            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+          />
+          <div className="absolute inset-0 bg-black/38" />
+        </div>
+
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
-          <div className="max-w-5xl text-center">
+          <div className="max-w-4xl text-center">
             <h1
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
-              className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
+              className="text-3xl font-extrabold leading-none tracking-tight text-white sm:text-5xl lg:text-6xl"
             >
-              Building Something Bigger
+               HOW YOU CAN GROW WITH TRAVELEYE
             </h1>
-            <p className="mt-4 text-sm font-semibold text-white/95 sm:text-base lg:text-lg">
-              A Growing Organisation. A Bigger Vision for Sri Lanka.
+            <p className="mt-4 text-sm font-normal text-white/95 sm:text-base lg:text-lg">
+              Join the Traveleye People-Powered Tourism Ecosystem
             </p>
           </div>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <SectionHeading icon={Network}>A Growing Organisation. A Bigger Vision for Sri Lanka.</SectionHeading>
-          <TextBlock>
-            <p>Traveleye Alliance Sri Lanka is building a <strong>People-Powered Tourism Ecosystem for Sri Lanka</strong>, with a focus on <strong>developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem</strong>.</p>
-            <p>We are at the beginning of building an ecosystem that connects people, places, tourism enterprises, destinations, travellers, and partners through collaboration, stewardship, innovation, and meaningful partnerships.</p>
-            <p>What we are building goes beyond tourism services. It is a long-term vision to create stronger connections, greater opportunities, and shared value across Sri Lanka&apos;s tourism ecosystem.</p>
-          </TextBlock>
+        <div className="mx-auto max-w-5xl text-center">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+            Join the Traveleye People-Powered Tourism Ecosystem
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-7 max-w-4xl space-y-5 text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+            <p>Tourism becomes stronger when more people have meaningful opportunities to participate, collaborate, create, and contribute.</p>
+            <p>At Traveleye Alliance, we believe tourism should not only be experienced by travellers but also shaped by the people, communities, enterprises, institutions, and partners who make destinations meaningful.</p>
+            <p>Whether you are an entrepreneur, host, tourism professional, community organisation, investor, institution, development partner, or traveller, there are many ways to become part of Sri Lanka&apos;s growing People-Powered Tourism Ecosystem.</p>
+            <p>Together, we can strengthen tourism through participation, stewardship, collaboration, innovation, and shared value creation.</p>
+          </div>
         </div>
       </section>
 
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={HeartHandshake}>Every Relationship Matters</SectionHeading>
-          <TextBlock>
-            <p>Building an ecosystem is a collective effort. Every relationship we build contributes to our ability to connect more people, strengthen more enterprises, develop more destinations, and create more opportunities.</p>
-          </TextBlock>
-          <div className="mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-2">
-            {relationshipPoints.map((point) => (
-              <div key={point} className="flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-                <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-[#2f6b3f]" aria-hidden="true" />
-                <p className="text-sm leading-7 text-[#475569] sm:text-base">{point}</p>
-              </div>
-            ))}
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+              <IconBadge icon={Users} />
+              <span> Participation That Creates Shared Value</span>
+            </h2>
+            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+            <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+              <p>The Traveleye People-Powered Tourism Framework encourages meaningful participation across the tourism ecosystem, creating opportunities that strengthen people, destinations, enterprises, experiences, and long-term tourism resilience.</p>
+              <p>Whether your contribution is large or small, every action has the potential to create positive impact for people and place.</p>
+            </div>
           </div>
-          <p className="mx-auto mt-8 max-w-4xl text-center text-lg font-bold text-[#0f4d2f]">As we grow, every relationship matters to us.</p>
         </div>
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <SectionHeading icon={Users}>Your Choice Becomes Part of Our Growth</SectionHeading>
-          <TextBlock>
-            <p>When you choose Traveleye, you are not simply choosing a tourism service.</p>
-            <p>You are choosing to work with an organisation that is <strong>building, learning, connecting, and growing</strong> — and your participation helps us increase our capacity to do more.</p>
-            <p>Whether you travel with us, stay with us, experience Sri Lanka with us, develop your tourism enterprise with us, or partner with us, your relationship contributes to our ability to create more opportunities across the tourism ecosystem.</p>
-            <p><strong>Every journey, every enterprise, every destination, and every partnership can become part of something bigger.</strong></p>
-          </TextBlock>
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {opportunityCards.map(({ icon: Icon, title, text, action, to }) => (
+              <article key={title} className="flex h-full flex-col rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+                <IconBadge icon={Icon} />
+                <h3 className="mt-4 text-xl font-bold leading-tight text-[#111827]">{title}</h3>
+                <p className="mt-4 flex-1 text-sm leading-7 text-[#55636a] sm:text-base">{text}</p>
+                <Link
+                  to={to}
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#1f4f93] transition-colors hover:text-[#0f4d2f]"
+                >
+                  <span>{action}</span>
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Globe2}>Our Ambition Is Bigger Than Us</SectionHeading>
-          <TextBlock>
-            <p>Our ambition is not simply to grow Traveleye Alliance Sri Lanka.</p>
-            <p>It is to grow the opportunities that tourism can create for Sri Lanka.</p>
-            <p>Through the People-Powered Tourism Ecosystem, we aim to:</p>
-          </TextBlock>
-          <ul className="mx-auto mt-7 max-w-4xl divide-y divide-[#e7e5df] rounded-xl border border-[#ece8df] bg-white px-5 shadow-sm sm:px-8">
-            {ambitionPoints.map((point, index) => (
-              <li key={index} className="flex items-start gap-4 py-4 text-sm leading-7 text-[#475569] sm:text-base">
-                <Sprout className="mt-1 h-4 w-4 shrink-0 text-[#62a84d]" aria-hidden="true" />
-                <span>{point}</span>
+        <div className="mx-auto max-w-5xl">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="flex items-center justify-center gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+              <IconBadge icon={Leaf} />
+              <span> Why Participation Matters</span>
+            </h2>
+            <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
+          </div>
+
+          <ul className="mx-auto mt-8 max-w-4xl divide-y divide-[#eee]">
+            {participationPoints.map((point) => (
+              <li key={point} className="flex items-start gap-4 py-4 text-[#234c3a]">
+                <Leaf className="mt-1 h-4 w-4 shrink-0 text-[#62a84d]" aria-hidden="true" />
+                <span className="text-sm leading-6 sm:text-base">{point}</span>
               </li>
             ))}
           </ul>
@@ -150,36 +197,45 @@ export default function HowYouCanGetInvolved() {
       </section>
 
       <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-5xl">
-          <SectionHeading icon={Building2}>Building With People</SectionHeading>
-          <TextBlock>
-            <p>We believe an ecosystem cannot be built by one organisation alone.</p>
-            <p>It grows through the participation of tourism entrepreneurs, enterprises, hosts, experience creators, destination stakeholders, communities, travellers, institutions, investors, and strategic partners.</p>
-            <p>Our role is to <strong>connect, facilitate, develop, coordinate, and create opportunities</strong> so that more people and enterprises can participate in Sri Lanka&apos;s tourism economy.</p>
-            <p>As the ecosystem grows, we want more people to have the opportunity to contribute, create, connect, and prosper through tourism.</p>
-          </TextBlock>
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+             Looking Ahead
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            <p>The Traveleye People-Powered Tourism Ecosystem will continue to expand opportunities for individuals, communities, enterprises, institutions, and partners to participate in shaping the future of tourism across Sri Lanka.</p>
+            <p>By encouraging collaboration, stewardship, innovation, and shared value creation, we believe tourism can become a powerful platform for strengthening people, destinations, and prosperity for generations to come.</p>
+          </div>
         </div>
       </section>
 
       <section className="w-full bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-5xl text-center">
-          <SectionHeading icon={Handshake}>We Invite You to Be Part of It</SectionHeading>
-          <TextBlock>
-            <p>We are building something bigger, step by step.</p>
-            <p>You can become part of that growth by <strong>choosing us, working with us, partnering with us, and sharing the opportunities we create</strong>.</p>
-          </TextBlock>
-          <div className="mx-auto mt-8 grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {participationPoints.map((point) => (
-              <p key={point} className="rounded-xl border border-slate-200 bg-white p-5 text-sm font-medium leading-6 text-[#234c3a] shadow-sm">{point}</p>
-            ))}
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+             Begin the Conversation
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            <p>If you share our vision for a more connected, inclusive, and people-powered tourism future, we would be delighted to explore how we can work together.</p>
+            <p>Whether you wish to create, collaborate, invest, partner, host, travel, or support tourism development, we welcome the opportunity to begin the conversation.</p>
+            <p className="font-bold text-[#0f4d2f]">Contact us at info@traveleye.lk to explore how you can get involved.</p>
           </div>
-          <div className="mt-8 space-y-2 text-xl font-bold text-[#1f4f93] sm:text-2xl">
-            <p>Together, we can build something bigger for Sri Lanka.</p>
-            <p>A Growing Organisation.</p>
-            <p>A Bigger Vision.</p>
-            <p>A People-Powered Tourism Ecosystem.</p>
+        </div>
+      </section>
+
+      <section className="w-full bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+             Closing Reflection
+          </h2>
+          <div className="mx-auto mt-3 h-0.5 w-20 rounded bg-[#c28a5b]" />
+          <div className="mx-auto mt-6 space-y-5 text-sm leading-7 text-[#6b7894] sm:text-base sm:leading-8">
+            <p>Tourism is more than an industry.</p>
+            <p>It is a shared opportunity to connect people, places, ideas, cultures, and communities in ways that create lasting value.</p>
+            <p>The Traveleye People-Powered Tourism Ecosystem invites everyone to play a meaningful role in shaping that future.</p>
+            <p className="font-bold text-[#0f4d2f]">Because stronger tourism is built not only by those who travel, but by everyone who chooses to participate.</p>
+            
           </div>
-          <p className="mt-8 text-xl font-bold text-[#1f4f93] sm:text-2xl">Be Part of It</p>
         </div>
       </section>
 
@@ -188,3 +244,4 @@ export default function HowYouCanGetInvolved() {
     </main>
   )
 }
+

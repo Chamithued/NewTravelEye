@@ -16,6 +16,7 @@ const featureSections = [
     image: guidingPrinciplesImg,
     imageAlt: 'People discussing the People-Powered Tourism framework',
     imageSide: 'left',
+    background: 'bg-[#eef4fa]',
   },
   {
     icon: Globe2,
@@ -30,6 +31,7 @@ const featureSections = [
     image: globallyAlignedImg,
     imageAlt: 'Traveleye People-Powered Tourism framework overview',
     imageSide: 'right',
+    background: 'bg-white',
   },
 ]
 
@@ -99,39 +101,36 @@ function TextPanel({ section }) {
 
 export default function HomeFrameworkSections() {
   return (
-    <section className="w-full bg-[#fcfbf7] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-      <div className="mx-auto max-w-6xl space-y-16 lg:space-y-20">
-        {featureSections.map((section) => {
+    <div className="w-full">
+      {featureSections.map((section) => {
           const imageFirst = section.imageSide === 'left'
 
           return (
-            <article
-              key={section.label}
-              className="grid items-center gap-10 border-b border-[#d8e2ef] pb-16 last:border-b-0 last:pb-0 lg:grid-cols-2 lg:gap-16"
-            >
-              <div className="lg:col-span-2">
-                <SectionHeader section={section} />
-              </div>
+            <section key={section.label} className={`w-full px-4 py-12 sm:px-6 sm:py-16 lg:px-8 ${section.background}`}>
+              <article className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+                <div className="lg:col-span-2">
+                  <SectionHeader section={section} />
+                </div>
 
-              {imageFirst ? (
-                <>
-                  <ImagePanel section={section} />
-                  <TextPanel section={section} />
-                </>
-              ) : (
-                <>
-                  <div className="lg:order-2">
+                {imageFirst ? (
+                  <>
                     <ImagePanel section={section} />
-                  </div>
-                  <div className="lg:order-1">
                     <TextPanel section={section} />
-                  </div>
-                </>
-              )}
-            </article>
+                  </>
+                ) : (
+                  <>
+                    <div className="lg:order-2">
+                      <ImagePanel section={section} />
+                    </div>
+                    <div className="lg:order-1">
+                      <TextPanel section={section} />
+                    </div>
+                  </>
+                )}
+              </article>
+            </section>
           )
         })}
-      </div>
-    </section>
+    </div>
   )
 }

@@ -44,6 +44,7 @@ import BecomeATravelVenturePartner from './pages/BecomeATravelVenturePartner'
 import DevelopEcosystemSupportVenture from './pages/DevelopEcosystemSupportVenture'
 import PartnerInDestinationDevelopment from './pages/PartnerInDestinationDevelopment'
 import HowYouCanGetInvolved from './pages/HowYouCanGetInvolved'
+import BuildingSomethingBiggerPage from './pages/BuildingSomethingBiggerPage'
 import JointVenturesStrategicInvestments from './pages/JointVenturesStrategicInvestments'
 import CollaborateWithUs from './pages/CollaborateWithUs'
 import TravelWithPurpose from './pages/TravelWithPurpose'
@@ -60,6 +61,7 @@ import HostStays from './pages/HostStays'
 import TraveleyeTravelExperiences from './pages/TraveleyeTravelExperiences'
 import BeautifulSriLankaBrand from './pages/BeautifulSriLankaBrand'
 import OurJourneyPage from './pages/OurJourneyPage'
+import BeautifulPeople from './pages/BeautifulPeople'
 
 function App() {
   return (
@@ -68,6 +70,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="beautiful-people" element={<BeautifulPeople />} />
           <Route path="travel-collective" element={<TravelCollective />} />
           {/* <Route path="people-powered-travel-collective" element={<PeoplePoweredTravelCollective />} /> */}
           {/* <Route path="people-powered-host-experiences" element={<PeoplePoweredHostExperiences />} /> */}
@@ -104,7 +107,9 @@ function App() {
           <Route path="vision-mission" element={<VisionMission />} />
           <Route path="our-journey" element={<OurJourneyPage />} />
           <Route path="why-traveleye" element={<WhyTraveleyePage />} />
-          <Route path="how-you-can-get-involved" element={<HowYouCanGetInvolved />} />
+          <Route path="how-you-can-grow-with-traveleye" element={<HowYouCanGetInvolved />} />
+          <Route path="how-you-can-get-involved" element={<Navigate to="/how-you-can-grow-with-traveleye" replace />} />
+          <Route path="building-something-bigger" element={<BuildingSomethingBiggerPage />} />
           <Route path="become-a-travel-corridor-partner" element={<BecomeATravelCorridorPartner />} />
           <Route path="become-a-travel-venture-partner" element={<BecomeATravelVenturePartner />} />
           <Route path="develop-an-ecosystem-support-venture" element={<DevelopEcosystemSupportVenture />} />

@@ -160,7 +160,7 @@ function TimelineRow({ item }) {
 
 export default function OurJourney() {
   return (
-    <section className="w-full bg-[#fcfbf7] px-4 py-14 sm:px-6 lg:px-8 lg:pb-16 lg:pt-12">
+    <section className="w-full bg-white px-4 py-14 sm:px-6 lg:px-8 lg:pb-16 lg:pt-12">
       <div className="mx-auto max-w-[1470px]">
         <div className="mx-auto mb-14 max-w-[1110px] text-center lg:mb-16">
           <div className="mb-8 flex justify-center">
@@ -211,7 +211,13 @@ export default function OurJourney() {
           </div>
         </div>
 
-        <div className="mt-14 flex justify-center lg:mt-16">
+        <p className="mx-auto mt-10 max-w-5xl text-center text-[1.05rem] leading-7 text-[#5f6c87] sm:text-[1.15rem] sm:leading-8">
+          After building our tourism experience and capabilities since 2006, Traveleye Alliance Sri
+          Lanka is now entering a new phase — building a <strong>People-Powered Tourism Ecosystem</strong> to
+          develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+        </p>
+
+        <div className="mt-8 flex justify-center">
           <Link
             to="/about"
             className="inline-flex items-center justify-center rounded-lg bg-[#1f4f93] px-7 py-3 text-center text-sm font-bold text-white shadow-sm transition-colors hover:bg-[#173f78] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1f4f93] focus-visible:ring-offset-2 sm:text-base"
@@ -219,12 +225,6 @@ export default function OurJourney() {
             Explore About Traveleye Alliance Sri Lanka
           </Link>
         </div>
-
-        <p className="mx-auto mt-10 max-w-5xl text-center text-[1.05rem] leading-7 text-[#5f6c87] sm:text-[1.15rem] sm:leading-8">
-          After building our tourism experience and capabilities since 2006, Traveleye Alliance Sri
-          Lanka is now entering a new phase — building a <strong>People-Powered Tourism Ecosystem</strong> to
-          develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
-        </p>
 
         {/* <div className="mt-12 flex flex-col items-center text-center lg:mt-8">
           <p className="max-w-[1140px] text-[1.12rem] font-extrabold italic leading-relaxed text-[#1f4f93] sm:text-[1.28rem] lg:text-[1.45rem]">
