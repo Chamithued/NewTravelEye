@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { Mail, MessageCircle } from 'lucide-react'
 import logo from '../assets/client/Traveleyelogo.png'
 
 const navItems = [
+  { top: 'Beautiful', bottom: 'People', to: '/beautiful-people' },
   {
     top: 'Traveleye',
     bottom: 'Travel Collective',
@@ -56,13 +56,14 @@ const dropdownGroups = [
       // { label: 'Our Ecosystem Approach', to: '/our-ecosystem-approach' },
       { label: 'Our Vision, Mission and Values', to: '/vision-mission' },
       { label: 'Our Journey', to: '/our-journey' },
-      { label: 'Building Something Bigger', to: '/how-you-can-get-involved' },
+      { label: 'Building Something Bigger', to: '/building-something-bigger' },
       { label: 'Beautiful Sri Lanka', to: '/beautiful-sri-lanka' },
       { label: 'Why Choose Traveleye', to: '/why-traveleye' },
       { label: 'Governance and Ethics', to: '/governance-ethics' },
       { label: 'Media and Press', to: '/media-press' },
       { label: 'Traveleye Catalogue Library', to: '/traveleye-catalogue-library' },
       { label: 'Founder and CEO', to: '/founder-ceo' },
+      { label: 'Contact Us', to: '/contact' },
     ],
   },
   {
@@ -95,7 +96,7 @@ const dropdownGroups = [
     top: 'Grow With',
     bottom: 'Traveleye',
     items: [
-      { label: 'How You Can Grow With Traveleye', to: '/how-you-can-get-involved' },
+      { label: 'How You Can Grow With Traveleye', to: '/how-you-can-grow-with-traveleye' },
       { label: 'Become a Travel Venture Partner', to: '/become-a-travel-venture-partner' },
       { label: 'Become a Travel Corridor Partner', to: '/become-a-travel-corridor-partner' },
       { label: 'Develop a Place-Inspired Stay', to: '/stays' },
@@ -132,17 +133,7 @@ function ChevronDown() {
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [expandedGroups, setExpandedGroups] = useState({})
-  const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 10)
-
-    handleScroll()
-    window.addEventListener('scroll', handleScroll, { passive: true })
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   const isCurrentPath = (to) => location.pathname === to
   const isItemActive = (item) => isCurrentPath(item.to) || item.items?.some((child) => isCurrentPath(child.to))
@@ -157,23 +148,11 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/90">
-      <div
-        className={`flex items-center justify-end gap-4 overflow-hidden bg-[#1F4F93] px-4 text-[0.7rem] font-medium text-white transition-all duration-300 sm:gap-6 sm:px-6 sm:text-xs lg:px-8 ${
-          isScrolled ? 'h-0 opacity-0' : 'h-8 opacity-100'
-        }`}
-        aria-hidden={isScrolled}
-      >
-        <span className="inline-flex items-center gap-1.5">
-          <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-          <span><span className="hidden sm:inline">WhatsApp: </span>+94*********</span>
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <Mail aria-hidden="true" className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-          <span>info@traveleye.lk</span>
-        </span>
-      </div>
-      <div className="flex w-full items-center py-3 sm:py-3 lg:py-3">
-        <NavLink to="/" className="flex-shrink-0 px-4 sm:px-6 lg:px-8">
+      <div className="relative flex w-full items-center py-3">
+        <NavLink
+          to="/"
+          className="flex-shrink-0 px-4 sm:px-6 lg:px-8"
+        >
           <img
             src={logo}
             alt="Traveleye Alliance Sri Lanka"
@@ -338,18 +317,6 @@ export default function Navbar() {
             </div>
           ))}
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              [
-                'inline-flex items-center rounded-md px-2 py-2 text-[1rem] font-semibold tracking-[0.01em] transition-colors',
-                isActive ? 'text-[#0f3c68]' : 'text-[#174c84] hover:text-[#0f3c68]',
-              ].join(' ')
-            }
-          >
-            <span className="whitespace-nowrap">Contact Us</span>
-          </NavLink>
-
         </nav>
       </div>
 
@@ -487,19 +454,6 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-
-            <NavLink
-              to="/contact"
-              onClick={() => setMobileOpen(false)}
-              className={({ isActive }) =>
-                [
-                  'block rounded-md px-2 py-2 text-[0.9rem] font-semibold transition-colors',
-                  isActive ? 'text-[#0f3c68]' : 'text-slate-700 hover:text-[#0f3c68]',
-                ].join(' ')
-              }
-            >
-              Contact Us
-            </NavLink>
 
           </div>
         </div>

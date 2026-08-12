@@ -36,7 +36,7 @@ const principles = [
 
 export default function PeoplePoweredTourismIntro() {
   return (
-    <section className="w-full bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+    <section className="w-full bg-[#eef4fa] px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-6xl text-center">
           <div className="home-section-eyebrow mb-5 justify-center">

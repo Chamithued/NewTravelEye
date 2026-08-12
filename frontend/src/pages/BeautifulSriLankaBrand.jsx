@@ -1,5 +1,5 @@
 import { ArrowRight, Heart, Leaf, MapPin, Sparkles } from 'lucide-react'
-import beautifulSriLankaImg from '../assets/Beautiful Sri Lanka.jpg'
+import beautifulSriLankaImg from '../assets/subhero/Beautiful Sri Lanka Banner.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 

@@ -130,7 +130,7 @@ function PillarCard({ pillar }) {
 
 export default function FivePillars() {
   return (
-    <section className="w-full bg-[#fcfbf7] px-4 pb-8 pt-18 sm:px-6 sm:pb-10 sm:pt-24 lg:px-8 lg:pb-12 lg:pt-28">
+    <section className="w-full bg-white px-4 pb-8 pt-18 sm:px-6 sm:pb-10 sm:pt-24 lg:px-8 lg:pb-12 lg:pt-28">
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-8 flex justify-center">
           {/* <div className="inline-flex items-center gap-3 rounded-full bg-[#e9eef8] px-5 py-2 text-[1.05rem] font-bold text-[#214f95] shadow-sm"> */}
