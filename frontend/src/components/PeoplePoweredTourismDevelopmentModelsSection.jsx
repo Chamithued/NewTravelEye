@@ -1,173 +1,181 @@
-import {
-  ArrowRight,
-  BriefcaseBusiness,
-  Compass,
-  Globe2,
-  Handshake,
-  Leaf,
-  Network,
-  Route,
-  Sprout,
-} from 'lucide-react'
-import developmentModelsImg from '../assets/People-Powered Tourism Development Models.jpg'
-
-const developmentModels = [
+// Reconstructed from the supplied deployed build. Original local names and comments were not retained.
+import asset_Na from "../assets/People-Powered Tourism Development Models.jpg";
+import { Handshake } from "lucide-react";
+import { Leaf } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
+import { Compass } from "lucide-react";
+import { Route } from "lucide-react";
+import { Network } from "lucide-react";
+import { Earth } from "lucide-react";
+import { Sprout } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+const recovered_Pa = [
   {
-    title: 'People-Powered Participation Model',
+    title: "People-Powered Participation Model",
     description:
-      'Encouraging meaningful participation through collaboration, inclusion, shared ownership, and collective action.',
+      "Encouraging meaningful participation through collaboration, inclusion, shared ownership, and collective action.",
     icon: Handshake,
-    color: '#1F5A35',
-    darkColor: '#123B24',
+    color: "#1F5A35",
+    darkColor: "#123B24",
   },
   {
-    title: 'Shared Stewardship Model',
+    title: "Shared Stewardship Model",
     description:
-      'Promoting shared responsibility for destinations, communities, culture, heritage, and nature.',
+      "Promoting shared responsibility for destinations, communities, culture, heritage, and nature.",
     icon: Leaf,
-    color: '#8B1E1E',
-    darkColor: '#5F1414',
+    color: "#8B1E1E",
+    darkColor: "#5F1414",
   },
   {
-    title: 'People-Powered Tourism Enterprise Development Model',
+    title: "People-Powered Tourism Enterprise Development Model",
     description:
-      'Supporting the development and strengthening of resilient micro and small tourism enterprises.',
+      "Supporting the development and strengthening of resilient micro and small tourism enterprises.",
     icon: BriefcaseBusiness,
-    color: '#0F6B63',
-    darkColor: '#084842',
+    color: "#0F6B63",
+    darkColor: "#084842",
   },
   {
-    title: 'Destination Stewardship Model',
+    title: "Destination Stewardship Model",
     description:
-      'Strengthening destinations through collaborative planning, coordination, and long-term stewardship.',
+      "Strengthening destinations through collaborative planning, coordination, and long-term stewardship.",
     icon: Compass,
-    color: '#60241E',
-    darkColor: '#3D1713',
+    color: "#60241E",
+    darkColor: "#3D1713",
   },
   {
-    title: 'Travel Corridor Development Model',
+    title: "Travel Corridor Development Model",
     description:
-      'Building connected tourism corridors through strategic partnerships, cultural exchange, and long-term international collaboration.',
+      "Building connected tourism corridors through strategic partnerships, cultural exchange, and long-term international collaboration.",
     icon: Route,
-    color: '#7A4A12',
-    darkColor: '#4E2F0B',
+    color: "#7A4A12",
+    darkColor: "#4E2F0B",
   },
   {
-    title: 'Tourism Ecosystem Connectivity Model',
+    title: "Tourism Ecosystem Connectivity Model",
     description:
-      'Connecting people, enterprises, destinations, institutions, and support systems to strengthen tourism ecosystem collaboration and resilience.',
+      "Connecting people, enterprises, destinations, institutions, and support systems to strengthen tourism ecosystem collaboration and resilience.",
     icon: Network,
-    color: '#8A5A00',
-    darkColor: '#5E3D00',
+    color: "#8A5A00",
+    darkColor: "#5E3D00",
   },
   {
-    title: 'Shared Value Creation Model',
+    title: "Shared Value Creation Model",
     description:
-      'Creating balanced economic, social, cultural, and environmental value for people, places, partnerships, and future generations.',
-    icon: Globe2,
-    color: '#112E81',
-    darkColor: '#0A1D52',
+      "Creating balanced economic, social, cultural, and environmental value for people, places, partnerships, and future generations.",
+    icon: Earth,
+    color: "#112E81",
+    darkColor: "#0A1D52",
   },
   {
-    title: 'Living Framework Evolution Model',
+    title: "Living Framework Evolution Model",
     description:
-      'Supporting continuous learning, innovation, adaptation, and the ongoing evolution of tourism development.',
+      "Supporting continuous learning, innovation, adaptation, and the ongoing evolution of tourism development.",
     icon: Sprout,
-    color: '#934761',
-    darkColor: '#5F2B3D',
+    color: "#934761",
+    darkColor: "#5F2B3D",
   },
-]
-
-export default function PeoplePoweredTourismDevelopmentModelsSection() {
+];
+function PeoplePoweredTourismDevelopmentModelsSection() {
   return (
-    <section className="w-full bg-[#f4f6f8] px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8">
+    <section className="w-full bg-[#eef4fa] px-4 pb-16 pt-14 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-5xl text-center">
           <div className="home-section-eyebrow mb-5 justify-center">
-            People-Powered Tourism Development Models
+            {"People-Powered Tourism Development Models"}
           </div>
-
           <h2 className="home-section-title">
-            Guiding Tourism Development Through Practical, People-Powered Methodologies
+            {
+              "Guiding Tourism Development Through Practical, People-Powered Methodologies"
+            }
           </h2>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
-
         <div className="mx-auto mt-10 grid max-w-6xl items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12">
           <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl lg:max-w-none">
             <img
-              src={developmentModelsImg}
+              src={asset_Na}
               alt="People-Powered Tourism Development Models overview"
               className="aspect-square w-full rounded-2xl object-cover object-center"
             />
           </div>
-
           <div className="space-y-5 text-center text-[1rem] leading-7 text-[#5f6c87] sm:text-[1.08rem] sm:leading-8 lg:text-left">
             <p>
-              The <strong>People-Powered Tourism Development Models</strong> provide the practical methodologies that translate the <strong>People-Powered Tourism Framework</strong> into action. While the Framework provides the strategic blueprint and the Strategic Pillars define where tourism is strengthened, the Development Models guide how tourism is planned, developed, implemented, and continuously strengthened through structured, collaborative, and <strong>People-Powered</strong> approaches.
+              {"The "}
+              <strong>{"People-Powered Tourism Development Models"}</strong>
+              {" provide the practical methodologies that translate the "}
+              <strong>{"People-Powered Tourism Framework"}</strong>
+              {
+                " into action. While the Framework provides the strategic blueprint and the Strategic Pillars define where tourism is strengthened, the Development Models guide how tourism is planned, developed, implemented, and continuously strengthened through structured, collaborative, and "
+              }
+              <strong>{"People-Powered"}</strong>
+              {" approaches."}
             </p>
             <p>
-              Together, these eight interconnected models support the development and strengthening of micro and small tourism enterprises, place-inspired host stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives, contributing to stronger tourism enterprises, resilient destinations, and thriving tourism ecosystems across Sri Lanka.
+              {
+                "Together, these eight interconnected models support the development and strengthening of micro and small tourism enterprises, place-inspired host stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives, contributing to stronger tourism enterprises, resilient destinations, and thriving tourism ecosystems across Sri Lanka."
+              }
             </p>
           </div>
         </div>
-
         <div className="mt-10 text-center">
           <h3 className="text-[1.45rem] font-semibold leading-tight text-[#172544] sm:text-[1.75rem]">
-            Our Development Models
+            {"Our Development Models"}
           </h3>
         </div>
-
         <div className="mx-auto mt-20 grid max-w-6xl grid-cols-1 gap-x-7 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
-          {developmentModels.map((model) => {
-            const Icon = model.icon
-
+          {recovered_Pa.map((e) => {
+            let Component_t = e.icon;
             return (
               <article
-                key={model.title}
+                key={e.title}
                 className="relative mx-auto flex h-[212px] w-full max-w-[240px] flex-col rounded-[0.8rem] px-[4px] pb-[4px] pt-[60px] text-center text-white shadow-[0_1px_0_rgba(15,23,42,0.07),0_14px_18px_rgba(15,23,42,0.12)] transition-transform duration-200 hover:-translate-y-1"
                 style={{
-                  background: `linear-gradient(135deg, ${model.color} 0%, ${model.darkColor} 100%)`,
+                  background: `linear-gradient(135deg, ${e.color} 0%, ${e.darkColor} 100%)`,
                 }}
               >
                 <div className="absolute left-1/2 top-[-34px] h-[166px] w-[166px] -translate-x-1/2 rounded-full bg-white" />
-
                 <div className="absolute left-1/2 top-[12px] z-10 flex -translate-x-1/2 items-center justify-center">
-                  <Icon
+                  <Component_t
                     className="h-10 w-10"
-                    style={{ color: model.darkColor }}
+                    style={{
+                      color: e.darkColor,
+                    }}
                     strokeWidth={2.2}
                     aria-hidden="true"
                   />
                 </div>
-
                 <div className="relative z-10 flex h-[148px] flex-col rounded-b-[0.6rem] bg-white px-5 pb-4 pt-[21px] shadow-[0_4px_7px_rgba(15,23,42,0.16)]">
                   <h4
                     className="min-h-[38px] text-[0.76rem] font-extrabold uppercase leading-[1.15]"
-                    style={{ color: model.darkColor }}
+                    style={{
+                      color: e.darkColor,
+                    }}
                   >
-                    {model.title}
+                    {e.title}
                   </h4>
                   <p className="mt-2 overflow-hidden text-[0.76rem] leading-[1.72] text-[#67707c]">
-                    {model.description}
+                    {e.description}
                   </p>
                 </div>
-
               </article>
-            )
+            );
           })}
         </div>
-
         <div className="mt-12 text-center">
           <a
             href="/people-powered-tourism-development-models"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#214f95] px-6 py-3.5 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:px-8 sm:text-[1.05rem]"
           >
-            Explore the People-Powered Tourism Development Models
-            <ArrowRight className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
+            {"Explore the People-Powered Tourism Development Models"}
+            <ArrowRight
+              className="h-5 w-5"
+              strokeWidth={2.2}
+              aria-hidden="true"
+            />
           </a>
         </div>
       </div>
     </section>
-  )
+  );
 }
+export default PeoplePoweredTourismDevelopmentModelsSection;

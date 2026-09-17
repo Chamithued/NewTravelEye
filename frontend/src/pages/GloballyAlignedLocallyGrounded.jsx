@@ -1,365 +1,542 @@
-import {
-  ArrowRight,
-  BriefcaseBusiness,
-  Building2,
-  Compass,
-  Globe2,
-  Handshake,
-  HeartHandshake,
-  Landmark,
-  Leaf,
-  Lightbulb,
-  Network,
-  Recycle,
-  Sprout,
-  Target,
-  Users,
-  Waypoints,
-} from 'lucide-react'
-import heroImg from '../assets/ecosystem/5. People-Powered Tourism Global Alignment.jpg'
-import ExploreEcosystem from '../components/ExploreEcosystem'
-import FooterLinks from '../components/FooterLinks'
-
-const tourismAlignment = [
+// Reconstructed from the supplied deployed build. Original local names and comments were not retained.
+import asset_Vd from "../assets/ecosystem/5. People-Powered Tourism Global Alignment.jpg";
+import { Droplets } from "lucide-react";
+import { Utensils } from "lucide-react";
+import { HeartHandshake } from "lucide-react";
+import { Palette } from "lucide-react";
+import { Leaf } from "lucide-react";
+import { Users } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import { Sprout } from "lucide-react";
+import { Landmark } from "lucide-react";
+import { Handshake } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
+import { Lightbulb } from "lucide-react";
+import { Earth } from "lucide-react";
+import ExploreEcosystem from "../components/ExploreEcosystem.jsx";
+import FooterLinks from "../components/FooterLinks.jsx";
+const recovered_Hd = [
   {
-    icon: Recycle,
-    title: 'Sustainable Tourism',
-    body: 'Supporting tourism that balances economic prosperity, environmental responsibility, cultural integrity, and social wellbeing, ensuring tourism creates long-term value for present and future generations.',
+    icon: Droplets,
+    title: "Traditional Water & Resource Management",
+    body: "Ancient tank systems, irrigation practices, water management, and approaches to living with and managing natural resources demonstrate generations of knowledge about water, agriculture, landscapes, and community life.",
   },
   {
-    icon: Sprout,
-    title: 'Regenerative Tourism',
-    body: 'Encouraging tourism that not only sustains destinations but actively contributes to the renewal of communities, ecosystems, local economies, and cultural heritage.',
+    icon: Utensils,
+    title: "Traditional Agriculture & Food Knowledge",
+    body: "Indigenous agricultural practices, traditional crops, seasonal knowledge, food preparation, and methods of preserving fruits, vegetables, and other foods reflect generations of knowledge developed around local resources and ways of life.",
   },
   {
     icon: HeartHandshake,
-    title: 'Responsible Tourism',
-    body: 'Promoting ethical tourism practices that encourage accountability, transparency, respect for local cultures, environmental stewardship, and meaningful benefits for host communities.',
+    title: "Hela Wedakama & Traditional Wellness Knowledge",
+    body: "Hela Wedakama and related traditional knowledge of herbs, plants, wellness, healing, and healthy living represent an important part of Sri Lanka's inherited knowledge and cultural heritage.",
   },
   {
-    icon: Compass,
-    title: 'Destination Stewardship',
-    body: 'Recognising that resilient destinations require shared responsibility among governments, tourism enterprises, communities, travellers, and institutions to protect, strengthen, and continuously improve tourism destinations.',
+    icon: Palette,
+    title: "Traditional Crafts, Skills & Creativity",
+    body: "Craftsmanship, traditional skills, materials, artistic practices, and knowledge passed from generation to generation provide opportunities to connect people, culture, creativity, and place.",
   },
   {
-    icon: Handshake,
-    title: 'Community-Centred Development',
-    body: 'Supporting meaningful participation, local entrepreneurship, capability development, and collaborative decision-making that enables communities to actively contribute to and benefit from tourism development.',
-  },
-  {
-    icon: BriefcaseBusiness,
-    title: 'Inclusive Tourism Entrepreneurship',
-    body: 'Recognising entrepreneurship as a catalyst for inclusive economic development by supporting the creation, growth, and sustainability of micro and small tourism enterprises that generate employment, strengthen local economies, and expand opportunities for women and youth.',
-  },
-  {
-    icon: Lightbulb,
-    title: 'Tourism Innovation and Digital Transformation',
-    body: 'Encouraging innovation, technology adoption, digital readiness, and collaborative solutions that strengthen tourism enterprises, enhance visitor experiences, improve destination competitiveness, and support the future development of tourism.',
-  },
-  {
-    icon: Globe2,
-    title: 'Resilient Tourism Development',
-    body: 'Supporting tourism systems that can adapt to changing economic conditions, environmental challenges, traveller expectations, technological advancements, and global disruptions while ensuring long-term resilience and sustainability.',
-  },
-]
-
-const sdgs = [
-  {
-    icon: BriefcaseBusiness,
-    title: 'SDG 1 – No Poverty',
-    body: 'through entrepreneurship, income generation, and local economic participation.',
+    icon: Leaf,
+    title: "Knowledge of Nature & Biodiversity",
+    body: "Generations of knowledge about plants, forests, wildlife, landscapes, seasons, and natural environments provide valuable perspectives for nature-based tourism, destination development, and responsible interaction with the environment.",
   },
   {
     icon: Users,
-    title: 'SDG 5 – Gender Equality',
-    body: 'by supporting women and youth entrepreneurship, leadership, and meaningful participation.',
+    title: "Community Knowledge & Cultural Practices",
+    body: "Traditional ways of working together, sharing knowledge, supporting one another, celebrating culture, and maintaining relationships within communities reflect the social foundations of Sri Lankan life.",
+  },
+];
+const recovered_Ud = [
+  {
+    icon: Sprout,
+    title: "Sustainable Tourism",
+    body: "Encouraging tourism development that creates lasting economic, social, cultural, and environmental value while supporting the long-term wellbeing of destinations.",
   },
   {
-    icon: Building2,
-    title: 'SDG 8 – Decent Work and Economic Growth',
-    body: 'through the development and strengthening of micro and small tourism enterprises.',
+    icon: Leaf,
+    title: "Regenerative Tourism",
+    body: "Exploring approaches that seek not only to reduce negative impacts, but also to contribute positively to the people, places, cultures, and natural systems connected with tourism.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Responsible Tourism",
+    body: "Encouraging responsible behaviour, meaningful participation, respect for local communities and cultures, and greater awareness of tourism's impacts.",
   },
   {
     icon: Landmark,
-    title: 'SDG 11 – Sustainable Cities and Communities',
-    body: 'by encouraging destination stewardship, cultural heritage preservation, and resilient communities.',
-  },
-  {
-    icon: Recycle,
-    title: 'SDG 12 – Responsible Consumption and Production',
-    body: 'through responsible tourism practices and shared stewardship.',
-  },
-  {
-    icon: Leaf,
-    title: 'SDG 13 – Climate Action',
-    body: 'by promoting environmentally responsible tourism development and long-term environmental stewardship.',
-  },
-  {
-    icon: Globe2,
-    title: 'SDG 14 – Life Below Water',
-    body: 'by encouraging responsible tourism that supports the protection of coastal and marine ecosystems.',
-  },
-  {
-    icon: Sprout,
-    title: 'SDG 15 – Life on Land',
-    body: 'by promoting stewardship of natural landscapes, biodiversity, and terrestrial ecosystems.',
-  },
-]
-
-const localAlignment = [
-  {
-    icon: Users,
-    title: 'People-Centred Tourism',
-    body: 'People are at the heart of tourism development. The Framework encourages tourism that empowers entrepreneurs, hosts, tourism enterprises, communities, women, youth, institutions, and industry stakeholders to actively participate in shaping stronger tourism ecosystems.',
+    title: "Destination Stewardship",
+    body: "Promoting shared responsibility for the long-term wellbeing, identity, heritage, culture, communities, and natural assets of destinations.",
   },
   {
     icon: Handshake,
-    title: 'Meaningful Participation',
-    body: 'Participation extends beyond consultation. The Framework encourages people to become active contributors, collaborators, innovators, and stewards of tourism development, creating shared ownership, shared responsibility, and shared value.',
+    title: "Community-Centred Development",
+    body: "Recognising the importance of local participation, inclusion, local knowledge, enterprise development, and shared opportunities in tourism development.",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Inclusive Tourism Entrepreneurship",
+    body: "Supporting opportunities for micro and small enterprises, entrepreneurs, women, youth, local communities, and other participants across the tourism ecosystem.",
   },
   {
     icon: Lightbulb,
-    title: 'Innovation for Impact',
-    body: 'Innovation should create practical value for people and places. The Framework encourages human-centred innovation that strengthens tourism enterprises, improves visitor experiences, supports destinations, and expands opportunities across the tourism ecosystem.',
+    title: "Tourism Innovation & Digital Transformation",
+    body: "Embracing innovation, technology, digital solutions, and new approaches that can strengthen tourism enterprises, connectivity, competitiveness, and ecosystem development.",
   },
   {
-    icon: Leaf,
-    title: 'Long-Term Stewardship',
-    body: 'Tourism should leave destinations stronger than they were before. The Framework encourages responsible leadership, collaborative governance, and stewardship that protects tourism assets while creating long-term value for present and future generations.',
+    icon: Earth,
+    title: "Resilient Tourism Development",
+    body: "Encouraging tourism enterprises and destinations to build the capacity to adapt to changing economic, social, environmental, technological, and market conditions.",
   },
-  {
-    icon: Globe2,
-    title: 'Sri Lankan Realities',
-    body: "The Framework reflects Sri Lanka's distinctive tourism landscape, recognising its diverse cultures, heritage, communities, destinations, natural environments, entrepreneurial potential, and evolving tourism opportunities. Rather than applying global concepts uniformly, it adapts them to support the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.",
-  },
-]
-
-const frameworkComponents = [
-  'Strategic Pillars',
-  'Development Models',
-  'Operational Platforms',
-  'Tourism Outcomes',
-  'Ecosystem Indicators',
-]
-
-function SectionHeading({ icon: Icon, title, center = true }) {
+];
+const recovered_Wd = [
+  [
+    "SDG 1 \u2014 No Poverty",
+    "Supporting livelihood opportunities and stronger micro and small tourism enterprises.",
+  ],
+  [
+    "SDG 5 \u2014 Gender Equality",
+    "Encouraging women's participation and entrepreneurship in tourism.",
+  ],
+  [
+    "SDG 8 \u2014 Decent Work & Economic Growth",
+    "Supporting entrepreneurship, enterprise development, employment, and inclusive economic opportunities.",
+  ],
+  [
+    "SDG 11 \u2014 Sustainable Cities & Communities",
+    "Strengthening destinations, local participation, heritage, and place-based development.",
+  ],
+  [
+    "SDG 12 \u2014 Responsible Consumption & Production",
+    "Encouraging responsible tourism practices and more sustainable use of resources.",
+  ],
+  [
+    "SDG 13 \u2014 Climate Action",
+    "Supporting greater awareness, resilience, and climate-responsive tourism development.",
+  ],
+  [
+    "SDG 14 \u2014 Life Below Water",
+    "Recognising the importance of protecting marine and coastal environments connected with tourism.",
+  ],
+  [
+    "SDG 15 \u2014 Life on Land",
+    "Supporting responsible relationships with terrestrial ecosystems, biodiversity, and natural destinations.",
+  ],
+];
+const recovered_Gd = [
+  "Meaningful Journeys",
+  "Place-Inspired Host Stays",
+  "People & Place-Inspired Experiences",
+  "Micro & Small Tourism Enterprises",
+  "Tourism Destinations",
+  "Travel Corridors",
+  "Tourism Partnerships",
+  "Joint Ventures",
+  "Tourism Programmes & Projects",
+  "Ecosystem Initiatives",
+];
+function Component_recovered_Kd({ eyebrow: e, title: t }) {
   return (
-    <div className={center ? 'mx-auto max-w-4xl text-center' : 'max-w-3xl'}>
-      <h2
-        className={[
-          'mt-0 flex gap-3 text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl',
-          center ? 'items-center justify-center' : 'items-start',
-        ].join(' ')}
-      >
-        {Icon ? (
-          <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
-            <Icon className="h-5 w-5" aria-hidden="true" />
-          </span>
-        ) : null}
-        <span>{title}</span>
+    <div className="mx-auto max-w-5xl text-center">
+      {e && (
+        <p className="mb-3 text-sm font-extrabold uppercase tracking-[0.18em] text-[#c28a5b]">
+          {e}
+        </p>
+      )}
+      <h2 className="text-2xl font-bold leading-tight tracking-tight text-[#1f4f93] sm:text-4xl">
+        {t}
       </h2>
-      <div className={['mt-3 h-0.5 w-24 rounded bg-[#c28a5b]', center ? 'mx-auto' : ''].join(' ')} />
+      <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
     </div>
-  )
+  );
 }
-
-function TextPanel({ children }) {
+function Component_recovered_qd({ children: e }) {
   return (
-    <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
-      {children}
+    <div className="mx-auto mt-7 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
+      {e}
     </div>
-  )
+  );
 }
-
-function InfoCard({ item }) {
-  const Icon = item.icon
-
+function Component_recovered_Jd({ items: e }) {
   return (
-    <article className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-7">
-      <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
-        <Icon className="h-6 w-6" aria-hidden="true" />
-      </span>
-      <h3 className="mt-4 text-xl font-bold tracking-tight text-black sm:text-2xl">{item.title}</h3>
-      <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{item.body}</p>
-    </article>
-  )
+    <div className="mt-10 grid gap-6 md:grid-cols-2">
+      {e.map(({ icon: Component_e, title: t, body: n }) => (
+        <article
+          key={t}
+          className="rounded-2xl border border-[#e8eef2] bg-white p-6 shadow-sm sm:p-7"
+        >
+          <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#DFE7F3] text-[#1f4f93]">
+            <Component_e className="h-6 w-6" aria-hidden="true" />
+          </span>
+          <h3 className="mt-4 text-xl font-bold tracking-tight text-black sm:text-2xl">
+            {t}
+          </h3>
+          <p className="mt-3 text-sm leading-7 text-[#55636a] sm:text-base">
+            {n}
+          </p>
+        </article>
+      ))}
+    </div>
+  );
 }
-
-function SdgCard({ item }) {
-  const Icon = item.icon
-
+function Component_recovered_Yd({
+  items: e,
+  compact: t = false,
+  compactItems: n = [],
+}) {
   return (
-    <article className="flex gap-4 rounded-2xl border border-[#eef4ef] bg-white p-5 text-left shadow-sm">
-      <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
-        <Icon className="h-5 w-5" aria-hidden="true" />
-      </span>
-      <p className="text-sm leading-7 text-[#55636a] sm:text-base">
-        <strong className="font-bold text-black">{item.title}</strong> {item.body}
-      </p>
-    </article>
-  )
+    <div
+      className={`mx-auto mt-8 flex flex-col items-center ${t ? "max-w-md" : "max-w-3xl"}`}
+    >
+      {e.map((t, r) => (
+        <div key={t} className="contents">
+          <div
+            className={`w-full rounded-xl border border-[#dce7f2] bg-white px-5 py-4 text-center font-bold text-[#1f4f93] shadow-sm ${n.includes(t) ? "max-w-md" : ""}`}
+          >
+            {t}
+          </div>
+          {r < e.length - 1 && (
+            <ArrowDown
+              className="my-2 h-5 w-5 text-[#c28a5b]"
+              aria-hidden="true"
+            />
+          )}
+        </div>
+      ))}
+    </div>
+  );
 }
-
-export default function GloballyAlignedLocallyGrounded() {
+function GloballyAlignedLocallyGrounded() {
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
-        <div className="absolute inset-0 z-0">
-          <img
-            src={heroImg}
-            alt="People-Powered Tourism Global Alignment banner"
-            className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
-          />
-          <div className="absolute inset-0 bg-black/25" />
-        </div>
-
-        <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
+        <img
+          src={asset_Vd}
+          alt="People-Powered Tourism Local and Global Alignment"
+          className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
+        />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 flex w-full justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="max-w-5xl text-center">
             <h1
-              style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
+              style={{
+                fontFamily:
+                  '"League Spartan", system-ui, -apple-system, sans-serif',
+              }}
               className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              <span className="block">PEOPLE-POWERED TOURISM</span>
-              <span className="block">GLOBAL ALIGNMENT</span>
+              {"People-Powered Tourism: Local & Global Alignment"}
             </h1>
-            <p className="mt-3 text-sm font-semibold text-white/95 sm:text-base lg:text-lg">
-              Connecting Global Perspectives with Sri Lankan Realities
+            <p className="mt-4 text-sm font-semibold text-white/95 sm:text-base lg:text-lg">
+              {"Locally Grounded. Globally Aligned."}
             </p>
           </div>
         </div>
       </section>
-
-      <section className="w-full bg-white px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
-        <div className="mx-auto max-w-5xl text-center">
-          <p className="mx-auto w-fit rounded-full bg-[#dfe6ef] px-5 py-2 text-[1.05rem] font-extrabold text-[#1f4f93] shadow-sm">Purpose</p>
-          <p className="mt-2 text-lg font-bold leading-8 text-[#172544]">
-            To demonstrate how the <strong>People-Powered Tourism Framework</strong> aligns with internationally recognised tourism principles, global development priorities, and emerging best practices while remaining grounded in the unique realities, opportunities, and aspirations of Sri Lanka.
+      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <Component_recovered_Kd title="Locally Grounded. Globally Aligned." />
+        <Component_recovered_qd>
+          <p>
+            {"The "}
+            <strong>{"People-Powered Tourism Framework"}</strong>
+            {
+              " is grounded in Sri Lanka while connected to contemporary global thinking on tourism and sustainable development."
+            }
           </p>
-          <div className="mt-12">
-            <SectionHeading icon={Globe2} title="A Framework Informed by Global Thinking" />
-          </div>
-          <TextPanel>
-            <p>The <strong>People-Powered Tourism Global Alignment</strong> forms the external foundation of the <strong>People-Powered Tourism Framework</strong>. It demonstrates how the Framework is informed by internationally recognised tourism principles, global development priorities, and evolving tourism thinking while remaining responsive to the unique characteristics of Sri Lanka&apos;s tourism ecosystem.</p>
-            <p>While the <strong>People-Powered Tourism Guiding Principles</strong> establish the internal values that guide every decision within the Framework, <strong>Global Alignment</strong> provides the broader international context that informs its development.</p>
-            <p>Rather than replicating existing tourism models, the Framework draws upon recognised tourism knowledge and adapts it through a <strong>People-Powered</strong> approach that reflects Sri Lanka&apos;s people, places, tourism enterprises, destinations, culture, entrepreneurial potential, and national development priorities.</p>
-            <p>As tourism continues to evolve, the Framework also evolves by learning from emerging global trends, innovation, research, and international best practices while remaining firmly grounded in Sri Lanka&apos;s local realities.</p>
-            <p>Together, these global and local perspectives ensure that the Framework remains internationally relevant while delivering practical and meaningful solutions for Sri Lanka&apos;s tourism ecosystem.</p>
-          </TextPanel>
+          <p>
+            {
+              "It recognises that meaningful tourism development can draw from both "
+            }
+            <strong>
+              {
+                "the knowledge and wisdom developed by Sri Lankan people across generations"
+              }
+            </strong>
+            {" and "}
+            <strong>
+              {
+                "evolving international thinking, practices, and development priorities"
+              }
+            </strong>
+            {"."}
+          </p>
+          <p>
+            {
+              "Together, these perspectives provide a strong foundation for developing and strengthening micro and small tourism enterprises across Sri Lanka's tourism ecosystem."
+            }
+          </p>
+        </Component_recovered_qd>
+      </section>
+      <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <Component_recovered_Kd
+            eyebrow="Locally Grounded"
+            title="Rooted in Sri Lanka's People, Places, Knowledge and Wisdom"
+          />
+          <Component_recovered_qd>
+            <p>
+              {
+                "Sri Lanka's tourism future can be strengthened by recognising the knowledge, wisdom, traditions, practices, and lived experiences that have evolved across generations."
+              }
+            </p>
+            <p>
+              {
+                "Long before many contemporary concepts of sustainability, resilience, resource conservation, community participation, and responsible living became internationally recognised, Sri Lankan people developed and practised approaches shaped by their relationship with "
+              }
+              <strong>
+                {
+                  "land, water, nature, agriculture, health, food, culture, community, and place"
+                }
+              </strong>
+              {"."}
+            </p>
+            <p>
+              {
+                "This inherited knowledge forms an important part of Sri Lanka's identity and can provide inspiration and practical opportunities for contemporary tourism development."
+              }
+            </p>
+            <p>
+              {"It can be found in many aspects of Sri Lankan life, including:"}
+            </p>
+          </Component_recovered_qd>
+          <Component_recovered_Jd items={recovered_Hd} />
+          <Component_recovered_qd>
+            <p>
+              {
+                "This knowledge is not simply something to preserve as part of the past."
+              }
+            </p>
+            <p>
+              {"It can become a source of "}
+              <strong>
+                {
+                  "meaningful journeys, authentic host stays, people and place-inspired experiences, tourism enterprises, destination development, learning opportunities, and new partnerships"
+                }
+              </strong>
+              {
+                " \u2014 when developed respectfully and with the meaningful participation of the people who carry and share that knowledge."
+              }
+            </p>
+          </Component_recovered_qd>
         </div>
       </section>
-
-      <section className="w-full bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Waypoints} title="Why Global Alignment Matters" />
-          <TextPanel>
-            <p>Tourism operates within an increasingly connected world where destinations, travellers, tourism enterprises, governments, investors, development organisations, educational institutions, and technology providers share common aspirations for sustainable, inclusive, resilient, and innovative tourism development.</p>
-            <p>By aligning with internationally recognised tourism principles and global development priorities, the People-Powered Tourism Framework builds upon established knowledge while recognising that every destination must respond to its own social, cultural, environmental, economic, and technological context.</p>
-            <p>Rather than applying international approaches unchanged, the Framework interprets global perspectives through the realities of Sri Lanka, creating an approach that is both internationally informed and locally relevant.</p>
-          </TextPanel>
+          <Component_recovered_Kd title="From Inherited Knowledge to New Tourism Opportunities" />
+          <Component_recovered_Yd
+            compact={true}
+            items={[
+              "Knowledge & Wisdom",
+              "People & Places",
+              "Journeys \u2022 Host Stays \u2022 Experiences",
+              "Tourism Enterprises",
+              "Destination Development",
+              "People-Powered Tourism Ecosystem",
+            ]}
+          />
+          <Component_recovered_qd>
+            <p>
+              {"The "}
+              <strong>{"People-Powered Tourism Framework"}</strong>
+              {
+                " therefore seeks to recognise and connect Sri Lanka's own knowledge, wisdom, people, places, and lived experiences with new opportunities for tourism development."
+              }
+            </p>
+          </Component_recovered_qd>
         </div>
       </section>
-
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Network} title="International Tourism Alignment" />
-          <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            The <strong>People-Powered Tourism Framework</strong> aligns with internationally recognised tourism principles that encourage responsible, inclusive, resilient, innovative, and sustainable tourism development.
-          </p>
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            {tourismAlignment.map((item) => (
-              <InfoCard key={item.title} item={item} />
+          <Component_recovered_Kd
+            eyebrow="Globally Aligned"
+            title="Connecting with Contemporary Global Tourism Thinking"
+          />
+          <Component_recovered_qd>
+            <p>
+              {"While firmly rooted in Sri Lanka, the "}
+              <strong>{"People-Powered Tourism Framework"}</strong>
+              {
+                " is also informed by contemporary international thinking and evolving approaches to tourism and sustainable development."
+              }
+            </p>
+            <p>
+              {
+                "It recognises the value of learning from global knowledge, international experience, emerging practices, and internationally recognised development priorities."
+              }
+            </p>
+            <p>{"The Framework is informed by concepts including:"}</p>
+          </Component_recovered_qd>
+          <Component_recovered_Jd items={recovered_Ud} />
+        </div>
+      </section>
+      <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <Component_recovered_Kd title="Aligned with Global Development Priorities" />
+          <Component_recovered_qd>
+            <p>
+              {"The "}
+              <strong>{"People-Powered Tourism Framework"}</strong>
+              {" is also aligned with the "}
+              <strong>
+                {"United Nations Sustainable Development Goals (SDGs)"}
+              </strong>
+              {
+                " and their broader vision for inclusive, sustainable, and resilient development."
+              }
+            </p>
+            <p>
+              {
+                "Its contribution is particularly connected with areas including:"
+              }
+            </p>
+          </Component_recovered_qd>
+          <div className="mt-9 grid gap-4 md:grid-cols-2">
+            {recovered_Wd.map(([e, t]) => (
+              <article
+                key={e}
+                className="rounded-2xl border border-[#e8eef2] bg-white p-5 shadow-sm"
+              >
+                <p className="text-sm leading-7 text-[#55636a] sm:text-base">
+                  <strong className="text-black">{e}</strong>
+                  <br />
+                  {t}
+                </p>
+              </article>
             ))}
           </div>
+          <Component_recovered_qd>
+            <p>
+              {
+                "Global alignment therefore provides a wider reference point for the Framework while allowing its application to remain "
+              }
+              <strong>
+                {
+                  "relevant to Sri Lanka's people, places, enterprises, culture, and local realities"
+                }
+              </strong>
+              {"."}
+            </p>
+          </Component_recovered_qd>
         </div>
       </section>
-
-      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+      <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Target} title="Contributing to Global Development Priorities" />
-          <TextPanel>
-            <p>The <strong>People-Powered Tourism Framework</strong> contributes to internationally recognised global development priorities, including the <strong>United Nations Sustainable Development Goals (SDGs)</strong>, by encouraging tourism that creates inclusive economic opportunities, strengthens communities, supports environmental stewardship, and promotes long-term prosperity.</p>
-            <p>Rather than treating the SDGs as isolated objectives, the Framework integrates their underlying principles throughout its interconnected components, encouraging tourism that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
-            <p>The Framework particularly contributes to:</p>
-          </TextPanel>
-          <div className="mt-8 grid gap-4 lg:grid-cols-2">
-            {sdgs.map((item) => (
-              <SdgCard key={item.title} item={item} />
-            ))}
-          </div>
-          <p className="mx-auto mt-8 max-w-5xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            By contributing to these global priorities, the Framework demonstrates how tourism can support stronger tourism enterprises, resilient destinations, inclusive economic development, environmental stewardship, and broader social wellbeing.
-          </p>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Users} title="Local People-Powered Alignment" />
-          <TextPanel>
-            <p>While informed by global tourism thinking, the Framework is distinguished by its <strong>People-Powered interpretation of tourism development</strong>, shaped by Sri Lanka&apos;s unique context, opportunities, culture, entrepreneurial potential, and aspirations.</p>
-          </TextPanel>
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            {localAlignment.map((item) => (
-              <InfoCard key={item.title} item={item} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Globe2} title="Globally Aligned, Locally Grounded" />
-          <TextPanel>
-            <p>The strength of the <strong>People-Powered Tourism Framework</strong> lies in its ability to connect internationally recognised tourism thinking with practical action that responds to Sri Lanka&apos;s unique context.</p>
-            <p>Rather than viewing global and local perspectives as competing approaches, the Framework integrates them into a connected model that is internationally credible, locally relevant, adaptable, and practically applicable.</p>
-            <p>This balanced approach enables the Framework to contribute to stronger tourism enterprises, resilient destinations, collaborative partnerships, thriving local economies, and more connected tourism ecosystems.</p>
-          </TextPanel>
-        </div>
-      </section>
-
-      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={ArrowRight} title="Supporting the People-Powered Tourism Framework" />
-          <TextPanel>
-            <p>Together with the <strong>People-Powered Tourism Guiding Principles</strong>, <strong>Global Alignment</strong> provides the strategic foundation upon which the Framework&apos;s:</p>
-          </TextPanel>
-          <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {frameworkComponents.map((item) => (
-              <div key={item} className="rounded-2xl border border-[#eef4ef] bg-[#FCFBF8] px-4 py-5 text-center text-sm font-bold leading-6 text-[#1f4f93] shadow-sm sm:text-base">
-                {item}
+          <Component_recovered_Kd
+            eyebrow="Connecting Local Wisdom with Global Thinking"
+            title="Bringing Sri Lankan Knowledge and Contemporary Global Thinking Together"
+          />
+          <Component_recovered_qd>
+            <p>
+              {"The "}
+              <strong>{"People-Powered Tourism Framework"}</strong>
+              {
+                " does not view local knowledge and global knowledge as separate or competing approaches."
+              }
+            </p>
+            <p>{"Instead, it seeks to connect them."}</p>
+            <p>
+              {
+                "Sri Lanka's inherited knowledge, wisdom, cultural practices, and lived experiences can provide valuable foundations for contemporary tourism development, while global thinking can offer new perspectives, knowledge, tools, practices, and opportunities to strengthen and evolve those foundations."
+              }
+            </p>
+            <p>
+              {"This creates an approach that is "}
+              <strong>
+                {
+                  "locally grounded without being inward-looking, and globally aligned without losing Sri Lanka's own identity."
+                }
+              </strong>
+            </p>
+          </Component_recovered_qd>
+          <h3 className="mt-10 text-center text-2xl font-bold text-[#1f4f93]">
+            {"Local Knowledge + Global Thinking"}
+          </h3>
+          <Component_recovered_Yd
+            compactItems={[
+              "People-Powered Tourism Approaches",
+              "Practical Tourism Development",
+            ]}
+            items={[
+              "Sri Lankan Knowledge & Wisdom + Contemporary Global Tourism Thinking",
+              "People-Powered Tourism Approaches",
+              "Practical Tourism Development",
+              "Stronger Enterprises \u2022 Resilient Destinations \u2022 Meaningful Experiences \u2022 Connected Partnerships",
+            ]}
+          />
+          <Component_recovered_qd>
+            <p>
+              {
+                "Through this connection, the Framework can help transform knowledge, skills, culture, traditions, places, and ideas into meaningful opportunities for "
+              }
+              <strong>
+                {"people, enterprises, destinations, travellers, and partners"}
+              </strong>
+              {"."}
+            </p>
+            <p>
+              {"It provides a foundation for developing and strengthening:"}
+            </p>
+          </Component_recovered_qd>
+          <div className="mx-auto mt-8 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {recovered_Gd.map((e) => (
+              <div
+                key={e}
+                className={`rounded-xl border border-[#dce7f2] bg-white px-5 py-4 text-center font-bold text-[#1f4f93] shadow-sm ${e === "Ecosystem Initiatives" ? "sm:col-span-2 sm:mx-auto sm:w-[calc(50%-0.5rem)] lg:col-span-1 lg:col-start-2 lg:w-full" : ""}`}
+              >
+                {e}
               </div>
             ))}
           </div>
-          <TextPanel>
-            <p>are developed, implemented, evaluated, and continuously strengthened.</p>
-            <p>By combining international perspectives with local relevance, the Framework transforms globally recognised tourism thinking into practical strategies that develop and strengthen micro and small tourism enterprises while creating lasting value across Sri Lanka&apos;s tourism ecosystem.</p>
-          </TextPanel>
         </div>
       </section>
-
-      <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Sprout} title="Looking Ahead" />
-          <TextPanel>
-            <p>Tourism continues to evolve in response to changing economies, technologies, traveller expectations, environmental priorities, and global development agendas.</p>
-            <p>The <strong>People-Powered Tourism Framework</strong> is designed as a living framework that evolves alongside these changes while remaining grounded in its commitment to <strong>People-Powered Tourism</strong>.</p>
-            <p>By learning from international perspectives, embracing innovation, and responding to Sri Lanka&apos;s changing needs and opportunities, the Framework will remain relevant, adaptable, and capable of supporting stronger tourism enterprises, resilient destinations, collaborative partnerships, and lasting prosperity for future generations.</p>
-          </TextPanel>
+      <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <Component_recovered_Kd title="A Framework Rooted in Sri Lanka, Connected to the World" />
+          <Component_recovered_qd>
+            <p>
+              {"The "}
+              <strong>{"People-Powered Tourism Framework"}</strong>
+              {
+                " brings together local knowledge and global perspectives to create a tourism development approach that is relevant to Sri Lanka's present while remaining open to learning, innovation, collaboration, and continuous evolution."
+              }
+            </p>
+            <p>
+              <strong>
+                {
+                  "The Framework does not simply bring global sustainability thinking to Sri Lanka. It connects contemporary global thinking with knowledge and wisdom that Sri Lankan people have developed and practised across generations."
+                }
+              </strong>
+            </p>
+            <p>
+              {"Through this approach, "}
+              <strong>{"Local & Global Alignment"}</strong>
+              {" becomes an important foundation of the "}
+              <strong>{"Traveleye People-Powered Tourism Ecosystem"}</strong>
+              {
+                ", supporting the development and strengthening of micro and small tourism enterprises and creating lasting value for:"
+              }
+            </p>
+            <p className="text-xl font-bold text-[#1f4f93] sm:text-2xl">
+              <strong>
+                {"People \u2022 Places \u2022 Partnerships \u2022 Prosperity"}
+              </strong>
+            </p>
+          </Component_recovered_qd>
         </div>
       </section>
-
-      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <SectionHeading icon={Handshake} title="Grow with Traveleye Alliance" />
-          <TextPanel>
-            <p>Whether you are a government agency, tourism authority, development organisation, educational institution, investor, entrepreneur, tourism enterprise, community organisation, or strategic partner, <strong>Traveleye Alliance Sri Lanka</strong> invites you to contribute to a tourism future that is <strong>globally aligned and locally grounded</strong>.</p>
-            <p>Together, we can develop and strengthen micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem by combining international perspectives with local knowledge, meaningful participation, innovation, collaborative partnerships, responsible stewardship, and a shared commitment to creating lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
-          </TextPanel>
+      <section className="bg-[#FCFBF8] px-4 py-12 text-center text-[#1f4f93] sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-xl font-bold sm:text-2xl">
+            {"Locally Grounded. Globally Aligned. People-Powered."}
+          </p>
+          <p className="mt-4 text-base font-medium sm:text-xl">
+            {"Building a People-Powered Tourism Ecosystem for Sri Lanka."}
+          </p>
         </div>
       </section>
-
       <ExploreEcosystem />
       <FooterLinks />
     </main>
-  )
+  );
 }
+export default GloballyAlignedLocallyGrounded;
