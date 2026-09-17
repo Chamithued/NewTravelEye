@@ -1,163 +1,162 @@
-import staysImg from '../assets/client/Stays.png'
-import experiencesImg from '../assets/client/Travelex.jpg'
-import journeyImg from '../assets/client/Plan Your Sri Lanka Journey.png'
-import luxuryImg from '../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg'
-import weddingImg from '../assets/client/Sri Lankan wedding reception at golden hour.png'
-import outboundImg from '../assets/explore/Discover Sri Lanka - Domestic1.jpg'
-import conNation from '../assets/client/Discover the world.png'
-import conTourism from '../assets/explore/Access Tourism Enterprise Growth Services.jpg'
-import discSriLanka from '../assets/explore/Support Destination Development & Facilitation.jpg'
-
-const platforms = [
+// Reconstructed from the supplied deployed build. Original local names and comments were not retained.
+import asset_Bi from "../assets/client/Plan Your Sri Lanka Journey.png";
+import asset_Ri from "../assets/client/Stays.png";
+import asset_zi from "../assets/client/Travelex.jpg";
+import asset_Vi from "../assets/client/Discover Sri Lanka in Ultimate Luxury.jpg";
+import asset_Hi from "../assets/client/Sri Lankan wedding reception at golden hour.png";
+import asset_Xi from "../assets/recovered/Discover Sri Lanka - Domestic1.jpg";
+import asset_Ui from "../assets/client/Discover the world.png";
+import asset_Zi from "../assets/recovered/Access Tourism Enterprise Growth Services.jpg";
+import asset_Qi from "../assets/recovered/Support Destination Development _ Facilitation.jpg";
+const recovered_$i = [
   {
     id: 1,
-    icon: '✈️',
-    title: 'Explore Meaningful Journeys Across Sri Lanka',
-    description: "Thoughtfully curated journeys that connect travellers with Sri Lanka's people, culture, heritage, nature, and local way of life through authentic and meaningful travel.",
-    image: journeyImg,
-    link: '/destination-facilitation',
+    icon: "\u2708\uFE0F",
+    title: "Explore Beautiful Journeys Across Sri Lanka",
+    description:
+      "Thoughtfully curated journeys connecting travellers with Sri Lanka's people, culture, heritage, nature and local way of life through authentic and meaningful travel.",
+    image: asset_Bi,
+    link: "/sri-lanka-journeys",
   },
   {
     id: 2,
-    icon: '🏡',
-    title: 'Discover Authentic Host Stays in Sri Lanka',
-    description: "Welcoming host stays that reflect Sri Lanka's hospitality, local culture, traditions, landscapes, and the unique identity of each destination",
-    image: staysImg,
-    link: '/stays',
+    icon: "\uD83C\uDFE1",
+    title: "Discover Beautiful Host Stays in Sri Lanka",
+    description:
+      "Welcoming host stays reflecting Sri Lankan hospitality, local culture, traditions, landscapes and the unique identity of each destination.",
+    image: asset_Ri,
+    link: "/traveleye-hostnest",
   },
   {
     id: 3,
-    icon: '🌿',
-    title: 'Discover People & Place-Inspired Experiences',
-    description: 'Meaningful experiences shaped by local people, culture, heritage, creativity, nature, agriculture, wellness, and everyday life across Sri Lanka.',
-    image: experiencesImg,
-    link: '/experiences',
+    icon: "\uD83C\uDF3F",
+    title: "Discover Beautiful People & Place-Inspired Experiences",
+    description:
+      "Meaningful experiences shaped by local people, culture, heritage, creativity, nature, agriculture, wellness, and everyday life across Sri Lanka.",
+    image: asset_zi,
+    link: "/traveleye-storytrail",
   },
   {
     id: 4,
-    icon: '✨',
-    title: 'Discover Sri Lanka in Ultimate Luxury ',
-    description: 'Curated luxury journeys, exclusive host stays, and personalised experiences designed for travellers seeking privacy, authenticity, comfort, and exceptional service.',
-    image: luxuryImg,
-    link: '/stays',
+    icon: "\u2728",
+    title: "Discover Beautiful Sri Lanka Through Priv\xE9 Collection",
+    description:
+      "Discover a more refined Sri Lanka through exclusive private journeys, exceptional stays and personalised experiences, crafted for discerning travellers who value privacy, elegance, comfort, exceptional service and meaningful connections.",
+    image: asset_Vi,
+    link: "/prive-collection",
   },
   {
     id: 5,
-    icon: '💍',
-    title: "Celebrate Life's Special Moments in Sri Lanka",
-    description: "Memorable celebrations inspired by Sri Lanka's people, culture, hospitality, landscapes, and extraordinary locations for life's most special moments.",
-    image: weddingImg,
-    link: '/experiences',
+    icon: "\uD83D\uDC8D",
+    title: "Celebrate Life's Beautiful Moments in Sri Lanka",
+    description:
+      "Memorable celebrations inspired by Sri Lanka's people, culture, hospitality, landscapes, and extraordinary locations for life's most special moments.",
+    image: asset_Hi,
+    link: "/celebrations-events",
   },
-  // {
-  //   id: 6,
-  //   icon: '🌍',
-  //   title: 'Discover Sri Lanka and the World with Traveleye (For Sri Lankan Residents)',
-  //   subtitle: 'රට වටා රට දකින්න – ලොව වටා ලොව දකින්න',
-  //   // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-  //   image: outboundImg,
-  //   link: '/destination-facilitation',
-  // },
   {
     id: 6,
-    icon: '🌍',
-    title: 'Explore Sri Lanka, Closer to Home',
-    subtitle: 'රට වටා රට දකින්න',
-    description: 'Holidays, pilgrimages, family getaways, weekend escapes, and island-wide travel experiences created exclusively for Sri Lankan residents.',
-    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-    image: outboundImg,
-    link: '/destination-facilitation',
+    icon: "\uD83C\uDF0D",
+    title: "Explore Beautiful Sri Lanka, Closer to Home",
+    subtitle:
+      "\u0DBB\u0DA7 \u0DC0\u0DA7\u0DCF \u0DBB\u0DA7 \u0DAF\u0D9A\u0DD2\u0DB1\u0DCA\u0DB1",
+    description:
+      "Holidays, pilgrimages, family getaways, weekend escapes and island-wide travel experiences created for Sri Lankan residents.",
+    image: asset_Xi,
+    link: "/island-journeys",
   },
   {
     id: 7,
-    icon: '🌍',
-    title: 'Explore the World Beyond Borders',
-    subtitle: 'ලොව වටා ලොව දකින්න',
-    description: 'Outbound holidays, pilgrimages, educational tours, family vacations, group travel, and international journeys designed exclusively for Sri Lankan travellers.',
-    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-    image: conNation,
-    link: '/destination-facilitation',
+    icon: "\uD83C\uDF0D",
+    title: "Explore the World Beyond Beautiful Sri Lanka",
+    subtitle:
+      "\u0DBD\u0DDC\u0DC0 \u0DC0\u0DA7\u0DCF \u0DBD\u0DDC\u0DC0 \u0DAF\u0D9A\u0DD2\u0DB1\u0DCA\u0DB1",
+    description:
+      "Outbound holidays, pilgrimages, educational tours, family vacations, group travel and international journeys designed for Sri Lankan travellers.",
+    image: asset_Ui,
+    link: "/global-journeys",
   },
   {
     id: 8,
-    icon: '🌍',
-    title: 'Access Tourism Enterprise Growth Services',
-    description: "Access specialised services that help tourism enterprises strengthen capability, improve business performance, embrace innovation, and unlock new opportunities for sustainable growth.",
-    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-    image: conTourism,
-    link: '/destination-facilitation',
+    icon: "\uD83C\uDF0D",
+    title:
+      "Access Tourism Enterprise Growth Services Through Beautiful Expertise",
+    description:
+      "Access specialised services that help tourism enterprises strengthen capabilities, improve business performance, embrace innovation and unlock new opportunities for sustainable growth.",
+    image: asset_Zi,
+    link: "/support-services",
   },
   {
     id: 9,
-    icon: '🌍',
-    title: 'Support Destination Development & Facilitation',
-    description: "Supporting collaborative destination development by connecting communities, tourism enterprises, institutions, and partners to strengthen stewardship, participation, and resilient tourism destinations.",
-    // description: 'Discover domestic holidays, pilgrimages, weekend escapes, and island-wide travel experiences, together with outbound holidays, pilgrimages, group tours, and international journeys designed for Sri Lankan travellers.',
-    image: discSriLanka,
-    link: '/destination-facilitation',
+    icon: "\uD83C\uDF0D",
+    title:
+      "Support Destination Development & Facilitation Driven by Beautiful People",
+    description:
+      "Supporting collaborative destination development by connecting communities, tourism enterprises, institutions and partners to strengthen stewardship, participation and resilient tourism destinations.",
+    image: asset_Qi,
+    link: "/destination-facilitation",
   },
-]
-
-export default function ExplorePlatformsSection() {
+];
+function ExplorePlatformsSection() {
   return (
     <section className="w-full bg-[#eef4fa] px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto mb-10 max-w-6xl text-center">
-          {/* <div className="mb-4 inline-flex rounded-full bg-[#DFE7F3] px-5 py-2 text-sm font-bold uppercase tracking-wide text-[#214f95] shadow-sm"> */}
           <div className="home-section-eyebrow mb-5">
-            Explore Our Tourism Collection 
+            {"Explore Our Beautiful Tourism Collection"}
           </div>
           <h2 className="home-section-title">
-            Discover Meaningful Journeys, Authentic Experiences, and Collaborative Tourism Opportunities Across Sri Lanka
+            {"Discover Beautiful Journeys, Stays, Experiences & More"}
           </h2>
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
           <div className="mx-auto mt-7 max-w-5xl space-y-6 text-[1.05rem] font-normal leading-7 text-[#5f6c87] sm:text-[1.2rem] sm:leading-8">
             <p>
-          {/* <p className="mx-auto mt-7 max-w-3xl text-sm font-normal leading-7 text-[#5f6c87] sm:text-base sm:leading-8"> */}
-            Explore a thoughtfully curated collection of journeys, host stays, experiences, tourism services, travel opportunities, and collaborative initiatives that connect people, places, enterprises, and cultures while contributing to a stronger People-Powered Tourism Ecosystem
-          </p>
+              {
+                "Explore a thoughtfully curated collection of beautiful journeys, host stays, experiences, celebrations, travel opportunities and tourism development services - connecting people, places, enterprises and destinations while contributing to a stronger People-Powered Tourism Ecosystem."
+              }
+            </p>
           </div>
-          
         </div>
-
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {platforms.map((platform) => (
+          {recovered_$i.map((e) => (
             <article
-              key={platform.id}
+              key={e.id}
               className="mx-auto flex min-h-[360px] w-full max-w-[380px] flex-col overflow-hidden rounded-lg border border-[#dfe7f3] bg-white shadow-[0_4px_18px_rgba(15,23,42,0.08)] transition-shadow duration-300 hover:shadow-xl"
             >
               <a
-                href={platform.link}
-                aria-label={platform.title}
+                href={e.link}
+                aria-label={e.title}
                 className="group/image relative block h-44 overflow-hidden"
               >
                 <img
-                  src={platform.image}
-                  alt={platform.title}
+                  src={e.image}
+                  alt={e.title}
                   className="h-full w-full object-cover transition-transform duration-300 group-hover/image:scale-105"
                 />
-                {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0f2a55]/15 via-transparent to-[#0f2a55]/35" />
-                <div className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white text-2xl shadow-sm">
-                  {platform.icon}
-                </div> */}
               </a>
               <div className="flex flex-1 flex-col p-4 text-left sm:p-5">
                 <h3 className="text-base font-bold leading-snug text-[#1f4f93]">
-                  <a href={platform.link} className="transition-colors hover:text-[#172544]">
-                    {platform.title}
+                  <a
+                    href={e.link}
+                    className="transition-colors hover:text-[#172544]"
+                  >
+                    {e.title}
                   </a>
                 </h3>
-                {platform.subtitle ? (
+                {e.subtitle ? (
                   <p className="mt-3 text-sm font-semibold leading-6 text-[#234c3a]">
-                    {platform.subtitle}
+                    {e.subtitle}
                   </p>
                 ) : null}
-                <p className="mt-3 text-sm leading-6 text-[#5f6c87]">{platform.description}</p>
+                <p className="mt-3 text-sm leading-6 text-[#5f6c87]">
+                  {e.description}
+                </p>
               </div>
             </article>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
+export default ExplorePlatformsSection;

@@ -47,7 +47,7 @@ const models = [
     title: 'Traveleye Destination Stewardship Model',
     subtitle: 'Strengthening Destinations Through Stewardship',
     body: [
-      'Successful destinations require more than promotion—they require stewardship.',
+      'Successful destinations require more than promotion-they require stewardship.',
       'This model supports collaborative destination planning, participation, coordination, governance, and long-term destination management that strengthens destination identity, enhances visitor experiences, and encourages balanced, resilient, and sustainable tourism development.',
     ],
   },
