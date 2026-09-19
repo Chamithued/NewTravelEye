@@ -19,6 +19,7 @@ const platforms = [
     icon: Globe2,
     title: 'Traveleye Travel Collective',
     subtitle: 'Connecting Journeys Through People and Place',
+    alliance: 'An Alliance of Travel Businesses & Partners',
     body: (
       <>
         The <strong>Traveleye Travel Collective</strong> develops and connects meaningful travel opportunities that create market access, expand travel opportunities, and strengthen tourism enterprises through connected journeys.
@@ -35,52 +36,81 @@ const platforms = [
     centeredAreas: true,
   },
   {
-    icon: Leaf,
-    title: 'Traveleye Host Experiences',
-    subtitle: 'Crafted Through People and Place',
+    icon: Home,
+    title: 'Traveleye Habitats',
+    subtitle: 'Creating Distinctive Stays Through People and Place',
+    alliance: 'An Alliance of Stay Developers, Hosts & Partners',
     body: (
       <>
-        <strong>Traveleye Host Experiences</strong> develops authentic place-inspired host stays and people and place-inspired travel experiences that celebrate local identity while creating opportunities for hosts, experience creators, entrepreneurs, and tourism enterprises.
+        <strong>Traveleye Habitats</strong> develops and connects distinctive accommodation and stay opportunities that reflect the character, culture, nature, and identity of their locations. It supports stay developers and tourism enterprises in creating authentic, place-inspired stays while strengthening quality, market access, enterprise capability, and destination value.
       </>
     ),
-    areaGroups: [
-      {
-        title: 'Host Stays',
-        items: [
-          'Heritage Host Stays',
-          'Nature Host Stays',
-          'Coastal Host Stays',
-          'Rural & Village Host Stays',
-          'Agricultural & Farm Host Stays',
-          'Wellness & Retreat Host Stays',
-          'Boutique Host Stays',
-          'Eco Host Stays',
-        ],
-      },
-      {
-        title: 'Travel Experiences',
-        items: [
-          'Cultural & Heritage Experiences',
-          'Nature & Wildlife Experiences',
-          'Adventure Experiences',
-          'Culinary Experiences',
-          'Agricultural Experiences',
-          'Wellness Experiences',
-          'Creative & Artisan Experiences',
-          'Community Experiences',
-          'Educational Experiences',
-          'Special Interest Experiences',
-        ],
-      },
+    areasTitle: 'Habitat Development Categories',
+    areas: [
+      'Earth Habitats',
+      'Safari Habitats',
+      'Forest Habitats',
+      'Coastal Habitats',
+      'Village Habitats',
+      'Heritage Habitats',
+      'Wellness Habitats',
+      'Glamping Habitats',
+      'Other Place-Inspired Habitat Concepts',
+    ],
+    note: 'These categories provide starting points for discovering and developing distinctive stays shaped by the character, opportunities, and potential of each location.',
+  },
+  {
+    icon: Leaf,
+    title: 'Traveleye StoryTrails',
+    subtitle: 'Creating Meaningful Experiences Through People and Place',
+    alliance: 'An Alliance of Experience Creators, Hosts & Partners',
+    body: (
+      <>
+        <strong>Traveleye StoryTrails</strong> develops and connects meaningful travel experiences shaped by the people, stories, culture, nature, creativity, and distinctive character of each destination. It supports experience creators and tourism enterprises in developing experiences that engage travellers, celebrate local identity, create enterprise opportunities, and enrich destination offerings.
+      </>
+    ),
+    areasTitle: 'Experience Development Categories',
+    areas: [
+      'Cultural & Heritage Experiences',
+      'Nature & Wildlife Experiences',
+      'Adventure Experiences',
+      'Culinary Experiences',
+      'Agricultural Experiences',
+      'Wellness Experiences',
+      'Creative & Artisan Experiences',
+      'Community Experiences',
+      'Educational Experiences',
+      'Special Interest Experiences',
+    ],
+    note: 'These categories provide starting points for discovering and developing meaningful experiences shaped by the people, stories, culture, nature, creativity, and distinctive character of each destination.',
+  },
+  {
+    icon: Compass,
+    title: 'Traveleye Destination Facilitation Centres',
+    subtitle: 'Destinations Through People & Stewardship',
+    alliance: 'An Alliance of Destination Stakeholders & Partners',
+    body: (
+      <>
+        <strong>Traveleye Destination Facilitation Centres</strong> develop connected destination ecosystems by facilitating collaboration, coordinating tourism stakeholders, strengthening local tourism enterprises, improving visitor readiness, and supporting destination development.
+      </>
+    ),
+    areas: [
+      'Destination Development',
+      'Destination Coordination',
+      'Tourism Enterprise Facilitation',
+      'Stay & Experience Facilitation',
+      'Visitor Support Services',
+      'Destination Promotion & Market Connectivity',
     ],
   },
   {
     icon: BriefcaseBusiness,
-    title: 'Traveleye Ecosystem Support',
+    title: 'Traveleye Ecosystem Support Services',
     subtitle: 'Supporting Tourism Through People and Partnerships',
+    alliance: 'An Alliance of Tourism Knowledge, Capability & Support Partners',
     body: (
       <>
-        <strong>Traveleye Ecosystem Support</strong> strengthens the capability, readiness, innovation, and enabling environment that supports tourism enterprises and destinations through specialised ecosystem support.
+        <strong>Traveleye Ecosystem Support Services</strong> strengthen the capability, readiness, innovation, and enabling environment that supports tourism enterprises and destinations through specialised ecosystem support.
       </>
     ),
     areas: [
@@ -93,25 +123,6 @@ const platforms = [
       'Innovation & Sustainability',
       'Research, Knowledge & Insights',
     ],
-    note: 'These areas are supported through Traveleye Guidant, TraveleyeUpSkills, and Traveleye Connect.',
-  },
-  {
-    icon: Compass,
-    title: 'Traveleye Destination Facilitation',
-    subtitle: 'Destinations Through People & Stewardship',
-    body: (
-      <>
-        <strong>Traveleye Destination Facilitation</strong> develops connected destination ecosystems by facilitating collaboration, coordinating tourism stakeholders, strengthening local tourism enterprises, improving visitor readiness, and supporting destination development.
-      </>
-    ),
-    areas: [
-      'Destination Development',
-      'Destination Coordination',
-      'Tourism Enterprise Facilitation',
-      'Host Stay & Experience Facilitation',
-      'Visitor Support Services',
-      'Destination Promotion & Market Connectivity',
-    ],
   },
 ]
 
@@ -121,9 +132,10 @@ const connectedApproachIntro = [
 
 const connectedApproachPoints = [
   <><strong>Traveleye Travel Collective</strong> creates travel opportunities and connects tourism markets.</>,
-  <><strong>Traveleye Host Experiences</strong> develops authentic host stays and people and place-inspired travel experiences.</>,
-  <><strong>Traveleye Ecosystem Support</strong> strengthens enterprise capability and the enabling environment for tourism development.</>,
-  <><strong>Traveleye Destination Facilitation</strong> develops connected destination ecosystems by coordinating tourism stakeholders, supporting local tourism enterprises, strengthening destination readiness, and improving visitor experiences.</>,
+  <><strong>Traveleye Habitats</strong> develops distinctive stays and accommodation opportunities inspired by people and place.</>,
+  <><strong>Traveleye StoryTrails</strong> develops meaningful people and place-inspired travel experiences.</>,
+  <><strong>Traveleye Ecosystem Support Services</strong> strengthen enterprise capability and the enabling environment for tourism development.</>,
+  <><strong>Traveleye Destination Facilitation Centres</strong> develop connected destination ecosystems by coordinating tourism stakeholders, supporting local tourism enterprises, strengthening destination readiness, and improving visitor experiences.</>,
 ]
 
 const connectedApproachClosing = [
@@ -132,8 +144,8 @@ const connectedApproachClosing = [
 
 const frameworkRole = [
   <>The <strong>People-Powered Tourism Operational Platforms</strong> represent the <strong>implementation component</strong> of the <strong>People-Powered Tourism Framework</strong>.</>,
-  <>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, <strong>Global Alignment</strong>, <strong>Strategic Pillars</strong>, and <strong>Development Models</strong>, they provide the practical mechanisms that implement the Framework across Sri Lanka&apos;s tourism ecosystem.</>,
-  'Through these interconnected platforms, tourism stakeholders develop and strengthen tourism enterprises, create place-inspired host stays, deliver people and place-inspired travel experiences, strengthen destinations, expand travel opportunities, facilitate tourism programmes and projects, and support ecosystem initiatives.',
+  <>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, its <strong>Locally Grounded. Globally Aligned.</strong> foundation, <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Host Model</strong>, and <strong>Revenue Sharing Model</strong>, they provide the practical mechanisms that implement the Framework across Sri Lanka&apos;s tourism ecosystem.</>,
+  'Through these interconnected platforms, tourism stakeholders develop and strengthen tourism enterprises, create place-inspired stays, deliver people and place-inspired travel experiences, strengthen destinations, expand travel opportunities, facilitate tourism programmes and projects, and support ecosystem initiatives.',
   <>The <strong>People-Powered Tourism Outcomes</strong> represent the results created through implementation, while the <strong>People-Powered Tourism Ecosystem Indicators</strong> measure progress and long-term impact across the tourism ecosystem.</>,
   'Together, these interconnected components provide a complete pathway from strategic vision to measurable results.',
 ]
@@ -218,12 +230,13 @@ function PlatformCard({ platform }) {
   const Icon = platform.icon
 
   return (
-    <article className="flex flex-col rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-7">
+    <article className={`flex flex-col rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-7 ${platform.icon === BriefcaseBusiness ? 'lg:col-span-2 lg:w-[calc(50%_-_0.75rem)] lg:justify-self-center' : ''}`}>
       <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
         <Icon className="h-6 w-6" aria-hidden="true" />
       </span>
       <h3 className="mt-4 text-xl font-bold tracking-tight text-black sm:text-2xl">{platform.title}</h3>
       <p className="mt-2 text-sm font-semibold leading-6 text-[#1f4f93] sm:text-base">{platform.subtitle}</p>
+      <p className="mt-2 text-sm font-medium leading-6 text-[#55636a] sm:text-base">{platform.alliance}</p>
       <p className="mt-4 text-sm leading-7 text-[#55636a] sm:text-base">{platform.body}</p>
       <div className={platform.centeredAreas ? 'flex flex-1 flex-col justify-center pb-10' : ''}>
         <h4
@@ -232,7 +245,7 @@ function PlatformCard({ platform }) {
             platform.centeredAreas ? '-mt-16 text-center' : 'mt-5',
           ].join(' ')}
         >
-          Areas of Operation
+          {platform.areasTitle || 'Areas of Operation'}
         </h4>
         <AreaList platform={platform} />
       </div>
@@ -282,7 +295,7 @@ export default function PeoplePoweredTourismOperationalPlatforms() {
             paragraphs={[
               <>The <strong>People-Powered Tourism Operational Platforms</strong> represent the <strong>implementation component</strong> of the <strong>People-Powered Tourism Framework</strong>.</>,
               <>While the Framework provides the strategic blueprint, the <strong>Strategic Pillars</strong> define where tourism is strengthened, and the <strong>Development Models</strong> provide the methodologies for how tourism is developed, the Operational Platforms provide the practical mechanisms that translate the Framework into coordinated action across Sri Lanka&apos;s tourism ecosystem.</>,
-              'Working together, these four interconnected platforms create opportunities to develop and strengthen micro and small tourism enterprises by connecting people, places, destinations, tourism enterprises, institutions, development organisations, investors, and strategic partners through practical tourism initiatives.',
+              'Working together, these five interconnected platforms create opportunities to develop and strengthen micro and small tourism enterprises by connecting people, places, destinations, tourism enterprises, institutions, development organisations, investors, and strategic partners through practical tourism initiatives.',
               'Rather than operating independently, the Operational Platforms function as an integrated implementation system that transforms strategic vision into practical action while contributing to stronger tourism enterprises, resilient destinations, collaborative partnerships, and thriving tourism ecosystems.',
             ]}
           />
@@ -305,9 +318,12 @@ export default function PeoplePoweredTourismOperationalPlatforms() {
 
       <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Sprout} title="The Four Operational Platforms" />
+          <SectionHeading icon={Sprout} title="The Five Operational Platforms" />
           <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Together, the four Operational Platforms provide the practical mechanisms that implement the <strong>People-Powered Tourism Framework</strong>. While each platform performs a distinct operational role, they work together as an integrated implementation system that develops and strengthens micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+            Together, the five Operational Platforms provide the practical mechanisms that implement the <strong>People-Powered Tourism Framework</strong>. While each platform performs a distinct operational role, they work together as an integrated implementation system that develops and strengthens micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.
+          </p>
+          <p className="mx-auto mt-5 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
+            Each Operational Platform functions as a specialised Traveleye Alliance, bringing together relevant people, enterprises, and partners to translate the People-Powered Tourism Framework into practical tourism development.
           </p>
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             {platforms.map((platform) => (
@@ -321,7 +337,9 @@ export default function PeoplePoweredTourismOperationalPlatforms() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Handshake} title="A Connected Approach to Implementation" />
           <TextPanel paragraphs={connectedApproachIntro} />
-          <PointList items={connectedApproachPoints} />
+          <div className="py-6 sm:py-10">
+            <PointList items={connectedApproachPoints} />
+          </div>
           <TextPanel paragraphs={connectedApproachClosing} />
         </div>
       </section>

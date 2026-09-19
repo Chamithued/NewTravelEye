@@ -75,8 +75,4 @@ ehthumbs.db
 # package-lock.json
 # yarn.lock
 
-# Local recovery evidence and verification helpers
-/recovery/
-/frontend/recovery-reference.mjs
-/frontend/verify-recovery.mjs
 # pnpm-lock.yaml

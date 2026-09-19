@@ -125,7 +125,7 @@ const recovered_Wd = [
 ];
 const recovered_Gd = [
   "Meaningful Journeys",
-  "Place-Inspired Host Stays",
+  "Place-Inspired Stays",
   "People & Place-Inspired Experiences",
   "Micro & Small Tourism Enterprises",
   "Tourism Destinations",
@@ -310,7 +310,7 @@ function GloballyAlignedLocallyGrounded() {
               {"It can become a source of "}
               <strong>
                 {
-                  "meaningful journeys, authentic host stays, people and place-inspired experiences, tourism enterprises, destination development, learning opportunities, and new partnerships"
+                  "meaningful journeys, stays, people and place-inspired experiences, tourism enterprises, destination development, learning opportunities, and new partnerships"
                 }
               </strong>
               {
@@ -328,7 +328,7 @@ function GloballyAlignedLocallyGrounded() {
             items={[
               "Knowledge & Wisdom",
               "People & Places",
-              "Journeys \u2022 Host Stays \u2022 Experiences",
+              "Journeys \u2022 Stays \u2022 Experiences",
               "Tourism Enterprises",
               "Destination Development",
               "People-Powered Tourism Ecosystem",
@@ -407,7 +407,7 @@ function GloballyAlignedLocallyGrounded() {
           <Component_recovered_qd>
             <p>
               {
-                "Global alignment therefore provides a wider reference point for the Framework while allowing its application to remain "
+                "Global perspectives therefore provide a wider reference point for the Framework while allowing its application to remain "
               }
               <strong>
                 {
@@ -508,9 +508,9 @@ function GloballyAlignedLocallyGrounded() {
               </strong>
             </p>
             <p>
-              {"Through this approach, "}
-              <strong>{"Local & Global Alignment"}</strong>
-              {" becomes an important foundation of the "}
+              {"Through this approach, the Framework remains "}
+              <strong>{"Locally Grounded. Globally Aligned"}</strong>
+              {". This provides an important foundation for the "}
               <strong>{"Traveleye People-Powered Tourism Ecosystem"}</strong>
               {
                 ", supporting the development and strengthening of micro and small tourism enterprises and creating lasting value for:"

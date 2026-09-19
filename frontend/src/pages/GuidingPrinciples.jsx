@@ -154,7 +154,7 @@ export default function GuidingPrinciples() {
           <TextPanel
             paragraphs={[
               <>The <strong>People-Powered Tourism Guiding Principles</strong> form the internal foundation of the Traveleye People-Powered Tourism Framework. They establish the shared values and philosophy that guide how tourism is planned, developed, implemented, and continuously strengthened across Sri Lanka&apos;s tourism ecosystem.</>,
-              <>While the <strong>People-Powered Tourism Global Alignment</strong> connects the Framework with internationally recognised tourism concepts and development approaches, the Guiding Principles define the internal values that shape Traveleye&apos;s interpretation of People-Powered Tourism.</>,
+              <>While <strong>Locally Grounded. Globally Aligned.</strong> connects the Framework with internationally recognised tourism concepts and development approaches while grounding it in the realities, opportunities, and aspirations of Sri Lanka, the Guiding Principles define the internal values that shape Traveleye&apos;s interpretation of People-Powered Tourism.</>,
               'Together, they ensure that tourism development remains people-centred, collaborative, inclusive, responsible, and focused on creating lasting value for people, places, partnerships, and prosperity.',
             ]}
           />

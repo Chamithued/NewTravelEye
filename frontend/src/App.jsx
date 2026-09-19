@@ -12,6 +12,8 @@ import WhatIsTraveleyesPeoplePoweredTourism from './pages/WhatIsTraveleyesPeople
 import PeoplePoweredTourismEcosystem from './pages/PeoplePoweredTourismEcosystem'
 import PeoplePoweredTourismStrategicPillars from './pages/PeoplePoweredTourismStrategicPillars'
 import PeoplePoweredTourismDevelopmentModels from './pages/PeoplePoweredTourismDevelopmentModels'
+import PeoplePoweredTourismHostModel from './pages/PeoplePoweredTourismHostModel'
+import PeoplePoweredTourismRevenueSharingModel from './pages/PeoplePoweredTourismRevenueSharingModel'
 import PeoplePoweredTourismOperationalPlatforms from './pages/PeoplePoweredTourismOperationalPlatforms'
 import PeoplePoweredTourismOutcomes from './pages/PeoplePoweredTourismOutcomes'
 import PeoplePoweredTourismEcosystemIndicators from './pages/PeoplePoweredTourismEcosystemIndicators'
@@ -80,6 +82,8 @@ function App() {
           <Route path="people-powered-tourism-framework" element={<PeoplePoweredTourismFramework />} />
           <Route path="people-powered-tourism-strategic-pillars" element={<PeoplePoweredTourismStrategicPillars />} />
           <Route path="people-powered-tourism-development-models" element={<PeoplePoweredTourismDevelopmentModels />} />
+          <Route path="people-powered-tourism-host-model" element={<PeoplePoweredTourismHostModel />} />
+          <Route path="people-powered-tourism-revenue-sharing-model" element={<PeoplePoweredTourismRevenueSharingModel />} />
           <Route path="people-powered-tourism-operational-platforms" element={<PeoplePoweredTourismOperationalPlatforms />} />
           <Route path="people-powered-tourism-outcomes" element={<PeoplePoweredTourismOutcomes />} />
           <Route path="people-powered-tourism-ecosystem-indicators" element={<PeoplePoweredTourismEcosystemIndicators />} />

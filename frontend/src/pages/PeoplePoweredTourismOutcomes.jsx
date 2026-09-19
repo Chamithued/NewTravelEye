@@ -30,10 +30,10 @@ const outcomes = [
   },
   {
     icon: Home,
-    title: 'Place-Inspired Host Stays',
+    title: 'Place-Inspired Stays',
     subtitle: 'Celebrating Hospitality Through Place',
     body: [
-      'The Framework encourages the development of authentic place-inspired host stays that reflect the culture, hospitality, landscapes, and identity of each destination.',
+      'The Framework encourages the development of authentic place-inspired stays that reflect the culture, hospitality, landscapes, and identity of each destination.',
       'These welcoming environments provide travellers with genuine local hospitality while creating meaningful enterprise opportunities for hosts, families, and communities.',
     ],
   },
@@ -230,7 +230,7 @@ export default function PeoplePoweredTourismOutcomes() {
           <SectionHeading icon={Route} title="A Connected Approach to Tourism Outcomes" />
           <TextPanel>
             <p>The People-Powered Tourism Outcomes are designed to complement and reinforce one another.</p>
-            <p>Stronger tourism enterprises create authentic host stays and meaningful experiences.</p>
+            <p>Stronger tourism enterprises create authentic stays and meaningful experiences.</p>
             <p>These experiences strengthen destinations.</p>
             <p>Stronger destinations create opportunities for travel corridors, partnerships, joint ventures, programmes, projects, and ecosystem initiatives.</p>
             <p>Together, these interconnected outcomes contribute to a thriving <strong>People-Powered Tourism Ecosystem</strong>, where tourism grows through participation, stewardship, collaboration, innovation, and shared value creation.</p>
@@ -243,7 +243,7 @@ export default function PeoplePoweredTourismOutcomes() {
           <SectionHeading icon={ArrowRight} title="The Results Role Within the Framework" />
           <TextPanel>
             <p>The <strong>People-Powered Tourism Outcomes</strong> represent the <strong>results component</strong> of the <strong>People-Powered Tourism Framework</strong>.</p>
-            <p>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, <strong>Global Alignment</strong>, <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, and <strong>Operational Platforms</strong>, they demonstrate what is created through implementation.</p>
+            <p>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, <strong>its Locally Grounded. Globally Aligned. Foundation</strong>, <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Host Model</strong>, <strong>Revenue Sharing Model</strong>, and <strong>Operational Platforms</strong>, they demonstrate what is created through implementation.</p>
             <p>The <strong>People-Powered Tourism Ecosystem Indicators</strong> then measure the progress and long-term impact of these outcomes across Sri Lanka&apos;s tourism ecosystem.</p>
             <p>Together, these interconnected components provide a complete pathway from strategic vision to measurable results.</p>
           </TextPanel>

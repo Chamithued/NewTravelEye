@@ -197,6 +197,14 @@ const recovered_or = [
         to: "/people-powered-tourism-development-models",
       },
       {
+        label: "People-Powered Tourism Host Model",
+        to: "/people-powered-tourism-host-model",
+      },
+      {
+        label: "People-Powered Tourism Revenue Sharing Model",
+        to: "/people-powered-tourism-revenue-sharing-model",
+      },
+      {
         label: "People-Powered Tourism Operational Platforms",
         to: "/people-powered-tourism-operational-platforms",
       },

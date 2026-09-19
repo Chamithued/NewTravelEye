@@ -171,7 +171,7 @@ export default function PeoplePoweredTourismDevelopmentModels() {
           </div>
           <TextPanel>
             <p>The <strong>People-Powered Tourism Development Models</strong> are the methodology component of the <strong>People-Powered Tourism Framework</strong>. While the Framework provides the strategic blueprint and the <strong>Strategic Pillars</strong> define where tourism is strengthened, the Development Models explain <strong>how tourism is planned, developed, implemented, and continuously strengthened</strong>.</p>
-            <p>Together, these interconnected models provide practical and adaptable methodologies for developing and strengthening micro and small tourism enterprises, place-inspired host stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives.</p>
+            <p>Together, these interconnected models provide practical and adaptable methodologies for developing and strengthening micro and small tourism enterprises, place-inspired stays, people and place-inspired experiences, destinations, travel corridors, partnerships, programmes, projects, and ecosystem initiatives.</p>
             <p>Rather than prescribing a single approach, the Development Models form a flexible library of methodologies that can be applied individually or in combination to respond to different tourism contexts, opportunities, and development priorities.</p>
           </TextPanel>
         </div>
@@ -209,7 +209,7 @@ export default function PeoplePoweredTourismDevelopmentModels() {
           <TextPanel>
             <p>The People-Powered Tourism Development Models are designed as a connected library of methodologies that support the implementation of the <strong>People-Powered Tourism Framework</strong>.</p>
             <p>Although each model addresses a distinct aspect of tourism development, they are designed to complement one another and may be applied individually or combined to address different development priorities.</p>
-            <p>Whether developing tourism enterprises, strengthening destinations, creating place-inspired host stays, designing people and place-inspired experiences, building travel corridors, facilitating partnerships, or supporting ecosystem initiatives, the models provide practical methodologies that are flexible, scalable, and responsive to local needs.</p>
+            <p>Whether developing tourism enterprises, strengthening destinations, creating place-inspired stays, designing people and place-inspired experiences, building travel corridors, facilitating partnerships, or supporting ecosystem initiatives, the models provide practical methodologies that are flexible, scalable, and responsive to local needs.</p>
             <p>Working together, they transform strategic direction into coordinated action, contributing to stronger tourism enterprises, resilient destinations, collaborative partnerships, and thriving tourism ecosystems.</p>
           </TextPanel>
         </div>
@@ -220,8 +220,8 @@ export default function PeoplePoweredTourismDevelopmentModels() {
           <SectionHeading icon={ArrowRight} title="The Methodological Role Within the Framework" />
           <TextPanel>
             <p>The <strong>People-Powered Tourism Development Models</strong> represent the <strong>methodology component</strong> of the <strong>People-Powered Tourism Framework</strong>.</p>
-            <p>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, <strong>Global Alignment</strong>, and <strong>Strategic Pillars</strong>, they define <strong>how tourism is developed</strong>.</p>
-            <p>The <strong>Operational Platforms</strong> translate these methodologies into practical implementation.</p>
+            <p>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, its Locally Grounded. Globally Aligned. foundation and <strong>Strategic Pillars</strong>, they define <strong>how tourism is developed</strong>.</p>
+            <p>The <strong>Operational Platforms</strong> translate these methodologies into practical implementation, with each platform functioning as a <strong>specialised Traveleye Alliance</strong> that <strong>brings together relevant people, enterprises, and partners.</strong></p>
             <p>The <strong>Tourism Outcomes</strong> represent the long-term value created through implementation.</p>
             <p>The <strong>Ecosystem Indicators</strong> measure the progress and impact of tourism development across the ecosystem.</p>
             <p>Together, these interconnected components provide a structured pathway for developing and strengthening micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.</p>

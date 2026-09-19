@@ -37,7 +37,8 @@ const recovered_Ko = [
 ];
 const recovered_qo = [
   "Beautiful People Curate Beautiful Journeys.",
-  "Beautiful People Craft Beautiful Stays & Experiences.",
+  "Beautiful People Craft Beautiful Stays.",
+  "Beautiful People Create Beautiful Experiences.",
   "Beautiful People Share Beautiful Expertise.",
   "Beautiful People Nurture Beautiful Entrepreneurs.",
   "Beautiful People Develop Beautiful Destinations.",
@@ -263,6 +264,11 @@ function WhatIsTraveleyesPeoplePoweredTourism() {
             <p>
               {
                 "The Traveleye interpretation of People-Powered Tourism is built upon four interconnected foundations that guide how tourism is developed, strengthened, and sustained. Together, these foundations create an environment where tourism enterprises, destinations, communities, and partnerships can grow, collaborate, and create lasting value."
+              }
+            </p>
+            <p>
+              {
+                "These four foundations provide the underlying philosophy and direction for the Five Strategic Pillars through which Traveleye translates People-Powered Tourism into practical action."
               }
             </p>
           </Component_recovered_Zo>
