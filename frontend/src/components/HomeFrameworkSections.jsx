@@ -2,6 +2,8 @@
 import * as JSXRuntime from "react/jsx-runtime";
 import { Sprout } from "lucide-react";
 import { Earth } from "lucide-react";
+import guidingPrinciplesImage from "../assets/People-Powered Tourism Guiding Principles.jpg";
+import globalAlignmentImage from "../assets/People-Powered Tourism Global Alignment.jpg";
 const recovered_xa = [
   {
     icon: Sprout,
@@ -34,8 +36,7 @@ const recovered_xa = [
     ],
     cta: "Explore the People-Powered Tourism Guiding Principles",
     to: "/guiding-principles",
-    image:
-      "/assets/People-Powered%20Tourism%20Guiding%20Principles-YeP2Cqv-.jpg",
+    image: guidingPrinciplesImage,
     imageAlt: "People discussing the People-Powered Tourism framework",
     imageSide: "left",
     background: "bg-[#eef4fa]",
@@ -89,7 +90,7 @@ const recovered_xa = [
     ],
     cta: "Explore the People-Powered Tourism Local & Global Alignment",
     to: "/globally-aligned-locally-grounded",
-    image: "/assets/People-Powered%20Tourism%20Global%20Alignment-D5mABAMA.jpg",
+    image: globalAlignmentImage,
     imageAlt: "Traveleye People-Powered Tourism framework overview",
     imageSide: "right",
     background: "bg-white",
