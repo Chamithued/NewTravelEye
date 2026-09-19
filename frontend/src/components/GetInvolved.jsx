@@ -5,6 +5,14 @@ import { Earth } from "lucide-react";
 import { Leaf } from "lucide-react";
 import { Users } from "lucide-react";
 import asset_sa from "../assets/client/Join the movement2.png";
+import travelVentureImage from "../assets/client/Partner With Us - Inbound1.jpg";
+import travelCorridorImage from "../assets/client/TC.jpg";
+import hostStayImage from "../assets/involved/Develop a Place-Inspired Host Stay.jpg";
+import experienceImage from "../assets/involved/Develop a People & Place-Inspired Experience.jpg";
+import ecosystemSupportImage from "../assets/involved/Develop an Ecosystem Support Venture.jpg";
+import jointVenturesImage from "../assets/involved/Joint Ventures & Strategic Investments.jpg";
+import collaborateImage from "../assets/client/Collaborate With Us1.jpg";
+import purposeImage from "../assets/client/Travelwith Purpose.png";
 import { HeartHandshake } from "lucide-react";
 import { Handshake } from "lucide-react";
 import { Plane } from "lucide-react";
@@ -17,7 +25,7 @@ const recovered_Ka = [
       "Develop inbound and outbound travel ventures and collaborative partnerships that connect Sri Lanka with international travel markets through meaningful journeys.",
     icon: Building2,
     accent: "#275CAD",
-    image: "/assets/Partner%20With%20Us%20-%20Inbound1-txaVII4x.jpg",
+    image: travelVentureImage,
     to: "/become-a-travel-venture-partner",
   },
   {
@@ -26,7 +34,7 @@ const recovered_Ka = [
       "Develop exclusive travel corridor partnerships that strengthen tourism relationships between Sri Lanka and international destinations through meaningful two-way travel.",
     icon: Sprout,
     accent: "#15803d",
-    image: "/assets/TC-DCE1sUdR.jpg",
+    image: travelCorridorImage,
     to: "/become-a-travel-corridor-partner",
   },
   {
@@ -35,7 +43,7 @@ const recovered_Ka = [
       "Create authentic host stays that reflect Sri Lanka's culture, hospitality, landscapes, and the unique identity of each destination.",
     icon: Earth,
     accent: "#0ea5a4",
-    image: "/assets/Develop%20a%20Place-Inspired%20Host%20Stay-ByJBz4f-.jpg",
+    image: hostStayImage,
     to: "/stays",
   },
   {
@@ -44,8 +52,7 @@ const recovered_Ka = [
       "Create meaningful tourism experiences inspired by Sri Lanka's people, culture, heritage, nature, creativity, traditions, and everyday life.",
     icon: Leaf,
     accent: "#16a34a",
-    image:
-      "/assets/Develop%20a%20People%20_%20Place-Inspired%20Experience-D4PRDZzn.jpg",
+    image: experienceImage,
     to: "/experiences",
   },
   {
@@ -54,7 +61,7 @@ const recovered_Ka = [
       "Support the growth of tourism enterprises through technology, training, consultancy, innovation, capability development, digital solutions, and ecosystem support services.",
     icon: Earth,
     accent: "#7c3aed",
-    image: "/assets/Develop%20an%20Ecosystem%20Support%20Venture-CDJG_w-4.jpg",
+    image: ecosystemSupportImage,
     to: "/develop-an-ecosystem-support-venture",
   },
   {
@@ -72,8 +79,7 @@ const recovered_Ka = [
       "Explore collaborative investment and joint venture opportunities that strengthen tourism enterprises, destinations, travel initiatives, and the wider tourism ecosystem.",
     icon: HeartHandshake,
     accent: "#ef4444",
-    image:
-      "/assets/Joint%20Ventures%20_%20Strategic%20Investments-2d-QUGFK.jpg",
+    image: jointVenturesImage,
     to: "/joint-ventures-strategic-investments",
   },
   {
@@ -82,7 +88,7 @@ const recovered_Ka = [
       "Work alongside government agencies, tourism authorities, development organisations, educational institutions, cooperative movements, NGOs, investors, and industry partners to advance people-powered tourism initiatives.",
     icon: Handshake,
     accent: "#0f766e",
-    image: "/assets/Collaborate%20With%20Us1-BiyUwGbn.jpg",
+    image: collaborateImage,
     to: "/collaborate-with-us",
   },
   {
@@ -91,7 +97,7 @@ const recovered_Ka = [
       "Experience meaningful journeys that celebrate Sri Lanka's people, places, and culture while contributing to stronger destinations and a thriving People-Powered Tourism Ecosystem.",
     icon: Plane,
     accent: "#2563eb",
-    image: "/assets/Travelwith%20Purpose-CqrTOxzW.png",
+    image: purposeImage,
     to: "/travel-with-purpose",
   },
 ];
