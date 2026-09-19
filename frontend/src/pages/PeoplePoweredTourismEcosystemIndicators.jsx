@@ -49,16 +49,16 @@ const indicators = [
   },
   {
     icon: Home,
-    title: 'Host Stays & Experiences',
+    title: 'Stays & Experiences',
     subtitle: 'Measuring Authentic Tourism Experiences',
     intro: 'Meaningful tourism is created through authentic hospitality and experiences.',
     items: [
-      'Place-Inspired Host Stays Developed',
+      'Place-Inspired Stays Developed',
       'People and Place-Inspired Experiences Developed',
       'Experience Creators Supported',
-      'Host Families Participating',
+      'Hosts and Host Teams Participating',
     ],
-    closing: 'These indicators measure the growth of authentic tourism products while expanding opportunities for hosts, experience creators, and local communities.',
+    closing: 'These indicators measure the growth of authentic tourism products while expanding opportunities for stay developers, experience creators, and local communities.',
   },
   {
     icon: Compass,
@@ -175,7 +175,7 @@ function IndicatorCard({ indicator }) {
   const Icon = indicator.icon
 
   return (
-    <article className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-7">
+    <article className="h-full rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-7">
       <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
         <Icon className="h-6 w-6" aria-hidden="true" />
       </span>
@@ -261,7 +261,7 @@ export default function PeoplePoweredTourismEcosystemIndicators() {
           <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
             Together, these indicators measure progress across the key dimensions of the People-Powered Tourism Ecosystem.
           </p>
-          <div className="mt-8 grid gap-6 lg:grid-cols-2">
+          <div className="mt-8 grid auto-rows-fr gap-6 lg:grid-cols-2">
             {indicators.map((indicator) => (
               <div key={indicator.title} className={indicator.title === 'Ecosystem Impact' ? 'lg:col-span-2 lg:mx-auto lg:w-1/2' : ''}>
                 <IndicatorCard indicator={indicator} />
@@ -277,7 +277,7 @@ export default function PeoplePoweredTourismEcosystemIndicators() {
           <TextPanel>
             <p>The People-Powered Tourism Ecosystem Indicators are designed to work together rather than in isolation.</p>
             <p>Progress in participation contributes to stronger tourism enterprises.</p>
-            <p>Stronger enterprises support authentic host stays and meaningful experiences.</p>
+            <p>Stronger enterprises support authentic stays and meaningful experiences.</p>
             <p>These experiences strengthen destinations.</p>
             <p>Stronger destinations create opportunities for travel corridors, partnerships, programmes, projects, and wider ecosystem initiatives.</p>
             <p>Together, these interconnected indicators provide a holistic view of how the <strong>People-Powered Tourism Framework</strong> contributes to the development and strengthening of micro and small tourism enterprises across Sri Lanka&apos;s tourism ecosystem.</p>
@@ -290,7 +290,7 @@ export default function PeoplePoweredTourismEcosystemIndicators() {
           <SectionHeading icon={ArrowRight} title="The Measurement Role Within the Framework" />
           <TextPanel>
             <p>The <strong>People-Powered Tourism Ecosystem Indicators</strong> represent the <strong>measurement component</strong> of the <strong>People-Powered Tourism Framework</strong>.</p>
-            <p>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, <strong>Global Alignment</strong>, <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Operational Platforms</strong>, and <strong>Tourism Outcomes</strong>, they measure the progress and long-term impact of implementation.</p>
+            <p>Built upon the Framework&apos;s <strong>Guiding Principles</strong>, its <strong>Locally Grounded. Globally Aligned. foundation</strong>, <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Host Model</strong>, <strong>Revenue Sharing Model</strong>, <strong>Operational Platforms</strong>, and <strong>Tourism Outcomes</strong>, they measure the progress and long-term impact of implementation.</p>
             <p>Together, these interconnected components provide a complete pathway from <strong>strategic vision</strong>, to <strong>implementation</strong>, to <strong>results</strong>, and finally to <strong>measurement</strong>, supporting continuous learning, improvement, accountability, and long-term stewardship.</p>
           </TextPanel>
         </div>

@@ -8,6 +8,7 @@ import {
   Leaf,
   Network,
   Sprout,
+  Sparkles,
   Waypoints,
 } from 'lucide-react'
 import heroImg from '../assets/ecosystem/6. People-Powered Tourism Strategic Pillars.jpg'
@@ -17,21 +18,31 @@ import FooterLinks from '../components/FooterLinks'
 const pillars = [
   {
     icon: Globe2,
-    title: 'People-Powered Travel Collective',
+    title: 'People-Powered Travel',
     subtitle: 'Connecting Journeys Through People and Place',
     body: [
-      <>The <strong>People-Powered Travel Collective</strong> identifies meaningful travel as a strategic focus for strengthening tourism. It encourages journeys that connect travellers with people, places, destinations, culture, and opportunities while expanding tourism participation, market connectivity, enterprise growth, and collaborative tourism development.</>,
+      <>The <strong>People-Powered Travel</strong> pillar identifies meaningful travel as a strategic focus for strengthening tourism. It encourages journeys that connect travellers with people, places, destinations, culture, and opportunities while expanding tourism participation, market connectivity, enterprise growth, and collaborative tourism development.</>,
       'By strengthening travel connections, the pillar contributes to meaningful visitor experiences, resilient tourism enterprises, stronger destination economies, and connected tourism ecosystems.',
     ],
   },
   {
     icon: Home,
-    title: 'People-Powered Host Experiences',
+    title: 'People-Powered Stays',
     subtitle: 'Crafted Through People and Place',
     body: [
-      <>The <strong>People-Powered Host Experiences</strong> pillar identifies authentic place-inspired host stays and people and place-inspired travel experiences as a strategic focus for strengthening tourism enterprises.</>,
-      'It encourages local entrepreneurship, authentic hospitality, cultural appreciation, creativity, nature-based experiences, wellness, agriculture, and meaningful engagement between travellers and local communities while celebrating the unique identity of each destination.',
-      'Through this strategic focus, the pillar contributes to stronger tourism enterprises, richer visitor experiences, resilient destinations, and thriving tourism ecosystems.',
+      <>The <strong>People-Powered Stays</strong> pillar identifies authentic, place-inspired stays and locally rooted accommodation as a strategic focus for strengthening tourism enterprises.</>,
+      'It encourages entrepreneurship and innovation across villas, boutique hotels, glamping, homestays, farm stays, and other forms of accommodation while celebrating the character, culture, nature, and identity of each destination.',
+      'Through this strategic focus, the pillar contributes to stronger tourism enterprises, meaningful visitor experiences, distinctive accommodation, resilient destinations, and thriving tourism ecosystems.',
+    ],
+  },
+  {
+    icon: Sparkles,
+    title: 'People-Powered Experiences',
+    subtitle: 'Created Through People and Place',
+    body: [
+      <>The <strong>People-Powered Experiences</strong> pillar identifies people and place-inspired travel experiences as a strategic focus for strengthening tourism enterprises and enriching destinations.</>,
+      'It encourages local creativity, cultural appreciation, nature-based experiences, wellness, agriculture, food, adventure, learning, storytelling, and meaningful engagement between travellers and local communities while celebrating the unique identity of each destination.',
+      'Through this strategic focus, the pillar contributes to stronger tourism enterprises, richer visitor experiences, distinctive destination offerings, resilient destinations, and thriving tourism ecosystems.',
     ],
   },
   {
@@ -56,18 +67,20 @@ const pillars = [
 ]
 
 const connectedApproach = [
-  <>The four <strong>People-Powered Tourism Strategic Pillars</strong> are designed to complement one another rather than operate independently.</>,
-  'Meaningful journeys create opportunities for authentic host stays and people and place-inspired travel experiences.',
-  'Authentic host stays and travel experiences strengthen destination identity and enrich visitor experiences.',
+  <>The five <strong>People-Powered Tourism Strategic Pillars</strong> are designed to complement one another rather than operate independently.</>,
+  'Meaningful journeys create opportunities for distinctive stays and people and place-inspired travel experiences.',
+  'Stays and experiences strengthen destination identity and enrich visitor experiences.',
   'Strong destinations create opportunities for thriving tourism enterprises, while ecosystem support strengthens the knowledge, capability, innovation, and enabling environment that allow tourism enterprises and destinations to flourish.',
   'Working together, the Strategic Pillars provide an integrated strategic direction for developing and strengthening micro and small tourism enterprises while contributing to resilient destinations, collaborative partnerships, and connected tourism ecosystems.',
 ]
 
 const frameworkRoles = [
   <>The <strong>People-Powered Tourism Strategic Pillars</strong> represent the <strong>strategic component</strong> of the <strong>People-Powered Tourism Framework</strong>.</>,
-  <>Built upon the Framework's <strong>Guiding Principles</strong> and <strong>Global Alignment</strong>, they define <strong>where tourism is strengthened</strong> across Sri Lanka's tourism ecosystem.</>,
+  <>Built upon the Framework's <strong>Guiding Principles</strong> and its <strong>Locally Grounded. Globally Aligned.</strong> foundation, they define <strong>where tourism is strengthened</strong> across Sri Lanka's tourism ecosystem.</>,
   <>The <strong>People-Powered Tourism Development Models</strong> provide the methodologies for <strong>how tourism is developed</strong>.</>,
-  <>The <strong>People-Powered Tourism Operational Platforms</strong> translate strategy into <strong>practical implementation</strong>.</>,
+  <>The <strong>People-Powered Tourism Host Model</strong> provides a framework for <strong>how people participate in tourism</strong>.</>,
+  <>The <strong>People-Powered Tourism Revenue Sharing Model</strong> provides a framework for <strong>how tourism value is shared</strong>.</>,
+  <>The <strong>People-Powered Tourism Operational Platforms</strong> translate strategy into <strong>practical implementation</strong>, with each platform functioning as a specialised <strong>Traveleye Alliance</strong> that brings together relevant people, enterprises, and partners.</>,
   <>The <strong>People-Powered Tourism Outcomes</strong> represent the <strong>long-term results</strong> created through implementation.</>,
   <>The <strong>People-Powered Tourism Ecosystem Indicators</strong> measure <strong>progress and impact</strong> across the tourism ecosystem.</>,
   <>Together, these interconnected components transform strategic vision into coordinated action while developing and strengthening micro and small tourism enterprises and creating lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</>,
@@ -164,8 +177,8 @@ export default function PeoplePoweredTourismStrategicPillars() {
           <TextPanel
             paragraphs={[
               <>The <strong>People-Powered Tourism Strategic Pillars</strong> define the primary strategic focus areas of the <strong>People-Powered Tourism Framework</strong>. They identify where the Framework directs its efforts to develop and strengthen micro and small tourism enterprises while encouraging participation, stewardship, collaboration, innovation, and shared value creation across Sri Lanka's tourism ecosystem.</>,
-              <>Built upon the Framework's <strong>Guiding Principles</strong> and <strong>Global Alignment</strong>, the Strategic Pillars provide the strategic direction that connects the Framework's vision with practical tourism development.</>,
-              'Rather than viewing tourism as a collection of isolated sectors, the Strategic Pillars recognise that stronger tourism ecosystems are created by strengthening the relationships between meaningful journeys, tourism enterprises, host stays, travel experiences, destinations, partnerships, communities, and ecosystem support.',
+              <>Built upon the Framework's <strong>Guiding Principles</strong> and its <strong>Locally Grounded. Globally Aligned.</strong> foundation, the Strategic Pillars provide the strategic direction that connects the Framework's vision with practical tourism development.</>,
+              'Rather than viewing tourism as a collection of isolated sectors, the Strategic Pillars recognise that stronger tourism ecosystems are created by strengthening the relationships between meaningful journeys, tourism enterprises, stays, travel experiences, destinations, partnerships, communities, and ecosystem support.',
               'Together, they establish a connected strategic approach that guides tourism development while contributing to inclusive, resilient, and sustainable tourism ecosystems.',
             ]}
           />
@@ -187,9 +200,9 @@ export default function PeoplePoweredTourismStrategicPillars() {
 
       <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Network} title="The Four Strategic Pillars" />
+          <SectionHeading icon={Network} title="The Five Strategic Pillars" />
           <p className="mx-auto mt-6 max-w-4xl text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            Together, the four Strategic Pillars create a connected strategic direction for developing and strengthening micro and small tourism enterprises across Sri Lanka's tourism ecosystem.
+            Together, the five Strategic Pillars create a connected strategic direction for developing and strengthening micro and small tourism enterprises across Sri Lanka's tourism ecosystem.
           </p>
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
             {pillars.map((pillar) => (
@@ -232,7 +245,7 @@ export default function PeoplePoweredTourismStrategicPillars() {
           <TextPanel
             paragraphs={[
               <>Whether you are a government agency, tourism authority, development organisation, entrepreneur, tourism enterprise, educational institution, investor, community organisation, or strategic partner, the <strong>People-Powered Tourism Strategic Pillars</strong> provide a shared strategic direction for participation and long-term tourism development.</>,
-              'Whether your focus is creating meaningful journeys, developing authentic host stays and travel experiences, strengthening tourism enterprises, supporting destination development, building capability, or fostering collaboration, the Strategic Pillars provide opportunities to contribute to a stronger and more connected tourism ecosystem.',
+              'Whether your focus is creating meaningful journeys, developing distinctive stays and travel experiences, strengthening tourism enterprises, supporting destination development, building capability, or fostering collaboration, the Strategic Pillars provide opportunities to contribute to a stronger and more connected tourism ecosystem.',
               <>Together, we can develop and strengthen micro and small tourism enterprises across Sri Lanka's tourism ecosystem while creating lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</>,
             ]}
           />

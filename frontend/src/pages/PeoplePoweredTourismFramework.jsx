@@ -57,11 +57,15 @@ const localAlignment = [
 const pillars = [
   {
     icon: Globe2,
-    title: 'People-Powered Travel Collective',
+    title: 'People-Powered Travel',
   },
   {
     icon: Leaf,
-    title: 'People-Powered Host Experiences',
+    title: 'People-Powered Stays'
+  },
+  {
+    icon: Compass,
+    title: 'People-Powered Experiences',
   },
   {
     icon: BriefcaseBusiness,
@@ -112,24 +116,33 @@ const platforms = [
   {
     icon: Globe2,
     title: 'Traveleye Travel Collective',
+    description: 'An Alliance of Travel Businesses & Partners',
+  },
+  {
+    icon: Home,
+    title: 'Traveleye Habitats',
+    description: 'An Alliance of Stay Developers, Hosts & Partners',
   },
   {
     icon: Leaf,
-    title: 'Traveleye Host Experiences',
-  },
-  {
-    icon: BriefcaseBusiness,
-    title: 'Traveleye Ecosystem Support',
+    title: 'Traveleye StoryTrails',
+    description: 'An Alliance of Experience Creators, Hosts & Partners',
   },
   {
     icon: Compass,
-    title: 'Traveleye Destination Facilitation',
+    title: 'Traveleye Destination Facilitation Centres',
+    description: 'An Alliance of Destination Stakeholders & Partners',
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: 'Traveleye Ecosystem Support Services',
+    description: 'An Alliance of Tourism Knowledge, Capability & Support Partners',
   },
 ]
 
 const outcomes = [
   'Tourism Enterprises',
-  'Place-Inspired Host Stays',
+  'Place-Inspired Stays',
   'People & Place-Inspired Experiences',
   'Tourism Destinations',
   'Travel Corridors',
@@ -144,7 +157,7 @@ const indicators = [
   'Women Entrepreneurs Supported',
   'Youth Entrepreneurs Supported',
   'Micro and Small Tourism Enterprises Developed',
-  'Place-Inspired Host Stays Developed',
+  'Place-Inspired Stays Developed',
   'People & Place-Inspired Experiences Developed',
   'Destination Development Initiatives Facilitated',
   'Travel Corridor Partnerships Established',
@@ -185,13 +198,18 @@ function TextPanel({ children, className = '' }) {
   )
 }
 
-function SimpleList({ items, columns = 'sm:grid-cols-2 lg:grid-cols-4' }) {
+function SimpleList({ items, columns = 4 }) {
+  const cardWidths = {
+    3: 'lg:w-[calc((100%-1.5rem)/3)]',
+    4: 'lg:w-[calc((100%-2.25rem)/4)]',
+    5: 'lg:w-[calc((100%-3rem)/5)]',
+  }
   return (
-    <ul className={`mx-auto mt-7 grid max-w-5xl gap-3 ${columns}`}>
+    <ul className="mx-auto mt-7 flex max-w-5xl flex-wrap justify-center gap-3">
       {items.map((item) => (
         <li
           key={item}
-          className="rounded-xl border border-[#dfe7f3] bg-white px-4 py-3 text-center text-sm font-semibold leading-6 text-[#172544] shadow-sm sm:text-base"
+          className={`w-full rounded-xl border border-[#dfe7f3] bg-white px-4 py-3 text-center text-sm font-semibold leading-6 text-[#172544] shadow-sm sm:w-[calc((100%-0.75rem)/2)] sm:text-base ${cardWidths[columns]}`}
         >
           {item}
         </li>
@@ -200,15 +218,19 @@ function SimpleList({ items, columns = 'sm:grid-cols-2 lg:grid-cols-4' }) {
   )
 }
 
-function IconCardGrid({ items }) {
+function IconCardGrid({ items, columns = 4 }) {
+  const cardWidth = columns === 3
+    ? 'lg:w-[calc((100%-3rem)/3)]'
+    : 'lg:w-[calc((100%-4.5rem)/4)]'
   return (
-    <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-      {items.map(({ icon: Icon, title }) => (
-        <article key={title} className="rounded-2xl border border-[#eef4ef] bg-white p-5 text-center shadow-sm">
+    <div className="mt-8 flex flex-wrap justify-center gap-6">
+      {items.map(({ icon: Icon, title, description }) => (
+        <article key={title} className={`w-full rounded-2xl border border-[#eef4ef] bg-white p-5 text-center shadow-sm md:w-[calc((100%-1.5rem)/2)] ${cardWidth}`}>
           <span className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#F2F7EF] text-[#1f4f93]">
             <Icon className="h-6 w-6" aria-hidden="true" />
           </span>
           <h3 className="mt-4 text-lg font-bold leading-tight tracking-tight text-black">{title}</h3>
+          {description ? <p className="mt-3 text-sm leading-6 text-slate-700">{description}</p> : null}
         </article>
       ))}
     </div>
@@ -273,7 +295,7 @@ export default function PeoplePoweredTourismFramework() {
             <p>Rather than viewing tourism through isolated sectors or individual businesses, the Framework strengthens the relationships between people, enterprises, destinations, institutions, communities, and tourism support systems. Through this connected approach, tourism becomes more inclusive, resilient, collaborative, and sustainable.</p>
             <p>The Framework encourages tourism that is:</p>
           </TextPanel>
-          <SimpleList items={characteristics} columns="sm:grid-cols-2 lg:grid-cols-3" />
+          <SimpleList items={characteristics} columns={3} />
           <TextPanel>
             <p>Together, these characteristics provide a foundation for strengthening tourism enterprises, supporting destination development, encouraging meaningful participation, and creating lasting value across Sri Lanka&apos;s tourism ecosystem.</p>
           </TextPanel>
@@ -284,8 +306,8 @@ export default function PeoplePoweredTourismFramework() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={Waypoints} title="Framework Architecture" />
           <TextPanel>
-            <p>The People-Powered Tourism Framework consists of seven interconnected components that together transform strategic vision into practical action.</p>
-            <p>Built upon its <strong>Guiding Principles</strong> and <strong>Global Alignment</strong>, and implemented through its <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Operational Platforms</strong>, <strong>Tourism Outcomes</strong>, and <strong>Ecosystem Indicators</strong>, the Framework provides a structured pathway for developing and strengthening micro and small tourism enterprises while creating stronger destinations, partnerships, and tourism ecosystems.</p>
+            <p>The People-Powered Tourism Framework consists of interconnected components that together transform strategic vision into practical action.</p>
+            <p>Built upon its <strong>Guiding Principles</strong> and <strong>Locally Grounded Globally Aligned foundation</strong>, and implemented through its <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Host Model</strong>, <strong>Revenue Sharing Model</strong>, <strong>Operational Platforms</strong>, <strong>Tourism Outcomes</strong>, and <strong>Ecosystem Indicators</strong>, the Framework provides a structured pathway for developing and strengthening micro and small tourism enterprises while creating stronger destinations, partnerships, and tourism ecosystems.</p>
           </TextPanel>
         </div>
       </section>
@@ -306,20 +328,21 @@ export default function PeoplePoweredTourismFramework() {
 
       <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading icon={Globe2} title="People-Powered Tourism Global Alignment" subtitle="Aligning Global Perspectives with Sri Lankan Realities" />
+          <SectionHeading icon={Globe2} title="People-Powered Tourism Local & Global Alignment" subtitle="Locally Grounded. Globally Aligned." />
           <TextPanel>
-            <p>While developed in Sri Lanka, the Framework is informed by internationally recognised tourism concepts and development approaches while remaining grounded in the realities, opportunities, and aspirations of Sri Lanka.</p>
+            <p className="font-semibold">Aligning Global Perspectives with Sri Lankan Realities</p>
+            <p>Developed in Sri Lanka, the People-Powered Tourism Framework is grounded in the realities, opportunities, knowledge, and aspirations of Sri Lanka while being informed by internationally recognised tourism concepts and development approaches.</p>
             <p><strong>International Tourism Alignment</strong></p>
-            <p>The Framework aligns with globally recognised approaches including:</p>
+            <p>The Framework draws from globally recognised approaches including:</p>
           </TextPanel>
-          <SimpleList items={internationalAlignment} columns="sm:grid-cols-2 lg:grid-cols-5" />
+          <SimpleList items={internationalAlignment} columns={5} />
           <TextPanel>
             <p><strong>Local People-Powered Alignment</strong></p>
             <p>Traveleye&apos;s interpretation of People-Powered Tourism is shaped by:</p>
           </TextPanel>
-          <SimpleList items={localAlignment} columns="sm:grid-cols-2 lg:grid-cols-5" />
+          <SimpleList items={localAlignment} columns={5} />
           <TextPanel>
-            <p>Together, these global and local perspectives ensure that the Framework remains internationally relevant while responding to the unique needs of Sri Lanka&apos;s tourism ecosystem.</p>
+            <p>Together, these global and local perspectives provide a strong foundation for the People-Powered Tourism Framework, ensuring that it remains internationally relevant while being firmly grounded in Sri Lanka&apos;s people, places, knowledge, wisdom, and tourism realities.</p>
           </TextPanel>
         </div>
       </section>
@@ -329,9 +352,11 @@ export default function PeoplePoweredTourismFramework() {
           <SectionHeading icon={Compass} title="People-Powered Tourism Strategic Pillars" subtitle="Where We Build Tourism" />
           <TextPanel>
             <p>The Strategic Pillars define the primary areas where the Framework focuses its efforts to develop and strengthen tourism.</p>
-            <p>The Framework is built around four interconnected Strategic Pillars:</p>
+            <p>The Framework is built around five interconnected Strategic Pillars:</p>
           </TextPanel>
-          <IconCardGrid items={pillars} />
+          <div className="mx-auto max-w-4xl">
+            <IconCardGrid items={pillars} columns={3} />
+          </div>
           <TextPanel>
             <p>Together, these pillars provide the strategic direction for developing tourism enterprises, supporting destinations, strengthening tourism ecosystems, and creating opportunities for meaningful participation.</p>
           </TextPanel>
@@ -352,14 +377,39 @@ export default function PeoplePoweredTourismFramework() {
         </div>
       </section>
 
+      <section className="w-full bg-[#eef4fa] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Users} title="People-Powered Tourism Host Model" subtitle="How People Participate in Tourism" />
+          <TextPanel>
+            <p>The People-Powered Tourism Host Model establishes a people-centred approach to tourism participation, recognising Hosts and Host Teams as important connections between visitors, people, places and tourism offerings.</p>
+            <p>The model enables individuals, families, communities and tourism enterprises to participate in tourism by welcoming visitors, providing care, sharing knowledge, facilitating experiences and contributing to meaningful visitor connections.</p>
+            <p>A Host may participate across Stays, Experiences, Journeys, Destinations and other tourism activities, according to their role, capabilities and contribution.</p>
+            <p>The Host Model creates pathways for meaningful participation, enterprise development, shared value and shared prosperity across the tourism ecosystem.</p>
+          </TextPanel>
+        </div>
+      </section>
+
+      <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Handshake} title="People-Powered Tourism Revenue Sharing Model" subtitle="How Tourism Value Is Shared" />
+          <TextPanel>
+            <p>The People-Powered Tourism Revenue Sharing Model establishes a transparent and flexible approach to sharing tourism revenue among the people, enterprises, communities and partners who contribute to creating and delivering tourism value.</p>
+            <p>Revenue is shared according to the respective roles, responsibilities, contributions and agreed value created by participating parties. The model is based on <strong>revenue sharing, not profit sharing</strong>, and does not require equal shares among participants.</p>
+            <p>It can be applied across Stays, Experiences, Journeys, Destinations, Travel Corridors, Programmes, Projects and other tourism initiatives.</p>
+            <p>Together with the Host Model, it strengthens the connection between participation, contribution, tourism value, shared revenue and shared prosperity.</p>
+          </TextPanel>
+        </div>
+      </section>
+
       <section className="w-full bg-[#FCFBF8] px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={BriefcaseBusiness} title="People-Powered Tourism Operational Platforms" subtitle="How We Implement Tourism" />
           <TextPanel>
             <p>The Operational Platforms transform the Framework into practical action by supporting implementation across the tourism ecosystem.</p>
-            <p>The Framework is implemented through four interconnected Operational Platforms:</p>
+            <p>Each Operational Platform functions as a specialised Traveleye Alliance, bringing together relevant people, enterprises, and partners to translate the Framework into practical tourism development.</p>
+            <p>The Framework is implemented through five interconnected Operational Platforms:</p>
           </TextPanel>
-          <IconCardGrid items={platforms} />
+          <IconCardGrid items={platforms} columns={3} />
           <TextPanel>
             <p>Together, these platforms operationalise the Framework while supporting the development and strengthening of micro and small tourism enterprises.</p>
           </TextPanel>
@@ -373,7 +423,7 @@ export default function PeoplePoweredTourismFramework() {
             <p>The Tourism Outcomes represent the long-term value created through implementation of the Framework.</p>
             <p>Key outcomes include:</p>
           </TextPanel>
-          <SimpleList items={outcomes} columns="sm:grid-cols-2 lg:grid-cols-5" />
+          <SimpleList items={outcomes} columns={5} />
           <TextPanel>
             <p>Together, these outcomes demonstrate how the Framework contributes to stronger tourism enterprises, resilient destinations, collaborative partnerships, and thriving tourism ecosystems.</p>
           </TextPanel>
@@ -387,7 +437,7 @@ export default function PeoplePoweredTourismFramework() {
             <p>The Ecosystem Indicators measure the long-term progress and impact of the People-Powered Tourism Framework.</p>
             <p>Key indicators include:</p>
           </TextPanel>
-          <SimpleList items={indicators} columns="sm:grid-cols-2 lg:grid-cols-3" />
+          <SimpleList items={indicators} columns={3} />
           <TextPanel>
             <p>Together, these indicators provide meaningful measures of how the Framework contributes to stronger tourism enterprises, destinations, partnerships, and the wider tourism ecosystem.</p>
           </TextPanel>
