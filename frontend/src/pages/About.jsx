@@ -33,7 +33,9 @@ const ecosystemCards = [
 const platforms = [
   { title: 'Traveleye Travel Collective', tagline: 'Journeys Connected Through People and Places', text: 'Connecting travellers with meaningful journeys, destinations, travel opportunities, and travel partnerships.', to: '/travel-collective' },
   { title: 'Traveleye Host Experiences', tagline: 'Crafted Through People and Place', text: "Developing authentic stays and experiences inspired by Sri Lanka's people, places, culture, nature, wellness, food, and way of life.", to: '/about-traveleye-host-experiences' },
-  { title: 'Traveleye Destination Facilitation', tagline: 'Strengthening Destinations Through People and Stewardship', text: 'Facilitating destination development by connecting local tourism enterprises, hosts, experience creators, communities, travellers, and destination stakeholders.', to: '/destination-facilitation' },
+  { title: 'Traveleye Habitats', tagline: 'Creating Distinctive Stays Through People and Place', text: 'Developing and connecting distinctive stays inspired by the character, culture, nature, and identity of their locations.', to: '/traveleye-hostnest' },
+  { title: 'Traveleye StoryTrails', tagline: 'Creating Meaningful Experiences Through People and Place', text: 'Developing and connecting meaningful experiences shaped by people, stories, culture, nature, creativity, and the distinctive character of each destination.', to: '/traveleye-storytrail' },
+  { title: 'Traveleye Destination Facilitation Centres', tagline: 'Strengthening Destinations Through People and Stewardship', text: 'Facilitating destination development by connecting local tourism enterprises, hosts, stay developers, experience creators, communities, travellers, and destination stakeholders.', to: '/destination-facilitation' },
   { title: 'Traveleye Ecosystem Support', tagline: 'Supporting Tourism Through People and Partnerships', text: 'Providing capability development, advisory support, technology, education, and other ecosystem support to strengthen tourism participation and enterprise development.', to: '/support-services' },
 ]
 
@@ -111,7 +113,7 @@ export default function About() {
         <Copy>
           <p>The <strong>People-Powered Tourism Framework</strong> is the strategic blueprint that guides the development of the People-Powered Tourism Ecosystem.</p>
           <p>It brings together:</p>
-          <p className="text-base font-bold text-[#0f4d2f] sm:text-lg">Guiding Principles → Global Alignment → Strategic Pillars → Development Models → Operational Platforms → Tourism Outcomes → Ecosystem Indicators</p>
+          <p className="text-base font-bold text-[#0f4d2f] sm:text-lg">Guiding Principles → Locally Grounded. Globally Aligned → Strategic Pillars → Development Models → Operational Platforms → Tourism Outcomes → Ecosystem Indicators</p>
           <p>Together, these interconnected elements provide a pathway for transforming strategic vision into practical action and measurable impact.</p>
           <p>The Framework guides our approach to developing stronger tourism enterprises, stronger destinations, meaningful tourism opportunities, and a more connected tourism ecosystem across Sri Lanka.</p>
           <Link to="/people-powered-tourism-framework" className="inline-flex rounded-full bg-[#1f4f93] px-6 py-3 font-bold text-white no-underline transition hover:bg-[#173b70]">Explore the People-Powered Tourism Framework</Link>

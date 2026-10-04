@@ -154,7 +154,7 @@ export default function BuildingSomethingBiggerPage() {
           <SectionHeading icon={Building2}>Building With People</SectionHeading>
           <TextBlock>
             <p>We believe an ecosystem cannot be built by one organisation alone.</p>
-            <p>It grows through the participation of tourism entrepreneurs, enterprises, hosts, experience creators, destination stakeholders, communities, travellers, institutions, investors, and strategic partners.</p>
+            <p>It grows through the participation of tourism entrepreneurs, enterprises, hosts, stay developers, experience creators, destination stakeholders, communities, travellers, institutions, investors, and strategic partners.</p>
             <p>Our role is to <strong>connect, facilitate, develop, coordinate, and create opportunities</strong> so that more people and enterprises can participate in Sri Lanka&apos;s tourism economy.</p>
             <p>As the ecosystem grows, we want more people to have the opportunity to contribute, create, connect, and prosper through tourism.</p>
           </TextBlock>

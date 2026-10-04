@@ -58,7 +58,7 @@ const businessPractices = [
 const stakeholders = [
   'Tourism entrepreneurs',
   'Tourism enterprises',
-  'Hosts and experience creators',
+  'Stay developers and experience creators',
   'Destinations and local communities',
   'Government institutions',
   'Educational and research institutions',
@@ -219,7 +219,7 @@ export default function GovernanceEthics() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading icon={Leaf} title="Our Commitment" />
           <div className="mx-auto mt-8 max-w-4xl space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>As the Builder and Steward of <strong>Sri Lanka's First People-Powered Tourism Ecosystem</strong>, Traveleye Alliance is committed to maintaining the highest standards of governance and ethical conduct.</p>
+            <p>As the Builder of <strong>Sri Lanka's First People-Powered Tourism Ecosystem</strong>, Traveleye Alliance is committed to maintaining the highest standards of governance and ethical conduct.</p>
             <p>Through integrity, accountability, transparency, responsible leadership, and shared stewardship, we seek to build lasting relationships, strengthen confidence among our stakeholders, and contribute to a tourism sector that creates enduring value for <strong>People, Planet, and Prosperity</strong>.</p>
           </div>
         </div>

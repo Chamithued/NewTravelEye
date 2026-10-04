@@ -120,7 +120,7 @@ const recovered_ip = [
   ],
   [
     "Develop Beautiful Entrepreneurs & Enterprises",
-    "We help transform ideas, capabilities and opportunities into stronger entrepreneurs, tourism enterprises, host stays, experiences and tourism ventures.",
+    "We help transform ideas, capabilities and opportunities into stronger entrepreneurs, tourism enterprises, stays, experiences and tourism ventures.",
   ],
   [
     "Connect Beautiful Destinations",
@@ -133,13 +133,15 @@ const recovered_ip = [
 ];
 const recovered_ap = [
   ["Beautiful Journeys", "Traveleye Travel Collective", Landmark],
-  ["Beautiful Stays and Experiences", "Traveleye Host Experiences", House],
-  ["Beautiful Expertise", "Traveleye Ecosystem Support", BriefcaseBusiness],
-  ["Beautiful Destinations", "Traveleye Destination Facilitation", MapPinned],
+  ["Beautiful Stays", "Traveleye Habitats", House],
+  ["Beautiful Experiences", "Traveleye StoryTrails", Star],
+  ["Beautiful Expertise", "Traveleye Ecosystem Support Services", BriefcaseBusiness],
+  ["Beautiful Destinations", "Traveleye Destination Facilitation Centres", MapPinned],
 ];
 const recovered_op = [
   "Beautiful People Curate Beautiful Journeys.",
-  "Beautiful People Craft Beautiful Stays & Experiences.",
+  "Beautiful People Craft Beautiful Stays.",
+  "Beautiful People Create Beautiful Experiences.",
   "Beautiful People Share Beautiful Expertise.",
   "Beautiful People Nurture Beautiful Entrepreneurs.",
   "Beautiful People Develop Beautiful Destinations.",
@@ -283,7 +285,7 @@ function BeautifulPeople() {
           }
         </Component_recovered_up>
         <Component_recovered_dp>
-          <p>{"A tourism ecosystem is built by people."}</p>
+          <p>{"A tourism ecosystem is built by beautiful people."}</p>
           <p>
             {
               "Behind every destination, every stay, every experience, every tourism enterprise and every partnership are people with knowledge, ideas, skills, relationships, creativity and a willingness to contribute."
@@ -355,7 +357,7 @@ function BeautifulPeople() {
         <Component_recovered_dp>
           <p>
             {
-              "These four expressions connect Traveleye Beautiful People with the four operational pillars of the People-Powered Tourism Ecosystem:"
+              "These expressions connect Traveleye Beautiful People with the five operational platforms of the People-Powered Tourism Ecosystem:"
             }
           </p>
         </Component_recovered_dp>
@@ -485,7 +487,7 @@ function BeautifulPeople() {
           </p>
           <p>
             {
-              "A family may have a beautiful traditional home with the potential to become a meaningful host stay."
+              "A family may have a beautiful traditional home with the potential to become a meaningful place to stay."
             }
           </p>
           <p>{"A chef may know an exceptional regional cuisine."}</p>

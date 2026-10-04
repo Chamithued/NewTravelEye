@@ -26,7 +26,7 @@ const reasons = [
     title: 'Enterprise Development',
     paragraphs: [
       <>Micro and small tourism enterprises are the foundation of a vibrant tourism economy.</>,
-      <>We support entrepreneurs, tourism enterprises, hosts, and experience creators by providing opportunities for development, collaboration, market access, capacity building, and sustainable business growth.</>,
+      <>We support entrepreneurs, tourism enterprises, hosts, stay developers, and experience creators by providing opportunities for development, collaboration, market access, capacity building, and sustainable business growth.</>,
     ],
   },
   {
@@ -66,6 +66,7 @@ const reasons = [
 const partnerTypes = [
   'A tourism entrepreneur',
   'A tourism enterprise',
+  'A stay developer or experience creator',
   'A destination or destination organisation',
   'A community group',
   'A government institution',

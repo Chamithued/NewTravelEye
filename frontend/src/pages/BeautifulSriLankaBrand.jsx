@@ -1,5 +1,4 @@
 // Reconstructed from the supplied deployed build. Original local names and comments were not retained.
-import * as JSXRuntime from "react/jsx-runtime";
 import asset_Vf from "../assets/subhero/Beautiful Sri Lanka Banner.jpg";
 import { ArrowRight } from "lucide-react";
 import { MapPin } from "lucide-react";
@@ -8,99 +7,160 @@ import { Leaf } from "lucide-react";
 import { Sparkles } from "lucide-react";
 import ExploreEcosystem from "../components/ExploreEcosystem.jsx";
 import FooterLinks from "../components/FooterLinks.jsx";
-const recovered_Hf = [
+const beautifulDimensions = [
   {
     title: "Beautiful People",
-    lead: "Sri Lanka's greatest beauty is found in its people.",
-    paragraphs: [
-      "Warmth, kindness, hospitality, generosity, local knowledge, human connection, and the willingness to welcome and share are central to the Sri Lankan experience. A warm welcome, a shared meal, a thoughtful gesture, a local recommendation, a conversation, or the simple act of making someone feel at home can create lasting memories.",
-      "Beautiful People celebrates the individuals, families, hosts, entrepreneurs, guides, artisans, farmers, communities, and tourism professionals who give destinations their character and make travellers feel welcomed, connected, and genuinely cared for. It recognises that the beauty of a destination is shaped not only by its places and facilities, but by the people who bring those places to life and the way they make visitors feel.",
-    ],
-  },
-  {
-    title: "Beautiful Culture",
-    lead: "Sri Lanka's culture is a living expression of its people and their way of life.",
-    paragraphs: [
-      "Traditional arts, music, dance, customs, festivals, crafts, beliefs, rituals, stories, languages, and everyday traditions create opportunities for travellers to understand and experience the cultural richness of the island.",
-      "Beautiful Culture is not simply something to observe. It is something to discover, respect, experience, and share.",
-    ],
-  },
-  {
-    title: "Beautiful Heritage",
-    lead: "Sri Lanka's heritage reflects a long and remarkable history shaped by ancient civilisations, kingdoms, religious traditions, architecture, craftsmanship, knowledge, and living cultural practices.",
-    paragraphs: [
-      "Ancient cities, sacred sites, temples, monuments, historic places, traditional settlements, and living heritage connect today's travellers with generations of Sri Lankan history.",
-      "Beautiful Heritage brings the past into meaningful connection with the present.",
-    ],
-  },
-  {
-    title: "Beautiful Nature",
-    lead: "Sri Lanka's natural beauty extends far beyond its famous landscapes.",
-    paragraphs: [
-      "Mountains, forests, rivers, waterfalls, beaches, oceans, wetlands, wildlife, biodiversity, agricultural landscapes, gardens, and rural environments create remarkable opportunities for exploration and discovery.",
-      "Beautiful Nature also reflects the responsibility to protect, respect, and steward the natural environments that make Sri Lanka special.",
-    ],
-  },
-  {
-    title: "Beautiful Wellness",
-    lead: "Sri Lanka offers diverse pathways to wellbeing through nature, traditional knowledge, Ayurveda, yoga, mindfulness, healthy living, movement, relaxation, retreats, and holistic experiences.",
-    paragraphs: [
-      "Beautiful Wellness recognises Sri Lanka's potential to offer travellers opportunities to slow down, reconnect with themselves, restore wellbeing, and experience healthier ways of living.",
-      "Wellness is not only a tourism product. It can be part of the way Sri Lanka is experienced.",
-    ],
-  },
-  {
-    title: "Beautiful Spirituality",
-    lead: "Sri Lanka's spiritual character is deeply connected with its history, culture, sacred places, traditions, and ways of life.",
-    paragraphs: [
-      "Temples, monasteries, pilgrimage sites, sacred landscapes, religious traditions, meditation, reflection, rituals, and quiet moments create opportunities for travellers seeking spiritual discovery and personal reflection.",
-      "Beautiful Spirituality respects the diversity and authenticity of Sri Lanka's spiritual traditions while creating space for reflection, connection, and discovery.",
-    ],
-  },
-  {
-    title: "Beautiful Living",
-    lead: "Beautiful Sri Lanka can be experienced through the way people live.",
-    paragraphs: [
-      "Village life, family traditions, agriculture, community relationships, craftsmanship, everyday routines, connection with nature, simplicity, and the sharing of ordinary moments can become extraordinary travel experiences.",
-      "Beautiful Living invites travellers to go beyond simply visiting Sri Lanka and experience aspects of life in Sri Lanka.",
-      "It is about discovering the beauty that exists in everyday places, everyday people, and everyday moments.",
-    ],
-  },
-  {
-    title: "Beautiful Food",
-    lead: "Sri Lanka's food reflects the island's diverse culture, traditions, natural abundance, and ways of life.",
-    paragraphs: [
-      "Traditional cuisine, regional flavours, indigenous ingredients, spices, home cooking, street food, tea, seafood, sweets, cooking traditions, and shared meals offer travellers opportunities to discover Sri Lanka through taste, stories, people, and place.",
-      "Beautiful Food celebrates not only what Sri Lanka eats, but the knowledge, traditions, hospitality, relationships, and cultural identity shared through food.",
-    ],
-  },
-  {
-    title: "Beautiful Inner Peace",
-    lead: "Perhaps one of Sri Lanka's most distinctive forms of beauty is the sense of peace that can emerge through time spent in its natural, cultural, and spiritual environments.",
-    paragraphs: [
-      "A quiet temple, a forest path, a mountain sunrise, the sound of the ocean, a meditation experience, a rural landscape, a shared conversation, or simply time away from the pressures of everyday life can create moments of stillness and reflection.",
-      "Beautiful Inner Peace represents the opportunity to slow down, reconnect, reflect, and discover a deeper sense of wellbeing and connection.",
+    description: "The people who make Sri Lanka special.",
+    items: [
+      {
+        title: "Beautiful People",
+        lead: "Sri Lanka's greatest beauty is found in its people.",
+        paragraphs: [
+          "Warmth, kindness, hospitality, generosity, local knowledge and human connection are central to the Sri Lankan experience.",
+          "A warm welcome, a shared meal, a thoughtful gesture, a local recommendation, a conversation, or simply making someone feel at home can create lasting memories.",
+          "Beautiful People celebrates the individuals, families, communities, entrepreneurs, guides, artisans, farmers, stay developers, experience creators and tourism professionals who give places their character and bring Sri Lanka's hospitality to life.",
+          "It recognises that a destination is shaped not only by its landscapes and attractions, but by the people who welcome, share, create and care.",
+        ],
+      },
     ],
   },
   {
     title: "Beautiful Places",
-    lead: (
-      <JSXRuntime.Fragment>
-        {"Sri Lanka brings together an extraordinary diversity of "}
-        <strong>{"destinations and places"}</strong>
-        {
-          ", each with its own character, identity, stories, landscapes, communities, and opportunities for discovery."
-        }
-      </JSXRuntime.Fragment>
-    ),
-    paragraphs: [
-      "From coastal towns and mountain destinations to heritage cities, sacred places, rural villages, islands, wildlife areas, agricultural landscapes, wellness destinations, and vibrant urban centres, each place contributes to the richness and diversity of the Sri Lankan tourism experience.",
-      <JSXRuntime.Fragment>
-        <strong>{"Beautiful Places"}</strong>
-        {
-          " celebrates both well-known and emerging destinations, recognising the people, culture, nature, heritage, enterprises, experiences, and local character that make each destination distinctive and worth discovering."
-        }
-      </JSXRuntime.Fragment>,
+    description: "The natural environments and landscapes that make Sri Lanka distinctive.",
+    items: [
+      {
+        title: "Beautiful Nature",
+        lead: "Sri Lanka's natural beauty extends across an extraordinary diversity of environments.",
+        paragraphs: [
+          "Mountains, forests, rivers, waterfalls, wetlands, valleys, ecosystems and rural environments create opportunities for exploration, discovery and connection with nature.",
+          "Beautiful Nature celebrates the natural world while recognising the responsibility to protect, respect and steward the environments that make Sri Lanka special.",
+        ],
+      },
+      {
+        title: "Beautiful Wildlife",
+        lead: "Sri Lanka's wildlife creates remarkable encounters with the living natural world.",
+        paragraphs: [
+          "Elephants, leopards, whales, birds, primates, reptiles, marine life and many other species create opportunities for observation, exploration, photography and discovery.",
+          "Beautiful Wildlife is about more than seeing animals. It is about appreciating biodiversity, understanding ecosystems and experiencing wildlife responsibly while supporting the protection of the habitats on which wildlife and people depend.",
+        ],
+      },
+      {
+        title: "Beautiful Ocean",
+        lead: "An island shaped by its relationship with the sea.",
+        paragraphs: [
+          "Beaches, bays, lagoons, islands, marine environments, coastal communities and ocean landscapes create diverse opportunities for relaxation, exploration and adventure.",
+          "Surfing, diving, sailing, swimming, marine discovery and coastal experiences allow travellers to experience Sri Lanka from its shores and waters.",
+          "Beautiful Ocean celebrates the relationship between people, livelihoods, communities, marine environments and the sea.",
+        ],
+      },
+      {
+        title: "Beautiful Landscapes",
+        lead: "Sri Lanka is a country of remarkable geographical and visual diversity.",
+        paragraphs: [
+          "Mountain ranges, tea country, valleys, forests, agricultural landscapes, villages, plains, wetlands, dry-zone scenery and coastlines create an extraordinary variety of landscapes within one island.",
+          "Beautiful Landscapes celebrates the character, scale, colours, textures and changing scenery that travellers encounter as they move through Sri Lanka.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Beautiful Identity",
+    description: "The culture, heritage and spiritual traditions that give Sri Lanka its distinctive identity.",
+    items: [
+      {
+        title: "Beautiful Culture",
+        lead: "Sri Lanka's culture is a living expression of its people and their traditions.",
+        paragraphs: [
+          "Arts, music, dance, festivals, customs, crafts, languages, stories, rituals and cultural practices create opportunities to discover the richness and diversity of Sri Lankan culture.",
+          "Beautiful Culture is not simply something to observe. It is something to discover, respect, experience and share.",
+        ],
+      },
+      {
+        title: "Beautiful Heritage",
+        lead: "Sri Lanka's heritage connects the present with a remarkable and deeply layered past.",
+        paragraphs: [
+          "Ancient civilisations, kingdoms, archaeological sites, sacred monuments, historic buildings, architecture, traditional settlements, craftsmanship and knowledge systems reveal the generations that have shaped the island.",
+          "Beautiful Heritage brings the past into meaningful connection with the present, allowing travellers to understand the stories and continuing significance of Sri Lanka's heritage.",
+        ],
+      },
+      {
+        title: "Beautiful Spirituality",
+        lead: "Sri Lanka offers places and traditions that invite reflection, contemplation, faith and spiritual discovery.",
+        paragraphs: [
+          "Temples, monasteries, churches, mosques, kovils, pilgrimage sites, sacred landscapes, meditation traditions and religious practices form an important part of Sri Lanka's identity.",
+          "Beautiful Spirituality respects the diversity and authenticity of these traditions while creating opportunities for travellers to experience sacred places respectfully, reflect and connect.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Beautiful Experiences",
+    description: "The ways travellers discover, enjoy, connect with and experience Sri Lanka.",
+    items: [
+      {
+        title: "Beautiful Adventure",
+        lead: "Sri Lanka offers opportunities to explore, move, challenge, discover and experience the island actively.",
+        paragraphs: [
+          "Trekking, hiking, cycling, rafting, climbing, surfing, diving, exploration, wildlife adventures and other outdoor activities create opportunities for discovery and excitement.",
+          "Beautiful Adventure celebrates the spirit of exploration rather than simply a collection of activities.",
+        ],
+      },
+      {
+        title: "Beautiful Wellness",
+        lead: "Sri Lanka offers many pathways to rest, restoration, healthy living and wellbeing.",
+        paragraphs: [
+          "Ayurveda, yoga, meditation, nature-based wellness, traditional knowledge, retreats, healthy living, movement and relaxation create opportunities to slow down and reconnect with oneself.",
+          "Beautiful Wellness celebrates both Sri Lanka's longstanding traditions of wellbeing and contemporary approaches to healthier and more balanced living.",
+        ],
+      },
+      {
+        title: "Beautiful Living",
+        lead: "Some of Sri Lanka's most meaningful experiences can be found in everyday life.",
+        paragraphs: [
+          "Village life, farming, family traditions, local occupations, craftsmanship, markets, food preparation, community relationships and everyday routines reveal a side of Sri Lanka that cannot be experienced simply by visiting attractions.",
+          "Beautiful Living invites travellers to discover how people live, work, create, eat, celebrate and connect.",
+        ],
+      },
+      {
+        title: "Beautiful Food",
+        lead: "Sri Lanka can be discovered through its flavours, ingredients, traditions and shared meals.",
+        paragraphs: [
+          "Sri Lankan cuisine, regional flavours, spices, tropical produce, seafood, tea, sweets, street food, home cooking and traditional preparation methods reflect the island's diverse culture and natural abundance.",
+          "Beautiful Food celebrates not only what Sri Lanka eats, but the people, knowledge, stories, traditions and places behind the food.",
+        ],
+      },
+      {
+        title: "Beautiful Journeys",
+        lead: "In Sri Lanka, the journey can be as meaningful as the destination.",
+        paragraphs: [
+          "Road journeys, scenic routes, rail journeys, walking, cycling, coastal journeys, village routes, mountain roads and slow travel create opportunities to experience the island while moving through it.",
+          "Beautiful Journeys celebrates the landscapes, people, encounters, discoveries and unexpected moments that happen along the way.",
+        ],
+      },
+      {
+        title: "Beautiful Moments",
+        lead: "The beauty of Sri Lanka is ultimately found in the moments travellers remember.",
+        paragraphs: [
+          "A sunrise over the mountains. A conversation with a local person. A shared meal. A wildlife encounter. A walk through a village. A quiet moment beside a river. A temple at dawn. The sound of the ocean.",
+          "Beautiful Moments recognises that memorable travel is created not only by attractions and itineraries, but by feelings, connections, discoveries, surprises and encounters that remain with people long after they leave.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Beautiful Destinations",
+    description: "The destinations where Sri Lanka's people, places and experiences come together.",
+    items: [
+      {
+        title: "Beautiful Destinations",
+        lead: "Every destination in Sri Lanka has its own character, identity, stories, people and possibilities for discovery.",
+        paragraphs: [
+          "Coastal towns, mountain destinations, heritage cities, sacred places, rural villages, islands, wildlife areas, agricultural landscapes, urban centres and emerging destinations each contribute to the richness and diversity of Sri Lanka.",
+          "Beautiful Destinations recognises that a destination is more than a collection of attractions.",
+          "Its character emerges from the combination of people, culture, nature, heritage, landscapes, enterprises, Experiences, Stays, local life and stories that make one destination different from another.",
+          "Beautiful Destinations provides the platform through which individual destination expressions — such as Beautiful Balangoda — can become part of the wider Beautiful Sri Lanka brand.",
+        ],
+      },
     ],
   },
 ];
@@ -132,17 +192,22 @@ const recovered_Gf = [
     body: "Connects travellers with Sri Lanka through meaningful journeys and travel opportunities.",
   },
   {
-    title: "Traveleye Host Experiences",
-    tagline: "Crafted Through People and Place",
-    body: "Creates authentic host stays and travel experiences inspired by people and place.",
+    title: "Traveleye Habitats",
+    tagline: "Creating Distinctive Stays Through People and Place",
+    body: "Develops and connects distinctive stays inspired by the character, culture, nature, and identity of their locations.",
   },
   {
-    title: "Traveleye Destination Facilitation",
+    title: "Traveleye StoryTrails",
+    tagline: "Creating Meaningful Experiences Through People and Place",
+    body: "Develops and connects meaningful experiences shaped by people, stories, culture, nature, creativity, and the distinctive character of each destination.",
+  },
+  {
+    title: "Traveleye Destination Facilitation Centres",
     tagline: "Strengthening Destinations Through People and Stewardship",
-    body: "Develops and coordinates destination ecosystems so that tourism experiences, enterprises, visitor services, and local opportunities work together.",
+    body: "Develops and coordinates destination ecosystems so that tourism experiences, enterprises, stay developers, experience creators, visitor services, and local opportunities work together.",
   },
   {
-    title: "Traveleye Ecosystem Support",
+    title: "Traveleye Ecosystem Support Services",
     tagline: "Supporting Tourism Through People and Partnerships",
     body: "Strengthens the people, enterprises, capabilities, partnerships, and support systems that enable a stronger tourism ecosystem.",
   },
@@ -231,42 +296,54 @@ function BeautifulSriLankaBrand() {
           <div className="mx-auto mt-6 max-w-5xl space-y-5 text-center text-sm leading-7 text-slate-700 sm:text-base sm:leading-8">
             <p>
               {
-                "Beautiful Sri Lanka brings together ten distinctive destination propositions that reflect the many ways in which the island can be discovered, experienced, and remembered. These propositions go beyond the visual beauty of landscapes to embrace the people, culture, heritage, nature, wellness, spirituality, living, food, inner peace, and places that give Sri Lanka its unique character."
+                "Beautiful Sri Lanka brings together fifteen distinctive dimensions that express the many ways in which Sri Lanka can be discovered, experienced, and remembered."
               }
             </p>
             <p>
               {
-                "Together, they provide a foundation for developing memorable stays and meaningful experiences that allow travellers to connect more deeply with Sri Lanka and its people and places."
+                "These dimensions reflect the island's people, identity, natural environment, destinations, and the many experiences through which travellers connect with Sri Lanka."
               }
             </p>
+            <p>
+              {"Together, they provide the foundation for a destination brand that celebrates the people who make Sri Lanka special, the places that make it distinctive, the experiences that bring it to life, and the moments that remain with travellers."}
+            </p>
           </div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            {recovered_Hf.map((e, t) => (
-              <article
-                key={e.title}
-                className="rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-7"
-              >
-                <div className="flex items-start gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#DFE7F3] text-lg font-bold text-[#1f4f93]">
-                    {t + 1}
-                  </span>
-                  <div>
-                    <h3 className="text-xl font-bold tracking-tight text-black sm:text-2xl">
-                      {e.title}
-                    </h3>
-                    <p className="mt-3 font-semibold leading-7 text-[#172544]">
-                      {e.lead}
-                    </p>
-                  </div>
+          {beautifulDimensions.map((group) => {
+            return (
+              <div key={group.title} className="mt-12">
+                <div className="text-center">
+                  <h3 className="text-xl font-bold uppercase tracking-tight text-[#1f4f93] sm:text-2xl">
+                    {group.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-700 sm:text-base">
+                    {group.description}
+                  </p>
                 </div>
-                <div className="mt-5 space-y-4 text-sm leading-7 text-[#55636a] sm:text-base">
-                  {e.paragraphs.map((e, t) => (
-                    <p key={t}>{e}</p>
+                <div className={group.items.length === 1 ? "mt-6 flex justify-center" : "mt-6 grid gap-6 lg:grid-cols-2"}>
+                  {group.items.map((item, itemIndex) => (
+                    <article
+                      key={item.title}
+                      className={`rounded-2xl border border-[#eef4ef] bg-white p-5 shadow-sm sm:p-7 ${group.items.length === 1 ? "w-full max-w-2xl" : group.items.length % 2 === 1 && itemIndex === group.items.length - 1 ? "w-full lg:col-span-2 lg:max-w-2xl lg:justify-self-center" : ""}`}
+                    >
+                      <div>
+                        <h4 className="text-xl font-bold tracking-tight text-black sm:text-2xl">
+                          {item.title}
+                        </h4>
+                        <p className="mt-3 font-semibold leading-7 text-[#172544]">
+                          {item.lead}
+                        </p>
+                      </div>
+                      <div className="mt-5 space-y-4 text-sm leading-7 text-[#55636a] sm:text-base">
+                        {item.paragraphs.map((paragraph) => (
+                          <p key={paragraph}>{paragraph}</p>
+                        ))}
+                      </div>
+                    </article>
                   ))}
                 </div>
-              </article>
-            ))}
-          </div>
+              </div>
+            );
+          })}
           <p className="mx-auto mt-10 max-w-5xl text-center text-xl font-bold leading-8 text-[#1f4f93]">
             {
               "Together, these interconnected destination propositions create opportunities for memorable stays and meaningful experiences that bring the beauty of Sri Lanka to life."
@@ -416,7 +493,7 @@ function BeautifulSriLankaBrand() {
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {recovered_Gf.map((e, t) => {
-              let Component_n = [MapPin, Heart, Leaf, Sparkles][t];
+              let Component_n = [MapPin, Heart, Leaf, Sparkles, Heart][t];
               return (
                 <article
                   key={e.title}

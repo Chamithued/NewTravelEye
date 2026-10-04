@@ -21,28 +21,35 @@ const catalogueSections = [
   },
   {
     title: 'Traveleye Travel Collective',
-    tagline: 'Journeys Connected Through People',
+    tagline: 'Connecting Journeys Through People and Places',
     description:
       'Discover our travel collections, curated journeys, travel corridors, destination guides, and partnership opportunities that connect travellers with authentic experiences across Sri Lanka and beyond.',
     icon: Compass,
   },
   {
-    title: 'Traveleye Host Experiences',
-    tagline: 'Crafted Through People & Place',
+    title: 'Traveleye Habitats',
+    tagline: 'Creating Distinctive Stays Through People and Place',
     description:
-      'Explore authentic host stays, place-inspired experiences, wellness, nature, culture, adventure, culinary journeys, and community-led tourism experiences.',
+      'Explore distinctive accommodation and stay opportunities including villas, boutique hotels, glamping, homestays, farm stays, heritage stays, nature stays, rural and village stays, wellness and retreat stays, and eco stays.',
     icon: HandHeart,
   },
   {
-    title: 'Traveleye Destination Facilitation',
-    tagline: 'Destinations Through People & Stewardship',
+    title: 'Traveleye StoryTrails',
+    tagline: 'Creating Meaningful Experiences Through People and Place',
+    description:
+      'Explore meaningful experiences shaped by people, stories, culture, nature, creativity, and the distinctive character of destinations, including cultural, heritage, nature, wildlife, adventure, culinary, agricultural, wellness, creative, community, educational, and special-interest experiences.',
+    icon: Compass,
+  },
+  {
+    title: 'Traveleye Destination Facilitation Centres',
+    tagline: 'Strengthening Destinations Through People and Stewardship',
     description:
       'Discover destination development programmes, destination partnerships, facilitation services, destination investment opportunities, and collaborative initiatives that strengthen local tourism ecosystems.',
     icon: HeartHandshake,
   },
   {
-    title: 'Traveleye Ecosystem Support',
-    tagline: 'Supporting Tourism Through People',
+    title: 'Traveleye Ecosystem Support Services',
+    tagline: 'Supporting Tourism Through People and Partnerships',
     description:
       'Explore consultancy services, tourism capacity building, digital solutions, partnership programmes, investment opportunities, ecosystem services, and tourism development initiatives.',
     icon: Sparkles,

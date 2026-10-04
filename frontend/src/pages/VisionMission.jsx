@@ -19,7 +19,7 @@ const values = [
   {
     title: 'Participation',
     icon: Users,
-    text: 'We believe tourism becomes stronger when people are empowered to participate meaningfully as entrepreneurs, hosts, experience creators, tourism enterprises, communities, travellers, and tourism professionals.',
+    text: 'We believe tourism becomes stronger when people are empowered to participate meaningfully as entrepreneurs, hosts, stay developers, experience creators, tourism enterprises, communities, travellers, and tourism professionals.',
   },
   {
     title: 'Stewardship',
