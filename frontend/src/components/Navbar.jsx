@@ -7,11 +7,6 @@ import asset_rr from "../assets/recovered/Beautiful Sri Lanka Logo2.png";
 const recovered_ar = [
   {
     top: "Beautiful",
-    bottom: "People",
-    to: "/beautiful-people",
-  },
-  {
-    top: "Beautiful",
     bottom: "Journeys",
     to: "/travel-collective",
     items: [
@@ -136,6 +131,11 @@ const recovered_or = [
       {
         label: "Beautiful Sri Lanka",
         to: "/beautiful-sri-lanka",
+      },
+      {
+        label: "Beautiful People",
+        to: "/beautiful-people",
+        indent: true,
       },
       {
         label: "Why Choose Traveleye",
@@ -483,7 +483,7 @@ function Navbar() {
                       to={t.to}
                       className={({ isActive: t }) =>
                         [
-                          `block whitespace-nowrap rounded-xl px-4 text-[1rem] font-medium leading-snug transition-colors ${e.label === "About Traveleye" ? "py-2" : "py-3"}`,
+                          `block whitespace-nowrap rounded-xl px-4 text-[1rem] font-medium leading-snug transition-colors ${e.label === "About Traveleye" ? "py-2" : "py-3"} ${t.indent ? "ml-4" : ""}`,
                           t
                             ? "bg-[#1C4686] text-white"
                             : "text-slate-700 hover:bg-[#1C4686] hover:text-white",
@@ -649,7 +649,7 @@ function Navbar() {
                         onClick={() => t(false)}
                         className={({ isActive: t }) =>
                           [
-                            `block rounded-md px-2 text-[0.9rem] transition-colors ${e.label === "About Traveleye" ? "py-1.5" : "py-2"}`,
+                            `block rounded-md px-2 text-[0.9rem] transition-colors ${e.label === "About Traveleye" ? "py-1.5" : "py-2"} ${n.indent ? "ml-4" : ""}`,
                             t
                               ? "bg-[#1C4686] font-semibold text-white"
                               : "text-slate-600 hover:bg-[#1C4686] hover:text-white",

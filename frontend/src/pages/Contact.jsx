@@ -11,7 +11,6 @@ import {
   MessageCircle,
   Phone,
   Plane,
-  Sprout,
 } from 'lucide-react'
 import heroImg from '../assets/subhero/How to Get Involved.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
@@ -29,11 +28,6 @@ const travelCorridors = [
   <><strong>Traveleye Bharat Lanka Journeys</strong> – India–Sri Lanka Travel Corridor.</>,
   <><strong>Traveleye Siam Lanka Journeys</strong> – Thailand–Sri Lanka Travel Corridor.</>,
   <><strong>Traveleye Viet Lanka Journeys</strong> – Vietnam–Sri Lanka Travel Corridor.</>,
-]
-
-const developmentBrands = [
-  <><strong>TraveleyeHostNest</strong> – Creating Authentic Stays Through Place.</>,
-  <><strong>TraveleyeStoryTrail</strong> – Creating Meaningful Experiences Through People and Place.</>,
 ]
 
 const supportBrands = [
@@ -106,8 +100,8 @@ export default function Contact() {
           </h2>
           <div className="mx-auto mt-3 h-0.5 w-24 rounded bg-[#c28a5b]" />
           <div className="mt-7 space-y-5 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>Whether you&apos;re planning your next journey, developing a tourism enterprise, creating authentic host stays or travel experiences, strengthening a destination, exploring partnership opportunities, or simply learning more about the People-Powered Tourism Ecosystem, we&apos;re here to help.</p>
-            <p>We welcome travellers, tourism entrepreneurs, hosts, experience creators, communities, government agencies, tourism authorities, educational institutions, development organisations, investors, strategic partners, and everyone who shares our vision of building stronger tourism through people, place, partnerships, and meaningful collaboration.</p>
+            <p>Whether you&apos;re planning your next journey, developing a tourism enterprise, creating authentic stays or travel experiences, strengthening a destination, exploring partnership opportunities, or simply learning more about the People-Powered Tourism Ecosystem, we&apos;re here to help.</p>
+            <p>We welcome travellers, tourism entrepreneurs, stay developers, experience creators, communities, government agencies, tourism authorities, educational institutions, development organisations, investors, strategic partners, and everyone who shares our vision of building stronger tourism through people, place, partnerships, and meaningful collaboration.</p>
           </div>
         </div>
       </section>
@@ -116,7 +110,7 @@ export default function Contact() {
         <div className="mx-auto max-w-6xl">
           <SectionHeading icon={HeartHandshake}>How Can We Help You?</SectionHeading>
           <div className="mt-9 grid gap-6 lg:grid-cols-2">
-            <ServiceCard icon={Plane} title="Explore & Travel" brand="Traveleye Travel Collective" className="h-full">
+            <ServiceCard icon={Plane} title="Explore & Travel" brand="Traveleye Travel Collective" className="h-full pt-10 sm:pt-12">
               <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Whether you&apos;re looking to explore Sri Lanka, discover the world, celebrate life&apos;s special moments, experience luxury travel, or travel through our international travel corridors, Traveleye Travel Collective connects travellers with meaningful journeys through its specialised travel brands.</p>
               <p className="mt-5 text-[#0f4d2f]"><strong>Travel Collections</strong></p>
               <DetailList items={travelCollections} />
@@ -126,22 +120,24 @@ export default function Contact() {
             </ServiceCard>
 
             <div className="flex flex-col gap-6">
-              <ServiceCard icon={BriefcaseBusiness} title="Build & Strengthen Your Tourism Enterprise" brand="Traveleye Ecosystem Support">
+              <ServiceCard icon={BriefcaseBusiness} title="Build & Strengthen Your Tourism Enterprise" brand="Traveleye Ecosystem Support Services">
                 <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Whether you&apos;re starting a tourism business, strengthening an existing enterprise, developing new capabilities, or improving business performance, Traveleye Ecosystem Support provides the professional advisory, learning, digital connectivity, and enterprise support needed to build stronger tourism businesses.</p>
-                <p className="mt-5 text-[#0f4d2f]"><strong>Ecosystem Support Brands</strong></p>
+                <p className="mt-5 text-[#0f4d2f]"><strong>Ecosystem Support Services</strong></p>
                 <DetailList items={supportBrands} />
               </ServiceCard>
 
-              <ServiceCard icon={Sprout} title="Develop Authentic Host Stays & Travel Experiences" brand="Traveleye Host Experiences">
-                <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Whether you&apos;re planning to develop a place-inspired host stay or create meaningful people and place-inspired travel experiences, Traveleye Host Experiences supports tourism entrepreneurs in developing authentic tourism enterprises through its specialised development brands.</p>
-                <p className="mt-5 text-[#0f4d2f]"><strong>Development Brands</strong></p>
-                <DetailList items={developmentBrands} />
+              <ServiceCard icon={Building2} title="Develop Distinctive Stays" brand="Traveleye Habitats">
+                <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Whether you&apos;re planning to develop a villa, boutique hotel, glamping site, homestay, farm stay, heritage stay, nature stay, rural or village stay, wellness or retreat stay, or eco stay, Traveleye Habitats supports stay developers and tourism entrepreneurs in creating distinctive stays inspired by the character, culture, nature, and identity of their locations.</p>
+              </ServiceCard>
+
+              <ServiceCard icon={Compass} title="Create Meaningful Experiences" brand="Traveleye StoryTrails">
+                <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Whether you&apos;re planning to create a cultural, heritage, nature, wildlife, adventure, culinary, agricultural, wellness, creative, community, educational, or special-interest experience, Traveleye StoryTrails supports experience creators and tourism entrepreneurs in developing meaningful experiences shaped by people, stories, culture, nature, creativity, and the distinctive character of each destination.</p>
               </ServiceCard>
 
             </div>
           </div>
           <div className="mx-auto mt-6 w-full lg:w-3/5">
-            <ServiceCard icon={Compass} title="Develop Stronger Destinations" brand="Traveleye Destination Facilitation">
+            <ServiceCard icon={Compass} title="Develop Stronger Destinations" brand="Traveleye Destination Facilitation Centres">
               <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">Whether you&apos;re a destination, community, tourism authority, local government institution, tourism association, development organisation, or strategic partner, Traveleye Destination Facilitation brings people and organisations together to support destination development, collaboration, stewardship, enterprise development, and visitor services.</p>
             </ServiceCard>
           </div>

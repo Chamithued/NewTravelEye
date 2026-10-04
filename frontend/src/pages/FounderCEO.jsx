@@ -235,7 +235,7 @@ function FounderCEO() {
           </p>
           <p>
             {
-              "Rather than viewing tourism as a collection of individual businesses or isolated destinations, he believes tourism flourishes as an interconnected ecosystem where entrepreneurs, tourism enterprises, hosts, experience creators, destinations, institutions, investors, governments, and travellers collaborate to create meaningful and sustainable outcomes."
+              "Rather than viewing tourism as a collection of individual businesses or isolated destinations, he believes tourism flourishes as an interconnected ecosystem where entrepreneurs, tourism enterprises, hosts, stay developers, experience creators, destinations, institutions, investors, governments, and travellers collaborate to create meaningful and sustainable outcomes."
             }
           </p>
           <p>
@@ -270,7 +270,7 @@ function FounderCEO() {
           </p>
           <p>
             {
-              "Rather than operating as a traditional tourism business, Traveleye serves as an ecosystem builder and steward-bringing together people, enterprises, destinations, institutions, and strategic partners to create stronger tourism for the benefit of "
+              "Rather than operating as a traditional tourism business, Traveleye serves as an ecosystem builder and steward, bringing together people, enterprises, destinations, institutions, and strategic partners to create stronger tourism for the benefit of "
             }
             <strong>{"People, Planet, and Prosperity"}</strong>
             {"."}
@@ -392,7 +392,12 @@ function FounderCEO() {
             <strong>{"People-Powered Tourism Framework"}</strong>
             {", we welcome the opportunity to connect."}
           </p>
-          <p className="mt-6 font-bold text-[#1f4f93]">{"Email:"}</p>
+          <p className="mt-6 font-bold text-[#1f4f93]">
+            Email:{" "}
+            <a href="mailto:ceo@traveleye.lk" className="underline underline-offset-4">
+              ceo@traveleye.lk
+            </a>
+          </p>
         </div>
       </section>
       <ExploreEcosystem />

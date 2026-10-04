@@ -138,11 +138,10 @@ export default function MediaPress() {
 
       <section className="w-full bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-5xl">
-          <SectionHeading icon={Newspaper} title="Official News, Media Resources, and Public Announcements" />
+          <SectionHeading icon={Newspaper} title="Welcome to the Media & Press Centre of Traveleye Alliance Sri Lanka." />
           <div className="mt-8 space-y-5 text-center text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-            <p>Welcome to the Media &amp; Press Centre of <strong>Traveleye Alliance Sri Lanka</strong>.</p>
             <p>This page provides journalists, media organisations, partners, researchers, and the public with access to official news, announcements, media resources, and organisational information relating to <strong>Sri Lanka's First People-Powered Tourism Ecosystem</strong>.</p>
-            <p>As the Builder and Steward of the People-Powered Tourism Ecosystem, we share updates that reflect our work in tourism enterprise development, destination development, strategic partnerships, ecosystem innovation, and tourism leadership.</p>
+            <p>As the Builder of the People-Powered Tourism Ecosystem, we share updates that reflect our work in tourism enterprise development, destination development, strategic partnerships, ecosystem innovation, and tourism leadership.</p>
           </div>
         </div>
       </section>

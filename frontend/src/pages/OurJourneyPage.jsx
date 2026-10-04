@@ -69,13 +69,7 @@ const recovered_Jf = [
     icon: CircleCheck,
     paragraphs: [
       <JSXRuntime.Fragment>
-        {"Today, Traveleye Alliance serves as the "}
-        <strong>
-          {"Builder of Sri Lanka's First People-Powered Tourism Ecosystem"}
-        </strong>
-        {
-          ", bringing together journeys, host stays, travel experiences, tourism enterprises, destinations, travel partnerships, and ecosystem support through a connected and collaborative approach to tourism development."
-        }
+        {"Today, Traveleye Alliance Sri Lanka is a People-Powered Tourism Ecosystem Builder, building Sri Lanka's First People-Powered Tourism Ecosystem by bringing together journeys, stays, travel experiences, tourism enterprises, destinations, travel partnerships, and ecosystem support through a connected and collaborative approach to tourism development."}
       </JSXRuntime.Fragment>,
       <JSXRuntime.Fragment>
         {"Our focus is to "}
@@ -154,7 +148,7 @@ function Component_recovered_$f({ milestone: e, index: t }) {
   let n = t % 2 == 1,
     Component_r = e.icon;
   return (
-    <div className="relative grid gap-5 lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_66px_minmax(0,1fr)] lg:items-start lg:gap-0">
+    <div className={`relative grid gap-5 lg:min-h-[360px] lg:grid-cols-[minmax(0,1fr)_66px_minmax(0,1fr)] lg:items-start lg:gap-0 ${t === 2 ? "pt-4 lg:pt-10" : ""}`}>
       <div
         className={`${n ? "order-3" : "order-1"} flex justify-center lg:order-none lg:justify-end lg:pr-6`}
       >
