@@ -69,7 +69,8 @@ export default function TraveleyeTravelExperiences() {
         <div className="relative z-10 flex w-full justify-center px-4 py-12 text-center sm:px-6 lg:px-8">
           <div>
             <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
-              TRAVELEYE STORYTRAIL
+              <span className="block">TRAVELEYE</span>
+              <span className="block">STORYTRAIL</span>
             </h1>
             <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Creating Meaningful Experiences Through People</p>
             <p className="mt-2 text-sm font-bold text-white/95 sm:text-base">People &amp; Place-Inspired Experience Development</p>

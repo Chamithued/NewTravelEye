@@ -102,7 +102,8 @@ export default function HostStays() {
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="max-w-4xl text-center text-white">
             <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-extrabold uppercase leading-none tracking-tight sm:text-4xl lg:text-5xl">
-              Traveleye HostNest
+              <span className="block">Traveleye</span>
+              <span className="block">HostNest</span>
             </h1>
             <p className="mt-4 text-sm font-bold sm:text-base lg:text-lg">Creating Authentic Stays Through Place</p>
             <p className="mt-2 text-sm font-bold sm:text-base">Place-Inspired Accommodation Development</p>
