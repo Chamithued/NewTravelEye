@@ -6,8 +6,8 @@ import asset_nr from "../assets/client/Traveleyelogo.png";
 import asset_rr from "../assets/recovered/Beautiful Sri Lanka Logo2.png";
 const recovered_ar = [
   {
-    top: "Beautiful",
-    bottom: "Journeys",
+    top: "Traveleye",
+    bottom: "Travel Collective",
     to: "/travel-collective",
     items: [
       {
@@ -59,32 +59,28 @@ const recovered_ar = [
     ],
   },
   {
-    top: "Beautiful Stays",
-    bottom: "& Experiences",
-    to: "/about-traveleye-host-experiences",
-    items: [
-      {
-        label: "About Traveleye Host Experiences",
-        to: "/about-traveleye-host-experiences",
-      },
-      {
-        label: "Traveleye HostNest",
-        to: "/traveleye-hostnest",
-      },
-      {
-        label: "Traveleye StoryTrail",
-        to: "/traveleye-storytrail",
-      },
-    ],
+    top: "Traveleye",
+    bottom: "HostNest",
+    to: "/traveleye-hostnest",
+    // items: [
+    //   {
+    //     label: "About Traveleye Host Experiences",
+    //     to: "/about-traveleye-host-experiences",
+    //   },
+    //   {
+    //     label: "Traveleye HostNest",
+    //     to: "/traveleye-hostnest",
+    //   },
+    // ],
   },
   {
-    top: "Beautiful",
-    bottom: "Destinations",
-    to: "/destination-facilitation",
+    top: "Traveleye",
+    bottom: "StoryTrails",
+    to: "/traveleye-storytrail",
   },
   {
-    top: "Beautiful",
-    bottom: "Expertise",
+    top: "Traveleye Ecosystem",
+    bottom: "Support Services",
     to: "/support-services",
     items: [
       {
@@ -104,6 +100,11 @@ const recovered_ar = [
         to: "/traveleye-connect",
       },
     ],
+  },
+  {
+    top: "Traveleye Destination",
+    bottom: "Facilitation Centres",
+    to: "/destination-facilitation",
   },
 ];
 const recovered_or = [
@@ -135,7 +136,6 @@ const recovered_or = [
       {
         label: "Beautiful People",
         to: "/beautiful-people",
-        indent: true,
       },
       {
         label: "Why Choose Traveleye",
@@ -483,7 +483,7 @@ function Navbar() {
                       to={t.to}
                       className={({ isActive: t }) =>
                         [
-                          `block whitespace-nowrap rounded-xl px-4 text-[1rem] font-medium leading-snug transition-colors ${e.label === "About Traveleye" ? "py-2" : "py-3"} ${t.indent ? "ml-4" : ""}`,
+                          `block whitespace-nowrap rounded-xl px-4 text-[1rem] font-medium leading-snug transition-colors ${e.label === "About Traveleye" || e.label === "Traveleye Ecosystem" ? "py-2" : "py-3"} ${t.indent ? "ml-4" : ""}`,
                           t
                             ? "bg-[#1C4686] text-white"
                             : "text-slate-700 hover:bg-[#1C4686] hover:text-white",
@@ -498,7 +498,7 @@ function Navbar() {
             </div>
           ))}
         </nav>
-        <NavLink
+        {/* <NavLink
           to="/beautiful-sri-lanka"
           aria-label="Discover Beautiful Sri Lanka"
           className="mr-3 flex-shrink-0 sm:mr-5 lg:mr-7"
@@ -508,7 +508,7 @@ function Navbar() {
             alt="Beautiful Sri Lanka"
             className="h-9 w-auto object-contain sm:h-12 lg:h-16"
           />
-        </NavLink>
+        </NavLink> */}
       </div>
       {e && (
         <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-6.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-7.5rem)] lg:max-h-[calc(100dvh-8.5rem)] xl:hidden">

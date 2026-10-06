@@ -117,7 +117,7 @@ export default function WhyTraveleyePage() {
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
               className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              Why Choose Traveleye
+              WHY CHOOSE TRAVELEYE
             </h1>
             <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">
               Building Stronger Tourism Through People, Partnerships, and Purpose

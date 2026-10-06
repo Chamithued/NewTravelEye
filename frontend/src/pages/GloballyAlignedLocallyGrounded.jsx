@@ -225,7 +225,8 @@ function GloballyAlignedLocallyGrounded() {
               }}
               className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              {"People-Powered Tourism: Local & Global Alignment"}
+              <span className="block">People-Powered Tourism</span>
+              <span className="block">Local &amp; Global Alignment</span>
             </h1>
             <p className="mt-4 text-sm font-semibold text-white/95 sm:text-base lg:text-lg">
               {"Locally Grounded. Globally Aligned."}

@@ -8,6 +8,10 @@ export default defineConfig({
   server: {
     host: '127.0.0.1',
     port: 4173,
+    watch: {
+      usePolling: true,
+      interval: 1000,
+    },
     headers: {
       'Cache-Control': 'no-store',
     },

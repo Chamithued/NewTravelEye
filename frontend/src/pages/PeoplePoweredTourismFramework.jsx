@@ -13,7 +13,7 @@ import {
   Users,
   Waypoints,
 } from 'lucide-react'
-import heroImg from '../assets/ecosystem/3. People-Powered Tourism Framework.jpg'
+import heroImg from '../assets/subhero/Traveleye PP Tourism Framework.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 
@@ -256,8 +256,8 @@ export default function PeoplePoweredTourismFramework() {
               style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}
               className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
-              <span className="block">PEOPLE-POWERED TOURISM</span>
-              <span className="block">FRAMEWORK</span>
+              <span className="block">PEOPLE-POWERED</span>
+              <span className="block">TOURISM FRAMEWORK</span>
             </h1>
             <p className="mt-3 text-sm font-semibold text-white/95 sm:text-base lg:text-lg">
               The Strategic Blueprint of the <strong>Traveleye</strong> People-Powered Tourism Ecosystem
