@@ -199,7 +199,7 @@ function OurJourneyPage() {
               }}
               className="text-2xl font-extrabold leading-none tracking-tight sm:text-4xl lg:text-5xl"
             >
-              {"Our Journey"}
+              {"OUR JOURNEY"}
             </h1>
             <p className="mt-4 text-sm font-bold text-white/95 sm:text-base lg:text-lg">
               {

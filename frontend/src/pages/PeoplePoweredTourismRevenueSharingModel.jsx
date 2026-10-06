@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { BriefcaseBusiness, House, Sparkles, Compass, Bus, Users, Globe2, Handshake, Network, TrendingUp, ListChecks, Sprout, Route, Leaf } from 'lucide-react'
-import heroImg from '../assets/subhero/Host Experiencesnew.jpg'
+import heroImg from '../assets/subhero/Traveleye Revenue Sharing Model.jpg'
 import ExploreEcosystem from '../components/ExploreEcosystem'
 import FooterLinks from '../components/FooterLinks'
 import content from './peoplePoweredTourismRevenueSharingModelContent.json'
@@ -112,7 +112,10 @@ export default function PeoplePoweredTourismRevenueSharingModel() {
         </div>
         <div className="relative z-10 flex w-full justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="max-w-5xl text-center">
-            <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-normal leading-none tracking-tight text-white sm:text-4xl lg:text-5xl"><RichText runs={content[0].runs} /></h1>
+            <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-normal leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <strong className="block">PEOPLE-POWERED TOURISM</strong>
+              <strong className="block">REVENUE SHARING MODEL</strong>
+            </h1>
             <Paragraph index={1} className="mt-3 text-sm text-white/95 sm:text-base lg:text-lg" />
           </div>
         </div>

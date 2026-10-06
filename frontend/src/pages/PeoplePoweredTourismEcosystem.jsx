@@ -56,7 +56,10 @@ export default function PeoplePoweredTourismEcosystem() {
         <img src={heroImg} alt="Traveleye People-Powered Tourism Ecosystem" className="absolute inset-0 h-full w-full object-cover object-center brightness-90" />
         <div className="absolute inset-0 bg-[#10233d]/20" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20 text-center sm:px-6 lg:px-8">
-          <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-5xl">Traveleye People-Powered Tourism Ecosystem</h1>
+          <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-5xl">
+            <span className="block">Traveleye People-Powered</span>
+            <span className="block">Tourism Ecosystem</span>
+          </h1>
           <p className="mt-4 text-base text-white/95 sm:text-xl">Building Stronger Tourism Through Connected Participation</p>
         </div>
       </section>

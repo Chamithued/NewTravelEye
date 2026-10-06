@@ -84,7 +84,7 @@ export default function VisionMission() {
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="max-w-5xl text-center">
             <h1 style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }} className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Our Vision, Mission &amp; Values
+              OUR VISION, MISSION &amp; VALUES
             </h1>
             <p className="mt-4 text-sm font-bold text-white/95 sm:text-base lg:text-lg">
               Inspired by Our Vision. Guided by Our Mission. Defined by Our Values.
