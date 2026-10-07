@@ -9,54 +9,54 @@ const recovered_ar = [
     top: "Traveleye",
     bottom: "Travel Collective",
     to: "/travel-collective",
-    items: [
-      {
-        label: "About Traveleye Travel Collective",
-        to: "/travel-collective",
-      },
-      {
-        label: "Traveleye Lanka Journeys",
-        to: "/sri-lanka-journeys",
-      },
-      {
-        label: "Traveleye Travel Corridors",
-        to: "/travel-corridors",
-      },
-      {
-        label: "Traveleye Bharat Lanka Journeys",
-        to: "/bharat-lanka-journeys",
-        indent: true,
-        child: "first",
-      },
-      {
-        label: "Traveleye Viet Lanka Journeys",
-        to: "/viet-lanka-journeys",
-        indent: true,
-        child: "middle",
-      },
-      {
-        label: "Traveleye Siam Lanka Journeys",
-        to: "/siam-lanka-journeys",
-        indent: true,
-        child: "last",
-      },
-      {
-        label: "Traveleye Celebrations & Events",
-        to: "/celebrations-events",
-      },
-      {
-        label: "Traveleye Global Journeys",
-        to: "/global-journeys",
-      },
-      {
-        label: "Traveleye Priv\xE9 Collection",
-        to: "/prive-collection",
-      },
-      {
-        label: "Traveleye Island Journeys",
-        to: "/island-journeys",
-      },
-    ],
+    // items: [
+    //   {
+    //     label: "About Traveleye Travel Collective",
+    //     to: "/travel-collective",
+    //   },
+    //   {
+    //     label: "Traveleye Lanka Journeys",
+    //     to: "/sri-lanka-journeys",
+    //   },
+    //   {
+    //     label: "Traveleye Travel Corridors",
+    //     to: "/travel-corridors",
+    //   },
+    //   {
+    //     label: "Traveleye Bharat Lanka Journeys",
+    //     to: "/bharat-lanka-journeys",
+    //     indent: true,
+    //     child: "first",
+    //   },
+    //   {
+    //     label: "Traveleye Viet Lanka Journeys",
+    //     to: "/viet-lanka-journeys",
+    //     indent: true,
+    //     child: "middle",
+    //   },
+    //   {
+    //     label: "Traveleye Siam Lanka Journeys",
+    //     to: "/siam-lanka-journeys",
+    //     indent: true,
+    //     child: "last",
+    //   },
+    //   {
+    //     label: "Traveleye Celebrations & Events",
+    //     to: "/celebrations-events",
+    //   },
+    //   {
+    //     label: "Traveleye Global Journeys",
+    //     to: "/global-journeys",
+    //   },
+    //   {
+    //     label: "Traveleye Priv\xE9 Collection",
+    //     to: "/prive-collection",
+    //   },
+    //   {
+    //     label: "Traveleye Island Journeys",
+    //     to: "/island-journeys",
+    //   },
+    // ],
   },
   {
     top: "Traveleye",
@@ -82,24 +82,24 @@ const recovered_ar = [
     top: "Traveleye Ecosystem",
     bottom: "Support Services",
     to: "/support-services",
-    items: [
-      {
-        label: "About Traveleye Ecosystem Support",
-        to: "/support-services",
-      },
-      {
-        label: "Traveleye Guidant",
-        to: "/traveleye-guidant",
-      },
-      {
-        label: "Traveleye UpSkills",
-        to: "/traveleye-upskills",
-      },
-      {
-        label: "Traveleye Connect",
-        to: "/traveleye-connect",
-      },
-    ],
+    // items: [
+    //   {
+    //     label: "About Traveleye Ecosystem Support",
+    //     to: "/support-services",
+    //   },
+    //   {
+    //     label: "Traveleye Guidant",
+    //     to: "/traveleye-guidant",
+    //   },
+    //   {
+    //     label: "Traveleye UpSkills",
+    //     to: "/traveleye-upskills",
+    //   },
+    //   {
+    //     label: "Traveleye Connect",
+    //     to: "/traveleye-connect",
+    //   },
+    // ],
   },
   {
     top: "Traveleye Destination",
