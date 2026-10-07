@@ -64,100 +64,105 @@ export default function TraveleyeTravelExperiences() {
   return (
     <main className="flex flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[48vh] w-full items-center overflow-hidden bg-slate-100">
-        <img src={heroImg} alt="Traveleye StoryTrail" className="absolute inset-0 h-full w-full object-cover object-center brightness-95" />
+        <img src={heroImg} alt="Traveleye StoryTrails" className="absolute inset-0 h-full w-full object-cover object-center brightness-95" />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 flex w-full justify-center px-4 py-12 text-center sm:px-6 lg:px-8">
           <div>
             <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
               <span className="block">TRAVELEYE</span>
-              <span className="block">STORYTRAIL</span>
+              <span className="block">STORYTRAILS</span>
             </h1>
-            <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Creating Meaningful Experiences Through People</p>
-            <p className="mt-2 text-sm font-bold text-white/95 sm:text-base">People &amp; Place-Inspired Experience Development</p>
+            <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Creating Meaningful Experiences Through People and Place</p>
+            <p className="mt-2 text-sm font-bold text-white/95 sm:text-base">People &amp; Place-Inspired Travel Experience Development</p>
           </div>
         </div>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Sparkles} title="Creating Authentic Experiences That Connect Travellers with People and Place" />
+        <SectionHeading icon={Sparkles} title="Creating Meaningful Experiences That Connect Travellers with People and Place" />
         <Copy>
           <p>The most memorable journeys are not defined simply by the places people visit.</p>
-          <p>They are shaped by the people they meet, the stories they hear, the traditions they experience, the flavours they taste, the landscapes they explore, and the genuine connections they create along the way.</p>
-          <p><strong>TraveleyeStoryTrail</strong> is the people and place-inspired experience development brand of <strong>Traveleye Host Experiences</strong>, established to develop authentic travel experiences that celebrate Sri Lanka&apos;s people, culture, heritage, nature, traditions, creativity, and local way of life while supporting the development and strengthening of micro and small experience enterprises.</p>
-          <p>As part of the <strong>People-Powered Tourism Ecosystem</strong>, TraveleyeStoryTrail encourages tourism experiences that are locally inspired, community connected, and authentically delivered, creating meaningful opportunities for experience creators, entrepreneurs, local communities, and travellers.</p>
-          <p>Whether developing a cultural encounter, culinary journey, wellness retreat, village experience, nature adventure, or specialised interest experience, every TraveleyeStoryTrail experience is designed to create lasting memories while strengthening destination identity and local tourism enterprises.</p>
+          <p>They are shaped by the people they meet, the stories they discover, the traditions they encounter, the flavours they taste, the landscapes they explore, and the connections they make along the way.</p>
+          <p><strong>Traveleye StoryTrails</strong> is the experience development platform of <strong>Traveleye Alliance Sri Lanka</strong>, established to develop and connect meaningful visitor experiences that celebrate Sri Lanka&apos;s people, culture, heritage, nature, traditions, creativity, knowledge, and ways of life while supporting the development and strengthening of micro and small experience enterprises.</p>
+          <p>As part of the <strong>People-Powered Tourism Ecosystem</strong>, Traveleye StoryTrails creates opportunities for experience creators, tourism entrepreneurs, local communities, practitioners, and other participants to transform local knowledge, skills, stories, places, and passions into meaningful experiences for travellers.</p>
+          <p>Whether developing a cultural encounter, culinary experience, wellness programme, village immersion, nature adventure, agricultural experience, creative workshop, educational programme, or specialised interest experience, every StoryTrails development seeks to create genuine connections between travellers, people, and place while strengthening local tourism enterprises and destination identity.</p>
         </Copy>
       </section>
 
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Target} title="Our Purpose" />
-        <Copy><p>To develop and strengthen micro and small travel experience enterprises by creating meaningful people and place-inspired visitor experiences that celebrate local identity, strengthen tourism enterprises, enrich visitor journeys, and contribute to sustainable destination development.</p></Copy>
+        <Copy><p>To develop and strengthen micro and small experience enterprises by creating meaningful people and place-inspired visitor experiences that celebrate local identity, strengthen tourism enterprises, enrich visitor journeys, and contribute to sustainable destination development.</p></Copy>
       </section>
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Users} title="Who We Support" />
-        <Copy><p>We work with people and organisations interested in creating authentic visitor experiences, including:</p></Copy>
+        <Copy><p>We work with people and organisations interested in creating, developing, or strengthening meaningful visitor experiences, including:</p></Copy>
         <CheckList items={supportedCreators} />
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Compass} title="Our StoryTrail Development Categories" />
+        <SectionHeading icon={Compass} title="Our StoryTrails Development Categories" />
         <Copy>
-          <p>Every destination has unique stories, traditions, landscapes, skills, and communities waiting to be experienced.</p>
-          <p>TraveleyeStoryTrail supports the development of a diverse range of people and place-inspired experiences, including:</p>
+          <p>Every destination has unique stories, traditions, landscapes, knowledge, skills, creativity, and communities waiting to be discovered.</p>
+          <p>Traveleye StoryTrails supports the development of a diverse range of people and place-inspired experiences, including:</p>
         </Copy>
         <CheckList items={experienceCategories} />
+        <Copy><p>These categories provide a broad canvas for experience development. The most meaningful experiences often emerge by bringing several elements together — people, stories, culture, nature, food, knowledge, creativity, and the distinctive character of a place.</p></Copy>
       </section>
 
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Lightbulb} title="Our Experience Development Approach" />
         <Copy>
-          <p>Every meaningful TraveleyeStoryTrail experience begins with understanding what makes a destination unique.</p>
-          <p>Rather than creating generic tourism activities, we encourage experience creators to design experiences inspired by local people, culture, heritage, traditions, landscapes, creativity, and everyday life.</p>
-          <p>By transforming local knowledge and authentic traditions into engaging visitor experiences, experience creators contribute to stronger tourism enterprises, more memorable journeys, and vibrant destinations.</p>
-          <p><strong>Discover Local Stories → Celebrate People &amp; Place → Design Authentic Experiences → Create Meaningful Visitor Connections → Strengthen Local Tourism</strong></p>
+          <p>Every meaningful StoryTrails experience begins by understanding what makes its people and place unique.</p>
+          <p>Rather than creating generic tourism activities, we encourage experience creators to discover the stories, knowledge, skills, traditions, landscapes, culture, and everyday life that already exist within a destination and transform them into experiences that travellers can genuinely participate in.</p>
+          <p>An experience may invite travellers to learn, create, taste, explore, work alongside local people, hear stories, discover traditions, or simply see a familiar place through a different perspective.</p>
+          <p>By transforming local knowledge and authentic resources into engaging visitor experiences, experience creators can strengthen tourism enterprises, create new income opportunities, enrich visitor journeys, and contribute to more vibrant destinations.</p>
+          <p><strong>Discover People &amp; Place → Uncover Stories → Design Meaningful Experiences → Create Genuine Connections → Strengthen Local Tourism</strong></p>
         </Copy>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={HeartHandshake} title="Meaningful Visitor Experiences" />
         <Copy>
-          <p>At TraveleyeStoryTrail, meaningful experiences create genuine connections between visitors and destinations.</p>
-          <p>Every StoryTrail experience should inspire curiosity, encourage participation, celebrate local identity, and leave travellers with lasting memories that extend beyond sightseeing.</p>
-          <p>By encouraging interaction, storytelling, creativity, learning, and shared experiences, TraveleyeStoryTrail transforms visitors from observers into active participants in the destination.</p>
+          <p>At Traveleye StoryTrails, an experience becomes meaningful when it creates a genuine connection between the traveller and the destination.</p>
+          <p>Every StoryTrails experience should inspire curiosity, encourage participation, celebrate local identity, and leave travellers with memories that extend beyond sightseeing.</p>
+          <p>Through interaction, storytelling, creativity, learning, discovery, and shared experiences, travellers become participants rather than simply observers — gaining a deeper understanding of the people and places they encounter.</p>
+          <p>Through the <strong>People-Powered Tourism Host Model</strong>, Traveleye StoryTrails creates opportunities for Experience Hosts and Host Teams to welcome, guide, facilitate, and create meaningful connections with travellers.</p>
         </Copy>
       </section>
 
       <section className="bg-[#eef4fa] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Leaf} title="Sustainability & Shared Stewardship" />
         <Copy>
-          <p>Authentic experiences should also contribute to protecting the places and communities that make them possible.</p>
-          <p>TraveleyeStoryTrail encourages responsible tourism practices that respect local culture, preserve heritage, protect natural environments, strengthen community participation, and create shared economic value.</p>
-          <p>Through shared stewardship, experience creators help ensure tourism continues to benefit both present and future generations.</p>
+          <p>Meaningful experiences should also contribute to protecting the people, culture, communities, and places that make them possible.</p>
+          <p>Traveleye StoryTrails encourages responsible tourism practices that respect local culture, preserve heritage, protect natural environments, strengthen community participation, and create shared economic value.</p>
+          <p>Through shared stewardship, experience creators and destination stakeholders can help ensure that tourism remains a positive force for communities and places, benefiting both present and future generations.</p>
         </Copy>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Network} title="Choose Your StoryTrail Pathway" />
+        <SectionHeading icon={Network} title="Choose Your StoryTrails Pathway" />
         <Copy>
           <p>Every experience creator has a unique vision.</p>
-          <p>Some wish to develop and operate their own independent experience brand, while others may prefer to become part of a recognised network that reflects authentic experiences, shared standards, and the People-Powered Tourism philosophy.</p>
-          <p>TraveleyeStoryTrail offers two pathways to support your journey.</p>
+          <p>Some want to develop and operate their own independent experience business. Others may want professional support to transform an idea, local skill, or existing tourism activity into a stronger market-ready experience. Some may wish to become part of a recognised network connected through a shared philosophy, quality approach, market visibility, and commitment to People-Powered Tourism.</p>
+          <p>Traveleye StoryTrails offers two pathways to support your journey.</p>
         </Copy>
         <div className="mx-auto mt-8 grid max-w-6xl gap-6 lg:grid-cols-2">
           <article className="rounded-2xl border border-[#dfe8f1] bg-[#eef4fa] p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-bold text-[#1f4f93] sm:text-2xl">Operate Under Your Own Brand</h3>
             <div className="mt-4 space-y-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              <p>Receive comprehensive support through <strong>Traveleye Host Experiences</strong> to develop, establish, strengthen, and grow your own travel experience enterprise under your own brand and business identity.</p>
-              <p>Whether you are creating your first visitor experience or expanding an existing tourism product, Traveleye Host Experiences provides the professional guidance, knowledge, and development support needed to transform your ideas into authentic and memorable visitor experiences.</p>
+              <p>Develop and grow your own experience enterprise under your own brand and business identity, with professional guidance and development support from Traveleye StoryTrails.</p>
+              <p>Whether you are creating your first visitor experience, improving an existing tourism product, or developing a portfolio of experiences, we can support you with experience design, product development, positioning, customer thinking, market readiness, and other capabilities needed to transform your ideas into meaningful and sustainable experiences.</p>
+              <p>You retain your own brand, ownership, and business identity while benefiting from the knowledge and support of the Traveleye StoryTrails platform.</p>
             </div>
           </article>
           <article className="rounded-2xl border border-[#dfe8f1] bg-[#eef4fa] p-6 shadow-sm sm:p-8">
-            <h3 className="text-xl font-bold text-[#1f4f93] sm:text-2xl">Powered by TraveleyeStoryTrail</h3>
+            <h3 className="text-xl font-bold text-[#1f4f93] sm:text-2xl">Powered by Traveleye StoryTrails</h3>
             <div className="mt-4 space-y-4 text-sm leading-7 text-[#475569] sm:text-base sm:leading-8">
-              <p>Experience creators seeking a deeper partnership may choose to develop and deliver their visitor experiences as <strong>Powered by TraveleyeStoryTrail</strong> experiences.</p>
-              <p>This pathway is designed for experience creators who wish to align with the TraveleyeStoryTrail philosophy, people and place-inspired experience approach, quality standards, and future collaborative marketing opportunities while continuing to own and operate their businesses independently.</p>
-              <p>As the TraveleyeStoryTrail Network evolves, participating experience creators will have opportunities to benefit from shared branding, professional support, market visibility, knowledge sharing, and collaborative growth while remaining independently owned and managed.</p>
+              <p>Experience creators seeking a deeper partnership may choose to develop and deliver their experiences as <strong>Powered by Traveleye StoryTrails</strong> experiences.</p>
+              <p>This pathway is designed for experience creators who wish to align with the Traveleye StoryTrails philosophy, people and place-inspired development approach, quality standards, and future collaborative marketing opportunities while continuing to own and operate their businesses independently.</p>
+              <p>As the Traveleye StoryTrails Network develops, participating experience creators may benefit from shared branding, professional support, market visibility, knowledge sharing, technology, partnerships, and collaborative growth.</p>
+              <p>The objective is to create a connected portfolio of meaningful experiences that remain rooted in their local communities and destinations while reaching wider tourism markets.</p>
             </div>
           </article>
         </div>
@@ -166,30 +171,37 @@ export default function TraveleyeTravelExperiences() {
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Sprout} title="Our Philosophy" />
         <Copy>
-          <p>We believe every community has stories worth sharing, every destination has experiences worth discovering, and every person has the potential to create meaningful visitor experiences.</p>
-          <p>By developing experiences inspired by people and place, we celebrate authentic culture, strengthen local entrepreneurship, encourage community participation, and create memorable journeys that benefit travellers, destinations, and future generations.</p>
+          <p>We believe every community has stories worth sharing, every destination has experiences worth discovering, and every person has the potential to create something meaningful for travellers.</p>
+          <p>A great travel experience should not simply show people a destination. It should help them connect with it.</p>
+          <p>By developing experiences inspired by people and place, we seek to celebrate authentic culture, strengthen local entrepreneurship, encourage community participation, preserve and share local knowledge, and create memorable journeys that benefit travellers, destinations, and future generations.</p>
+          <p>The role of Traveleye StoryTrails is not to standardise experiences. It is to help experience creators discover what makes their experience special, develop it with purpose, and connect it with travellers who value meaningful encounters.</p>
         </Copy>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Handshake} title="Grow with TraveleyeStoryTrail" />
+        <SectionHeading icon={Handshake} title="Grow with Traveleye StoryTrails" />
         <Copy>
-          <p>Whether you are developing your first visitor experience, expanding an existing tourism product, sharing your local knowledge, or creating innovative ways for travellers to experience Sri Lanka, TraveleyeStoryTrail invites you to begin your journey with us.</p>
-          <p>Whether you choose to operate under your own brand or become a <strong>Powered by TraveleyeStoryTrail™</strong> experience creator, we are committed to helping you create authentic experiences that celebrate people and place, strengthen your enterprise, and deliver meaningful visitor experiences.</p>
-          <p>Together, we can develop stronger travel experience enterprises, create richer visitor experiences, strengthen destination identity, and build a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
+          <p>Whether you are developing your first visitor experience, expanding an existing tourism product, sharing your local knowledge, turning a skill or passion into a tourism opportunity, or creating innovative ways for travellers to discover Sri Lanka, Traveleye StoryTrails invites you to develop your idea with us.</p>
+          <p>You may choose to operate under your own brand or become a <strong>Powered by Traveleye StoryTrails</strong> experience creator.</p>
+          <p>Whatever pathway you choose, our objective is the same: to help you transform local knowledge, creativity, skills, stories, and places into meaningful experiences that strengthen your enterprise and enrich the traveller&apos;s journey.</p>
+          <p>Together, we can develop stronger experience enterprises, create richer visitor experiences, strengthen destination identity, and build a thriving <strong>People-Powered Tourism Ecosystem</strong> that creates lasting value for <strong>People, Places, Partnerships, and Prosperity</strong>.</p>
         </Copy>
       </section>
 
       <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <SectionHeading icon={Mail} title="Create Your StoryTrail Experience" />
+        <SectionHeading icon={Mail} title="Create Your StoryTrails Experience" />
         <Copy>
-          <p>Whether you are planning your first travel experience, expanding an existing experience, or interested in becoming a <strong>Powered by Traveleye StoryTrail</strong> experience creator, we are ready to help you transform your knowledge, skills, and local stories into authentic travel experiences inspired by people and place.</p>
+          <p>Every meaningful experience begins with something already present — a story, a skill, a place, a tradition, a passion, a person, or a community.</p>
+          <p>Perhaps you are planning your first travel experience, expanding an existing tourism product, sharing your local knowledge, developing a new community experience, or looking for new ways to connect travellers with your destination.</p>
+          <p>Whatever your starting point, Traveleye StoryTrails can help you explore the opportunity, strengthen the concept, develop the experience, and prepare it for travellers.</p>
+          <p>Turn what you know, what you love, and what your place has to offer into an experience worth discovering.</p>
+          <p>Whether you choose to develop your own independent experience or become a <strong>Powered by Traveleye StoryTrails</strong> experience creator, we are ready to help you create meaningful experiences inspired by people and place.</p>
           <p>
             Contact us at{' '}
-            <a className="font-semibold text-[#1f4f93]" href="mailto:storytrail@traveleye.lk">
-              storytrail@traveleye.lk
+            <a className="font-semibold text-[#1f4f93]" href="mailto:storytrails@traveleye.lk">
+              storytrails@traveleye.lk
             </a>{' '}
-            to explore travel experience development and collaboration opportunities.
+            to explore experience development and collaboration opportunities.
           </p>
         </Copy>
       </section>

@@ -1,4 +1,5 @@
 import {
+  ArrowUpRight,
   BriefcaseBusiness,
   CalendarHeart,
   Crown,
@@ -9,6 +10,7 @@ import {
   Plane,
   Sparkles,
   Sprout,
+  Store,
   Users,
 } from 'lucide-react'
 import heroImg from '../assets/client/Travel3.jpg'
@@ -58,7 +60,8 @@ const stakeholders = [
   'Travellers',
   'Tourism entrepreneurs',
   'Micro and small tourism enterprises',
-  'Hosts and experience creators',
+  'Stay developers',
+  'Hosts and travel experience creators',
   'Tour operators and destination management companies',
   'Transport providers',
   'Local communities',
@@ -68,6 +71,17 @@ const stakeholders = [
   'Development organisations',
   'Investors',
   'Strategic partners',
+]
+
+const travelBusinesses = [
+  { title: 'Traveleye Lanka Journeys', description: 'Sri Lanka Inbound Travel', href: '/sri-lanka-journeys', link: 'Explore Traveleye Lanka Journeys' },
+  { title: 'Traveleye Privé Collection', description: 'Premium & Bespoke Travel', href: '/prive-collection', link: 'Explore Traveleye Privé Collection' },
+  { title: 'Traveleye Celebrations & Events', description: 'Celebrations, Events & Special Journeys', href: '/celebrations-events', link: 'Explore Traveleye Celebrations & Events' },
+  { title: 'Traveleye Bharat Lanka Journeys', description: 'Sri Lanka–India Travel Corridor', href: '/bharat-lanka-journeys', link: 'Explore Bharat Lanka Journeys' },
+  { title: 'Traveleye Siam Lanka Journeys', description: 'Sri Lanka–Thailand Travel Corridor', href: '/siam-lanka-journeys', link: 'Explore Traveleye Siam Lanka Journeys' },
+  { title: 'Traveleye Viet Lanka Journeys', description: 'Sri Lanka–Vietnam Travel Corridor', href: '/viet-lanka-journeys', link: 'Explore Traveleye Viet Lanka Journeys' },
+  { title: 'Traveleye Island Journeys', description: 'Domestic Travel for Sri Lankans', href: '/island-journeys', link: 'Explore Traveleye Island Journeys' },
+  { title: 'Traveleye Global Journeys', description: 'Outbound Travel for Sri Lankans', href: '/global-journeys', link: 'Explore Traveleye Global Journeys' },
 ]
 
 const connectedTravelPoints = [
@@ -124,7 +138,8 @@ export default function TravelCollective() {
             <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">
               <span className="block">Traveleye</span><span className="block">Travel Collective</span>
             </h1>
-            <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Connecting Journeys Through People and Place</p>
+            <p className="mt-3 text-sm font-bold text-white/95 sm:text-base lg:text-lg">Connecting Journeys Through People and Places</p>
+            <p className="mt-2 text-sm text-white/95 sm:text-base">People &amp; Place-Connected Travel &amp; Tour Business Development</p>
           </div>
         </div>
       </section>
@@ -140,7 +155,7 @@ export default function TravelCollective() {
         <SectionHeading icon={Sparkles} title="Reimagining Travel Through People and Place" />
         <Copy>
           <p>Travel is more than movement between destinations—it is an opportunity to connect people, places, cultures, communities, and experiences in ways that create lasting value for travellers, tourism enterprises, and destinations.</p>
-          <p><strong>Traveleye Travel Collective</strong> is one of the four <strong>People-Powered Tourism Operational Platforms</strong> of the <strong>People-Powered Tourism Framework</strong>. It transforms the Framework into practical action by connecting meaningful journeys through people and place while supporting the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.</p>
+          <p><strong>Traveleye Travel Collective</strong> is one of the five <strong>People-Powered Tourism Operational Platforms</strong> of the <strong>People-Powered Tourism Framework</strong>. It transforms the Framework into practical action by connecting meaningful journeys through people and place while supporting the development and strengthening of micro and small tourism enterprises across Sri Lanka's tourism ecosystem.</p>
           <p>Rather than viewing travel as a series of isolated products and services, the Travel Collective creates meaningful connections between travellers, destinations, tourism enterprises, host communities, tourism partners, and opportunities. Every journey contributes to stronger tourism enterprises, richer visitor experiences, resilient destinations, collaborative partnerships, and thriving tourism ecosystems.</p>
         </Copy>
       </section>
@@ -165,6 +180,24 @@ export default function TravelCollective() {
                 <h3 className="mt-4 text-xl font-bold text-[#1f4f93]">{title}</h3>
                 <p className="mt-2 font-bold leading-6 text-[#14334a]">{subtitle}</p>
                 <p className="mt-4 text-sm leading-7 text-[#475569] sm:text-base">{text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#FCFBF8] px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeading icon={Store} title="Our Travel Businesses" />
+          <p className="mt-4 text-center text-lg font-semibold text-[#14334a]">Specialised Travel Businesses Connecting People, Places &amp; Markets</p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {travelBusinesses.map(({ title, description, href, link }) => (
+              <article key={title} className="flex flex-col rounded-2xl border border-[#dce6f0] bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-bold leading-6 text-[#1f4f93]">{title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-6 text-[#475569]">{description}</p>
+                <a href={href} className="mt-6 inline-flex items-center gap-1 font-semibold text-[#1f4f93] hover:text-[#163b70] focus-visible:rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f4f93]">
+                  {link}<ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+                </a>
               </article>
             ))}
           </div>
@@ -196,16 +229,17 @@ export default function TravelCollective() {
             ))}
           </ul>
           <p>Together, these interconnected travel segments strengthen the tourism ecosystem through participation, collaboration, innovation, and shared value creation.</p>
+          <p>The <strong>People-Powered Tourism Host Model</strong> enables Hosts and Host Teams to participate in connected travel by welcoming travellers, facilitating experiences, and creating meaningful connections with people and places.</p>
         </Copy>
       </section>
 
       <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <SectionHeading icon={Sprout} title="The Role of the Travel Collective Within the Framework" />
         <Copy>
-          <p>The <strong>Traveleye Travel Collective</strong> is one of the four <strong>Operational Platforms</strong> of the <strong>People-Powered Tourism Framework</strong>.</p>
-          <p>Built upon the Framework's <strong>Guiding Principles</strong>, <strong>Global Alignment</strong>, <strong>Strategic Pillars</strong>, and <strong>Development Models</strong>, it provides one of the practical mechanisms through which the Framework is implemented.</p>
+          <p>The <strong>Traveleye Travel Collective</strong> is one of the five <strong>Operational Platforms</strong> of the <strong>People-Powered Tourism Framework</strong>.</p>
+          <p>Built upon the Framework's <strong>Guiding Principles</strong>, <strong>Locally Grounded. Globally Aligned.</strong> foundation, <strong>Strategic Pillars</strong>, <strong>Development Models</strong>, <strong>Host Model</strong>, and <strong>Revenue Sharing Model</strong>, it provides one of the practical mechanisms through which the Framework is implemented.</p>
           <p>Through connected travel opportunities, destination connectivity, market development, enterprise participation, and collaborative travel initiatives, the Travel Collective contributes directly to the Framework's <strong>Tourism Outcomes</strong> while supporting measurable progress through the <strong>People-Powered Tourism Ecosystem Indicators</strong>.</p>
-          <p>Together with <strong>Traveleye Host Experiences</strong>, <strong>Traveleye Ecosystem Support</strong>, and <strong>Traveleye Destination Facilitation</strong>, it helps transform the <strong>People-Powered Tourism Framework</strong> into practical action across Sri Lanka's tourism ecosystem.</p>
+          <p>Together with <strong>Traveleye Host Experiences</strong>, <strong>Traveleye Habitats</strong>, <strong>Traveleye StoryTrails</strong>, <strong>Traveleye Ecosystem Support Services</strong>, and <strong>Traveleye Destination Facilitation Centres</strong>, it helps transform the <strong>People-Powered Tourism Framework</strong> into practical action across Sri Lanka's tourism ecosystem.</p>
         </Copy>
       </section>
 
