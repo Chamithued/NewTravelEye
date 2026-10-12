@@ -38,6 +38,9 @@ function Hero() {
             >
               {"ALLIANCE SRI LANKA"}
             </h2>
+            <p className="mb-2 text-sm font-semibold tracking-[0.25em] sm:text-base">
+              SINCE 2006
+            </p>
             <p
               className="mx-auto mb-1 max-w-3xl text-base font-semibold sm:text-xl"
               style={{
@@ -62,23 +65,6 @@ function Hero() {
               "Developing and strengthening micro and small tourism enterprises across Sri Lanka's tourism ecosystem through collaboration, stewardship, innovation, and meaningful partnerships."
             }
           </p>
-          <div className="mb-2 mt-2 flex flex-col justify-center gap-4 sm:flex-row" />
-          <div className="mt-2 flex animate-bounce flex-col items-center gap-2 sm:mt-3">
-            <p className="text-sm font-semibold">{"Scroll to Explore"}</p>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
-          </div>
         </div>
       </div>
     </section>

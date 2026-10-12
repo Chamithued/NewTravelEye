@@ -38,9 +38,9 @@ const recovered_Ka = [
     to: "/become-a-travel-corridor-partner",
   },
   {
-    title: "Develop a Place-Inspired Host Stay",
+    title: "Develop a People & Place-Inspired Stay",
     subtitle:
-      "Create authentic host stays that reflect Sri Lanka's culture, hospitality, landscapes, and the unique identity of each destination.",
+      "Create stays that reflect Sri Lanka's culture, hospitality, landscapes, and the unique identity of each destination.",
     icon: Earth,
     accent: "#0ea5a4",
     image: hostStayImage,
@@ -74,6 +74,15 @@ const recovered_Ka = [
     to: "/partner-in-destination-development",
   },
   {
+    title: "Become a Tourism Host",
+    subtitle:
+      "Welcome, care for, guide, and connect with travellers through meaningful stays and experiences, participating as a Host or Host Team within Sri Lanka's People-Powered Tourism Ecosystem.",
+    icon: Users,
+    accent: "#2563eb",
+    image: hostStayImage,
+    to: "/how-you-can-grow-with-traveleye",
+  },
+  {
     title: "Joint Ventures & Strategic Investments",
     subtitle:
       "Explore collaborative investment and joint venture opportunities that strengthen tourism enterprises, destinations, travel initiatives, and the wider tourism ecosystem.",
@@ -101,11 +110,11 @@ const recovered_Ka = [
     to: "/travel-with-purpose",
   },
 ];
-function Component_recovered_qa({ card: e }) {
+function Component_recovered_qa({ card: e, className = '' }) {
   let Component_t = e.icon,
     n = "0 1px 2px rgba(0,0,0,0.65), 0 0 1px rgba(0,0,0,0.85)";
   return (
-    <article className="relative min-h-80 overflow-hidden rounded-2xl sm:min-h-96">
+    <article className={`relative min-h-80 overflow-hidden rounded-2xl sm:min-h-96 ${className}`}>
       <img
         src={e.image}
         alt={e.title}
@@ -213,8 +222,12 @@ function GetInvolved() {
         </div>
         <div className="mt-8 mx-auto max-w-6xl">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {recovered_Ka.map((e) => (
-              <Component_recovered_qa key={e.title} card={e} />
+            {recovered_Ka.map((e, index) => (
+              <Component_recovered_qa
+                key={e.title}
+                card={e}
+                className={index === recovered_Ka.length - 1 ? 'lg:col-start-2' : ''}
+              />
             ))}
           </div>
         </div>

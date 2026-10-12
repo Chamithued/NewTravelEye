@@ -5,14 +5,14 @@ import ExplorePlatformsSection from "../components/ExplorePlatformsSection.jsx";
 import OurJourney from "../components/OurJourney.jsx";
 import BuildingSomethingBigger from "../components/BuildingSomethingBigger.jsx";
 import WhyTraveleye from "../components/WhyTraveleye.jsx";
-import PeoplePoweredTourismIntro from "../components/PeoplePoweredTourismIntro.jsx";
+import PeoplePoweredTourismIntro, { BeautifulPeopleSection } from "../components/PeoplePoweredTourismIntro.jsx";
 import EcosystemSection from "../components/EcosystemSection.jsx";
 import PeoplePoweredTourismFrameworkSection from "../components/PeoplePoweredTourismFrameworkSection.jsx";
-import HomeFrameworkSections from "../components/HomeFrameworkSections.jsx";
-import PeoplePoweredTourismStrategicPillarsSection from "../components/PeoplePoweredTourismStrategicPillarsSection.jsx";
-import PeoplePoweredTourismDevelopmentModelsSection from "../components/PeoplePoweredTourismDevelopmentModelsSection.jsx";
+// import HomeFrameworkSections from "../components/HomeFrameworkSections.jsx";
+// import PeoplePoweredTourismStrategicPillarsSection from "../components/PeoplePoweredTourismStrategicPillarsSection.jsx";
+// import PeoplePoweredTourismDevelopmentModelsSection from "../components/PeoplePoweredTourismDevelopmentModelsSection.jsx";
 import FivePillars from "../components/FivePillars.jsx";
-import PeoplePoweredTourismOutcomesSection from "../components/PeoplePoweredTourismOutcomesSection.jsx";
+// import PeoplePoweredTourismOutcomesSection from "../components/PeoplePoweredTourismOutcomesSection.jsx";
 import GetInvolved from "../components/GetInvolved.jsx";
 import OurGrowingImpact from "../components/OurGrowingImpact.jsx";
 import { Newspaper } from "lucide-react";
@@ -56,7 +56,7 @@ function Component_recovered__a() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="home-section-eyebrow justify-center">
             <Newspaper className="h-5 w-5 shrink-0" aria-hidden="true" />
-            <span>{"Media and Press"}</span>
+            <span>{"Media & Press"}</span>
           </div>
           <h2 className="mt-5 text-[1.85rem] font-semibold leading-tight tracking-normal text-[#172544] sm:text-[2.1rem] lg:text-[2.45rem]">
             {"News, Insights and Stories from Traveleye"}
@@ -131,20 +131,21 @@ function Home() {
   return (
     <main className="flex flex-col">
       <Hero />
-      <BeautifulSriLankaSection />
-      <ExplorePlatformsSection />
-      <OurJourney />
-      <BuildingSomethingBigger />
-      <WhyTraveleye />
       <PeoplePoweredTourismIntro />
       <EcosystemSection />
       <PeoplePoweredTourismFrameworkSection />
-      <HomeFrameworkSections />
-      <PeoplePoweredTourismStrategicPillarsSection />
-      <PeoplePoweredTourismDevelopmentModelsSection />
+      {/* <HomeFrameworkSections /> */}
+      {/* <PeoplePoweredTourismStrategicPillarsSection /> */}
+      {/* <PeoplePoweredTourismDevelopmentModelsSection /> */}
       <FivePillars />
-      <PeoplePoweredTourismOutcomesSection />
+      {/* <PeoplePoweredTourismOutcomesSection /> */}
+      <BeautifulSriLankaSection />
+      <ExplorePlatformsSection />
+      <BeautifulPeopleSection />
       <GetInvolved />
+      <OurJourney />
+      <WhyTraveleye />
+      <BuildingSomethingBigger />
       <OurGrowingImpact />
       <Component_recovered__a />
       <CatalogueLibrarySection />

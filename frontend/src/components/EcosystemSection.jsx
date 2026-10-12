@@ -38,7 +38,7 @@ function EcosystemSection() {
                 {"Guided by the "}
                 <strong>{"People-Powered Tourism Framework"}</strong>
                 {
-                  ", the ecosystem creates opportunities for entrepreneurs, hosts, experience creators, tourism enterprises, destinations, institutions, communities, and strategic partners to participate in building stronger tourism together. Through a connected and collaborative approach, it transforms strategic vision into practical action, strengthening tourism enterprises, destinations, local economies, and the broader tourism ecosystem."
+                  ", the ecosystem creates opportunities for entrepreneurs, stay developers, hosts, experience creators, tourism enterprises, destinations, institutions, communities, and strategic partners to participate in building stronger tourism together. Through a connected and collaborative approach, it transforms strategic vision into practical action, strengthening tourism enterprises, destinations, local economies, and the broader tourism ecosystem."
                 }
               </p>
               <p>
@@ -57,6 +57,9 @@ function EcosystemSection() {
                 {
                   ". It connects people, places, enterprises, partnerships, and opportunities to create lasting value for Sri Lanka's tourism industry and future generations."
                 }
+              </p>
+              <p>
+                These four foundations provide the underlying philosophy and direction for the Five Strategic Pillars through which People-Powered Tourism is developed and strengthened across Sri Lanka&apos;s tourism ecosystem.
               </p>
             </div>
           </div>

@@ -60,7 +60,7 @@ function BeautifulSriLankaSection() {
               </p>
               <p>
                 {
-                  "Through our Travel Collective, Host Experiences, Destination Facilitation, and Ecosystem Support platforms, we work with people, places, enterprises, and partners to create a Sri Lanka that is not only beautiful to discover, but meaningful to experience and valuable to its people."
+                  "Through our Travel Collective, HostNest, StoryTrails, Destination Facilitation Centres, and Ecosystem Support Services platforms, we work with people, places, enterprises, and partners to create a Sri Lanka that is not only beautiful to discover, but meaningful to experience and valuable to its people."
                 }
               </p>
             </div>

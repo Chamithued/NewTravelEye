@@ -52,7 +52,7 @@ const recovered_ta = [
         {"Today, Traveleye Alliance serves as a "}
         <strong>{"People-Powered Tourism Ecosystem Builder"}</strong>
         {
-          ", bringing together journeys, host stays, experiences, tourism enterprises, destinations, travel partnerships, and supporting organisations through a connected and collaborative approach to tourism development."
+          ", bringing together journeys, stays, experiences, tourism enterprises, destinations, travel partnerships, and supporting organisations through a connected and collaborative approach to tourism development."
         }
       </JSXRuntime.Fragment>,
       <JSXRuntime.Fragment>
