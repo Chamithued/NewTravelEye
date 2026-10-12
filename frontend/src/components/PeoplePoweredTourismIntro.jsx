@@ -109,7 +109,7 @@ function PeoplePoweredTourismIntro() {
             <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
           </div>
           <div className="mt-10 grid items-center gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-8">
-            <div className="mx-auto max-w-[560px] space-y-5 text-center text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8 lg:mx-0 lg:ml-auto lg:text-left">
+            <div className="order-2 mx-auto max-w-[560px] space-y-5 text-center text-[1.15rem] leading-7 text-[#6b7894] sm:text-[1.2rem] sm:leading-8 lg:order-1 lg:mx-0 lg:ml-auto lg:text-left">
               <p>
                 {"At Traveleye Alliance Sri Lanka, "}
                 <strong>{"People-Powered Tourism"}</strong>
@@ -136,7 +136,7 @@ function PeoplePoweredTourismIntro() {
                 }
               </p>
             </div>
-            <div className="relative mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-[#e8eef2] bg-[#f7fafc] shadow-[0_18px_46px_rgba(15,23,42,0.12)]">
+            <div className="order-1 relative mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-[#e8eef2] bg-[#f7fafc] shadow-[0_18px_46px_rgba(15,23,42,0.12)] lg:order-2">
               <div
                 className="absolute inset-0 bg-[linear-gradient(135deg,rgba(31,79,147,0.08),rgba(194,138,91,0.06))]"
                 aria-hidden="true"

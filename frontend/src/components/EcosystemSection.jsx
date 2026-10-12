@@ -15,7 +15,7 @@ function EcosystemSection() {
           <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
         </div>
         <div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,1.12fr)_minmax(420px,0.88fr)] lg:gap-14">
-          <div>
+          <div className="order-2 lg:order-1">
             <div className="mt-6 max-w-3xl space-y-5 text-[1.02rem] leading-7 text-[#6b7894] sm:text-[1.08rem] sm:leading-8">
               <div>
                 <p className="text-center text-[1.2rem] font-extrabold text-[#172544]">
@@ -63,8 +63,8 @@ function EcosystemSection() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center lg:pt-10">
-            <div className="w-full overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] sm:rounded-[1.6rem]">
+          <div className="contents lg:order-2 lg:flex lg:flex-col lg:items-center lg:pt-10">
+            <div className="order-1 w-full overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] sm:rounded-[1.6rem]">
               <img
                 src={asset_ka}
                 alt="People collaborating on a tourism ecosystem framework"
@@ -73,7 +73,7 @@ function EcosystemSection() {
             </div>
             <Link
               to="/traveleye-people-powered-tourism-ecosystem"
-              className="mt-8 w-full whitespace-nowrap rounded-xl bg-[#214f95] px-6 py-4 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem]"
+              className="order-3 w-full rounded-xl bg-[#214f95] px-6 py-4 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem] lg:mt-8"
             >
               {"Explore the Traveleye People-Powered Tourism Ecosystem"}
             </Link>
