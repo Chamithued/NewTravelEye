@@ -3,7 +3,6 @@ import * as React from "react";
 import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import asset_nr from "../assets/client/Traveleyelogo.png";
-import asset_rr from "../assets/recovered/Beautiful Sri Lanka Logo2.png";
 const recovered_ar = [
   {
     top: "Traveleye",
@@ -316,6 +315,8 @@ function Navbar() {
           type="button"
           aria-expanded={e}
           onClick={() => t((e) => !e)}
+          aria-label={e ? "Close navigation menu" : "Open navigation menu"}
+          aria-controls="mobile-navigation"
           className="mr-2 inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 focus:outline-none xl:hidden"
         >
           {e ? (
@@ -483,7 +484,7 @@ function Navbar() {
                       to={t.to}
                       className={({ isActive: t }) =>
                         [
-                          `block whitespace-nowrap rounded-xl px-4 text-[1rem] font-medium leading-snug transition-colors ${e.label === "About Traveleye" || e.label === "Traveleye Ecosystem" ? "py-2" : "py-3"} ${t.indent ? "ml-4" : ""}`,
+                          `block whitespace-nowrap rounded-xl px-4 text-[1rem] font-medium leading-snug transition-colors ${e.label === "Traveleye Ecosystem" ? "py-2" : "py-1.5"} ${t.indent ? "ml-4" : ""}`,
                           t
                             ? "bg-[#1C4686] text-white"
                             : "text-slate-700 hover:bg-[#1C4686] hover:text-white",
@@ -511,7 +512,7 @@ function Navbar() {
         </NavLink> */}
       </div>
       {e && (
-        <div className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-6.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-7.5rem)] lg:max-h-[calc(100dvh-8.5rem)] xl:hidden">
+        <div id="mobile-navigation" className="absolute left-0 right-0 top-full z-40 max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-slate-200 bg-white shadow-md sm:max-h-[calc(100dvh-5.5rem)] lg:max-h-[calc(100dvh-6.5rem)] xl:hidden">
           <div className="flex flex-col gap-1 px-3 pb-6 pt-3">
             {recovered_ar.map((e) =>
               e.items ? (
@@ -649,7 +650,7 @@ function Navbar() {
                         onClick={() => t(false)}
                         className={({ isActive: t }) =>
                           [
-                            `block rounded-md px-2 text-[0.9rem] transition-colors ${e.label === "About Traveleye" ? "py-1.5" : "py-2"} ${n.indent ? "ml-4" : ""}`,
+                            `block rounded-md px-2 text-[0.9rem] transition-colors ${e.label === "Traveleye Ecosystem" ? "py-2" : "py-1.5"} ${n.indent ? "ml-4" : ""}`,
                             t
                               ? "bg-[#1C4686] font-semibold text-white"
                               : "text-slate-600 hover:bg-[#1C4686] hover:text-white",
