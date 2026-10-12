@@ -21,9 +21,9 @@ const recovered_$i = [
   {
     id: 2,
     icon: "\uD83C\uDFE1",
-    title: "Discover Beautiful Host Stays in Sri Lanka",
+    title: "Discover Beautiful People & Place-Inspired Stays in Sri Lanka",
     description:
-      "Welcoming host stays reflecting Sri Lankan hospitality, local culture, traditions, landscapes and the unique identity of each destination.",
+      "Welcoming stays reflecting Sri Lankan hospitality, local culture, traditions, landscapes and the unique identity of each destination.",
     image: asset_Ri,
     link: "/traveleye-hostnest",
   },
@@ -112,7 +112,7 @@ function ExplorePlatformsSection() {
           <div className="mx-auto mt-7 max-w-5xl space-y-6 text-[1.05rem] font-normal leading-7 text-[#5f6c87] sm:text-[1.2rem] sm:leading-8">
             <p>
               {
-                "Explore a thoughtfully curated collection of beautiful journeys, host stays, experiences, celebrations, travel opportunities and tourism development services - connecting people, places, enterprises and destinations while contributing to a stronger People-Powered Tourism Ecosystem."
+                "Explore a thoughtfully curated collection of beautiful journeys, stays, experiences, celebrations, travel opportunities and tourism development services - connecting people, places, enterprises and destinations while contributing to a stronger People-Powered Tourism Ecosystem."
               }
             </p>
           </div>

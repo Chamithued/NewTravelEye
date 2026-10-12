@@ -4,8 +4,9 @@ const items = [
   { icon: HeartHandshake, value: '-', label: 'Women Entrepreneurs Supported' },
   { icon: Users, value: '-', label: 'Youth Entrepreneurs Supported' },
   { icon: Building2, value: '-', label: 'Micro & Small Tourism Enterprises Developed' },
-  { icon: Home, value: '-', label: 'Place-Inspired Host Stays Developed' },
+  { icon: Home, value: '-', label: 'People & Place-Inspired Stays Developed' },
   { icon: Leaf, value: '-', label: 'People & Place-Inspired Experiences Developed' },
+  { icon: Users, value: '-', label: 'Hosts and Host Teams Participating' },
   { icon: Compass, value: '-', label: 'Destination Development Initiatives Facilitated' },
   { icon: Globe2, value: '-', label: 'Travel Corridor Partnerships Established' },
   { icon: Handshake, value: '-', label: 'Strategic Partnerships & Joint Ventures Facilitated' },
@@ -15,10 +16,10 @@ const items = [
   { icon: Plane, value: '-', label: 'Travellers Connected Through Meaningful Journeys' },
 ]
 
-function ImpactCard({ item }) {
+function ImpactCard({ item, className = '' }) {
   const Icon = item.icon
   return (
-    <div className="rounded-2xl bg-[#395E96] p-6 text-center shadow-[0_8px_24px_rgba(15,23,42,0.08)]">
+    <div className={`rounded-2xl bg-[#395E96] p-6 text-center shadow-[0_8px_24px_rgba(15,23,42,0.08)] ${className}`}>
       <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#395E96] text-white">
         <Icon className="h-8 w-8" />
       </div>
@@ -43,8 +44,12 @@ export default function OurGrowingImpact() {
         <h3 className="mt-10 text-2xl font-bold text-white sm:text-3xl">Key Impact Indicators</h3>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map((it) => (
-            <ImpactCard key={it.label} item={it} />
+          {items.map((it, index) => (
+            <ImpactCard
+              key={it.label}
+              item={it}
+              className={index === items.length - 1 ? 'sm:col-span-2 sm:w-[calc(50%_-_0.75rem)] sm:justify-self-center lg:col-span-4 lg:w-[calc(25%_-_1.125rem)]' : ''}
+            />
           ))}
         </div>
 

@@ -1,4 +1,4 @@
-import { ArrowRight, Leaf, Building2, Compass, MapPinned, BriefcaseBusiness } from 'lucide-react'
+import { ArrowRight, Leaf, Building2, Compass, MapPinned } from 'lucide-react'
 
 import staysImg from '../assets/client/stays_new.jpg'
 import experientialImg from '../assets/client/PPES.jpg'
@@ -20,27 +20,26 @@ const pillars = [
     ],
   },
   {
-    code: 'PPHE',
-    title: 'Traveleye Host Experiences',
-    subtitle: 'Crafting Experiences Through People and Place',
+    code: 'HOSTNEST',
+    title: 'Traveleye HostNest',
+    subtitle: 'Developing Authentic People & Place-Inspired Stays',
     icon: Building2,
     accent: 'bg-sky-500',
     image: staysImg,
     ctas: [
-      { label: 'Explore Traveleye Host Experiences', variant: 'solid', to: '/about-traveleye-host-experiences' },
+      { label: 'Explore Traveleye HostNest', variant: 'solid', to: '/traveleye-hostnest' },
       // { label: 'Co-Own an Experience', variant: 'ghost' },
     ],
   },
   {
-    code: 'PPES',
-    title: 'Traveleye Ecosystem Support',
-    subtitle: 'Strengthening Tourism Through People and Place',
-    icon: Leaf,
-    accent: 'bg-emerald-500',
+    code: 'STORYTRAILS',
+    title: 'Traveleye StoryTrails',
+    subtitle: 'Developing People & Place-Inspired Experiences',
+    icon: Building2,
+    accent: 'bg-violet-500',
     image: experientialImg,
     ctas: [
-      { label: 'Explore Traveleye Ecosystem Support', variant: 'solid', to: '/support-services' },
-      // { label: 'Co-Own a Support Service', variant: 'ghost' },
+      { label: 'Explore Traveleye StoryTrails', variant: 'solid', to: '/traveleye-storytrail' },
     ],
   },
   // {
@@ -57,31 +56,43 @@ const pillars = [
   // },
   {
     code: 'PPDF',
-    title: 'Traveleye Destination Facilitation',
+    title: 'Traveleye Destination Facilitation Centres',
     subtitle: 'Stewarding Destinations Through People and Place',
     icon: MapPinned,
     accent: 'bg-orange-500',
     image: facilitationImg,
     ctas: [
-      { label: 'Explore Traveleye Destination Facilitation', variant: 'solid', to: '/destination-facilitation' },
+      { label: 'Explore Traveleye Destination Facilitation Centres', variant: 'solid', to: '/destination-facilitation' },
       // { label: 'Co-Own a Facilitation Center', variant: 'ghost' },
+    ],
+  },
+  {
+    code: 'PPES',
+    title: 'Traveleye Ecosystem Support Services',
+    subtitle: 'Strengthening Tourism Through People and Place',
+    icon: Leaf,
+    accent: 'bg-emerald-500',
+    image: supportImg,
+    ctas: [
+      { label: 'Explore Traveleye Ecosystem Support Services', variant: 'solid', to: '/support-services' },
     ],
   },
 ]
 
-function PillarCard({ pillar }) {
+function PillarCard({ pillar, className = '' }) {
   const Icon = pillar.icon
   const readableTextShadow =
     '0 1px 2px rgba(0,0,0,0.65), 0 0 1px rgba(0,0,0,0.85)'
   const pillarDescriptions = {
-    PPTC:(<> Connecting meaningful journeys, destinations, travellers, and travel partnerships through people and place.</>),
-    PPHE:(<> Developing authentic place-inspired host stays and people and place-inspired experiences that celebrate local identity and hospitality.</>),
+    PPTC:(<>Connecting meaningful journeys, destinations, travellers, and travel partnerships through people and places.</>),
+    HOSTNEST:(<>Developing authentic people and place-inspired stays that reflect local identity, hospitality, culture, landscapes, and the character of each destination.</>),
+    STORYTRAILS:(<>Developing people and place-inspired experiences that connect travellers with local people, culture, heritage, creativity, nature, and everyday life.</>),
     PPES:(<> Strengthening tourism enterprises through knowledge, capability development, innovation, digital solutions, and ecosystem support services. </>),
     PPDF:( <>Developing connected destination ecosystems through collaboration, coordination, participation, stewardship, and enterprise development.</>),
   }
 
   return (
-    <article className="relative min-h-[520px] overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)]">
+    <article className={`relative min-h-[520px] overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] ${className}`}>
       <img src={pillar.image} alt={pillar.title} className="absolute inset-0 h-full w-full object-cover" />
 
       <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-6 md:p-8">
@@ -158,7 +169,7 @@ export default function FivePillars() {
           </p> */}
 
           <p className="mb-6">
-            The <strong>People-Powered Tourism Operational Platforms</strong> are the implementation mechanisms of the People-Powered Tourism Framework, translating strategic direction and practical methodologies into coordinated action. Working together, these four interconnected platforms support the development and strengthening of micro and small tourism enterprises while creating meaningful journeys, authentic place-inspired host stays, people and place-inspired travel experiences, connected destination ecosystems, collaborative partnerships, and ecosystem initiatives across Sri Lanka&apos;s tourism ecosystem.
+            The <strong>People-Powered Tourism Operational Platforms</strong> are the implementation mechanisms of the People-Powered Tourism Framework, translating strategic direction and practical methodologies into coordinated action. Working together, these five interconnected platforms support the development and strengthening of micro and small tourism enterprises while creating meaningful journeys, people and place-inspired stays and experiences, connected destination ecosystems, collaborative partnerships, and ecosystem initiatives across Sri Lanka&apos;s tourism ecosystem.
           </p>
 
           {/* <p>
@@ -168,8 +179,12 @@ export default function FivePillars() {
 
         <div className="mt-10 mx-auto max-w-[1200px] px-2">
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-            {pillars.map((p) => (
-              <PillarCard key={p.code} pillar={p} />
+            {pillars.map((p, index) => (
+              <PillarCard
+                key={p.code}
+                pillar={p}
+                className={index === pillars.length - 1 ? 'sm:col-span-2 sm:w-[calc(50%_-_1rem)] sm:justify-self-center' : ''}
+              />
             ))}
           </div>
         </div>
