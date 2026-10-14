@@ -141,6 +141,14 @@ const recovered_or = [
         to: "/why-traveleye",
       },
       {
+        label: "Travel With Purpose",
+        to: "/travel-with-purpose",
+      },
+      {
+        label: "Support People-Powered Tourism",
+        to: "/support-people-powered-tourism",
+      },
+      {
         label: "Governance and Ethics",
         to: "/governance-ethics",
       },
@@ -257,14 +265,6 @@ const recovered_or = [
       {
         label: "Collaborate With Us",
         to: "/collaborate-with-us",
-      },
-      {
-        label: "Travel With Purpose",
-        to: "/travel-with-purpose",
-      },
-      {
-        label: "Support People-Powered Tourism",
-        to: "/support-people-powered-tourism",
       },
     ],
   },

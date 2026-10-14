@@ -12,10 +12,8 @@ import experienceImage from "../assets/involved/Develop a People & Place-Inspire
 import ecosystemSupportImage from "../assets/involved/Develop an Ecosystem Support Venture.jpg";
 import jointVenturesImage from "../assets/involved/Joint Ventures & Strategic Investments.jpg";
 import collaborateImage from "../assets/client/Collaborate With Us1.jpg";
-import purposeImage from "../assets/client/Travelwith Purpose.png";
 import { HeartHandshake } from "lucide-react";
 import { Handshake } from "lucide-react";
-import { Plane } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 const recovered_Ka = [
@@ -99,15 +97,6 @@ const recovered_Ka = [
     accent: "#0f766e",
     image: collaborateImage,
     to: "/collaborate-with-us",
-  },
-  {
-    title: "Travel with Purpose",
-    subtitle:
-      "Experience meaningful journeys that celebrate Sri Lanka's people, places, and culture while contributing to stronger destinations and a thriving People-Powered Tourism Ecosystem.",
-    icon: Plane,
-    accent: "#2563eb",
-    image: purposeImage,
-    to: "/travel-with-purpose",
   },
 ];
 function Component_recovered_qa({ card: e, className = '' }) {
@@ -222,11 +211,10 @@ function GetInvolved() {
         </div>
         <div className="mt-8 mx-auto max-w-6xl">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {recovered_Ka.map((e, index) => (
+            {recovered_Ka.map((e) => (
               <Component_recovered_qa
                 key={e.title}
                 card={e}
-                className={index === recovered_Ka.length - 1 ? 'lg:col-start-2' : ''}
               />
             ))}
           </div>

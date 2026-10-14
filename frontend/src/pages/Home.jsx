@@ -85,8 +85,8 @@ function Component_recovered__a() {
         </h3>
         <div className="mt-7 grid gap-7 md:grid-cols-3">
           {recovered_ga.map(({ image: e, title: t, description: n }) => (
-            <article key={t} className="group flex h-full flex-col">
-              <div className="relative min-h-[230px] overflow-hidden rounded-sm bg-slate-100">
+            <article key={t} className="group flex h-full flex-col overflow-hidden rounded-sm border-2 border-[#d8e0eb]">
+              <div className="relative min-h-[230px] overflow-hidden bg-slate-100">
                 <img
                   src={e}
                   alt=""
@@ -94,7 +94,7 @@ function Component_recovered__a() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#172544]/20 via-transparent to-white/5" />
               </div>
-              <div className="flex flex-1 flex-col pt-4">
+              <div className="flex flex-1 flex-col px-5 py-5">
                 <h4 className="text-lg font-bold leading-tight text-[#172544]">
                   {t}
                 </h4>
@@ -140,8 +140,8 @@ function Home() {
       <FivePillars />
       {/* <PeoplePoweredTourismOutcomesSection /> */}
       <BeautifulSriLankaSection />
-      <ExplorePlatformsSection />
       <BeautifulPeopleSection />
+      <ExplorePlatformsSection />
       <GetInvolved />
       <OurJourney />
       <WhyTraveleye />

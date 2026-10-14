@@ -63,7 +63,7 @@ function EcosystemSection() {
               </p>
             </div>
           </div>
-          <div className="contents lg:order-2 lg:flex lg:flex-col lg:items-center lg:pt-10">
+          <div className="contents lg:order-2 lg:flex lg:flex-col lg:items-center lg:pt-16">
             <div className="order-1 w-full overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] sm:rounded-[1.6rem]">
               <img
                 src={asset_ka}
@@ -73,7 +73,7 @@ function EcosystemSection() {
             </div>
             <Link
               to="/traveleye-people-powered-tourism-ecosystem"
-              className="order-3 w-full rounded-xl bg-[#214f95] px-6 py-4 text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem] lg:mt-8"
+              className="order-3 w-full rounded-xl bg-[#214f95] px-6 py-4 text-center text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:w-auto sm:px-8 sm:text-[1.05rem] lg:mt-8"
             >
               {"Explore the Traveleye People-Powered Tourism Ecosystem"}
             </Link>

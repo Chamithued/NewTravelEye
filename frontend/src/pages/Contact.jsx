@@ -81,7 +81,7 @@ export default function Contact() {
     <main className="flex w-full flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
         <img src={heroImg} alt="Contact Us" className="absolute inset-0 h-full w-full object-cover object-center" />
-        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-black/25" />
         <div className="relative z-10 w-full px-4 pb-10 pt-16 text-center sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <h1
             style={{ fontFamily: '"League Spartan", system-ui, -apple-system, sans-serif' }}

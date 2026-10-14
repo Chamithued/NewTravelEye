@@ -8,6 +8,7 @@ import asset_Xi from "../assets/recovered/Discover Sri Lanka - Domestic1.jpg";
 import asset_Ui from "../assets/client/Discover the world.png";
 import asset_Zi from "../assets/recovered/Access Tourism Enterprise Growth Services.jpg";
 import asset_Qi from "../assets/recovered/Support Destination Development _ Facilitation.jpg";
+import ReadMoreLink from "./ReadMoreLink.jsx";
 const recovered_$i = [
   {
     id: 1,
@@ -151,6 +152,9 @@ function ExplorePlatformsSection() {
                 <p className="mt-3 text-sm leading-6 text-[#5f6c87]">
                   {e.description}
                 </p>
+                <div className="mt-auto flex justify-center pt-5">
+                  <ReadMoreLink to={e.link} />
+                </div>
               </div>
             </article>
           ))}

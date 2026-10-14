@@ -44,11 +44,10 @@ export default function OurGrowingImpact() {
         <h3 className="mt-10 text-2xl font-bold text-white sm:text-3xl">Key Impact Indicators</h3>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {items.map((it, index) => (
+          {items.map((it) => (
             <ImpactCard
               key={it.label}
               item={it}
-              className={index === items.length - 1 ? 'sm:col-span-2 sm:w-[calc(50%_-_0.75rem)] sm:justify-self-center lg:col-span-4 lg:w-[calc(25%_-_1.125rem)]' : ''}
             />
           ))}
         </div>

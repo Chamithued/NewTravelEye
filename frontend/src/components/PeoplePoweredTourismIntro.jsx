@@ -19,9 +19,12 @@ export function BeautifulPeopleSection() {
           {"The People Behind Traveleye's People-Powered Tourism Ecosystem"}
         </h2>
         <div className="mx-auto mt-4 h-0.5 w-24 rounded bg-[#c28a5b]" />
+        <h3 className="mt-6 text-xl font-semibold leading-snug text-[#1f4f93] sm:text-2xl">
+          A People-Powered Tourism Ecosystem begins with Beautiful People.
+        </h3>
       </div>
-      <div className="mx-auto mt-10 grid max-w-7xl items-center gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-12">
-        <div className="relative mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-[#e8eef2] bg-[#f7fafc] shadow-[0_18px_46px_rgba(15,23,42,0.12)]">
+      <div className="mx-auto mt-10 grid max-w-7xl items-center gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-12">
+        <div className="relative mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-[#e8eef2] bg-[#f7fafc] shadow-[0_18px_46px_rgba(15,23,42,0.12)] lg:order-2">
           <div
             className="absolute inset-0 bg-[linear-gradient(135deg,rgba(31,79,147,0.08),rgba(194,138,91,0.06))]"
             aria-hidden="true"
@@ -32,13 +35,8 @@ export function BeautifulPeopleSection() {
             className="relative block h-auto w-full object-contain"
           />
         </div>
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:order-1">
           <div className="space-y-4 text-[1.05rem] leading-7 text-[#6b7894] sm:text-[1.1rem] sm:leading-8">
-            <p className="font-semibold text-[#1f4f93]">
-              {
-                "A People-Powered Tourism Ecosystem begins with Beautiful People."
-              }
-            </p>
             <p>
               {
                 "We believe Sri Lanka's tourism future can be strengthened by discovering and connecting "
@@ -59,6 +57,13 @@ export function BeautifulPeopleSection() {
               }
             </p>
           </div>
+          <Link
+            to="/beautiful-sri-lanka"
+            className="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-[#214f95] px-6 py-3.5 text-center text-[1rem] font-semibold text-white shadow-sm transition-colors hover:bg-[#1b427d] sm:px-8 sm:text-[1.05rem]"
+          >
+            Explore Beautiful People
+            <ArrowRight className="h-5 w-5" strokeWidth={2.2} aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </section>

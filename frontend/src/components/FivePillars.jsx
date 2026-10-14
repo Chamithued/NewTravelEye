@@ -1,10 +1,12 @@
-import { ArrowRight, Leaf, Building2, Compass, MapPinned } from 'lucide-react'
+import { ArrowRight, Building2, Compass, Leaf, MapPinned } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import staysImg from '../assets/client/stays_new.jpg'
 import experientialImg from '../assets/client/PPES.jpg'
 import tourOpsImg from '../assets/client/TC.jpg'
 import supportImg from '../assets/client/Support Services.png'
 import facilitationImg from '../assets/client/At the Traveleye Facilitation Center.png'
+import ReadMoreLink from './ReadMoreLink.jsx'
 
 const pillars = [
     {
@@ -79,60 +81,34 @@ const pillars = [
   },
 ]
 
-function PillarCard({ pillar, className = '' }) {
+function PillarCard({ pillar }) {
   const Icon = pillar.icon
-  const readableTextShadow =
-    '0 1px 2px rgba(0,0,0,0.65), 0 0 1px rgba(0,0,0,0.85)'
   const pillarDescriptions = {
-    PPTC:(<>Connecting meaningful journeys, destinations, travellers, and travel partnerships through people and places.</>),
-    HOSTNEST:(<>Developing authentic people and place-inspired stays that reflect local identity, hospitality, culture, landscapes, and the character of each destination.</>),
-    STORYTRAILS:(<>Developing people and place-inspired experiences that connect travellers with local people, culture, heritage, creativity, nature, and everyday life.</>),
-    PPES:(<> Strengthening tourism enterprises through knowledge, capability development, innovation, digital solutions, and ecosystem support services. </>),
-    PPDF:( <>Developing connected destination ecosystems through collaboration, coordination, participation, stewardship, and enterprise development.</>),
+    PPTC: 'Connecting meaningful journeys, destinations, travellers, and travel partnerships through people and places.',
+    HOSTNEST: 'Developing authentic people and place-inspired stays that reflect local identity, hospitality, culture, landscapes, and the character of each destination.',
+    STORYTRAILS: 'Developing people and place-inspired experiences that connect travellers with local people, culture, heritage, creativity, nature, and everyday life.',
+    PPES: 'Strengthening tourism enterprises through knowledge, capability development, innovation, digital solutions, and ecosystem support services.',
+    PPDF: 'Developing connected destination ecosystems through collaboration, coordination, participation, stewardship, and enterprise development.',
   }
 
   return (
-    <article className={`relative min-h-[520px] overflow-hidden rounded-2xl shadow-[0_16px_42px_rgba(15,23,42,0.12)] ${className}`}>
-      <img src={pillar.image} alt={pillar.title} className="absolute inset-0 h-full w-full object-cover" />
-
-      <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-6 md:p-8">
-        <div className="flex items-start justify-between">
-          <div className="inline-flex flex-col items-start gap-3">
-            <div className={`flex h-12 w-12 items-center justify-center rounded-lg text-white ${pillar.accent}`}>
-              <Icon className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <p
-                className="text-[1.35rem] font-bold leading-tight text-white sm:text-2xl md:text-3xl"
-                style={{ textShadow: readableTextShadow }}
-              >
-                {pillar.title}
-              </p>
-              {/* <p className="mt-1 text-sm font-bold text-white/90">{pillar.subtitle}</p> */}
-            </div>
-          </div>
+    <article className="flex h-full flex-col overflow-hidden bg-white shadow-[0_12px_30px_rgba(15,23,42,0.12)]">
+      <Link to={pillar.ctas[0].to} className="relative block bg-slate-100">
+        <img src={pillar.image} alt="" className="block h-auto w-full" loading="lazy" />
+        <div className="absolute inset-x-0 top-0 p-5 sm:p-6">
+          <span className={`inline-flex h-12 w-12 items-center justify-center rounded-lg text-white shadow-md ${pillar.accent}`}>
+            <Icon className="h-6 w-6" aria-hidden="true" />
+          </span>
+          <h3 className="mt-4 text-xl font-bold leading-tight text-white drop-shadow-[0_2px_3px_rgba(0,0,0,0.9)] sm:text-2xl">
+            {pillar.title}
+          </h3>
         </div>
-
-        <div className="mt-4">
-          <p
-            className="mb-6 max-w-xl text-sm font-bold text-white/90 sm:text-base"
-            style={{ textShadow: readableTextShadow }}
-          >
-            {pillarDescriptions[pillar.code] ?? ''}
-          </p>
-
-          <div className="flex flex-wrap gap-3">
-            {pillar.ctas.map((cta) => (
-              <a
-                key={cta.label}
-                href={cta.to}
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-200/50 bg-[#214f95]/40 px-5 py-3 text-sm font-semibold text-white shadow-lg backdrop-blur-md transition-colors hover:bg-[#214f95]/55 sm:text-base"
-              >
-                {cta.label}
-                <ArrowRight className="h-4 w-4" strokeWidth={2.2} aria-hidden="true" />
-              </a>
-            ))}
-          </div>
+      </Link>
+      <div className="flex flex-1 flex-col items-center px-4 py-5 text-center">
+        <p className="text-sm font-semibold leading-5 text-[#172544]">{pillar.subtitle}</p>
+        <p className="mt-4 text-sm leading-6 text-[#59677d]">{pillarDescriptions[pillar.code]}</p>
+        <div className="mt-auto pt-5">
+          <ReadMoreLink to={pillar.ctas[0].to} />
         </div>
       </div>
     </article>
@@ -178,12 +154,11 @@ export default function FivePillars() {
         </div>
 
         <div className="mt-10 mx-auto max-w-[1200px] px-2">
-          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-            {pillars.map((p, index) => (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+            {pillars.map((p) => (
               <PillarCard
                 key={p.code}
                 pillar={p}
-                className={index === pillars.length - 1 ? 'sm:col-span-2 sm:w-[calc(50%_-_1rem)] sm:justify-self-center' : ''}
               />
             ))}
           </div>
