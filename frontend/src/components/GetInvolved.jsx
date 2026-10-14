@@ -7,7 +7,7 @@ import { Users } from "lucide-react";
 import asset_sa from "../assets/client/Join the movement2.png";
 import travelVentureImage from "../assets/client/Partner With Us - Inbound1.jpg";
 import travelCorridorImage from "../assets/client/TC.jpg";
-import hostStayImage from "../assets/involved/Develop a Place-Inspired Host Stay.jpg";
+import hostStayImage from "../assets/client/Travelwith Purpose.png";
 import experienceImage from "../assets/involved/Develop a People & Place-Inspired Experience.jpg";
 import ecosystemSupportImage from "../assets/involved/Develop an Ecosystem Support Venture.jpg";
 import jointVenturesImage from "../assets/involved/Joint Ventures & Strategic Investments.jpg";
