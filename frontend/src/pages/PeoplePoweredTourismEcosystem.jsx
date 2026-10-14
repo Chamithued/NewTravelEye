@@ -54,7 +54,7 @@ export default function PeoplePoweredTourismEcosystem() {
     <main className="content-page flex flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[42vh] items-center overflow-hidden bg-slate-900 sm:min-h-[48vh]">
         <img src={heroImg} alt="Traveleye People-Powered Tourism Ecosystem" className="absolute inset-0 h-full w-full object-cover object-center brightness-90" />
-        <div className="absolute inset-0 bg-[#10233d]/20" />
+        <div className="absolute inset-0 bg-[#10233d]/6" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20 text-center sm:px-6 lg:px-8">
           <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-3xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-5xl">
             <span className="block">Traveleye People-Powered</span>

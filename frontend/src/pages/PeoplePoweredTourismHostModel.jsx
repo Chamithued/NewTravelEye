@@ -113,7 +113,7 @@ export default function PeoplePoweredTourismHostModel() {
       <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
         <div className="absolute inset-0">
           <img src={heroImg} alt="" className="h-full w-full object-cover object-center brightness-95" />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
         <div className="relative z-10 flex w-full justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="max-w-5xl text-center">

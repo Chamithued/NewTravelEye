@@ -41,9 +41,9 @@ const recovered_pa = [
 ];
 function Component_recovered_ma({ catalogue: e }) {
   return (
-    <article key={e.title} className="group flex h-full flex-col">
+    <article key={e.title} className="group flex h-full flex-col overflow-hidden rounded-sm border-2 border-[#d8e0eb]">
       <div
-        className={`relative min-h-[230px] overflow-hidden rounded-sm bg-gradient-to-br ${e.coverClass}`}
+        className={`relative min-h-[230px] overflow-hidden bg-gradient-to-br ${e.coverClass}`}
       >
         <img
           src={e.image}
@@ -52,7 +52,7 @@ function Component_recovered_ma({ catalogue: e }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#172544]/25 via-transparent to-white/10" />
       </div>
-      <div className="flex flex-1 flex-col pt-4">
+      <div className="flex flex-1 flex-col px-5 py-5">
         <p className="text-sm font-bold leading-tight text-[#172544]">
           {e.title}
         </p>

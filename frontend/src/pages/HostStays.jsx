@@ -48,7 +48,7 @@ export default function HostStays() {
   return <main className="flex flex-col bg-white text-slate-900">
     <section className="relative flex min-h-[42vh] items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
       <img src={heroImg} alt="Place-inspired accommodation" className="absolute inset-0 h-full w-full object-cover object-center" />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/20" />
       <div className="relative z-10 mx-auto w-full max-w-5xl px-4 py-20 text-center text-white">
         <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-3xl font-extrabold uppercase leading-none sm:text-5xl">Traveleye HostNest</h1>
         <p className="mt-5 text-lg font-bold sm:text-2xl">Creating Distinctive Stays Through People and Place</p>

@@ -104,7 +104,7 @@ function WhatIsTraveleyesPeoplePoweredTourism() {
             alt="What Is Traveleye's People-Powered Tourism banner"
             className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
           />
-          <div className="absolute inset-0 bg-black/25" />
+          <div className="absolute inset-0 bg-black/9" />
         </div>
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="max-w-5xl text-center">

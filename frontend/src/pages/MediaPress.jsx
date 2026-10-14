@@ -124,7 +124,7 @@ export default function MediaPress() {
       <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
         <div className="absolute inset-0 z-0">
           <img src={heroImg} alt="Media & Press banner" className="absolute inset-0 h-full w-full object-cover object-center brightness-105" />
-          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-black/6" />
         </div>
         <div className="relative z-10 flex w-full items-center justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="max-w-4xl text-center">

@@ -258,7 +258,7 @@ function BeautifulPeople() {
           alt="People building Sri Lanka’s tourism ecosystem together"
           className="absolute inset-0 h-full w-full object-cover object-center brightness-95"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/12" />
         <div className="relative z-10 flex w-full justify-center px-4 py-12 text-center sm:px-6 lg:px-8">
           <div>
             <h1

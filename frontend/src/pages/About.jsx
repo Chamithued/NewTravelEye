@@ -61,7 +61,7 @@ export default function About() {
     <main className="flex w-full flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[42vh] w-full items-center overflow-hidden bg-slate-100 sm:min-h-[48vh]">
         <img src={heroImg} alt="About Traveleye Alliance banner" className="absolute inset-0 h-full w-full object-cover object-center brightness-105" />
-        <div className="absolute inset-0 bg-black/16" />
+        <div className="absolute inset-0 bg-black/4" />
         <div className="relative z-10 flex w-full justify-center px-4 pb-10 pt-16 sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pt-24">
           <div className="text-center">
             <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-2xl font-extrabold leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">ABOUT TRAVELEYE ALLIANCE</h1>

@@ -132,7 +132,7 @@ export default function TravelCollective() {
     <main className="flex flex-col bg-slate-50 text-slate-900">
       <section className="relative flex min-h-[48vh] w-full items-center overflow-hidden bg-slate-100">
         <img src={heroImg} alt="Traveleye Travel Collective" className="absolute inset-0 h-full w-full object-cover object-center brightness-95" />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/12" />
         <div className="relative z-10 flex w-full justify-center px-4 py-12 text-center sm:px-6 lg:px-8">
           <div>
             <h1 style={{ fontFamily: '"League Spartan", system-ui, sans-serif' }} className="text-2xl font-extrabold uppercase leading-none tracking-tight text-white sm:text-4xl lg:text-5xl">

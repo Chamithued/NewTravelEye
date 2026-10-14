@@ -44,7 +44,7 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="relative top-8 mx-auto mt-8 max-w-4xl sm:top-12 sm:mt-12 lg:top-12 lg:mt-16">
+          <div className="relative top-2 mx-auto mt-8 max-w-4xl sm:top-6 sm:mt-12 lg:top-6 lg:mt-16">
             <p
               className="mx-auto max-w-3xl text-lg font-semibold sm:text-2xl"
               style={{
